@@ -26,6 +26,16 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python scripts/build.py
+      - name: Sync to Tencent COS
+        uses: TencentCloud/cos-action@v1
+        with:
+          secret_id: ${{ secrets.TENCENT_SECRET_ID }}
+          secret_key: ${{ secrets.TENCENT_SECRET_KEY }}
+          cos_bucket: ted-pages-1409060250
+          cos_region: ap-guangzhou
+          local_path: docs
+          remote_path: AITransformation
+          clean: false
       - name: Commit updates
         run: |
           git config user.name "digest-bot"

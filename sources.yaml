@@ -1,0 +1,97 @@
+# RSS feed sources. Add/remove freely. Broken feeds are skipped at runtime.
+# category is informational only (shown as a badge in the UI).
+
+feeds:
+  # Business / Management
+  - name: Harvard Business Review
+    url: https://hbr.org/feed
+    category: business
+
+  - name: MIT Sloan Management Review
+    url: https://sloanreview.mit.edu/feed/
+    category: business
+
+  - name: McKinsey Insights
+    url: https://www.mckinsey.com/insights/rss
+    category: business
+
+  - name: BCG Insights
+    url: https://www.bcg.com/publications/rss.aspx
+    category: business
+
+  # VC / Investors
+  - name: Sequoia Capital
+    url: https://www.sequoiacap.com/feed/
+    category: vc
+
+  - name: Andreessen Horowitz
+    url: https://a16z.com/feed/
+    category: vc
+
+  - name: First Round Review
+    url: https://review.firstround.com/feed.xml
+    category: vc
+
+  # AI labs
+  - name: OpenAI
+    url: https://openai.com/news/rss.xml
+    category: ai-lab
+
+  - name: Anthropic News
+    url: https://www.anthropic.com/news/rss.xml
+    category: ai-lab
+
+  - name: Google DeepMind
+    url: https://deepmind.google/blog/rss.xml
+    category: ai-lab
+
+  - name: Microsoft AI Blog
+    url: https://blogs.microsoft.com/ai/feed/
+    category: ai-lab
+
+  # Independent thinkers
+  - name: Stratechery (free posts)
+    url: https://stratechery.com/feed/
+    category: analyst
+
+  - name: One Useful Thing (Ethan Mollick)
+    url: https://www.oneusefulthing.org/feed
+    category: analyst
+
+  - name: Lenny's Newsletter
+    url: https://www.lennysnewsletter.com/feed
+    category: analyst
+
+  - name: Every
+    url: https://every.to/feed.xml
+    category: analyst
+
+  # Podcasts (show notes only — transcription is out of scope for now)
+  - name: No Priors Podcast
+    url: https://feeds.transistor.fm/no-priors-artificial-intelligence-technology-startups
+    category: podcast
+
+  - name: Lenny's Podcast
+    url: https://feeds.transistor.fm/lennys-podcast-product-growth-career
+    category: podcast
+
+# Keywords used only as a pre-filter hint, not a hard gate. Claude does the real relevance scoring.
+keywords:
+  - AI
+  - artificial intelligence
+  - generative
+  - LLM
+  - agent
+  - automation
+  - workforce
+  - organization
+  - transformation
+  - productivity
+  - future of work
+  - reorg
+  - layoff
+  - hiring
+  - leadership
+  - CEO
+  - CPO
+  - management

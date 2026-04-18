@@ -1,0 +1,331 @@
+[
+  {
+    "url": "https://www.lennysnewsletter.com/p/hard-truths-about-building-in-the-ai-era",
+    "title": "Hard truths about building in the AI era | Keith Rabois (Khosla Ventures)",
+    "source": "Lenny's Newsletter",
+    "category": "analyst",
+    "published": "2026-04-12",
+    "fetched_at": "2026-04-18T15:03:32+08:00",
+    "score": 8,
+    "summary_zh": "资深投资人Keith Rabois从PayPal、Square等多家独角兽的高管经历出发，阐述AI时代的组织建设硬道理。核心观点包括：PM角色正在衰亡，工程师需要重新定义；招聘框架从\"大桶\"人才识别法论；CMO而非工程师成为token消费的最大使用者；最顶级公司具备的三大特征。这些洞察直接触及AI时代企业结构调整、人才定义与岗位权力关系的根本性变化。",
+    "key_points": [
+      "PM角色正在衰亡，AI时代工程师与非技术角色的权力关系重新定义",
+      "\"大桶\"招聘框架用于识别高潜人才，反思传统招聘方法的局限",
+      "CMO成为AI token消费主力，营销而非研发掌握新生产力工具",
+      "顶级公司三大共同特征指向组织运营的新模式与竞争优势"
+    ],
+    "tags": [
+      "组织重构",
+      "人才策略",
+      "岗位权力变化",
+      "AI时代工作方式"
+    ],
+    "speakers": [
+      "Keith Rabois",
+      "Khosla Ventures"
+    ]
+  },
+  {
+    "url": "https://sloanreview.mit.edu/article/the-human-side-of-ai-adoption-lessons-from-the-field/",
+    "title": "The Human Side of AI Adoption: Lessons From the Field",
+    "source": "MIT Sloan Management Review",
+    "category": "business",
+    "published": "2026-04-14",
+    "fetched_at": "2026-04-18T15:01:48+08:00",
+    "score": 8,
+    "summary_zh": "MIT Sloan 资深顾问Carolyn Geason-Beissel基于15年AI采纳实践，揭示保守行业（建筑、采矿、废物管理等）AI采纳滞后的根本原因：员工感知AI难以理解且令人害怕、实施成本高且增加工作量、组织文化缺乏信任。与科技行业形成鲜明对比，这些传统行业虽经济贡献大但系统陈旧。文章强调领导力在克服心理障碍、重新定义信任、分阶段推进变革中的关键作用，为保守型组织提供实战指导。",
+    "key_points": [
+      "AI采纳的行业鸿沟：金融科技等数字化行业远超传统行业，源于组织心态差异",
+      "三大采纳障碍：AI被视为难懂、可怕；员工感知为增加工作量；缺乏对新工具的信任",
+      "文化与领导力决定成败：需克服恐惧、重塑流程感知、获得一线团队认同",
+      "实践洞察：驾驶员摄像头案例显示，技术本身好但落地感知不当会遭排斥"
+    ],
+    "tags": [
+      "变革管理",
+      "组织文化",
+      "AI采纳障碍",
+      "领导力"
+    ],
+    "speakers": [
+      "Carolyn Geason-Beissel",
+      "MIT Sloan Management Review"
+    ]
+  },
+  {
+    "url": "https://www.lennysnewsletter.com/p/listen-not-all-ai-agents-are-created",
+    "title": "Listen: Not all AI agents are created equal",
+    "source": "Lenny's Newsletter",
+    "category": "analyst",
+    "published": "2026-04-15",
+    "fetched_at": "2026-04-18T15:03:11+08:00",
+    "score": 7,
+    "summary_zh": "本期播客讨论 AI Agent 在企业中的战略优先级和技术选型问题。核心观点：传统的影响-工作量矩阵等规划工具不适用于 Agent 项目评估，因为 Agent 的复杂性和不确定性较高。文章将 Agent 架构分为三个类别，并针对各类提出了差异化的平台选择标准和 ROI 框架。强调了快速纠错机制的重要性，帮助组织在 Agent 落地中做出更科学的决策。",
+    "key_points": [
+      "传统项目规划工具（如影响-工作量矩阵）不适用 Agent 项目的优先级判断",
+      "AI Agent 分为三种架构类别，每类需匹配不同平台和评估指标",
+      "需建立 Agent 特定的 ROI 和成功指标框架，而非通用指标",
+      "组织应设计快速反馈和课程纠正机制来应对 Agent 选型失误"
+    ],
+    "tags": [
+      "Agent 落地",
+      "技术选型",
+      "组织决策",
+      "生产力评估"
+    ],
+    "speakers": []
+  },
+  {
+    "url": "https://www.lennysnewsletter.com/p/not-all-ai-agents-are-created-equal",
+    "title": "Not all AI agents are created equal",
+    "source": "Lenny's Newsletter",
+    "category": "analyst",
+    "published": "2026-04-14",
+    "fetched_at": "2026-04-18T15:03:16+08:00",
+    "score": 7,
+    "summary_zh": "文章由资深产品教练 Lenny Farooq 和 Rajwani 撰写，核心观点是团队在 AI Agent 优先级评估中普遍出现的错误：将架构完全不同的系统（如 PM 助手、客服系统、代码审查 Agent）混为一谈，用统一的优先级矩阵评估。作者强调，不同类型 Agent 对团队技能、基础设施、成本、周期要求差异巨大（有的 PM 在 n8n 几周完成，有的需要 ML 团队半年投入），因此需要先建立分类框架，才能做出有效的投资决策。",
+    "key_points": [
+      "Agent 优先级评估的根本问题：团队错误地将不同架构的系统视为同一类别，导致 impact-vs-effort 矩阵失效",
+      "架构分类决定一切：影响构建周期（6 周 vs 6 个月）、所需团队、运营成本（$500 月度 vs 六位数 LLM 账单）、成功指标",
+      "建立分类体系是前置步骤：先明确每个 Agent 的类型，才能进行有意义的优先级和资源配置决策"
+    ],
+    "tags": [
+      "Agent 落地战略",
+      "优先级管理",
+      "团队能力规划",
+      "成本与资源评估"
+    ],
+    "speakers": [
+      "Lenny Farooq",
+      "Jaya Rajwani"
+    ]
+  },
+  {
+    "url": "https://www.lennysnewsletter.com/p/this-week-on-how-i-ai-claude-cowork",
+    "title": "🎙️ This week on How I AI: Claude Cowork tutorial for non-engineers + Build your own Slack inbox (for $0)",
+    "source": "Lenny's Newsletter",
+    "category": "analyst",
+    "published": "2026-04-13",
+    "fetched_at": "2026-04-18T15:03:21+08:00",
+    "score": 7,
+    "summary_zh": "Clay 教育负责人 Yash Tekriwal 分享如何用 AI 工具（Perplexity Computer、OpenClaw）自建个性化 Slack 收件箱，将 150 条日常通知压缩为 30 条可操作内容。核心观点：AI 应用的关键是构建持久系统而非执行单次任务；未来每个知识工作者将拥有定制化微应用填补通用 SaaS 与个人工作流的鸿沟；这将催生数千个垂直微 SaaS 商机，而非摧毁 SaaS 市场。体现了 Agent 工具在非技术人员手中赋能个人生产力的趋势。",
+    "key_points": [
+      "AI 应用范式转变：从重复执行任务转向一次性构建可复用系统和工具",
+      "多模型编排消除单模型迭代痛点，云原生部署降低技术门槛，普通用户可独立构建工具",
+      "个性化微应用将扩展而非替代 SaaS，每位知识工作者最终需定制化软件栈匹配自身认知模型",
+      "AI 驱动的「反待办清单」框架：每日投入时间自动化讨厌任务，而非被动管理待办事项",
+      "垂直微 SaaS 市场即将爆发，千级 $15/月的小型自动化产品将服务长尾需求"
+    ],
+    "tags": [
+      "生产力工具",
+      "Agent 落地",
+      "个人工作流优化",
+      "低代码/无代码赋能"
+    ],
+    "speakers": [
+      "Yash Tekriwal (Clay 教育负责人)"
+    ]
+  },
+  {
+    "url": "https://www.lennysnewsletter.com/p/claude-cowork-101-how-to-automate",
+    "title": "Claude Cowork 101: How to automate your workday without touching code | JJ Englert (Tenex)",
+    "source": "Lenny's Newsletter",
+    "category": "analyst",
+    "published": "2026-04-13",
+    "fetched_at": "2026-04-18T15:03:27+08:00",
+    "score": 7,
+    "summary_zh": "Tenex 社区负责人 JJ Englert 详解 Anthropic 的 Claude Cowork 工具——一款零代码桌面应用，用于自动化日常工作。核心创新包括：通过「脑文件」（preferences document）让 AI 理解个人工作风格；一键连接 Gmail、Slack、Notion、Google Calendar 等工具，让 AI 从「建议」升级为「执行行动」；建立共享内存的项目结构替代单次对话，确保 AI 输出质量一致；设置权限控制确保安全（仅草稿或需授权后发送）；创建多 Agent 评审机制获取多角度反馈；定时任务实现晨间信息汇总。反映出 AI Agent 从辅助建议向工作流程自动化迈进的趋势。",
+    "key_points": [
+      "共享内存项目结构优于单次对话，AI 能基于历史记忆生成更一致高质量的输出",
+      "一键连接邮件、日历、即时通讯等工具，AI 不仅建议而是直接执行（受权限控制）",
+      "\"脑文件\"策略让 AI 学习用户风格与偏好，每次交互自动应用个性化上下文",
+      "多 Agent 评审机制（子顾问委员会）让 AI 从不同角色视角反馈，提升决策质量",
+      "信息换生产力的权衡：明确权限边界与安全机制，渐进式信任 AI 执行权"
+    ],
+    "tags": [
+      "Agent 落地",
+      "工作流自动化",
+      "生产力工具",
+      "权限与安全"
+    ],
+    "speakers": [
+      "JJ Englert"
+    ]
+  },
+  {
+    "url": "https://sloanreview.mit.edu/article/managing-up-a-skill-set-that-matters-now/",
+    "title": "Managing Up: A Skill Set That Matters Now",
+    "source": "MIT Sloan Management Review",
+    "category": "business",
+    "published": "2026-04-13",
+    "fetched_at": "2026-04-18T15:01:52+08:00",
+    "score": 7,
+    "summary_zh": "MIT Sloan 研究指出，随着组织引入 AI 精简管理层级，员工向上管理（upward leadership）的能力变得更加关键。有效的向上管理需要整合三个角色：缓冲者（吸收上层压力）、翻译者（跨层级传达信息）、倡导者（向上推动改革）。由于领导层常因 AI 决策而陷入信息盲点，中层员工的倾听、翻译和影响能力直接影响组织决策质量与执行效果。",
+    "key_points": [
+      "AI 精简管理层后，中层员工向上影响力成为战略资源，直接关系组织成功",
+      "向上管理的核心是主动倾听领导层的隐性需求，而非被动接收指令",
+      "缓冲者、翻译者、倡导者三角色缺一不可，需动态平衡而非单点突出"
+    ],
+    "tags": [
+      "管理层级重构",
+      "AI 对中层影响",
+      "领导力与沟通",
+      "组织信息流"
+    ],
+    "speakers": [
+      "Carolyn Geason-Beissel",
+      "MIT Sloan Management Review"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/industries/healthcare/our-insights/generative-ai-in-healthcare-current-trends-and-future-outlook",
+    "title": "Generative AI in healthcare: Adoption matures as agentic AI emerges",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-04-16",
+    "fetched_at": "2026-04-18T15:02:03+08:00",
+    "score": 7,
+    "summary_zh": "McKinsey 调研显示，美国医疗机构中已有 50% 实施生成式 AI，行业重心从试点转向深度集成与 ROI 验证。随着 Agent AI 技术成熟，医疗组织开始探索如何通过自主化 AI 代理在临床、运营、行政等多个领域释放价值。这反映出医疗行业正从 AI 尝鲜阶段进入系统性变革阶段，对组织流程、人员角色分工、效率提升提出新需求。",
+    "key_points": [
+      "50% 医疗机构已采纳生成式 AI，重点从试点转向规模化集成与ROI衡量",
+      "Agent AI 成为新焦点，能自主执行复杂多步骤任务，降低人工干预",
+      "跨临床、运营、行政多领域应用，需要组织流程与人员角色重新定义",
+      "价值实现关键在于集成深度与运营模式适配，非单纯技术部署"
+    ],
+    "tags": [
+      "AI 落地",
+      "医疗组织变革",
+      "Agent 应用",
+      "生产力提升"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/goldman-sachs-david-solomon-on-adapting-to-disruption",
+    "title": "Goldman Sachs’ David Solomon on adapting to disruption",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-04-15",
+    "fetched_at": "2026-04-18T15:02:08+08:00",
+    "score": 7,
+    "summary_zh": "高盛董事长兼CEO David Solomon 反思AI如何驱动组织变革与适应性。他讨论了AI如何重塑金融服务业的运营模式、人才需求与竞争格局。Solomon强调领导者需要在不确定性中做出决策，同时投资新能力并重新定义员工角色——这涉及招聘、培训与组织结构的深度调整。文章触及CEO层面对AI时代组织适应的战略思考。",
+    "key_points": [
+      "CEO视角：AI如何重塑金融服务的核心业务与人才结构",
+      "领导力挑战：在AI驱动的不确定性中做战略决策与组织变革",
+      "人员重塑：员工角色、技能需求、招聘策略的转变",
+      "竞争适应：传统大型金融机构如何在AI时代保持竞争力"
+    ],
+    "tags": [
+      "组织重构",
+      "人才策略",
+      "领导力",
+      "金融科技"
+    ],
+    "speakers": [
+      "David Solomon (高盛)"
+    ]
+  },
+  {
+    "url": "https://sequoiacap.com/article/partnering-with-auctor/",
+    "title": "Partnering with Auctor",
+    "source": "Sequoia Capital",
+    "category": "vc",
+    "published": "2026-04-16",
+    "fetched_at": "2026-04-18T15:02:26+08:00",
+    "score": 7,
+    "summary_zh": "Sequoia Capital 投资软件实现 AI 自动化公司 Auctor。文章指出企业软件采购容易但实施困难，9 百万实现顾问年支出超 5000 亿美元。Auctor 用 AI 自动化需求捕捉、决策追踪、上下文管理，将数周的范围界定压缩至单次会议。核心洞察：传统顾问因生物学限制（记忆窗口）无法追踪数千平台更新与系统依赖，而 LLM 可跨越多轮会议保持上下文连贯性，直接生成项目推进所需的输出。",
+    "key_points": [
+      "企业软件实施市场规模 500+ 亿美元年支出，依赖 9 百万顾问，增长 10%+ 年率，长期未被颠覆",
+      "Auctor 通过 AI 将散落在会议、文档、系统间的需求、决策、上下文整合，直接生成实施输出",
+      "传统顾问的上下文窗口受生物学限制，难以追踪平台更新与系统间依赖，AI 无此缺陷",
+      "数周范围界定工作可压缩至单次会议，体现 AI 对实施流程的效率倍增"
+    ],
+    "tags": [
+      "生产力倍增",
+      "流程自动化",
+      "劳动力替代",
+      "企业软件实施"
+    ],
+    "speakers": [
+      "Julien Bek (Sequoia Capital)",
+      "Will、Sky、Matt (Auctor 创始人)"
+    ]
+  },
+  {
+    "url": "https://stratechery.com/2026/openais-memos-frontier-amazon-and-anthropic/",
+    "title": "OpenAI’s Memos, Frontier, Amazon and Anthropic",
+    "source": "Stratechery (free posts)",
+    "category": "analyst",
+    "published": "2026-04-14",
+    "fetched_at": "2026-04-18T15:03:01+08:00",
+    "score": 7,
+    "summary_zh": "文章分析了OpenAI内部备忘录揭示的企业竞争战略，特别是针对Anthropic的市场定位。OpenAI强调自身在企业应用中的优势地位，包括客户粘性、生态整合和产品路线图。这反映了大模型公司在争夺企业级用户时的策略分化，涉及产品定位、客户关系管理和市场竞争动态，对理解AI公司如何重塑企业IT采购和组织技术决策有参考意义。",
+    "key_points": [
+      "OpenAI内部战略文件暴露企业级AI竞争格局，反映模型公司的客户争夺重点",
+      "企业应用场景成为生成式AI商业化的核心战场，涉及集成、定制、信任等多维竞争",
+      "Amazon与Anthropic等新玩家的联手加速企业AI选型的多元化，冲击原有IT采购模式"
+    ],
+    "tags": [
+      "企业级AI竞争",
+      "市场战略",
+      "生成式AI商业化",
+      "技术采购决策"
+    ],
+    "speakers": [
+      "OpenAI",
+      "Anthropic",
+      "Amazon"
+    ]
+  },
+  {
+    "url": "https://stratechery.com/2026/mythos-muse-and-the-opportunity-cost-of-compute/",
+    "title": "Mythos, Muse, and the Opportunity Cost of Compute",
+    "source": "Stratechery (free posts)",
+    "category": "analyst",
+    "published": "2026-04-13",
+    "fetched_at": "2026-04-18T15:03:05+08:00",
+    "score": 7,
+    "summary_zh": "文章探讨 AI 推理模型（o1）对互联网商业模式的根本颠覆。传统互联网遵循「聚合理论」——边际成本为零，规模化即利润。但 AI 的高计算成本打破这一假设，使超大规模科技公司重新面临边际成本压力。这意味着未来科技业将变得资本密集、成本驱动，而非用户规模驱动。这是 2010 年代以来最重大的商业模式转变，将重塑超大规模云计算企业的经济学逻辑和竞争格局。",
+    "key_points": [
+      "AI 推理模型重新引入边际成本，打破互联网零边际成本假设，威胁超大规模商业模式",
+      "未来超大规模云计算公司将变为资本密集型，而非聚合理论下的用户规模优势企业",
+      "compute 的经济性成为 AI 商业可行性的关键约束，替代了互联网时代的聚合效应",
+      "这一转变标志 2010 年代互联网思维的终结，将深刻重塑科技产业竞争格局"
+    ],
+    "tags": [
+      "商业模式转变",
+      "成本经济学",
+      "超大规模企业",
+      "AI 落地挑战"
+    ],
+    "speakers": [
+      "Doug O'Laughlin (Fabricated Knowledge)",
+      "Stratechery"
+    ]
+  },
+  {
+    "url": "https://openai.com/index/cloudflare-openai-agent-cloud",
+    "title": "Enterprises power agentic workflows in Cloudflare Agent Cloud with OpenAI",
+    "source": "OpenAI",
+    "category": "ai-lab",
+    "published": "2026-04-13",
+    "fetched_at": "2026-04-18T15:02:43+08:00",
+    "score": 6,
+    "summary_zh": "Cloudflare 与 OpenAI 合作，在 Agent Cloud 平台上集成 GPT-5.4 和 Codex，使企业能快速构建、部署和扩展 AI Agent 来执行实际业务任务。这是 AI Agent 技术从研究走向生产应用的体现，但当前信息不足以阐述对组织结构、人员配置或工作流程的具体影响。",
+    "key_points": [
+      "Cloudflare+OpenAI 联合打造 Agent Cloud 平台，降低企业部署 AI Agent 的门槛",
+      "Agent 技术可用于实际业务场景，暗示企业级生产力工具化趋势",
+      "安全性与可扩展性作为核心卖点，反映企业对 AI Agent 风险的重视"
+    ],
+    "tags": [
+      "Agent 落地",
+      "企业应用",
+      "AI 基础设施"
+    ],
+    "speakers": [
+      "OpenAI",
+      "Cloudflare"
+    ]
+  }
+]

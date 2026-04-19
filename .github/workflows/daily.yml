@@ -33,7 +33,7 @@ jobs:
         run: |
           pip install coscmd
           coscmd config -a "$TENCENT_SECRET_ID" -s "$TENCENT_SECRET_KEY" -b ted-pages-1409060250 -r ap-guangzhou
-          coscmd upload -r -f docs/ AITransformation/
+          coscmd upload -r -f docs/ aitransformation/
       - name: Commit updates
         run: |
           git config user.name "digest-bot"

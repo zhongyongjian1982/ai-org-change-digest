@@ -16,8 +16,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
           cache: pip
@@ -34,6 +34,20 @@ jobs:
           pip install coscmd
           coscmd config -a "$TENCENT_SECRET_ID" -s "$TENCENT_SECRET_KEY" -b ted-pages-1409060250 -r ap-guangzhou
           coscmd upload -r -f docs/ aitransformation/
+      - name: Purge EdgeOne CDN cache
+        env:
+          TENCENT_SECRET_ID: ${{ secrets.TENCENT_SECRET_ID }}
+          TENCENT_SECRET_KEY: ${{ secrets.TENCENT_SECRET_KEY }}
+        run: |
+          pip install tccli
+          tccli teo CreatePurgeTask \
+            --secretId "$TENCENT_SECRET_ID" \
+            --secretKey "$TENCENT_SECRET_KEY" \
+            --region ap-guangzhou \
+            --ZoneId zone-3ourx6uea6bu \
+            --Type purge_prefix \
+            --Method invalidate \
+            --Targets '["https://www.tedzhong.com/aitransformation/"]'
       - name: Commit updates
         run: |
           git config user.name "digest-bot"

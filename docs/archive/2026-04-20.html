@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>2026-04-20 · AI 与组织变革</title>
+<style>
+:root {
+  --bg: #0f1419; --panel: #161b22; --border: #2a313c;
+  --fg: #e6edf3; --muted: #8b949e; --accent: #58a6ff; --chip: #1f2937;
+}
+@media (prefers-color-scheme: light) {
+  :root { --bg:#f7f8fa; --panel:#fff; --border:#e3e6eb; --fg:#1a1f2b; --muted:#6a7380; --accent:#1e5fd4; --chip:#eef1f5; }
+}
+* { box-sizing: border-box; }
+body { margin:0; font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "PingFang SC", "Microsoft YaHei", sans-serif;
+       background: var(--bg); color: var(--fg); line-height: 1.6; }
+.wrap { max-width: 900px; margin: 0 auto; padding: 32px 20px 80px; }
+header h1 { font-size: 26px; margin: 0 0 6px; }
+header p { color: var(--muted); margin: 0 0 24px; }
+.filters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; padding: 12px;
+           background: var(--panel); border: 1px solid var(--border); border-radius: 10px; }
+.filters label { font-size: 13px; color: var(--muted); display: flex; align-items: center; gap: 6px; }
+.filters select, .filters input[type=range] { background: var(--chip); color: var(--fg); border: 1px solid var(--border);
+           border-radius: 6px; padding: 4px 8px; font-size: 13px; }
+.day { margin-bottom: 36px; }
+.day h2 { font-size: 18px; border-bottom: 1px solid var(--border); padding-bottom: 6px; margin: 0 0 14px; }
+.card { background: var(--panel); border: 1px solid var(--border); border-radius: 10px;
+        padding: 16px 18px; margin-bottom: 14px; }
+.card h3 { margin: 0 0 6px; font-size: 16px; line-height: 1.4; }
+.card h3 a { color: var(--fg); text-decoration: none; }
+.card h3 a:hover { color: var(--accent); }
+.meta { display: flex; flex-wrap: wrap; gap: 10px; font-size: 12px; color: var(--muted); margin-bottom: 10px; }
+.score { background: var(--accent); color: #fff; padding: 1px 7px; border-radius: 10px; font-weight: 600; }
+.score.s-low { background: #888; }
+.summary { margin: 8px 0 10px; }
+.bullets { margin: 6px 0 10px; padding-left: 20px; }
+.bullets li { margin-bottom: 2px; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip { background: var(--chip); color: var(--muted); padding: 2px 8px; border-radius: 10px;
+        font-size: 12px; border: 1px solid var(--border); }
+.chip.speaker { color: var(--accent); }
+.empty { color: var(--muted); font-style: italic; padding: 40px 0; text-align: center; }
+footer { color: var(--muted); font-size: 12px; margin-top: 40px; text-align: center; }
+footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>2026-04-20 · AI 与组织变革</h1>
+  <p>当日 1 条 · <a href="../index.html">最新</a> · <a href="../archive/">归档</a></p>
+</header>
+<div class="filters">
+  <label>来源
+    <select id="f-source"><option value="*">全部</option><option value="Lenny&#x27;s Newsletter">Lenny&#x27;s Newsletter</option></select>
+  </label>
+  <label>分类
+    <select id="f-category"><option value="*">全部</option><option value="analyst">analyst</option></select>
+  </label>
+  <label>最低分 <span id="f-score-val">6</span>
+    <input type="range" id="f-score" min="6" max="10" value="6">
+  </label>
+</div>
+<section class="day"><h2>2026-04-20 · 1 条</h2>
+    <article class="card" data-source="Lenny&#x27;s Newsletter" data-category="analyst" data-score="9">
+      <div class="meta">
+        <span class="score">9/10</span>
+        <span>Lenny&#x27;s Newsletter</span>
+        <span>·</span>
+        <span>analyst</span>
+        <span>·</span>
+        <span>2026-04-19</span>
+      </div>
+      <h3><a href="https://www.lennysnewsletter.com/p/why-half-of-product-managers-are-in-trouble" target="_blank" rel="noopener">Why half of product managers are in trouble | Nikhyl Singhal (Meta, Google)</a></h3>
+      <p class="summary">Meta 前产品高管 Nikhyl Singhal 指出，AI 浪潮将迎来产品管理历史上最混乱的两年。他认为当前约 50% 的产品经理面临风险，能否适应取决于是否主动拥抱 AI 而非抵触。他预测企业将裁员 30,000 人并重新招聘 8,000 名 AI-first 人才。关键分水岭是心态转变——从依赖名企背景转向展示 AI 时代的实际能力；从「疲惫微笑」的被动承受转向寻找与 AI 协作的「喜悦时刻」。这反映了 AI 对产品角色定义、招聘标准、职业生涯路径的根本性重构。</p>
+      <ul class="bullets"><li>50% 产品经理面临淘汰风险，分水岭在于是否主动重塑自己的 AI 能力与心态</li><li>企业将大规模裁员（30K）并以 AI-first 标准重新招聘（8K），改变人才结构</li><li>名企履历价值下降，实际 AI 能力与快速学习成为新竞争力</li><li>产品领导力需要从抵触 AI 转向寻找与 AI 协作的价值与「喜悦时刻」</li><li>接下来 2 年是产品管理职能最剧变的时期，需心理建设与职业重塑</li></ul>
+      <div class="chips"><span class="chip speaker">Nikhyl Singhal</span><span class="chip">人才策略</span><span class="chip">职能重构</span><span class="chip">领导力转变</span><span class="chip">AI 时代人员流动</span></div>
+    </article>
+    </section>
+<footer>
+  由 <a href="https://github.com/anthropics/claude-code" target="_blank">Claude Haiku 4.5</a> 每日构建 ·
+  生成时间 2026-04-20 12:16 CST
+</footer>
+</div>
+<script>
+function applyFilters() {
+  const src = document.getElementById('f-source').value;
+  const cat = document.getElementById('f-category').value;
+  const min = parseInt(document.getElementById('f-score').value, 10);
+  document.getElementById('f-score-val').textContent = min;
+  document.querySelectorAll('.card').forEach(c => {
+    const s = c.dataset.source, k = c.dataset.category, sc = parseInt(c.dataset.score, 10);
+    const ok = (src === '*' || s === src) && (cat === '*' || k === cat) && sc >= min;
+    c.style.display = ok ? '' : 'none';
+  });
+  document.querySelectorAll('.day').forEach(d => {
+    const any = Array.from(d.querySelectorAll('.card')).some(c => c.style.display !== 'none');
+    d.style.display = any ? '' : 'none';
+  });
+}
+document.addEventListener('DOMContentLoaded', () => {
+  ['f-source', 'f-category', 'f-score'].forEach(id => {
+    document.getElementById(id).addEventListener('input', applyFilters);
+  });
+});
+</script>
+</body>
+</html>

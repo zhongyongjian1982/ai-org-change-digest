@@ -28,6 +28,38 @@
     ]
   },
   {
+    "url": "https://sloanreview.mit.edu/article/beyond-the-model-why-responsible-ai-must-address-workforce-impact/",
+    "title": "Beyond the Model — Why Responsible AI Must Address Workforce Impact",
+    "source": "MIT Sloan Management Review",
+    "category": "business",
+    "published": "2026-04-21",
+    "fetched_at": "2026-04-21T23:36:33+08:00",
+    "score": 9,
+    "summary_zh": "MIT Sloan 与波士顿咨询联合发布责任 AI 年度报告，首次将工作力影响纳入核心议题。80% 的国际 AI 专家认为，责任 AI 治理不应仅关注系统安全，更须解决对劳动力的实际冲击。报告强调 AI 是\"社技系统\"而非纯技术问题，会重塑工作流程、分割任务、改变权力分布。忽视人力后果，责任 AI 沦为\"有道德光环的技术清单\"。多位 CEO/高管指出，AI 将引发重大就业变化，组织必须考虑员工转岗、再培养与经济稳定性。",
+    "key_points": [
+      "80% 专家认同：责任 AI 治理必须纳入工作力影响评估，不止系统风控",
+      "AI 是社技系统而非纯技术，重塑判断力、学习速度、权力关系与工作组织",
+      "当前 RAI 话语滞后，技术合规清单忽视人的真实后果与经济稳定性风险",
+      "多位大企业高管承认：AI 将显著改变就业，创新需惠及全社会包括被转型者"
+    ],
+    "tags": [
+      "工作力影响",
+      "责任 AI 治理",
+      "社技系统",
+      "劳动力转岗"
+    ],
+    "speakers": [
+      "Katia Walsh（Apollo Global Management AI 负责人）",
+      "Sanjay Sarma（MIT 教授）",
+      "Mike Linksvayer（GitHub 开发政策副总裁）",
+      "David Hardoon（资深 AI 高管）",
+      "Simon Chesterman（新加坡国立大学副教务长）",
+      "Ranier Hoffmann（EnBW 首席数据官）",
+      "Jai Ganesh（Wipro 技术副总裁）",
+      "Renato Leite Monteiro（e& 隐私/数据保护/AI/IP 副总裁）"
+    ]
+  },
+  {
     "url": "https://www.mckinsey.com/quarterly/the-five-fifty/five-fifty-a-talent-playbook-for-the-ai-era",
     "title": "A talent playbook for the AI era",
     "source": "McKinsey Insights",
@@ -104,6 +136,85 @@
       "MIT Sloan",
       "OpenAI（GPT-4）",
       "Anthropic（Claude）"
+    ]
+  },
+  {
+    "url": "https://sloanreview.mit.edu/audio/industrial-ai-for-the-physical-world-siemenss-peter-koerte/",
+    "title": "Industrial AI for the Physical World: Siemens’s Peter Koerte",
+    "source": "MIT Sloan Management Review",
+    "category": "business",
+    "published": "2026-04-21",
+    "fetched_at": "2026-04-21T23:36:27+08:00",
+    "score": 8,
+    "summary_zh": "西门子首席技术官彼得·克尔特讨论工业AI如何在幕后改造基础设施。与消费者AI不同，工业AI需要近乎完美的准确性和领域专业知识。克尔特分享了具体案例：提前数天预测列车门故障、优化建筑能耗、加速工程模拟。他强调数据共享伙伴关系和跨公司协作的价值，但改革最终取决于人员与工作流程的适应，而非单纯技术。这反映了大企业将AI融入运营核心的战略思考。",
+    "key_points": [
+      "工业AI需要近乎完美准确性和领域数据，与消费级AI有本质区别",
+      "具体案例：列车故障预测、建筑能源优化、工程仿真加速",
+      "AI转型成败关键在人员工作流程改造，非技术本身",
+      "跨公司数据共享与协作是规模化部署的前提",
+      "CEO/CTO视角阐述组织级AI战略执行"
+    ],
+    "tags": [
+      "组织变革",
+      "人才与流程",
+      "工业AI应用",
+      "数据战略"
+    ],
+    "speakers": [
+      "Peter Koerte（西门子首席技术官）",
+      "Sam Ransbotham（MIT Sloan管理评论）"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/reinventing-marketing-workflows-with-agentic-ai",
+    "title": "Reinventing marketing workflows with agentic AI",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-04-21",
+    "fetched_at": "2026-04-21T23:36:44+08:00",
+    "score": 7,
+    "summary_zh": "McKinsey 探讨生成式 AI Agent 如何重塑营销工作流程。文章强调 AI 驱动的工作流将显著提升营销团队的增长、速度和效率。核心观点是营销组织需要制定清晰的 AI 激活计划，从流程自动化、数据分析、内容生成到客户互动等环节系统性地部署 Agent，实现从人工驱动向 AI 辅助的工作方式转变。这涉及团队技能重塑、角色调整和工作流重新设计。",
+    "key_points": [
+      "Agent AI 将营销工作流从低效手工流程升级为自动化、高效能的系统",
+      "需制定清晰的 AI 激活战略，覆盖流程、人员、工具全链条",
+      "营销人员角色将从执行者向战略决策者和创意指导者转变",
+      "关键在于建立跨职能的 AI 治理和人员培训机制"
+    ],
+    "tags": [
+      "AI Agent 应用",
+      "营销工作流重构",
+      "团队能力升级",
+      "生产力提升"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  },
+  {
+    "url": "https://stratechery.com/2026/tim-cooks-impeccable-timing/",
+    "title": "Tim Cook’s Impeccable Timing",
+    "source": "Stratechery (free posts)",
+    "category": "analyst",
+    "published": "2026-04-21",
+    "fetched_at": "2026-04-21T23:36:58+08:00",
+    "score": 7,
+    "summary_zh": "Stratechery 分析 Tim Cook 从 Apple CEO 晋升为执行主席的时机与其 15 年任期成就。Cook 接任后营收增 303%、利润增 354%、公司估值从 2970 亿美元升至 4 万亿美元。文章通过 Peter Thiel 的「0 to 1」框架对比：Jobs 创造革命性产品（Mac、iPod、iPhone、iPad），Cook 则通过「Cook 准则」维护 Apple 核心价值观——专注优质产品、掌控关键技术、有选择性进入市场。Cook 的成功在于在 Jobs 去世后稳健执行与传承，被誉为最伟大的非创始人 CEO。",
+    "key_points": [
+      "Cook 15 年 CEO 任期创造惊人财务成绩：公司估值增长 1,251%，显示其战略执行能力",
+      "Jobs 创造 0-to-1 革命产品，Cook 则通过「Cook 准则」系统化地保护与延续 Apple 核心价值观",
+      "Apple University 与「Cook 准则」反映领导力交接中的文化传承——从创意突破到可持续运营",
+      "Cook 成功源于时机与定位：不是破坏性创新，而是深化执行与治理，成为最伟大的职业 CEO"
+    ],
+    "tags": [
+      "领导力交接",
+      "组织文化",
+      "战略执行",
+      "CEO 职能"
+    ],
+    "speakers": [
+      "Tim Cook",
+      "Steve Jobs",
+      "Peter Thiel"
     ]
   },
   {

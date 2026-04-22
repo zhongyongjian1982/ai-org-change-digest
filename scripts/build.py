@@ -36,7 +36,7 @@ SEEN_PATH = DATA_DIR / "seen.json"
 SOURCES_PATH = ROOT / "sources.yaml"
 
 LOOKBACK_DAYS = 7          # only consider feed entries published within this window
-RENDER_WINDOW_DAYS = 30    # how many past days to show on the index page
+RENDER_WINDOW_DAYS = 7     # how many past days to show on the index page (older → archive)
 MIN_SCORE = 6              # items below this score are dropped
 MAX_CONTENT_CHARS = 4000   # truncate article body sent to Claude
 MODEL = "claude-haiku-4-5"
@@ -397,15 +397,45 @@ def render_page(title: str, subtitle: str, days: dict[str, list[dict]], rel_root
 """
 
 
-def render_archive_index(days: list[str]) -> str:
-    items = "".join(f'<li><a href="{d}.html">{d}</a></li>' for d in days)
+_ARCHIVE_CSS_EXTRA = """
+.archive-list { list-style: none; padding: 0; margin: 0; display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 6px 16px; }
+.archive-list li { padding: 4px 0; }
+.archive-list a { color: var(--fg); text-decoration: none; }
+.archive-list a:hover { color: var(--accent); }
+.archive-list .count { color: var(--muted); font-size: 12px; margin-left: 6px; }
+"""
+
+
+def render_archive_index(days_with_counts: list[tuple[str, int]]) -> str:
+    if not days_with_counts:
+        body = '<p class="empty">暂无归档</p>'
+    else:
+        from collections import defaultdict
+        by_month: dict[str, list[tuple[str, int]]] = defaultdict(list)
+        for d, c in days_with_counts:
+            by_month[d[:7]].append((d, c))
+        sections = []
+        for month in sorted(by_month.keys(), reverse=True):
+            days_in_month = sorted(by_month[month], key=lambda x: x[0], reverse=True)
+            items = "".join(
+                f'<li><a href="{d}.html">{d}</a><span class="count">{c} 条</span></li>'
+                for d, c in days_in_month
+            )
+            total_entries = sum(c for _, c in days_in_month)
+            sections.append(
+                f'<section class="day"><h2>{month} · {len(days_in_month)} 天 / {total_entries} 条</h2>'
+                f'<ul class="archive-list">{items}</ul></section>'
+            )
+        body = "\n".join(sections)
     return f"""<!doctype html>
 <html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>归档 · AI 与组织变革</title>
-<style>{PAGE_CSS}</style></head>
+<style>{PAGE_CSS}{_ARCHIVE_CSS_EXTRA}</style></head>
 <body><div class="wrap">
 <header><h1>归档</h1><p><a href="../index.html">← 返回最新</a></p></header>
-<ul>{items or '<li class="empty">暂无归档</li>'}</ul>
+{body}
 </div></body></html>
 """
 
@@ -423,12 +453,12 @@ def rebuild_site() -> None:
 
     # Per-day archive pages (full history)
     all_files = sorted(DATA_DIR.glob("20*.json"), reverse=True)
-    days_list = []
+    days_with_counts: list[tuple[str, int]] = []
     for p in all_files:
         day = p.stem
-        days_list.append(day)
         with open(p, encoding="utf-8") as f:
             entries = json.load(f)
+        days_with_counts.append((day, len(entries)))
         html = render_page(
             f"{day} · AI 与组织变革",
             f"当日 {len(entries)} 条",
@@ -437,7 +467,9 @@ def rebuild_site() -> None:
         )
         (ARCHIVE_DIR / f"{day}.html").write_text(html, encoding="utf-8")
 
-    (ARCHIVE_DIR / "index.html").write_text(render_archive_index(days_list), encoding="utf-8")
+    (ARCHIVE_DIR / "index.html").write_text(
+        render_archive_index(days_with_counts), encoding="utf-8"
+    )
 
 
 # ---------- entrypoint ----------

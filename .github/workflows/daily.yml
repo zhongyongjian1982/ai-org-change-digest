@@ -2,7 +2,9 @@ name: daily-digest
 
 on:
   schedule:
-    - cron: "0 1 * * *"
+    # 20:37 UTC = 04:37 Beijing. Odd minute avoids GitHub's on-the-hour
+    # throttling (prior "0 1 * * *" was consistently delayed 3-4 hours).
+    - cron: "37 20 * * *"
   workflow_dispatch: {}
 
 permissions:

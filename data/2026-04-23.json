@@ -1,0 +1,50 @@
+[
+  {
+    "url": "https://openai.com/index/introducing-workspace-agents-in-chatgpt",
+    "title": "Introducing workspace agents in ChatGPT",
+    "source": "OpenAI",
+    "category": "ai-lab",
+    "published": "2026-04-22",
+    "fetched_at": "2026-04-23T05:30:53+08:00",
+    "score": 6,
+    "summary_zh": "OpenAI 推出 ChatGPT 工作区代理（Workspace Agents），这是基于 Codex 的智能代理，可自动执行复杂工作流、在云端运行并帮助团队跨工具协作。该产品涉及工作方式的转变——从手工重复任务向智能自动化升级，但当前信息有限，未涉及组织结构调整、人员配置或战略影响的深层讨论。",
+    "key_points": [
+      "Workspace Agents 自动化复杂工作流，减少团队手工操作",
+      "云端部署确保跨工具协作与安全合规",
+      "通过代理扩展团队工作能力，改变工作分配与流程"
+    ],
+    "tags": [
+      "工作流自动化",
+      "Agent 落地",
+      "生产力提升",
+      "跨工具协作"
+    ],
+    "speakers": [
+      "OpenAI"
+    ]
+  },
+  {
+    "url": "https://openai.com/academy/workspace-agents",
+    "title": "Workspace agents",
+    "source": "OpenAI",
+    "category": "ai-lab",
+    "published": "2026-04-22",
+    "fetched_at": "2026-04-23T05:30:58+08:00",
+    "score": 6,
+    "summary_zh": "OpenAI 推出 Workspace agents 功能，允许企业在 ChatGPT 中构建和部署代理来自动化重复工作流、集成工具、优化团队协作。这是生成式 AI 在企业工作场景的直接应用，涉及工作流自动化和团队运营效率提升。但文章内容较为概念化，缺乏具体的组织结构改变、招聘策略或文化影响的深度讨论。",
+    "key_points": [
+      "Workspace agents 自动化重复性工作流，释放团队生产力，转向更高价值工作",
+      "支持多工具集成，简化团队跨系统协作和数据流转",
+      "可扩展部署模式，从个人到企业级应用的能力递进"
+    ],
+    "tags": [
+      "Agent 落地",
+      "工作流自动化",
+      "生产力提升",
+      "工具集成"
+    ],
+    "speakers": [
+      "OpenAI"
+    ]
+  }
+]

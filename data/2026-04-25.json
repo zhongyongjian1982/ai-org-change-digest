@@ -1,0 +1,26 @@
+[
+  {
+    "url": "https://www.mckinsey.com/capabilities/quantumblack/our-insights/from-promise-to-impact-how-companies-can-measure-and-realize-the-full-value-of-ai",
+    "title": "From promise to impact: How companies can measure—and realize—the full value of AI",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-04-24",
+    "fetched_at": "2026-04-25T05:29:21+08:00",
+    "score": 8,
+    "summary_zh": "麦肯锡指出，AI 的真正价值取决于企业能否建立问责机制和科学的衡量体系。领先企业不是盲目扩大 AI 投资，而是通过严格的测量和验证，只在证明有效的场景上规模化。这要求领导层明确定义 AI 投资的关键指标、建立跨职能的治理框架，并将 AI 落地与具体的商业成果挂钩，而非仅关注技术本身。",
+    "key_points": [
+      "问责与衡量是 AI 从潜力转化为现实价值的关键，企业需建立科学的 KPI 体系",
+      "领先者采取 validate-then-scale 策略，先小范围验证效果再全面推广，避免盲目投资",
+      "AI 治理需要跨部门协作和领导层承诺，将技术与业务成果紧密关联"
+    ],
+    "tags": [
+      "AI 治理",
+      "价值衡量",
+      "规模化落地",
+      "领导力与问责"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  }
+]

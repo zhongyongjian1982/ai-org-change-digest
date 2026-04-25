@@ -3,121 +3,159 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>2026-04-23 · AI 与组织变革</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+<title>2026-04-23 — AI TRANSFORMATION</title>
 <style>
-:root {
-  --bg: #0f1419; --panel: #161b22; --border: #2a313c;
-  --fg: #e6edf3; --muted: #8b949e; --accent: #58a6ff; --chip: #1f2937;
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #0a0a0a; color: #999; font-family: system-ui, -apple-system, sans-serif; line-height: 1.6; min-height: 100vh; }
+a { color: inherit; text-decoration: none; }
+a:hover { color: #ccc; }
+.back-link { position: fixed; top: 18px; left: 20px; font-family: 'VT323', monospace; font-size: 1rem; color: #444; z-index: 100; letter-spacing: 0.02em; transition: color 0.15s; }
+.back-link:hover { color: #888; }
+header { padding: 60px 20px 32px; text-align: center; }
+header h1 { font-family: 'VT323', monospace; font-size: clamp(1.8rem, 5.5vw, 3.6rem); color: #888; letter-spacing: 0.12em; line-height: 1.1; margin-bottom: 10px; word-spacing: 0.1em; }
+header p { font-size: 0.78rem; color: #444; letter-spacing: 0.1em; }
+header p a { color: #555; transition: color 0.15s; }
+header p a:hover { color: #888; }
+.controls { background: #0a0a0a; border-bottom: 1px solid #161616; position: sticky; top: 0; z-index: 50; }
+.tabs { display: flex; overflow-x: auto; scrollbar-width: none; padding: 0 16px; max-width: 760px; margin: 0 auto; }
+.tabs::-webkit-scrollbar { display: none; }
+.tab { flex-shrink: 0; background: none; border: none; border-bottom: 2px solid transparent; padding: 12px 10px; font-size: 0.75rem; color: #555; cursor: pointer; font-family: system-ui, sans-serif; display: flex; align-items: center; gap: 4px; white-space: nowrap; transition: color 0.15s, border-color 0.15s; letter-spacing: 0.03em; }
+.tab.active { color: #999; border-bottom-color: #555; }
+.tab:hover { color: #888; }
+.badge { font-size: 0.65rem; color: #444; }
+.tab.active .badge { color: #777; }
+.filter-bar { display: flex; align-items: center; gap: 10px; padding: 8px 16px; border-top: 1px solid #111; max-width: 760px; margin: 0 auto; font-size: 0.72rem; color: #444; flex-wrap: wrap; }
+.filter-bar > span { letter-spacing: 0.05em; }
+.filter-bar .sep { color: #222; }
+.score-filter { display: flex; gap: 6px; flex-wrap: wrap; }
+.sf-btn { background: none; border: 1px solid #222; border-radius: 3px; padding: 2px 10px; font-size: 0.7rem; color: #555; cursor: pointer; font-family: inherit; transition: color 0.15s, border-color 0.15s; letter-spacing: 0.05em; }
+.sf-btn.active, .sf-btn:hover { color: #999; border-color: #555; }
+.source-select { background: #0a0a0a; border: 1px solid #222; border-radius: 3px; padding: 2px 8px; font-size: 0.7rem; color: #777; font-family: inherit; cursor: pointer; outline: none; }
+.source-select:hover { color: #999; border-color: #555; }
+.source-select option { background: #0a0a0a; color: #999; }
+.list { max-width: 760px; margin: 0 auto; padding: 8px 20px 80px; }
+.day { padding-top: 28px; }
+.day-head { font-size: 0.7rem; color: #444; letter-spacing: 0.12em; padding: 0 0 10px; border-bottom: 1px solid #161616; margin-bottom: 4px; text-transform: uppercase; }
+.day-head .count { color: #333; margin-left: 6px; }
+.entry { padding: 18px 0; border-bottom: 1px solid #111; }
+.entry.hidden { display: none; }
+.entry-meta { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; font-size: 0.7rem; color: #444; margin-bottom: 6px; letter-spacing: 0.04em; }
+.entry-meta .sep { color: #222; }
+.entry-score { color: #888; font-variant-numeric: tabular-nums; letter-spacing: 0.05em; }
+.entry-score.s-low { color: #555; }
+.entry-title { display: block; font-size: 0.95rem; color: #999; transition: color 0.15s; line-height: 1.5; margin-bottom: 8px; }
+.entry-title:hover { color: #ccc; }
+.entry-summary { font-size: 0.82rem; color: #666; line-height: 1.7; margin-bottom: 8px; }
+.entry-bullets { list-style: none; padding: 0; margin: 6px 0 10px; }
+.entry-bullets li { font-size: 0.78rem; color: #555; line-height: 1.7; padding-left: 14px; position: relative; }
+.entry-bullets li::before { content: '·'; position: absolute; left: 4px; color: #444; }
+.entry-chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.entry-chip { font-size: 0.66rem; color: #555; border: 1px solid #222; padding: 1px 7px; border-radius: 2px; letter-spacing: 0.04em; }
+.entry-chip.speaker { color: #777; border-color: #2a2a2a; }
+.empty-state { text-align: center; padding: 60px 20px; color: #444; font-size: 0.82rem; }
+@media (max-width: 480px) {
+  .list { padding: 8px 14px 60px; }
+  .entry-title { font-size: 0.88rem; }
+  .filter-bar { font-size: 0.68rem; gap: 8px; }
 }
-@media (prefers-color-scheme: light) {
-  :root { --bg:#f7f8fa; --panel:#fff; --border:#e3e6eb; --fg:#1a1f2b; --muted:#6a7380; --accent:#1e5fd4; --chip:#eef1f5; }
-}
-* { box-sizing: border-box; }
-body { margin:0; font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "PingFang SC", "Microsoft YaHei", sans-serif;
-       background: var(--bg); color: var(--fg); line-height: 1.6; }
-.wrap { max-width: 900px; margin: 0 auto; padding: 32px 20px 80px; }
-header h1 { font-size: 26px; margin: 0 0 6px; }
-header p { color: var(--muted); margin: 0 0 24px; }
-.filters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; padding: 12px;
-           background: var(--panel); border: 1px solid var(--border); border-radius: 10px; }
-.filters label { font-size: 13px; color: var(--muted); display: flex; align-items: center; gap: 6px; }
-.filters select, .filters input[type=range] { background: var(--chip); color: var(--fg); border: 1px solid var(--border);
-           border-radius: 6px; padding: 4px 8px; font-size: 13px; }
-.day { margin-bottom: 36px; }
-.day h2 { font-size: 18px; border-bottom: 1px solid var(--border); padding-bottom: 6px; margin: 0 0 14px; }
-.card { background: var(--panel); border: 1px solid var(--border); border-radius: 10px;
-        padding: 16px 18px; margin-bottom: 14px; }
-.card h3 { margin: 0 0 6px; font-size: 16px; line-height: 1.4; }
-.card h3 a { color: var(--fg); text-decoration: none; }
-.card h3 a:hover { color: var(--accent); }
-.meta { display: flex; flex-wrap: wrap; gap: 10px; font-size: 12px; color: var(--muted); margin-bottom: 10px; }
-.score { background: var(--accent); color: #fff; padding: 1px 7px; border-radius: 10px; font-weight: 600; }
-.score.s-low { background: #888; }
-.summary { margin: 8px 0 10px; }
-.bullets { margin: 6px 0 10px; padding-left: 20px; }
-.bullets li { margin-bottom: 2px; }
-.chips { display: flex; flex-wrap: wrap; gap: 6px; }
-.chip { background: var(--chip); color: var(--muted); padding: 2px 8px; border-radius: 10px;
-        font-size: 12px; border: 1px solid var(--border); }
-.chip.speaker { color: var(--accent); }
-.empty { color: var(--muted); font-style: italic; padding: 40px 0; text-align: center; }
-footer { color: var(--muted); font-size: 12px; margin-top: 40px; text-align: center; }
-footer a { color: var(--muted); }
+footer { text-align: center; padding: 30px 20px; color: #333; font-size: 0.68rem; letter-spacing: 0.08em; }
+footer a { color: #444; transition: color 0.15s; }
+footer a:hover { color: #777; }
 </style>
 </head>
 <body>
-<div class="wrap">
+<a class="back-link" href="https://www.tedzhong.com/">← tedzhong.com</a>
 <header>
-  <h1>2026-04-23 · AI 与组织变革</h1>
-  <p>当日 2 条 · <a href="../index.html">最新</a> · <a href="../archive/">归档</a></p>
+  <h1>2026-04-23</h1>
+  <p>2 条 · <a href="../index.html">← 返回最新</a> · <a href="./">归档</a></p>
 </header>
-<div class="filters">
-  <label>来源
-    <select id="f-source"><option value="*">全部</option><option value="OpenAI">OpenAI</option></select>
-  </label>
-  <label>分类
-    <select id="f-category"><option value="*">全部</option><option value="ai-lab">ai-lab</option></select>
-  </label>
-  <label>最低分 <span id="f-score-val">6</span>
-    <input type="range" id="f-score" min="6" max="10" value="6">
-  </label>
+<div class="controls">
+  <div class="tabs"><button class="tab active" data-cat="all">全部<span class="badge">2</span></button><button class="tab" data-cat="ai-lab">AI 实验室<span class="badge">2</span></button></div>
+  <div class="filter-bar">
+    <span>评分</span>
+    <div class="score-filter">
+      <button class="sf-btn active" data-score="6">≥6</button>
+      <button class="sf-btn" data-score="7">≥7</button>
+      <button class="sf-btn" data-score="8">≥8</button>
+      <button class="sf-btn" data-score="9">≥9</button>
+    </div>
+    <span class="sep">·</span>
+    <span>来源</span>
+    <select class="source-select" id="f-source"><option value="*">全部</option><option value="OpenAI">OpenAI</option></select>
+  </div>
 </div>
-<section class="day"><h2>2026-04-23 · 2 条</h2>
-    <article class="card" data-source="OpenAI" data-category="ai-lab" data-score="6">
-      <div class="meta">
-        <span class="score s-low">6/10</span>
+<div class="list">
+<section class="day"><div class="day-head">2026-04-23<span class="count">· 2 条</span></div>
+    <article class="entry" data-source="OpenAI" data-category="ai-lab" data-score="6">
+      <div class="entry-meta">
+        <span class="entry-score s-low">6/10</span>
+        <span class="sep">·</span>
         <span>OpenAI</span>
-        <span>·</span>
-        <span>ai-lab</span>
-        <span>·</span>
+        <span class="sep">·</span>
+        <span>AI 实验室</span>
+        <span class="sep">·</span>
         <span>2026-04-22</span>
       </div>
-      <h3><a href="https://openai.com/index/introducing-workspace-agents-in-chatgpt" target="_blank" rel="noopener">Introducing workspace agents in ChatGPT</a></h3>
-      <p class="summary">OpenAI 推出 ChatGPT 工作区代理（Workspace Agents），这是基于 Codex 的智能代理，可自动执行复杂工作流、在云端运行并帮助团队跨工具协作。该产品涉及工作方式的转变——从手工重复任务向智能自动化升级，但当前信息有限，未涉及组织结构调整、人员配置或战略影响的深层讨论。</p>
-      <ul class="bullets"><li>Workspace Agents 自动化复杂工作流，减少团队手工操作</li><li>云端部署确保跨工具协作与安全合规</li><li>通过代理扩展团队工作能力，改变工作分配与流程</li></ul>
-      <div class="chips"><span class="chip speaker">OpenAI</span><span class="chip">工作流自动化</span><span class="chip">Agent 落地</span><span class="chip">生产力提升</span><span class="chip">跨工具协作</span></div>
+      <a class="entry-title" href="https://openai.com/index/introducing-workspace-agents-in-chatgpt" target="_blank" rel="noopener">Introducing workspace agents in ChatGPT</a>
+      <p class="entry-summary">OpenAI 推出 ChatGPT 工作区代理（Workspace Agents），这是基于 Codex 的智能代理，可自动执行复杂工作流、在云端运行并帮助团队跨工具协作。该产品涉及工作方式的转变——从手工重复任务向智能自动化升级，但当前信息有限，未涉及组织结构调整、人员配置或战略影响的深层讨论。</p>
+      <ul class="entry-bullets"><li>Workspace Agents 自动化复杂工作流，减少团队手工操作</li><li>云端部署确保跨工具协作与安全合规</li><li>通过代理扩展团队工作能力，改变工作分配与流程</li></ul>
+      <div class="entry-chips"><span class="entry-chip speaker">OpenAI</span><span class="entry-chip">工作流自动化</span><span class="entry-chip">Agent 落地</span><span class="entry-chip">生产力提升</span><span class="entry-chip">跨工具协作</span></div>
     </article>
     
-    <article class="card" data-source="OpenAI" data-category="ai-lab" data-score="6">
-      <div class="meta">
-        <span class="score s-low">6/10</span>
+    <article class="entry" data-source="OpenAI" data-category="ai-lab" data-score="6">
+      <div class="entry-meta">
+        <span class="entry-score s-low">6/10</span>
+        <span class="sep">·</span>
         <span>OpenAI</span>
-        <span>·</span>
-        <span>ai-lab</span>
-        <span>·</span>
+        <span class="sep">·</span>
+        <span>AI 实验室</span>
+        <span class="sep">·</span>
         <span>2026-04-22</span>
       </div>
-      <h3><a href="https://openai.com/academy/workspace-agents" target="_blank" rel="noopener">Workspace agents</a></h3>
-      <p class="summary">OpenAI 推出 Workspace agents 功能，允许企业在 ChatGPT 中构建和部署代理来自动化重复工作流、集成工具、优化团队协作。这是生成式 AI 在企业工作场景的直接应用，涉及工作流自动化和团队运营效率提升。但文章内容较为概念化，缺乏具体的组织结构改变、招聘策略或文化影响的深度讨论。</p>
-      <ul class="bullets"><li>Workspace agents 自动化重复性工作流，释放团队生产力，转向更高价值工作</li><li>支持多工具集成，简化团队跨系统协作和数据流转</li><li>可扩展部署模式，从个人到企业级应用的能力递进</li></ul>
-      <div class="chips"><span class="chip speaker">OpenAI</span><span class="chip">Agent 落地</span><span class="chip">工作流自动化</span><span class="chip">生产力提升</span><span class="chip">工具集成</span></div>
+      <a class="entry-title" href="https://openai.com/academy/workspace-agents" target="_blank" rel="noopener">Workspace agents</a>
+      <p class="entry-summary">OpenAI 推出 Workspace agents 功能，允许企业在 ChatGPT 中构建和部署代理来自动化重复工作流、集成工具、优化团队协作。这是生成式 AI 在企业工作场景的直接应用，涉及工作流自动化和团队运营效率提升。但文章内容较为概念化，缺乏具体的组织结构改变、招聘策略或文化影响的深度讨论。</p>
+      <ul class="entry-bullets"><li>Workspace agents 自动化重复性工作流，释放团队生产力，转向更高价值工作</li><li>支持多工具集成，简化团队跨系统协作和数据流转</li><li>可扩展部署模式，从个人到企业级应用的能力递进</li></ul>
+      <div class="entry-chips"><span class="entry-chip speaker">OpenAI</span><span class="entry-chip">Agent 落地</span><span class="entry-chip">工作流自动化</span><span class="entry-chip">生产力提升</span><span class="entry-chip">工具集成</span></div>
     </article>
     </section>
-<footer>
-  由 <a href="https://github.com/anthropics/claude-code" target="_blank">Claude Haiku 4.5</a> 每日构建 ·
-  生成时间 2026-04-25 05:29 CST
-</footer>
 </div>
+<footer>
+  由 Claude Haiku 4.5 每日构建 · 2026-04-25 20:04 CST
+</footer>
 <script>
 function applyFilters() {
-  const src = document.getElementById('f-source').value;
-  const cat = document.getElementById('f-category').value;
-  const min = parseInt(document.getElementById('f-score').value, 10);
-  document.getElementById('f-score-val').textContent = min;
-  document.querySelectorAll('.card').forEach(c => {
-    const s = c.dataset.source, k = c.dataset.category, sc = parseInt(c.dataset.score, 10);
-    const ok = (src === '*' || s === src) && (cat === '*' || k === cat) && sc >= min;
-    c.style.display = ok ? '' : 'none';
+  const activeTab = document.querySelector('.tab.active');
+  const cat = activeTab ? activeTab.dataset.cat : 'all';
+  const activeScore = document.querySelector('.sf-btn.active');
+  const minScore = activeScore ? parseInt(activeScore.dataset.score, 10) : 6;
+  const srcEl = document.getElementById('f-source');
+  const src = srcEl ? srcEl.value : '*';
+  document.querySelectorAll('.entry').forEach(e => {
+    const ec = e.dataset.category, es = e.dataset.source, esc = parseInt(e.dataset.score, 10);
+    const show = (cat === 'all' || ec === cat) && (src === '*' || es === src) && esc >= minScore;
+    e.classList.toggle('hidden', !show);
   });
   document.querySelectorAll('.day').forEach(d => {
-    const any = Array.from(d.querySelectorAll('.card')).some(c => c.style.display !== 'none');
+    const any = Array.from(d.querySelectorAll('.entry')).some(e => !e.classList.contains('hidden'));
     d.style.display = any ? '' : 'none';
   });
 }
 document.addEventListener('DOMContentLoaded', () => {
-  ['f-source', 'f-category', 'f-score'].forEach(id => {
-    document.getElementById(id).addEventListener('input', applyFilters);
-  });
+  document.querySelectorAll('.tab').forEach(t => t.addEventListener('click', () => {
+    document.querySelectorAll('.tab').forEach(x => x.classList.remove('active'));
+    t.classList.add('active');
+    applyFilters();
+  }));
+  document.querySelectorAll('.sf-btn').forEach(b => b.addEventListener('click', () => {
+    document.querySelectorAll('.sf-btn').forEach(x => x.classList.remove('active'));
+    b.classList.add('active');
+    applyFilters();
+  }));
+  const srcEl = document.getElementById('f-source');
+  if (srcEl) srcEl.addEventListener('change', applyFilters);
 });
 </script>
 </body>

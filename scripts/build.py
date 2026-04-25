@@ -258,139 +258,223 @@ def load_all_days(max_days: int) -> dict[str, list[dict]]:
 # ---------- rendering ----------
 
 PAGE_CSS = """
-:root {
-  --bg: #0f1419; --panel: #161b22; --border: #2a313c;
-  --fg: #e6edf3; --muted: #8b949e; --accent: #58a6ff; --chip: #1f2937;
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #0a0a0a; color: #999; font-family: system-ui, -apple-system, sans-serif; line-height: 1.6; min-height: 100vh; }
+a { color: inherit; text-decoration: none; }
+a:hover { color: #ccc; }
+.back-link { position: fixed; top: 18px; left: 20px; font-family: 'VT323', monospace; font-size: 1rem; color: #444; z-index: 100; letter-spacing: 0.02em; transition: color 0.15s; }
+.back-link:hover { color: #888; }
+header { padding: 60px 20px 32px; text-align: center; }
+header h1 { font-family: 'VT323', monospace; font-size: clamp(1.8rem, 5.5vw, 3.6rem); color: #888; letter-spacing: 0.12em; line-height: 1.1; margin-bottom: 10px; word-spacing: 0.1em; }
+header p { font-size: 0.78rem; color: #444; letter-spacing: 0.1em; }
+header p a { color: #555; transition: color 0.15s; }
+header p a:hover { color: #888; }
+.controls { background: #0a0a0a; border-bottom: 1px solid #161616; position: sticky; top: 0; z-index: 50; }
+.tabs { display: flex; overflow-x: auto; scrollbar-width: none; padding: 0 16px; max-width: 760px; margin: 0 auto; }
+.tabs::-webkit-scrollbar { display: none; }
+.tab { flex-shrink: 0; background: none; border: none; border-bottom: 2px solid transparent; padding: 12px 10px; font-size: 0.75rem; color: #555; cursor: pointer; font-family: system-ui, sans-serif; display: flex; align-items: center; gap: 4px; white-space: nowrap; transition: color 0.15s, border-color 0.15s; letter-spacing: 0.03em; }
+.tab.active { color: #999; border-bottom-color: #555; }
+.tab:hover { color: #888; }
+.badge { font-size: 0.65rem; color: #444; }
+.tab.active .badge { color: #777; }
+.filter-bar { display: flex; align-items: center; gap: 10px; padding: 8px 16px; border-top: 1px solid #111; max-width: 760px; margin: 0 auto; font-size: 0.72rem; color: #444; flex-wrap: wrap; }
+.filter-bar > span { letter-spacing: 0.05em; }
+.filter-bar .sep { color: #222; }
+.score-filter { display: flex; gap: 6px; flex-wrap: wrap; }
+.sf-btn { background: none; border: 1px solid #222; border-radius: 3px; padding: 2px 10px; font-size: 0.7rem; color: #555; cursor: pointer; font-family: inherit; transition: color 0.15s, border-color 0.15s; letter-spacing: 0.05em; }
+.sf-btn.active, .sf-btn:hover { color: #999; border-color: #555; }
+.source-select { background: #0a0a0a; border: 1px solid #222; border-radius: 3px; padding: 2px 8px; font-size: 0.7rem; color: #777; font-family: inherit; cursor: pointer; outline: none; }
+.source-select:hover { color: #999; border-color: #555; }
+.source-select option { background: #0a0a0a; color: #999; }
+.list { max-width: 760px; margin: 0 auto; padding: 8px 20px 80px; }
+.day { padding-top: 28px; }
+.day-head { font-size: 0.7rem; color: #444; letter-spacing: 0.12em; padding: 0 0 10px; border-bottom: 1px solid #161616; margin-bottom: 4px; text-transform: uppercase; }
+.day-head .count { color: #333; margin-left: 6px; }
+.entry { padding: 18px 0; border-bottom: 1px solid #111; }
+.entry.hidden { display: none; }
+.entry-meta { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; font-size: 0.7rem; color: #444; margin-bottom: 6px; letter-spacing: 0.04em; }
+.entry-meta .sep { color: #222; }
+.entry-score { color: #888; font-variant-numeric: tabular-nums; letter-spacing: 0.05em; }
+.entry-score.s-low { color: #555; }
+.entry-title { display: block; font-size: 0.95rem; color: #999; transition: color 0.15s; line-height: 1.5; margin-bottom: 8px; }
+.entry-title:hover { color: #ccc; }
+.entry-summary { font-size: 0.82rem; color: #666; line-height: 1.7; margin-bottom: 8px; }
+.entry-bullets { list-style: none; padding: 0; margin: 6px 0 10px; }
+.entry-bullets li { font-size: 0.78rem; color: #555; line-height: 1.7; padding-left: 14px; position: relative; }
+.entry-bullets li::before { content: '·'; position: absolute; left: 4px; color: #444; }
+.entry-chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.entry-chip { font-size: 0.66rem; color: #555; border: 1px solid #222; padding: 1px 7px; border-radius: 2px; letter-spacing: 0.04em; }
+.entry-chip.speaker { color: #777; border-color: #2a2a2a; }
+.empty-state { text-align: center; padding: 60px 20px; color: #444; font-size: 0.82rem; }
+@media (max-width: 480px) {
+  .list { padding: 8px 14px 60px; }
+  .entry-title { font-size: 0.88rem; }
+  .filter-bar { font-size: 0.68rem; gap: 8px; }
 }
-@media (prefers-color-scheme: light) {
-  :root { --bg:#f7f8fa; --panel:#fff; --border:#e3e6eb; --fg:#1a1f2b; --muted:#6a7380; --accent:#1e5fd4; --chip:#eef1f5; }
-}
-* { box-sizing: border-box; }
-body { margin:0; font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "PingFang SC", "Microsoft YaHei", sans-serif;
-       background: var(--bg); color: var(--fg); line-height: 1.6; }
-.wrap { max-width: 900px; margin: 0 auto; padding: 32px 20px 80px; }
-header h1 { font-size: 26px; margin: 0 0 6px; }
-header p { color: var(--muted); margin: 0 0 24px; }
-.filters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; padding: 12px;
-           background: var(--panel); border: 1px solid var(--border); border-radius: 10px; }
-.filters label { font-size: 13px; color: var(--muted); display: flex; align-items: center; gap: 6px; }
-.filters select, .filters input[type=range] { background: var(--chip); color: var(--fg); border: 1px solid var(--border);
-           border-radius: 6px; padding: 4px 8px; font-size: 13px; }
-.day { margin-bottom: 36px; }
-.day h2 { font-size: 18px; border-bottom: 1px solid var(--border); padding-bottom: 6px; margin: 0 0 14px; }
-.card { background: var(--panel); border: 1px solid var(--border); border-radius: 10px;
-        padding: 16px 18px; margin-bottom: 14px; }
-.card h3 { margin: 0 0 6px; font-size: 16px; line-height: 1.4; }
-.card h3 a { color: var(--fg); text-decoration: none; }
-.card h3 a:hover { color: var(--accent); }
-.meta { display: flex; flex-wrap: wrap; gap: 10px; font-size: 12px; color: var(--muted); margin-bottom: 10px; }
-.score { background: var(--accent); color: #fff; padding: 1px 7px; border-radius: 10px; font-weight: 600; }
-.score.s-low { background: #888; }
-.summary { margin: 8px 0 10px; }
-.bullets { margin: 6px 0 10px; padding-left: 20px; }
-.bullets li { margin-bottom: 2px; }
-.chips { display: flex; flex-wrap: wrap; gap: 6px; }
-.chip { background: var(--chip); color: var(--muted); padding: 2px 8px; border-radius: 10px;
-        font-size: 12px; border: 1px solid var(--border); }
-.chip.speaker { color: var(--accent); }
-.empty { color: var(--muted); font-style: italic; padding: 40px 0; text-align: center; }
-footer { color: var(--muted); font-size: 12px; margin-top: 40px; text-align: center; }
-footer a { color: var(--muted); }
+footer { text-align: center; padding: 30px 20px; color: #333; font-size: 0.68rem; letter-spacing: 0.08em; }
+footer a { color: #444; transition: color 0.15s; }
+footer a:hover { color: #777; }
 """
 
 FILTER_JS = """
 function applyFilters() {
-  const src = document.getElementById('f-source').value;
-  const cat = document.getElementById('f-category').value;
-  const min = parseInt(document.getElementById('f-score').value, 10);
-  document.getElementById('f-score-val').textContent = min;
-  document.querySelectorAll('.card').forEach(c => {
-    const s = c.dataset.source, k = c.dataset.category, sc = parseInt(c.dataset.score, 10);
-    const ok = (src === '*' || s === src) && (cat === '*' || k === cat) && sc >= min;
-    c.style.display = ok ? '' : 'none';
+  const activeTab = document.querySelector('.tab.active');
+  const cat = activeTab ? activeTab.dataset.cat : 'all';
+  const activeScore = document.querySelector('.sf-btn.active');
+  const minScore = activeScore ? parseInt(activeScore.dataset.score, 10) : 6;
+  const srcEl = document.getElementById('f-source');
+  const src = srcEl ? srcEl.value : '*';
+  document.querySelectorAll('.entry').forEach(e => {
+    const ec = e.dataset.category, es = e.dataset.source, esc = parseInt(e.dataset.score, 10);
+    const show = (cat === 'all' || ec === cat) && (src === '*' || es === src) && esc >= minScore;
+    e.classList.toggle('hidden', !show);
   });
   document.querySelectorAll('.day').forEach(d => {
-    const any = Array.from(d.querySelectorAll('.card')).some(c => c.style.display !== 'none');
+    const any = Array.from(d.querySelectorAll('.entry')).some(e => !e.classList.contains('hidden'));
     d.style.display = any ? '' : 'none';
   });
 }
 document.addEventListener('DOMContentLoaded', () => {
-  ['f-source', 'f-category', 'f-score'].forEach(id => {
-    document.getElementById(id).addEventListener('input', applyFilters);
-  });
+  document.querySelectorAll('.tab').forEach(t => t.addEventListener('click', () => {
+    document.querySelectorAll('.tab').forEach(x => x.classList.remove('active'));
+    t.classList.add('active');
+    applyFilters();
+  }));
+  document.querySelectorAll('.sf-btn').forEach(b => b.addEventListener('click', () => {
+    document.querySelectorAll('.sf-btn').forEach(x => x.classList.remove('active'));
+    b.classList.add('active');
+    applyFilters();
+  }));
+  const srcEl = document.getElementById('f-source');
+  if (srcEl) srcEl.addEventListener('change', applyFilters);
 });
 """
 
+CATEGORY_LABELS = {
+    "ai-lab": "AI 实验室",
+    "analyst": "分析师",
+    "business": "商业",
+    "vc": "投资",
+    "podcast": "播客",
+    "other": "其他",
+}
 
-def render_card(e: dict) -> str:
-    score_class = "score" + (" s-low" if e["score"] < 7 else "")
+
+def cat_label(slug: str) -> str:
+    return CATEGORY_LABELS.get(slug, slug)
+
+
+def render_entry(e: dict) -> str:
+    score_class = "entry-score" + (" s-low" if e["score"] < 7 else "")
     bullets = "".join(f"<li>{escape(p)}</li>" for p in e.get("key_points", []))
-    tags = "".join(f'<span class="chip">{escape(t)}</span>' for t in e.get("tags", []))
-    speakers = "".join(f'<span class="chip speaker">{escape(s)}</span>' for s in e.get("speakers", []))
+    tags = "".join(f'<span class="entry-chip">{escape(t)}</span>' for t in e.get("tags", []))
+    speakers = "".join(f'<span class="entry-chip speaker">{escape(s)}</span>' for s in e.get("speakers", []))
+    chips = f'<div class="entry-chips">{speakers}{tags}</div>' if (tags or speakers) else ""
+    bullets_html = f'<ul class="entry-bullets">{bullets}</ul>' if bullets else ""
     return f"""
-    <article class="card" data-source="{escape(e['source'])}" data-category="{escape(e['category'])}" data-score="{e['score']}">
-      <div class="meta">
+    <article class="entry" data-source="{escape(e['source'])}" data-category="{escape(e['category'])}" data-score="{e['score']}">
+      <div class="entry-meta">
         <span class="{score_class}">{e['score']}/10</span>
+        <span class="sep">·</span>
         <span>{escape(e['source'])}</span>
-        <span>·</span>
-        <span>{escape(e['category'])}</span>
-        <span>·</span>
+        <span class="sep">·</span>
+        <span>{escape(cat_label(e['category']))}</span>
+        <span class="sep">·</span>
         <span>{escape(e['published'])}</span>
       </div>
-      <h3><a href="{escape(e['url'])}" target="_blank" rel="noopener">{escape(e['title'])}</a></h3>
-      <p class="summary">{escape(e['summary_zh'])}</p>
-      <ul class="bullets">{bullets}</ul>
-      <div class="chips">{speakers}{tags}</div>
+      <a class="entry-title" href="{escape(e['url'])}" target="_blank" rel="noopener">{escape(e['title'])}</a>
+      <p class="entry-summary">{escape(e['summary_zh'])}</p>
+      {bullets_html}
+      {chips}
     </article>
     """
 
 
-def render_page(title: str, subtitle: str, days: dict[str, list[dict]], rel_root: str = "") -> str:
-    sources = sorted({e["source"] for entries in days.values() for e in entries})
-    categories = sorted({e["category"] for entries in days.values() for e in entries})
-    opts_src = "\n".join(f'<option value="{escape(s)}">{escape(s)}</option>' for s in sources)
-    opts_cat = "\n".join(f'<option value="{escape(c)}">{escape(c)}</option>' for c in categories)
+_HEAD = """<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">"""
+
+
+def render_page(
+    heading: str,
+    subtitle: str,
+    days: dict[str, list[dict]],
+    rel_root: str = "",
+    page_title: str | None = None,
+    show_filters: bool = True,
+) -> str:
+    all_entries = [e for entries in days.values() for e in entries]
+    sources = sorted({e["source"] for e in all_entries})
+    categories = sorted({e["category"] for e in all_entries})
+    cat_counts: dict[str, int] = {c: 0 for c in categories}
+    for e in all_entries:
+        cat_counts[e["category"]] = cat_counts.get(e["category"], 0) + 1
+
+    cat_tabs = ['<button class="tab active" data-cat="all">全部'
+                f'<span class="badge">{len(all_entries)}</span></button>']
+    for c in categories:
+        cat_tabs.append(
+            f'<button class="tab" data-cat="{escape(c)}">{escape(cat_label(c))}'
+            f'<span class="badge">{cat_counts[c]}</span></button>'
+        )
+    tabs_html = "".join(cat_tabs)
+
+    opts_src = "".join(f'<option value="{escape(s)}">{escape(s)}</option>' for s in sources)
 
     body = []
     for day, entries in days.items():
         if not entries:
             continue
         entries = sorted(entries, key=lambda e: (-e["score"], e["source"]))
-        cards = "".join(render_card(e) for e in entries)
-        body.append(f'<section class="day"><h2>{escape(day)} · {len(entries)} 条</h2>{cards}</section>')
-    content = "\n".join(body) or '<div class="empty">暂无数据。首次运行后会在这里显示。</div>'
+        items = "".join(render_entry(e) for e in entries)
+        body.append(
+            f'<section class="day">'
+            f'<div class="day-head">{escape(day)}<span class="count">· {len(entries)} 条</span></div>'
+            f'{items}</section>'
+        )
+    content = "\n".join(body) or '<div class="empty-state">暂无数据。</div>'
 
+    controls_html = ""
+    if show_filters and all_entries:
+        controls_html = f"""<div class="controls">
+  <div class="tabs">{tabs_html}</div>
+  <div class="filter-bar">
+    <span>评分</span>
+    <div class="score-filter">
+      <button class="sf-btn active" data-score="6">≥6</button>
+      <button class="sf-btn" data-score="7">≥7</button>
+      <button class="sf-btn" data-score="8">≥8</button>
+      <button class="sf-btn" data-score="9">≥9</button>
+    </div>
+    <span class="sep">·</span>
+    <span>来源</span>
+    <select class="source-select" id="f-source"><option value="*">全部</option>{opts_src}</select>
+  </div>
+</div>"""
+
+    final_title = page_title or heading
     return f"""<!doctype html>
 <html lang="zh-CN">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>{escape(title)}</title>
+{_HEAD}
+<title>{escape(final_title)}</title>
 <style>{PAGE_CSS}</style>
 </head>
 <body>
-<div class="wrap">
+<a class="back-link" href="https://www.tedzhong.com/">← tedzhong.com</a>
 <header>
-  <h1>{escape(title)}</h1>
-  <p>{escape(subtitle)} · <a href="{rel_root}index.html">最新</a> · <a href="{rel_root}archive/">归档</a></p>
+  <h1>{escape(heading)}</h1>
+  <p>{subtitle}</p>
 </header>
-<div class="filters">
-  <label>来源
-    <select id="f-source"><option value="*">全部</option>{opts_src}</select>
-  </label>
-  <label>分类
-    <select id="f-category"><option value="*">全部</option>{opts_cat}</select>
-  </label>
-  <label>最低分 <span id="f-score-val">6</span>
-    <input type="range" id="f-score" min="6" max="10" value="6">
-  </label>
-</div>
+{controls_html}
+<div class="list">
 {content}
-<footer>
-  由 <a href="https://github.com/anthropics/claude-code" target="_blank">Claude Haiku 4.5</a> 每日构建 ·
-  生成时间 {datetime.now(CNY_TZ).strftime('%Y-%m-%d %H:%M CST')}
-</footer>
 </div>
+<footer>
+  由 Claude Haiku 4.5 每日构建 · {datetime.now(CNY_TZ).strftime('%Y-%m-%d %H:%M CST')}
+</footer>
 <script>{FILTER_JS}</script>
 </body>
 </html>
@@ -399,17 +483,19 @@ def render_page(title: str, subtitle: str, days: dict[str, list[dict]], rel_root
 
 _ARCHIVE_CSS_EXTRA = """
 .archive-list { list-style: none; padding: 0; margin: 0; display: grid;
-                grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 6px 16px; }
-.archive-list li { padding: 4px 0; }
-.archive-list a { color: var(--fg); text-decoration: none; }
-.archive-list a:hover { color: var(--accent); }
-.archive-list .count { color: var(--muted); font-size: 12px; margin-left: 6px; }
+                grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 4px 16px; }
+.archive-list li { padding: 4px 0; font-size: 0.82rem; }
+.archive-list a { color: #999; transition: color 0.15s; font-variant-numeric: tabular-nums; }
+.archive-list a:hover { color: #ccc; }
+.archive-list .count { color: #444; font-size: 0.7rem; margin-left: 6px; }
+.archive-section { padding-top: 28px; }
+.archive-section .day-head { margin-bottom: 12px; }
 """
 
 
 def render_archive_index(days_with_counts: list[tuple[str, int]]) -> str:
     if not days_with_counts:
-        body = '<p class="empty">暂无归档</p>'
+        inner = '<div class="empty-state">暂无归档</div>'
     else:
         from collections import defaultdict
         by_month: dict[str, list[tuple[str, int]]] = defaultdict(list)
@@ -419,24 +505,43 @@ def render_archive_index(days_with_counts: list[tuple[str, int]]) -> str:
         for month in sorted(by_month.keys(), reverse=True):
             days_in_month = sorted(by_month[month], key=lambda x: x[0], reverse=True)
             items = "".join(
-                f'<li><a href="{d}.html">{d}</a><span class="count">{c} 条</span></li>'
+                f'<li><a href="{d}.html">{d}</a><span class="count">{c}</span></li>'
                 for d, c in days_in_month
             )
             total_entries = sum(c for _, c in days_in_month)
             sections.append(
-                f'<section class="day"><h2>{month} · {len(days_in_month)} 天 / {total_entries} 条</h2>'
+                f'<section class="archive-section">'
+                f'<div class="day-head">{month}<span class="count">· {len(days_in_month)} 天 / {total_entries} 条</span></div>'
                 f'<ul class="archive-list">{items}</ul></section>'
             )
-        body = "\n".join(sections)
+        inner = "\n".join(sections)
+
+    total_days = len(days_with_counts)
+    total_entries = sum(c for _, c in days_with_counts)
+    subtitle = (f'{total_days} 天 · {total_entries} 条 · '
+                f'<a href="../index.html">← 返回最新</a>')
+
     return f"""<!doctype html>
-<html lang="zh-CN"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>归档 · AI 与组织变革</title>
-<style>{PAGE_CSS}{_ARCHIVE_CSS_EXTRA}</style></head>
-<body><div class="wrap">
-<header><h1>归档</h1><p><a href="../index.html">← 返回最新</a></p></header>
-{body}
-</div></body></html>
+<html lang="zh-CN">
+<head>
+{_HEAD}
+<title>ARCHIVE — AI 与组织变革</title>
+<style>{PAGE_CSS}{_ARCHIVE_CSS_EXTRA}</style>
+</head>
+<body>
+<a class="back-link" href="https://www.tedzhong.com/">← tedzhong.com</a>
+<header>
+  <h1>ARCHIVE</h1>
+  <p>{subtitle}</p>
+</header>
+<div class="list">
+{inner}
+</div>
+<footer>
+  由 Claude Haiku 4.5 每日构建 · {datetime.now(CNY_TZ).strftime('%Y-%m-%d %H:%M CST')}
+</footer>
+</body>
+</html>
 """
 
 
@@ -444,10 +549,13 @@ def rebuild_site() -> None:
     ARCHIVE_DIR.mkdir(parents=True, exist_ok=True)
 
     recent = load_all_days(RENDER_WINDOW_DAYS)
+    total_recent = sum(len(v) for v in recent.values())
     index_html = render_page(
-        "AI 与组织变革 · 每日精选",
-        f"过去 {RENDER_WINDOW_DAYS} 天 · 来自 HBR / McKinsey / Sequoia / a16z / OpenAI / Anthropic 等",
-        recent,
+        heading="AI TRANSFORMATION",
+        subtitle=(f'{total_recent} entries · 过去 {RENDER_WINDOW_DAYS} 天 · '
+                  f'<a href="archive/">归档</a>'),
+        days=recent,
+        page_title="AI TRANSFORMATION — tedzhong.com",
     )
     (DOCS_DIR / "index.html").write_text(index_html, encoding="utf-8")
 
@@ -460,10 +568,13 @@ def rebuild_site() -> None:
             entries = json.load(f)
         days_with_counts.append((day, len(entries)))
         html = render_page(
-            f"{day} · AI 与组织变革",
-            f"当日 {len(entries)} 条",
-            {day: entries},
+            heading=day,
+            subtitle=(f'{len(entries)} 条 · '
+                      f'<a href="../index.html">← 返回最新</a> · '
+                      f'<a href="./">归档</a>'),
+            days={day: entries},
             rel_root="../",
+            page_title=f"{day} — AI TRANSFORMATION",
         )
         (ARCHIVE_DIR / f"{day}.html").write_text(html, encoding="utf-8")
 

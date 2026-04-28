@@ -1,0 +1,53 @@
+[
+  {
+    "url": "https://stratechery.com/2026/an-interview-with-openai-ceo-sam-altman-and-aws-ceo-matt-garman-about-bedrock-managed-agents/",
+    "title": "An Interview with OpenAI CEO Sam Altman and AWS CEO Matt Garman About Bedrock Managed Agents",
+    "source": "Stratechery (free posts)",
+    "category": "analyst",
+    "published": "2026-04-29",
+    "fetched_at": "2026-04-29T05:39:36+08:00",
+    "score": 8,
+    "summary_zh": "OpenAI CEO Sam Altman与AWS CEO Matt Garman讨论Bedrock托管Agent产品。核心话题围绕OpenAI与Microsoft协议调整——允许OpenAI向其他云厂商提供服务。这反映了一个关键的组织与战略问题：云厂商独占权虽给Azure竞争优势，但实际阻碍OpenAI商业扩展，因企业倾向在已有云平台上部署AI。AWS推出Bedrock Managed Agents旨在降低Agent工作流在大型组织中的部署复杂性，使数据已在AWS的企业更易采用AI。文章讨论了AI作为范式转移与云计算类似的影响，以及芯片对大多数AI用户相对次要的地位。",
+    "key_points": [
+      "Microsoft-OpenAI协议松绑，允许OpenAI多云部署，反映独占模式对AI商业化的阻碍",
+      "AWS Bedrock Managed Agent降低企业Agent工作流部署门槛，针对数据已在云端的组织",
+      "OpenAI将AWS视为战略重点，愿放弃短期Azure收入以换取长期多云增长",
+      "AI范式转移类似云计算浪潮，但组织采用需要与现有基础设施兼容"
+    ],
+    "tags": [
+      "云战略重组",
+      "Agent落地",
+      "企业采用",
+      "商业模式"
+    ],
+    "speakers": [
+      "Sam Altman (OpenAI CEO)",
+      "Matt Garman (AWS CEO)"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/capabilities/people-and-organizational-performance/our-insights/an-agile-approach-to-hiring-mastercards-tech-talent-transformation",
+    "title": "An agile approach to hiring: Mastercard’s tech talent transformation",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-04-28",
+    "fetched_at": "2026-04-29T05:39:21+08:00",
+    "score": 7,
+    "summary_zh": "万事达卡通过将产品开发中的敏捷、协作文化引入招聘流程，完成了技术人才招聘的变革。这种方法打破了传统招聘的僵化环节，让跨部门团队更灵活地参与选才，加快了关键岗位的补位速度。案例表明，将敏捷思维从产品迭代延伸到人才战略，能帮助大型科技企业更快适应快速变化的技术人才市场和业务需求。",
+    "key_points": [
+      "将敏捷协作理念从产品开发引入招聘流程，提升招聘灵活性和速度",
+      "跨部门团队参与选才决策，打破传统 HR 主导的单链路模式",
+      "快速迭代改进招聘标准和流程，更好匹配技术人才市场变化",
+      "人才招聘与组织战略更紧密对接，支撑业务优先级调整"
+    ],
+    "tags": [
+      "人才策略",
+      "敏捷组织",
+      "招聘创新",
+      "跨部门协作"
+    ],
+    "speakers": [
+      "Mastercard 领导层"
+    ]
+  }
+]

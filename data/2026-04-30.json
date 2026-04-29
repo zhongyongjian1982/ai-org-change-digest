@@ -1,0 +1,102 @@
+[
+  {
+    "url": "https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/where-ai-will-create-value-and-where-it-wont",
+    "title": "Where AI will create value—and where it won’t",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-04-29",
+    "fetched_at": "2026-04-30T05:41:51+08:00",
+    "score": 9,
+    "summary_zh": "麦肯锡指出，企业仅用AI提升生产力难以获得持久竞争优势。真正价值在于通过AI重塑产品/服务、商业模式和市场结构，抢在竞争对手之前完成转变。这要求企业从战略层面重新审视价值链和组织架构，而非止于工具替代。",
+    "key_points": [
+      "单纯提升生产力的AI投入缺乏可持续竞争力",
+      "价值核心在于用AI重构产品、模式、市场结构",
+      "需要抢占战略窗口期，先发者获益",
+      "要求组织从商业模式层面重新设计，不仅是效率优化"
+    ],
+    "tags": [
+      "商业模式创新",
+      "战略重构",
+      "竞争优势",
+      "AI价值定位"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  },
+  {
+    "url": "https://sloanreview.mit.edu/video/leaders-at-all-levels-how-argenx-scaled-to-4-billion-without-bureaucracy/",
+    "title": "Leaders at All Levels: How Argenx Scaled to $4 Billion Without Bureaucracy",
+    "source": "MIT Sloan Management Review",
+    "category": "business",
+    "published": "2026-04-29",
+    "fetched_at": "2026-04-30T05:41:45+08:00",
+    "score": 8,
+    "summary_zh": "欧洲生物科技公司Argenx突破了\"规模创新悖论\"，市值超400亿美元仍保持创新能力。其核心策略是扁平化组织：摒弃传统预算制改用计划制、减少管理层级、组织小团队围绕单一疾病领域运作。新任CEO Karen Massey强调\"赋权员工能产生巨大影响\"，通过分布式领导力和好奇心驱动的管理文化，保持创业公司的敏捷性。该模式对如何在增长中维持组织活力、避免官僚化具有启示意义。",
+    "key_points": [
+      "用计划制替代预算制，减少管理约束，让团队专注优先级",
+      "扁平化组织结构，小团队对标单一目标（单病种），保持焦点",
+      "分布式领导力模式，强调好奇心和赋权，而非快速决策",
+      "规模化后仍保持创业敏捷性的可复制框架"
+    ],
+    "tags": [
+      "组织结构创新",
+      "领导力",
+      "扁平化管理",
+      "人才赋权"
+    ],
+    "speakers": [
+      "Karen Massey（Argenx新任CEO）",
+      "Michele Zanini（《Humanocracy》合著者）",
+      "Kate W. Isaacs（MIT Sloan讲师）"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/capabilities/people-and-organizational-performance/our-insights/what-it-takes-to-build-genius-at-scale",
+    "title": "What it takes to build ‘genius at scale’",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-04-29",
+    "fetched_at": "2026-04-30T05:41:48+08:00",
+    "score": 7,
+    "summary_zh": "哈佛商学院教授Linda Hill探讨创新停滞的根源与解决之道。她强调领导者需要建立信任文化、跨部门合作机制和开放的决策流程，才能将创意转化为组织规模化的创新成果。文章涉及组织文化、领导力和创新管理系统，这些与AI时代企业需要的适应性组织结构高度相关。",
+    "key_points": [
+      "创新停滞通常源于缺乏信任和开放的组织文化，而非创意不足",
+      "领导者需要打破部门壁垒，建立跨界合作的制度基础",
+      "规模化创新要求企业重新定义决策权力和知识共享机制"
+    ],
+    "tags": [
+      "组织文化",
+      "领导力",
+      "创新管理",
+      "跨部门协作"
+    ],
+    "speakers": [
+      "Linda Hill (Harvard Business School)"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/industries/financial-services/our-insights/can-agentic-ai-finally-modernize-core-technologies-in-insurance",
+    "title": "Can agentic AI (finally) modernize core technologies in insurance?",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-04-29",
+    "fetched_at": "2026-04-30T05:41:58+08:00",
+    "score": 7,
+    "summary_zh": "保险业多年来识别了核心技术现代化的必要性，但长期未能有效推进。McKinsey 指出 Agent AI 可能成为突破口。文章暗示 Agent AI 的自主决策和流程优化能力，能够帮助保险企业克服遗留系统复杂性、组织惯性等障碍，推动技术债清偿和业务流程重构。这涉及工作方式转变和运营模式创新。",
+    "key_points": [
+      "保险业技术现代化长期停滞，传统障碍包括系统复杂性与组织惯性",
+      "Agent AI 具备自主执行与优化能力，可助力遗留系统改造与流程重构",
+      "核心技术升级将重塑保险运营模式与员工工作方式"
+    ],
+    "tags": [
+      "组织变革",
+      "Agent 落地",
+      "生产力提升",
+      "遗留系统现代化"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  }
+]

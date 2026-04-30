@@ -1,0 +1,106 @@
+[
+  {
+    "url": "https://www.mckinsey.com/capabilities/people-and-organizational-performance/our-insights/the-rise-of-the-human-ai-workforce",
+    "title": "The rise of the human–AI workforce",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-04-30",
+    "fetched_at": "2026-05-01T05:35:47+08:00",
+    "score": 9,
+    "summary_zh": "麦肯锡最新研究表明，AI 已具备承担美国超过 50% 工作时长的能力。文章聚焦人-AI 混合团队的领导挑战，涉及如何重新定义角色、分配任务、培育人机协作文化。核心问题是：领导者需要理解 AI 能做什么，重新审视员工价值定位，从「替代」转向「增强」，以及如何通过新的管理框架适应这种混合工作模式，防止技能贬值、加强再培训。",
+    "key_points": [
+      "AI 可承担超 50% 美国工作时长，组织需立即调整任务分配和角色定义",
+      "人机混合团队需要新的领导模型：从监督到指导协作，重新定义团队成员价值",
+      "技能转变优先于岗位淘汰，企业应投入再培训与文化重塑以适应混合模式",
+      "AI 赋能而非替代是核心战略，需要建立新的绩效评估和激励体系"
+    ],
+    "tags": [
+      "人机协作",
+      "组织重构",
+      "人才策略",
+      "领导力转变"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  },
+  {
+    "url": "https://sloanreview.mit.edu/article/audit-yourself-to-get-more-from-genai/",
+    "title": "Audit Yourself to Get More From GenAI",
+    "source": "MIT Sloan Management Review",
+    "category": "business",
+    "published": "2026-04-30",
+    "fetched_at": "2026-05-01T05:35:42+08:00",
+    "score": 7,
+    "summary_zh": "MIT Sloan编辑分享通过自我审计（self-audit）框架提升GenAI使用效能的实践。核心发现：仅有AI工具不足，关键是使用者的元认知能力——反思自身思维、识别知识缺口、迭代改进。一项250人实验证实，只有具备强元认知策略的员工才能通过ChatGPT获得显著创意提升，而缺乏纪律的使用者只会增加产出量而非洞见。审计框架围绕5个目标（准备、迭代、验证、所有权、系统化），帮助专业人士规范AI应用流程，揭示AI如何放大专业人士间的能力差异。",
+    "key_points": [
+      "元认知是AI价值释放的关键：反思思维、识别缺口、迭代改进的员工创意表现显著优于无纪律使用者",
+      "自我审计框架5大目标：准备、迭代、验证、所有权、系统化，评估单次AI会话的质量而非仅看输出结果",
+      "AI放大专业差异：有纪律的专业人士获得指数级收益，缺乏反思的用户陷入\"不可持续的强度\"——量大但缺乏洞见",
+      "可复现的思维方式：不需技术训练，需将竞争分析、RFP响应等既有高价值工作的思维过程迁移至AI使用"
+    ],
+    "tags": [
+      "生产力提升",
+      "人员能力差异",
+      "工作方式创新",
+      "领导力与自律"
+    ],
+    "speakers": [
+      "Carolyn Geason-Beissel",
+      "Jackson Lu",
+      "MIT Sloan"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/industries/financial-services/our-insights/how-gen-ai-agents-threaten-retail-banks-customer-relationships",
+    "title": "How gen AI agents threaten retail banks’ customer relationships",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-04-30",
+    "fetched_at": "2026-05-01T05:35:56+08:00",
+    "score": 7,
+    "summary_zh": "生成式AI代理的兴起对零售银行的客户关系构成威胁。随着客户越来越多地转向AI寻求财务建议，银行面临被中介化的风险。McKinsey指出银行需要采取主动措施应对这一趋势，包括重新定义客户交互方式、优化服务模式和人员配置策略。这反映了AI Agent对传统金融服务业组织结构和竞争格局的深刻影响——从顾问咨询模式到技术赋能模式的根本性转变。",
+    "key_points": [
+      "AI代理直接威胁银行顾问的咨询价值链地位，需重新定义价值主张",
+      "零售银行面临客户关系被AI中介化的风险，需采取战略应对",
+      "组织需调整人员角色，从传统建议者向AI协作者转变",
+      "这是金融服务业商业模式和竞争格局的根本性冲击"
+    ],
+    "tags": [
+      "生产力威胁",
+      "中介化风险",
+      "组织重构",
+      "Agent落地"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  },
+  {
+    "url": "https://sequoiacap.com/article/standard-intelligence-training-general-intelligence-in-pixel-space/",
+    "title": "Standard Intelligence: Training General Intelligence in Pixel Space",
+    "source": "Sequoia Capital",
+    "category": "vc",
+    "published": "2026-04-30",
+    "fetched_at": "2026-05-01T05:36:03+08:00",
+    "score": 7,
+    "summary_zh": "Sequoia Capital 投资的 Standard Intelligence 创业团队采用「像素视频优先」而非文本的方法训练通用计算机智能体。该团队构建了 1100 万小时的计算机操作视频数据集、开发了比竞品高 50 倍效率的视频编码器，并推出首个基础模型 FDM-1，可执行 Blender 建模、自驾等多样化任务。这代表了一种新的 AI 智能体研发范式——通过大规模视频预训练让通用性从数据自然涌现，而非依赖语言模型和复杂工具链。对知识工作自动化和智能体可靠性具有潜在影响。",
+    "key_points": [
+      "突破视频编码效率，50 倍压缩率使 2 小时视频适应 100 万 token 窗口，大幅降低计算成本",
+      "自构建 1100 万小时数据集，超越行业规模，基础设施成本仅为超大规模厂商 1/20",
+      "FDM-1 模型展现通用性：CAD 建模、自驾导航、软件测试等多领域任务一个模型搞定",
+      "与特斯拉自动驾驶类似思路，放弃工程化流程与工具链，依赖数据规模涌现通用能力"
+    ],
+    "tags": [
+      "Agent 落地",
+      "智能体范式",
+      "生产力自动化",
+      "模型架构创新"
+    ],
+    "speakers": [
+      "Sonya Huang (Sequoia Capital)",
+      "Galen Mead (Standard Intelligence 联创)",
+      "Devansh Pandey (Standard Intelligence 联创)"
+    ]
+  }
+]

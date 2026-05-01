@@ -1,0 +1,30 @@
+[
+  {
+    "url": "https://stratechery.com/2026/long-term-peripheral-myopic-visions/",
+    "title": "2026.18: Long-term, Peripheral & Myopic Visions",
+    "source": "Stratechery (free posts)",
+    "category": "analyst",
+    "published": "2026-05-02",
+    "fetched_at": "2026-05-02T05:30:09+08:00",
+    "score": 7,
+    "summary_zh": "Stratechery 周刊综述涵盖 AI 对企业战略的影响。重点包括：Amazon 通过推理芯片 Trainium 和与 OpenAI 合作的 Bedrock Managed Agents 重新定位企业 AI 产品；AWS CEO Matt Garman 与 Sam Altman 讨论新型企业 Agent 产品如何改变组织工作方式；Intel 芯片需求因 AI 驱动的 CPU 转变；以及地缘政治（中国阻止 Meta 收购新加坡 AI 公司 Manus）对 AI 基础设施布局的影响。关键观点是从训练向推理和 Agent 的转变正在重塑企业技术投资和组织协作模式。",
+    "key_points": [
+      "Amazon 通过 Trainium 推理芯片与 OpenAI Bedrock Managed Agents 合作，正在定义新的企业 AI 产品形态",
+      "AWS CEO & OpenAI CEO 联合阐述 Agent 对企业工作方式的改变",
+      "AI 基础设施需求从训练转向推理，驱动芯片厂商战略调整（Intel、Amazon）",
+      "地缘政治对 AI 企业整合与组织扩展的直接影响（Meta-Manus 案例）"
+    ],
+    "tags": [
+      "Agent 落地",
+      "企业 AI 产品",
+      "基础设施策略",
+      "组织协作"
+    ],
+    "speakers": [
+      "Matt Garman (AWS CEO)",
+      "Sam Altman (OpenAI CEO)",
+      "Ben Thompson (Stratechery 创始人)",
+      "Andrew Sharp"
+    ]
+  }
+]

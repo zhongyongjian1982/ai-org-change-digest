@@ -1,0 +1,30 @@
+[
+  {
+    "url": "https://www.lennysnewsletter.com/p/why-cultivating-agency-matters-more",
+    "title": "Why cultivating agency matters more than cultivating skills in the AI era | Max Schoening (Head of Product, Notion)",
+    "source": "Lenny's Newsletter",
+    "category": "analyst",
+    "published": "2026-05-03",
+    "fetched_at": "2026-05-04T05:24:27+08:00",
+    "score": 9,
+    "summary_zh": "Notion 产品负责人 Max Schoening 阐述 AI 时代的核心竞争力不是技能而是「主动权」(agency)。他指出设计师和 PM 需要拥抱 AI 工具、自己写代码、制作原型，而不是被动等待。AI 改变了产品开发流程——前 10% 的工作现在「免费」了，这意味着团队需要重新思考产品架构和能力分工。他强调伟大产品的关键是找到「极简核心」(tiny core)，以及 AI 时代对人的要求从掌握特定技能转向具备独立决策和驱动变化的能力。",
+    "key_points": [
+      "主动权比技能更关键：AI 时代的分化在于人是否敢于主动使用新工具、尝试新角色，而非传统技能差异",
+      "产品开发前期加速：前 10% 的工作因 AI 自动化而显著降速，团队需重新分配精力到高价值决策和设计",
+      "跨界能力再定义：设计师学编程、PM 做快速原型，职能边界模糊，要求更高的『主动权』和学习意愿",
+      "极简核心论：伟大产品（iPhone、GitHub PR、Notion Blocks）都源于一个深刻的『核心创新』，而非功能堆砌"
+    ],
+    "tags": [
+      "人才策略",
+      "组织能力重塑",
+      "生产力变革",
+      "领导力与主动权"
+    ],
+    "speakers": [
+      "Max Schoening",
+      "Notion",
+      "Bret Taylor",
+      "Anthropic"
+    ]
+  }
+]

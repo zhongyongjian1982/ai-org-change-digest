@@ -1,0 +1,104 @@
+[
+  {
+    "url": "https://www.lennysnewsletter.com/p/this-week-on-how-i-ai-the-internal",
+    "title": "🎙️ This week on How I AI: The internal AI tool that’s transforming how Stripe designs products",
+    "source": "Lenny's Newsletter",
+    "category": "analyst",
+    "published": "2026-05-04",
+    "fetched_at": "2026-05-05T05:42:57+08:00",
+    "score": 8,
+    "summary_zh": "Stripe 设计经理 Owen Williams 分享了内部 AI 原型工具 Protodash 的开发经验。该工具让设计师和产品经理能在几分钟内将 Stripe 设计系统转化为可交互的生产级原型，核心是将公司特定的设计系统与 AI 集成。Protodash 改变了工作流：PMs 成为意外的强势用户，与设计师的协作从「应该招设计师吗」转变为「这是实际成果，如何优化」；设计师的技术门槛降低，可直接与 Claude 对话学习技术概念；产品探索从静态 Figma 迭代转向动态代码驱动的多场景设计验证。关键洞察是通用 AI 工具因不了解公司设计系统而产生「蓝紫色垃圾」，最有价值的内部工具必须贴合公司文化和工作流。",
+    "key_points": [
+      "Protodash 通过整合 Stripe 设计系统与 MCP/Cursor 规则，让设计师/PM 快速从想法到可交互原型，降低技术门槛",
+      "PMs 使用率超预期，PM-设计师关系从招聘谈判转向基于真实原型的迭代合作，实现更早期的用户测试",
+      "代码驱动原型支持多状态切换（零状态、不同商业模式），比 Figma 能更贴近真实产品场景",
+      "通用 AI 工具因缺乏设计系统知识产生低质量输出，定制化内部工具才能满足高质量标准和文化适配",
+      "AI 使非技术背景的设计师能快速学习终端、Git 等技能，突破传统技术能力要求的瓶颈"
+    ],
+    "tags": [
+      "工作流创新",
+      "跨职能协作",
+      "生产力工具",
+      "设计系统与AI融合"
+    ],
+    "speakers": [
+      "Owen Williams (Stripe 设计经理)"
+    ]
+  },
+  {
+    "url": "https://www.lennysnewsletter.com/p/the-internal-ai-tool-thats-transforming",
+    "title": "The internal AI tool that’s transforming how Stripe designs products | Owen Williams",
+    "source": "Lenny's Newsletter",
+    "category": "analyst",
+    "published": "2026-05-04",
+    "fetched_at": "2026-05-05T05:43:02+08:00",
+    "score": 8,
+    "summary_zh": "Stripe 设计经理 Owen Williams 分享了内部 AI 工具 Protodash 如何重塑产品设计工作流。该工具让设计师和 PM 无需代码即可快速创建高保真原型，直接在浏览器中完成设计评审、变体测试和工程交付。核心创新：用 Cursor 规则+MCP 整合设计系统，运行在开发环境避免本地配置困扰，\"演示而非备忘录\"文化重写了评审流程。意外发现 PM 成为主要用户，根本改变了 Stripe 的原型设计、评审和交付方式。内部工具虽非生产级，但能产生变革性影响。",
+    "key_points": [
+      "AI 工具降低设计门槛：PM 和非专业设计师也能快速生成高保真原型，改变角色分工",
+      "流程重构：\"演示不备忘录\"文化、内置评审模式和 AI 注解，加速设计反馈和工程交付",
+      "系统化 AI 应用：通过 Cursor 规则+MCP 教会 AI 遵循设计系统，避免\"通用 AI 滥竽充数\"",
+      "内部工具优于商用：针对组织特定需求定制，效率收益远超完美度要求"
+    ],
+    "tags": [
+      "设计流程数字化",
+      "人员赋能与角色变化",
+      "内部工具与AI集成",
+      "组织协作重构"
+    ],
+    "speakers": [
+      "Owen Williams (Stripe 设计经理)"
+    ]
+  },
+  {
+    "url": "https://sloanreview.mit.edu/article/the-innovation-advantage-genai-cant-give-you/",
+    "title": "The Innovation Advantage GenAI Can’t Give You",
+    "source": "MIT Sloan Management Review",
+    "category": "business",
+    "published": "2026-05-04",
+    "fetched_at": "2026-05-05T05:42:33+08:00",
+    "score": 8,
+    "summary_zh": "生成式 AI 已将创意生成变成廉价公共品，削弱了传统「更好的想法→更好产品→更多收益」的竞争模式。文章论证竞争优势已上移至「问题定义」而非解决方案。大多数组织通过调研、焦点小组等工具只能捕捉用户能表达的表层问题，而真正有价值的深层问题隐藏在「言行不一」的gap中。AI无法自动发现这些洞察，组织需要通过深度观察和访谈来重新框架化问题，这成为AI时代的核心竞争力。",
+    "key_points": [
+      "AI使想法生成成为廉价工具，竞争优势从解决方案转向问题定义能力",
+      "传统调研方法只捕捉表层问题，深层问题隐藏在用户言行不一的gap中",
+      "发现真实问题需要深度观察和访谈，不易被快速框架化",
+      "问题框架质量决定创新质量，将成为AI时代的差异化竞争力"
+    ],
+    "tags": [
+      "问题定义",
+      "创新战略",
+      "竞争力重构",
+      "用户洞察"
+    ],
+    "speakers": [
+      "Eliot Wyatt",
+      "Loran Nordgren",
+      "IDEO"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-ai-paradox-in-europes-consumer-industries-more-spending-elusive-impact",
+    "title": "The AI paradox in Europe’s consumer industries: More spending, elusive impact",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-05-04",
+    "fetched_at": "2026-05-05T05:42:37+08:00",
+    "score": 7,
+    "summary_zh": "McKinsey 研究发现欧洲消费品企业在 AI 投资上支出创新高，但转化投资为可衡量业绩的能力明显不足。这揭示了一个关键悖论：企业领导者积极部署 AI，却面临组织、流程、人才等多维度的适配障碍，难以实现预期的生产力与竞争力提升。这表明仅有技术投入远不够，需要同步的组织重构与能力建设。",
+    "key_points": [
+      "欧洲消费企业 AI 投资增加，但落地转化效率低，投入产出不匹配",
+      "投资与成果脱节暴露组织、流程、人才准备不足的系统性问题",
+      "需要超越技术采购，进行组织架构、工作流程的适配性调整"
+    ],
+    "tags": [
+      "AI 落地困境",
+      "组织适配",
+      "投资回报率",
+      "能力建设"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  }
+]

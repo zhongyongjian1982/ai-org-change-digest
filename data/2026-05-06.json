@@ -1,0 +1,79 @@
+[
+  {
+    "url": "https://www.lennysnewsletter.com/p/why-saas-freemium-playbooks-dont",
+    "title": "Why SaaS freemium playbooks don’t work in AI, and what to do instead",
+    "source": "Lenny's Newsletter",
+    "category": "analyst",
+    "published": "2026-05-05",
+    "fetched_at": "2026-05-06T05:39:42+08:00",
+    "score": 7,
+    "summary_zh": "Google AI 产品负责人 Vikas Kansal 揭示传统 SaaS 免费增值模式在 AI 产品中失效的原因：AI 产品需要提供足够「魔法」体验让用户形成习惯，但这直接导致计算成本爆炸。Google 团队发现免费层已能超越人类表现，用户无需付费。解决方案是重构 AI 付费墙：从简单的功能限制转向多层次、使用量驱动、结果导向的定价模型，同时平衡用户体验与成本控制。这反映了 AI 时代商业模式的根本转变。",
+    "key_points": [
+      "AI 每次免费调用都产生实际计算成本，传统 SaaS 零边际成本模式不适用，需快速货币化",
+      "免费层必须足够强大才能触发「aha moment」形成日活，但这与商业可持续性产生矛盾",
+      "功能付费墙（如 Slack 的消息历史）在 AI 产品中无效，因为限制核心体验会阻止用户建立习惯",
+      "Google 方案：从简单功能限制转向多层使用量/结果驱动定价，平衡魔法体验与成本控制"
+    ],
+    "tags": [
+      "AI 商业模式",
+      "产品货币化",
+      "成本控制",
+      "用户体验设计"
+    ],
+    "speakers": [
+      "Vikas Kansal",
+      "Elena Verna"
+    ]
+  },
+  {
+    "url": "https://openai.com/index/openai-pwc-finance-collaboration",
+    "title": "OpenAI and PwC collaborate to reimagine the office of the CFO",
+    "source": "OpenAI",
+    "category": "ai-lab",
+    "published": "2026-05-05",
+    "fetched_at": "2026-05-06T05:39:29+08:00",
+    "score": 7,
+    "summary_zh": "OpenAI 与普华永道合作，通过 AI Agent 帮助企业自动化财务工作流、改进预测、强化内控并现代化首席财务官职能。这一合作体现了生成式 AI 在企业关键部门的实际落地，涉及流程重新设计、岗位职能转变和财务运营的智能化升级。",
+    "key_points": [
+      "AI Agent 自动化财务工作流，解放 CFO 团队从重复性任务中解放出来",
+      "改进预测精度和内部控制强度，对财务决策和风险管理产生直接影响",
+      "CFO 职能现代化，从执行层转向战略决策和业务洞察",
+      "大型咨询公司与 AI 公司合作落地，加速企业 AI 采纳的可信度"
+    ],
+    "tags": [
+      "财务运营自动化",
+      "Agent 落地",
+      "职能重构",
+      "企业变革"
+    ],
+    "speakers": [
+      "OpenAI",
+      "PwC（普华永道）"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/industries/healthcare/our-insights/ushering-in-the-next-era-of-frontline-nursing-with-ai",
+    "title": "Ushering in the next era of frontline nursing with AI",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-05-05",
+    "fetched_at": "2026-05-06T05:39:16+08:00",
+    "score": 6,
+    "summary_zh": "麦肯锡对500多名美国护士的调查显示，AI在临床护理中采用率不断上升，但组织不应仅将AI作为附加工具叠加到现有工作流中，而需要从根本上重新设计护士的工作方式和职责。核心观点是AI引入医疗前线不仅涉及技术应用，更需要重新想象和重构护理工作模式，这对组织管理、岗位设计和团队协作提出新要求。",
+    "key_points": [
+      "500+护士调查显示AI采用在加速，但多数组织尚未真正变革工作流程",
+      "简单地在现有工作上'铺AI'不如重新设计护理工作模式更关键",
+      "AI在临床护理中的落地需要重新定义护士角色和工作核心价值",
+      "组织需主动规划护士与AI的协作模式，而非被动应对技术冲击"
+    ],
+    "tags": [
+      "工作重构",
+      "一线员工赋能",
+      "AI落地",
+      "组织变革"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  }
+]

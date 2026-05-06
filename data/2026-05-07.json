@@ -1,0 +1,105 @@
+[
+  {
+    "url": "https://www.lennysnewsletter.com/p/quests-token-leaderboards-and-a-skills",
+    "title": "Quests, token leaderboards, and a skills marketplace: The elite AI adoption playbook | John Kim (Sendbird)",
+    "source": "Lenny's Newsletter",
+    "category": "analyst",
+    "published": "2026-05-06",
+    "fetched_at": "2026-05-07T05:43:28+08:00",
+    "score": 9,
+    "summary_zh": "Delight.ai CEO John Kim分享了如何将整个公司转变为AI原生组织的实践。核心创新包括：建立内部Automators平台，让非技术团队可自助请求AI工具；设计Token使用排行榜（从初级到\"AI God\"五档）鼓励采用；重写招聘标准强调好奇心和执行力而非经验年限；通过可见的领导层AI使用作为最强信号驱动组织范围内的采用。将AI采用视为产品运营，通过Quest系统、技能市场等游戏化机制加速内部AI能力建设，实现营销、销售、招聘等团队的自主自动化。",
+    "key_points": [
+      "建立Automators内部平台，非技术团队可自助请求AI工具构建，降低采用门槛",
+      "Token排行榜游戏化激励：分五档跟踪使用，强调曲线平滑度而非总量，消除惩罚心理",
+      "修改招聘和晋升标准，从强调年资转向好奇心、主动性、执行力等AI时代核心特质",
+      "领导层可见的AI使用是最强采用信号，CEO个人使用示范推动全组织范围转变",
+      "将AI采用当作产品运营：Quest系统、技能市场等机制系统性加速能力转变和知识积累"
+    ],
+    "tags": [
+      "组织重构",
+      "AI文化建设",
+      "人才策略",
+      "生产力工程",
+      "内部工具平台"
+    ],
+    "speakers": [
+      "John Kim（Delight.ai CEO）",
+      "Sendbird"
+    ]
+  },
+  {
+    "url": "https://sloanreview.mit.edu/article/calibrate-ai-use-to-the-decision-at-hand/",
+    "title": "Calibrate AI Use to the Decision at Hand",
+    "source": "MIT Sloan Management Review",
+    "category": "business",
+    "published": "2026-05-06",
+    "fetched_at": "2026-05-07T05:42:56+08:00",
+    "score": 8,
+    "summary_zh": "MIT Sloan 指出企业普遍误用 AI 的根本原因：未根据决策性质匹配 AI 工具类型。虽然 88% 公司已应用 AI，但仅 40% 见到业务成效。文章提出「窄决策」与「宽决策」框架：窄决策目标明确、数据充分、反馈快（如选址），应用分析型 AI 作决策引擎；宽决策目标争议、信息不完整、需要对齐（如品牌转向），应用生成式 AI 作辅助工具支持对话与共识。错配导致精美 PPT 无法支撑数据需求，或缺乏执行承诺。",
+    "key_points": [
+      "88% 企业用 AI 但仅 40% 见底线效益，关键在于 AI 工具与决策类型的匹配度",
+      "窄决策（清晰目标、数据完整）应配分析型 AI；宽决策（目标分歧、需对齐）应配生成式 AI",
+      "生成式 AI 用于需严格分析的决策会产生华丽叙述但缺乏数据支撑；反之则削弱共识建立",
+      "多数战略决策是组合体，包含窄与宽的子决策，需分层匹配不同 AI 能力"
+    ],
+    "tags": [
+      "决策科学",
+      "AI 落地",
+      "组织能力",
+      "工具匹配"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/ai-strategy-and-the-future-of-work-oxford-economist-jean-paul-carvalho",
+    "title": "AI, strategy, and the future of work: Oxford economist Jean-Paul Carvalho",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-05-06",
+    "fetched_at": "2026-05-07T05:43:01+08:00",
+    "score": 8,
+    "summary_zh": "牛津经济学家卡瓦略从认知工作重塑角度，分析 AI 如何改变组织运营。文章涉及企业战略应对、价值创造机制和领导力调整。作为麦肯锡深度访谈，预期阐述 AI 对工作结构、人才配置、流程优化的具体影响，以及管理者应如何把握规模化价值机遇。虽原文被截断，但标题和来源信息表明涵盖策略层面的组织变革思考。",
+    "key_points": [
+      "AI 重塑认知工作形态，企业需要重新定义岗位与能力需求",
+      "战略层面，领导者应识别 AI 价值创造的关键杠杆点",
+      "规模化应用 AI 需要组织结构与流程的相应调整",
+      "人员与文化转型是 AI 战略落地的核心"
+    ],
+    "tags": [
+      "组织重构",
+      "认知工作转变",
+      "战略规划",
+      "人才与能力"
+    ],
+    "speakers": [
+      "Jean-Paul Carvalho（牛津大学经济学家）",
+      "McKinsey"
+    ]
+  },
+  {
+    "url": "https://openai.com/index/introducing-b2b-signals",
+    "title": "How frontier enterprises are building an AI advantage",
+    "source": "OpenAI",
+    "category": "ai-lab",
+    "published": "2026-05-06",
+    "fetched_at": "2026-05-07T05:43:11+08:00",
+    "score": 7,
+    "summary_zh": "OpenAI 研究表明，领先企业通过深化 AI 采用、规模化 Codex 驱动的 Agent 工作流来构建持久竞争优势。这涉及从试点到生产部署的转变，企业需要重新定义流程、团队协作方式，以及如何将 AI 能力与现有业务架构整合。关键在于从点状应用升级到系统性的 agentic 工作流，这要求组织在人员技能、流程设计、治理体系上进行深层重构。",
+    "key_points": [
+      "从试点阶段向规模化生产部署转变，需要组织流程和团队协作的根本性调整",
+      "Agentic 工作流是竞争优势的核心，涉及 AI 自主决策和执行的重新设计",
+      "企业需要建立新的治理和人才体系以支撑深度 AI 采用"
+    ],
+    "tags": [
+      "Agent 工作流",
+      "组织重构",
+      "竞争优势",
+      "生产力提升"
+    ],
+    "speakers": [
+      "OpenAI"
+    ]
+  }
+]

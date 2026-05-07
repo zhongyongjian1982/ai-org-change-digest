@@ -1,0 +1,76 @@
+[
+  {
+    "url": "https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/rewiring-for-ai-from-ambition-to-advantage",
+    "title": "Rewiring for AI: From ambition to advantage",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-05-07",
+    "fetched_at": "2026-05-08T05:33:19+08:00",
+    "score": 8,
+    "summary_zh": "McKinsey 指出企业普遍追逐 AI 却难以兑现价值，根本原因是缺乏规模化执行能力。文章聚焦企业需要从战略雄心转向组织能力建设——包括跨职能协作、数据治理、人员重新技能化等。强调 AI 价值兑现不在技术本身，而在于是否有组织、流程、人才基础支撑大规模应用落地。",
+    "key_points": [
+      "AI 野心与落地价值存在巨大鸿沟，多数企业在组织执行层面薄弱",
+      "规模化 AI 价值需要跨职能协作、数据基础设施和人才能力三角支撑",
+      "企业需从单点试点向全面组织变革升级，包括流程、激励、治理重设",
+      "人员能力再培养是关键，而非纯技术投入"
+    ],
+    "tags": [
+      "组织重构",
+      "规模化落地",
+      "执行能力",
+      "人才重技能化"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/capabilities/operations/our-insights/rewiring-europe-turning-pressure-into-performance",
+    "title": "Rewiring Europe: Turning pressure into performance",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-05-07",
+    "fetched_at": "2026-05-08T05:33:23+08:00",
+    "score": 8,
+    "summary_zh": "麦肯锡指出欧洲处于生产力拐点，仅靠增量改进难以奏效。领导者需要端到端重新架构运营，通过AI、速度和规模的组合实现转变。文章暗示这不是技术问题，而是组织变革问题——需要打破现有流程、决策体系和运营模式，用AI赋能员工、加快执行周期，重塑竞争力。",
+    "key_points": [
+      "生产力危机推动组织结构全面重构，不能只做局部优化",
+      "AI 与运营速度、规模协同，才是闭环竞争力的关键",
+      "领导者需从战略层重新设计端到端流程，而非技术采购"
+    ],
+    "tags": [
+      "组织重构",
+      "生产力提升",
+      "运营转型",
+      "AI规模化"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  },
+  {
+    "url": "https://openai.com/index/singular-bank",
+    "title": "Singular Bank helps bankers move fast with ChatGPT and Codex",
+    "source": "OpenAI",
+    "category": "ai-lab",
+    "published": "2026-05-06",
+    "fetched_at": "2026-05-08T05:33:40+08:00",
+    "score": 6,
+    "summary_zh": "Singular Bank 利用 ChatGPT 和 Codex 开发内部助手 Singularity，帮助银行家在会议准备、投资组合分析和后续跟进等工作上节省每日 60-90 分钟。这是生成式 AI 在金融专业服务中的直接应用案例，体现了 AI 如何通过自动化知识密集型工作来改变从业者的工作节奏和时间分配。",
+    "key_points": [
+      "ChatGPT+Codex 组合用于金融从业者的日常工作流程自动化",
+      "每日节省 60-90 分钟，直接提升工作效率",
+      "覆盖会议准备、组合分析、客户跟进等高价值任务",
+      "内部助手模式展现 AI 对专业服务岗位工作方式的改变"
+    ],
+    "tags": [
+      "生产力提升",
+      "金融服务",
+      "工作流自动化",
+      "Agent 落地"
+    ],
+    "speakers": [
+      "Singular Bank"
+    ]
+  }
+]

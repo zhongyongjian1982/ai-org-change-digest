@@ -1,0 +1,59 @@
+[
+  {
+    "url": "https://www.mckinsey.com/industries/logistics/our-insights/code-and-cargo-how-ai-could-change-freight-logistics",
+    "title": "Code and cargo: How AI could change freight logistics",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-05-08",
+    "fetched_at": "2026-05-09T05:36:14+08:00",
+    "score": 7,
+    "summary_zh": "麦肯锡分析认为，AI驱动的软件平台正在改变货运经纪商和货代的运营方式。现有企业虽然拥有内置优势，但需要重新审视和调整组织结构以适应AI时代。文章暗示传统物流企业面临组织变革压力——包括流程重组、人员角色重新定义、技术能力建设等。这是典型的AI对特定行业组织运营的深层影响分析。",
+    "key_points": [
+      "AI软件平台正在重塑货运行业的运营模式和竞争格局",
+      "现有企业需要'重新布线'组织，意味着深度的结构和流程调整",
+      "传统优势不自动转化为AI时代竞争力，需要主动组织变革"
+    ],
+    "tags": [
+      "行业数字化",
+      "组织重构",
+      "运营效率",
+      "竞争力再定义"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  },
+  {
+    "url": "https://sequoiacap.com/article/ai-ascent-2026/",
+    "title": "AI Ascent 2026",
+    "source": "Sequoia Capital",
+    "category": "vc",
+    "published": "2026-05-09",
+    "fetched_at": "2026-05-09T05:36:21+08:00",
+    "score": 7,
+    "summary_zh": "红杉资本第四届 AI Ascent 大会（2026年4月）汇聚150+ AI领导者，核心议题涉及AI对工作方式的革命性影响。主讲嘉宾强调：①AI是计算革命，不是渐进升级；②2026年是Agent元年，模型、工具、系统已完备；③认知革命将重现工业革命轨迹，AI将对脑力劳动产生工业革命对体力劳动的深刻变革。创业建议强调从客户需求反推护城河，利用企业500强与前沿模型能力间的鸿沟。",
+    "key_points": [
+      "2026年Agent成熟：模型、工具、系统三要素齐备，开启自主智能体时代",
+      "认知革命：AI对脑力工作的冲击规模与速度超越工业革命对体力劳动的影响",
+      "企业应对：需从客户需求设计产品，利用大企业与前沿能力的部署差距建立竞争优势",
+      "议题跨度：涵盖Agent长期演进、机器人、数据中心、神经网络科学等多维度"
+    ],
+    "tags": [
+      "Agent落地",
+      "组织变革",
+      "劳动力影响",
+      "认知革命"
+    ],
+    "speakers": [
+      "Pat Grady (Sequoia partner)",
+      "Sonya Huang (Sequoia)",
+      "Konstantine Buhler",
+      "Demis Hassabis",
+      "Andrej Karpathy",
+      "Greg Brockman",
+      "Boris Cherny (Anthropic)",
+      "Dmitri Dolgov (Waymo)",
+      "Jim Fan (Nvidia)"
+    ]
+  }
+]

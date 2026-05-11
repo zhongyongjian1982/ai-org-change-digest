@@ -1,0 +1,134 @@
+[
+  {
+    "url": "https://www.lennysnewsletter.com/p/how-i-ai-quests-token-leaderboards",
+    "title": "🎙️ How I AI: Quests, token leaderboards, and the elite AI adoption playbook & Notion’s spec-driven development",
+    "source": "Lenny's Newsletter",
+    "category": "analyst",
+    "published": "2026-05-12",
+    "fetched_at": "2026-05-12T05:52:40+08:00",
+    "score": 9,
+    "summary_zh": "Sendbird CEO John Kim分享了企业AI采纳的完整玩法：将内部工具视为产品而非项目，通过「Automators」平台（任务制、积分制、排行榜）激励全员参与自动化建设；非技术团队通过预制安全模板可自主交付生产级应用；跟踪token使用量并分级认可（从Beginner到AI God），使AI能力可视化和值得追求；核心用人策略转向优化好奇心、主观能动性和学习力而非资历。这反映了AI时代从自上而下命令向自下而上赋能、从人工工作向AI全天候运转的范式转变。",
+    "key_points": [
+      "内部工具产品化：Automators平台用游戏化任务制和奖励系统激励员工创建/完成AI自动化需求",
+      "非技术赋能：预制安全模板让市场、销售、CS团队无需工程支持即可自主开发生产级应用",
+      "Token可视化管理：按消费量分级（Beginner到AI God）使AI熟练度透明化和值得追求，支持24/7AI辅助工作",
+      "人才策略重塑：弱化资历要求，强化好奇心、学习力和主观能动性作为AI时代核心竞争力",
+      "跨职能协同：设AI内部运营工程师角色打破部门壁垒，每周任务会确保快速迭代和问题解决"
+    ],
+    "tags": [
+      "组织重构",
+      "人才策略",
+      "内部工具赋能",
+      "AI采纳激励机制"
+    ],
+    "speakers": [
+      "John Kim (Sendbird CEO)"
+    ]
+  },
+  {
+    "url": "https://www.lennysnewsletter.com/p/spec-driven-development-the-ai-engineering",
+    "title": "Spec-driven development: The AI engineering workflow at Notion | Ryan Nystrom",
+    "source": "Lenny's Newsletter",
+    "category": "analyst",
+    "published": "2026-05-11",
+    "fetched_at": "2026-05-12T05:52:46+08:00",
+    "score": 8,
+    "summary_zh": "Notion 工程师 Ryan Nystrom 分享了 AI 如何根本性改变软件开发工作流。核心创新包括：（1）\"规格优先\"开发——通过语音输入规格，AI 自动实现并验证代码；（2）内部 Boxy 系统让工程师在评论中 @mention Codex 生成完整 PR；（3）自动化上下文（从 Slack、GitHub、会议记录）削减会议准备成本，作为防止工程师倦怠的机制；（4）强调 CI 速度对 AI 编码 Agent 至关重要；（5）工程管理者和高管需持续写代码以适应新工作方式。这体现了 Agent 时代工程角色和开发流程的根本演变。",
+    "key_points": [
+      "规格优先工作流：语音 → AI 格式化规格 → Agent 自动实现验证，完整闭环",
+      "自动化上下文（Slack/GitHub/会议记录）减少会议成本，降低倦怠",
+      "Boxy 系统让工程师在注释中触发 AI 生成完整 PR，20 分钟内交付",
+      "快速 CI 成为 AI 编码 Agent 时代的关键基础设施（Project Afterburner）",
+      "工程管理者必须持续写代码以理解 AI Agent 时代的新工作方式"
+    ],
+    "tags": [
+      "Agent 落地",
+      "开发流程重构",
+      "工作方式演变",
+      "生产力工具链"
+    ],
+    "speakers": [
+      "Ryan Nystrom",
+      "Notion",
+      "Brian Lovin",
+      "Steve Kaliski (Stripe)"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/capabilities/mckinsey-technology/our-insights/the-end-of-erp-as-we-know-it-five-ways-ai-is-disrupting-erp",
+    "title": "The end of ERP as we know it? Five ways AI is disrupting ERP",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-05-11",
+    "fetched_at": "2026-05-12T05:52:08+08:00",
+    "score": 8,
+    "summary_zh": "麦肯锡认为 AI 正在根本性地颠覆传统 ERP 范式。文章指出 AI 不是简单增强工具，而是改变企业资源规划的底层逻辑——从静态流程驱动转向动态、智能决策驱动。具体体现在五个维度：预测性业务运营、自适应工作流、实时数据智能、自主化执行、以及人机协作重塑。这意味着企业需要重新设计系统架构、人才配置和组织决策权力结构。速度问题不再是「是否」而是「何时」。",
+    "key_points": [
+      "AI 将 ERP 从流程驱动转向智能决策驱动，需要重新设计企业运营逻辑",
+      "预测性运营和自适应工作流将减少人工干预，改变一线业务人员角色定位",
+      "实时数据智能化要求组织重塑数据治理、决策权力和技能结构",
+      "AI 赋能下的自主化执行需要新的监督机制和人机协作框架",
+      "变革速度加快，企业需立即启动战略性 ERP 现代化和人才转型"
+    ],
+    "tags": [
+      "组织流程重构",
+      "数字化转型",
+      "人才角色再定义",
+      "决策权力下沉"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  },
+  {
+    "url": "https://openai.com/business/guides-and-resources/how-enterprises-are-scaling-ai",
+    "title": "How enterprises are scaling AI",
+    "source": "OpenAI",
+    "category": "ai-lab",
+    "published": "2026-05-11",
+    "fetched_at": "2026-05-12T05:52:17+08:00",
+    "score": 7,
+    "summary_zh": "OpenAI 分析企业如何规模化部署 AI，强调从早期试验到可持续影响的演进路径。核心要素包括：建立信任机制（员工与客户接纳）、完善治理框架（风险与合规管理）、重新设计工作流程（整合 AI 能力）、确保质量稳定性。文章涉及组织层面的流程再造与文化转变，但缺乏具体案例或管理决策者的深度观点。",
+    "key_points": [
+      "从实验到规模化需要信任基础——员工培训与变革管理至关重要",
+      "治理框架是规模化先决条件——定义 AI 使用边界、风险评估、合规审查",
+      "工作流设计决定落地成效——需要围绕 AI 能力重构业务流程",
+      "质量与可靠性是长期可持续性保障——监控、迭代、持续优化"
+    ],
+    "tags": [
+      "AI 规模化",
+      "组织治理",
+      "工作流重构",
+      "企业落地"
+    ],
+    "speakers": [
+      "OpenAI"
+    ]
+  },
+  {
+    "url": "https://stratechery.com/2026/the-inference-shift/",
+    "title": "The Inference Shift",
+    "source": "Stratechery (free posts)",
+    "category": "analyst",
+    "published": "2026-05-11",
+    "fetched_at": "2026-05-12T05:52:33+08:00",
+    "score": 7,
+    "summary_zh": "文章分析了AI芯片市场从GPU训练主导向多元化推理（inference）转变的趋势。Cerebras等公司IPO升温反映出市场认识到Agent需要大量计算资源。作者深入解释了训练与推理的技术差异：训练强调并行计算和芯片间通信，GPU通过CUDA生态垄断；但推理的prefill、decode等步骤对带宽和内存的需求更多样化，这为专用芯片如Cerebras创造了机会。这表明未来AI芯片市场将从Nvidia GPU独占向异构计算生态转变，对企业IT架构和成本结构产生深远影响。",
+    "key_points": [
+      "Agent时代驱动AI芯片需求激增，Cerebras等非GPU厂商获得融资机会",
+      "推理（inference）相比训练有不同的计算特性——更多是内存带宽而非并行计算密集",
+      "GPU垄断源于CUDA生态和芯片间通信优势，但推理需求多样化为异构芯片破局创造空间",
+      "企业IT基础设施将从单一GPU方案向混合芯片架构演进，影响采购和运维策略"
+    ],
+    "tags": [
+      "基础设施变革",
+      "芯片生态",
+      "Agent落地",
+      "成本结构优化"
+    ],
+    "speakers": [
+      "Cerebras Systems",
+      "Nvidia"
+    ]
+  }
+]

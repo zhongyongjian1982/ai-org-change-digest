@@ -1,0 +1,60 @@
+[
+  {
+    "url": "https://www.mckinsey.com/mgi/our-research/agents-robots-and-us-how-ai-reshapes-work-and-skills-in-europe",
+    "title": "Agents, robots, and us: How AI reshapes work and skills in Europe",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-05-12",
+    "fetched_at": "2026-05-13T05:52:55+08:00",
+    "score": 8,
+    "summary_zh": "麦肯锡研究表明，AI 代理与机器人时代，欧洲工作与技能生态面临深层转变。关键发现是：大多数现有技能仍需保留，但人的使用方式将根本改变——员工需学会与智能机器协作而非替代。这要求组织重新设计工作流程、重新定义岗位职责，以及大规模员工再培训。涉及劳动力规划、管理模式、招聘标准的系统性变革。",
+    "key_points": [
+      "技能需求不消失，而是转向人机协作的新工作模式，员工角色从单纯执行者变为协调者",
+      "组织需重新设计流程与岗位定义，适应 Agent 和机器人的融入",
+      "大规模再培训与能力发展成为 HR 战略核心，技能套组从执行力向判断力、创意、情感智能转变",
+      "欧洲劳动力结构面临差异化冲击，低技能岗位自动化风险高，需政策与企业联动应对"
+    ],
+    "tags": [
+      "劳动力转型",
+      "技能重塑",
+      "人机协作",
+      "组织流程设计"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  },
+  {
+    "url": "https://sloanreview.mit.edu/article/beyond-verification-what-responsible-ai-really-demands-of-human-experts/",
+    "title": "Beyond Verification — What Responsible AI Really Demands of Human Experts",
+    "source": "MIT Sloan Management Review",
+    "category": "business",
+    "published": "2026-05-12",
+    "fetched_at": "2026-05-13T05:52:50+08:00",
+    "score": 7,
+    "summary_zh": "MIT Sloan 与 BCG 的专家小组研究表明，负责任的 AI 治理核心是培养能验证 AI 系统的人类专家。84% 的专家认同此观点。关键发现是：验证不是单纯的输出检查，而是贯穿 AI 生命周期的全过程工作——包括设计、监督、问责。由于 AI 系统运作于复杂现实情境中，人类专家必须提供数据无法捕捉的背景信息、文化敏感性和社会风险判断（如对弱势群体的影响），这些是纯技术方案无法解决的。",
+    "key_points": [
+      "验证是贯穿 AI 生命周期的治理工作，不仅是末端检查点",
+      "人类专家需解读上下文、检测失效、识别社会风险与文化敏感性",
+      "AI 最大风险多为社会性（价值观失配、不公平影响），而非单纯技术问题",
+      "情景意识与文化细微差别无法自动化，必须由人类专家把关"
+    ],
+    "tags": [
+      "AI 治理",
+      "人才能力",
+      "组织责任",
+      "风险管理"
+    ],
+    "speakers": [
+      "MIT Sloan Management Review",
+      "Boston Consulting Group",
+      "Ryan Carrier (ForHumanity)",
+      "Franziska Weindauer (TÜV AI.Lab)",
+      "Stefaan Verhulst (GovLab)",
+      "Idoia Salazar (OdeseIA)",
+      "Jai Ganesh (Wipro Ltd.)",
+      "Yan Chow (Automation Anywhere)",
+      "Simon Chesterman (National University of Singapore)"
+    ]
+  }
+]

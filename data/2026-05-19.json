@@ -1,0 +1,56 @@
+[
+  {
+    "url": "https://www.lennysnewsletter.com/p/how-i-ai-html-is-the-new-markdown",
+    "title": "🎙️ How I AI: HTML is the new Markdown: How Anthropic engineers are building with Claude Code",
+    "source": "Lenny's Newsletter",
+    "category": "analyst",
+    "published": "2026-05-18",
+    "fetched_at": "2026-05-19T05:49:35+08:00",
+    "score": 7,
+    "summary_zh": "Anthropic工程师分享如何用Claude Code进行开发。核心观点：HTML正取代Markdown成为与AI Agent沟通的主要格式，因其提供更丰富的交互界面。工程师角色从「代码编写者」演变为「计算资源分配者」——决策重心从编码转向规划与任务界定。由于大模型可持续运行数小时，关键是定义边界、保持人在循环中。生成的tokens中仅1%进入生产代码，其余用于规划、可视化、设计系统等前期工作。这反映了AI时代工作方式的根本转变：从产出代码到管理AI的工作流程和人机交互。",
+    "key_points": [
+      "HTML凭借交互性、可视性优于Markdown，成为与AI Agent沟通和规划的最佳格式",
+      "工程师核心职责转变：从写代码到分配计算资源、定义问题边界、监督Agent进展",
+      "个性化微应用与living design system（HTML格式）提高人对AI输出的理解与参与度",
+      "生成token中仅1%用于生产，99%用于规划与设计，体现资源充足下的工作重心转移",
+      "简洁信任的提示词优于过度约束的系统提示，给予Agent创意空间"
+    ],
+    "tags": [
+      "工作方式转变",
+      "人机协作",
+      "Agent落地",
+      "工具与流程优化"
+    ],
+    "speakers": [
+      "Thariq Shihipar (Anthropic Claude Code 团队)",
+      "Anthropic"
+    ]
+  },
+  {
+    "url": "https://www.lennysnewsletter.com/p/html-is-the-new-markdown-how-anthropic",
+    "title": "HTML is the new Markdown: How Anthropic engineers are building with Claude Code | Thariq Shihipar",
+    "source": "Lenny's Newsletter",
+    "category": "analyst",
+    "published": "2026-05-18",
+    "fetched_at": "2026-05-19T05:49:41+08:00",
+    "score": 7,
+    "summary_zh": "Anthropic 工程师 Thariq Shihipar 分享了用 HTML 替代 Markdown 作为 AI Agent（Claude Code）规划与实现工作流的新范式。核心发现：富视觉格式相比纯文本能显著提升人机协作效率。他介绍了通过 HTML artifacts 创建交互式计划、快速原型 UI、维护活态设计系统等具体做法。重点观点包括：99% token 应投入规划与接口设计而非生产代码；HTML 约束让 Claude 既有灵活性又能确保可控性；复杂度需「赚取其位置」。这反映了 AI 时代工作流从文本驱动向可视化、交互式范式的演进。",
+    "key_points": [
+      "HTML 作为 AI Agent 通信格式，比 Markdown 提供更高视觉参与度和交互能力",
+      "99% AI token 用于规划、界面、沟通，仅 1% 用生产代码——根本性改变开发优先级",
+      "HTML 规范与设计系统随代码库流动，实现活态文档，减少信息割裂",
+      "\"复杂度需赚取其位置\"——通过约束提示词让 AI 既自由又可控"
+    ],
+    "tags": [
+      "工作流重构",
+      "AI Agent 协作",
+      "设计系统",
+      "规划优先"
+    ],
+    "speakers": [
+      "Thariq Shihipar",
+      "Anthropic",
+      "Claire Vo"
+    ]
+  }
+]

@@ -1,0 +1,80 @@
+[
+  {
+    "url": "https://sloanreview.mit.edu/article/data-transformation-is-the-ceos-business/",
+    "title": "Data Transformation Is the CEO’s Business",
+    "source": "MIT Sloan Management Review",
+    "category": "business",
+    "published": "2026-05-21",
+    "fetched_at": "2026-05-22T06:04:45+08:00",
+    "score": 9,
+    "summary_zh": "MIT Sloan 通过 Caterpillar 案例研究揭示数据转型的本质：这不是 IT 技术项目，而是由 CEO 主导的商业战略。CEO Umpleby 将数据转型与具体业务目标（服务收入从 140 亿增至 240 亿）挂钩，给予执行团队 3 年资源承诺，重新设计数据治理结构，将数据所有权升级至高管层。核心教训：顶层必须设定明确的商业成果目标、赋予高管数据责任、承诺资源投入、纳入所有利益相关方声音，才能真正释放数据价值而非沦为 IT 现代化项目。",
+    "key_points": [
+      "数据转型由 CEO 驱动，设定明确商业成果目标（如收入目标），而非仅关注技术指标",
+      "将数据所有权从 IT 部门升级至高管层，重新设计治理结构以匹配业务价值",
+      "承诺长期资源投入（Caterpillar 给予 3 年时间）与高管主动参与胜过快速交付",
+      "数据转型聚焦优先级业务需求（VisionLink、电商），避免无关项目蔓延"
+    ],
+    "tags": [
+      "组织结构重构",
+      "数据治理",
+      "CEO 领导力",
+      "商业战略对齐"
+    ],
+    "speakers": [
+      "Jim Umpleby（Caterpillar CEO）",
+      "Ogi Redzic（Cat Digital 首席数字官）",
+      "MIT Sloan Center for Information Systems Research"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/industries/financial-services/our-insights/global-banking-annual-review",
+    "title": "Global Banking Annual Review 2026: Precision with speed",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-05-21",
+    "fetched_at": "2026-05-22T06:04:55+08:00",
+    "score": 7,
+    "summary_zh": "麦肯锡2026年全球银行年度报告指出，AI正以前所未有的速度重塑银行业，促使银行加速精准战略并演进为「多速度组织」。报告关注银行在2025年持续强劲表现、地缘政治新格局、客户所有权转折点，以及AI驱动的组织敏捷性变革。核心观点是AI迫使银行重新思考组织架构和运营节奏，同时保持竞争力。",
+    "key_points": [
+      "AI推动银行进化为'多速度组织'，需要兼顾稳定运营与创新敏捷",
+      "精准战略成为AI时代必需，银行需加速决策和执行能力",
+      "地缘政治和客户所有权变化构成新业务环境，AI赋能应对",
+      "报告强调组织结构与运营模式需适应AI驱动的行业变革节奏"
+    ],
+    "tags": [
+      "组织转型",
+      "多速度组织",
+      "AI落地",
+      "银行业变革"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  },
+  {
+    "url": "https://sequoiacap.com/article/all-systems-nominal-nominal-spotlight/",
+    "title": "All Systems Nominal – Nominal Spotlight",
+    "source": "Sequoia Capital",
+    "category": "vc",
+    "published": "2026-05-21",
+    "fetched_at": "2026-05-22T06:05:02+08:00",
+    "score": 6,
+    "summary_zh": "Sequoia Capital 发表的 Nominal 公司案例文章。Nominal 是一家专注硬件测试的平台公司，创始人 Cameron McCord 曾在军方服役。文章通过 Hermeus 超音速飞机引擎测试的真实案例，展示 Nominal 平台如何将原本需要数周数月的数据审查时间压缩至两小时内完成，大幅提升硬件开发团队的决策效率和工作方式。体现了 AI/数据平台对硬件工程团队工作流程的具体改善。",
+    "key_points": [
+      "Nominal 平台将硬件测试数据审查从数周数月缩短至两小时，使团队能在极端时间压力下做出高风险决策",
+      "实时数据流处理（刹车、执行器、航电系统等）让工程团队获得系统健康的即时窗口",
+      "硬件开发团队从使用不匹配的工具拼凑方案，转向专用平台带来的工作流程标准化与可靠性提升",
+      "案例反映 AI 数据平台如何改变高风险硬件工程的决策流程和团队运作方式"
+    ],
+    "tags": [
+      "硬件开发效率",
+      "数据平台赋能",
+      "团队决策加速",
+      "工作流程变革"
+    ],
+    "speakers": [
+      "Cameron McCord / Nominal CEO",
+      "AJ Piplica / Hermeus CEO"
+    ]
+  }
+]

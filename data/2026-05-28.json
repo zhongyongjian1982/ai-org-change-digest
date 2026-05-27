@@ -1,0 +1,77 @@
+[
+  {
+    "url": "https://sloanreview.mit.edu/video/what-ai-still-cant-do-for-leaders/",
+    "title": "What AI Still Can’t Do for Leaders",
+    "source": "MIT Sloan Management Review",
+    "category": "business",
+    "published": "2026-05-27",
+    "fetched_at": "2026-05-28T06:19:43+08:00",
+    "score": 8,
+    "summary_zh": "MIT Sloan管理学院教授Ancona和Isaacs深入探讨了生成式AI对领导力的局限。他们指出，虽然ChatGPT等工具被广泛集成到工作流中，但AI无法自动化目标感和临场感。更重要的是，过度依赖AI会悄然侵蚀领导者的判断力和真实性。研究强调领导者需保持个人声音和内感受力（interoception），在AI驱动时代避免过度授权给机器。文章提出了在AI时代有效领导的具体建议。",
+    "key_points": [
+      "目标感与临场感无法被AI自动化，是领导力的核心要素",
+      "过度依赖AI会隐性侵蚀领导者的判断力和真实性",
+      "内感受力（自我感知能力）对人类领导力至关重要",
+      "领导者需在AI工具应用中保持个人声音和主体性"
+    ],
+    "tags": [
+      "领导力重塑",
+      "AI局限性",
+      "人机决策边界",
+      "真实性与判断力"
+    ],
+    "speakers": [
+      "Deborah Ancona",
+      "Katherine W. Isaacs",
+      "MIT Sloan School of Management"
+    ]
+  },
+  {
+    "url": "https://www.lennysnewsletter.com/p/the-codex-feature-that-works-while",
+    "title": "The Codex feature that works while you sleep",
+    "source": "Lenny's Newsletter",
+    "category": "analyst",
+    "published": "2026-05-27",
+    "fetched_at": "2026-05-28T06:20:19+08:00",
+    "score": 7,
+    "summary_zh": "Codex 的 /goal 功能将 AI 从被动的逐步助手转变为可自主运行数小时的智能 Agent。通过设定清晰的目标、可测量的成果和约束条件，用户可以让 AI 自主完成复杂多步任务，如清理数千条错误日志、整理数千封邮件、组织项目任务。这代表工作方式的根本转变：从「不断提示 AI 下一步做什么」到「设定目标后放手管理」，体现 Agent 时代人与 AI 协作模式的升级。",
+    "key_points": [
+      "/goal 将 AI 从被动助手转为自主 Agent，可连续运行 5+ 小时无需中断",
+      "实战案例：5 小时自主清除千级错误日志、4 小时整理 3900 邮件到 68 封、批量组织 Linear 任务",
+      "有效目标设定的六要素：清晰成果、可验证方法、约束条件、非线性思维支持",
+      "标志性转变：从「教模型做什么」到「设定目标后管理执行」的工作范式革新"
+    ],
+    "tags": [
+      "Agent 落地",
+      "生产力提升",
+      "人机协作范式",
+      "自主工作流"
+    ],
+    "speakers": [
+      "Claire Vo"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/capabilities/mckinsey-technology/overview/cybersecurity/the-boards-role-in-managing-emerging-ai-risks",
+    "title": "The board’s role in managing emerging AI risks",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-05-27",
+    "fetched_at": "2026-05-28T06:19:47+08:00",
+    "score": 7,
+    "summary_zh": "McKinsey 聚焦董事会在 AI 风险管理中的角色。文章汇集网络安全高管与董事观点，讨论 AI 带来的挑战与机遇。董事会需重新定义监管职责，平衡 AI 创新收益与风险敞口。核心议题包括：AI 治理框架、数据安全、模型透明性、以及董事会如何建立 AI 风险委员会等。强调高层主动参与 AI 战略制定的必要性，确保组织在拥抱 AI 变革时不陷入监管盲区。",
+    "key_points": [
+      "董事会需建立专门 AI 风险委员会，制定清晰治理框架与监督机制",
+      "平衡 AI 创新与数据安全、隐私、模型可解释性等风险的关键张力",
+      "高管层应主动学习 AI 基础知识，参与战略决策而非被动应对",
+      "组织需明确责任边界，确定 CTO/CISO/CFO 在 AI 治理中的分工"
+    ],
+    "tags": [
+      "AI治理",
+      "董事会职能",
+      "风险管理",
+      "组织决策"
+    ],
+    "speakers": []
+  }
+]

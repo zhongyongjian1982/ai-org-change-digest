@@ -1,0 +1,129 @@
+[
+  {
+    "url": "https://sloanreview.mit.edu/article/when-employees-are-drowning-in-change/",
+    "title": "When Employees Are Drowning in Change",
+    "source": "MIT Sloan Management Review",
+    "category": "business",
+    "published": "2026-05-28",
+    "fetched_at": "2026-05-29T06:19:02+08:00",
+    "score": 8,
+    "summary_zh": "文章通过 CareRx 快速扩张导致员工流失的案例，揭示企业领导者常见的变革管理失误：变化过多过快，却忽视员工体验。研究显示 83% 的领导者面临前所未有的变革压力，但员工实际只能年承受 1-2 项重大改变。文章强调三大领导力原则应对之：以对话为核心、透明沟通愿景、持续支持团队。这些不仅缓解变革焦虑，还能激发员工创新能力与敬业度。",
+    "key_points": [
+      "员工年均只能吸收 1-2 项重大变革，但领导者规划 3-4 项，产生严重错位",
+      "变革的感情维度常被忽视：员工需要对话与解释，而非单向命令",
+      "对话式领导力（倾听→反馈→行动）能将负增长扭转为两位数增长",
+      "领导者自认沟通良好，但 1/4 员工不同意或不确定，存在感知鸿沟"
+    ],
+    "tags": [
+      "变革管理",
+      "员工体验",
+      "领导力",
+      "组织转型"
+    ],
+    "speakers": [
+      "Adrianne Sullivan-Campeau (CareRx)",
+      "Samantha Stark",
+      "The Grossman Group"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/industries/financial-services/our-insights/move-first-or-fall-behind-how-ai-is-rewriting-the-rules-of-banking",
+    "title": "Move first or fall behind: How AI is rewriting the rules of banking",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-05-28",
+    "fetched_at": "2026-05-29T06:19:12+08:00",
+    "score": 8,
+    "summary_zh": "McKinsey 认为 AI 将深刻重构银行业竞争格局，不仅降低成本，更关键是重新分配利润流向、改造客户关系模式、加速市场竞争。文章强调银行需主动出击而非被动应对，暗示 AI 将触发组织战略、客户运营、盈利模式的全面重塑。银行必须在 AI 融合的转折点做出前瞻性决策，否则面临被市场淘汰风险。这涉及业务模式创新、运营流程改造、人员能力重配等多维度组织变革。",
+    "key_points": [
+      "AI 不仅是成本优化工具，更是利润重新分配的驱动力，威胁传统银行商业模式",
+      "客户关系、市场竞争格局将被重新定义，要求银行快速战略调整",
+      "延缓 AI 采纳的银行面临被市场淘汰的风险，强调「先发优势」的重要性",
+      "涉及组织层面的深层变革，需要全面的战略和运营重构"
+    ],
+    "tags": [
+      "商业模式重构",
+      "组织战略",
+      "竞争格局变化",
+      "数字化转型"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/capabilities/mckinsey-technology/our-insights/rewiring-software-delivery-for-the-agentic-era",
+    "title": "Rewiring software delivery for the agentic era",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-05-28",
+    "fetched_at": "2026-05-29T06:19:15+08:00",
+    "score": 8,
+    "summary_zh": "麦肯锡指出，Agent AI在软件开发中的应用方式预示着交付模式的广泛变革。文章暗示Agent不仅改变技术实现路径，更重要的是重塑软件交付的组织流程、团队协作方式和项目管理逻辑。这触及研发效能、团队结构优化、交付周期压缩等核心管理问题，代表从传统瀑布/敏捷向Agent驱动的自适应交付模式演进。",
+    "key_points": [
+      "Agent AI正在改造软件交付模式的基础架构和协作流程",
+      "从工具应用扩展到组织层面的交付体系重构",
+      "预示研发团队角色、技能需求的深层调整",
+      "交付效能、质量保障、风险管理的新定义"
+    ],
+    "tags": [
+      "交付模式重构",
+      "Agent落地",
+      "研发组织",
+      "工作流程重塑"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/the-surprising-economics-of-b2b-growth-the-new-survival-threshold-and-what-it-takes-to-thrive",
+    "title": "The surprising economics of B2B growth: The new survival threshold—and what it takes to thrive",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-05-28",
+    "fetched_at": "2026-05-29T06:19:07+08:00",
+    "score": 7,
+    "summary_zh": "McKinsey 2026 全球 B2B 脉搏调查显示，领先企业与落后者存在明显分化。研究指出，整合超个性化、AI 和销售问责制形成新的增长运营体系。这涉及企业如何重新组织销售流程、定义销售团队的职能与激励机制，以及 AI 在客户互动中的深度融合。调查强调，这不仅是工具升级，更是对销售人员角色、团队结构和绩效管理的根本性转变。",
+    "key_points": [
+      "AI 与超个性化重塑销售运营系统，要求组织重构销售团队职能和问责制",
+      "领先企业与落后者的分化源于对 AI 驱动增长模式的采纳差异与执行能力",
+      "销售问责制升级成为 AI 时代的关键——需新的 KPI、激励和人员能力框架",
+      "超个性化需要人-AI 协作，对销售人员的数据素养和决策能力提出新要求"
+    ],
+    "tags": [
+      "销售组织重构",
+      "AI 运营系统",
+      "人员能力升级",
+      "生产力变革"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/industries/retail/our-insights/building-the-ai-advantage-how-adeo-is-preparing-for-retails-next-wave",
+    "title": "Building the AI advantage: How ADEO is preparing for retail’s next wave",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-05-28",
+    "fetched_at": "2026-05-29T06:19:20+08:00",
+    "score": 7,
+    "summary_zh": "ADEO（全球家居改善零售商）首席数字信息官分享如何通过AI解锁零售竞争力。文章聚焦企业如何在数字化转型中引入AI能力，同时保持组织稳定性和人员适应。涉及零售运营优化、数据驱动决策、以及AI落地过程中的人才与文化挑战，反映大型零售集团对AI战略与组织变革的深层思考。",
+    "key_points": [
+      "零售企业通过AI重塑供应链、库存、客户体验等核心运营能力",
+      "高管强调AI落地需兼顾技术投资与组织人员的稳定过渡",
+      "数据驱动决策成为零售竞争力的新基础，需要跨职能能力整合",
+      "AI优势获取并非仅技术问题，更关乎组织文化与人才心态调整"
+    ],
+    "tags": [
+      "零售数字化",
+      "运营优化",
+      "人才适应",
+      "AI战略"
+    ],
+    "speakers": [
+      "ADEO首席数字信息官"
+    ]
+  }
+]

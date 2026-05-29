@@ -1,0 +1,51 @@
+[
+  {
+    "url": "https://openai.com/index/endava",
+    "title": "How Endava builds an agentic organization with Codex",
+    "source": "OpenAI",
+    "category": "ai-lab",
+    "published": "2026-05-28",
+    "fetched_at": "2026-05-30T06:15:13+08:00",
+    "score": 7,
+    "summary_zh": "Endava 通过使用 OpenAI Codex 构建 agent 驱动的组织，实现了软件交付加速和需求分析流程的显著优化——将原本耗时数周的需求分析缩短至数小时。这个案例展示了生成式 AI 工具如何重塑开发流程、改变团队协作方式和交付效率，具有组织流程创新的典型意义。",
+    "key_points": [
+      "需求分析周期从数周压缩至数小时，直接提升交付速度和组织响应能力",
+      "Agent 组织模式改变了传统分层工作结构，强调自动化和智能化决策",
+      "Codex 工具的集成体现了 AI 赋能团队、重新定义岗位职能的实践路径"
+    ],
+    "tags": [
+      "Agent 落地",
+      "组织流程重构",
+      "生产力提升",
+      "研发效能"
+    ],
+    "speakers": [
+      "Endava"
+    ]
+  },
+  {
+    "url": "https://openai.com/index/mufg",
+    "title": "MUFG aims to become AI-native with OpenAI",
+    "source": "OpenAI",
+    "category": "ai-lab",
+    "published": "2026-05-28",
+    "fetched_at": "2026-05-30T06:15:16+08:00",
+    "score": 6,
+    "summary_zh": "MUFG（日本三菱日联金融集团）采用 ChatGPT Enterprise 推进 AI 原生组织建设。该案例涉及流程优化、工作流改进和规模化 AI 金融服务交付，但作为 OpenAI 官方发布内容，缺乏具体数据、组织变革细节或管理层观点阐述。适合了解金融机构 AI 采纳方向，但深度有限。",
+    "key_points": [
+      "大型金融机构（MUFG）明确转向 AI 原生组织架构方向",
+      "通过企业级 ChatGPT 重塑内部工作流和服务交付模式",
+      "涉及金融服务创新与规模化 AI 应用落地"
+    ],
+    "tags": [
+      "组织重构",
+      "AI 原生",
+      "金融服务创新",
+      "企业级应用"
+    ],
+    "speakers": [
+      "MUFG",
+      "OpenAI"
+    ]
+  }
+]

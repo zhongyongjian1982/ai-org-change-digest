@@ -1,0 +1,127 @@
+[
+  {
+    "url": "https://www.lennysnewsletter.com/p/how-i-ai-codex-goals-explained-and",
+    "title": "🎙️ How I AI: Codex Goals explained & Claude Opus 4.8 review & Building an iPhone app with zero technical skills",
+    "source": "Lenny's Newsletter",
+    "category": "analyst",
+    "published": "2026-06-01",
+    "fetched_at": "2026-06-02T06:49:07+08:00",
+    "score": 7,
+    "summary_zh": "Bryce Rattner Keithley 从招聘背景出发，利用 Claude、Gemini 等 AI 工具在几个月内开发并上线了健身应用。核心启示：AI 正在改变谁有能力参与软件开发，技术专家的价值从「快速找到解决方案」转向「理解工具组合、判断何时用 AI、带来品味决策」。未来成功者需要适应力、好奇心和跨界协作能力，而非死守传统技能边界。",
+    "key_points": [
+      "零代码背景可成功交付生产级应用，意味着 AI 正民主化软件开发入场门槛",
+      "最优工作流：Claude 做架构师、Claude Code 做工程师、Terminal 执行器；人类负责判断与迭代",
+      "工程师价值重心从速度转向品味、工具选择与全局理解能力",
+      "适应性、好奇心、跨领域协作能力将决定职场竞争力，而非特定技能垄断"
+    ],
+    "tags": [
+      "劳动力转型",
+      "工具民主化",
+      "人机协作",
+      "能力重新定义"
+    ],
+    "speakers": [
+      "Bryce Rattner Keithley"
+    ]
+  },
+  {
+    "url": "https://sloanreview.mit.edu/article/a-three-minute-protocol-to-reduce-ai-manipulation-risk/",
+    "title": "A Three-Minute Protocol to Reduce AI Manipulation Risk",
+    "source": "MIT Sloan Management Review",
+    "category": "business",
+    "published": "2026-06-01",
+    "fetched_at": "2026-06-02T06:48:17+08:00",
+    "score": 7,
+    "summary_zh": "MIT Sloan 与 RSM France 联合研究发现，AI 时代员工认知成为企业安全的关键薄弱点。文章提出「先思考，总验证」(TFVA) 三分钟协议，通过让员工在使用 AI 前形成独立判断、之后交叉验证关键信息，对抗 AI 驱动的个性化欺骗、幻觉型虚假信息和认知外包风险。随机对照试验表明该协议将决策质量提升 7.87%，伦理判断改善 44%。RSM France 已在 1600 员工入职培训中部署，建议管理层嵌入安全意识与 AI 访问政策中强化习惯养成。",
+    "key_points": [
+      "AI 加剧人类认知漏洞：员工面临个性化欺骗、模型幻觉、思维外包三重威胁",
+      "TFVA 协议通过独立判断+交叉验证，将员工从「盲目信任」转变为「工具使用者」",
+      "三分钟微课程试验效果显著：提升决策质量 7.87%，信息验证能力升 25%",
+      "可整合至入职、安全培训、AI 政策中，成为组织级防御措施"
+    ],
+    "tags": [
+      "风险管理",
+      "员工赋能",
+      "AI 治理",
+      "组织流程"
+    ],
+    "speakers": [
+      "RSM France"
+    ]
+  },
+  {
+    "url": "https://sloanreview.mit.edu/article/does-cultural-training-help-expats-succeed/",
+    "title": "Does Cultural Training Help Expats Succeed?",
+    "source": "MIT Sloan Management Review",
+    "category": "business",
+    "published": "2026-06-01",
+    "fetched_at": "2026-06-02T06:48:22+08:00",
+    "score": 7,
+    "summary_zh": "MIT Sloan 的大规模元分析研究（涵盖 571,260 人）颠覆了传统跨文化培训的价值。研究发现，文化知识对派驻员工的适应帮助极小；真正决定性因素是主管支持——它比文化培训、社区支持甚至家庭支持的效果都更强。建议企业将跨文化整合视为管理层责任，通过主管的主动倾听、角色澄清和社会融纳来降低歧视感和孤独感，从而推动全球人才战略成功。这反映了组织应如何调整在全球流动中的管理重点。",
+    "key_points": [
+      "文化培训效果有限，主管支持是适应成功的最强预测因素，超过家庭和社区支持",
+      "歧视、系统复杂性和孤独感是派驻员工失败的主要原因，而非文化差异本身",
+      "将派驻员工整合责任归于主管，需培训主管的倾听、角色澄清和融纳能力",
+      "早期干预和主管问责制能显著降低适应压力，保护员工心理健康和工作表现"
+    ],
+    "tags": [
+      "全球人才管理",
+      "领导力与员工支持",
+      "组织融纳",
+      "跨文化管理"
+    ],
+    "speakers": []
+  },
+  {
+    "url": "https://sloanreview.mit.edu/audio/ai-for-interoperability-in-health-care-philipss-carla-goulart-peron/",
+    "title": "AI for Interoperability in Health Care: Philips’s Carla Goulart Peron",
+    "source": "MIT Sloan Management Review",
+    "category": "business",
+    "published": "2026-06-01",
+    "fetched_at": "2026-06-02T06:48:27+08:00",
+    "score": 7,
+    "summary_zh": "飞利浦首席医学官 Carla Goulart Peron 分享 AI 如何重塑医疗实践——不是替代临床医生，而是扩大诊疗覆盖、改进诊断、让医生有更多时间与患者互动。她从巴西公立医疗系统的工作经验出发，阐述 AI 辅助影像和远程协作如何弥补医疗资源缺口。讨论了信任、偏见、互操作性和女性健康数据等 AI 医疗应用的关键挑战，强调技术应使医疗更加人性化。",
+    "key_points": [
+      "AI 扩展而非替代临床医生，关键是让医生从繁琐工作中解放，专注患者互动",
+      "AI 辅助影像和远程协作技术可弥补资源短缺地区的医疗覆盖差距",
+      "建立医疗 AI 系统需解决信任、算法偏见、数据互操作性和特定群体数据缺失问题",
+      "医疗科技公司领导者应从临床实践经验出发，理解真实诊疗场景中的技术应用需求"
+    ],
+    "tags": [
+      "AI 赋能医疗",
+      "工作方式变革",
+      "人机协作",
+      "组织视角"
+    ],
+    "speakers": [
+      "Carla Goulart Peron（飞利浦首席医学官）",
+      "Philips（飞利浦）",
+      "MIT Sloan Management Review"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/capabilities/transformation/our-insights/leading-from-the-field-transformation-in-distributed-operations",
+    "title": "Leading from the field: Transformation in distributed operations",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-06-01",
+    "fetched_at": "2026-06-02T06:48:34+08:00",
+    "score": 7,
+    "summary_zh": "麦肯锡建议在分布式运营转型中，应由现场领导者主导执行，同时从中央层面提供战略方向。这一模式强调「前线赋权 + 中央指导」的混合治理，旨在加速产业网络转型、提升执行效率并确保全系统协同。文章隐含对组织决策权力分配、领导力角色、跨层级协调的重新思考，与 AI 驱动下的去中心化管理、敏捷决策等趋势相呼应。",
+    "key_points": [
+      "现场领导者应获得更多自主权和执行权，避免转型被繁琐流程延缓",
+      "中央层保持战略方向与全局协调，确保系统一致性与影响力",
+      "现场赋权 + 中央指导的混合模式适应分布式、复杂运营环境",
+      "重点解决传统中层管理的阻滞，加快决策和创新周期"
+    ],
+    "tags": [
+      "组织结构",
+      "领导力下沉",
+      "分布式管理",
+      "决策权赋能"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  }
+]

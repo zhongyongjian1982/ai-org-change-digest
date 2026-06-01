@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+<title>2026-06-02 — AI TRANSFORMATION</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #0a0a0a; color: #999; font-family: system-ui, -apple-system, sans-serif; line-height: 1.6; min-height: 100vh; }
+a { color: inherit; text-decoration: none; }
+a:hover { color: #ccc; }
+.back-link { position: fixed; top: 18px; left: 20px; font-family: 'VT323', monospace; font-size: 1.15rem; color: #666; z-index: 100; letter-spacing: 0.02em; transition: color 0.15s; }
+.back-link:hover { color: #aaa; }
+header { padding: 60px 20px 32px; text-align: center; }
+header h1 { font-family: 'VT323', monospace; font-size: clamp(2rem, 6vw, 4rem); color: #999; letter-spacing: 0.12em; line-height: 1.1; margin-bottom: 12px; word-spacing: 0.1em; }
+header p { font-size: 0.88rem; color: #666; letter-spacing: 0.08em; }
+header p a { color: #888; transition: color 0.15s; }
+header p a:hover { color: #ccc; }
+.controls { background: #0a0a0a; border-bottom: 1px solid #1c1c1c; position: sticky; top: 0; z-index: 50; }
+.tabs { display: flex; overflow-x: auto; scrollbar-width: none; padding: 0 16px; max-width: 760px; margin: 0 auto; }
+.tabs::-webkit-scrollbar { display: none; }
+.tab { flex-shrink: 0; background: none; border: none; border-bottom: 2px solid transparent; padding: 14px 12px; font-size: 0.88rem; color: #777; cursor: pointer; font-family: system-ui, sans-serif; display: flex; align-items: center; gap: 5px; white-space: nowrap; transition: color 0.15s, border-color 0.15s; letter-spacing: 0.02em; }
+.tab.active { color: #ddd; border-bottom-color: #777; }
+.tab:hover { color: #bbb; }
+.badge { font-size: 0.74rem; color: #555; }
+.tab.active .badge { color: #999; }
+.filter-bar { display: flex; align-items: center; gap: 10px; padding: 10px 16px; border-top: 1px solid #161616; max-width: 760px; margin: 0 auto; font-size: 0.82rem; color: #666; flex-wrap: wrap; }
+.filter-bar > span { letter-spacing: 0.04em; }
+.filter-bar .sep { color: #2a2a2a; }
+.score-filter { display: flex; gap: 6px; flex-wrap: wrap; }
+.sf-btn { background: none; border: 1px solid #2a2a2a; border-radius: 3px; padding: 3px 11px; font-size: 0.8rem; color: #888; cursor: pointer; font-family: inherit; transition: color 0.15s, border-color 0.15s; letter-spacing: 0.04em; }
+.sf-btn.active, .sf-btn:hover { color: #ddd; border-color: #777; }
+.source-select { background: #0a0a0a; border: 1px solid #2a2a2a; border-radius: 3px; padding: 3px 9px; font-size: 0.8rem; color: #aaa; font-family: inherit; cursor: pointer; outline: none; }
+.source-select:hover { color: #ddd; border-color: #777; }
+.source-select option { background: #0a0a0a; color: #ccc; }
+.list { max-width: 760px; margin: 0 auto; padding: 8px 20px 80px; }
+.day { padding-top: 32px; }
+.day-head { font-size: 0.8rem; color: #555; letter-spacing: 0.12em; padding: 0 0 10px; border-bottom: 1px solid #1c1c1c; margin-bottom: 4px; text-transform: uppercase; }
+.day-head .count { color: #444; margin-left: 6px; }
+.entry { padding: 22px 0; border-bottom: 1px solid #161616; }
+.entry.hidden { display: none; }
+.entry-meta { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; font-size: 0.8rem; color: #666; margin-bottom: 8px; letter-spacing: 0.03em; }
+.entry-meta .sep { color: #2a2a2a; }
+.entry-score { color: #999; font-variant-numeric: tabular-nums; letter-spacing: 0.05em; font-weight: 500; }
+.entry-score.s-low { color: #666; }
+.entry-title { display: block; font-size: 1.1rem; color: #ccc; transition: color 0.15s; line-height: 1.5; margin-bottom: 10px; font-weight: 500; }
+.entry-title:hover { color: #fff; }
+.entry-summary { font-size: 0.95rem; color: #aaa; line-height: 1.75; margin-bottom: 10px; }
+.entry-bullets { list-style: none; padding: 0; margin: 8px 0 12px; }
+.entry-bullets li { font-size: 0.9rem; color: #888; line-height: 1.75; padding-left: 16px; position: relative; margin-bottom: 2px; }
+.entry-bullets li::before { content: '·'; position: absolute; left: 4px; color: #666; font-weight: bold; }
+.entry-chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+.entry-chip { font-size: 0.78rem; color: #777; border: 1px solid #2a2a2a; padding: 2px 9px; border-radius: 2px; letter-spacing: 0.03em; }
+.entry-chip.speaker { color: #aaa; border-color: #3a3a3a; }
+.empty-state { text-align: center; padding: 60px 20px; color: #555; font-size: 0.9rem; }
+@media (max-width: 480px) {
+  .list { padding: 8px 14px 60px; }
+  .entry-title { font-size: 1rem; }
+  .entry-summary { font-size: 0.92rem; }
+  .entry-bullets li { font-size: 0.88rem; }
+  .filter-bar { font-size: 0.74rem; gap: 8px; }
+}
+footer { text-align: center; padding: 30px 20px; color: #555; font-size: 0.78rem; letter-spacing: 0.06em; }
+footer a { color: #666; transition: color 0.15s; }
+footer a:hover { color: #999; }
+</style>
+</head>
+<body>
+<a class="back-link" href="https://www.tedzhong.com/">← tedzhong.com</a>
+<header>
+  <h1>2026-06-02</h1>
+  <p>5 条 · <a href="../index.html">← 返回最新</a> · <a href="./">归档</a></p>
+</header>
+<div class="controls">
+  <div class="tabs"><button class="tab active" data-cat="all">全部<span class="badge">5</span></button><button class="tab" data-cat="analyst">分析师<span class="badge">1</span></button><button class="tab" data-cat="business">商业<span class="badge">4</span></button></div>
+  <div class="filter-bar">
+    <span>评分</span>
+    <div class="score-filter">
+      <button class="sf-btn active" data-score="6">≥6</button>
+      <button class="sf-btn" data-score="7">≥7</button>
+      <button class="sf-btn" data-score="8">≥8</button>
+      <button class="sf-btn" data-score="9">≥9</button>
+    </div>
+    <span class="sep">·</span>
+    <span>来源</span>
+    <select class="source-select" id="f-source"><option value="*">全部</option><option value="Lenny&#x27;s Newsletter">Lenny&#x27;s Newsletter</option><option value="MIT Sloan Management Review">MIT Sloan Management Review</option><option value="McKinsey Insights">McKinsey Insights</option></select>
+  </div>
+</div>
+<div class="list">
+<section class="day"><div class="day-head">2026-06-02<span class="count">· 5 条</span></div>
+    <article class="entry" data-source="Lenny&#x27;s Newsletter" data-category="analyst" data-score="7">
+      <div class="entry-meta">
+        <span class="entry-score">7/10</span>
+        <span class="sep">·</span>
+        <span>Lenny&#x27;s Newsletter</span>
+        <span class="sep">·</span>
+        <span>分析师</span>
+        <span class="sep">·</span>
+        <span>2026-06-01</span>
+      </div>
+      <a class="entry-title" href="https://www.lennysnewsletter.com/p/how-i-ai-codex-goals-explained-and" target="_blank" rel="noopener">🎙️ How I AI: Codex Goals explained &amp; Claude Opus 4.8 review &amp; Building an iPhone app with zero technical skills</a>
+      <p class="entry-summary">Bryce Rattner Keithley 从招聘背景出发，利用 Claude、Gemini 等 AI 工具在几个月内开发并上线了健身应用。核心启示：AI 正在改变谁有能力参与软件开发，技术专家的价值从「快速找到解决方案」转向「理解工具组合、判断何时用 AI、带来品味决策」。未来成功者需要适应力、好奇心和跨界协作能力，而非死守传统技能边界。</p>
+      <ul class="entry-bullets"><li>零代码背景可成功交付生产级应用，意味着 AI 正民主化软件开发入场门槛</li><li>最优工作流：Claude 做架构师、Claude Code 做工程师、Terminal 执行器；人类负责判断与迭代</li><li>工程师价值重心从速度转向品味、工具选择与全局理解能力</li><li>适应性、好奇心、跨领域协作能力将决定职场竞争力，而非特定技能垄断</li></ul>
+      <div class="entry-chips"><span class="entry-chip speaker">Bryce Rattner Keithley</span><span class="entry-chip">劳动力转型</span><span class="entry-chip">工具民主化</span><span class="entry-chip">人机协作</span><span class="entry-chip">能力重新定义</span></div>
+    </article>
+    
+    <article class="entry" data-source="MIT Sloan Management Review" data-category="business" data-score="7">
+      <div class="entry-meta">
+        <span class="entry-score">7/10</span>
+        <span class="sep">·</span>
+        <span>MIT Sloan Management Review</span>
+        <span class="sep">·</span>
+        <span>商业</span>
+        <span class="sep">·</span>
+        <span>2026-06-01</span>
+      </div>
+      <a class="entry-title" href="https://sloanreview.mit.edu/article/a-three-minute-protocol-to-reduce-ai-manipulation-risk/" target="_blank" rel="noopener">A Three-Minute Protocol to Reduce AI Manipulation Risk</a>
+      <p class="entry-summary">MIT Sloan 与 RSM France 联合研究发现，AI 时代员工认知成为企业安全的关键薄弱点。文章提出「先思考，总验证」(TFVA) 三分钟协议，通过让员工在使用 AI 前形成独立判断、之后交叉验证关键信息，对抗 AI 驱动的个性化欺骗、幻觉型虚假信息和认知外包风险。随机对照试验表明该协议将决策质量提升 7.87%，伦理判断改善 44%。RSM France 已在 1600 员工入职培训中部署，建议管理层嵌入安全意识与 AI 访问政策中强化习惯养成。</p>
+      <ul class="entry-bullets"><li>AI 加剧人类认知漏洞：员工面临个性化欺骗、模型幻觉、思维外包三重威胁</li><li>TFVA 协议通过独立判断+交叉验证，将员工从「盲目信任」转变为「工具使用者」</li><li>三分钟微课程试验效果显著：提升决策质量 7.87%，信息验证能力升 25%</li><li>可整合至入职、安全培训、AI 政策中，成为组织级防御措施</li></ul>
+      <div class="entry-chips"><span class="entry-chip speaker">RSM France</span><span class="entry-chip">风险管理</span><span class="entry-chip">员工赋能</span><span class="entry-chip">AI 治理</span><span class="entry-chip">组织流程</span></div>
+    </article>
+    
+    <article class="entry" data-source="MIT Sloan Management Review" data-category="business" data-score="7">
+      <div class="entry-meta">
+        <span class="entry-score">7/10</span>
+        <span class="sep">·</span>
+        <span>MIT Sloan Management Review</span>
+        <span class="sep">·</span>
+        <span>商业</span>
+        <span class="sep">·</span>
+        <span>2026-06-01</span>
+      </div>
+      <a class="entry-title" href="https://sloanreview.mit.edu/article/does-cultural-training-help-expats-succeed/" target="_blank" rel="noopener">Does Cultural Training Help Expats Succeed?</a>
+      <p class="entry-summary">MIT Sloan 的大规模元分析研究（涵盖 571,260 人）颠覆了传统跨文化培训的价值。研究发现，文化知识对派驻员工的适应帮助极小；真正决定性因素是主管支持——它比文化培训、社区支持甚至家庭支持的效果都更强。建议企业将跨文化整合视为管理层责任，通过主管的主动倾听、角色澄清和社会融纳来降低歧视感和孤独感，从而推动全球人才战略成功。这反映了组织应如何调整在全球流动中的管理重点。</p>
+      <ul class="entry-bullets"><li>文化培训效果有限，主管支持是适应成功的最强预测因素，超过家庭和社区支持</li><li>歧视、系统复杂性和孤独感是派驻员工失败的主要原因，而非文化差异本身</li><li>将派驻员工整合责任归于主管，需培训主管的倾听、角色澄清和融纳能力</li><li>早期干预和主管问责制能显著降低适应压力，保护员工心理健康和工作表现</li></ul>
+      <div class="entry-chips"><span class="entry-chip">全球人才管理</span><span class="entry-chip">领导力与员工支持</span><span class="entry-chip">组织融纳</span><span class="entry-chip">跨文化管理</span></div>
+    </article>
+    
+    <article class="entry" data-source="MIT Sloan Management Review" data-category="business" data-score="7">
+      <div class="entry-meta">
+        <span class="entry-score">7/10</span>
+        <span class="sep">·</span>
+        <span>MIT Sloan Management Review</span>
+        <span class="sep">·</span>
+        <span>商业</span>
+        <span class="sep">·</span>
+        <span>2026-06-01</span>
+      </div>
+      <a class="entry-title" href="https://sloanreview.mit.edu/audio/ai-for-interoperability-in-health-care-philipss-carla-goulart-peron/" target="_blank" rel="noopener">AI for Interoperability in Health Care: Philips’s Carla Goulart Peron</a>
+      <p class="entry-summary">飞利浦首席医学官 Carla Goulart Peron 分享 AI 如何重塑医疗实践——不是替代临床医生，而是扩大诊疗覆盖、改进诊断、让医生有更多时间与患者互动。她从巴西公立医疗系统的工作经验出发，阐述 AI 辅助影像和远程协作如何弥补医疗资源缺口。讨论了信任、偏见、互操作性和女性健康数据等 AI 医疗应用的关键挑战，强调技术应使医疗更加人性化。</p>
+      <ul class="entry-bullets"><li>AI 扩展而非替代临床医生，关键是让医生从繁琐工作中解放，专注患者互动</li><li>AI 辅助影像和远程协作技术可弥补资源短缺地区的医疗覆盖差距</li><li>建立医疗 AI 系统需解决信任、算法偏见、数据互操作性和特定群体数据缺失问题</li><li>医疗科技公司领导者应从临床实践经验出发，理解真实诊疗场景中的技术应用需求</li></ul>
+      <div class="entry-chips"><span class="entry-chip speaker">Carla Goulart Peron（飞利浦首席医学官）</span><span class="entry-chip speaker">Philips（飞利浦）</span><span class="entry-chip speaker">MIT Sloan Management Review</span><span class="entry-chip">AI 赋能医疗</span><span class="entry-chip">工作方式变革</span><span class="entry-chip">人机协作</span><span class="entry-chip">组织视角</span></div>
+    </article>
+    
+    <article class="entry" data-source="McKinsey Insights" data-category="business" data-score="7">
+      <div class="entry-meta">
+        <span class="entry-score">7/10</span>
+        <span class="sep">·</span>
+        <span>McKinsey Insights</span>
+        <span class="sep">·</span>
+        <span>商业</span>
+        <span class="sep">·</span>
+        <span>2026-06-01</span>
+      </div>
+      <a class="entry-title" href="https://www.mckinsey.com/capabilities/transformation/our-insights/leading-from-the-field-transformation-in-distributed-operations" target="_blank" rel="noopener">Leading from the field: Transformation in distributed operations</a>
+      <p class="entry-summary">麦肯锡建议在分布式运营转型中，应由现场领导者主导执行，同时从中央层面提供战略方向。这一模式强调「前线赋权 + 中央指导」的混合治理，旨在加速产业网络转型、提升执行效率并确保全系统协同。文章隐含对组织决策权力分配、领导力角色、跨层级协调的重新思考，与 AI 驱动下的去中心化管理、敏捷决策等趋势相呼应。</p>
+      <ul class="entry-bullets"><li>现场领导者应获得更多自主权和执行权，避免转型被繁琐流程延缓</li><li>中央层保持战略方向与全局协调，确保系统一致性与影响力</li><li>现场赋权 + 中央指导的混合模式适应分布式、复杂运营环境</li><li>重点解决传统中层管理的阻滞，加快决策和创新周期</li></ul>
+      <div class="entry-chips"><span class="entry-chip speaker">McKinsey</span><span class="entry-chip">组织结构</span><span class="entry-chip">领导力下沉</span><span class="entry-chip">分布式管理</span><span class="entry-chip">决策权赋能</span></div>
+    </article>
+    </section>
+</div>
+<footer>
+  由 Claude Haiku 4.5 每日构建 · 2026-06-02 06:49 CST
+</footer>
+<script>
+function applyFilters() {
+  const activeTab = document.querySelector('.tab.active');
+  const cat = activeTab ? activeTab.dataset.cat : 'all';
+  const activeScore = document.querySelector('.sf-btn.active');
+  const minScore = activeScore ? parseInt(activeScore.dataset.score, 10) : 6;
+  const srcEl = document.getElementById('f-source');
+  const src = srcEl ? srcEl.value : '*';
+  document.querySelectorAll('.entry').forEach(e => {
+    const ec = e.dataset.category, es = e.dataset.source, esc = parseInt(e.dataset.score, 10);
+    const show = (cat === 'all' || ec === cat) && (src === '*' || es === src) && esc >= minScore;
+    e.classList.toggle('hidden', !show);
+  });
+  document.querySelectorAll('.day').forEach(d => {
+    const any = Array.from(d.querySelectorAll('.entry')).some(e => !e.classList.contains('hidden'));
+    d.style.display = any ? '' : 'none';
+  });
+}
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.tab').forEach(t => t.addEventListener('click', () => {
+    document.querySelectorAll('.tab').forEach(x => x.classList.remove('active'));
+    t.classList.add('active');
+    applyFilters();
+  }));
+  document.querySelectorAll('.sf-btn').forEach(b => b.addEventListener('click', () => {
+    document.querySelectorAll('.sf-btn').forEach(x => x.classList.remove('active'));
+    b.classList.add('active');
+    applyFilters();
+  }));
+  const srcEl = document.getElementById('f-source');
+  if (srcEl) srcEl.addEventListener('change', applyFilters);
+});
+</script>
+</body>
+</html>

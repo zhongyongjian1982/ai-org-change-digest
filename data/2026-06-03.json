@@ -1,0 +1,111 @@
+[
+  {
+    "url": "https://sloanreview.mit.edu/article/scaling-ai-with-adaptive-governance/",
+    "title": "Scaling AI With Adaptive Governance",
+    "source": "MIT Sloan Management Review",
+    "category": "business",
+    "published": "2026-06-02",
+    "fetched_at": "2026-06-03T06:38:00+08:00",
+    "score": 9,
+    "summary_zh": "MIT Sloan 与微软、花旗、纳斯达克等金融机构领导者合作的研究表明，AI 治理不应视为合规义务，而是随系统扩展动态演进的战略能力。企业需要将控制机制嵌入工作流、决策权和问责结构中，并针对不同类型 AI 系统与风险等级进行精准匹配。开发阶段需防控偏差数据、模型不对齐等风险；部署后需应对数据漂移、模型退化、信任过度等挑战。有效的适应性治理是组织大规模部署 AI 的必要条件。",
+    "key_points": [
+      "AI 治理应从合规义务转向战略性、适应性能力，随风险与用例演变而不断调整",
+      "需按 AI 系统类型与自主级别定制治理控制，匹配不同场景风险等级",
+      "将治理嵌入日常工作流与决策权，而非事后补救，才能应对开发与部署两阶段风险",
+      "数据漂移、模型退化、用户过度信任是部署后的核心挑战，需动态监控与问责机制"
+    ],
+    "tags": [
+      "组织治理",
+      "AI 风险管理",
+      "决策权与问责",
+      "规模化落地"
+    ],
+    "speakers": [
+      "Christian Gralingen",
+      "Microsoft",
+      "Barclays",
+      "Nasdaq",
+      "Lloyds Bank",
+      "Danske Bank"
+    ]
+  },
+  {
+    "url": "https://sloanreview.mit.edu/article/why-ai-isnt-transforming-finance-yet/",
+    "title": "Why AI Isn’t Transforming Finance Yet",
+    "source": "MIT Sloan Management Review",
+    "category": "business",
+    "published": "2026-06-02",
+    "fetched_at": "2026-06-03T06:37:55+08:00",
+    "score": 8,
+    "summary_zh": "MIT Sloan研究发现，尽管金融部门投入巨资引入AI，但大多数实施未能实现预期变革。问题不在技术本身，而在于组织的领导实践滞后于技术进步。财务团队仍沿用旧有的决策模式——关注月度结算、单一预测数字和偏差纠正，而非适应性学习。真正的AI转型需要从重新定义领导力入手：将领导视为帮助组织在不确定条件下适应的工作过程，涉及问题重塑、多角度分析、信号探索，而非仅限高管层级。",
+    "key_points": [
+      "AI在金融部门陷入\"沙盒困境\"——概念验证难以转化为日常运营实践",
+      "技术落地失败根因：组织的领导决策方式和工作流程未随AI升级而改变",
+      "传统财务管理逻辑（单一预测、偏差纠正）与AI赋能的适应性思维相悖",
+      "真正变革需重塑领导定义：从层级权力转向分布式适应性学习和决策实践"
+    ],
+    "tags": [
+      "组织变革",
+      "领导力重塑",
+      "AI落地障碍",
+      "工作方式演进"
+    ],
+    "speakers": [
+      "Christian Gralingen"
+    ]
+  },
+  {
+    "url": "https://sloanreview.mit.edu/article/create-generative-ai-value-at-scale/",
+    "title": "Create Generative AI Value at Scale",
+    "source": "MIT Sloan Management Review",
+    "category": "business",
+    "published": "2026-06-02",
+    "fetched_at": "2026-06-03T06:38:05+08:00",
+    "score": 8,
+    "summary_zh": "MIT Sloan 研究对23家瑞士企业的3年观察显示，生成式AI价值难以规模化的根本原因在于组织结构问题。传统多事业部制造成功能重复、信息孤立、资源内耗，阻碍用例跨部门扩展。成功的领导者采用\"AI脊柱\"新模式——将业务流程专家引入中心团队而非向业务部门派驻技术人员，形成灵活核心结构。案例显示，零售银行通过AI脊柱实现邮件处理时间降低15%，医疗编码公司实现首个应用迅速迭代。研究揭示生成式AI规模化的核心是组织重构，而非技术问题。",
+    "key_points": [
+      "多事业部组织结构是生成式AI规模化的主要障碍，导致流程割裂和资源竞争",
+      "\"AI脊柱\"模式：中心团队引入业务专家而非向外派驻技术人员，形成灵活实施机制",
+      "成功领导者实践三要素：扩展跨流程用例、持续改进、快速放弃无效应用",
+      "零售银行邮件助手案例证明规模化能创造显著价值（时间节省15%），带动CRM重构",
+      "生成式AI投资回报的瓶颈在组织制度设计，而非技术能力本身"
+    ],
+    "tags": [
+      "组织重构",
+      "AI规模化",
+      "跨部门协作",
+      "流程重构"
+    ],
+    "speakers": [
+      "Christian Gralingen",
+      "Kevin",
+      "Ivo"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/capabilities/mckinsey-technology/overview/when-ai-becomes-part-of-the-workflow-redesigning-how-software-gets-built",
+    "title": "When AI becomes part of the workflow: Redesigning how software gets built",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-06-01",
+    "fetched_at": "2026-06-03T06:38:18+08:00",
+    "score": 8,
+    "summary_zh": "McKinsey 分析 Sonar 案例，展示 AI 如何重构软件开发全流程。组织通过重新设计产品开发生命周期，利用 AI 实现速度、质量、可扩展性的阶跃式增长。但大多数企业仅获取 AI 价值的一小部分，说明系统性流程改造而非工具层面的应用才是关键。深刻反映 AI 时代的组织能力差异与变革要求。",
+    "key_points": [
+      "AI 已重构软件开发全流程，但企业价值挖掘严重不足，多数仅触及表面",
+      "系统性重设产品开发生命周期是释放 AI 潜力的必要条件，非单纯工具替换",
+      "Sonar 案例验证 AI 可驱动速度、质量、可扩展性的突破性改进",
+      "组织需改变流程设计思维，而非只追求工具迭代"
+    ],
+    "tags": [
+      "流程重构",
+      "生产力提升",
+      "AI 工作流",
+      "组织能力建设"
+    ],
+    "speakers": [
+      "McKinsey",
+      "Sonar"
+    ]
+  }
+]

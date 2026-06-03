@@ -1,0 +1,52 @@
+[
+  {
+    "url": "https://stratechery.com/2026/the-nvidia-ai-pc-project-solara-microsoft-ai/",
+    "title": "The Nvidia AI PC, Project Solara, Microsoft AI",
+    "source": "Stratechery (free posts)",
+    "category": "analyst",
+    "published": "2026-06-03",
+    "fetched_at": "2026-06-04T06:39:52+08:00",
+    "score": 7,
+    "summary_zh": "Nvidia推出RTX Spark芯片用于AI PC，与Microsoft合作将于秋季推向市场。文章分析了AI PC的演进：从ChatGPT本地推理时代，到推理模型的KV缓存需求，再到当前Agent时代对CPU性能的强调。作者认为理想的本地Agent架构需要强大的CPU性能和云端推理能力的协同，而不仅仅是单纯的本地计算能力。这反映了AI工具链对个人计算设备架构、企业软件栈整合、以及人机交互范式的深层重塑。",
+    "key_points": [
+      "AI PC芯片性能演进反映不同AI阶段需求变化：从推理到Agent，对CPU、GPU、内存的要求持续优化",
+      "Nadella与Huang三年前即启动合作，体现大企业对AI本地化与云协同架构的前瞻性布局",
+      "Agent时代的理想架构是本地CPU+云端推理的混合模式，改变传统PC设计思路",
+      "Windows与芯片制造商深度整合AI软件栈，重构企业生产力工具与创意工作流"
+    ],
+    "tags": [
+      "AI硬件策略",
+      "本地Agent架构",
+      "企业计算重构",
+      "云边协同"
+    ],
+    "speakers": [
+      "Satya Nadella",
+      "Jensen Huang"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/industries/automotive-and-assembly/our-insights/when-warranty-costs-rival-r-and-d-spend-remaking-vehicle-quality-with-ai",
+    "title": "When warranty costs rival R&D spend: Remaking vehicle quality with AI",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-06-03",
+    "fetched_at": "2026-06-04T06:39:36+08:00",
+    "score": 6,
+    "summary_zh": "随着保修成本激增，汽车制造商正转向 AI 赋能的质量系统来提前检测风险并降低财务敞口。文章聚焦 AI 在车辆质量控制中的应用，通过早期风险识别提升运营效率。涉及组织层面的流程优化和决策支持，但缺少对人员结构、招聘策略或工作方式变革的深入讨论，更多是技术工具应用而非根本性组织变革。",
+    "key_points": [
+      "保修成本与研发支出相当，成为车企财务压力；AI 质量系统提前检测可降低成本",
+      "AI 赋能质量管理涉及组织流程重构，改变质量检测、问题诊断的工作方式",
+      "提前风险识别可优化资源配置，但文章未涉及对人员需求或能力要求的影响"
+    ],
+    "tags": [
+      "运营优化",
+      "AI 应用落地",
+      "流程重构",
+      "质量管理"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  }
+]

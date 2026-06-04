@@ -1,0 +1,79 @@
+[
+  {
+    "url": "https://stratechery.com/2026/an-interview-with-microsoft-ceo-satya-nadella-about-finding-core-competencies/",
+    "title": "An Interview with Microsoft CEO Satya Nadella About Finding Core Competencies",
+    "source": "Stratechery (free posts)",
+    "category": "analyst",
+    "published": "2026-06-04",
+    "fetched_at": "2026-06-05T06:08:25+08:00",
+    "score": 9,
+    "summary_zh": "Satya Nadella 在 Build 大会后接受采访，讨论微软在 AI 时代的战略地位。他强调在平台转移中，微软需要先回答「我们独特能做什么」这一根本问题，而非陷入零和竞争思维。Nadella 涉及 OpenAI 合作、AI 基础设施投资、软件商业模式变革等核心议题，反映出其对微软组织战略的深度思考与调整——他已在 Build 中成为唯一主讲者，显示其掌舵更加亲力亲为。",
+    "key_points": [
+      "平台转移时期，微软应先确认「独特能力」而非执着于零和竞争，这是评估竞争地位的前提",
+      "Nadella 已显著增加在微软战略决策中的亲力亲为程度，Build keynote 全由其独自呈现",
+      "访谈涉及 OpenAI 伙伴关系、AI 基础设施资本支出、软件商业模式、GitHub Copilot 等核心组织课题",
+      "讨论微软能否独立于领先 AI 模型运营，反映对核心能力与依赖关系的战略反思"
+    ],
+    "tags": [
+      "战略定位",
+      "平台转移",
+      "核心能力",
+      "领导力决策"
+    ],
+    "speakers": [
+      "Satya Nadella",
+      "Ben Thompson"
+    ]
+  },
+  {
+    "url": "https://www.oneusefulthing.org/p/co-existence-and-the-end-of-co-intelligence",
+    "title": "Co-Existence and the End of Co-Intelligence",
+    "source": "One Useful Thing (Ethan Mollick)",
+    "category": "analyst",
+    "published": "2026-06-05",
+    "fetched_at": "2026-06-05T06:08:31+08:00",
+    "score": 8,
+    "summary_zh": "Ethan Mollick发布新书《Co-Existence》，反思AI从「协作智能」向「自主Agent」的转变。两年前他的《Co-Intelligence》强调人机互补，但现实已变：AI编程Agent使代码产出增长17倍，Anthropic员工已有80%代码由AI编写。Mollick认为未来不再是人机共进，而是在「参差不齐的AI能力前沿」中，人类需学会与有时超越自己、有时不及的AI共存——这要求更深层的判断力与选择性使用，而非简单的提示词交互。",
+    "key_points": [
+      "AI已从协作助手演变为自主Agent，改变编码、知识工作的组织方式与人的角色定位",
+      "Anthropic数据显示单个开发者产出提升8倍，但AI仍存缺陷，需人类判断力把关",
+      "「参差不齐的AI能力前沿」意味着人类必须选择性、有判断地使用AI，而非盲目依赖",
+      "Mollick在写书时仍保留人的声音与思考，但在低创意工作中充分委托AI，反映新工作模式"
+    ],
+    "tags": [
+      "Agent转变",
+      "人才效能重塑",
+      "知识工作变革",
+      "人机角色重定位"
+    ],
+    "speakers": [
+      "Ethan Mollick",
+      "OpenAI",
+      "Anthropic"
+    ]
+  },
+  {
+    "url": "https://openai.com/index/endava-frontiers",
+    "title": "How Endava is redesigning software delivery around AI agents",
+    "source": "OpenAI",
+    "category": "ai-lab",
+    "published": "2026-06-04",
+    "fetched_at": "2026-06-05T06:08:14+08:00",
+    "score": 7,
+    "summary_zh": "Endava 通过部署 AI Agent、ChatGPT Enterprise 和 Codex 重新设计软件交付流程。案例展示了 AI 如何自动化工作流、加速交付周期，以及企业如何围绕 AI 原生能力重塑组织文化。涉及具体的工具应用和流程优化，但缺少深度的组织结构或人员能力调整细节。",
+    "key_points": [
+      "AI Agent 与代码工具组合可自动化软件开发的关键环节，提升交付速度",
+      "企业级 ChatGPT 部署支撑跨职能协作和知识共享，形成 AI 协作新范式",
+      "从流程自动化向 AI 原生文化转变，需要组织层面的协调与人员心态调整"
+    ],
+    "tags": [
+      "Agent 落地",
+      "生产力提升",
+      "组织文化",
+      "DevOps 变革"
+    ],
+    "speakers": [
+      "Endava"
+    ]
+  }
+]

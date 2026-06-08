@@ -1,0 +1,78 @@
+[
+  {
+    "url": "https://www.mckinsey.com/featured-insights/mckinsey-explainers/banking-and-ai-when-the-tech-starts-doing-the-work-not-just-assisting-it",
+    "title": "Banking and AI: When the tech starts doing the work, not just assisting it",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-06-08",
+    "fetched_at": "2026-06-09T06:12:38+08:00",
+    "score": 8,
+    "summary_zh": "麦肯锡专家探讨AI如何从内部重塑银行业运营。文章指出，AI不仅是辅助工具，而是开始独立执行工作流程，这要求银行重新设计组织架构、工作流和人员配置。最大障碍不在技术本身，而在组织文化、流程改造和人才适应能力。涉及从前台自动化到后台运营的全链路转变，对招聘、培训、领导力提出新要求。",
+    "key_points": [
+      "AI从辅助工具升级为独立执行者，银行需重构工作流程和组织结构",
+      "技术障碍已解决，主要挑战是组织文化变革和流程重设计",
+      "对人员角色、招聘标准和员工技能要求的深层影响",
+      "前中后台全链路运营模式需重新定义"
+    ],
+    "tags": [
+      "组织重构",
+      "运营流程",
+      "人才策略",
+      "文化变革"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/capabilities/people-and-organizational-performance/how-we-help-clients/blackstones-legal-and-compliance-ai-transformation-started-with-technology",
+    "title": "Blackstone’s Legal & Compliance AI transformation started with technology. It succeeded because it put people first",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-06-08",
+    "fetched_at": "2026-06-09T06:12:42+08:00",
+    "score": 8,
+    "summary_zh": "Blackstone 的法律合规 AI 转型案例表明，技术引入成功的关键不在技术本身，而在于流程重设与人的适配。通过先理清决策流、明确权责归属、编码化先例，再将 AI 嵌入核心工作流，该公司实现了部门的深度重构。这反映了一个重要的组织管理洞察：AI 落地需要从流程和权力结构入手，而非仓促上技术。",
+    "key_points": [
+      "决策流程重设是 AI 落地的前置条件，需先理清权责、编码化业务规则",
+      "技术成功取决于人的适配，将员工视为转型中心而非被动接收方",
+      "法律合规领域的 AI 应用案例，展示大型金融机构如何系统推进",
+      "组织重构与技术实施需同步推进，避免技术驱动导致的组织混乱"
+    ],
+    "tags": [
+      "流程重构",
+      "人员赋能",
+      "AI 落地",
+      "组织变革"
+    ],
+    "speakers": [
+      "Blackstone",
+      "McKinsey"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/capabilities/people-and-organizational-performance/our-insights/hr-monitor",
+    "title": "HR Monitor 2026: A turning point for the people function",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-06-08",
+    "fetched_at": "2026-06-09T06:12:46+08:00",
+    "score": 7,
+    "summary_zh": "麦肯锡 2026 年 HR 监测报告覆盖欧美中三大区域，基于大规模基准调查揭示劳动力与人力资源趋势。作为 HR 领导力转折点，该报告为人力资源管理者提供关键洞察，可能涉及 AI 对招聘、培养、组织结构的影响。虽未见具体数据摘录，但作为权威咨询机构的年度基准研究，对企业人才战略制定具有指导意义。",
+    "key_points": [
+      "全球三大经济体 HR 趋势对标，为人力资源决策提供数据支撑",
+      "标题强调「转折点」，暗示人力资源职能面临重大变革",
+      "针对 HR 领导层的决策洞察，涉及组织人才管理战略调整",
+      "跨区域对标有助识别 AI 与自动化对招聘、绩效、文化的差异影响"
+    ],
+    "tags": [
+      "人才战略",
+      "HR 数字化",
+      "跨区域对标",
+      "组织变革"
+    ],
+    "speakers": [
+      "McKinsey（麦肯锡）"
+    ]
+  }
+]

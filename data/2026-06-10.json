@@ -1,0 +1,53 @@
+[
+  {
+    "url": "https://sloanreview.mit.edu/video/the-ai-atrophy-problem-how-cios-fight-it/",
+    "title": "The AI Atrophy Problem: How CIOs Fight It",
+    "source": "MIT Sloan Management Review",
+    "category": "business",
+    "published": "2026-06-09",
+    "fetched_at": "2026-06-10T06:11:29+08:00",
+    "score": 8,
+    "summary_zh": "MIT Sloan 调研揭示 AI 工具在提升效率的同时，正导致组织内关键思维能力的萎缩（\"AI 萎缩\"）。麻省理工研究员 Michael Schrage 等领导者提出应对策略：将 AI 输出视为需验证的假设而非答案、保护非结构化思维时间、在使用前验证 AI 工具适配性、建立多层审查机制、要求团队展示提示词与决策过程。核心洞见是 AI 应加速而非替代人的思考，组织需主动设计流程防止认知能力退化。",
+    "key_points": [
+      "\"AI 萎缩\"问题：员工过度依赖 AI 导致批判性思维和问题解决能力下降，需主动对抗",
+      "将 AI 输出视为假设：立即进行压力测试和反论证，而非直接采纳答案",
+      "多层防护机制：保护独立思考时间、建立跨部门验证检查点、要求展示工作过程追溯",
+      "工具适配性优先：使用 AI 前需确认工具为该任务设计，避免盲目应用"
+    ],
+    "tags": [
+      "人才能力",
+      "组织文化",
+      "风险防控",
+      "CIO 策略"
+    ],
+    "speakers": [
+      "Michael Schrage（MIT 数字经济倡议研究员）",
+      "George Westerman（MIT Sloan 高级研究科学家）"
+    ]
+  },
+  {
+    "url": "https://stratechery.com/2026/the-iphones-last-stand/",
+    "title": "The iPhone’s Last Stand",
+    "source": "Stratechery (free posts)",
+    "category": "analyst",
+    "published": "2026-06-09",
+    "fetched_at": "2026-06-10T06:12:02+08:00",
+    "score": 7,
+    "summary_zh": "文章讨论了 AI Agent 对计算设备生态的深层重塑。微软 Project Solara 展示了未来设备将成为云端 Agent 的「门户」，用户无需本地计算能力，Agent 代理完成工作。这与传统「人机交互为中心」的范式形成对比。苹果虽在 WWDC 发布改进版 Siri，但仍停留在「提醒用户」阶段，未能达到「代理执行」的 Agent 理想，暗示其在 AI 工作范式转变中可能落后。文章核心观点：Agent 驱动的云计算将颠覆以 iPhone 为代表的传统交互设备地位。",
+    "key_points": [
+      "Agent 时代计算范式转移：从「人机交互」到「后台自动执行」，用户仅需秒级指令下达",
+      "微软 Project Solara 实现「瘦客户端」极端化：硬件沦为云端 Agent 交互门户，无需本地计算",
+      "苹果 Siri 仍限于传统交互逻辑，缺乏独立代理执行能力，在 Agent 竞赛中处于劣势",
+      "iPhone 主导的设备范式面临威胁：可穿戴设备+Agent 云计算组合可能取代智能手机的核心地位"
+    ],
+    "tags": [
+      "Agent 范式",
+      "组织计算模式",
+      "人机交互重构",
+      "苹果战略困境"
+    ],
+    "speakers": [
+      "Mike Rockwell"
+    ]
+  }
+]

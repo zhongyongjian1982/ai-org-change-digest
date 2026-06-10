@@ -1,0 +1,126 @@
+[
+  {
+    "url": "https://www.mckinsey.com/cn/updates/ai-usage-among-white-collar-workers-and-students-in-hong-kong-survey-findings",
+    "title": "AI usage among white-collar workers and students in Hong Kong: survey findings",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-06-10",
+    "fetched_at": "2026-06-11T06:29:09+08:00",
+    "score": 7,
+    "summary_zh": "麦肯锡调查了香港白领和学生的AI使用现状。数据显示AI在办公和学习中的渗透率、具体应用场景（文案生成、数据分析、编码等）、以及使用者的技能差异。研究触及组织如何适应员工AI工具使用、技能培训需求，以及不同群体对生成式AI的接纳程度差异，为企业人才管理和工作流程优化提供了实证基础。",
+    "key_points": [
+      "白领和学生对AI工具的采纳率与使用频次存在显著差异，反映了组织内技能鸿沟",
+      "AI主要应用于文案、数据分析、编码等知识工作，改变了关键岗位的工作方式",
+      "企业需要重新评估培训策略和岗位要求，适应员工AI能力差异",
+      "地域和代际因素影响AI接纳，影响人才战略和组织文化建设"
+    ],
+    "tags": [
+      "人才技能",
+      "生产力变化",
+      "组织适应",
+      "白领工作方式"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/europes-new-ecommerce-agenda-how-ai-is-resetting-growth-and-competition",
+    "title": "Europe’s new e‑commerce agenda: How AI is resetting growth and competition",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-06-10",
+    "fetched_at": "2026-06-11T06:29:12+08:00",
+    "score": 7,
+    "summary_zh": "麦肯锡分析 AI 如何重塑欧洲电商竞争格局。从 Agent 购物、零售媒体到全渠道智能，AI 改变了数字商务的经济模式。文章强调领导者需通过系统化实验将 AI 应用转化为可持续竞争优势，涉及商业模式创新和组织能力重塑，对零售与电商企业的运营战略有实际指导意义。",
+    "key_points": [
+      "Agent 购物和零售媒体是 AI 驱动电商增长的新引擎，改变商业模式与价值链",
+      "全渠道智能整合需要组织跨函数协作和数据能力升级",
+      "从实验到规模化：领导者需建立系统方法将 AI 试点转化为竞争壁垒"
+    ],
+    "tags": [
+      "商业模式创新",
+      "AI 应用落地",
+      "组织能力",
+      "竞争战略"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/industries/retail/our-insights/rewiring-retail-in-europe-the-ai-imperative",
+    "title": "Rewiring retail in Europe: The AI imperative",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-06-10",
+    "fetched_at": "2026-06-11T06:29:16+08:00",
+    "score": 7,
+    "summary_zh": "麦肯锡指出AI正在重塑欧洲零售价值链，企业领袖面临在现代化转型中强化人类体验的挑战。这一转变涉及240-320亿欧元的市场机遇。核心问题是如何在AI驱动的自动化中保留人的关键作用，这要求零售企业重新思考运营流程、员工技能需求和客户交互方式。",
+    "key_points": [
+      "AI改造零售价值链，企业需平衡自动化与人类体验，避免过度技术化",
+      "€240-320亿潜在市场机遇，驱动欧洲零售企业加速AI转型",
+      "转型要求重新定义员工角色、培训模式和组织能力",
+      "领导者需制定明确策略，确保AI赋能而非替代人力"
+    ],
+    "tags": [
+      "零售行业转型",
+      "人机协作",
+      "组织现代化",
+      "领导力战略"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  },
+  {
+    "url": "https://openai.com/index/lseg",
+    "title": "From data to decisions: how LSEG is scaling trusted AI",
+    "source": "OpenAI",
+    "category": "ai-lab",
+    "published": "2026-06-10",
+    "fetched_at": "2026-06-11T06:29:29+08:00",
+    "score": 7,
+    "summary_zh": "伦敦证券交易所集团（LSEG）采用 OpenAI 技术在全球业务中规模化部署可信任 AI，加速数据洞察生成、缩短产品发布周期、赋能 4,000 名员工。案例涉及如何通过 AI 改变工作流程效率和决策速度，但具体实施细节与组织结构影响着墨不足。",
+    "key_points": [
+      "LSEG 用 AI 加快数据到决策的转化，提升洞察生成速度",
+      "AI 部署使产品发布周期显著缩短，优化开发流程",
+      "4,000 员工通过 AI 赋能获得新能力，改变日常工作方式",
+      "强调「可信任 AI」，关键是安全合规部署"
+    ],
+    "tags": [
+      "生产力提升",
+      "员工赋能",
+      "流程优化",
+      "金融科技落地"
+    ],
+    "speakers": [
+      "LSEG (伦敦证券交易所集团)"
+    ]
+  },
+  {
+    "url": "https://openai.com/index/industrial-policy-for-the-intelligence-age",
+    "title": "Industrial policy for the Intelligence Age",
+    "source": "OpenAI",
+    "category": "ai-lab",
+    "published": "2026-06-09",
+    "fetched_at": "2026-06-11T06:29:35+08:00",
+    "score": 7,
+    "summary_zh": "OpenAI 发布产业政策主张，强调 AI 时代应采取以人为中心的政策框架。核心观点包括：通过 AI 发展扩大机会、共享繁荣成果、建立韧性制度。文章虽未涉及具体组织结构改革，但在宏观层面探讨 AI 对劳动力、收入分配和社会制度的长期影响，对企业制定人才、薪酬、转型策略具有参考价值。",
+    "key_points": [
+      "AI 时代需要人为中心的政策设计，确保机会扩展与繁荣共享",
+      "强调建立韧性制度应对 AI 带来的社会经济变化",
+      "关注 AI 发展对就业、收入分配的深层影响",
+      "提出宏观层面的组织与制度适应框架"
+    ],
+    "tags": [
+      "产业政策",
+      "劳动力影响",
+      "社会制度",
+      "公平与包容"
+    ],
+    "speakers": [
+      "OpenAI"
+    ]
+  }
+]

@@ -1,0 +1,107 @@
+[
+  {
+    "url": "https://sloanreview.mit.edu/video/agentic-ai-what-leaders-wish-they-knew-sooner/",
+    "title": "Agentic AI: What Leaders Wish They Knew Sooner",
+    "source": "MIT Sloan Management Review",
+    "category": "business",
+    "published": "2026-06-11",
+    "fetched_at": "2026-06-12T06:24:43+08:00",
+    "score": 9,
+    "summary_zh": "MIT Sloan 汇集多位顶级学者和企业领导讨论 Agent AI 的组织落地现状。核心发现：Agent 技术远未成熟，但组织管理问题更紧迫。人机协作中存在两大陷阱——审批流程流于形式导致人类无法真正参与决策，以及对 Agent 能力的过度包装造成期望管理失败。建议围绕业务成果重建流程，而非盲目自动化；采用分步信任模式，从小规模实验逐步扩展到全面部署。这是一场管理变革，而非纯技术挑战。",
+    "key_points": [
+      "人类 Agent 监督正沦为形式，审批压力导致缺乏真正参与，难以根本解决",
+      "Agent 词汇过度滥用，实际能力不足却期望膨胀，大多组织尚未为真正部署做好准备",
+      "应围绕业务成果重建流程，非在容易之处自动化，而在必要处自动化",
+      "建立分层信任机制，从小规模实验递进至大规模部署，借鉴新手驾驶员成长路径",
+      "需要区分执行型 Agent 和目标澄清型 Agent，两类需求不同的人机协作模式"
+    ],
+    "tags": [
+      "Agent 落地障碍",
+      "人机协作管理",
+      "流程重构",
+      "期望管理",
+      "组织准备度"
+    ],
+    "speakers": [
+      "Thomas H. Davenport (Babson College, MIT Digital Economy Initiative)",
+      "George Westerman (MIT Sloan School of Management)",
+      "Abbie Lundberg (MIT Sloan Management Review)"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/capabilities/business-building/our-insights/the-seven-operating-truths-of-ai-native-companies",
+    "title": "The seven operating truths of AI-native companies",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-06-11",
+    "fetched_at": "2026-06-12T06:24:49+08:00",
+    "score": 9,
+    "summary_zh": "麦肯锡研究了15家AI先进公司的领导者，发现大多数企业虽然采用了AI工具，但真正懂得如何使用的很少。这些AI原生公司遵循七条运营原则，与传统组织的做法明显不同。文章强调，成功的AI应用不仅是技术问题，更是组织运营模式、决策流程、人员配置和文化的深层次变革。这七条真理触及组织如何重新定义工作、赋权团队、建立AI决策机制等核心管理课题。",
+    "key_points": [
+      "AI原生公司与普通采用AI工具的企业在运营逻辑上有根本差异",
+      "成功的AI应用需要组织结构、流程、人才策略的系统性调整",
+      "领导力层面需要重新理解AI在决策、授权、团队赋能中的角色",
+      "文化与制度创新是AI工具真正发挥价值的前提条件",
+      "多数企业尚未理解这七条运营原则，存在明显实践差距"
+    ],
+    "tags": [
+      "组织重构",
+      "AI原生企业",
+      "运营模式",
+      "领导力变革"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/industries/retail/our-insights/elevating-the-customer-experience-ikeas-agentic-ai-journey",
+    "title": "Elevating the customer experience: IKEA’s agentic AI journey",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-06-11",
+    "fetched_at": "2026-06-12T06:24:59+08:00",
+    "score": 7,
+    "summary_zh": "IKEA 首席数字官探讨了在众多 AI 项目中如何理性优先级排序的挑战。文章强调企业面临「样样都做但可能一无所获」的风险，需要聚焦具有实际商业价值的 Agent AI 应用。IKEA 通过客户体验优化的 AI 实践案例，说明大型传统零售企业如何将生成式 AI 融入核心业务流程，而非盲目追风，体现了高层对 AI 战略取舍和组织执行能力的思考。",
+    "key_points": [
+      "IKEA CDO 强调 AI 优先级排序的关键性，避免资源分散导致无实质成果",
+      "Agent AI 在客户体验中的具体落地应用，而非仅停留在概念层",
+      "传统零售巨头的 AI 转型需平衡创新与聚焦，防止战略漂移",
+      "数字化领导力需要在多项目竞争中做出理性决策"
+    ],
+    "tags": [
+      "战略优先级",
+      "客户体验",
+      "Agent AI",
+      "领导力决策"
+    ],
+    "speakers": [
+      "IKEA 首席数字官"
+    ]
+  },
+  {
+    "url": "https://openai.com/index/bbva",
+    "title": "BBVA puts AI at the core of banking with OpenAI",
+    "source": "OpenAI",
+    "category": "ai-lab",
+    "published": "2026-06-11",
+    "fetched_at": "2026-06-12T06:25:12+08:00",
+    "score": 7,
+    "summary_zh": "西班牙银行 BBVA 将 ChatGPT Enterprise 部署至 10 万员工，展示了大模型在金融机构的大规模组织级应用。该案例涉及员工能力升级、内部流程数字化改造和客户服务创新，反映金融行业如何通过生成式 AI 重构工作方式。BBVA 与 OpenAI 的深度合作表明传统大型企业对 AI 企业化应用的实际投入和战略重视，但具体的组织结构调整、人员配置变化等细节信息有限。",
+    "key_points": [
+      "10 万员工规模的 ChatGPT Enterprise 部署，展示大模型在传统大型机构的落地可行性",
+      "员工能力升级与内部流程优化是部署的核心目标，涉及工作方式转变",
+      "金融机构与 AI 厂商的深度合作成为战略必选项，驱动行业数字化转型"
+    ],
+    "tags": [
+      "组织级 AI 应用",
+      "人员赋能",
+      "金融转型",
+      "生产力提升"
+    ],
+    "speakers": [
+      "BBVA",
+      "OpenAI"
+    ]
+  }
+]

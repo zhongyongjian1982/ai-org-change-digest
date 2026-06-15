@@ -1,0 +1,54 @@
+[
+  {
+    "url": "https://www.lennysnewsletter.com/p/how-braintrust-uses-ai-agents-evals",
+    "title": "How Braintrust uses AI agents, evals, and CI to ship better software | Ankur Goyal",
+    "source": "Lenny's Newsletter",
+    "category": "analyst",
+    "published": "2026-06-15",
+    "fetched_at": "2026-06-16T06:36:58+08:00",
+    "score": 8,
+    "summary_zh": "Braintrust 创始人 Ankur Goyal 探讨了 AI Agent 如何重塑工程团队的工作方式。核心洞察：Agent 可以独立承担人类工程师无法完成的深度技术工作（如数据库优化、基准测试）；通过「Agent Line」框架明确哪些决策可委托给 AI；Evals（评估框架）成为现代 PRD，编码质量标准替代主观判断；完善 CI/CD 是加速 AI 赋能团队速度的最高杠杆。强调从「品味检验」向可重复、可扩展的评估机制升级，使团队质量不再依赖个人经验。",
+    "key_points": [
+      "AI Agent 可独立运行周级基准测试和架构优化工作，超越单个人类工程师能力范围",
+      "\"Agent Line\" 框架指导哪些决策、方向和交互适合委托给 Agent",
+      "Evals 是现代 PRD：将「好的标准」编码，让模型自主探索实现方式，替代主观判断",
+      "CI/CD 投资是 AI 加速团队的最高杠杆，直接影响工程速度",
+      "将个人品味（设计师品味）转化为可重复的评分函数，实现质量的可扩展化"
+    ],
+    "tags": [
+      "Agent 落地",
+      "工程生产力",
+      "组织工作流重构",
+      "质量评估体系"
+    ],
+    "speakers": [
+      "Ankur Goyal",
+      "Notion",
+      "Stripe",
+      "Vercel",
+      "Zapier"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/industries/healthcare/our-insights/the-health-system-ceo-imperative-turning-ais-promise-into-performance",
+    "title": "The health system CEO imperative: Turning AI’s promise into performance",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-06-15",
+    "fetched_at": "2026-06-16T06:36:28+08:00",
+    "score": 8,
+    "summary_zh": "麦肯锡指出，医疗系统不缺 AI 技术投入，缺的是 AI 的实际业务影响。要真正释放价值，需要 CEO 主导的系统性转型——不仅是技术部署，更要从根本上重新思考临床护理和运营流程的组织方式。这涉及跨职能协作、流程重设、文化改变等深层次管理问题，强调领导力在 AI 落地中的核心角色。",
+    "key_points": [
+      "AI 投入多但效益未达预期，症结在于缺乏 CEO 级别的统一战略和责任担当",
+      "需要根本性重设流程和协作模式，而非单纯的技术整合",
+      "AI 价值实现依赖组织能力建设，包括人员角色转变和跨部门协同"
+    ],
+    "tags": [
+      "CEO 领导力",
+      "组织变革",
+      "AI 落地",
+      "医疗行业"
+    ],
+    "speakers": []
+  }
+]

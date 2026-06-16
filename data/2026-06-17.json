@@ -1,0 +1,77 @@
+[
+  {
+    "url": "https://sloanreview.mit.edu/audio/ai-upskilling-at-scale-bank-of-americas-bernard-hampton/",
+    "title": "AI Upskilling at Scale: Bank of America’s Bernard Hampton",
+    "source": "MIT Sloan Management Review",
+    "category": "business",
+    "published": "2026-06-16",
+    "fetched_at": "2026-06-17T06:32:59+08:00",
+    "score": 9,
+    "summary_zh": "美国银行通过其学习发展部门 The Academy，正在为全球 20 万+ 员工的 AI 转型进行大规模再技能培养。The Academy 负责人 Bernard Hampton 强调了「劳动力敏捷性」的核心——在合适的岗位快速构建技术与软技能的组合。银行采取三层级 AI 采纳方法，并清晰界定人类需要保持控制权的场景。这反映出大型金融机构如何系统性地重塑员工能力结构，应对 AI 时代的组织变革。",
+    "key_points": [
+      "The Academy 在 2017 年升级，覆盖 20 万+ 员工，专注「劳动力敏捷性」——快速匹配技能与岗位需求",
+      "强调技术与软技能的结合，而非单纯技术培训",
+      "采取三层级 AI 采纳框架，明确界定人类必须保持控制权的决策边界",
+      "大型机构通过 1000+ 专业培训团队提供沉浸式学习和个性化辅导"
+    ],
+    "tags": [
+      "人才培养策略",
+      "劳动力重塑",
+      "AI 组织落地",
+      "学习发展体系"
+    ],
+    "speakers": [
+      "Bernard Hampton（美国银行 The Academy 主管）",
+      "Sam Ransbotham（波士顿学院分析学教授、MIT Sloan Management Review）"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-symbiotic-enterprise",
+    "title": "The symbiotic enterprise",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-06-16",
+    "fetched_at": "2026-06-17T06:33:10+08:00",
+    "score": 8,
+    "summary_zh": "McKinsey 提出「共生企业」(Symbiotic Enterprise) 概念，认为认知型 AI（如大模型）和物理型 AI（如机器人）的融合，正在从根本上改变企业执行方式。文章强调，企业不仅需要部署 AI 技术，更需要重新设计工作流程、人机协作模式和组织结构，才能释放 AI 的真正价值。这触及招聘、培训、领导力和跨职能协作的深层变革。",
+    "key_points": [
+      "认知 AI 与物理 AI 结合，驱动企业执行能力从底层改变，而非仅作为工具升级",
+      "企业需重设工作流程和决策权，打破部门壁垒，适应人-AI 协作新范式",
+      "人员价值重心从执行任务转向战略思维、创意、复杂决策和团队协作",
+      "成功的 AI 转型需同步改革组织文化、激励机制、领导风格和人才培养策略"
+    ],
+    "tags": [
+      "组织重构",
+      "人机协作",
+      "工作方式变革",
+      "生产力转型"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/capabilities/quantumblack/our-insights/prompt-hungary-the-impact-of-ai-on-the-competitiveness-of-the-economy",
+    "title": "Prompt Hungary: The impact of AI on the competitiveness of the economy",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-06-16",
+    "fetched_at": "2026-06-17T06:33:02+08:00",
+    "score": 7,
+    "summary_zh": "麦肯锡认为AI可成为匈牙利经济增长引擎，帮助克服经济挑战、提升生产力和竞争力。文章聚焦AI对国家经济整体竞争力的影响，涉及生产力提升与经济结构优化。虽然宏观经济视角而非企业内部组织详析，但触及AI如何重塑经济竞争格局、驱动产业转型等关键问题。",
+    "key_points": [
+      "AI作为生长引擎，可帮助克服经济结构性挑战与局限性",
+      "AI驱动的生产力提升成为可持续竞争优势的关键",
+      "国家级AI战略与经济竞争力紧密耦合"
+    ],
+    "tags": [
+      "生产力提升",
+      "竞争优势",
+      "经济转型",
+      "国家战略"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  }
+]

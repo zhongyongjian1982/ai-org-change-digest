@@ -1,0 +1,26 @@
+[
+  {
+    "url": "https://www.mckinsey.com/capabilities/operations/our-insights/putting-ai-to-work-the-operational-excellence-imperative",
+    "title": "Putting AI to work: The operational excellence imperative",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-06-19",
+    "fetched_at": "2026-06-20T05:47:42+08:00",
+    "score": 8,
+    "summary_zh": "McKinsey调研发现，运营卓越是AI规模化落地的隐形加速器。文章揭示企业要实现AI价值最大化，不能仅聚焦技术本身，而需从流程优化、组织能力、治理体系等运营维度系统推进。强调AI投资的成功取决于企业能否建立适配的运营框架，包括数据治理、跨部门协同、决策流程改革等，这些因素往往比模型选择更关键。",
+    "key_points": [
+      "运营卓越是AI规模应用的真正驱动力，技术投入需配套流程与组织变革",
+      "数据治理、跨团队协作、决策链路优化是AI价值释放的关键基础设施",
+      "企业需建立AI驱动的运营体系，而非将AI作为孤立项目实施"
+    ],
+    "tags": [
+      "运营卓越",
+      "AI规模化",
+      "流程优化",
+      "组织能力"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  }
+]

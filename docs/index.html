@@ -75,7 +75,7 @@ footer a:hover { color: #999; }
   <p>21 entries · 过去 7 天 · <a href="archive/">归档</a></p>
 </header>
 <div class="controls">
-  <div class="tabs"><button class="tab active" data-cat="all">全部<span class="badge">21</span></button><button class="tab" data-cat="ai-lab">AI 实验室<span class="badge">3</span></button><button class="tab" data-cat="analyst">分析师<span class="badge">2</span></button><button class="tab" data-cat="business">商业<span class="badge">16</span></button></div>
+  <div class="tabs"><button class="tab active" data-cat="all">全部<span class="badge">21</span></button><button class="tab" data-cat="ai-lab">AI 实验室<span class="badge">2</span></button><button class="tab" data-cat="analyst">分析师<span class="badge">4</span></button><button class="tab" data-cat="business">商业<span class="badge">15</span></button></div>
   <div class="filter-bar">
     <span>评分</span>
     <div class="score-filter">
@@ -90,6 +90,87 @@ footer a:hover { color: #999; }
   </div>
 </div>
 <div class="list">
+<section class="day"><div class="day-head">2026-06-23<span class="count">· 5 条</span></div>
+    <article class="entry" data-source="Lenny&#x27;s Newsletter" data-category="analyst" data-score="7">
+      <div class="entry-meta">
+        <span class="entry-score">7/10</span>
+        <span class="sep">·</span>
+        <span>Lenny&#x27;s Newsletter</span>
+        <span class="sep">·</span>
+        <span>分析师</span>
+        <span class="sep">·</span>
+        <span>2026-06-22</span>
+      </div>
+      <a class="entry-title" href="https://www.lennysnewsletter.com/p/how-claude-mythos-found-a-15-year" target="_blank" rel="noopener">How Claude Mythos found a 15-year-old bug in Mozilla Firefox | Brian Grinstead</a>
+      <p class="entry-summary">Mozilla 工程师 Brian Grinstead 分享如何用 Agent 驱动的 bug 发现管道改造 Firefox 开发流程。关键发现：单个 LLM 模型不到一半的功劳，自定义检测框架（harness）、验证子 Agent、目标循环反馈与现有 CI/模糊测试工具的整合同样重要。这套方法论可迁移到设计质量、转化率优化等非工程领域。但 AI 生成补丁仍需人工审核，不能自动上线。展示了 Agent 在大规模代码库优化中的实际落地与团队协作模式。</p>
+      <ul class="entry-bullets"><li>Agent 效果 50% 来自模型，50% 来自管道设计——验证、评分、重试机制是关键</li><li>LLM 评判器预筛文件避免盲目遍历，降低计算成本；验证 Agent 消除误报</li><li>现有 CI/Fuzzing 投资是加速器；AI 补丁最终需人工审核，不可全自动化</li><li>紧凑目标、清晰通过/失败信号、容错重试是 Agent 高效运作的三要素</li><li>该管道设计可复用于非代码领域（设计、运营），降低非工程职能的 AI 应用门槛</li></ul>
+      <div class="entry-chips"><span class="entry-chip speaker">Brian Grinstead (Mozilla)</span><span class="entry-chip">Agent 工程化</span><span class="entry-chip">开发流程优化</span><span class="entry-chip">大模型评判与验证</span><span class="entry-chip">人机协作</span></div>
+    </article>
+    
+    <article class="entry" data-source="McKinsey Insights" data-category="business" data-score="7">
+      <div class="entry-meta">
+        <span class="entry-score">7/10</span>
+        <span class="sep">·</span>
+        <span>McKinsey Insights</span>
+        <span class="sep">·</span>
+        <span>商业</span>
+        <span class="sep">·</span>
+        <span>2026-06-22</span>
+      </div>
+      <a class="entry-title" href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/capturing-central-europes-ai-opportunity" target="_blank" rel="noopener">Capturing Central Europe’s AI opportunity</a>
+      <p class="entry-summary">麦肯锡指出，AI 发展速度快，企业不能将其视为边缘项目。中欧企业应主动围绕 AI 重新设计业务领域和组织结构，以抓住机遇。文章强调 AI 不仅是技术升级，更要求企业从战略层面进行组织重构——包括流程再造、能力配置、决策机制等，以适应 AI 时代的竞争需求。这涉及高管思维转变和全方位的组织变革。</p>
+      <ul class="entry-bullets"><li>AI 需从&#x27;辅助项目&#x27;升级为战略核心，驱动组织级变革而非单点优化</li><li>中欧企业应围绕 AI 重新设计业务领域和组织架构，实现端到端的流程重塑</li><li>快速行动是竞争优势，滞后的企业将面临市场地位下降风险</li></ul>
+      <div class="entry-chips"><span class="entry-chip speaker">McKinsey</span><span class="entry-chip">组织重构</span><span class="entry-chip">战略转变</span><span class="entry-chip">业务重设计</span><span class="entry-chip">竞争力</span></div>
+    </article>
+    
+    <article class="entry" data-source="McKinsey Insights" data-category="business" data-score="7">
+      <div class="entry-meta">
+        <span class="entry-score">7/10</span>
+        <span class="sep">·</span>
+        <span>McKinsey Insights</span>
+        <span class="sep">·</span>
+        <span>商业</span>
+        <span class="sep">·</span>
+        <span>2026-06-22</span>
+      </div>
+      <a class="entry-title" href="https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/from-anxiety-to-advantage-a-marketing-organization-that-thrives-with-ai" target="_blank" rel="noopener">From anxiety to advantage: A marketing organization that thrives with AI</a>
+      <p class="entry-summary">麦肯锡研究表明，营销团队虽然采用AI，但表面热情掩盖了深层焦虑和犹豫。关键问题在于组织缺乏清晰的运营模式框架，无法将AI从试验阶段转化为实质性变革。文章暗示需要重新设计营销组织结构、人员角色和决策流程，才能真正释放AI的价值，而非停留在工具应用层面。</p>
+      <ul class="entry-bullets"><li>营销团队AI采用存在认知偏差，热情掩盖了对组织变革的不确定性和焦虑</li><li>运营模式缺陷（组织设计、角色定义、流程重构）是AI落地的主要瓶颈</li><li>需从试点阶段升级至系统性变革，涉及人才策略和决策权重新分配</li><li>表层应用AI工具不足，需建立支撑AI发展的组织能力和文化基础</li></ul>
+      <div class="entry-chips"><span class="entry-chip speaker">McKinsey</span><span class="entry-chip">组织重构</span><span class="entry-chip">营销转型</span><span class="entry-chip">运营模式</span><span class="entry-chip">变革管理</span></div>
+    </article>
+    
+    <article class="entry" data-source="OpenAI" data-category="ai-lab" data-score="7">
+      <div class="entry-meta">
+        <span class="entry-score">7/10</span>
+        <span class="sep">·</span>
+        <span>OpenAI</span>
+        <span class="sep">·</span>
+        <span>AI 实验室</span>
+        <span class="sep">·</span>
+        <span>2026-06-22</span>
+      </div>
+      <a class="entry-title" href="https://openai.com/index/samsung-electronics-chatgpt-codex-deployment" target="_blank" rel="noopener">Samsung Electronics brings ChatGPT and Codex to employees</a>
+      <p class="entry-summary">三星电子全球部署 ChatGPT Enterprise 和 Codex，这是 OpenAI 最大规模的企业 AI 应用之一。此举标志着大型制造企业正式引入生成式 AI 工具到员工日常工作中。虽然文章未详细揭示具体的组织流程改变，但三星作为全球顶级企业的这一举措表明 AI 已进入大规模企业级应用阶段，可能涉及研发、编程、文档处理等多部门协作。这预示着传统分工可能因 AI 辅助而调整。</p>
+      <ul class="entry-bullets"><li>三星全球部署 ChatGPT 企业版和 Codex，覆盖员工范围广泛</li><li>OpenAI 最大规模企业级 AI 合作之一，验证大模型企业可用性</li><li>制造业龙头采纳生成式 AI，可能重塑研发、编码、工作流程</li><li>员工级工具部署预示普及化阶段，组织需调适人才培训与流程</li></ul>
+      <div class="entry-chips"><span class="entry-chip speaker">OpenAI</span><span class="entry-chip speaker">Samsung Electronics</span><span class="entry-chip">企业 AI 落地</span><span class="entry-chip">生产力提升</span><span class="entry-chip">人员赋能</span><span class="entry-chip">大规模部署</span></div>
+    </article>
+    
+    <article class="entry" data-source="Lenny&#x27;s Newsletter" data-category="analyst" data-score="6">
+      <div class="entry-meta">
+        <span class="entry-score s-low">6/10</span>
+        <span class="sep">·</span>
+        <span>Lenny&#x27;s Newsletter</span>
+        <span class="sep">·</span>
+        <span>分析师</span>
+        <span class="sep">·</span>
+        <span>2026-06-22</span>
+      </div>
+      <a class="entry-title" href="https://www.lennysnewsletter.com/p/how-i-ai-how-to-write-ai-agent-loops" target="_blank" rel="noopener">🎙️ How I AI: How to write AI agent loops in Claude Code and Codex + How Claude Mythos found a 15-year-old bug in Mozilla Firefox</a>
+      <p class="entry-summary">文章分为两部分。第一部分深入讲解 AI Agent 循环（loop）设计，强调将其理解为自触发提示词，核心是定义清晰的工作目标和成功标准。实战展示了PR审查循环、技能验证循环及其子Agent生成机制，强调成本控制和输出质量监控。第二部分提及Mozilla利用AI Agent在一个月内完成423个安全补丁。整体偏向技术实操，对组织流程和工作方式有初步触及但深度有限。</p>
+      <ul class="entry-bullets"><li>Agent循环本质是自触发提示词，通过定义工作内容、频率、输出和责任人来设计</li><li>目标循环最强大但最易误用，需要清晰的成功标准以避免无限循环消耗成本</li><li>子Agent生成是循环威力的关键——主Agent可派生多个子Agent执行特定任务</li><li>循环设计的天花板是&#x27;工作定义的清晰度&#x27;而非工程复杂度，降低技术门槛</li></ul>
+      <div class="entry-chips"><span class="entry-chip speaker">Claire</span><span class="entry-chip speaker">Brian Grinstead</span><span class="entry-chip speaker">Mozilla</span><span class="entry-chip">Agent工作流</span><span class="entry-chip">流程自动化</span><span class="entry-chip">团队生产力</span><span class="entry-chip">成本优化</span></div>
+    </article>
+    </section>
 <section class="day"><div class="day-head">2026-06-22<span class="count">· 1 条</span></div>
     <article class="entry" data-source="Lenny&#x27;s Newsletter" data-category="analyst" data-score="8">
       <div class="entry-meta">
@@ -352,90 +433,9 @@ footer a:hover { color: #999; }
       <div class="entry-chips"><span class="entry-chip speaker">BBVA</span><span class="entry-chip speaker">OpenAI</span><span class="entry-chip">组织级 AI 应用</span><span class="entry-chip">人员赋能</span><span class="entry-chip">金融转型</span><span class="entry-chip">生产力提升</span></div>
     </article>
     </section>
-<section class="day"><div class="day-head">2026-06-11<span class="count">· 5 条</span></div>
-    <article class="entry" data-source="McKinsey Insights" data-category="business" data-score="7">
-      <div class="entry-meta">
-        <span class="entry-score">7/10</span>
-        <span class="sep">·</span>
-        <span>McKinsey Insights</span>
-        <span class="sep">·</span>
-        <span>商业</span>
-        <span class="sep">·</span>
-        <span>2026-06-10</span>
-      </div>
-      <a class="entry-title" href="https://www.mckinsey.com/cn/updates/ai-usage-among-white-collar-workers-and-students-in-hong-kong-survey-findings" target="_blank" rel="noopener">AI usage among white-collar workers and students in Hong Kong: survey findings</a>
-      <p class="entry-summary">麦肯锡调查了香港白领和学生的AI使用现状。数据显示AI在办公和学习中的渗透率、具体应用场景（文案生成、数据分析、编码等）、以及使用者的技能差异。研究触及组织如何适应员工AI工具使用、技能培训需求，以及不同群体对生成式AI的接纳程度差异，为企业人才管理和工作流程优化提供了实证基础。</p>
-      <ul class="entry-bullets"><li>白领和学生对AI工具的采纳率与使用频次存在显著差异，反映了组织内技能鸿沟</li><li>AI主要应用于文案、数据分析、编码等知识工作，改变了关键岗位的工作方式</li><li>企业需要重新评估培训策略和岗位要求，适应员工AI能力差异</li><li>地域和代际因素影响AI接纳，影响人才战略和组织文化建设</li></ul>
-      <div class="entry-chips"><span class="entry-chip speaker">McKinsey</span><span class="entry-chip">人才技能</span><span class="entry-chip">生产力变化</span><span class="entry-chip">组织适应</span><span class="entry-chip">白领工作方式</span></div>
-    </article>
-    
-    <article class="entry" data-source="McKinsey Insights" data-category="business" data-score="7">
-      <div class="entry-meta">
-        <span class="entry-score">7/10</span>
-        <span class="sep">·</span>
-        <span>McKinsey Insights</span>
-        <span class="sep">·</span>
-        <span>商业</span>
-        <span class="sep">·</span>
-        <span>2026-06-10</span>
-      </div>
-      <a class="entry-title" href="https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/europes-new-ecommerce-agenda-how-ai-is-resetting-growth-and-competition" target="_blank" rel="noopener">Europe’s new e‑commerce agenda: How AI is resetting growth and competition</a>
-      <p class="entry-summary">麦肯锡分析 AI 如何重塑欧洲电商竞争格局。从 Agent 购物、零售媒体到全渠道智能，AI 改变了数字商务的经济模式。文章强调领导者需通过系统化实验将 AI 应用转化为可持续竞争优势，涉及商业模式创新和组织能力重塑，对零售与电商企业的运营战略有实际指导意义。</p>
-      <ul class="entry-bullets"><li>Agent 购物和零售媒体是 AI 驱动电商增长的新引擎，改变商业模式与价值链</li><li>全渠道智能整合需要组织跨函数协作和数据能力升级</li><li>从实验到规模化：领导者需建立系统方法将 AI 试点转化为竞争壁垒</li></ul>
-      <div class="entry-chips"><span class="entry-chip speaker">McKinsey</span><span class="entry-chip">商业模式创新</span><span class="entry-chip">AI 应用落地</span><span class="entry-chip">组织能力</span><span class="entry-chip">竞争战略</span></div>
-    </article>
-    
-    <article class="entry" data-source="McKinsey Insights" data-category="business" data-score="7">
-      <div class="entry-meta">
-        <span class="entry-score">7/10</span>
-        <span class="sep">·</span>
-        <span>McKinsey Insights</span>
-        <span class="sep">·</span>
-        <span>商业</span>
-        <span class="sep">·</span>
-        <span>2026-06-10</span>
-      </div>
-      <a class="entry-title" href="https://www.mckinsey.com/industries/retail/our-insights/rewiring-retail-in-europe-the-ai-imperative" target="_blank" rel="noopener">Rewiring retail in Europe: The AI imperative</a>
-      <p class="entry-summary">麦肯锡指出AI正在重塑欧洲零售价值链，企业领袖面临在现代化转型中强化人类体验的挑战。这一转变涉及240-320亿欧元的市场机遇。核心问题是如何在AI驱动的自动化中保留人的关键作用，这要求零售企业重新思考运营流程、员工技能需求和客户交互方式。</p>
-      <ul class="entry-bullets"><li>AI改造零售价值链，企业需平衡自动化与人类体验，避免过度技术化</li><li>€240-320亿潜在市场机遇，驱动欧洲零售企业加速AI转型</li><li>转型要求重新定义员工角色、培训模式和组织能力</li><li>领导者需制定明确策略，确保AI赋能而非替代人力</li></ul>
-      <div class="entry-chips"><span class="entry-chip speaker">McKinsey</span><span class="entry-chip">零售行业转型</span><span class="entry-chip">人机协作</span><span class="entry-chip">组织现代化</span><span class="entry-chip">领导力战略</span></div>
-    </article>
-    
-    <article class="entry" data-source="OpenAI" data-category="ai-lab" data-score="7">
-      <div class="entry-meta">
-        <span class="entry-score">7/10</span>
-        <span class="sep">·</span>
-        <span>OpenAI</span>
-        <span class="sep">·</span>
-        <span>AI 实验室</span>
-        <span class="sep">·</span>
-        <span>2026-06-10</span>
-      </div>
-      <a class="entry-title" href="https://openai.com/index/lseg" target="_blank" rel="noopener">From data to decisions: how LSEG is scaling trusted AI</a>
-      <p class="entry-summary">伦敦证券交易所集团（LSEG）采用 OpenAI 技术在全球业务中规模化部署可信任 AI，加速数据洞察生成、缩短产品发布周期、赋能 4,000 名员工。案例涉及如何通过 AI 改变工作流程效率和决策速度，但具体实施细节与组织结构影响着墨不足。</p>
-      <ul class="entry-bullets"><li>LSEG 用 AI 加快数据到决策的转化，提升洞察生成速度</li><li>AI 部署使产品发布周期显著缩短，优化开发流程</li><li>4,000 员工通过 AI 赋能获得新能力，改变日常工作方式</li><li>强调「可信任 AI」，关键是安全合规部署</li></ul>
-      <div class="entry-chips"><span class="entry-chip speaker">LSEG (伦敦证券交易所集团)</span><span class="entry-chip">生产力提升</span><span class="entry-chip">员工赋能</span><span class="entry-chip">流程优化</span><span class="entry-chip">金融科技落地</span></div>
-    </article>
-    
-    <article class="entry" data-source="OpenAI" data-category="ai-lab" data-score="7">
-      <div class="entry-meta">
-        <span class="entry-score">7/10</span>
-        <span class="sep">·</span>
-        <span>OpenAI</span>
-        <span class="sep">·</span>
-        <span>AI 实验室</span>
-        <span class="sep">·</span>
-        <span>2026-06-09</span>
-      </div>
-      <a class="entry-title" href="https://openai.com/index/industrial-policy-for-the-intelligence-age" target="_blank" rel="noopener">Industrial policy for the Intelligence Age</a>
-      <p class="entry-summary">OpenAI 发布产业政策主张，强调 AI 时代应采取以人为中心的政策框架。核心观点包括：通过 AI 发展扩大机会、共享繁荣成果、建立韧性制度。文章虽未涉及具体组织结构改革，但在宏观层面探讨 AI 对劳动力、收入分配和社会制度的长期影响，对企业制定人才、薪酬、转型策略具有参考价值。</p>
-      <ul class="entry-bullets"><li>AI 时代需要人为中心的政策设计，确保机会扩展与繁荣共享</li><li>强调建立韧性制度应对 AI 带来的社会经济变化</li><li>关注 AI 发展对就业、收入分配的深层影响</li><li>提出宏观层面的组织与制度适应框架</li></ul>
-      <div class="entry-chips"><span class="entry-chip speaker">OpenAI</span><span class="entry-chip">产业政策</span><span class="entry-chip">劳动力影响</span><span class="entry-chip">社会制度</span><span class="entry-chip">公平与包容</span></div>
-    </article>
-    </section>
 </div>
 <footer>
-  由 Claude Haiku 4.5 每日构建 · 2026-06-22 05:58 CST
+  由 Claude Haiku 4.5 每日构建 · 2026-06-23 06:24 CST
 </footer>
 <script>
 function applyFilters() {

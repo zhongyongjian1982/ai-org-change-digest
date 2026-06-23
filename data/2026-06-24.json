@@ -1,0 +1,107 @@
+[
+  {
+    "url": "https://www.lennysnewsletter.com/p/the-new-inner-game-your-unfair-advantage",
+    "title": "The new inner game: Your unfair advantage in the age of AI",
+    "source": "Lenny's Newsletter",
+    "category": "analyst",
+    "published": "2026-06-23",
+    "fetched_at": "2026-06-24T06:01:20+08:00",
+    "score": 8,
+    "summary_zh": "硅谷顶级执行教练Joe Hudson基于在OpenAI等前沿AI实验室的一线观察，指出传统工作技能（努力、知识积累）正被AI快速商业化。与其恐惧被替代，不如培养「情绪清晰度」——在困难对话中保持理性、不自我指责、坚持推进。AI时代团队结构将从\"工厂式\"扁平化为\"NBA阵容\"，每个人承载更大价值。成功的关键不是追赶技术速度，而是掌控自我情绪反应的能力，这是稀缺且可学习的竞争优势。",
+    "key_points": [
+      "知识与努力被AI商业化，情绪清晰度成为新的稀缺竞争力",
+      "团队结构从工厂式演变为NBA阵容，每人承载更高资本压力",
+      "AI时代成功者特征：在困难中保持对话、不自我指责、持续推进",
+      "恐惧驱动二元思维与错误预演，需用具体方法训练面对未来"
+    ],
+    "tags": [
+      "领导力重塑",
+      "团队结构变革",
+      "人才竞争力",
+      "组织管理"
+    ],
+    "speakers": [
+      "Joe Hudson",
+      "Sam Altman",
+      "Lenny"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/capabilities/business-building/our-insights/beyond-productivity-how-ai-creates-value-in-private-equity",
+    "title": "Beyond productivity: How AI creates value in private equity",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-06-23",
+    "fetched_at": "2026-06-24T06:00:55+08:00",
+    "score": 8,
+    "summary_zh": "麦肯锡研究显示，广泛拥抱AI的私募股权支持企业的收入倍数是仅关注生产力提升企业的两倍以上。这表明AI的价值远超单纯效率提升，涉及商业模式创新、客户体验、新收入流等战略层面。对企业而言，AI不仅是工具优化，更是重塑竞争力和组织能力的核心。该研究为CEO和投资者提供了关键洞察：AI需要全面战略布局，而非孤立应用于某个部门或功能。",
+    "key_points": [
+      "AI价值远超生产力提升：广泛应用的企业收入倍数显著更高",
+      "战略重点从效率向商业模式创新转变",
+      "需要全面组织能力重构，而非单点优化",
+      "PE支持的企业通过AI实现更高估值和增长潜力"
+    ],
+    "tags": [
+      "战略价值",
+      "商业模式",
+      "组织能力",
+      "估值提升"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/capabilities/mckinsey-technology/our-insights/ai-data-readiness-the-key-to-scaling-impact",
+    "title": "AI data readiness: The key to scaling impact",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-06-23",
+    "fetched_at": "2026-06-24T06:00:58+08:00",
+    "score": 7,
+    "summary_zh": "McKinsey 指出企业在扩展 AI 试点时面临数据瓶颈。领导者正优先推进「数据就绪」，即将结构化与非结构化数据整合成可治理、可复用的基础设施。这反映了 AI 规模化落地的组织挑战：需要从技术角度重构数据管理体系，直接影响企业 AI 转型的速度与深度。",
+    "key_points": [
+      "数据瓶颈成为 AI 规模化的主要制约因素",
+      "企业优先级转向「数据就绪」战略，而非单纯算法优化",
+      "需建立数据治理与复用机制，支撑组织级 AI 应用",
+      "数据基础设施升级直接影响 AI 项目落地效率与投资回报"
+    ],
+    "tags": [
+      "AI 规模化",
+      "数据治理",
+      "组织能力建设",
+      "基础设施"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  },
+  {
+    "url": "https://sequoiacap.com/article/partnering-with-probook-ai-for-the-trades/",
+    "title": "Partnering with Probook: AI for the Trades",
+    "source": "Sequoia Capital",
+    "category": "vc",
+    "published": "2026-06-23",
+    "fetched_at": "2026-06-24T06:01:05+08:00",
+    "score": 7,
+    "summary_zh": "Probook 是一个面向家庭服务业（水电暖等）的 AI 操作系统，通过统一平台自动化派工、客户跟进等行政工作，解决行业长期存在的效率低下问题。核心价值在于：用 AI 连接碎片化的业务流程，让技工专注核心工作，企业降低成本、提升利润率。创始人通过亲身经历（父亲的业务）发现需求，强调真实人性化服务与 AI 的结合。这反映了 AI 在传统劳动密集型行业的组织优化潜力——从办公到现场全链路自动化。",
+    "key_points": [
+      "统一 AI 平台替代碎片化工具栈，整合派工、客户沟通、技工管理，降低企业成本、提升员工收入",
+      "自动化行政负担让技工回归核心工作，改善客户和员工满意度",
+      "实时掌握技工能力、位置、可用性，优化任务分配效率与客户体验",
+      "传统行业数百万工人面临同样痛点，AI 有机会重塑整个产业结构"
+    ],
+    "tags": [
+      "行业数字化",
+      "人力优化",
+      "流程自动化",
+      "中小企业转型"
+    ],
+    "speakers": [
+      "George Eliadis",
+      "Lewis Zhang",
+      "Ben Cervantez",
+      "Sequoia Capital"
+    ]
+  }
+]

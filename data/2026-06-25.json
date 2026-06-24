@@ -1,0 +1,78 @@
+[
+  {
+    "url": "https://www.mckinsey.com/featured-insights/mckinsey-explainers/ai-powered-software-development-how-technology-is-rewriting-the-rules",
+    "title": "AI-powered software development: How technology is rewriting the rules",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-06-24",
+    "fetched_at": "2026-06-25T05:57:21+08:00",
+    "score": 8,
+    "summary_zh": "麦肯锡分析 AI 如何从个人效率工具升级为重塑软件开发工作流与角色的系统性力量。文章强调，真正获取价值的公司不止于采用 AI 辅助工具，而是进行工作流重组和岗位功能重新定义。这涉及开发团队结构调整、技能需求变化、以及从传统编码范式向 AI 协作范式的转变。三位专家观点突出了组织如何通过流程创新而非单纯工具升级来释放 AI 红利。",
+    "key_points": [
+      "AI 从增强个人生产力向全流程工作流重组转变，推动角色与职能再定义",
+      "区分价值捕获者与落后者的关键是组织能否系统性重构开发工作方式",
+      "需要调整团队结构、技能组合，从传统编码向 AI 协作模式演进"
+    ],
+    "tags": [
+      "工作流重构",
+      "人才重新定位",
+      "生产力变革",
+      "组织能力建设"
+    ],
+    "speakers": [
+      "McKinsey（三位专家）"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/industries/technology-media-and-telecommunications/how-we-help-clients/how-kpn-is-building-an-agentic-ai-engine-for-customer-care",
+    "title": "How KPN is building an agentic AI engine for customer care",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-06-24",
+    "fetched_at": "2026-06-25T05:57:28+08:00",
+    "score": 8,
+    "summary_zh": "荷兰领先电信公司 KPN 通过在客服中心部署 Agent AI，实现了质量提升和效率改进。这是一个典型的企业 AI 落地案例，涉及工作流程重构、员工角色转变和长期竞争力建设。Agent AI 在客服领域的应用展示了如何通过自动化和智能决策改变传统运营模式，同时为组织培养 AI 能力建设。",
+    "key_points": [
+      "Agent AI 在客服中心的应用实现流程自动化和质量提升",
+      "员工工作方式改变：从处理重复任务向监督、优化转变",
+      "企业通过 AI 项目构建组织级 AI 能力和竞争力基础",
+      "成熟企业的 AI 转型需要流程、人才、文化三维调整"
+    ],
+    "tags": [
+      "Agent 落地",
+      "客服运营",
+      "工作方式变革",
+      "企业AI能力"
+    ],
+    "speakers": [
+      "KPN"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/capabilities/mckinsey-technology/our-insights/resolve-ai-ceo-spiros-xanthos-ais-impact-on-software-production-systems",
+    "title": "Resolve AI CEO Spiros Xanthos: AI’s impact on software production systems",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-06-24",
+    "fetched_at": "2026-06-25T05:57:24+08:00",
+    "score": 7,
+    "summary_zh": "Resolve AI CEO Spiros Xanthos阐述AI如何优化软件部署、生产和监控系统。传统上这些领域自动化困难，但AI可通过提升系统可靠性、加快交付速度、优化工作负载分配来改变软件生产运营。涉及DevOps、运维工程师角色演变，以及企业软件交付流程的深层变革，对工程团队组织和工作方式有直接影响。",
+    "key_points": [
+      "AI自动化软件部署、生产监控系统，解决长期技术难题",
+      "提升系统可靠性与交付速度，重塑DevOps工程师职能",
+      "工作负载优化涉及运维团队能力再定义与流程重组",
+      "McKinsey与Resolve AI观点，体现咨询/创业者对组织变革的认知"
+    ],
+    "tags": [
+      "DevOps现代化",
+      "工程团队重构",
+      "生产力",
+      "AI落地案例"
+    ],
+    "speakers": [
+      "Spiros Xanthos",
+      "Resolve AI",
+      "McKinsey"
+    ]
+  }
+]

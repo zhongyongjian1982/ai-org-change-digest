@@ -1,0 +1,76 @@
+[
+  {
+    "url": "https://sloanreview.mit.edu/article/redefine-what-professionalism-means/",
+    "title": "Redefine What ‘Professionalism’ Means",
+    "source": "MIT Sloan Management Review",
+    "category": "business",
+    "published": "2026-06-25",
+    "fetched_at": "2026-06-26T06:07:58+08:00",
+    "score": 7,
+    "summary_zh": "文章探讨如何重新定义职场「专业性」规范。作者指出多数组织盲目沿袭传统标准而非主动设计，导致规范既包含有益的共识（守承诺、尊重同事），也包含过时且具有排斥性的要求（如着装、外表、身体语言标准），无意中对照顾者、神经多样性、LGBTQ+和有色人种等群体造成不利。作者主张领导者应根据组织独特背景协作重塑专业性定义，通过识别成功指标、明确底线行为等方式，设计因地制宜的职场规范体系，激励有益行为而非设置障碍。",
+    "key_points": [
+      "多数企业被动继承传统专业性规范，忽视了主动塑造职场文化的权力与责任",
+      "不合理的专业性标准（外表、沟通方式等）常以排斥性方式系统化歧视少数群体",
+      "有效的专业性应从组织成功目标、核心价值反推，而非教条式沿袭",
+      "领导者需协作定义「交易破裂」行为底线与鼓励型规范，设计包容的职场规则体系"
+    ],
+    "tags": [
+      "组织文化重构",
+      "包容性领导",
+      "职场规范设计",
+      "人才多样性"
+    ],
+    "speakers": []
+  },
+  {
+    "url": "https://openai.com/index/how-agents-are-transforming-work",
+    "title": "How agents are transforming work",
+    "source": "OpenAI",
+    "category": "ai-lab",
+    "published": "2026-06-25",
+    "fetched_at": "2026-06-26T06:08:20+08:00",
+    "score": 7,
+    "summary_zh": "OpenAI 发布研究论文，展示 AI Agent 如何改变工作方式。Agent 能够执行更长、更复杂的任务，跨越多个角色提升生产力。论文表明 Agent 不仅优化现有工作流程，还能扩展人类的工作范围，使员工从重复性任务中解放，转向更高价值活动。这对企业如何重新组织工作、重新定义岗位职能具有重要启示。",
+    "key_points": [
+      "Agent 能处理更长链条和复杂度更高的任务，突破传统自动化边界",
+      "跨角色生产力提升表明 Agent 改变岗位分工与能力需求",
+      "员工可从重复性工作解放，投入更高价值决策与创意工作",
+      "企业需重新评估工作流程设计与员工能力定位"
+    ],
+    "tags": [
+      "Agent 落地",
+      "生产力变革",
+      "工作方式重塑",
+      "组织流程"
+    ],
+    "speakers": [
+      "OpenAI"
+    ]
+  },
+  {
+    "url": "https://stratechery.com/2026/an-interview-with-figma-ceo-dylan-field-about-design-and-ai/",
+    "title": "An Interview with Figma CEO Dylan Field About Design and AI",
+    "source": "Stratechery (free posts)",
+    "category": "analyst",
+    "published": "2026-06-25",
+    "fetched_at": "2026-06-26T06:08:31+08:00",
+    "score": 7,
+    "summary_zh": "Figma CEO Dylan Field 在采访中探讨了设计与AI的交集。虽然市场将AI视为公司的劣势（导致股价从563亿美元估值跌至不到100亿），Field 却将其视为尾风。他强调Figma的Canvas（协作设计平台）是AI的天然切入点，并讨论了收购AI原生公司、代码与设计的融合等策略。采访涉及Figma如何利用AI能力重新定义设计工作流，但未深入阐述对组织结构或人员配置的具体影响。",
+    "key_points": [
+      "CEO 将 AI 从市场认为的威胁转变为竞争机遇，视其为产品发展的尾风而非逆风",
+      "强调协作设计平台(Canvas)与 AI 的天然结合点，暗示产品路线图整合 AI 能力",
+      "提及收购 AI 原生初创公司策略，表明通过外部补充快速获取 AI 人才与技术",
+      "讨论代码与设计的融合方向，可能涉及自动化与人员角色再定义"
+    ],
+    "tags": [
+      "产品策略",
+      "AI 集成",
+      "人才与收购",
+      "设计工作流再造"
+    ],
+    "speakers": [
+      "Dylan Field",
+      "Figma"
+    ]
+  }
+]

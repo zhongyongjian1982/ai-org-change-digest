@@ -1,0 +1,30 @@
+[
+  {
+    "url": "https://www.lennysnewsletter.com/p/openai-codex-lead-on-the-new-shape",
+    "title": "OpenAI Codex lead on the new shape of product work | Andrew Ambrosino",
+    "source": "Lenny's Newsletter",
+    "category": "analyst",
+    "published": "2026-06-28",
+    "fetched_at": "2026-06-29T05:42:39+08:00",
+    "score": 8,
+    "summary_zh": "OpenAI Codex 产品负责人 Andrew Ambrosino 分享了 AI 如何重塑产品开发流程与组织运作。核心观点：AI 颠覆了传统产品开发过程，\"品味\"（taste）成为 AI 时代最稀缺的专业能力。OpenAI 采取\"区域防守\"模式让所有人都能构建产品，导致传统角色边界消融。团队角色压扁化使每个人跨越工程、设计、产品边界工作，但完全消除角色反而有害。Codex 的成功在于把握发布时机与迭代节奏——若去年 11 月推出会失败。这反映了 AI 工具如何改变协作方式和个人工作流。",
+    "key_points": [
+      "AI 完全翻转产品开发流程，品味成为 AI 时代最值钱的专业能力",
+      "OpenAI 采\"区域防守\"模型，员工权能跨界构建，但保留角色框架避免混乱",
+      "传统角色边界模糊化，团队成员同时涉及工程、设计、产品多个维度",
+      "发布时机与迭代速度决定 AI 产品成败，产品思维需适应快速反馈循环",
+      "Codex 作为协调 ChatGPT、工作工具的枢纽，重构个人与团队的工作基础设施"
+    ],
+    "tags": [
+      "产品开发重构",
+      "角色与能力",
+      "组织协作模式",
+      "人才素质升维"
+    ],
+    "speakers": [
+      "Andrew Ambrosino (OpenAI Codex Product Lead)",
+      "Jenny Wen (Claude Head of Design)",
+      "Dan Shipper"
+    ]
+  }
+]

@@ -1,0 +1,102 @@
+[
+  {
+    "url": "https://www.lennysnewsletter.com/p/no-figma-no-jira-no-docs-how-gusto",
+    "title": "No Figma. No Jira. No docs. How Gusto built a new product line with Claude Code | Eddie Kim (CTO)",
+    "source": "Lenny's Newsletter",
+    "category": "analyst",
+    "published": "2026-06-29",
+    "fetched_at": "2026-06-30T05:56:43+08:00",
+    "score": 9,
+    "summary_zh": "Gusto CTO Eddie Kim分享了用Claude Code在10周内从零到一构建新产品线Gusto Cofounder的经验。5人团队（3工程师+1设计师+1CTO）彻底推翻传统流程：废弃Figma、Jira、文档，采用「垃圾桶方法」替代代码评审，用持续Zoom替代站会和Slack讨论，采用eval-first工作流直接修复真实客户bug。这不仅展示了AI工具如何加速产品交付，更重要的是改变了小规模高效团队的协作模式——无PM、无繁琐流程、设计师直接参与编码，打破了传统研发分工。",
+    "key_points": [
+      "5人团队10周完成产品上线，彻底弃用传统工具链（Jira/Figma/文档），说明AI时代项目管理需要根本重构",
+      "「垃圾桶方法」：用代码提交替代规划文档，PR本身即产品决策，极端压缩反馈循环",
+      "非技术设计师借助Claude Code达到94%编码能力百分位，打破工程师垄断，重塑人才界定",
+      "Eval-first工作流：用自动化测试驱动开发和bug修复，减少人工代码审查环节",
+      "持续同步替代异步沟通（Zoom全天vs Slack线程），适合小团队高度信任协作"
+    ],
+    "tags": [
+      "组织流程重构",
+      "AI赋能跨职能",
+      "小团队高效模式",
+      "研发工具链演进"
+    ],
+    "speakers": [
+      "Eddie Kim（Gusto联合创始人兼CTO）"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/in-an-ai-driven-world-the-fastest-learner-will-win-an-interview-with-mckinseys-sven-smit",
+    "title": "In an AI-driven world, the fastest learner will win: An interview with McKinsey’s Sven Smit",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-06-26",
+    "fetched_at": "2026-06-30T05:56:20+08:00",
+    "score": 8,
+    "summary_zh": "麦肯锡全球研究院前主席 Sven Smit 在交接采访中强调，在 AI 驱动的时代，学习速度最快的组织将赢得竞争。他讨论了 AI 如何重塑知识获取、应用和机构创新能力。这反映了高层对 AI 不仅是技术问题，更是组织学习能力、人才战略和知识管理转型的深刻认识。暗示企业需要建立更敏捷的学习机制、重新定义员工角色，以适应快速迭代的 AI 环境。",
+    "key_points": [
+      "学习速度成为 AI 时代企业竞争的核心优势",
+      "AI 改变了知识创造、获取和应用的组织流程",
+      "机构需要重新设计人才体系和学习文化以适应 AI 变革",
+      "高管层需要前瞻性思维，把握 AI 带来的战略机遇"
+    ],
+    "tags": [
+      "组织学习与适应",
+      "人才与能力建设",
+      "知识管理转型",
+      "领导力与战略"
+    ],
+    "speakers": [
+      "Sven Smit",
+      "McKinsey"
+    ]
+  },
+  {
+    "url": "https://openai.com/index/mapping-ai-jobs-transition-eu",
+    "title": "Mapping Europe’s AI Workforce Opportunity",
+    "source": "OpenAI",
+    "category": "ai-lab",
+    "published": "2026-06-29",
+    "fetched_at": "2026-06-30T05:56:27+08:00",
+    "score": 7,
+    "summary_zh": "OpenAI 发布欧盟 AI 劳动力机遇报告，映射 AI 如何重塑欧盟各职业前景。报告识别了面临自动化、增长或工作流程改变的具体职业类别。这为欧盟企业与政府制定人才战略、教育规划和劳动力转型政策提供了数据支撑。报告强调需要针对性的人力资源调整以应对 AI 时代的职业结构变化。",
+    "key_points": [
+      "识别欧盟各职业面临的自动化风险与增长机遇",
+      "为企业人才策略与教育规划提供数据决策依据",
+      "强调劳动力转型与职业重塑的必要性",
+      "支撑政府制定 AI 时代人力资源与经济政策"
+    ],
+    "tags": [
+      "劳动力转型",
+      "职业重塑",
+      "人才规划",
+      "AI 影响评估"
+    ],
+    "speakers": [
+      "OpenAI"
+    ]
+  },
+  {
+    "url": "https://www.lennysnewsletter.com/p/how-i-ai-glm-52-review-and-how-gusto",
+    "title": "🎙️ How I AI: GLM-5.2 review & How Gusto built a new product line with Claude Code",
+    "source": "Lenny's Newsletter",
+    "category": "analyst",
+    "published": "2026-06-29",
+    "fetched_at": "2026-06-30T05:56:37+08:00",
+    "score": 6,
+    "summary_zh": "本文评测GLM-5.2开源模型在实际代码工作流中的表现。核心观点：开源权重模型已成生产级替代品，不再是爱好者玩具。GLM-5.2性能接近Claude Opus，成本仅为其零头，关键优势在于成本、自主控制和避免厂商锁定。作者通过45分钟自主bug排查任务测试，发现其HTML/CSS可靠，React处理不够稳定。建议将其与闭源模型搭配使用，而非完全替代，适合长上下文任务和成本敏感场景。反映了AI工具在工程团队中的选型权力转移。",
+    "key_points": [
+      "开源模型已达生产级质量，自托管改变了厂商议价关系，规避单一供应商依赖",
+      "GLM-5.2成本仅$3.36/600万tokens，为闭源模型的fraction，特别利于长上下文Agent任务",
+      "实测表明HTML/CSS生成可靠，React多步Agent任务稳定性仍需验证，是采用前必测关键",
+      "开源模型降低了技术选型的锁定风险，团队可自由切换推理供应商，无需改动应用代码"
+    ],
+    "tags": [
+      "工具选型",
+      "成本优化",
+      "Agent落地",
+      "技术自主性"
+    ],
+    "speakers": []
+  }
+]

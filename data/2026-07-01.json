@@ -1,0 +1,52 @@
+[
+  {
+    "url": "https://sloanreview.mit.edu/article/the-real-question-to-ask-about-ai-governance/",
+    "title": "The Real Question to Ask About AI Governance",
+    "source": "MIT Sloan Management Review",
+    "category": "business",
+    "published": "2026-06-30",
+    "fetched_at": "2026-07-01T06:01:39+08:00",
+    "score": 9,
+    "summary_zh": "MIT Sloan 发表 Adobe AI 治理负责人的深度观点：企业声称有 AI 治理，但普遍缺乏「能说不的人」。多数公司建了模型库、风险框架、监控面板等工具，但这些只提供可见性，不提供决策权。真正的治理漏洞在于：谁有权关停有害的 AI 模型？该权力常被埋在产品部门里，与收入目标冲突。Adobe 的解决方案是建立独立于产品团队、向信任与安全部门汇报的联邦治理模型，确保治理有真正的话语权和执行力。",
+    "key_points": [
+      "AI 治理的真正缺陷不是工具缺失，而是缺乏有权「叫停」的人和独立决策权",
+      "大多数企业治理角色（如首席 AI 伦理官）只能建议和上报，无法执行关键决策",
+      "治理权力若归产品团队，与商业目标冲突，导致风险提示被忽视",
+      "Adobe 案例：建立独立于产品线、向信任部门汇报的治理结构是关键设计",
+      "可见性不等于行动力；需从工具思维转向权力结构和组织设计"
+    ],
+    "tags": [
+      "组织结构",
+      "AI 治理",
+      "权力分配",
+      "风险管理"
+    ],
+    "speakers": [
+      "Carolyn Geason-Beissel（Adobe AI 与数据治理负责人）"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/industries/life-sciences/our-insights/from-linear-gates-to-learning-loops-rewiring-biopharma-r-and-d-with-ai",
+    "title": "From linear gates to learning loops: Rewiring biopharma R&D with AI",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-06-29",
+    "fetched_at": "2026-07-01T06:02:03+08:00",
+    "score": 7,
+    "summary_zh": "麦肯锡研究提出，生物制药R&D应从线性门控流程转变为AI驱动的互联决策循环模型。该模式通过连接决策环节、消除碎片化工作流，能降低不确定性、压缩开发周期、加速药物上市。这反映了AI如何重塑传统行业的组织流程、决策方式和跨部门协作机制，具有明显的流程优化和组织效率提升价值。",
+    "key_points": [
+      "从线性顺序到循环反馈：AI连接R&D各环节，实现实时决策迭代而非阶段性审批",
+      "消除碎片化：集成数据和AI分析，打破部门壁垒，提升协作效率",
+      "时间与成本压力：加快新药上市周期，降低开发风险和不确定性"
+    ],
+    "tags": [
+      "流程重构",
+      "决策优化",
+      "组织协作",
+      "AI落地"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  }
+]

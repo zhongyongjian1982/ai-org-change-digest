@@ -1,0 +1,30 @@
+[
+  {
+    "url": "https://www.oneusefulthing.org/p/the-twilight-of-the-chatbots",
+    "title": "The twilight of the chatbots",
+    "source": "One Useful Thing (Ethan Mollick)",
+    "category": "analyst",
+    "published": "2026-07-01",
+    "fetched_at": "2026-07-02T06:06:43+08:00",
+    "score": 8,
+    "summary_zh": "AI 能力呈超指数级增长，尤其在自主执行复杂工作上表现显著——单个提示即可完成数周的工程任务，成本仅需数百美元。随着模型能力扩展，人们使用 AI 的方式发生根本转变：从「协同智能」（人类逐步指导）演进到「长期自主运行系统」，减少人类干预。这意味着工作流程、人员角色、协作方式需要重新设计，标志着 AI 使用范式的转折点。",
+    "key_points": [
+      "AI 自主完成复杂任务能力呈超指数增长，单次提示可替代 2-17 周人力工程工作",
+      "使用模式转变：从人类持续指导的『协同』向『长期自主运行』系统升级",
+      "中国开源模型虽滞后 6-12 个月，但成本极低且性能曲线陡峭，形成两级竞争格局",
+      "AI 在长期任务中的设计判断、风格等『软指标』差异大，现有基准测试难以完整反映真实能力"
+    ],
+    "tags": [
+      "AI 工作范式转变",
+      "自主 Agent 落地",
+      "人员角色重新定义",
+      "生产力跃升"
+    ],
+    "speakers": [
+      "Ethan Mollick",
+      "METR",
+      "UK AI Security Institute",
+      "Epoch"
+    ]
+  }
+]

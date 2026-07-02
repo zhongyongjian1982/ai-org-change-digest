@@ -1,0 +1,51 @@
+[
+  {
+    "url": "https://www.mckinsey.com/industries/healthcare/our-insights/the-real-future-of-work-in-healthcare",
+    "title": "The real future of work in healthcare",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-07-02",
+    "fetched_at": "2026-07-03T05:47:11+08:00",
+    "score": 8,
+    "summary_zh": "麦肯锡指出医疗行业陷入生产力危机，单纯增加人手和技术投入无法解决。未来医疗的关键在于构建「人-AI协作工作流」，通过自动化与人类专业能力的深度融合来提升服务效率和质量。这涉及对医疗工作流程的根本性重新设计，以及医疗人才角色定义的转变。",
+    "key_points": [
+      "医疗行业陷入生产力危机，传统扩招与技术堆砌无法根本解决",
+      "人-AI协作工作流是未来医疗运营的核心模式，而非单纯自动化替代",
+      "需要重新设计工作流程和人才定位，让AI承载重复性任务，医疗人员专注专业决策"
+    ],
+    "tags": [
+      "人-AI协作",
+      "工作流重设",
+      "生产力危机",
+      "行业深层转变"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/capabilities/mckinsey-technology/our-insights/how-miro-is-redefining-collaboration-across-the-product-development-life-cycle",
+    "title": "How Miro is redefining collaboration across the product development life cycle",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-07-02",
+    "fetched_at": "2026-07-03T05:47:15+08:00",
+    "score": 7,
+    "summary_zh": "Miro CEO Andrey Khusid探讨了公司从数字白板向AI驱动工作流平台的演进。文章聚焦AI如何重塑产品开发生命周期中的协作方式，以及AI对软件企业竞争优势的影响。虽未深入组织结构变革，但涉及工作流程再定义、团队协作转变，以及AI赋能下的企业能力升级。",
+    "key_points": [
+      "从数字白板向AI工作流平台升级，反映企业能力层次提升",
+      "AI重塑产品开发协作链路，改变团队工作方式和效率",
+      "AI成为软件企业的新竞争优势源，差异化竞争转向AI能力",
+      "跨部门工作流整合，AI驱动流程自动化与智能决策"
+    ],
+    "tags": [
+      "工作流重塑",
+      "AI协作工具",
+      "生产力提升",
+      "竞争优势"
+    ],
+    "speakers": [
+      "Andrey Khusid（Miro联合创始人兼CEO）"
+    ]
+  }
+]

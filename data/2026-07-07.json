@@ -1,0 +1,50 @@
+[
+  {
+    "url": "https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/why-accelerated-resource-allocation-matters-in-the-age-of-ai",
+    "title": "Why accelerated resource allocation matters in the age of AI",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-07-06",
+    "fetched_at": "2026-07-07T05:59:51+08:00",
+    "score": 8,
+    "summary_zh": "麦肯锡指出，在 AI 快速变革时代，企业竞争力的关键不在于预测能力，而在于学习、资源重配和适应速度。文章强调动态资源配置机制的重要性——能够快速识别 AI 机遇、调整投资组合、重新部署人力和资本的企业将赢得竞争。这暗示传统的固定预算和长期规划模式已不适应，需要建立灵活的决策框架和跨职能协作机制来应对 AI 带来的组织和业务模式变革。",
+    "key_points": [
+      "竞争优势从预测准确性转向学习和适应的速度",
+      "AI 时代需要建立动态资源重配机制，快速调整投资优先级",
+      "组织灵活性和决策敏捷性成为核心竞争力",
+      "需要打破传统预算周期，实现跨部门的实时资源流动"
+    ],
+    "tags": [
+      "组织敏捷性",
+      "资源配置",
+      "AI 战略",
+      "决策机制"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/capabilities/transformation/our-insights/how-covista-is-changing-education-for-healthcare-professionals",
+    "title": "How Covista is changing education for healthcare professionals",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-07-06",
+    "fetched_at": "2026-07-07T05:59:57+08:00",
+    "score": 7,
+    "summary_zh": "McKinsey 案例研究 Covista 的多年转型。CEO Steve Beard 阐述组织如何重塑使命、结构与文化。虽聚焦医疗教育领域，但涉及组织层面的战略性重构——包括目标重新定义、内部结构调整、员工文化转变。未明确提及 AI 的直接作用，但其组织变革的框架和实践对理解 AI 时代下的组织适应具有参考意义。",
+    "key_points": [
+      "CEO 视角：讲述多年转型中的组织使命重塑与战略调整",
+      "组织结构与文化的深层变革，而非表面层面的优化",
+      "医疗专业教育领域的转型案例，可映射其他行业"
+    ],
+    "tags": [
+      "组织重构",
+      "领导力",
+      "企业文化"
+    ],
+    "speakers": [
+      "Steve Beard（Covista 董事长兼 CEO）"
+    ]
+  }
+]

@@ -1,0 +1,107 @@
+[
+  {
+    "url": "https://sloanreview.mit.edu/article/genai-success-metrics-look-beyond-reduced-workload/",
+    "title": "GenAI Success Metrics: Look Beyond Reduced Workload",
+    "source": "MIT Sloan Management Review",
+    "category": "business",
+    "published": "2026-07-08",
+    "fetched_at": "2026-07-09T05:45:16+08:00",
+    "score": 8,
+    "summary_zh": "MIT Sloan 研究费城社区学院四年真实数据，发现生成式AI并未减少工作量，而是重塑工作形态。员工工时不变，但工作流转方式改变：从会议转向书面沟通，从反复澄清转向高质量初稿，从冗长讨论转向快速决策。高管层决策邮件从60%增至80%，运营层质量邮件从65%升至85%。核心启示：衡量AI成效不应只看时间节省，而应看决策质量、协作模式和工作完成度的改善。",
+    "key_points": [
+      "AI未减少工作量，而是改变工作形态：会议→书面、反复澄清→高质量初稿、慢速决策→快速执行",
+      "高管层决策类邮件占比从60%升至80%，说明思考更完整、需要的后续协调更少",
+      "运营层邮件质量提升但总量不变，减少返工和重复沟通，加快闭环",
+      "组织不应以小时数评估AI价值，而应看决策质量、协调成本、工作流畅度",
+      "四年纵向观察、人员编制不变，确保数据反映工作方式而非产能扩张"
+    ],
+    "tags": [
+      "工作方式重构",
+      "决策质量",
+      "协作效率",
+      "指标重新定义"
+    ],
+    "speakers": [
+      "MIT Sloan Management Review",
+      "Community College of Philadelphia"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/capabilities/people-and-organizational-performance/our-insights/from-adoption-to-impact-three-horizons-of-ai-transformation",
+    "title": "From adoption to impact: Three horizons of AI transformation",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-07-08",
+    "fetched_at": "2026-07-09T05:45:22+08:00",
+    "score": 8,
+    "summary_zh": "麦肯锡全球调研显示，多数企业仍处于AI应用初期。文章框架化企业AI转型的三个阶段：从零散采纳到企业级价值释放。强调组织需要超越试点项目，建立系统性的AI治理、人才培养和流程重塑能力，才能从技术投入转化为可持续竞争优势。涉及采购决策、跨部门协作、技能升级等组织维度。",
+    "key_points": [
+      "企业AI转型分三阶段：个体采纳→部门规模化→企业级影响，大多数公司仍在第一阶段",
+      "价值释放需要治理框架、人才策略和流程变革支撑，不仅是技术部署",
+      "跨职能协作、领导力重塑是从试点突破到规模化的关键障碍",
+      "建立AI-ready的组织文化和能力体系，比单点应用更决定长期ROI"
+    ],
+    "tags": [
+      "组织转型",
+      "人才策略",
+      "治理框架",
+      "规模化落地"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/capabilities/quantumblack/our-insights/cost-versus-value-managing-agentic-ai-system-performance",
+    "title": "Cost versus value: Managing agentic AI system performance",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-07-08",
+    "fetched_at": "2026-07-09T05:45:25+08:00",
+    "score": 7,
+    "summary_zh": "McKinsey 与 Pay-i CEO David Tepper 探讨生成式 AI 经济学的转变。传统的 Token 计费模式已不适用于企业实际支出衡量，Agent AI 系统的成本结构需要重新定义。文章指向企业在采购、评估 AI 系统时的计费模式创新，涉及企业成本管理与投资决策的根本性改变。",
+    "key_points": [
+      "Token 计费模式不再准确反映企业 AI 实际支出",
+      "Agent AI 系统带来新的经济学测量标准和成本计算方式",
+      "企业需要重新建立 AI 成本评估与价值衡量框架",
+      "AI 系统计费模式改变影响企业采购与预算决策"
+    ],
+    "tags": [
+      "成本管理",
+      "Agent 落地",
+      "采购策略",
+      "ROI 评估"
+    ],
+    "speakers": [
+      "David Tepper (Pay-i CEO)",
+      "McKinsey"
+    ]
+  },
+  {
+    "url": "https://www.lennysnewsletter.com/p/what-a-harness-is-and-how-to-build",
+    "title": "What a harness is and how to build one with Claude Agent SDK",
+    "source": "Lenny's Newsletter",
+    "category": "analyst",
+    "published": "2026-07-08",
+    "fetched_at": "2026-07-09T05:45:58+08:00",
+    "score": 6,
+    "summary_zh": "Lenny's Newsletter 播客邀请 ChatPRD 创始人 Claire Vo 现场演示如何用 Claude Agent SDK 构建「AI 套装」(harness)——为重复性、结构化工作流自动化的系统。以 Sentry bug 调试为例，展示了套装如何整合多个工具权限、编码业务逻辑、自主执行证据收集与根因分析。该内容强调 AI Agent 不仅是模型，更需要针对特定业务场景的「套装」设计，涉及架构、权限编码、产物结构化等工程决策，对企业自动化工作流有实践参考价值。",
+    "key_points": [
+      "AI 套装是模型 + 权限 + 业务逻辑的组合，解决重复性结构化任务，而非通用 AI 工具",
+      "套装需三核心组件：运行机制、任务管理、工具集成；权限编码是关键安全考量",
+      "以 bug 调试为例，套装自主完成证据收集、根因分析、产物创建，减少人工干预",
+      "实战展示搭建方式与架构决策，面向企业特定工作流定制而非通用方案"
+    ],
+    "tags": [
+      "Agent 落地",
+      "工作流自动化",
+      "工程架构",
+      "生产力"
+    ],
+    "speakers": [
+      "Claire Vo (ChatPRD 创始人)",
+      "Anthropic",
+      "OpenAI"
+    ]
+  }
+]

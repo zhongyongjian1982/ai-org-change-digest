@@ -1,0 +1,130 @@
+[
+  {
+    "url": "https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/rewired-takes-practical-people-lessons-for-scaling-ai-adoption",
+    "title": "Rewired takes: Practical people lessons for scaling AI adoption",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-07-13",
+    "fetched_at": "2026-07-14T05:31:11+08:00",
+    "score": 8,
+    "summary_zh": "麦肯锡资深合伙人 Brooke Weddle 分享企业成功扩展 AI 项目的实践人才经验。文章聚焦组织层面的 AI 采纳扩展，强调人员管理和组织能力在 AI 规模化中的关键作用。通过「Rewired」框架探讨如何重新定义人才角色、调整组织流程和文化，以适应 AI 驱动的工作方式变革，为高管提供可落地的人才策略和组织设计建议。",
+    "key_points": [
+      "AI 规模化成功关键在人才与组织，而非技术本身",
+      "需重新定义员工角色与技能，建立人机协作新范式",
+      "组织文化和流程重塑是 AI 采纳的隐性成本",
+      "高管必须主导人才转型，确保 AI 战略落地"
+    ],
+    "tags": [
+      "AI 规模化",
+      "人才转型",
+      "组织重构",
+      "人机协作"
+    ],
+    "speakers": [
+      "Brooke Weddle（麦肯锡资深合伙人）",
+      "McKinsey"
+    ]
+  },
+  {
+    "url": "https://www.lennysnewsletter.com/p/how-i-ai-gpt-56-review-how-a-solo",
+    "title": "🎙️ How I AI: GPT-5.6 review, How a solo builder runs 24/7 local AI, and What an agent harness is and how to build one",
+    "source": "Lenny's Newsletter",
+    "category": "analyst",
+    "published": "2026-07-13",
+    "fetched_at": "2026-07-14T05:31:46+08:00",
+    "score": 7,
+    "summary_zh": "本期播客聚焦 AI Agent 在实际工作场景中的应用。核心议题包括：(1) \"Harness\"（框架/围绕层）的概念与构建——即围绕 AI Agent 的定制代码，用于特定任务的自动化；(2) 以 ChatPRD 的 Sentry bug 分类自动化为例，演示如何通过约束权限、自定义工具适配器、结构化输出等方式，让 Agent 输出更一致、更廉价、更可控；(3) 强调专用 Harness 优于通用工具（Claude Code）的优势：多模型路由、权限编码、工作流固化。反映了 AI 在工程团队中从「开放式助手」向「特定任务自动化引擎」的演变方向。",
+    "key_points": [
+      "Harness 是围绕 AI Agent 的定制代码层，用于固化重复性工作流和权限约束，而非神秘概念",
+      "专用 Harness 通过自定义工具适配器、权限编码、结构化输出，相比通用 Agent 更快更廉价",
+      "识别「部分确定性+部分非确定性」的任务是构建 Harness 的关键触发点",
+      "通用 Agent 的新角色是编排多个专用 Harness，而非直接执行所有任务"
+    ],
+    "tags": [
+      "Agent 落地",
+      "自动化工作流",
+      "工程效能",
+      "工具设计"
+    ],
+    "speakers": [
+      "Claire (主持人)",
+      "Alex Finn"
+    ]
+  },
+  {
+    "url": "https://sloanreview.mit.edu/article/how-genai-can-and-cant-help-manage-customer-insights/",
+    "title": "How GenAI Can and Can’t Help Manage Customer Insights",
+    "source": "MIT Sloan Management Review",
+    "category": "business",
+    "published": "2026-07-13",
+    "fetched_at": "2026-07-14T05:31:07+08:00",
+    "score": 7,
+    "summary_zh": "MIT Sloan 探讨生成式 AI 如何改进客户洞察管理。关键发现：企业不应只关注知识存储/访问，而要重新设计知识流程（创建、分析、存储、获取）。P&G 等公司通过 RAG 技术整合内部数据与 LLM 能力，员工可用自然语言快速获取洞察。但组织孤岛、文化障碍等旧问题仍存在。文章强调技术赋能需配合流程优化和跨部门协作，否则 GenAI 只是新瓶装旧酒。",
+    "key_points": [
+      "GenAI 不只是搜索工具，应重设知识流程，从创建到访问全链路优化",
+      "P&G 用 RAG+自研分析系统获得「锐利答案」而非文档链接，体现深度应用",
+      "组织孤岛、文化阻力比技术本身更大，需流程与协作升级配合"
+    ],
+    "tags": [
+      "知识管理",
+      "生产力提升",
+      "组织流程",
+      "GenAI 落地"
+    ],
+    "speakers": [
+      "Kirti Singh（P&G 首席分析与洞察官）"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/industries/real-estate/our-insights/how-ai-is-reshaping-value-creation-in-residential-real-estate",
+    "title": "How AI is reshaping value creation in residential real estate",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-07-13",
+    "fetched_at": "2026-07-14T05:31:20+08:00",
+    "score": 6,
+    "summary_zh": "麦肯锡分析AI如何重塑住宅房地产价值创造。强调房产领导者应通过AI改善客户体验、重新设计工作流程、建立生态各方信任来赢得竞争。涉及流程优化和客户交互变革，但未深入讨论对组织结构、人员配置、招聘策略等核心管理层面的影响，相关性适中。",
+    "key_points": [
+      "AI驱动客户体验升级，房产企业需重塑面向客户的流程",
+      "工作流程重新设计是关键，但文中缺乏具体落地细节",
+      "生态信任构建成为AI时代房产商竞争新维度",
+      "聚焦行业垂直场景，对通用组织变革启示有限"
+    ],
+    "tags": [
+      "流程优化",
+      "客户体验",
+      "房地产行业",
+      "生产力"
+    ],
+    "speakers": [
+      "McKinsey",
+      "Alex Wolkomir"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/how-a-180-year-old-news-institution-prepares-for-its-next-reinvention",
+    "title": "How a 180-year-old news institution prepares for its next reinvention",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-07-10",
+    "fetched_at": "2026-07-14T05:31:25+08:00",
+    "score": 6,
+    "summary_zh": "美联社CEO Daisy Veerasingham探讨AI时代新闻机构的转型。她强调在AI冲击下，维护编辑独立性和信任度比保留传统业务结构更重要。文章涉及可信内容的经济学价值，以及老牌媒体如何通过AI重新定位自身角色，但重点在新闻业特殊性而非普遍的组织管理启示。",
+    "key_points": [
+      "AI时代媒体机构需重新定义价值——从内容生产转向信任与编辑独立性的维护",
+      "可信内容的经济学逻辑：在AI生成内容泛滥时代，专业编辑把关成为竞争力",
+      "180年老机构的转型不是固守结构，而是适应AI驱动的新业态",
+      "编辑独立性作为组织核心资产，比具体商业模式更难被替代"
+    ],
+    "tags": [
+      "组织转型",
+      "AI应用",
+      "人才重新定位",
+      "信任与治理"
+    ],
+    "speakers": [
+      "Daisy Veerasingham（美联社CEO）",
+      "McKinsey"
+    ]
+  }
+]

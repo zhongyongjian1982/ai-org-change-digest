@@ -1,0 +1,127 @@
+[
+  {
+    "url": "https://www.mckinsey.com/capabilities/quantumblack/our-insights/is-that-ai-agent-worth-it-agentic-economics-and-the-modern-operating-model",
+    "title": "Is that AI agent worth it? Agentic economics and the modern operating model",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-07-13",
+    "fetched_at": "2026-07-15T05:33:35+08:00",
+    "score": 9,
+    "summary_zh": "麦肯锡分析了 Agent 经济学与现代运营模式的关系。企业在追求 AI 成本优化之际，需警惕陷入成本陷阱而失焦核心价值。文章强调应从投资回报率（ROI）和运营效率重构的角度评估 Agent 系统的真实价值，而非单纯追求降低 AI 支出。这涉及组织如何重新定义工作流程、重新配置人员能力，以及如何通过 Agent 实现生产力的质的飞跃。",
+    "key_points": [
+      "Agent 成本不应是唯一评估维度，需关注完整 ROI 和运营模式改进",
+      "企业易陷入'成本优化陷阱'，忽视 Agent 对组织流程和人员配置的深层改造",
+      "Agent 经济学要求企业重新审视工作分配、决策链路、和人机协作模式",
+      "真正价值在于运营模式现代化，而非单纯技术成本降低"
+    ],
+    "tags": [
+      "Agent 落地",
+      "运营成本与价值",
+      "组织效率重构",
+      "现代运营模式"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/capabilities/people-and-organizational-performance/our-insights/building-expertise-in-the-age-of-ai-who-trains-the-next-generation",
+    "title": "Building expertise in the age of AI: Who trains the next generation?",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-07-14",
+    "fetched_at": "2026-07-15T05:33:22+08:00",
+    "score": 8,
+    "summary_zh": "McKinsey 指出，AI 重塑初级工作后，传统的人才培养路径已不适用。组织需重新思考专业知识的建立方式，将知识管理、角色设计、学习和教练体系整合为一个统一框架。这涉及从招聘、入职到晋升的全链条改革，特别是如何让新员工在 AI 协作环境中快速获得判断力和专业能力，而非单纯的执行任务。",
+    "key_points": [
+      "AI 改变初级职位性质，传统的「做中学」路径失效，需系统性人才开发新模式",
+      "将知识管理、角色设计、学习与教练整合，形成闭环的专业能力建设体系",
+      "组织需重新定义入职、晋升标准，适应人机协作的工作环境"
+    ],
+    "tags": [
+      "人才培养",
+      "组织重构",
+      "知识管理",
+      "生产力转型"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  },
+  {
+    "url": "https://sloanreview.mit.edu/article/the-global-scaling-gap-why-strategic-clarity-is-crucial-in-the-age-of-ai/",
+    "title": "﻿The Global Scaling Gap: Why Strategic Clarity Is Crucial in the Age of AI",
+    "source": "MIT Sloan Management Review",
+    "category": "business",
+    "published": "2026-07-14",
+    "fetched_at": "2026-07-15T05:33:12+08:00",
+    "score": 7,
+    "summary_zh": "MIT Sloan研究指出，生成式AI虽降低了全球创业的准入门槛，但在企业扩展阶段，传统地理优势依然存在。研究发现，AI强化了英文环境中的竞争优势，非英文地区创业者在融资宣传上面临劣势。此外，AI生成的营销文案混淆了工具真实价值信号，导致管理者倾向选择本地熟悉方案，反而强化了地域聚集效应，加剧了全球扩展不平衡。",
+    "key_points": [
+      "AI降低准入门槛但未解决扩展障碍，初创公司扩展仍集中在硅谷等传统枢纽",
+      "GenAI增强英文演讲效果，非英文地区创业者在全球融资中处于劣势",
+      "AI驱动营销文案削弱工具价值信号，导致决策者更依赖本地熟悉方案",
+      "过度全球化或过度本地化都是陷阱，战略清晰度成为AI时代扩展的关键"
+    ],
+    "tags": [
+      "企业扩展",
+      "创业生态",
+      "AI偏差",
+      "地理聚集效应"
+    ],
+    "speakers": [
+      "MIT Sloan Management Review",
+      "Michael Glenwood Gibbs"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/rewiring-customer-experience-for-the-agentic-era",
+    "title": "Rewiring customer experience for the agentic era",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-07-14",
+    "fetched_at": "2026-07-15T05:33:31+08:00",
+    "score": 7,
+    "summary_zh": "麦肯锡指出，随着AI智能体开始处理实时决策，领先企业正从预设的客户旅程重新设计为动态、跨渠道的智能编排模式。这要求组织调整前端工作流、数据架构和决策权分配——从集中式流程向分布式AI决策转变，涉及产品、运营、数据团队的角色重塑，以及如何在AI自主性与人工监管间建立新的制衡机制。",
+    "key_points": [
+      "从预定义客户旅程向动态实时决策转变，要求组织流程深层重构",
+      "跨渠道编排需要打破部门壁垒，重新分配数据和决策权限",
+      "前线工作人员角色转变为AI助手的监管者而非直接执行者",
+      "企业需建立新的治理框架来平衡AI自主性与风险控制"
+    ],
+    "tags": [
+      "客户体验重构",
+      "Agent落地",
+      "组织流程变革",
+      "决策权重配"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  },
+  {
+    "url": "https://openai.com/index/managing-ai-investments-in-agentic-era",
+    "title": "How to manage AI investments in the agentic era",
+    "source": "OpenAI",
+    "category": "ai-lab",
+    "published": "2026-07-14",
+    "fetched_at": "2026-07-15T05:33:43+08:00",
+    "score": 7,
+    "summary_zh": "OpenAI 阐述企业如何在智能体（Agent）时代管理 AI 投资。核心建议包括：以「每美元的有用工作量」为衡量标准，而非单纯的模型性能指标；通过提升效率和扩展高价值工作流来优化 ROI。这反映了从模型竞争向实际商业价值落地的转变，强调企业需建立科学的 AI 投资评估框架，确保 Agent 部署能真正改变工作方式和降低成本。",
+    "key_points": [
+      "从模型性能转向商业价值衡量：用「每美元有用工作」替代纯技术指标",
+      "Agent 时代的投资重点：优化现有高价值工作流，而非追求新功能堆积",
+      "效率驱动的财务模型：强调 AI 投资必须量化对运营成本、周期、质量的影响",
+      "实战落地框架：帮助企业识别可自动化的关键流程并评估实际 ROI"
+    ],
+    "tags": [
+      "AI 投资管理",
+      "Agent 落地",
+      "生产力量化",
+      "工作流优化"
+    ],
+    "speakers": [
+      "OpenAI"
+    ]
+  }
+]

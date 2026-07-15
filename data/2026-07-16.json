@@ -1,0 +1,105 @@
+[
+  {
+    "url": "https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/the-ceos-role-in-transformation",
+    "title": "The CEO’s role in transformation",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-07-15",
+    "fetched_at": "2026-07-16T05:32:47+08:00",
+    "score": 7,
+    "summary_zh": "McKinsey 分析指出组织变革的失败源于内部激励错位、部门割裂和风险规避。CEO 的核心职责是诊断并解决这些集体行动问题的根本原因，通过统一愿景和打破组织壁垒来推动企业级变革。文章强调 CEO 在嵌入持久改革、改变组织文化方面的独特位置和影响力。",
+    "key_points": [
+      "变革失败的核心因素：激励不对齐、信息孤岛、集体风险规避",
+      "CEO 需从根本上解决集体行动问题，而非仅顶层推动",
+      "统一组织围绕大胆愿景是克服内部分化的关键路径",
+      "嵌入式持久改革需要文化重塑和组织结构重新调整"
+    ],
+    "tags": [
+      "变革管理",
+      "领导力",
+      "组织重构",
+      "激励机制"
+    ],
+    "speakers": [
+      "Meagan Hill",
+      "Mathew Lee",
+      "Kurt Strovink",
+      "McKinsey"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/industries/engineering-construction-and-building-materials/our-insights/how-ai-is-reshaping-the-future-of-the-aec-industry",
+    "title": "How AI is reshaping the future of the AEC industry",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-07-15",
+    "fetched_at": "2026-07-16T05:32:53+08:00",
+    "score": 7,
+    "summary_zh": "麦肯锡指出 AI 正在重塑建筑、工程和施工（AEC）行业。领先企业通过三个关键举措实现竞争优势：一是重新设计工作流程以适配 AI 能力；二是提升数据治理和使用效率；三是在工地层面实现自动化。这不仅涉及技术升级，更涉及企业如何重组团队协作、重新定义工人角色、调整组织流程以适应 AI 驱动的新工作方式。速度与适应能力成为关键竞争因素。",
+    "key_points": [
+      "AI 要求 AEC 企业重新设计核心工作流程，而非简单地应用技术",
+      "数据能力建设成为 AI 落地的前提，需组织层面的系统投入",
+      "工地自动化驱动人员角色转变，从执行向监督、协调转换",
+      "快速行动的企业将获得市场竞争优势，落后企业面临风险"
+    ],
+    "tags": [
+      "流程重构",
+      "数据治理",
+      "人员角色转变",
+      "行业转型"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/industries/public-sector/our-insights/rewiring-public-sector",
+    "title": "How can the public sector meet the AI moment?",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-07-15",
+    "fetched_at": "2026-07-16T05:32:59+08:00",
+    "score": 7,
+    "summary_zh": "麦肯锡分析公共部门如何把握 AI 机遇。AI 可帮助政府机构提升居民服务质量、优化财政效能，但需要超越试点阶段，重新设计服务交付流程。文章强调从实验到规模化落地的组织转变，涉及流程重构、能力建设等深层改革，而非单纯技术应用。",
+    "key_points": [
+      "AI 可优化公共部门服务效果与财政效率，需突破试点限制",
+      "关键在于重新组织服务交付方式，涉及流程和制度变革",
+      "从实验到规模化需要系统的组织能力建设与转变"
+    ],
+    "tags": [
+      "组织重构",
+      "流程改革",
+      "AI 规模化落地",
+      "公共部门数字化"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/industries/healthcare/our-insights/patrick-finn-on-how-tension-can-lead-to-healthcares-reinvention",
+    "title": "Patrick Finn on how tension can lead to healthcare’s reinvention",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-07-15",
+    "fetched_at": "2026-07-16T05:33:06+08:00",
+    "score": 7,
+    "summary_zh": "麦肯锡资深合伙人Patrick Finn指出，医疗行业目前处于独特转折点，AI有望重塑医疗领导力格局。文章探讨了行业内的张力如何催生创新机会，特别是AI如何改变医疗组织的决策模式、领导者需具备的能力，以及未来医疗管理团队的组成。核心观点是：掌握AI融合能力的领导者将主导医疗行业的下一个时代，这要求现有管理层面临组织能力和人才策略的根本调整。",
+    "key_points": [
+      "医疗行业处于AI驱动的转折点，需要新型领导者掌握AI与行业的融合能力",
+      "现有行业张力为AI创新提供机遇，将重塑医疗组织的运营模式与决策流程",
+      "领导力重新定义：既需医疗专业背景，也需AI和数字化素养",
+      "AI将改变医疗管理团队构成，跨学科人才成为竞争力核心"
+    ],
+    "tags": [
+      "领导力重塑",
+      "医疗行业转型",
+      "AI组织影响",
+      "人才策略"
+    ],
+    "speakers": [
+      "Patrick Finn",
+      "McKinsey"
+    ]
+  }
+]

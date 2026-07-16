@@ -1,0 +1,158 @@
+[
+  {
+    "url": "https://www.mckinsey.com/about-us/media/ais-next-big-mission-is-rewiring-your-workplace",
+    "title": "AI’s next big mission is rewiring your workplace",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-07-15",
+    "fetched_at": "2026-07-17T05:39:53+08:00",
+    "score": 9,
+    "summary_zh": "麦肯锡认为AI的核心挑战不在技术本身，而在于组织架构和人才战略的深层重构。企业面临两条路：一是赋能优秀员工以AI等高级工具，获得竞争优势；二是将AI视为降本裁员的机会，最终只能走向衰退。文章强调「人-技术匹配」而非简单的「自动化替代」才是AI时代企业成功的关键。",
+    "key_points": [
+      "AI核心挑战是组织重构而非技术应用，涉及流程、结构、文化全面改造",
+      "赋能优秀员工与AI协同工作的企业获得竞争优势；视AI为裁员工具的企业面临衰退",
+      "企业需重新定义岗位职能、技能要求、团队组成，而非被动跟风",
+      "人才策略决定AI投资回报率，优化人-技术匹配胜过盲目自动化"
+    ],
+    "tags": [
+      "组织重构",
+      "人才战略",
+      "人-AI协作",
+      "领导力抉择"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  },
+  {
+    "url": "https://sloanreview.mit.edu/article/what-ceos-need-to-know-about-sovereign-ai/",
+    "title": "What CEOs Need to Know About Sovereign AI",
+    "source": "MIT Sloan Management Review",
+    "category": "business",
+    "published": "2026-07-16",
+    "fetched_at": "2026-07-17T05:39:38+08:00",
+    "score": 8,
+    "summary_zh": "MIT Sloan 调研显示，多国政府正建立「主权 AI」框架来规范数据存储、基础设施、算法决策，这让跨国企业面临两难：采用全球统一平台易被地缘政治风险困扰，而本地化成本巨大且政策快速演变。关键洞察是 60% CEO 认为风险上升促使采纳主权方案，但仅 15% 将其列为董事会优先级，少于 13% 视为增长引擎。文章主张将主权视为竞争优势而非成本，而非防守性合规。",
+    "key_points": [
+      "主权 AI 政策快速演变且各国差异大，全球统一策略难以为继，完全独立本地系统也不可行",
+      "CEO 与董事会对主权 AI 的战略重视程度严重不足（仅 15% 列为董事优先级），多数被动应对合规",
+      "企业需从「成本约束」转向「竞争优势」视角，将主权选择权视为全球扩展的战略杠杆",
+      "EU AI Act 等监管已进入实施阶段（2026 年 8 月强化要求），中东、亚洲等地政策框架仍在演变"
+    ],
+    "tags": [
+      "组织战略",
+      "地缘政治风险",
+      "合规与运营",
+      "全球扩张"
+    ],
+    "speakers": [
+      "MIT Sloan Management Review",
+      "Carolyn Geason-Beissel"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/the-future-of-b2b-sales-how-growth-champions-rewire-their-playbooks-with-ai",
+    "title": "The future of B2B sales: How growth champions rewire their playbooks with AI",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-07-16",
+    "fetched_at": "2026-07-17T05:39:49+08:00",
+    "score": 8,
+    "summary_zh": "麦肯锡研究表明，虽然AI试点普遍，但商业价值兑现仍存在缺口。增长领先企业正通过Agent AI重新设计销售流程与商业价值创造路径，使销售人员能够深化客户关系、驱动实际业务变革。核心在于将AI从实验阶段升级至战略赋能工具，改变销售模式和组织协作方式。",
+    "key_points": [
+      "Agent AI赋能销售团队深化客户关系，提升商业转化效能",
+      "增长领先者重构销售流程，从AI试点到商业价值兑现的跨越",
+      "销售组织需调整协作模式，AI成为核心生产力工具而非辅助"
+    ],
+    "tags": [
+      "生产力提升",
+      "销售赋能",
+      "Agent应用",
+      "商业变革"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  },
+  {
+    "url": "https://sequoiacap.com/article/partnering-with-sable-closing-the-diffusion-gap/",
+    "title": "Partnering with Sable: Closing the Diffusion Gap",
+    "source": "Sequoia Capital",
+    "category": "vc",
+    "published": "2026-07-17",
+    "fetched_at": "2026-07-17T05:40:06+08:00",
+    "score": 8,
+    "summary_zh": "Sequoia Capital 投资的 Sable 公司正在打造首个 AI 员工「Aidan」，可独立进行客户电话、视觉交互和实时浏览器操作。文章指出当前瓶颈不是 AI 能力本身，而是企业理解 AI 实际应用价值的能力差距。Sable 通过 AI 员工解决规模化的客户教育和产品演示问题，已吸引 150+ 企业排队使用。核心观点：多模态 AI 员工代表组织工作方式的根本转变，将专家级的人工交互能力从少数客户扩展到全量用户。",
+    "key_points": [
+      "AI 能力增长与企业应用能力的「扩散差距」是当下主要瓶颈，而非技术本身",
+      "AI 员工首次实现独立客户互动、实时视觉和浏览器操作的集成，改变客户教育模式",
+      "产品专家级的个性化服务不再受时间与规模限制，可服务全量客户而非仅限头部账户",
+      "Notion、Decagon 等前沿公司已部署，市场需求远超预期（150+ 企业等待列表）"
+    ],
+    "tags": [
+      "AI 员工 / Agent",
+      "工作方式革新",
+      "规模化交互",
+      "客户运营效率"
+    ],
+    "speakers": [
+      "Sequoia Capital",
+      "Nim（Sable CEO & 联合创始人）",
+      "Shaun Maguire（Sequoia 合伙人）"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/industries/consumer-packaged-goods/how-we-help-clients/how-b-tech-transformed-into-a-technology-powered-retailer",
+    "title": "How B.TECH transformed into a technology-powered retailer",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-07-16",
+    "fetched_at": "2026-07-17T05:39:42+08:00",
+    "score": 7,
+    "summary_zh": "埃及电子零售商B.TECH与麦肯锡合作，通过AI驱动的动态定价、订单履行和金融科技创新重塑客户商务体验。案例展示了AI如何使传统零售商快速数字化转型，解锁新的收入流。体现了组织流程重构、运营效率提升和商业模式创新的交集，但缺乏深入的人员/组织结构变革细节。",
+    "key_points": [
+      "AI驱动的动态定价系统优化商品价格策略，提升销售转化与毛利率",
+      "智能履行系统重塑订单处理与配送流程，降低成本与交期",
+      "金融科技赋能扩展消费者支付选项，驱动GMV与客户粘性",
+      "数字化转型释放新收入模块，加速公司增长"
+    ],
+    "tags": [
+      "运营重构",
+      "数字化转型",
+      "AI落地",
+      "零售创新"
+    ],
+    "speakers": [
+      "McKinsey",
+      "B.TECH"
+    ]
+  },
+  {
+    "url": "https://sequoiacap.com/article/partnering-with-bunkerhill-health-ai-agents-that-improve-patient-outcomes/",
+    "title": "Partnering with Bunkerhill Health: AI Agents that Improve Patient Outcomes",
+    "source": "Sequoia Capital",
+    "category": "vc",
+    "published": "2026-07-17",
+    "fetched_at": "2026-07-17T05:39:59+08:00",
+    "score": 6,
+    "summary_zh": "Sequoia Capital 投资医疗科技公司 Bunkerhill Health，该公司开发 AI Agent 平台 Carebricks，旨在帮助医疗系统跨临床、运营、行政等职能快速部署 AI 应用。文章强调 AI 在医疗中的瓶颈不在技术本身，而在于从科研到临床的转化与系统集成。通过自动化繁琐工作流，让临床医生回归患者护理核心工作。UTMB Health 案例展示单个 Agent 扩展至 20+ 的部署成果，但文章重点是产品价值而非组织变革影响。",
+    "key_points": [
+      "医疗 AI 采用瓶颈：不是技术缺陷，而是部署、集成、监管流程复杂",
+      "Agent 平台集中化：从多个点解决方案整合为单一 Carebricks 平台，降低采购和维护成本",
+      "工作重构：自动化手工流程，让临床团队专注患者护理而非数据处理",
+      "快速迭代案例：UTMB Health 从 1 个 Agent 扩至 20+ 跨科室应用"
+    ],
+    "tags": [
+      "医疗 AI Agent",
+      "工作流自动化",
+      "组织效率",
+      "平台架构"
+    ],
+    "speakers": [
+      "Nish Khandwala",
+      "David Eng",
+      "Alfred Lin",
+      "Sequoia Capital"
+    ]
+  }
+]

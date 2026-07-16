@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+<title>2026-07-17 — AI TRANSFORMATION</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #0a0a0a; color: #999; font-family: system-ui, -apple-system, sans-serif; line-height: 1.6; min-height: 100vh; }
+a { color: inherit; text-decoration: none; }
+a:hover { color: #ccc; }
+.back-link { position: fixed; top: 18px; left: 20px; font-family: 'VT323', monospace; font-size: 1.15rem; color: #666; z-index: 100; letter-spacing: 0.02em; transition: color 0.15s; }
+.back-link:hover { color: #aaa; }
+header { padding: 60px 20px 32px; text-align: center; }
+header h1 { font-family: 'VT323', monospace; font-size: clamp(2rem, 6vw, 4rem); color: #999; letter-spacing: 0.12em; line-height: 1.1; margin-bottom: 12px; word-spacing: 0.1em; }
+header p { font-size: 0.88rem; color: #666; letter-spacing: 0.08em; }
+header p a { color: #888; transition: color 0.15s; }
+header p a:hover { color: #ccc; }
+.controls { background: #0a0a0a; border-bottom: 1px solid #1c1c1c; position: sticky; top: 0; z-index: 50; }
+.tabs { display: flex; overflow-x: auto; scrollbar-width: none; padding: 0 16px; max-width: 760px; margin: 0 auto; }
+.tabs::-webkit-scrollbar { display: none; }
+.tab { flex-shrink: 0; background: none; border: none; border-bottom: 2px solid transparent; padding: 14px 12px; font-size: 0.88rem; color: #777; cursor: pointer; font-family: system-ui, sans-serif; display: flex; align-items: center; gap: 5px; white-space: nowrap; transition: color 0.15s, border-color 0.15s; letter-spacing: 0.02em; }
+.tab.active { color: #ddd; border-bottom-color: #777; }
+.tab:hover { color: #bbb; }
+.badge { font-size: 0.74rem; color: #555; }
+.tab.active .badge { color: #999; }
+.filter-bar { display: flex; align-items: center; gap: 10px; padding: 10px 16px; border-top: 1px solid #161616; max-width: 760px; margin: 0 auto; font-size: 0.82rem; color: #666; flex-wrap: wrap; }
+.filter-bar > span { letter-spacing: 0.04em; }
+.filter-bar .sep { color: #2a2a2a; }
+.score-filter { display: flex; gap: 6px; flex-wrap: wrap; }
+.sf-btn { background: none; border: 1px solid #2a2a2a; border-radius: 3px; padding: 3px 11px; font-size: 0.8rem; color: #888; cursor: pointer; font-family: inherit; transition: color 0.15s, border-color 0.15s; letter-spacing: 0.04em; }
+.sf-btn.active, .sf-btn:hover { color: #ddd; border-color: #777; }
+.source-select { background: #0a0a0a; border: 1px solid #2a2a2a; border-radius: 3px; padding: 3px 9px; font-size: 0.8rem; color: #aaa; font-family: inherit; cursor: pointer; outline: none; }
+.source-select:hover { color: #ddd; border-color: #777; }
+.source-select option { background: #0a0a0a; color: #ccc; }
+.list { max-width: 760px; margin: 0 auto; padding: 8px 20px 80px; }
+.day { padding-top: 32px; }
+.day-head { font-size: 0.8rem; color: #555; letter-spacing: 0.12em; padding: 0 0 10px; border-bottom: 1px solid #1c1c1c; margin-bottom: 4px; text-transform: uppercase; }
+.day-head .count { color: #444; margin-left: 6px; }
+.entry { padding: 22px 0; border-bottom: 1px solid #161616; }
+.entry.hidden { display: none; }
+.entry-meta { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; font-size: 0.8rem; color: #666; margin-bottom: 8px; letter-spacing: 0.03em; }
+.entry-meta .sep { color: #2a2a2a; }
+.entry-score { color: #999; font-variant-numeric: tabular-nums; letter-spacing: 0.05em; font-weight: 500; }
+.entry-score.s-low { color: #666; }
+.entry-title { display: block; font-size: 1.1rem; color: #ccc; transition: color 0.15s; line-height: 1.5; margin-bottom: 10px; font-weight: 500; }
+.entry-title:hover { color: #fff; }
+.entry-summary { font-size: 0.95rem; color: #aaa; line-height: 1.75; margin-bottom: 10px; }
+.entry-bullets { list-style: none; padding: 0; margin: 8px 0 12px; }
+.entry-bullets li { font-size: 0.9rem; color: #888; line-height: 1.75; padding-left: 16px; position: relative; margin-bottom: 2px; }
+.entry-bullets li::before { content: '·'; position: absolute; left: 4px; color: #666; font-weight: bold; }
+.entry-chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+.entry-chip { font-size: 0.78rem; color: #777; border: 1px solid #2a2a2a; padding: 2px 9px; border-radius: 2px; letter-spacing: 0.03em; }
+.entry-chip.speaker { color: #aaa; border-color: #3a3a3a; }
+.empty-state { text-align: center; padding: 60px 20px; color: #555; font-size: 0.9rem; }
+@media (max-width: 480px) {
+  .list { padding: 8px 14px 60px; }
+  .entry-title { font-size: 1rem; }
+  .entry-summary { font-size: 0.92rem; }
+  .entry-bullets li { font-size: 0.88rem; }
+  .filter-bar { font-size: 0.74rem; gap: 8px; }
+}
+footer { text-align: center; padding: 30px 20px; color: #555; font-size: 0.78rem; letter-spacing: 0.06em; }
+footer a { color: #666; transition: color 0.15s; }
+footer a:hover { color: #999; }
+</style>
+</head>
+<body>
+<a class="back-link" href="https://www.tedzhong.com/">← tedzhong.com</a>
+<header>
+  <h1>2026-07-17</h1>
+  <p>6 条 · <a href="../index.html">← 返回最新</a> · <a href="./">归档</a></p>
+</header>
+<div class="controls">
+  <div class="tabs"><button class="tab active" data-cat="all">全部<span class="badge">6</span></button><button class="tab" data-cat="business">商业<span class="badge">4</span></button><button class="tab" data-cat="vc">投资<span class="badge">2</span></button></div>
+  <div class="filter-bar">
+    <span>评分</span>
+    <div class="score-filter">
+      <button class="sf-btn active" data-score="6">≥6</button>
+      <button class="sf-btn" data-score="7">≥7</button>
+      <button class="sf-btn" data-score="8">≥8</button>
+      <button class="sf-btn" data-score="9">≥9</button>
+    </div>
+    <span class="sep">·</span>
+    <span>来源</span>
+    <select class="source-select" id="f-source"><option value="*">全部</option><option value="MIT Sloan Management Review">MIT Sloan Management Review</option><option value="McKinsey Insights">McKinsey Insights</option><option value="Sequoia Capital">Sequoia Capital</option></select>
+  </div>
+</div>
+<div class="list">
+<section class="day"><div class="day-head">2026-07-17<span class="count">· 6 条</span></div>
+    <article class="entry" data-source="McKinsey Insights" data-category="business" data-score="9">
+      <div class="entry-meta">
+        <span class="entry-score">9/10</span>
+        <span class="sep">·</span>
+        <span>McKinsey Insights</span>
+        <span class="sep">·</span>
+        <span>商业</span>
+        <span class="sep">·</span>
+        <span>2026-07-15</span>
+      </div>
+      <a class="entry-title" href="https://www.mckinsey.com/about-us/media/ais-next-big-mission-is-rewiring-your-workplace" target="_blank" rel="noopener">AI’s next big mission is rewiring your workplace</a>
+      <p class="entry-summary">麦肯锡认为AI的核心挑战不在技术本身，而在于组织架构和人才战略的深层重构。企业面临两条路：一是赋能优秀员工以AI等高级工具，获得竞争优势；二是将AI视为降本裁员的机会，最终只能走向衰退。文章强调「人-技术匹配」而非简单的「自动化替代」才是AI时代企业成功的关键。</p>
+      <ul class="entry-bullets"><li>AI核心挑战是组织重构而非技术应用，涉及流程、结构、文化全面改造</li><li>赋能优秀员工与AI协同工作的企业获得竞争优势；视AI为裁员工具的企业面临衰退</li><li>企业需重新定义岗位职能、技能要求、团队组成，而非被动跟风</li><li>人才策略决定AI投资回报率，优化人-技术匹配胜过盲目自动化</li></ul>
+      <div class="entry-chips"><span class="entry-chip speaker">McKinsey</span><span class="entry-chip">组织重构</span><span class="entry-chip">人才战略</span><span class="entry-chip">人-AI协作</span><span class="entry-chip">领导力抉择</span></div>
+    </article>
+    
+    <article class="entry" data-source="MIT Sloan Management Review" data-category="business" data-score="8">
+      <div class="entry-meta">
+        <span class="entry-score">8/10</span>
+        <span class="sep">·</span>
+        <span>MIT Sloan Management Review</span>
+        <span class="sep">·</span>
+        <span>商业</span>
+        <span class="sep">·</span>
+        <span>2026-07-16</span>
+      </div>
+      <a class="entry-title" href="https://sloanreview.mit.edu/article/what-ceos-need-to-know-about-sovereign-ai/" target="_blank" rel="noopener">What CEOs Need to Know About Sovereign AI</a>
+      <p class="entry-summary">MIT Sloan 调研显示，多国政府正建立「主权 AI」框架来规范数据存储、基础设施、算法决策，这让跨国企业面临两难：采用全球统一平台易被地缘政治风险困扰，而本地化成本巨大且政策快速演变。关键洞察是 60% CEO 认为风险上升促使采纳主权方案，但仅 15% 将其列为董事会优先级，少于 13% 视为增长引擎。文章主张将主权视为竞争优势而非成本，而非防守性合规。</p>
+      <ul class="entry-bullets"><li>主权 AI 政策快速演变且各国差异大，全球统一策略难以为继，完全独立本地系统也不可行</li><li>CEO 与董事会对主权 AI 的战略重视程度严重不足（仅 15% 列为董事优先级），多数被动应对合规</li><li>企业需从「成本约束」转向「竞争优势」视角，将主权选择权视为全球扩展的战略杠杆</li><li>EU AI Act 等监管已进入实施阶段（2026 年 8 月强化要求），中东、亚洲等地政策框架仍在演变</li></ul>
+      <div class="entry-chips"><span class="entry-chip speaker">MIT Sloan Management Review</span><span class="entry-chip speaker">Carolyn Geason-Beissel</span><span class="entry-chip">组织战略</span><span class="entry-chip">地缘政治风险</span><span class="entry-chip">合规与运营</span><span class="entry-chip">全球扩张</span></div>
+    </article>
+    
+    <article class="entry" data-source="McKinsey Insights" data-category="business" data-score="8">
+      <div class="entry-meta">
+        <span class="entry-score">8/10</span>
+        <span class="sep">·</span>
+        <span>McKinsey Insights</span>
+        <span class="sep">·</span>
+        <span>商业</span>
+        <span class="sep">·</span>
+        <span>2026-07-16</span>
+      </div>
+      <a class="entry-title" href="https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/the-future-of-b2b-sales-how-growth-champions-rewire-their-playbooks-with-ai" target="_blank" rel="noopener">The future of B2B sales: How growth champions rewire their playbooks with AI</a>
+      <p class="entry-summary">麦肯锡研究表明，虽然AI试点普遍，但商业价值兑现仍存在缺口。增长领先企业正通过Agent AI重新设计销售流程与商业价值创造路径，使销售人员能够深化客户关系、驱动实际业务变革。核心在于将AI从实验阶段升级至战略赋能工具，改变销售模式和组织协作方式。</p>
+      <ul class="entry-bullets"><li>Agent AI赋能销售团队深化客户关系，提升商业转化效能</li><li>增长领先者重构销售流程，从AI试点到商业价值兑现的跨越</li><li>销售组织需调整协作模式，AI成为核心生产力工具而非辅助</li></ul>
+      <div class="entry-chips"><span class="entry-chip speaker">McKinsey</span><span class="entry-chip">生产力提升</span><span class="entry-chip">销售赋能</span><span class="entry-chip">Agent应用</span><span class="entry-chip">商业变革</span></div>
+    </article>
+    
+    <article class="entry" data-source="Sequoia Capital" data-category="vc" data-score="8">
+      <div class="entry-meta">
+        <span class="entry-score">8/10</span>
+        <span class="sep">·</span>
+        <span>Sequoia Capital</span>
+        <span class="sep">·</span>
+        <span>投资</span>
+        <span class="sep">·</span>
+        <span>2026-07-17</span>
+      </div>
+      <a class="entry-title" href="https://sequoiacap.com/article/partnering-with-sable-closing-the-diffusion-gap/" target="_blank" rel="noopener">Partnering with Sable: Closing the Diffusion Gap</a>
+      <p class="entry-summary">Sequoia Capital 投资的 Sable 公司正在打造首个 AI 员工「Aidan」，可独立进行客户电话、视觉交互和实时浏览器操作。文章指出当前瓶颈不是 AI 能力本身，而是企业理解 AI 实际应用价值的能力差距。Sable 通过 AI 员工解决规模化的客户教育和产品演示问题，已吸引 150+ 企业排队使用。核心观点：多模态 AI 员工代表组织工作方式的根本转变，将专家级的人工交互能力从少数客户扩展到全量用户。</p>
+      <ul class="entry-bullets"><li>AI 能力增长与企业应用能力的「扩散差距」是当下主要瓶颈，而非技术本身</li><li>AI 员工首次实现独立客户互动、实时视觉和浏览器操作的集成，改变客户教育模式</li><li>产品专家级的个性化服务不再受时间与规模限制，可服务全量客户而非仅限头部账户</li><li>Notion、Decagon 等前沿公司已部署，市场需求远超预期（150+ 企业等待列表）</li></ul>
+      <div class="entry-chips"><span class="entry-chip speaker">Sequoia Capital</span><span class="entry-chip speaker">Nim（Sable CEO &amp; 联合创始人）</span><span class="entry-chip speaker">Shaun Maguire（Sequoia 合伙人）</span><span class="entry-chip">AI 员工 / Agent</span><span class="entry-chip">工作方式革新</span><span class="entry-chip">规模化交互</span><span class="entry-chip">客户运营效率</span></div>
+    </article>
+    
+    <article class="entry" data-source="McKinsey Insights" data-category="business" data-score="7">
+      <div class="entry-meta">
+        <span class="entry-score">7/10</span>
+        <span class="sep">·</span>
+        <span>McKinsey Insights</span>
+        <span class="sep">·</span>
+        <span>商业</span>
+        <span class="sep">·</span>
+        <span>2026-07-16</span>
+      </div>
+      <a class="entry-title" href="https://www.mckinsey.com/industries/consumer-packaged-goods/how-we-help-clients/how-b-tech-transformed-into-a-technology-powered-retailer" target="_blank" rel="noopener">How B.TECH transformed into a technology-powered retailer</a>
+      <p class="entry-summary">埃及电子零售商B.TECH与麦肯锡合作，通过AI驱动的动态定价、订单履行和金融科技创新重塑客户商务体验。案例展示了AI如何使传统零售商快速数字化转型，解锁新的收入流。体现了组织流程重构、运营效率提升和商业模式创新的交集，但缺乏深入的人员/组织结构变革细节。</p>
+      <ul class="entry-bullets"><li>AI驱动的动态定价系统优化商品价格策略，提升销售转化与毛利率</li><li>智能履行系统重塑订单处理与配送流程，降低成本与交期</li><li>金融科技赋能扩展消费者支付选项，驱动GMV与客户粘性</li><li>数字化转型释放新收入模块，加速公司增长</li></ul>
+      <div class="entry-chips"><span class="entry-chip speaker">McKinsey</span><span class="entry-chip speaker">B.TECH</span><span class="entry-chip">运营重构</span><span class="entry-chip">数字化转型</span><span class="entry-chip">AI落地</span><span class="entry-chip">零售创新</span></div>
+    </article>
+    
+    <article class="entry" data-source="Sequoia Capital" data-category="vc" data-score="6">
+      <div class="entry-meta">
+        <span class="entry-score s-low">6/10</span>
+        <span class="sep">·</span>
+        <span>Sequoia Capital</span>
+        <span class="sep">·</span>
+        <span>投资</span>
+        <span class="sep">·</span>
+        <span>2026-07-17</span>
+      </div>
+      <a class="entry-title" href="https://sequoiacap.com/article/partnering-with-bunkerhill-health-ai-agents-that-improve-patient-outcomes/" target="_blank" rel="noopener">Partnering with Bunkerhill Health: AI Agents that Improve Patient Outcomes</a>
+      <p class="entry-summary">Sequoia Capital 投资医疗科技公司 Bunkerhill Health，该公司开发 AI Agent 平台 Carebricks，旨在帮助医疗系统跨临床、运营、行政等职能快速部署 AI 应用。文章强调 AI 在医疗中的瓶颈不在技术本身，而在于从科研到临床的转化与系统集成。通过自动化繁琐工作流，让临床医生回归患者护理核心工作。UTMB Health 案例展示单个 Agent 扩展至 20+ 的部署成果，但文章重点是产品价值而非组织变革影响。</p>
+      <ul class="entry-bullets"><li>医疗 AI 采用瓶颈：不是技术缺陷，而是部署、集成、监管流程复杂</li><li>Agent 平台集中化：从多个点解决方案整合为单一 Carebricks 平台，降低采购和维护成本</li><li>工作重构：自动化手工流程，让临床团队专注患者护理而非数据处理</li><li>快速迭代案例：UTMB Health 从 1 个 Agent 扩至 20+ 跨科室应用</li></ul>
+      <div class="entry-chips"><span class="entry-chip speaker">Nish Khandwala</span><span class="entry-chip speaker">David Eng</span><span class="entry-chip speaker">Alfred Lin</span><span class="entry-chip speaker">Sequoia Capital</span><span class="entry-chip">医疗 AI Agent</span><span class="entry-chip">工作流自动化</span><span class="entry-chip">组织效率</span><span class="entry-chip">平台架构</span></div>
+    </article>
+    </section>
+</div>
+<footer>
+  由 Claude Haiku 4.5 每日构建 · 2026-07-17 05:40 CST
+</footer>
+<script>
+function applyFilters() {
+  const activeTab = document.querySelector('.tab.active');
+  const cat = activeTab ? activeTab.dataset.cat : 'all';
+  const activeScore = document.querySelector('.sf-btn.active');
+  const minScore = activeScore ? parseInt(activeScore.dataset.score, 10) : 6;
+  const srcEl = document.getElementById('f-source');
+  const src = srcEl ? srcEl.value : '*';
+  document.querySelectorAll('.entry').forEach(e => {
+    const ec = e.dataset.category, es = e.dataset.source, esc = parseInt(e.dataset.score, 10);
+    const show = (cat === 'all' || ec === cat) && (src === '*' || es === src) && esc >= minScore;
+    e.classList.toggle('hidden', !show);
+  });
+  document.querySelectorAll('.day').forEach(d => {
+    const any = Array.from(d.querySelectorAll('.entry')).some(e => !e.classList.contains('hidden'));
+    d.style.display = any ? '' : 'none';
+  });
+}
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.tab').forEach(t => t.addEventListener('click', () => {
+    document.querySelectorAll('.tab').forEach(x => x.classList.remove('active'));
+    t.classList.add('active');
+    applyFilters();
+  }));
+  document.querySelectorAll('.sf-btn').forEach(b => b.addEventListener('click', () => {
+    document.querySelectorAll('.sf-btn').forEach(x => x.classList.remove('active'));
+    b.classList.add('active');
+    applyFilters();
+  }));
+  const srcEl = document.getElementById('f-source');
+  if (srcEl) srcEl.addEventListener('change', applyFilters);
+});
+</script>
+</body>
+</html>

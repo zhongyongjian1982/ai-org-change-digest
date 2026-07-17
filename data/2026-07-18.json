@@ -1,0 +1,27 @@
+[
+  {
+    "url": "https://openai.com/index/a-scorecard-for-the-ai-age",
+    "title": "A scorecard for the AI age",
+    "source": "OpenAI",
+    "category": "ai-lab",
+    "published": "2026-07-17",
+    "fetched_at": "2026-07-18T05:26:27+08:00",
+    "score": 7,
+    "summary_zh": "OpenAI CFO Sarah Friar提出了AI时代的实用计分卡框架，用于衡量AI投资的真实回报。该框架聚焦四个核心指标：有用工作量（useful work）、单项任务成本（cost per successful task）、可靠性（dependability）和计算资源回报率（return on compute）。这一框架帮助组织超越模型能力本身，直接关联到企业实际产出和成本控制，是衡量AI对业务影响的量化方法论。",
+    "key_points": [
+      "从模型性能转向实际产出：衡量AI带来的有用工作量而非单纯技术指标",
+      "成本-效益比核心：按单项成功任务成本评估ROI，提高资源配置决策",
+      "可靠性是前提：AI输出的稳定性和一致性决定企业生产就绪度",
+      "计算效率最大化：通过计算资源回报率指标优化基础设施投入"
+    ],
+    "tags": [
+      "AI投资评估",
+      "生产力衡量",
+      "成本管理",
+      "CFO决策框架"
+    ],
+    "speakers": [
+      "Sarah Friar / OpenAI"
+    ]
+  }
+]

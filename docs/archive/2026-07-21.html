@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+<title>2026-07-21 — AI TRANSFORMATION</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #0a0a0a; color: #999; font-family: system-ui, -apple-system, sans-serif; line-height: 1.6; min-height: 100vh; }
+a { color: inherit; text-decoration: none; }
+a:hover { color: #ccc; }
+.back-link { position: fixed; top: 18px; left: 20px; font-family: 'VT323', monospace; font-size: 1.15rem; color: #666; z-index: 100; letter-spacing: 0.02em; transition: color 0.15s; }
+.back-link:hover { color: #aaa; }
+header { padding: 60px 20px 32px; text-align: center; }
+header h1 { font-family: 'VT323', monospace; font-size: clamp(2rem, 6vw, 4rem); color: #999; letter-spacing: 0.12em; line-height: 1.1; margin-bottom: 12px; word-spacing: 0.1em; }
+header p { font-size: 0.88rem; color: #666; letter-spacing: 0.08em; }
+header p a { color: #888; transition: color 0.15s; }
+header p a:hover { color: #ccc; }
+.controls { background: #0a0a0a; border-bottom: 1px solid #1c1c1c; position: sticky; top: 0; z-index: 50; }
+.tabs { display: flex; overflow-x: auto; scrollbar-width: none; padding: 0 16px; max-width: 760px; margin: 0 auto; }
+.tabs::-webkit-scrollbar { display: none; }
+.tab { flex-shrink: 0; background: none; border: none; border-bottom: 2px solid transparent; padding: 14px 12px; font-size: 0.88rem; color: #777; cursor: pointer; font-family: system-ui, sans-serif; display: flex; align-items: center; gap: 5px; white-space: nowrap; transition: color 0.15s, border-color 0.15s; letter-spacing: 0.02em; }
+.tab.active { color: #ddd; border-bottom-color: #777; }
+.tab:hover { color: #bbb; }
+.badge { font-size: 0.74rem; color: #555; }
+.tab.active .badge { color: #999; }
+.filter-bar { display: flex; align-items: center; gap: 10px; padding: 10px 16px; border-top: 1px solid #161616; max-width: 760px; margin: 0 auto; font-size: 0.82rem; color: #666; flex-wrap: wrap; }
+.filter-bar > span { letter-spacing: 0.04em; }
+.filter-bar .sep { color: #2a2a2a; }
+.score-filter { display: flex; gap: 6px; flex-wrap: wrap; }
+.sf-btn { background: none; border: 1px solid #2a2a2a; border-radius: 3px; padding: 3px 11px; font-size: 0.8rem; color: #888; cursor: pointer; font-family: inherit; transition: color 0.15s, border-color 0.15s; letter-spacing: 0.04em; }
+.sf-btn.active, .sf-btn:hover { color: #ddd; border-color: #777; }
+.source-select { background: #0a0a0a; border: 1px solid #2a2a2a; border-radius: 3px; padding: 3px 9px; font-size: 0.8rem; color: #aaa; font-family: inherit; cursor: pointer; outline: none; }
+.source-select:hover { color: #ddd; border-color: #777; }
+.source-select option { background: #0a0a0a; color: #ccc; }
+.list { max-width: 760px; margin: 0 auto; padding: 8px 20px 80px; }
+.day { padding-top: 32px; }
+.day-head { font-size: 0.8rem; color: #555; letter-spacing: 0.12em; padding: 0 0 10px; border-bottom: 1px solid #1c1c1c; margin-bottom: 4px; text-transform: uppercase; }
+.day-head .count { color: #444; margin-left: 6px; }
+.entry { padding: 22px 0; border-bottom: 1px solid #161616; }
+.entry.hidden { display: none; }
+.entry-meta { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; font-size: 0.8rem; color: #666; margin-bottom: 8px; letter-spacing: 0.03em; }
+.entry-meta .sep { color: #2a2a2a; }
+.entry-score { color: #999; font-variant-numeric: tabular-nums; letter-spacing: 0.05em; font-weight: 500; }
+.entry-score.s-low { color: #666; }
+.entry-title { display: block; font-size: 1.1rem; color: #ccc; transition: color 0.15s; line-height: 1.5; margin-bottom: 10px; font-weight: 500; }
+.entry-title:hover { color: #fff; }
+.entry-summary { font-size: 0.95rem; color: #aaa; line-height: 1.75; margin-bottom: 10px; }
+.entry-bullets { list-style: none; padding: 0; margin: 8px 0 12px; }
+.entry-bullets li { font-size: 0.9rem; color: #888; line-height: 1.75; padding-left: 16px; position: relative; margin-bottom: 2px; }
+.entry-bullets li::before { content: '·'; position: absolute; left: 4px; color: #666; font-weight: bold; }
+.entry-chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+.entry-chip { font-size: 0.78rem; color: #777; border: 1px solid #2a2a2a; padding: 2px 9px; border-radius: 2px; letter-spacing: 0.03em; }
+.entry-chip.speaker { color: #aaa; border-color: #3a3a3a; }
+.empty-state { text-align: center; padding: 60px 20px; color: #555; font-size: 0.9rem; }
+@media (max-width: 480px) {
+  .list { padding: 8px 14px 60px; }
+  .entry-title { font-size: 1rem; }
+  .entry-summary { font-size: 0.92rem; }
+  .entry-bullets li { font-size: 0.88rem; }
+  .filter-bar { font-size: 0.74rem; gap: 8px; }
+}
+footer { text-align: center; padding: 30px 20px; color: #555; font-size: 0.78rem; letter-spacing: 0.06em; }
+footer a { color: #666; transition: color 0.15s; }
+footer a:hover { color: #999; }
+</style>
+</head>
+<body>
+<a class="back-link" href="https://www.tedzhong.com/">← tedzhong.com</a>
+<header>
+  <h1>2026-07-21</h1>
+  <p>6 条 · <a href="../index.html">← 返回最新</a> · <a href="./">归档</a></p>
+</header>
+<div class="controls">
+  <div class="tabs"><button class="tab active" data-cat="all">全部<span class="badge">6</span></button><button class="tab" data-cat="analyst">分析师<span class="badge">3</span></button><button class="tab" data-cat="business">商业<span class="badge">3</span></button></div>
+  <div class="filter-bar">
+    <span>评分</span>
+    <div class="score-filter">
+      <button class="sf-btn active" data-score="6">≥6</button>
+      <button class="sf-btn" data-score="7">≥7</button>
+      <button class="sf-btn" data-score="8">≥8</button>
+      <button class="sf-btn" data-score="9">≥9</button>
+    </div>
+    <span class="sep">·</span>
+    <span>来源</span>
+    <select class="source-select" id="f-source"><option value="*">全部</option><option value="Lenny&#x27;s Newsletter">Lenny&#x27;s Newsletter</option><option value="MIT Sloan Management Review">MIT Sloan Management Review</option><option value="McKinsey Insights">McKinsey Insights</option><option value="Stratechery (free posts)">Stratechery (free posts)</option></select>
+  </div>
+</div>
+<div class="list">
+<section class="day"><div class="day-head">2026-07-21<span class="count">· 6 条</span></div>
+    <article class="entry" data-source="Lenny&#x27;s Newsletter" data-category="analyst" data-score="7">
+      <div class="entry-meta">
+        <span class="entry-score">7/10</span>
+        <span class="sep">·</span>
+        <span>Lenny&#x27;s Newsletter</span>
+        <span class="sep">·</span>
+        <span>分析师</span>
+        <span class="sep">·</span>
+        <span>2026-07-20</span>
+      </div>
+      <a class="entry-title" href="https://www.lennysnewsletter.com/p/how-i-ai-how-the-founder-of-morning" target="_blank" rel="noopener">🎙️ How I AI: How the founder of Morning Brew built a Claude content machine that never runs out of ideas</a>
+      <p class="entry-summary">Morning Brew 创始人 Alex Lieberman 分享了用 Claude 构建的内容创作系统。核心是通过 AI Oracle 扫描 Slack、Notion、Gmail 识别创意源头，用多角色采访提取观点深度，建立个人风格 Markdown 档案指导 AI 生成，再通过「作家委员会」六人角色评审把关质量。关键洞察：AI 不是创意发明者而是「塑形工具」，内容质量取决于人提供的想法；工作流优化本身比 AI 工具更重要；员工个人品牌建设是低成本高杠杆的分发渠道（案例：Storyarb 获 40% 内部线索）。</p>
+      <ul class="entry-bullets"><li>AI 内容系统的核心是观点提取（采访+反思）而非自动生成，质量完全由人的想法质量决定</li><li>个人风格指南（voice guide）是 AI 输出与创作者风格对齐的关键，比通用模型更有效</li><li>改进工作流本身（mapping workflow）往往比引入 AI 工具更能发现效率问题</li><li>员工创作激励计划（Creator Cup）作为低成本获客与人才保留的双重杠杆</li><li>持续反馈循环：每次发布后对比原稿与成稿，萃取规律进入系统，形成自优化</li></ul>
+      <div class="entry-chips"><span class="entry-chip speaker">Alex Lieberman (Tenex / Morning Brew)</span><span class="entry-chip">内容运营 AI 化</span><span class="entry-chip">工作流重设计</span><span class="entry-chip">员工品牌赋能</span><span class="entry-chip">生产力工具</span></div>
+    </article>
+    
+    <article class="entry" data-source="Lenny&#x27;s Newsletter" data-category="analyst" data-score="7">
+      <div class="entry-meta">
+        <span class="entry-score">7/10</span>
+        <span class="sep">·</span>
+        <span>Lenny&#x27;s Newsletter</span>
+        <span class="sep">·</span>
+        <span>分析师</span>
+        <span class="sep">·</span>
+        <span>2026-07-20</span>
+      </div>
+      <a class="entry-title" href="https://www.lennysnewsletter.com/p/how-the-founder-of-morning-brew-built" target="_blank" rel="noopener">How the founder of Morning Brew built a Claude content machine that never runs out of ideas and never sounds like slop | Alex Lieberman</a>
+      <p class="entry-summary">Morning Brew 创始人 Alex Lieberman 分享如何用 Claude 构建内容生产系统，避免 AI 生成的通用套话。核心是将内容创作流程拆解为六步：Oracle（发现选题）→ Interview Panel（提取个人观点）→ Voice File（保留个人风格）→ Editorial Council（评分修改）→ 反馈循环。关键洞察：AI 的「烂」源自面试阶段而非写作阶段；将员工变成营销渠道（Tenex Creator Cup 案例）；分布式内容能力成为持久竞争优势。</p>
+      <ul class="entry-bullets"><li>AI 内容生成的关键不在写作，而在于上游提取真实想法与风格；需通过 Voice Markdown 文件固化个人表达</li><li>工作流程优化先于 AI 集成；完整映射现有流程，识别摩擦点（如空白页面），再有针对性地自动化</li><li>员工倡导（Employee Advocacy）被严重低估；通过竞争激励（$5K 奖池）将员工转化为内容创作者与分发渠道</li></ul>
+      <div class="entry-chips"><span class="entry-chip speaker">Alex Lieberman (Morning Brew/Tenex)</span><span class="entry-chip speaker">Shaan Puri</span><span class="entry-chip speaker">Morgan Housel</span><span class="entry-chip speaker">David Perell</span><span class="entry-chip">内容生产流程重构</span><span class="entry-chip">AI 工作流优化</span><span class="entry-chip">员工倡导策略</span><span class="entry-chip">AI 质量控制</span></div>
+    </article>
+    
+    <article class="entry" data-source="MIT Sloan Management Review" data-category="business" data-score="7">
+      <div class="entry-meta">
+        <span class="entry-score">7/10</span>
+        <span class="sep">·</span>
+        <span>MIT Sloan Management Review</span>
+        <span class="sep">·</span>
+        <span>商业</span>
+        <span class="sep">·</span>
+        <span>2026-07-20</span>
+      </div>
+      <a class="entry-title" href="https://sloanreview.mit.edu/article/how-leaders-unlock-innovation-on-the-front-lines/" target="_blank" rel="noopener">How Leaders Unlock Innovation on the Front Lines</a>
+      <p class="entry-summary">MIT Sloan 研究指出，前线员工拥有改进工作的最佳洞察，但运营压力和管理层的创新激励不足导致其创意被压抑。即使 AI 日益塑造创新流程，前线员工的情境知识、同理心和创意仍不可替代。中层管理者虽面临被裁风险，实际上对激发团队创新身份和自信心至关重要。研究显示，需要高层与中层管理对齐共同目标，为前线创意创造心理安全环境，避免管理层的忽视导致人才流失。</p>
+      <ul class="entry-bullets"><li>80% 前线员工想创新，但仅 50% 觉得有机会；70% 从不沟通想法，反映激励缺失</li><li>中层管理面临裁员压力，但其在塑造员工创新身份、提供心理安全中作用关键</li><li>AI 虽改变创新流程，但前线员工的情境知识和同理心不可被 AI 替代</li><li>管理忽视前线想法会形成恶性循环：创意受挫→员工放弃发声→组织失去改进机会</li></ul>
+      <div class="entry-chips"><span class="entry-chip">创新管理</span><span class="entry-chip">中层管理价值</span><span class="entry-chip">前线员工激励</span><span class="entry-chip">AI 与人的互补</span></div>
+    </article>
+    
+    <article class="entry" data-source="McKinsey Insights" data-category="business" data-score="7">
+      <div class="entry-meta">
+        <span class="entry-score">7/10</span>
+        <span class="sep">·</span>
+        <span>McKinsey Insights</span>
+        <span class="sep">·</span>
+        <span>商业</span>
+        <span class="sep">·</span>
+        <span>2026-07-20</span>
+      </div>
+      <a class="entry-title" href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-cost-of-intelligence-how-cios-can-manage-ai-demand-at-scale" target="_blank" rel="noopener">The cost of intelligence: How CIOs can manage AI demand at scale</a>
+      <p class="entry-summary">随着企业 AI 成本急速上升，CIO 面临新的管理挑战。McKinsey 指出，单纯压缩 AI 成本会伤害创新，CIO 需要转变思路——从成本驱动到成果驱动，即根据业务价值而非技术成本来分配 AI 资源。这要求 CIO 建立清晰的 AI 投资评估框架，平衡规模化部署与财务可持续性，同时培养组织对 AI ROI 的理性认知，避免盲目烧钱或过度节制两个极端。</p>
+      <ul class="entry-bullets"><li>CIO 需从成本导向转向成果导向，按业务价值而非技术成本配置 AI 资源</li><li>规模化 AI 部署会推高成本，需建立投资回报评估框架，确保财务可持续性</li><li>单纯压缩 AI 支出会削弱企业创新能力，风险与收益需平衡管理</li><li>组织需建立 AI 成本意识与投资纪律，避免盲目烧钱或过度紧缩</li></ul>
+      <div class="entry-chips"><span class="entry-chip speaker">McKinsey</span><span class="entry-chip">CIO 战略</span><span class="entry-chip">AI 成本管理</span><span class="entry-chip">资源配置</span><span class="entry-chip">企业运营</span></div>
+    </article>
+    
+    <article class="entry" data-source="McKinsey Insights" data-category="business" data-score="7">
+      <div class="entry-meta">
+        <span class="entry-score">7/10</span>
+        <span class="sep">·</span>
+        <span>McKinsey Insights</span>
+        <span class="sep">·</span>
+        <span>商业</span>
+        <span class="sep">·</span>
+        <span>2026-07-20</span>
+      </div>
+      <a class="entry-title" href="https://www.mckinsey.com/capabilities/mckinsey-technology/overview/from-instinct-to-real-time-insight-transforming-steel-sales-with-ai" target="_blank" rel="noopener">From instinct to real-time insight: Transforming steel sales with AI</a>
+      <p class="entry-summary">ArcelorMittal巴西公司与麦肯锡合作，通过生成式AI工具重新设计销售流程。该工具自动化了销售人员的日常繁琐任务，使其能集中精力于高价值的客户价值创造。这案例展现了AI如何优化一线员工的工作方式和角色定义，将重复性工作自动化，释放人力资本投向战略性工作，体现了AI对销售组织能力重塑的实际影响。</p>
+      <ul class="entry-bullets"><li>生成式AI工具通过自动化日常销售任务，减少摩擦，改变一线员工的工作流程</li><li>释放销售人员时间，使其专注于客户价值创造而非行政工作</li><li>展示AI如何重新定义销售岗位职责和核心价值</li><li>大型工业企业（制造业）采用AI优化业务流程的实践案例</li></ul>
+      <div class="entry-chips"><span class="entry-chip speaker">ArcelorMittal Brazil</span><span class="entry-chip speaker">McKinsey</span><span class="entry-chip">销售流程优化</span><span class="entry-chip">AI赋能一线</span><span class="entry-chip">工作方式转变</span><span class="entry-chip">人力资本重配置</span></div>
+    </article>
+    
+    <article class="entry" data-source="Stratechery (free posts)" data-category="analyst" data-score="7">
+      <div class="entry-meta">
+        <span class="entry-score">7/10</span>
+        <span class="sep">·</span>
+        <span>Stratechery (free posts)</span>
+        <span class="sep">·</span>
+        <span>分析师</span>
+        <span class="sep">·</span>
+        <span>2026-07-20</span>
+      </div>
+      <a class="entry-title" href="https://stratechery.com/2026/whos-afraid-of-chinese-models/" target="_blank" rel="noopener">Who’s Afraid of Chinese Models?</a>
+      <p class="entry-summary">本文通过经济学视角分析 AI 模型竞争格局。作者指出，与零边际成本的传统软件不同，AI 推理（inference）存在真实的 COGS（销货成本），与收入直接相关。开源模型虽然 R&amp;D 成本已摊销，但服务成本仍需支付。这意味着 AI 产业结构将回归传统商业原则：边际成本、规模经济、供应链控制成为核心竞争力，而非纯粹的模型能力。中国开源模型（如 Kimi K3）的出现迫使整个行业重新思考价值链与定价模式。</p>
+      <ul class="entry-bullets"><li>AI 推理成本与收入直接关联，COGS 成为决定性因素，打破软件零边际成本假设</li><li>开源模型降低了 R&amp;D 门槛但未消除服务成本，竞争焦点转向推理效率与成本控制</li><li>产业结构从「聚合理论」回归传统经济学原理：规模、边际成本、供应链优化重要性凸显</li><li>中国模型挑战美国云厂商定价权，迫使全球 AI 产业重新定义价值链与商业模式</li></ul>
+      <div class="entry-chips"><span class="entry-chip speaker">Jensen Huang（Nvidia CEO）</span><span class="entry-chip speaker">Ben Thompson（Stratechery 作者）</span><span class="entry-chip">产业结构变革</span><span class="entry-chip">成本经济学</span><span class="entry-chip">AI 商业模式</span><span class="entry-chip">竞争格局</span></div>
+    </article>
+    </section>
+</div>
+<footer>
+  由 Claude Haiku 4.5 每日构建 · 2026-07-21 05:46 CST
+</footer>
+<script>
+function applyFilters() {
+  const activeTab = document.querySelector('.tab.active');
+  const cat = activeTab ? activeTab.dataset.cat : 'all';
+  const activeScore = document.querySelector('.sf-btn.active');
+  const minScore = activeScore ? parseInt(activeScore.dataset.score, 10) : 6;
+  const srcEl = document.getElementById('f-source');
+  const src = srcEl ? srcEl.value : '*';
+  document.querySelectorAll('.entry').forEach(e => {
+    const ec = e.dataset.category, es = e.dataset.source, esc = parseInt(e.dataset.score, 10);
+    const show = (cat === 'all' || ec === cat) && (src === '*' || es === src) && esc >= minScore;
+    e.classList.toggle('hidden', !show);
+  });
+  document.querySelectorAll('.day').forEach(d => {
+    const any = Array.from(d.querySelectorAll('.entry')).some(e => !e.classList.contains('hidden'));
+    d.style.display = any ? '' : 'none';
+  });
+}
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.tab').forEach(t => t.addEventListener('click', () => {
+    document.querySelectorAll('.tab').forEach(x => x.classList.remove('active'));
+    t.classList.add('active');
+    applyFilters();
+  }));
+  document.querySelectorAll('.sf-btn').forEach(b => b.addEventListener('click', () => {
+    document.querySelectorAll('.sf-btn').forEach(x => x.classList.remove('active'));
+    b.classList.add('active');
+    applyFilters();
+  }));
+  const srcEl = document.getElementById('f-source');
+  if (srcEl) srcEl.addEventListener('change', applyFilters);
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+[
+  {
+    "url": "https://www.lennysnewsletter.com/p/how-i-ai-how-the-founder-of-morning",
+    "title": "🎙️ How I AI: How the founder of Morning Brew built a Claude content machine that never runs out of ideas",
+    "source": "Lenny's Newsletter",
+    "category": "analyst",
+    "published": "2026-07-20",
+    "fetched_at": "2026-07-21T05:46:45+08:00",
+    "score": 7,
+    "summary_zh": "Morning Brew 创始人 Alex Lieberman 分享了用 Claude 构建的内容创作系统。核心是通过 AI Oracle 扫描 Slack、Notion、Gmail 识别创意源头，用多角色采访提取观点深度，建立个人风格 Markdown 档案指导 AI 生成，再通过「作家委员会」六人角色评审把关质量。关键洞察：AI 不是创意发明者而是「塑形工具」，内容质量取决于人提供的想法；工作流优化本身比 AI 工具更重要；员工个人品牌建设是低成本高杠杆的分发渠道（案例：Storyarb 获 40% 内部线索）。",
+    "key_points": [
+      "AI 内容系统的核心是观点提取（采访+反思）而非自动生成，质量完全由人的想法质量决定",
+      "个人风格指南（voice guide）是 AI 输出与创作者风格对齐的关键，比通用模型更有效",
+      "改进工作流本身（mapping workflow）往往比引入 AI 工具更能发现效率问题",
+      "员工创作激励计划（Creator Cup）作为低成本获客与人才保留的双重杠杆",
+      "持续反馈循环：每次发布后对比原稿与成稿，萃取规律进入系统，形成自优化"
+    ],
+    "tags": [
+      "内容运营 AI 化",
+      "工作流重设计",
+      "员工品牌赋能",
+      "生产力工具"
+    ],
+    "speakers": [
+      "Alex Lieberman (Tenex / Morning Brew)"
+    ]
+  },
+  {
+    "url": "https://www.lennysnewsletter.com/p/how-the-founder-of-morning-brew-built",
+    "title": "How the founder of Morning Brew built a Claude content machine that never runs out of ideas and never sounds like slop | Alex Lieberman",
+    "source": "Lenny's Newsletter",
+    "category": "analyst",
+    "published": "2026-07-20",
+    "fetched_at": "2026-07-21T05:46:51+08:00",
+    "score": 7,
+    "summary_zh": "Morning Brew 创始人 Alex Lieberman 分享如何用 Claude 构建内容生产系统，避免 AI 生成的通用套话。核心是将内容创作流程拆解为六步：Oracle（发现选题）→ Interview Panel（提取个人观点）→ Voice File（保留个人风格）→ Editorial Council（评分修改）→ 反馈循环。关键洞察：AI 的「烂」源自面试阶段而非写作阶段；将员工变成营销渠道（Tenex Creator Cup 案例）；分布式内容能力成为持久竞争优势。",
+    "key_points": [
+      "AI 内容生成的关键不在写作，而在于上游提取真实想法与风格；需通过 Voice Markdown 文件固化个人表达",
+      "工作流程优化先于 AI 集成；完整映射现有流程，识别摩擦点（如空白页面），再有针对性地自动化",
+      "员工倡导（Employee Advocacy）被严重低估；通过竞争激励（$5K 奖池）将员工转化为内容创作者与分发渠道"
+    ],
+    "tags": [
+      "内容生产流程重构",
+      "AI 工作流优化",
+      "员工倡导策略",
+      "AI 质量控制"
+    ],
+    "speakers": [
+      "Alex Lieberman (Morning Brew/Tenex)",
+      "Shaan Puri",
+      "Morgan Housel",
+      "David Perell"
+    ]
+  },
+  {
+    "url": "https://sloanreview.mit.edu/article/how-leaders-unlock-innovation-on-the-front-lines/",
+    "title": "How Leaders Unlock Innovation on the Front Lines",
+    "source": "MIT Sloan Management Review",
+    "category": "business",
+    "published": "2026-07-20",
+    "fetched_at": "2026-07-21T05:46:08+08:00",
+    "score": 7,
+    "summary_zh": "MIT Sloan 研究指出，前线员工拥有改进工作的最佳洞察，但运营压力和管理层的创新激励不足导致其创意被压抑。即使 AI 日益塑造创新流程，前线员工的情境知识、同理心和创意仍不可替代。中层管理者虽面临被裁风险，实际上对激发团队创新身份和自信心至关重要。研究显示，需要高层与中层管理对齐共同目标，为前线创意创造心理安全环境，避免管理层的忽视导致人才流失。",
+    "key_points": [
+      "80% 前线员工想创新，但仅 50% 觉得有机会；70% 从不沟通想法，反映激励缺失",
+      "中层管理面临裁员压力，但其在塑造员工创新身份、提供心理安全中作用关键",
+      "AI 虽改变创新流程，但前线员工的情境知识和同理心不可被 AI 替代",
+      "管理忽视前线想法会形成恶性循环：创意受挫→员工放弃发声→组织失去改进机会"
+    ],
+    "tags": [
+      "创新管理",
+      "中层管理价值",
+      "前线员工激励",
+      "AI 与人的互补"
+    ],
+    "speakers": []
+  },
+  {
+    "url": "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-cost-of-intelligence-how-cios-can-manage-ai-demand-at-scale",
+    "title": "The cost of intelligence: How CIOs can manage AI demand at scale",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-07-20",
+    "fetched_at": "2026-07-21T05:46:13+08:00",
+    "score": 7,
+    "summary_zh": "随着企业 AI 成本急速上升，CIO 面临新的管理挑战。McKinsey 指出，单纯压缩 AI 成本会伤害创新，CIO 需要转变思路——从成本驱动到成果驱动，即根据业务价值而非技术成本来分配 AI 资源。这要求 CIO 建立清晰的 AI 投资评估框架，平衡规模化部署与财务可持续性，同时培养组织对 AI ROI 的理性认知，避免盲目烧钱或过度节制两个极端。",
+    "key_points": [
+      "CIO 需从成本导向转向成果导向，按业务价值而非技术成本配置 AI 资源",
+      "规模化 AI 部署会推高成本，需建立投资回报评估框架，确保财务可持续性",
+      "单纯压缩 AI 支出会削弱企业创新能力，风险与收益需平衡管理",
+      "组织需建立 AI 成本意识与投资纪律，避免盲目烧钱或过度紧缩"
+    ],
+    "tags": [
+      "CIO 战略",
+      "AI 成本管理",
+      "资源配置",
+      "企业运营"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/capabilities/mckinsey-technology/overview/from-instinct-to-real-time-insight-transforming-steel-sales-with-ai",
+    "title": "From instinct to real-time insight: Transforming steel sales with AI",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-07-20",
+    "fetched_at": "2026-07-21T05:46:17+08:00",
+    "score": 7,
+    "summary_zh": "ArcelorMittal巴西公司与麦肯锡合作，通过生成式AI工具重新设计销售流程。该工具自动化了销售人员的日常繁琐任务，使其能集中精力于高价值的客户价值创造。这案例展现了AI如何优化一线员工的工作方式和角色定义，将重复性工作自动化，释放人力资本投向战略性工作，体现了AI对销售组织能力重塑的实际影响。",
+    "key_points": [
+      "生成式AI工具通过自动化日常销售任务，减少摩擦，改变一线员工的工作流程",
+      "释放销售人员时间，使其专注于客户价值创造而非行政工作",
+      "展示AI如何重新定义销售岗位职责和核心价值",
+      "大型工业企业（制造业）采用AI优化业务流程的实践案例"
+    ],
+    "tags": [
+      "销售流程优化",
+      "AI赋能一线",
+      "工作方式转变",
+      "人力资本重配置"
+    ],
+    "speakers": [
+      "ArcelorMittal Brazil",
+      "McKinsey"
+    ]
+  },
+  {
+    "url": "https://stratechery.com/2026/whos-afraid-of-chinese-models/",
+    "title": "Who’s Afraid of Chinese Models?",
+    "source": "Stratechery (free posts)",
+    "category": "analyst",
+    "published": "2026-07-20",
+    "fetched_at": "2026-07-21T05:46:38+08:00",
+    "score": 7,
+    "summary_zh": "本文通过经济学视角分析 AI 模型竞争格局。作者指出，与零边际成本的传统软件不同，AI 推理（inference）存在真实的 COGS（销货成本），与收入直接相关。开源模型虽然 R&D 成本已摊销，但服务成本仍需支付。这意味着 AI 产业结构将回归传统商业原则：边际成本、规模经济、供应链控制成为核心竞争力，而非纯粹的模型能力。中国开源模型（如 Kimi K3）的出现迫使整个行业重新思考价值链与定价模式。",
+    "key_points": [
+      "AI 推理成本与收入直接关联，COGS 成为决定性因素，打破软件零边际成本假设",
+      "开源模型降低了 R&D 门槛但未消除服务成本，竞争焦点转向推理效率与成本控制",
+      "产业结构从「聚合理论」回归传统经济学原理：规模、边际成本、供应链优化重要性凸显",
+      "中国模型挑战美国云厂商定价权，迫使全球 AI 产业重新定义价值链与商业模式"
+    ],
+    "tags": [
+      "产业结构变革",
+      "成本经济学",
+      "AI 商业模式",
+      "竞争格局"
+    ],
+    "speakers": [
+      "Jensen Huang（Nvidia CEO）",
+      "Ben Thompson（Stratechery 作者）"
+    ]
+  }
+]

@@ -1,0 +1,102 @@
+[
+  {
+    "url": "https://www.mckinsey.com/industries/technology-media-and-telecommunications/how-we-help-clients/becoming-an-ai-native-telco-indosat-ooredoo-hutchison-reimagines-the-telecom-of-the-future",
+    "title": "Becoming an AI-native telco: Indosat Ooredoo Hutchison reimagines the telecom of the future",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-07-22",
+    "fetched_at": "2026-07-23T05:39:58+08:00",
+    "score": 8,
+    "summary_zh": "印尼第二大电信运营商Indosat Ooredoo Hutchison通过复杂合并契机，成功转型为AI原生企业。该案例展示了AI如何重塑决策流程、员工工作方式和企业价值创造模式。McKinsey分析了该公司如何在组织层面系统性应用AI，通过平台化思维将技术融入运营各环节，实现可量化的商业价值，为电信行业未来发展提供样本。",
+    "key_points": [
+      "将合并契机转化为AI驱动的组织重构，改变决策机制与工作流程",
+      "构建AI原生运营平台，实现跨职能的系统性AI应用与价值释放",
+      "通过实际案例证明AI在电信运营中的可量化商业价值"
+    ],
+    "tags": [
+      "组织重构",
+      "AI原生企业",
+      "决策创新",
+      "电信行业转型"
+    ],
+    "speakers": [
+      "McKinsey",
+      "Indosat Ooredoo Hutchison"
+    ]
+  },
+  {
+    "url": "https://sloanreview.mit.edu/article/a-new-way-to-address-troubled-team-dynamics/",
+    "title": "﻿A New Way to ﻿Address Troubled Team Dynamics",
+    "source": "MIT Sloan Management Review",
+    "category": "business",
+    "published": "2026-07-22",
+    "fetched_at": "2026-07-23T05:39:51+08:00",
+    "score": 7,
+    "summary_zh": "MIT Sloan 研究通过 Big Five 人格测试工具诊断团队动力问题。作者基于 600+ 临时团队的实证数据发现，团队协作障碍往往源于成员的性格特质差异而非领导能力不足。以 Medita Holdings 为例，团队的决策瘫痪源于集体的高度求知欲，而非战略问题。研究表明，现代虚拟工作环境削弱了成员间的人际联系，通过系统化的人格评估与促进讨论，可加速新团队凝聚力，改善协作效率。",
+    "key_points": [
+      "团队协作失效根源常在性格特质差异，而非领导力或战略缺陷",
+      "Big Five 人格测试可作为诊断工具，通过对话化解隐性团队冲突",
+      "虚拟会议和临时组建团队模式削弱个人关系建立，需更主动的人格洞察",
+      "已验证方法适用于 600+ 临时团队和 100+ 高管团队，跨行业和地域"
+    ],
+    "tags": [
+      "团队动力",
+      "人格差异",
+      "协作效率",
+      "领导力发展"
+    ],
+    "speakers": [
+      "Ian Roberts (Bühler CTO)",
+      "Medita Holdings (HR 负责人)"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/capabilities/risk-and-resilience/our-insights/evolving-model-risk-management-in-the-age-of-ai",
+    "title": "Evolving model risk management in the age of AI",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-07-22",
+    "fetched_at": "2026-07-23T05:40:03+08:00",
+    "score": 7,
+    "summary_zh": "麦肯锡最新调研显示，银行业正在升级模型风险管理框架以适应AI时代。通过强化风险韧性、建立更有信心的AI采纳机制，银行将AI转变为可靠的价值创造源。调研涉及组织如何调整治理、审批流程和人才能力，以安全规模化部署生成式AI和算法决策系统，反映大型机构对AI驱动变革的战略性应对。",
+    "key_points": [
+      "银行需强化模型风险治理框架，确保AI系统可审计、可解释、可控",
+      "组织需构建跨职能协作机制（技术、法务、风控），适应AI决策流程",
+      "AI采纳信心与风险管理水平挂钩，规模化需要制度创新和能力建设",
+      "金融机构通过AI模型管理转向竞争优势而非合规负担"
+    ],
+    "tags": [
+      "风险管理",
+      "AI治理",
+      "组织能力",
+      "金融科技"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/capabilities/operations/our-insights/powering-supply-chain-with-agentic-ai",
+    "title": "Powering supply chain with agentic AI",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-07-22",
+    "fetched_at": "2026-07-23T05:40:07+08:00",
+    "score": 7,
+    "summary_zh": "麦肯锡指出，Agent AI 有潜力从根本上重塑供应链运营模式。但企业要充分发挥其价值，不能停留在孤立的试点项目，而需跨越人员、流程、技术边界，进行系统性的协调与整合。这意味着供应链组织需要重新审视职能设置、流程设计和技术架构，以适应 AI 驱动的工作方式转变。",
+    "key_points": [
+      "Agent AI 不仅是技术升级，需要重构供应链组织架构和运营逻辑",
+      "孤立应用无法释放价值，必须打通人、流程、系统的协作边界",
+      "企业需系统性规划而非零散试点，才能实现根本性的运营转变"
+    ],
+    "tags": [
+      "Agent应用落地",
+      "供应链重构",
+      "组织流程再造",
+      "跨职能协作"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  }
+]

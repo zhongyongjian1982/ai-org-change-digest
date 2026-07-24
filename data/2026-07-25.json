@@ -1,0 +1,26 @@
+[
+  {
+    "url": "https://www.mckinsey.com/capabilities/operations/our-insights/how-ai-agents-can-help-fp-and-a-better-steer-the-business",
+    "title": "How AI agents can help FP&A better steer the business",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-07-24",
+    "fetched_at": "2026-07-25T05:40:59+08:00",
+    "score": 7,
+    "summary_zh": "McKinsey 分析了 AI Agent 在财务计划与分析（FP&A）中的作用。AI 使企业能够大规模实现持续财务规划，更快识别风险、评估权衡、及时干预性能缺口。这涉及财务决策流程的自动化和智能化，改变了传统的月度/季度规划周期，使管理层能以更高频次、更敏捷的方式指导业务运营，实质上重塑了财务部门的工作方式和决策权力分布。",
+    "key_points": [
+      "AI Agent 实现连续财务规划，突破传统周期性的月度/季度规划束缚",
+      "风险识别和权衡评估速度大幅提升，使中层管理者获得更强的决策支撑",
+      "及时干预机制减少性能缺口扩大，改变业务方向盘的反应灵敏度"
+    ],
+    "tags": [
+      "财务管理转型",
+      "Agent 落地",
+      "组织决策流程",
+      "管理敏捷性"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  }
+]

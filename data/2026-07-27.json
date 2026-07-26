@@ -1,0 +1,30 @@
+[
+  {
+    "url": "https://www.lennysnewsletter.com/p/anthropics-first-technical-pm-on",
+    "title": "Anthropic’s first technical PM on token maxing, the jagged edge, and living in the future | Dianne Penn",
+    "source": "Lenny's Newsletter",
+    "category": "analyst",
+    "published": "2026-07-26",
+    "fetched_at": "2026-07-27T05:40:09+08:00",
+    "score": 8,
+    "summary_zh": "Anthropic 首位技术产品经理 Dianne Penn 分享了 AI 模型开发如何重塑工程团队的工作方式。她指出「Token Maxing」让少数工程师完成 400 人的工作量，强调了 eval 驱动开发循环、AI 推理能力与人类判断的协作边界。讨论了 Claude Code、MCP、computer use 等工具如何改变编码工作流，以及 AI 快速迭代带来的组织节奏挑战与个人适应问题。",
+    "key_points": [
+      "Token Maxing：AI 让小团队完成原需 400 人的工程工作，彻底改变劳动力需求",
+      "Eval 驱动开发：通过系统化评估循环加速模型能力迭代，优化产品开发流程",
+      "人机协作边界：AI 在编码、推理领域能力突出，但战略决策、创意仍需人类判断",
+      "组织节奏变化：AI 快速发展要求团队高度敏捷，个人与团队需适应持续变革"
+    ],
+    "tags": [
+      "劳动力结构变革",
+      "工程效率提升",
+      "AI 工具链落地",
+      "产品开发流程"
+    ],
+    "speakers": [
+      "Dianne Penn（Anthropic 产品负责人）",
+      "Dario Amodei（Anthropic 联创）",
+      "Mike Krieger（Anthropic CPO、Instagram 联创）",
+      "Fiona Fung（Claude Code 团队负责人）"
+    ]
+  }
+]

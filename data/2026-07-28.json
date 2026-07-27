@@ -1,0 +1,78 @@
+[
+  {
+    "url": "https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/rewired-takes-how-ai-is-unlocking-creativity-and-heralding-the-rise-of-the-agent-manager",
+    "title": "Rewired takes: How AI is unlocking creativity and heralding the rise of the agent manager",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-07-27",
+    "fetched_at": "2026-07-28T05:43:29+08:00",
+    "score": 8,
+    "summary_zh": "麦肯锡认为 AI 正在重新定义管理角色和工作方式。公司需要重新评估组织结构、团队构成和管理者的职能定义。新时代下，管理者角色从传统的指挥控制转向「Agent 管理者」——更多充当协调者、赋能者和创意催化剂，与 AI 工具协同工作。这要求企业从选拔、培养、评估管理人员的全套体系进行改革，重新思考工作流程设计和人员配置。",
+    "key_points": [
+      "AI 促使企业重新审视组织结构与团队构成模式",
+      "管理者角色演变：从指挥型向 Agent 协调型转变",
+      "创意工作被重新定义，需要与 AI 工具深度融合",
+      "人才招聘、培养、评估体系需整体升级适应新角色"
+    ],
+    "tags": [
+      "组织重构",
+      "管理者角色转变",
+      "Agent 落地",
+      "人才战略"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  },
+  {
+    "url": "https://openai.com/index/how-ai-is-expanding-what-people-do-at-work",
+    "title": "How AI is expanding what people do at work",
+    "source": "OpenAI",
+    "category": "ai-lab",
+    "published": "2026-07-27",
+    "fetched_at": "2026-07-28T05:43:37+08:00",
+    "score": 7,
+    "summary_zh": "OpenAI 最新研究显示，ChatGPT 正在扩展工作者的任务边界。用户跨越传统角色承担新任务，推动职位定义的重新塑造。研究表明 AI 不仅替代工作，更关键的是赋能员工承担原本超出职责范围的工作，这种任务边界扩展将对团队构成、技能需求和组织分工产生深远影响。",
+    "key_points": [
+      "ChatGPT 用户跨角色承担任务，打破传统职位边界和专业壁垒",
+      "AI 赋能效应：员工能力扩展而非简单岗位替代，改变工作范围定义",
+      "任务边界重新划分意味着组织需要重新思考招聘、培训、晋升标准"
+    ],
+    "tags": [
+      "工作方式重构",
+      "人才能力扩展",
+      "职位边界变化",
+      "组织影响"
+    ],
+    "speakers": [
+      "OpenAI"
+    ]
+  },
+  {
+    "url": "https://www.lennysnewsletter.com/p/how-i-ai-claude-opus-5-review-browser",
+    "title": "🎙️ How I AI: Claude Opus 5 Review + Browser use in Codex + How Cursor and a Raspberry Pi makes AI fun",
+    "source": "Lenny's Newsletter",
+    "category": "analyst",
+    "published": "2026-07-27",
+    "fetched_at": "2026-07-28T05:43:45+08:00",
+    "score": 6,
+    "summary_zh": "分享了AI浏览器自动化在实际工作中的应用案例。关键发现包括：AI测试比人工测试更彻底，能发现长期隐藏的bug；给模型充分思考空间比列详细清单效果更好；通过角色扮演进行用户研究能发现真实摩擦点；合理匹配计算资源的模型可降低成本。展示了AI在QA、LinkedIn管理、远程操作等场景的实际价值，但主要关注工具效能，对组织流程和人员角色变化的思考较浅。",
+    "key_points": [
+      "AI QA测试发现了人工测试遗漏数月的bug，通过穷尽边界情况和非预期路径识别问题",
+      "给AI更多自主权（如'测试流程'而非'做25件事'）反而提升效果，减少人工假设的盲点",
+      "角色模拟研究（PM/工程师/Team Lead视角）揭示了合成用户研究难以发现的产品结构问题",
+      "计算资源与任务难度匹配很关键：LinkedIn分类用中等模型足够，避免过度投入",
+      "人机分工：AI处理繁琐筛选，人类处理身份验证等关键节点"
+    ],
+    "tags": [
+      "AI工具效能",
+      "工作流自动化",
+      "人机协作",
+      "生产力优化"
+    ],
+    "speakers": [
+      "Claire",
+      "EJ"
+    ]
+  }
+]

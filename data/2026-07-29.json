@@ -1,0 +1,78 @@
+[
+  {
+    "url": "https://www.mckinsey.com/industries/life-sciences/our-insights/bayers-sai-jasti-on-driving-productivity-in-r-and-d-with-data-science-and-ai",
+    "title": "Bayer’s Sai Jasti on driving productivity in R&D with data science and AI",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-07-28",
+    "fetched_at": "2026-07-29T05:43:24+08:00",
+    "score": 8,
+    "summary_zh": "拜耳高管Sai Jasti分享了如何通过数据科学和AI驱动研发生产力提升。拜耳正在系统性地改造研发工作流程，将AI嵌入到药物发现、临床试验等环节，以实现雄心勃勃的生产力目标。这反映了大型制药企业如何重新设计组织能力、调整人员结构，从传统研发模式向AI驱动的智能研发转变，涉及流程重构、技能升级和组织文化变革。",
+    "key_points": [
+      "拜耳系统性改造R&D工作流，将AI从边缘应用升至核心决策环节",
+      "数据科学和AI团队成为组织结构中的战略部门，直接影响研发效率和产出质量",
+      "AI应用于药物发现、临床试验等环节，改变了研究人员的工作方式和能力要求",
+      "企业需要重新定义人才策略，培养既懂业务又懂AI的复合型研发人员"
+    ],
+    "tags": [
+      "生产力提升",
+      "AI工作流重构",
+      "组织能力建设",
+      "研发创新"
+    ],
+    "speakers": [
+      "Sai Jasti (拜耳数据科学与AI高管)",
+      "Bayer"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/why-ai-will-elevate-instead-of-replace-commercial-teams",
+    "title": "Why AI will elevate instead of replace commercial teams",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-07-28",
+    "fetched_at": "2026-07-29T05:43:28+08:00",
+    "score": 8,
+    "summary_zh": "科思创首席商务官 Monique Buch 将 AI 视为业务战略而非技术升级，强调 AI 对商业团队的赋能而非替代。文章通过 McKinsey 的视角论述 AI 如何改变销售、商务决策和客户交互方式，指向组织需要重新定义商业角色职能、调整团队结构和人员技能配置。这反映了企业高管对 AI 时代人才转变的关键认知——强化战略思维而非单纯执行力。",
+    "key_points": [
+      "AI 是商业战略而非技术工具，改变企业对商务团队价值的定义",
+      "AI 赋能商业团队提升决策质量和客户洞察，而非简单替代人力",
+      "企业需重新定位商务人员角色，从执行型向战略型转变",
+      "高管视角——CEO/CMO 应将 AI 融入商业模式而非孤立实施技术"
+    ],
+    "tags": [
+      "商业赋能",
+      "人才角色重塑",
+      "组织战略",
+      "领导力转变"
+    ],
+    "speakers": [
+      "Monique Buch（Covestro 首席商务官）",
+      "McKinsey"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/capabilities/business-building/our-insights/the-ceos-critical-role-in-building-new-businesses",
+    "title": "The CEO’s critical role in building new businesses",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-07-28",
+    "fetched_at": "2026-07-29T05:43:31+08:00",
+    "score": 7,
+    "summary_zh": "麦肯锡指出，CEO在企业创新中需采用双轨制战略，即在维持核心业务的同时孵化新业务。CEO的关键职责包括掌控资本配置、塑造创新文化、整合组织能力。这涉及组织结构重组、资源流向调整、人才配置和创新激励机制，是AI时代企业应对变革的重要管理方式。",
+    "key_points": [
+      "CEO需建立双轨制战略，平衡核心业务与新业务孵化",
+      "资本配置、文化塑造、能力整合是CEO在新业务中的核心抓手",
+      "新业务需明确的组织治理结构和CEO直接监督"
+    ],
+    "tags": [
+      "CEO领导力",
+      "组织重构",
+      "创新战略",
+      "资源配置"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  }
+]

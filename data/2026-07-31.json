@@ -1,0 +1,78 @@
+[
+  {
+    "url": "https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/ai-transformations-views-from-amd-dell-liquid-ai-and-mercedes-benz",
+    "title": "AI transformations: Views from AMD, Dell, Liquid AI, and Mercedes-Benz",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-07-30",
+    "fetched_at": "2026-07-31T05:45:49+08:00",
+    "score": 9,
+    "summary_zh": "AMD、Dell、Liquid AI 和梅赛德斯-奔驰的高管分享 AI 转型实践。核心观点：企业 AI 转型的成功取决于人员和流程重塑，而非仅技术升级。讨论涵盖如何重构业务流程以适应 AI、组织文化调整、人才培养与再定位。强调从高管层面明确 AI 战略方向、跨部门协作、员工心态转变的重要性。这是大型企业实战案例，对 CXO 级决策有直接参考价值。",
+    "key_points": [
+      "AI 转型成功的关键是人和流程，而非技术本身；需从组织文化、岗位设计入手",
+      "企业需提前重构工作流程，为 AI 融入做准备；跨部门对齐至关重要",
+      "高管需确立清晰的 AI 战略方向，驱动全企业范围的能力建设与人才转型",
+      "员工心态与技能再培养是瓶颈；需投入培训与心理建设以降低阻力"
+    ],
+    "tags": [
+      "组织重构",
+      "AI 转型战略",
+      "人才培养与再定位",
+      "企业文化"
+    ],
+    "speakers": [
+      "AMD",
+      "Dell",
+      "Liquid AI",
+      "Mercedes-Benz",
+      "McKinsey"
+    ]
+  },
+  {
+    "url": "https://sloanreview.mit.edu/article/how-a-healthy-work-culture-helps-trauma-survivors/",
+    "title": "How ﻿a Healthy ﻿Work Culture﻿ Help﻿s﻿ ﻿Trauma Survivors",
+    "source": "MIT Sloan Management Review",
+    "category": "business",
+    "published": "2026-07-30",
+    "fetched_at": "2026-07-31T05:45:44+08:00",
+    "score": 7,
+    "summary_zh": "MIT Sloan 研究表明，60% 成年人经历过童年逆境（ACEs），这些早期创伤在职场表现为低自尊、风险厌恶、高离职倾向与人际冲突。但神经可塑性研究证实成人大脑可通过有意义的工作经验逆转创伤影响。组织可通过建立可预测的流程、支持性关系、自主性与掌控感机会来创造康复型工作文化，帮助创伤幸存者恢复认知功能与情绪调节能力。",
+    "key_points": [
+      "60% 成年员工有童年逆境背景，导致职场低绩效、高离职、人际冲突",
+      "工作场景可通过神经可塑性机制逆转早期创伤的神经生物学影响",
+      "组织需设计可预测、支持性、高自主性的工作环境来促进员工恢复",
+      "健康工作文化需融合情感意义、社群关系、压力缓解三要素"
+    ],
+    "tags": [
+      "组织文化",
+      "员工心理健康",
+      "人才保留",
+      "神经科学应用"
+    ],
+    "speakers": []
+  },
+  {
+    "url": "https://www.mckinsey.com/industries/electric-power-and-natural-gas/our-insights/how-utilities-can-rewire-customer-operations-with-agentic-ai",
+    "title": "How utilities can rewire customer operations with agentic AI",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-07-30",
+    "fetched_at": "2026-07-31T05:45:52+08:00",
+    "score": 7,
+    "summary_zh": "北美公用事业企业面临客户满意度下降困境，正转向 Agent AI 重塑客户体验并降低成本。McKinsey 分析指出，Agent AI 能够自主处理复杂客户交互、流程优化和决策支持，使企业重新设计客户运营模式。这涉及员工角色转变（从事务处理到问题解决）、组织流程再造，以及对 AI 驱动决策的管理变革。",
+    "key_points": [
+      "Agent AI 自主处理客户交互，改变一线员工从事务执行向策略咨询的职能转变",
+      "重塑客户运营流程，降低成本同时提升满意度，触发组织结构调整",
+      "对公用事业等传统行业的运营管理和人员能力要求产生深层影响"
+    ],
+    "tags": [
+      "Agent 落地",
+      "客户运营重构",
+      "人员角色转变",
+      "成本优化"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  }
+]

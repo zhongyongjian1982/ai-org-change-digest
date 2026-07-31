@@ -1,0 +1,51 @@
+[
+  {
+    "url": "https://openai.com/index/unive",
+    "title": "Univé builds an AI-ready workforce",
+    "source": "OpenAI",
+    "category": "ai-lab",
+    "published": "2026-07-31",
+    "fetched_at": "2026-08-01T05:42:37+08:00",
+    "score": 7,
+    "summary_zh": "Univé 通过 ChatGPT Enterprise 实现了 AI 就绪型员工队伍建设，关键在于三层驱动：领导层承诺、负责任的治理框架、以及员工主导的创新。该案例展示了大规模工作转型的实践路径——不仅是工具部署，更强调文化与流程的整体适配，涉及组织决策、风险管理、员工赋能等维度。",
+    "key_points": [
+      "领导力驱动：高层对 AI 战略的明确承诺是员工接纳的基础",
+      "治理先行：负责任的 AI 治理框架确保合规与可控性，降低风险",
+      "员工创新：自下而上的员工主导创新激发实际应用场景与价值",
+      "规模转型：从试点到大规模推广，涉及流程、文化、能力的系统性改革"
+    ],
+    "tags": [
+      "AI 文化建设",
+      "员工赋能",
+      "组织变革",
+      "AI 治理"
+    ],
+    "speakers": []
+  },
+  {
+    "url": "https://openai.com/index/avatarin",
+    "title": "How avatarin built a 24/7 retail agent with GPT-Realtime",
+    "source": "OpenAI",
+    "category": "ai-lab",
+    "published": "2026-07-30",
+    "fetched_at": "2026-08-01T05:42:43+08:00",
+    "score": 6,
+    "summary_zh": "avatarin 利用 OpenAI 的 GPT-Realtime 为日本 Yamada Denki 零售店提供 24/7 多语言客服 Agent。两周内吸引 3 万人次使用，92% 的用户反馈满意。案例展示了实时 AI Agent 在零售场景中快速落地的效果，但文章篇幅较短，缺乏对组织变革、人员调整或管理流程影响的深度讨论。",
+    "key_points": [
+      "GPT-Realtime Agent 实现零售场景 24/7 多语言客服，部署迅速（两周）",
+      "用户采纳快速：30 天内 3 万人次使用，92% 满意度显示市场接受度高",
+      "实时交互能力解决传统客服人力和时间限制，可能影响零售企业人员编制"
+    ],
+    "tags": [
+      "Agent 落地",
+      "客服自动化",
+      "零售运营",
+      "生产力提升"
+    ],
+    "speakers": [
+      "avatarin",
+      "OpenAI",
+      "Yamada Denki"
+    ]
+  }
+]

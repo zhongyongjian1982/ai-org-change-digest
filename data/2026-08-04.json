@@ -1,0 +1,54 @@
+[
+  {
+    "url": "https://sloanreview.mit.edu/article/the-marketing-capability-paradox-seven-forces-eroding-your-marketing-teams-effectiveness/",
+    "title": "The Marketing Capability Paradox: Seven Forces Eroding Your Marketing Team’s Effectiveness",
+    "source": "MIT Sloan Management Review",
+    "category": "business",
+    "published": "2026-08-03",
+    "fetched_at": "2026-08-04T05:44:22+08:00",
+    "score": 7,
+    "summary_zh": "MIT Sloan 基于 35 届 CMO Survey 数据揭示一个关键矛盾：营销领导者认为营销能力构建对业务成功至关重要，但在 AI 重写内容创意、客户定向、绩效衡量规则的当下，企业却在系统性地削弱投入。培训预算从 2019 年的 5.8% 跌至 3.8%，招聘增速下降超 50%，最大痛点不是技能缺陷而是资源匮乏（人员、时间、预算）。这种战略意图与资源配置的不匹配被称为「营销能力悖论」，将对企业竞争力造成长期伤害。",
+    "key_points": [
+      "AI 驱动营销需求加速演变，企业需快速整合 GEO 等新能力，但投入严重不足",
+      "培训预算下降 34%，招聘增速腰斩，企业口头重视却实际削减人员投资",
+      "71% 营销主管认为敏捷性关键，但最弱项是「构建敏捷基础」，反应快但能力储备不足",
+      "资源配置与战略意图背离，长期将削弱竞争力和适应能力"
+    ],
+    "tags": [
+      "人才策略",
+      "组织能力",
+      "资源配置",
+      "AI 转型挑战"
+    ],
+    "speakers": [
+      "Christine（CMO Survey 创始人）"
+    ]
+  },
+  {
+    "url": "https://www.lennysnewsletter.com/p/how-i-ai-chatgpt-codex-voice-browser",
+    "title": "🎙️ How I AI: ChatGPT Codex Voice + browser + Sites: an expert’s AI workflow | Nick Baumann (OpenAI)",
+    "source": "Lenny's Newsletter",
+    "category": "analyst",
+    "published": "2026-08-03",
+    "fetched_at": "2026-08-04T05:44:42+08:00",
+    "score": 6,
+    "summary_zh": "OpenAI 员工 Nick Baumann 展示 ChatGPT Codex Voice 在个人工作中的应用，涵盖任务并行处理、邮件监控、旅行预订、网站构建和视频编辑。核心亮点包括：线程分叉让 AI 自主管理复杂任务无需手动组织；ChatGPT Sites 成为可用的内部工具平台；语音交互（\"yapper's API\"）因提供更多上下文而提升输出质量；低延迟正成为 AI 产品竞争力。内容偏重个人效率优化，涉及组织影响有限。",
+    "key_points": [
+      "多线程并行任务：Codex 可同时处理多个分支任务（订票、报销、日程），无需用户预组织",
+      "语音交互优势：自由表达比精确提示更能提供上下文，改善 AI 输出质量",
+      "内部工具平台化：ChatGPT Sites 集 SQL/存储/权限控制，快速部署小型应用与资源",
+      "生产自动化案例：视频编辑从录制 50+ 素材到成品输出全自动化，原需内容团队一天的工作量",
+      "延迟成关键指标：即时响应性能比推理精度提升更能驱动用户采用 AI 进活工作流"
+    ],
+    "tags": [
+      "生产力工具",
+      "AI Agent 应用",
+      "工作流自动化",
+      "内部平台建设"
+    ],
+    "speakers": [
+      "Nick Baumann (OpenAI)",
+      "Claire (主持人)"
+    ]
+  }
+]

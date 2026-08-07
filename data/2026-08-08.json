@@ -1,0 +1,51 @@
+[
+  {
+    "url": "https://www.mckinsey.com/capabilities/people-and-organizational-performance/our-insights/how-to-close-the-agentic-adoption-gap",
+    "title": "How to close the agentic adoption gap",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-08-07",
+    "fetched_at": "2026-08-08T05:18:37+08:00",
+    "score": 8,
+    "summary_zh": "麦肯锡指出，AI 转型的本质是工作方式的根本再造，需要的是变革领导力而非单纯的变更管理。文章强调 Agent 采纳的关键在于组织层面的文化与流程重构，而非仅限于技术部署。这触及企业如何重新定义角色、赋权员工、建立新的决策机制等深层组织问题，对 CEO 和 CHRO 具有直接指导意义。",
+    "key_points": [
+      "AI 转型不是技术升级，而是工作方式与组织流程的系统性重构",
+      "从变更管理升级到变革领导力，需要高层推动文化与心态转变",
+      "Agent 采纳的瓶颈在于组织准备度，而非技术成熟度"
+    ],
+    "tags": [
+      "组织重构",
+      "变革领导力",
+      "Agent 落地",
+      "工作方式变革"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/capabilities/people-and-organizational-performance/our-insights/ai-fluency-the-next-foundation-of-us-economic-competitiveness",
+    "title": "AI fluency: The next foundation of US economic competitiveness",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-08-07",
+    "fetched_at": "2026-08-08T05:18:41+08:00",
+    "score": 7,
+    "summary_zh": "McKinsey 指出，AI 发展速度超过组织适应能力，美国经济竞争力关键在于全社会劳动力获得 AI 素养与技能。文章强调不仅是技术投入，更需要员工养成新习惯、掌握新能力以突破生产力瓶颈。这涉及人才策略、组织学习文化与宏观经济竞争力的深层联系。",
+    "key_points": [
+      "AI 变革速度超出组织现有适应能力，成为竞争瓶颈",
+      "AI 素养（fluency）已成为全经济周期的基础能力要求",
+      "关键挑战：从技术部署转向全员习惯与心智模型改变",
+      "国家层面需统筹人才培养战略以维持经济领先地位"
+    ],
+    "tags": [
+      "人才策略",
+      "生产力突破",
+      "组织学习文化",
+      "经济竞争力"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  }
+]

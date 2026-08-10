@@ -1,0 +1,103 @@
+[
+  {
+    "url": "https://openai.com/index/building-an-ai-native-finance-function",
+    "title": "What building an AI-native finance function taught me",
+    "source": "OpenAI",
+    "category": "ai-lab",
+    "published": "2026-08-11",
+    "fetched_at": "2026-08-11T05:22:53+08:00",
+    "score": 8,
+    "summary_zh": "OpenAI CFO Sarah Friar分享了打造AI原生财务部门的五大经验：通过自动化预测、强化控制、量化AI投资回报率等，重新定义财务职能的工作方式。这反映了高管如何在组织内部系统性地融合生成式AI，从传统流程到智能化决策的深层转变，为其他企业财务部门的AI改革提供了具体路径。",
+    "key_points": [
+      "财务部门从手工预测转向AI自动化，人员可聚焦战略分析而非数据处理",
+      "建立AI投资的清晰ROI评估机制，将AI成本与业务价值直接挂钩",
+      "强化AI系统的内部控制与风险管理，确保决策透明性与合规性",
+      "AI原生思维重塑招聘与培养策略，要求财务人才具备新型技能组合"
+    ],
+    "tags": [
+      "组织运营重构",
+      "财务职能转型",
+      "AI投资评估",
+      "人才技能再定义"
+    ],
+    "speakers": [
+      "Sarah Friar（OpenAI CFO）"
+    ]
+  },
+  {
+    "url": "https://www.lennysnewsletter.com/p/how-i-ai-build-an-ai-code-review",
+    "title": "🎙️ How I AI: Build an AI code review bot in 30 minutes + Claude Code for normal people",
+    "source": "Lenny's Newsletter",
+    "category": "analyst",
+    "published": "2026-08-10",
+    "fetched_at": "2026-08-11T05:23:06+08:00",
+    "score": 7,
+    "summary_zh": "文章讲述如何用 Vercel Eve 在 30 分钟内构建 AI 代码审查机器人。核心观点：AI 审查 AI 生成的代码比人工审查更快且缺陷率更低（Intercom 案例显示审批速度快 5 倍）。关键是用量化的风险模型（6 个维度）替代模糊的人工判断，将低风险 PR 自动通过，高风险转人工。强调操作设计、可审计日志和持续评估同样重要，安全合规不与自动化冲突，内部 Agent 需要与面向客户产品相同的质量保障。",
+    "key_points": [
+      "AI 审查代码的合规性与效率可兼得，关键是建立可追溯的量化风险框架和完整的审计日志",
+      "自动批准低风险 PR 后，人工仅负责最终合并的最后一步，保留问责同时消除常规评审认知负担",
+      "内部 Agent 工具化（如 Vercel Eve）大幅降低基础设施建设成本，从周级开发降至单次 Codex 会话",
+      "持续评估机制（如 Intercom 的工程师二次验证）是 Agent 长期可信的保障，不能靠初期有效性作保证"
+    ],
+    "tags": [
+      "工程效率",
+      "AI Agent 落地",
+      "组织流程重构",
+      "安全合规"
+    ],
+    "speakers": [
+      "Intercom",
+      "Vercel"
+    ]
+  },
+  {
+    "url": "https://www.lennysnewsletter.com/p/claude-code-for-normal-people-skills",
+    "title": "Claude Code for normal people: skills, voice mode, and how to collaborate with AI",
+    "source": "Lenny's Newsletter",
+    "category": "analyst",
+    "published": "2026-08-10",
+    "fetched_at": "2026-08-11T05:23:11+08:00",
+    "score": 7,
+    "summary_zh": "AI 教育工作者 Grace Clarke 分享如何用 Claude Code 重构服务业务流程。她构建了自动化管道系统（每小时驱动客户流转）、交互式提案生成器、自定义邮件系统等工具，完全替代传统软件。核心启示：非技术人员可通过「意图工程」而非提示工程与 AI 协作；通过「声音指南」确保 AI 输出风格一致；建立使用肌肉记忆是采纳 AI 的关键。展示了生成式 AI 如何赋能个人和小团队重新设计工作流程，降低技术门槛。",
+    "key_points": [
+      "自动化管道系统每小时驱动客户流程，替代传统 CRM 与工作流工具",
+      "通过「意图工程」教 Claude 理解业务逻辑，而非单纯优化提示词",
+      "用「声音指南」技能文件保证 AI 输出风格一致，避免 AI 生硬感",
+      "非技术创业者可在 30 分钟内用 Claude Code 构建生产级应用",
+      "建立日常使用习惯与肌肉记忆是普及 AI 采纳的关键瓶颈"
+    ],
+    "tags": [
+      "生产力提升",
+      "工作流重构",
+      "非技术赋能",
+      "Agent 落地应用"
+    ],
+    "speakers": [
+      "Grace Clarke",
+      "Claire Vo"
+    ]
+  },
+  {
+    "url": "https://sloanreview.mit.edu/article/how-to-avoid-innovation-one-hit-wonders/",
+    "title": "How to Avoid Innovation One-Hit Wonders",
+    "source": "MIT Sloan Management Review",
+    "category": "business",
+    "published": "2026-08-10",
+    "fetched_at": "2026-08-11T05:22:31+08:00",
+    "score": 7,
+    "summary_zh": "MIT Sloan研究发现，组织往往用「更多奖励、认可、自主权」的方式回应突破性创新，但这种管理方式反而降低创新者后续成功率42%。原因在于极端成功会改变创新者的自我认知：他们过度归因于个人能力，低估团队价值，减少协作；同时关注力从创新转向维持地位，对反馈的接纳度下降。这提示管理者需要重新思考如何激励和管理「一鸣惊人」的人才，避免组织陷入创新人才的一次性成功困局。",
+    "key_points": [
+      "极端成功后创新者后续成功率下降42%，源于心理与行为的反向转变",
+      "突破性成就触发自我膨胀与地位保护心态，削弱团队协作与反馈接纳能力",
+      "传统「更多奖励+更多自主」的管理模式对一流创新者可能适得其反",
+      "组织需重新设计对突破性创新者的激励与发展策略，维持长期创新能力"
+    ],
+    "tags": [
+      "人才管理",
+      "创新文化",
+      "组织行为",
+      "激励机制"
+    ],
+    "speakers": []
+  }
+]

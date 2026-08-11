@@ -1,0 +1,51 @@
+[
+  {
+    "url": "https://www.mckinsey.com/capabilities/operations/our-insights/agentic-ai-and-the-future-of-global-business-services",
+    "title": "Agentic AI and the future of global business services",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-08-11",
+    "fetched_at": "2026-08-12T05:26:04+08:00",
+    "score": 9,
+    "summary_zh": "McKinsey 指出 Agent AI 正在重塑全球商业服务格局。文章强调领导者需要重新思考工作流程、人才配置和运营模式，才能充分释放 Agent AI 的潜力。这不仅是技术更新，而是组织层面的深层变革——涉及流程再设计、员工技能转向、决策权力重新分配，以及与 AI 共存的新型团队协作模式。",
+    "key_points": [
+      "Agent AI 驱动全球商业服务转型，需从根本上重构工作流程和组织协作方式",
+      "人才策略需调整：从执行性工作转向监督、策略和创意驱动的高阶角色",
+      "运营模式升级：企业需重新定义决策权、考核指标、团队构成和管理层级"
+    ],
+    "tags": [
+      "Agent AI",
+      "组织重构",
+      "人才转型",
+      "运营模式"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/capabilities/transformation/our-insights/how-ai-led-commercial-transformation-can-power-industrial-growth",
+    "title": "How AI-led commercial transformation can power industrial growth",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-08-11",
+    "fetched_at": "2026-08-12T05:26:08+08:00",
+    "score": 8,
+    "summary_zh": "麦肯锡指出工业企业正面临数十年来最重要的商业重塑，而大多数企业对此准备不足。AI驱动的商业转型正成为工业增长的关键动力，涉及销售、营销、供应链、定价等关键职能的重新设计。文章暗示企业需要重新思考组织结构、员工能力和流程，以适应AI时代的商业模式变革。",
+    "key_points": [
+      "工业企业面临数十年来最大商业重塑，但多数准备不足，存在认知偏差",
+      "AI转型涉及销售、营销、供应链等核心职能的根本性重设与优化",
+      "成功企业需重新定义组织能力、人员角色与决策流程以适应AI驱动的商业模式",
+      "商业转型是战略性组织变革，需超越技术视角的全方位管理思维"
+    ],
+    "tags": [
+      "商业重塑",
+      "组织转型",
+      "工业企业",
+      "AI落地战略"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  }
+]

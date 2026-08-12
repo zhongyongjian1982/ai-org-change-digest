@@ -1,0 +1,80 @@
+[
+  {
+    "url": "https://www.mckinsey.com/capabilities/people-and-organizational-performance/our-insights/ai-transformations-run-on-trust",
+    "title": "AI transformations run on trust",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-08-12",
+    "fetched_at": "2026-08-13T05:23:54+08:00",
+    "score": 7,
+    "summary_zh": "McKinsey指出AI转型的成功关键不在技术本身，而在人员信任。领导者需通过透明沟通、清晰愿景和员工投资来建立信任，从而推动持久的组织变革。文章强调人的因素在AI转型中的决定性作用，挑战了技术至上论，指向文化和领导力的重要性。",
+    "key_points": [
+      "AI转型成功的核心驱动是人员信任而非技术本身",
+      "领导者需通过透明度、清晰沟通和员工投资建立信任",
+      "人的因素决定了AI变革能否从试点转化为组织规模落地",
+      "信任缺失会阻碍员工接受AI工具和新工作方式"
+    ],
+    "tags": [
+      "组织文化",
+      "领导力",
+      "AI落地",
+      "员工信任"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  },
+  {
+    "url": "https://openai.com/index/how-enterprises-put-ai-to-work",
+    "title": "From assistance to execution: How enterprises put AI to work",
+    "source": "OpenAI",
+    "category": "ai-lab",
+    "published": "2026-08-12",
+    "fetched_at": "2026-08-13T05:24:09+08:00",
+    "score": 7,
+    "summary_zh": "OpenAI 研究表明，企业正从 AI 辅助阶段进阶到执行阶段，采用 Agent AI 和 ChatGPT、Codex 等工具。研究揭示了前沿企业如何通过 AI 拉开竞争优势，说明 agentic AI 正在从协助决策转变为直接执行业务流程，改变企业的工作方式和组织效率。这反映出 AI 能力从「推荐」升级到「自主决策+执行」，对企业运营流程和人员角色有深层影响。",
+    "key_points": [
+      "企业 AI 采用从「辅助」向「执行」升级，Agent AI 承担更多独立任务",
+      "ChatGPT、Codex 等工具驱动业务流程自动化和直接执行能力",
+      "前沿企业通过更深层 AI 集成获得竞争优势和效率提升",
+      "AI 角色转变要求企业重新定义工作流、决策权和人员需求"
+    ],
+    "tags": [
+      "Agent AI",
+      "工作流自动化",
+      "企业采用",
+      "竞争优势"
+    ],
+    "speakers": [
+      "OpenAI"
+    ]
+  },
+  {
+    "url": "https://sequoiacap.com/article/partnering-with-preview-lights-inference-action/",
+    "title": "Partnering with Preview: Lights, Inference, Action",
+    "source": "Sequoia Capital",
+    "category": "vc",
+    "published": "2026-08-12",
+    "fetched_at": "2026-08-13T05:24:03+08:00",
+    "score": 6,
+    "summary_zh": "Sequoia 投资视频创作平台 Preview，认为生成式视频模型已成熟，但创作工具仍停留在传统时代。Preview 作为 AI 原生视频工作台，整合生成、审阅、制作追踪于一体，解决了专业创作者的核心痛点。文章强调价值积累在创意团队日常工作的平台上，预期大量推理算力将流向这一品类，推动下一波标志性内容创作。但重点是产品定位而非组织层面影响的深度讨论。",
+    "key_points": [
+      "视频创作工具链与AI模型不匹配，生成后仍依赖传统编辑流程，成为行业最大障碍",
+      "Preview 集成生成、审阅、制作管理，构建混合创作的统一工作台与真实信息源",
+      "100+ 工作室已采用，预期数十亿美元推理算力流向该赛道，价值聚集在日常工作平台",
+      "团队来自 Veed、Vizcom 等视频 AI 先驱，具备深度行业理解和产品执行能力"
+    ],
+    "tags": [
+      "生产力工具",
+      "AI 原生应用",
+      "工作流重构",
+      "创意行业数字化"
+    ],
+    "speakers": [
+      "Sonya Huang",
+      "James Flynn",
+      "Stefan Fejes",
+      "Veljko Tornjanski"
+    ]
+  }
+]

@@ -1,0 +1,56 @@
+[
+  {
+    "url": "https://www.lennysnewsletter.com/p/how-i-ai-how-a-solo-founder-used",
+    "title": "🎙️ How I AI: How a solo founder used Codex and ChatGPT to launch a fashion brand without engineers",
+    "source": "Lenny's Newsletter",
+    "category": "analyst",
+    "published": "2026-08-17",
+    "fetched_at": "2026-08-18T04:58:20+08:00",
+    "score": 7,
+    "summary_zh": "Yana Welinder 作为一个没有工程师的独立创始人，用 ChatGPT 和 Codex 打造了 AI 原生时尚品牌。她展示了如何用 AI 替代传统专业软件培训、外包和工程团队。核心洞察：精准的提示词（Prompt）等同于规范说明书，比生成印象深刻的结果更重要的是忠实于设计愿景；AI Agent 作为编排层驱动专业软件执行；异步语音工作流让单人创业者扩展产能；并行测试 AI 和人工方案应对不确定性。这反映了 AI 如何降低创业门槛、重新定义必需技能。",
+    "key_points": [
+      "Prompt 即规范：详细定义「好」的样子，AI 和人都能更好地交付结果",
+      "AI Agent 作编排层：Codex 操控专业 3D 软件，无需掌握工具即可产出专业成果",
+      "单人创业扩能：异步语音工作流让创始人并行处理多个任务",
+      "打破专业门槛：AI 移除了复杂工具学习和 CAD 工作的瓶颈",
+      "并行验证策略：人工方案与 AI 同时推进，测试对比后选优"
+    ],
+    "tags": [
+      "人才策略",
+      "工作方式变革",
+      "生产力",
+      "Agent 应用"
+    ],
+    "speakers": [
+      "Yana Welinder"
+    ]
+  },
+  {
+    "url": "https://sloanreview.mit.edu/article/the-power-of-opportunity-mindset-in-hiring/",
+    "title": "The Power of Opportunity Mindset in Hiring",
+    "source": "MIT Sloan Management Review",
+    "category": "business",
+    "published": "2026-08-17",
+    "fetched_at": "2026-08-18T04:57:51+08:00",
+    "score": 7,
+    "summary_zh": "MIT Sloan 研究者基于 20 年数据指出，组织对「机遇」的态度比薪酬或职位设计更能驱动员工参与度、努力程度和留任率。\"唯最佳者\"的招聘心态（痴迷于顶尖人才）导致招聘周期长、薪酬虚高、人才来源同质化，且外部高管实际表现反而不理想。他提倡\"机遇心态\"——识别真正适配的候选人而非仅看纸面资历，这为组织提供竞争优势。这一观点触及人才激励、招聘策略、组织效能的根本认知转变。",
+    "key_points": [
+      "机遇感知比薪酬激励更能驱动员工参与和留任；是被严重低估的资产",
+      "\"唯最佳者\"心态推高薪酬、延长招聘周期、窄化人才池，反而增加风险",
+      "外部明星员工实际表现往往低于预期；纸面资历与真实适配度常常脱节",
+      "\"机遇心态\"强调识别真正适配的候选人而非单纯追逐最佳凭证"
+    ],
+    "tags": [
+      "人才策略",
+      "组织效能",
+      "招聘决策",
+      "员工激励"
+    ],
+    "speakers": [
+      "Mark Zuckerberg (Meta CEO)",
+      "Boris Groysberg",
+      "Ashish Nanda",
+      "Nitin Nohria"
+    ]
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "url": "https://sloanreview.mit.edu/article/algorithms-trap-us-in-the-familiar-can-they-also-spark-breakthroughs/",
+    "title": "Algorithms Trap Us in the Familiar. Can They Also Spark Breakthroughs?",
+    "source": "MIT Sloan Management Review",
+    "category": "business",
+    "published": "2026-08-20",
+    "fetched_at": "2026-08-21T04:59:13+08:00",
+    "score": 8,
+    "summary_zh": "MIT Sloan 研究发现，主流算法工具（搜索、推荐、LLM）采用「利用」逻辑，优先展示热门/相关结果，反而压制创意突破。这在组织层面形成「观念气泡」——多人独立使用同一工具却被引向相同思路，造成隐形的思想同质化风险。研究通过改进算法强调「探索」而非「利用」，结果显示创意想法提升11-14%，且专家优势显著恢复。这揭示AI工具的架构设计如何深刻影响团队创新能力。",
+    "key_points": [
+      "标准算法设计偏向「利用」而非「探索」，无形中将组织创意向同一方向收束",
+      "多人团队独立工作却使用相同AI基础设施，导致雷同方案，员工难以察觉",
+      "改为「探索型」算法后，创意提升11-14%，专家能力优势得以释放",
+      "算法架构的隐形选择直接决定组织创新潜力，是比模型本身更关键的变量"
+    ],
+    "tags": [
+      "AI工具设计与创新",
+      "组织认知多样性",
+      "算法偏见",
+      "人才优势释放"
+    ],
+    "speakers": []
+  },
+  {
+    "url": "https://www.mckinsey.com/industries/financial-services/our-insights/earning-and-sustaining-trust-in-the-age-of-ai",
+    "title": "Earning and sustaining trust in the age of AI",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-08-20",
+    "fetched_at": "2026-08-21T04:59:16+08:00",
+    "score": 7,
+    "summary_zh": "Invesco CEO Andrew Schlossberg强调AI必须被纳入企业核心战略而非边缘工具。他指出信任是AI时代的关键资产——一旦失去信任，要重获极其困难。这涉及企业如何通过AI决策、数据使用、透明度来维护利益相关者信任，以及AI战略部署对组织信誉和长期运营的深层影响。",
+    "key_points": [
+      "AI应成为企业战略核心，而非附属工具",
+      "信任是AI时代最难恢复的资产，需主动建立和维护",
+      "AI应用中的透明度与道德责任直接影响组织声誉",
+      "高管需建立跨组织的AI治理与信任框架"
+    ],
+    "tags": [
+      "AI战略部署",
+      "组织信任",
+      "领导力",
+      "风险管理"
+    ],
+    "speakers": [
+      "Andrew Schlossberg / Invesco"
+    ]
+  }
+]

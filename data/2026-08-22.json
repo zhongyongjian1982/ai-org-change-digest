@@ -1,0 +1,26 @@
+[
+  {
+    "url": "https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/beyond-the-copilot-scaling-the-agentic-product-development-life-cycle",
+    "title": "Beyond the copilot: Scaling the agentic product development life cycle",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-08-21",
+    "fetched_at": "2026-08-22T04:54:26+08:00",
+    "score": 8,
+    "summary_zh": "McKinsey 指出，仅少数软件团队从 AI 获得真实收益，关键不在于部署新工具，而在于实施 AI 驱动的产品开发体系全面重设。文章强调从「副驾驶」工具阶段进阶到 Agent 级别的系统性变革，涉及流程、组织协作、交付方式的深层改造，这是实现 AI 规模化落地的必要条件。",
+    "key_points": [
+      "多数团队 AI 收益有限，根本原因是工具部署思维，缺乏系统性改造",
+      "从 Copilot（增强工具）进化到 Agent（自主决策系统）需要重新设计产品开发全流程",
+      "真正的规模化需要组织层面的流程、协作、交付模式创新"
+    ],
+    "tags": [
+      "产品开发系统化",
+      "Agent 落地",
+      "组织流程重构",
+      "AI 规模化"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  }
+]

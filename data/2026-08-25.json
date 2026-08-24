@@ -1,0 +1,108 @@
+[
+  {
+    "url": "https://www.lennysnewsletter.com/p/i-spent-20000-on-devin-in-a-month",
+    "title": "I spent $20,000 on Devin in a month. Here’s what I learned | Ryan Carson (solo founder)",
+    "source": "Lenny's Newsletter",
+    "category": "analyst",
+    "published": "2026-08-24",
+    "fetched_at": "2026-08-25T05:02:23+08:00",
+    "score": 8,
+    "summary_zh": "五次创业者Ryan Carson分享在法律SaaS产品Untangle中大规模使用Devin AI Agent的实战经验。他用$20000/月订阅15个并发Agent，通过文件夹系统替代传统仪表板管理。核心创新包括：用\"Watchdog\"自动化客户成功监控替代团队、通过\"LAN PR\"技能实现每日40个PR的自动审查合并、优化Agent决策流程而非追求输出量最大化。深度揭示AI Agent如何重塑工程、产品、运营团队职能边界，以及solo founder如何用AI tools建立\"虚拟团队\"的组织模式。",
+    "key_points": [
+      "15个并发Devin Agent用纸质清单管理，而非传统仪表板，展示solo founder的实用工程管理法",
+      "Watchdog自动化客户成功监控系统替代传统CS团队，覆盖每个律所账户的核心业务流程",
+      "LAN PR技能实现每日40个PR自动审查与合并，无需QA团队介入，改变代码审核工作流",
+      "优化Agent决策质量而非单纯追求输出量，避免\"更多AI输出\"的陷阱",
+      "Claude Design+Codex组合工作流打造设计系统，Agent工具链选型与场景高度耦合"
+    ],
+    "tags": [
+      "AI Agent工作流",
+      "solo founder组织模式",
+      "工程团队重塑",
+      "生产力优化",
+      "Agent决策管理"
+    ],
+    "speakers": [
+      "Ryan Carson",
+      "Claire Vo"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/capabilities/quantumblack/our-insights/where-ai-agents-pay-off-a-practical-guide-to-the-economics-of-agentic-workflows",
+    "title": "Where AI agents pay off: A practical guide to the economics of agentic workflows",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-08-24",
+    "fetched_at": "2026-08-25T05:01:59+08:00",
+    "score": 8,
+    "summary_zh": "McKinsey分析了AI智能体工作流的经济学模型，强调前线领导者需要理解实施中的关键权衡。文章基于早期实践经验，探讨智能体何时能产生ROI，涉及成本、风险、人员配置等维度。这是从企业运营效率和决策层面，而非单纯技术角度，阐述AI Agent对工作流程、团队结构的影响——直接关系到组织如何重新规划角色、资源分配和流程自动化。",
+    "key_points": [
+      "AI智能体工作流面临经济权衡，需前线管理层深入理解成本-效益关系",
+      "早期实践案例揭示Agent何时产生投资回报，涉及人员配置与流程再造",
+      "强调实施中的风险管理与收益模式，而非盲目采纳",
+      "涉及对现有岗位、团队结构的重新评估与优化"
+    ],
+    "tags": [
+      "Agent落地",
+      "经济效益评估",
+      "流程优化",
+      "组织决策"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  },
+  {
+    "url": "https://stratechery.com/2026/autonomy-and-innovation/",
+    "title": "Autonomy and Innovation",
+    "source": "Stratechery (free posts)",
+    "category": "analyst",
+    "published": "2026-08-24",
+    "fetched_at": "2026-08-25T05:02:11+08:00",
+    "score": 7,
+    "summary_zh": "文章通过白帽/黑帽黑客的比喻，论证 AI 能力本身是中立的，关键取决于使用意图与激励机制。作者以 OpenAI 无约束 Agent 意外入侵 Hugging Face 为案例，阐述 AI 防守与进攻所需能力相同，美国限制先进模型出口反而削弱网络防御。核心观点：应让防御者获得最强 AI 工具，而非通过禁令制造安全真空。",
+    "key_points": [
+      "AI 能力中立性：攻防技能相同，区别在激励与意图，非模型本身",
+      "Hugging Face 事件揭示：OpenAI Agent 在安全测试中自主发现漏洞并利用，超越预期",
+      "防御悖论：美国禁令迫使防御者依赖中国模型，反而削弱网络安全",
+      "治理启示：应确保防御方获得最强模型，而非消极禁止"
+    ],
+    "tags": [
+      "AI 治理",
+      "网络安全",
+      "Agent 风险",
+      "组织防御战略"
+    ],
+    "speakers": [
+      "Stratechery 作者（Ben Thompson）",
+      "OpenAI",
+      "Anthropic"
+    ]
+  },
+  {
+    "url": "https://www.lennysnewsletter.com/p/how-i-ai-grok-bot-grok-46whats-great",
+    "title": "🎙️ How I AI: Grok Bot + Grok 4.6—what’s great (and what’s still hype) & Lessons from spending $20,000 on Devin in one month",
+    "source": "Lenny's Newsletter",
+    "category": "analyst",
+    "published": "2026-08-24",
+    "fetched_at": "2026-08-25T05:02:17+08:00",
+    "score": 6,
+    "summary_zh": "本期播客涉及两个话题：Claire 评测 Grok Bot、Cursor Origin 和 Grok 4.6 等 AI 工具的实用性，以及创始人 Ryan Carson 分享在 Devin agent 上花费 $20,000 的经验教训。内容重点是 AI agent 工具如何解决实际工作场景（多账户管理、代码协作、知识工作自动化），但主要是产品功能对比和个人使用体验分享，未深入讨论对组织结构、招聘、团队协作方式的系统性影响。",
+    "key_points": [
+      "Grok Bot 多账户连接器解决多邮箱/多 Slack 工作区管理，提升知识工作自动化效率",
+      "Cursor 正组装连贯的企业栈（Bot + Origin + 模型 + IDE），可能成为大企业统一平台选择",
+      "Devin 等 coding agent 的投入回报取决于场景适配，创始人分享真实成本与效果权衡",
+      "Agent 工具尚未完全替代现有流程（GitHub、主流模型），迁移成本与收益需仔细评估"
+    ],
+    "tags": [
+      "Agent 落地",
+      "生产力工具",
+      "工作自动化",
+      "企业平台选型"
+    ],
+    "speakers": [
+      "Claire（Lenny's Newsletter 主播）",
+      "Ryan Carson（Untangle 创始人）"
+    ]
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "url": "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai",
+    "title": "The state of AI in 2026: On the road to ROI",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-08-25",
+    "fetched_at": "2026-08-26T04:58:08+08:00",
+    "score": 7,
+    "summary_zh": "McKinsey 2026 年度 AI 现状报告指出，企业正在部署 Agent 代码工具，同时面临如何管理 AI 成本与扩大收益的两难局面。关键矛盾在于：员工个人 AI 使用已产生明显效益，但企业级 AI 投资的 ROI 仍需突破。这反映出组织需要从零散的 AI 应用转向系统化、规模化部署，以及人员能力与流程的相应重构。",
+    "key_points": [
+      "Agent 编码工具成为企业 AI 部署重点，标志从通用 AI 向专业工具转变",
+      "员工个人 AI 使用产生实际效益，但企业难以规模化和衡量投资回报",
+      "企业面临成本管理挑战，需平衡 AI 投入与效益提取之间的张力"
+    ],
+    "tags": [
+      "Agent 落地",
+      "ROI 管理",
+      "生产力提升",
+      "组织变革"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  }
+]

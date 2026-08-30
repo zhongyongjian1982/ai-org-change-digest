@@ -1,0 +1,27 @@
+[
+  {
+    "url": "https://www.lennysnewsletter.com/p/ais-third-era-the-rise-of-persistent",
+    "title": "AI’s third era: the rise of persistent AI coworkers | Tara Seshan (OpenAI’s product lead)",
+    "source": "Lenny's Newsletter",
+    "category": "analyst",
+    "published": "2026-08-30",
+    "fetched_at": "2026-08-31T06:54:47+08:00",
+    "score": 8,
+    "summary_zh": "OpenAI 产品负责人 Tara Seshan 阐述 AI 进入第三阶段——「持久 AI 协作者」时代。核心观点是工作方式的根本转变：从「划桨」（执行）转向「掌舵」（决策和战略），人类的判断力和雄心成为新的竞争力源泉。AI 接管执行任务后，「雄心」成为企业新的瓶颈——员工和领导者的抱负上限直接影响产出。PM 的职责也在演变，从执行转向提升他人的雄心与思维能力。这反映了生成式 AI 对组织内人员角色、激励机制和领导方式的深刻影响。",
+    "key_points": [
+      "人类从执行者转向决策者，雄心而非能力成为企业竞争力瓶颈",
+      "持久 AI 协作者改变工作性质，PM 需重点提升团队视野和抱负水位",
+      "人类判断力和战略思维在 AI 时代反而更稀缺，成为核心差异化因素",
+      "组织需调整激励和评估机制，适应 AI 处理例行工作的新现实"
+    ],
+    "tags": [
+      "组织转型",
+      "工作方式变革",
+      "领导力再定义",
+      "人机协作"
+    ],
+    "speakers": [
+      "Tara Seshan (OpenAI)"
+    ]
+  }
+]

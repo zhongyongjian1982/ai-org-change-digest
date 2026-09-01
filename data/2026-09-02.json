@@ -1,0 +1,52 @@
+[
+  {
+    "url": "https://sloanreview.mit.edu/article/how-leadership-anxiety-derails-transformation/",
+    "title": "﻿How Leadership Anxiety Derails Transformation",
+    "source": "MIT Sloan Management Review",
+    "category": "business",
+    "published": "2026-09-01",
+    "fetched_at": "2026-09-02T06:47:52+08:00",
+    "score": 8,
+    "summary_zh": "MIT Sloan 发表的四年民族志研究深度解析企业转型失败的心理根源。研究追踪专业服务公司的大规模变革，发现虽然领导力、战略、员工承诺都充分，变革仍然失败。根本原因是领导者未能有效识别、表达和管理转型过程中的焦虑情绪。当焦虑被压抑时，组织会进入「防御性组织」状态——通过繁忙工作表面上推进改革，实际上维持现状，最终导致变革崩溃。研究提出领导者需要学会与焦虑共处的管理策略。",
+    "key_points": [
+      "焦虑是转型失败的隐性驱动力，超越传统的战略、能力、参与度等要素",
+      "防御性组织：焦虑未被管理时，组织活动被无意识地用来维持现状而非推进变革",
+      "领导者责任感与员工信任是触发防御机制的前提条件，需要主动管理",
+      "领导者应学会命名、分享和管理焦虑，而非压抑，这是转型成功的关键"
+    ],
+    "tags": [
+      "领导力",
+      "组织变革",
+      "焦虑管理",
+      "变革失败"
+    ],
+    "speakers": [
+      "Rob Dobi"
+    ]
+  },
+  {
+    "url": "https://openai.com/index/ai-native-company-workflows",
+    "title": "How AI-native companies turn workflows into operating capability",
+    "source": "OpenAI",
+    "category": "ai-lab",
+    "published": "2026-09-02",
+    "fetched_at": "2026-09-02T06:47:59+08:00",
+    "score": 7,
+    "summary_zh": "OpenAI 通过 Basis、Clay、Exa Labs 三个案例展示 AI 原生公司如何将工作流转化为运营能力。这些公司利用 AI Agent 优化员工入职、客户账户管理和开发者集成等核心流程，体现了 AI 如何改变传统运营方式。文章面向企业领导层，提供可参考的落地实践，说明 AI 不仅是工具，而是重新定义组织运营效率和工作流设计的方式。",
+    "key_points": [
+      "AI Agent 可将重复性工作流自动化，直接提升组织运营效率",
+      "入职、客户管理、集成等关键流程通过 AI 重构，减少人工干预",
+      "AI 原生公司的组织设计将工作流视为可扩展的运营能力，而非固定流程",
+      "企业领导需重新思考团队结构，以适应 AI Agent 驱动的工作方式"
+    ],
+    "tags": [
+      "AI Agent 落地",
+      "流程自动化",
+      "运营效率",
+      "组织重构"
+    ],
+    "speakers": [
+      "OpenAI"
+    ]
+  }
+]

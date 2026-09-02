@@ -1,0 +1,53 @@
+[
+  {
+    "url": "https://www.lennysnewsletter.com/p/grok-bot-vs-openclaw-how-i-replaced",
+    "title": "Grok Bot vs. OpenClaw: How I replaced my entire agent stack",
+    "source": "Lenny's Newsletter",
+    "category": "analyst",
+    "published": "2026-09-02",
+    "fetched_at": "2026-09-03T06:49:01+08:00",
+    "score": 7,
+    "summary_zh": "产品人Claire Vo分享如何用Grok Bot替换整个agent技术栈的经验。她运行30个活跃agent，包括chief-of-staff bot（管理6个邮箱和多个Slack工作区）、工程bot（处理PR审核和SOC 2合规）、客服bot获得五星评价、家庭agent每天打印报纸等。重点讨论了Grok Bot的三个核心原语如何改变agent能力、与OpenClaw的对比、以及如何迁移agent。这反映出生成式AI Agent已从实验走向实际工作流程替代，跨越技术、管理、客服等多个业务领域。",
+    "key_points": [
+      "30个活跃agent覆盖工作与生活，单个chief-of-staff bot可管理复杂的多渠道收件和任务协调",
+      "Grok Bot三个核心原语重新定义agent能力边界，相比前代平台有显著能力提升",
+      "客服bot实现了客户五星评价而不知交互对象是AI，说明agent已具备生产级可用性",
+      "工程类bot接管PR审核、合规监控等知识密集型工作，标志着agent替代特定白领任务",
+      "详细的平台迁移案例提供了organizations采纳新agent栈的实践路径"
+    ],
+    "tags": [
+      "Agent落地",
+      "工作流自动化",
+      "生产力工具",
+      "组织流程重构"
+    ],
+    "speakers": [
+      "Claire Vo"
+    ]
+  },
+  {
+    "url": "https://openai.com/index/gilbert-tobin",
+    "title": "How law firm Gilbert + Tobin governs and scales AI with OpenAI",
+    "source": "OpenAI",
+    "category": "ai-lab",
+    "published": "2026-09-01",
+    "fetched_at": "2026-09-03T06:48:52+08:00",
+    "score": 7,
+    "summary_zh": "律师事务所 Gilbert + Tobin 分享了如何通过 CEO 层面的承诺、严格的治理框架和人员问责制来规模化部署 ChatGPT Enterprise 和 Codex。案例展示了大型专业服务机构如何在组织层面制定 AI 采纳策略，平衡创新与风险控制，涉及领导力推动、流程优化和职能部门协同。体现了从单点工具试验向企业级 AI 治理的升级。",
+    "key_points": [
+      "CEO 层级推动是成功规模化 AI 的关键，需要明确的组织承诺与资源投入",
+      "建立严格的治理框架，明确职能与问责制，确保 AI 应用合规与可控",
+      "跨团队协同（技术、法律、运营）是大型机构整合 AI 的必要条件",
+      "从法律服务场景看，AI 提升文件审核、代码生成等高价值工作效率"
+    ],
+    "tags": [
+      "AI治理",
+      "组织变革",
+      "企业采纳",
+      "领导力"
+    ],
+    "speakers": [
+      "Gilbert + Tobin（律师事务所CEO/管理层）"
+    ]
+  }
+]

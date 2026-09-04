@@ -1,0 +1,28 @@
+[
+  {
+    "url": "https://stratechery.com/2026/an-interview-with-openai-president-greg-brockman-about-astra-and-alignment/",
+    "title": "An Interview with OpenAI President Greg Brockman About Astra and Alignment",
+    "source": "Stratechery (free posts)",
+    "category": "analyst",
+    "published": "2026-09-04",
+    "fetched_at": "2026-09-05T06:30:34+08:00",
+    "score": 7,
+    "summary_zh": "OpenAI 总裁 Greg Brockman 在访谈中讨论了 Astra 模型发布、公司定位与竞争格局。访谈涉及 OpenAI 在 AI 价值链中的角色、与微软等下游消费者公司的竞争、与英伟达等供应商的关系，以及对对齐（alignment）和网络安全的承诺。Brockman 分享了从 Stripe CTO 到 OpenAI 总裁的职业路径，以及 ChatGPT 爆发与 2023 年风波的反思，触及生产力提升与 AGI 路径等战略思考。",
+    "key_points": [
+      "OpenAI 面临来自微软（消费端）和英伟达（供应端）的双重竞争压力，定位于价值链中游",
+      "Astra 等新模型需要体现对对齐和网络安全的真实承诺，而非仅口头宣传",
+      "Brockman 强调团队协作和集体思维在技术创新中不可或缺，单纯编码能力不足",
+      "ChatGPT 拥有十亿用户可能并非优势，涉及组织规模扩张的管理权衡"
+    ],
+    "tags": [
+      "领导力与组织建设",
+      "AI 竞争格局",
+      "安全与对齐战略",
+      "生产力与 AGI 路径"
+    ],
+    "speakers": [
+      "Greg Brockman（OpenAI 总裁兼联合创始人）",
+      "Ben Thompson（Stratechery 创办人，采访人）"
+    ]
+  }
+]

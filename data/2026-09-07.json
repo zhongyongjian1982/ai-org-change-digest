@@ -1,0 +1,55 @@
+[
+  {
+    "url": "https://www.lennysnewsletter.com/p/why-companies-are-becoming-a-series",
+    "title": "Why companies are becoming a series of loops | Anish Acharya (a16z)",
+    "source": "Lenny's Newsletter",
+    "category": "analyst",
+    "published": "2026-09-06",
+    "fetched_at": "2026-09-07T06:17:25+08:00",
+    "score": 7,
+    "summary_zh": "a16z投资人Anish Acharya探讨AI时代企业架构的根本转变：公司正演变为一系列相互关联的反馈循环（loops），而非传统层级结构。他强调AI赋能下，产品构建不再追求完美设计，而是通过快速迭代的\"循环\"发现护城河。分布式优化和持续反馈机制成为新竞争力。这反映了AI驱动下组织运作方式从计划驱动向数据驱动、从静态设计向动态演进的转变。",
+    "key_points": [
+      "企业架构从层级制演变为循环系统，AI加速反馈迭代速度",
+      "产品护城河由设计优化转向通过循环发现，强调持续学习",
+      "分布式效率和实时优化成为竞争优势，AI使精准个性化成为可能",
+      "工程师角色升级为\"魔法师\"，AI编码工具重塑开发生产力"
+    ],
+    "tags": [
+      "组织重构",
+      "生产力",
+      "产品策略",
+      "AI工具链"
+    ],
+    "speakers": [
+      "Anish Acharya (a16z)",
+      "Marc Andreessen",
+      "Dario Amodei",
+      "Mike Krieger"
+    ]
+  },
+  {
+    "url": "https://openai.com/index/research-acceleration-view-inside-openai",
+    "title": "Research acceleration: The view inside OpenAI",
+    "source": "OpenAI",
+    "category": "ai-lab",
+    "published": "2026-09-06",
+    "fetched_at": "2026-09-07T06:17:17+08:00",
+    "score": 7,
+    "summary_zh": "OpenAI 内部使用 coding agents 加速 AI 研究工作。文章通过实地数据展示 agents 如何改变研究人员的工作方式，包括实验速度、任务复杂度处理能力和整体研究效率的提升。这反映了生成式 AI 工具在改造知识工作流程、提高研究团队生产力方面的实际效果，为企业采纳类似技术提供了内部案例参考。",
+    "key_points": [
+      "Coding agents 显著提升研究人员的实验迭代速度，减少重复性编码工作",
+      "Agent 能处理更复杂的任务场景，扩展单个研究者的能力边界",
+      "从 OpenAI 内部实践看，AI 工具正在重新定义研究工作的节奏与方式",
+      "数据驱动的评估方法（agent 使用率、实验速度等）为团队赋能提供量化依据"
+    ],
+    "tags": [
+      "生产力提升",
+      "Agent 落地",
+      "工作流程重构",
+      "研发效能"
+    ],
+    "speakers": [
+      "OpenAI"
+    ]
+  }
+]

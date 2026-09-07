@@ -1,0 +1,55 @@
+[
+  {
+    "url": "https://www.lennysnewsletter.com/p/build-your-own-company-brain-the",
+    "title": "Build your own company brain: the enterprise AI playbook from Stripe’s engineering team | Sharadh Krishnamurthy",
+    "source": "Lenny's Newsletter",
+    "category": "analyst",
+    "published": "2026-09-07",
+    "fetched_at": "2026-09-08T06:58:50+08:00",
+    "score": 9,
+    "summary_zh": "Stripe 工程经理分享内部 AI Agent「Kai」的构建经验，该系统服务 10,000+ 员工。核心观点：企业级 AI 需要从治理、数据安全、基础设施三层设计；Kai 通过「项目」机制实现权限隔离，允许任何员工打包工作流成「技能」供他人复用（已有 2,000+ 技能）；强调 AI Agent 身份管理、负载均衡、生产环保护的工程复杂性。揭示大规模企业 AI 落地的真实成本：自建 vs 采购权衡、跨职能协作、风险管理。",
+    "key_points": [
+      "Stripe 自建 Kai 而非采购，原因在于需要深度定制化的治理、数据安全、基础设施",
+      "通过「项目」作为治理单元实现权限隔离；员工可在安全沙箱内创建并共享 AI 技能",
+      "2,000+ 员工创建的可复用技能，体现众创模式对企业生产力乘数效应",
+      "Agent 身份管理、负载均衡等工程挑战；曾有 rogue agents 差点影响生产系统",
+      "任何背景员工都能安全使用 AI，需在治理、基础设施、人员技能三层协同"
+    ],
+    "tags": [
+      "Agent 落地",
+      "企业架构",
+      "治理与安全",
+      "生产力乘数"
+    ],
+    "speakers": [
+      "Sharadh Krishnamurthy (Stripe)",
+      "Claire Vo"
+    ]
+  },
+  {
+    "url": "https://www.lennysnewsletter.com/p/how-i-ai-gpt-6-astra-is-a-banger",
+    "title": "🎙️ How I AI: GPT-6 Astra is a banger + Stripe’s AI playbook + Grok Bot vs. OpenClaw: why I replaced my entire agent stack",
+    "source": "Lenny's Newsletter",
+    "category": "analyst",
+    "published": "2026-09-07",
+    "fetched_at": "2026-09-08T06:58:43+08:00",
+    "score": 7,
+    "summary_zh": "Lenny's Newsletter 创始人 Claire 详细分享了她如何用 Grok Bot 替换整个 OpenClaw Agent 栈的经验。她运营 6 个邮箱、家庭协调、代码审查、合规监控等多个智能体，强调了好的 Agent 平台的核心竞争力是用户体验与稳定性。关键洞察包括：将 Agent 视为新员工招聘来设计职责，多账户支持对创业者至关重要，低风险操作自主执行而高风险操作需人工审批平衡信任与自主权，以及针对不同 LLM 特性（Grok 的文案冗长风格）进行明确训练以适配用户语气。",
+    "key_points": [
+      "Agent 平台竞争力从能力转向 UX：稳定性、易维护性胜过功能堆砌",
+      "将 Agent 视为专员而非工具，定义清晰职责与范围，可有效避免功能漂移",
+      "多账户支持是多业务创业者的刚需功能，决定 Agent 价值可用性",
+      "分级权限设计（低风险自主、高风险人审）是 Agent 落地的安全基石",
+      "LLM 风格差异需明确指导：针对 Grok 紧凑风格学习用户语料库调优"
+    ],
+    "tags": [
+      "Agent 应用实战",
+      "产品设计洞察",
+      "工作流自动化",
+      "人机协作治理"
+    ],
+    "speakers": [
+      "Claire (Lenny's Newsletter 创始人)"
+    ]
+  }
+]

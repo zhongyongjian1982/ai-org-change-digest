@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+<title>2026-09-09 — AI TRANSFORMATION</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #0a0a0a; color: #999; font-family: system-ui, -apple-system, sans-serif; line-height: 1.6; min-height: 100vh; }
+a { color: inherit; text-decoration: none; }
+a:hover { color: #ccc; }
+.back-link { position: fixed; top: 18px; left: 20px; font-family: 'VT323', monospace; font-size: 1.15rem; color: #666; z-index: 100; letter-spacing: 0.02em; transition: color 0.15s; }
+.back-link:hover { color: #aaa; }
+header { padding: 60px 20px 32px; text-align: center; }
+header h1 { font-family: 'VT323', monospace; font-size: clamp(2rem, 6vw, 4rem); color: #999; letter-spacing: 0.12em; line-height: 1.1; margin-bottom: 12px; word-spacing: 0.1em; }
+header p { font-size: 0.88rem; color: #666; letter-spacing: 0.08em; }
+header p a { color: #888; transition: color 0.15s; }
+header p a:hover { color: #ccc; }
+.controls { background: #0a0a0a; border-bottom: 1px solid #1c1c1c; position: sticky; top: 0; z-index: 50; }
+.tabs { display: flex; overflow-x: auto; scrollbar-width: none; padding: 0 16px; max-width: 760px; margin: 0 auto; }
+.tabs::-webkit-scrollbar { display: none; }
+.tab { flex-shrink: 0; background: none; border: none; border-bottom: 2px solid transparent; padding: 14px 12px; font-size: 0.88rem; color: #777; cursor: pointer; font-family: system-ui, sans-serif; display: flex; align-items: center; gap: 5px; white-space: nowrap; transition: color 0.15s, border-color 0.15s; letter-spacing: 0.02em; }
+.tab.active { color: #ddd; border-bottom-color: #777; }
+.tab:hover { color: #bbb; }
+.badge { font-size: 0.74rem; color: #555; }
+.tab.active .badge { color: #999; }
+.filter-bar { display: flex; align-items: center; gap: 10px; padding: 10px 16px; border-top: 1px solid #161616; max-width: 760px; margin: 0 auto; font-size: 0.82rem; color: #666; flex-wrap: wrap; }
+.filter-bar > span { letter-spacing: 0.04em; }
+.filter-bar .sep { color: #2a2a2a; }
+.score-filter { display: flex; gap: 6px; flex-wrap: wrap; }
+.sf-btn { background: none; border: 1px solid #2a2a2a; border-radius: 3px; padding: 3px 11px; font-size: 0.8rem; color: #888; cursor: pointer; font-family: inherit; transition: color 0.15s, border-color 0.15s; letter-spacing: 0.04em; }
+.sf-btn.active, .sf-btn:hover { color: #ddd; border-color: #777; }
+.source-select { background: #0a0a0a; border: 1px solid #2a2a2a; border-radius: 3px; padding: 3px 9px; font-size: 0.8rem; color: #aaa; font-family: inherit; cursor: pointer; outline: none; }
+.source-select:hover { color: #ddd; border-color: #777; }
+.source-select option { background: #0a0a0a; color: #ccc; }
+.list { max-width: 760px; margin: 0 auto; padding: 8px 20px 80px; }
+.day { padding-top: 32px; }
+.day-head { font-size: 0.8rem; color: #555; letter-spacing: 0.12em; padding: 0 0 10px; border-bottom: 1px solid #1c1c1c; margin-bottom: 4px; text-transform: uppercase; }
+.day-head .count { color: #444; margin-left: 6px; }
+.entry { padding: 22px 0; border-bottom: 1px solid #161616; }
+.entry.hidden { display: none; }
+.entry-meta { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; font-size: 0.8rem; color: #666; margin-bottom: 8px; letter-spacing: 0.03em; }
+.entry-meta .sep { color: #2a2a2a; }
+.entry-score { color: #999; font-variant-numeric: tabular-nums; letter-spacing: 0.05em; font-weight: 500; }
+.entry-score.s-low { color: #666; }
+.entry-title { display: block; font-size: 1.1rem; color: #ccc; transition: color 0.15s; line-height: 1.5; margin-bottom: 10px; font-weight: 500; }
+.entry-title:hover { color: #fff; }
+.entry-summary { font-size: 0.95rem; color: #aaa; line-height: 1.75; margin-bottom: 10px; }
+.entry-bullets { list-style: none; padding: 0; margin: 8px 0 12px; }
+.entry-bullets li { font-size: 0.9rem; color: #888; line-height: 1.75; padding-left: 16px; position: relative; margin-bottom: 2px; }
+.entry-bullets li::before { content: '·'; position: absolute; left: 4px; color: #666; font-weight: bold; }
+.entry-chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+.entry-chip { font-size: 0.78rem; color: #777; border: 1px solid #2a2a2a; padding: 2px 9px; border-radius: 2px; letter-spacing: 0.03em; }
+.entry-chip.speaker { color: #aaa; border-color: #3a3a3a; }
+.empty-state { text-align: center; padding: 60px 20px; color: #555; font-size: 0.9rem; }
+@media (max-width: 480px) {
+  .list { padding: 8px 14px 60px; }
+  .entry-title { font-size: 1rem; }
+  .entry-summary { font-size: 0.92rem; }
+  .entry-bullets li { font-size: 0.88rem; }
+  .filter-bar { font-size: 0.74rem; gap: 8px; }
+}
+footer { text-align: center; padding: 30px 20px; color: #555; font-size: 0.78rem; letter-spacing: 0.06em; }
+footer a { color: #666; transition: color 0.15s; }
+footer a:hover { color: #999; }
+</style>
+</head>
+<body>
+<a class="back-link" href="https://www.tedzhong.com/">← tedzhong.com</a>
+<header>
+  <h1>2026-09-09</h1>
+  <p>5 条 · <a href="../index.html">← 返回最新</a> · <a href="./">归档</a></p>
+</header>
+<div class="controls">
+  <div class="tabs"><button class="tab active" data-cat="all">全部<span class="badge">5</span></button><button class="tab" data-cat="ai-lab">AI 实验室<span class="badge">1</span></button><button class="tab" data-cat="analyst">分析师<span class="badge">1</span></button><button class="tab" data-cat="business">商业<span class="badge">3</span></button></div>
+  <div class="filter-bar">
+    <span>评分</span>
+    <div class="score-filter">
+      <button class="sf-btn active" data-score="6">≥6</button>
+      <button class="sf-btn" data-score="7">≥7</button>
+      <button class="sf-btn" data-score="8">≥8</button>
+      <button class="sf-btn" data-score="9">≥9</button>
+    </div>
+    <span class="sep">·</span>
+    <span>来源</span>
+    <select class="source-select" id="f-source"><option value="*">全部</option><option value="Lenny&#x27;s Newsletter">Lenny&#x27;s Newsletter</option><option value="MIT Sloan Management Review">MIT Sloan Management Review</option><option value="McKinsey Insights">McKinsey Insights</option><option value="OpenAI">OpenAI</option></select>
+  </div>
+</div>
+<div class="list">
+<section class="day"><div class="day-head">2026-09-09<span class="count">· 5 条</span></div>
+    <article class="entry" data-source="MIT Sloan Management Review" data-category="business" data-score="8">
+      <div class="entry-meta">
+        <span class="entry-score">8/10</span>
+        <span class="sep">·</span>
+        <span>MIT Sloan Management Review</span>
+        <span class="sep">·</span>
+        <span>商业</span>
+        <span class="sep">·</span>
+        <span>2026-09-08</span>
+      </div>
+      <a class="entry-title" href="https://sloanreview.mit.edu/article/responsible-ai-means-knowing-the-limits-of-agent-autonomy/" target="_blank" rel="noopener">Responsible AI Means Knowing the Limits of Agent Autonomy</a>
+      <p class="entry-summary">MIT Sloan 和 BCG 的国际 AI 专家小组研究了 AI Agent 治理的核心悖论：72% 专家同意「将 Agent 视为自主决策者的治理会失败」。虽然 Agent 在操作层面展现自主性（可独立执行、规划、调用工具），但这种技术自主性不等于道德或法律责任。关键洞见是：将 Agent 标签为「自主」会导致背后的人类和机构逃避责任。有效治理应将每个重要决策溯源到具体可追责的负责主体，而非将责任推给算法。这对企业组织如何定义 AI 赋权、人机协作边界、以及风险承担方式产生深刻影响。</p>
+      <ul class="entry-bullets"><li>72% 专家认为将 Agent 当自主决策者的治理模式会失败，责任归属不明成致命风险</li><li>Agent 具备操作自主性（独立执行、工具调用），但这不等同于道德或法律责任主体</li><li>有效治理需将决策权溯源至具体可问责的人类和机构，而非模糊为「AI 自主」</li><li>Agent 本质是「委托执行」—— 在人类设定的目标和护栏内运作，并非真正自主</li><li>企业需重新定义人机协作边界，避免责任逃避，建立端到端的问责链</li></ul>
+      <div class="entry-chips"><span class="entry-chip speaker">Rainer Hoffmann (EnBW CDO)</span><span class="entry-chip speaker">Renato Leite Monteiro (e&amp;)</span><span class="entry-chip speaker">Ben Dias (IAG Chief AI Scientist)</span><span class="entry-chip speaker">Simon Chesterman (NUS Vice Provost)</span><span class="entry-chip speaker">Linda Leopold (AI Consultant)</span><span class="entry-chip speaker">Bruno Bioni (Data Privacy Brasil)</span><span class="entry-chip speaker">Amit Shah (Instalily.ai CEO)</span><span class="entry-chip speaker">Öykü Işik</span><span class="entry-chip">AI 治理</span><span class="entry-chip">责任归属</span><span class="entry-chip">Agent 自主性</span><span class="entry-chip">人机协作</span><span class="entry-chip">组织问责</span></div>
+    </article>
+    
+    <article class="entry" data-source="Lenny&#x27;s Newsletter" data-category="analyst" data-score="7">
+      <div class="entry-meta">
+        <span class="entry-score">7/10</span>
+        <span class="sep">·</span>
+        <span>Lenny&#x27;s Newsletter</span>
+        <span class="sep">·</span>
+        <span>分析师</span>
+        <span class="sep">·</span>
+        <span>2026-09-08</span>
+      </div>
+      <a class="entry-title" href="https://www.lennysnewsletter.com/p/how-we-built-grok-bot-in-a-month" target="_blank" rel="noopener">How we built Grok Bot in a month | Roman Ugarte (SpaceXAI)</a>
+      <p class="entry-summary">SpaceX AI 的 Roman Ugarte 分享了 Grok Bot 构建经验：小型隔离团队用 4 周从零到一完成内部产品，3 周后成功公开发布。核心洞察包括：决策采用从零开始而非改造现有产品、通过亲自将 300 位早期用户上手来理解用户需求、强调「同事哲学」的产品设计。这反映了高效 AI 产品团队的组织方式——精英小团队、快速迭代、用户深度参与——对企业构建 AI 能力的启示。</p>
+      <ul class="entry-bullets"><li>小团队 4 周交付：隔离专注的组织结构加快 Agent 产品从 0-1 的速度</li><li>亲自做用户引导：CEO/Lead 手工导入 300 用户，建立同理心驱动产品方向</li><li>从零vs改造的决策：说明企业何时应该投入新的 AI 产品线而非嵌入现有系统</li><li>「同事哲学」设计：强调 AI 工具应像办公室同事般可信任、高效协作</li></ul>
+      <div class="entry-chips"><span class="entry-chip speaker">Roman Ugarte (SpaceX AI / Cursor former Growth Lead)</span><span class="entry-chip speaker">Lenny Rachitsky</span><span class="entry-chip">Agent 落地</span><span class="entry-chip">团队组织</span><span class="entry-chip">产品快速迭代</span><span class="entry-chip">人机协作设计</span></div>
+    </article>
+    
+    <article class="entry" data-source="McKinsey Insights" data-category="business" data-score="7">
+      <div class="entry-meta">
+        <span class="entry-score">7/10</span>
+        <span class="sep">·</span>
+        <span>McKinsey Insights</span>
+        <span class="sep">·</span>
+        <span>商业</span>
+        <span class="sep">·</span>
+        <span>2026-09-08</span>
+      </div>
+      <a class="entry-title" href="https://www.mckinsey.com/capabilities/operations/our-insights/creating-value-from-ai-and-digital-capabilities-in-logistics-operations" target="_blank" rel="noopener">Creating value from AI and digital capabilities in logistics operations</a>
+      <p class="entry-summary">麦肯锡研究表明，在物流运营中获得 AI 投资回报的领先企业采取三项差异化举措。这些企业不仅部署 AI 和数字化能力，更重要的是改变运营流程、重新配置人员角色，并建立适配 AI 的组织能力。物流行业的数字化转型正推动对数据分析、自动化决策等新能力的需求，进而影响招聘、培训和团队结构调整。该研究为管理层提供了从技术部署到组织变革的系统性思路。</p>
+      <ul class="entry-bullets"><li>领先企业在 AI 价值化上采取三项关键差异化举措，不只是技术部署</li><li>数字化转型驱动物流运营流程重构和人员角色再定义</li><li>AI 采纳需要配套的组织能力建设、人才培养和结构调整</li><li>麦肯锡从咨询角度阐述 AI 如何影响企业运营决策和价值创造</li></ul>
+      <div class="entry-chips"><span class="entry-chip speaker">McKinsey</span><span class="entry-chip">数字化转型</span><span class="entry-chip">流程重构</span><span class="entry-chip">组织能力</span><span class="entry-chip">人员角色</span></div>
+    </article>
+    
+    <article class="entry" data-source="McKinsey Insights" data-category="business" data-score="6">
+      <div class="entry-meta">
+        <span class="entry-score s-low">6/10</span>
+        <span class="sep">·</span>
+        <span>McKinsey Insights</span>
+        <span class="sep">·</span>
+        <span>商业</span>
+        <span class="sep">·</span>
+        <span>2026-09-08</span>
+      </div>
+      <a class="entry-title" href="https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/your-budget-is-killing-your-strategy-four-imperatives-for-cfos" target="_blank" rel="noopener">Your budget is killing your strategy: four imperatives for CFOs</a>
+      <p class="entry-summary">McKinsey 分析传统年度预算流程的缺陷——刚性、滞后、难以适应快速变化的市场。高绩效公司通过改革预算方式实现超越：CFO 们将预算从控制工具转变为战略增长路线图，更紧密地链接预算与战略优先级。文章强调 AI 的作用是赋能数据驱动、前瞻性的预算决策，但具体 AI 应用手段未深入展开。</p>
+      <ul class="entry-bullets"><li>传统预算制度刚性、滞后，已不适应当代市场节奏</li><li>高绩效公司将预算从&#x27;控制机制&#x27;转向&#x27;增长动力引擎&#x27;</li><li>AI 使预算决策从历史回顾转向数据驱动、前瞻分析</li><li>CFO 需重塑预算流程与组织战略的耦合度</li></ul>
+      <div class="entry-chips"><span class="entry-chip speaker">Matthew Maloney</span><span class="entry-chip speaker">Karen McLoughlin</span><span class="entry-chip speaker">Michele Tam</span><span class="entry-chip">财务战略</span><span class="entry-chip">组织流程重构</span><span class="entry-chip">数据驱动决策</span><span class="entry-chip">AI 赋能</span></div>
+    </article>
+    
+    <article class="entry" data-source="OpenAI" data-category="ai-lab" data-score="6">
+      <div class="entry-meta">
+        <span class="entry-score s-low">6/10</span>
+        <span class="sep">·</span>
+        <span>OpenAI</span>
+        <span class="sep">·</span>
+        <span>AI 实验室</span>
+        <span class="sep">·</span>
+        <span>2026-09-08</span>
+      </div>
+      <a class="entry-title" href="https://openai.com/index/1password" target="_blank" rel="noopener">1Password increases engineering productivity 21% with Codex</a>
+      <p class="entry-summary">1Password 工程团队利用 OpenAI 的 Codex 编程助手，工程生产力提升 21%，能够快速构建新功能与内部工具并保证生产安全标准。这个案例展现了 AI 代码生成工具在实际企业环保境中的效率收益，但缺乏对团队结构、人员需求、工作方式深层变化的讨论，主要为产品效果验证而非管理层面的组织变革分析。</p>
+      <ul class="entry-bullets"><li>Codex 辅助 1Password 工程团队生产力提升 21%，加快功能交付周期</li><li>AI 代码工具与企业安全政策的兼容性和落地路径</li><li>工程效率提升但未涉及团队规模调整、招聘策略变化等组织后续影响</li></ul>
+      <div class="entry-chips"><span class="entry-chip speaker">1Password</span><span class="entry-chip speaker">OpenAI</span><span class="entry-chip">生产力提升</span><span class="entry-chip">AI 工具落地</span><span class="entry-chip">工程效率</span><span class="entry-chip">产品案例</span></div>
+    </article>
+    </section>
+</div>
+<footer>
+  由 Claude Haiku 4.5 每日构建 · 2026-09-09 06:58 CST
+</footer>
+<script>
+function applyFilters() {
+  const activeTab = document.querySelector('.tab.active');
+  const cat = activeTab ? activeTab.dataset.cat : 'all';
+  const activeScore = document.querySelector('.sf-btn.active');
+  const minScore = activeScore ? parseInt(activeScore.dataset.score, 10) : 6;
+  const srcEl = document.getElementById('f-source');
+  const src = srcEl ? srcEl.value : '*';
+  document.querySelectorAll('.entry').forEach(e => {
+    const ec = e.dataset.category, es = e.dataset.source, esc = parseInt(e.dataset.score, 10);
+    const show = (cat === 'all' || ec === cat) && (src === '*' || es === src) && esc >= minScore;
+    e.classList.toggle('hidden', !show);
+  });
+  document.querySelectorAll('.day').forEach(d => {
+    const any = Array.from(d.querySelectorAll('.entry')).some(e => !e.classList.contains('hidden'));
+    d.style.display = any ? '' : 'none';
+  });
+}
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.tab').forEach(t => t.addEventListener('click', () => {
+    document.querySelectorAll('.tab').forEach(x => x.classList.remove('active'));
+    t.classList.add('active');
+    applyFilters();
+  }));
+  document.querySelectorAll('.sf-btn').forEach(b => b.addEventListener('click', () => {
+    document.querySelectorAll('.sf-btn').forEach(x => x.classList.remove('active'));
+    b.classList.add('active');
+    applyFilters();
+  }));
+  const srcEl = document.getElementById('f-source');
+  if (srcEl) srcEl.addEventListener('change', applyFilters);
+});
+</script>
+</body>
+</html>

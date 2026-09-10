@@ -1,0 +1,54 @@
+[
+  {
+    "url": "https://www.mckinsey.com/industries/financial-services/our-insights/brilliant-moves-coffee-with-lloyds-banking-group-ceo-charlie-nunn",
+    "title": "Brilliant Moves: Coffee with Lloyds Banking Group CEO Charlie Nunn",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-09-09",
+    "fetched_at": "2026-09-11T06:45:02+08:00",
+    "score": 8,
+    "summary_zh": "劳埃德银行集团 CEO Charlie Nunn 与麦肯锡顾问探讨了领导力在 AI 时代的角色。Nunn 强调信任、好奇心和乐观主义是帮助领导者重新想象机构的关键。在金融服务行业面临 AI 颠覆的背景下，这些软性领导力素质对于指导组织转型、平衡创新与风险管理显得尤为重要。文章暗示 AI 时代要求领导者不仅需要技术认知，更需要通过建立内部信任和文化调适来推动机构层面的变革。",
+    "key_points": [
+      "AI 时代领导者需要信任、好奇心和乐观主义三大核心素质",
+      "领导力的角色从执行转向重新想象机构与业务模式",
+      "金融机构需要在 AI 革新与风险管理间平衡",
+      "软性领导力对驱动组织文化和人员适应至关重要"
+    ],
+    "tags": [
+      "领导力转变",
+      "组织文化",
+      "金融行业变革",
+      "AI 时代管理"
+    ],
+    "speakers": [
+      "Charlie Nunn",
+      "Tunde Olanrewaju",
+      "McKinsey"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/mgi/our-research/the-ai-economy-interconnected-forces-feedback-loops-and-speeds-of-change",
+    "title": "The AI economy: Interconnected forces, feedback loops, and speeds of change",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-09-10",
+    "fetched_at": "2026-09-11T06:44:50+08:00",
+    "score": 7,
+    "summary_zh": "麦肯锡分析 AI 经济的系统性影响，指出 AI 不仅是技术问题，而是由多方力量驱动的复杂生态。文章强调理解 AI 的相互作用、反馈循环和变化速度对预测产业转折点至关重要。通过绘制生态全景图，帮助企业识别 AI 可能带来的组织机遇与挑战，特别是在战略决策和资源配置上的影响。",
+    "key_points": [
+      "AI 发展受政策、资本、人才等多维力量影响，非单纯技术驱动",
+      "反馈循环机制加速 AI 在企业和社会中的渗透与变革",
+      "识别关键杠杆点有助于组织在 AI 浪潮中抓住机遇、规避风险",
+      "变化速度加快要求领导者动态调整战略和运营模式"
+    ],
+    "tags": [
+      "AI生态系统",
+      "战略决策",
+      "组织适应",
+      "行业转变"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  }
+]

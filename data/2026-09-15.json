@@ -1,0 +1,81 @@
+[
+  {
+    "url": "https://sloanreview.mit.edu/article/how-ai-creates-a-capability-mirage/",
+    "title": "How AI Creates a Capability Mirage",
+    "source": "MIT Sloan Management Review",
+    "category": "business",
+    "published": "2026-09-14",
+    "fetched_at": "2026-09-15T07:23:44+08:00",
+    "score": 9,
+    "summary_zh": "MIT Sloan 与 Anthrome Insight 的联合研究指出，AI 正在组织中制造「能力幻觉」——表面输出精美，但员工真实技能暗中衰退。问题的核心在于：AI 是放大器而非改进器，不具备实际专业能力的人用 AI 生成劣质工作时，同样无力识别错误；传统的「生产性挣扎→错误学习→专业积累」的成长路径被绕过；更危险的是，组织和个人都无法准确评估真实能力水平。这导致团队信任基础瓦解，掩盖了组织的真实脆弱性。",
+    "key_points": [
+      "AI 放大既有能力水平：高手用 AI 更强，低手用 AI 生成更多劣质输出，两极分化",
+      "技能侵蚀隐形化：员工依赖 AI 输出，绕过了专业成长的必要过程（犯错、反思、积累），自我意识不足以察觉衰退",
+      "信任危机：无法辨别谁真正懂什么，团队协作的信任基础崩塌",
+      "组织自我评估失效：管理层、同事、客户都无法准确判断真实能力，风险隐伏"
+    ],
+    "tags": [
+      "组织风险",
+      "人才发展",
+      "能力评估",
+      "文化转变"
+    ],
+    "speakers": [
+      "Stephanie Antonian（Aestora CEO）",
+      "Gábor Szórád（AI Business Impact CEO）",
+      "Amir Michael（杜伦大学会计教授）"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/capabilities/operations/our-insights/stacking-the-odds-a-blueprint-for-successfully-scaling-agentic-ai",
+    "title": "Stacking the odds: A blueprint for successfully scaling agentic AI",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-09-14",
+    "fetched_at": "2026-09-15T07:23:48+08:00",
+    "score": 8,
+    "summary_zh": "麦肯锡指出，企业正在加速部署 AI Agent，但往往没有同步重新设计底层工作流程，导致价值释放受限。文章提供了系统化蓝图，强调需要在组织、流程、人员三个维度协同设计，包括明确 Agent 适配的工作类型、重新定义员工角色从执行者转向监督者和决策者、建立新的治理和技能培养体系，才能确保 Agent 部署的长期价值。这反映了生成式 AI 从技术部署向组织变革的核心转变。",
+    "key_points": [
+      "企业部署 AI Agent 速度超过工作流程重设计，造成价值兑现困难",
+      "需同步优化组织结构、流程、人员角色，而非单纯技术落地",
+      "员工角色从任务执行者转变为 Agent 监管者、决策者与策略制定者",
+      "缺少配套的治理框架、技能培养与变革管理将成为瓶颈"
+    ],
+    "tags": [
+      "Agent 落地",
+      "组织重构",
+      "工作流程再造",
+      "人员转型"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  },
+  {
+    "url": "https://www.lennysnewsletter.com/p/how-grok-bot-designers-use-ai-agents",
+    "title": "How Grok Bot designers use AI agents to build personal sites and product prototypes | John Bai & Peng Zheng",
+    "source": "Lenny's Newsletter",
+    "category": "analyst",
+    "published": "2026-09-14",
+    "fetched_at": "2026-09-15T07:24:09+08:00",
+    "score": 6,
+    "summary_zh": "SpaceX AI Grok Bot 团队的两位设计师分享如何用 AI Agent 重塑个人设计工作流。Peng 用 Grok Bot 构建自动更新的个人网站（无需 CMS），通过发送照片自动更新作品集；John 用 Figma Bro Bot 处理生产设计任务，通过语音备忘录远程指挥设计工作。两人探讨了「从灵感到原型」的加速工作流，以及 AI 如何降低设计工具门槛。核心观点：AI Agent 正在改变设计师的工作方式，从依赖产品经理/工程师的流程中解放出来，实现更敏捷的个人创意迭代。",
+    "key_points": [
+      "Grok Bot 作为后端管道，支撑设计师构建零代码个人产品与自动化工作流",
+      "AI Agent 赋能设计师跳过传统审批链路，直接从想法快速迭代原型",
+      "设计工具 AI 化降低了专业设计的技术门槛，扩展设计师的能力边界",
+      "个人 Bot 生态管理成为新的生产力组织方式，改变了设计协作模式"
+    ],
+    "tags": [
+      "设计工作流重塑",
+      "AI Agent 应用",
+      "生产力工具",
+      "个人工作方式演变"
+    ],
+    "speakers": [
+      "John Bai",
+      "Peng Zheng",
+      "SpaceX AI"
+    ]
+  }
+]

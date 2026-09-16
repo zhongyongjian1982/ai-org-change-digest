@@ -1,0 +1,74 @@
+[
+  {
+    "url": "https://www.mckinsey.com/capabilities/transformation/our-insights/the-agentic-transformation-office-redefining-the-economics-of-change",
+    "title": "The agentic transformation office: Redefining the economics of change",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-09-16",
+    "fetched_at": "2026-09-17T07:13:15+08:00",
+    "score": 9,
+    "summary_zh": "麦肯锡阐述 AI Agent 如何重塑企业变革经济学。传统大型中央团队主导的转型正被高效 Agent 系统替代，减少人力投入、加快决策周期、降低变革成本。文章强调通过自动化协调、智能决策支持，组织可用更少的中心团队完成复杂转型，重新定义企业变革的人力和财务模型，对中大型企业的组织结构、成本预算、人员配置有重要启示。",
+    "key_points": [
+      "Agent 系统取代传统大型中央变革团队，显著降低人力成本与决策周期",
+      "自动化协调与智能决策支持提升转型效率，改变企业变革资源配置模式",
+      "重新定义变革经济学，从人力密集向高效 AI 支撑的轻量化组织转变",
+      "对企业组织结构、成本预算、变革人员配置的深层影响与战略意义"
+    ],
+    "tags": [
+      "组织重构",
+      "Agent 落地",
+      "变革管理",
+      "成本优化"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  },
+  {
+    "url": "https://openai.com/index/unlocking-new-ways-of-working",
+    "title": "How workers are unlocking new ways of working",
+    "source": "OpenAI",
+    "category": "ai-lab",
+    "published": "2026-09-16",
+    "fetched_at": "2026-09-17T07:13:32+08:00",
+    "score": 7,
+    "summary_zh": "OpenAI 经济研究显示，员工正在突破传统职责边界，借助 AI 开展新类型工作。研究揭示哪些新活动已成为员工工作的常规部分，如何改变了日常工作方式。这反映了 AI 在重新定义工作内容、拓展员工能力范围、催生混合工作模式上的实际影响，为组织适应新工作形态提供数据支撑。",
+    "key_points": [
+      "员工利用 AI 超越传统岗位职责，从事原有角色外的新工作活动",
+      "某些新活动已演变为员工日常工作的常规组成部分",
+      "AI 重新定义了工作内容与员工能力需求，推动工作方式创新",
+      "研究基于真实数据，为企业理解 AI 时代工作变革提供依据"
+    ],
+    "tags": [
+      "工作方式转变",
+      "人员能力重塑",
+      "生产力提升",
+      "工作内容创新"
+    ],
+    "speakers": [
+      "OpenAI"
+    ]
+  },
+  {
+    "url": "https://stratechery.com/2026/salesforce-ai-force-agents-as-ui-the-race-to-headless/",
+    "title": "Salesforce AI Force, Agents as UI, The Race to Headless",
+    "source": "Stratechery (free posts)",
+    "category": "analyst",
+    "published": "2026-09-16",
+    "fetched_at": "2026-09-17T07:13:37+08:00",
+    "score": 7,
+    "summary_zh": "Salesforce 放弃将 UI 作为竞争壁垒，转向 AI Agent 驱动的无头架构。这反映了一个更深层的趋势：传统 UI 不再是企业软件的差异化优势，AI Agent 成为新的交互层和核心价值。Salesforce 的转向意味着企业应用的组织方式、员工与系统的互动方式正在根本性转变——从菜单驱动到意图驱动，对组织内的流程设计、用户培训、系统集成都有深远影响。",
+    "key_points": [
+      "UI 不再是竞争优势，AI Agent 成为新交互范式",
+      "企业软件从界面驱动向意图驱动演进",
+      "无头架构支持更灵活的流程和工作方式",
+      "对员工技能、培训、系统设计的重新定义"
+    ],
+    "tags": [
+      "AI Agent / 人机交互 / 企业应用重构 / 组织流程变革"
+    ],
+    "speakers": [
+      "Salesforce"
+    ]
+  }
+]

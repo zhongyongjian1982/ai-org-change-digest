@@ -1,0 +1,76 @@
+[
+  {
+    "url": "https://www.mckinsey.com/capabilities/transformation/our-insights/why-transformations-stall-and-where-only-ceos-make-the-difference",
+    "title": "Why transformations stall—and where only CEOs make the difference",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-09-17",
+    "fetched_at": "2026-09-18T07:02:53+08:00",
+    "score": 8,
+    "summary_zh": "麦肯锡分析了企业变革停滞的五大行为模式，强调只有CEO才能推动突破。文章针对领导力层面的变革障碍进行诊断，包括组织内部的心理惯性、沟通断裂、激励失衡等问题。CEO需要识别这些警告信号，通过重塑决策逻辑、强化变革承诺来打破僵局。这直接关乎组织如何在AI浪潮下进行深层次的结构与文化调整。",
+    "key_points": [
+      "五大行为陷阱导致变革失效，多为组织心理和文化根源，非执行力问题",
+      "CEO的个人领导风格和决策权力对变革成败至关重要",
+      "需识别预警信号（如团队离心、目标模糊、激励错位）并及时干预",
+      "变革需要重塑组织的思维方式和决策框架，而非仅调整流程"
+    ],
+    "tags": [
+      "变革领导力",
+      "CEO角色",
+      "组织文化",
+      "决策障碍"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/europes-new-ai-edge-the-emerging-application-layer-opportunity",
+    "title": "Europe’s new AI edge? The emerging application layer opportunity",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-09-17",
+    "fetched_at": "2026-09-18T07:02:56+08:00",
+    "score": 7,
+    "summary_zh": "麦肯锡研究指出，企业正从AI模型实验阶段转向工作流重设，欧洲可能在这个新的AI应用层机遇中处于有利位置。文章暗示企业级AI应用不再聚焦模型本身，而是如何通过AI重新设计业务流程和组织运作方式。欧洲在应用层创新可能具有竞争优势，涉及对现有工作方式、流程优化和组织能力的根本性转变。",
+    "key_points": [
+      "企业AI应用从模型实验转向工作流重设，需要深度组织变革",
+      "应用层创新成为新焦点，关乎如何改造业务流程和工作方式",
+      "欧洲在AI应用落地上可能存在地理性竞争优势或政策优势"
+    ],
+    "tags": [
+      "工作流重设",
+      "应用层落地",
+      "组织变革",
+      "欧洲AI战略"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/the-cmo-as-impact-driver-a-conversation-with-genentech-cmo-zoe-lazarre",
+    "title": "The CMO as impact driver: A conversation with Genentech CMO Zoë Lazarre",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-09-17",
+    "fetched_at": "2026-09-18T07:02:49+08:00",
+    "score": 6,
+    "summary_zh": "基因泰克 CMO Zoë Lazarre 探讨了 AI 在营销中的角色、患者信任建立以及文化对增长的影响。虽然涉及 AI 应用，但主要聚焦营销职能而非组织层面的系统性变革。指出增长依赖于文化与技术的结合，暗示领导者需要在推进技术创新的同时重视人员与文化建设，但具体如何改变组织结构、人员配置、工作流程的细节有限。",
+    "key_points": [
+      "AI 在营销中的应用需与患者信任和伦理考量相平衡",
+      "增长驱动因素：技术创新与企业文化缺一不可",
+      "CMO 角色演变：从传统营销到数据驱动、文化驱动的战略参与者",
+      "医疗行业 AI 应用面临信任与监管挑战，需谨慎推进"
+    ],
+    "tags": [
+      "营销转型",
+      "AI 应用",
+      "企业文化",
+      "领导力"
+    ],
+    "speakers": [
+      "Zoë Lazarre (Genentech CMO)"
+    ]
+  }
+]

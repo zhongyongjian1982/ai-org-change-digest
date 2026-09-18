@@ -1,0 +1,52 @@
+[
+  {
+    "url": "https://www.mckinsey.com/industries/industrials/our-insights/cutting-the-coordination-tax-how-agentic-ai-can-reshape-workflows",
+    "title": "Cutting the ‘coordination tax’: How agentic AI can reshape workflows",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-09-18",
+    "fetched_at": "2026-09-19T06:47:19+08:00",
+    "score": 8,
+    "summary_zh": "麦肯锡指出，组织要从 AI 中获得真实价值，关键不在单点效率提升，而在重新设计工作流。Agent AI 的突破口在于消除「协调税」——即工作在团队和系统间交接时的成本和延迟。通过在工作流步骤之间部署 Agent，可以自动化跨部门、跨系统的协调工作，减少人工对接，从根本上改变组织内的工作方式和流程。这要求企业重新思考团队边界、权责划分和运营架构。",
+    "key_points": [
+      "AI 价值释放的关键在于工作流重设，而非单点工具优化",
+      "「协调税」是隐形成本：工作在团队/系统交接处积压、延迟、返工",
+      "Agent AI 可自动化跨部门协调，打破流程瓶颈，改变组织协作模式",
+      "需从工作流设计和组织结构层面启动变革，不只是技术部署"
+    ],
+    "tags": [
+      "工作流重设",
+      "Agent 应用",
+      "协调成本",
+      "组织运营"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  },
+  {
+    "url": "https://www.oneusefulthing.org/p/the-overhang",
+    "title": "The Overhang",
+    "source": "One Useful Thing (Ethan Mollick)",
+    "category": "analyst",
+    "published": "2026-09-19",
+    "fetched_at": "2026-09-19T06:47:36+08:00",
+    "score": 7,
+    "summary_zh": "Ethan Mollick 指出 AI 发展呈指数级加速，但人类组织和流程跟不上。他强调当前 GPT-6 Astra 和 Fable 5.1 等模型已具备变革性能力，能可靠完成数周人工工作，但其真实潜力远未被充分开发和理解。通过将文本冒险游戏转为 3D 游戏、重建数千本书籍的图书馆、制作电影预告片等案例，说明 AI 正在执行需要人类创意判断的复杂任务，这意味着组织需要重新思考工作流程设计和人力配置。",
+    "key_points": [
+      "当前 AI 模型的现有能力远未被充分利用，组织普遍低估了其潜力",
+      "AI 已能可靠完成原需数周人工的任务，具有创意判断能力，改变工作方式",
+      "人类系统和流程跟不上 AI 发展速度，成为最大制约因素",
+      "问题不在未来 AI，而在企业如何重新设计任务和流程以匹配当前 AI 能力"
+    ],
+    "tags": [
+      "生产力变革",
+      "组织流程再设计",
+      "人力资源配置",
+      "AI 工作场景落地"
+    ],
+    "speakers": [
+      "Ethan Mollick"
+    ]
+  }
+]

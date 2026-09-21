@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+<title>2026-09-22 — AI TRANSFORMATION</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #0a0a0a; color: #999; font-family: system-ui, -apple-system, sans-serif; line-height: 1.6; min-height: 100vh; }
+a { color: inherit; text-decoration: none; }
+a:hover { color: #ccc; }
+.back-link { position: fixed; top: 18px; left: 20px; font-family: 'VT323', monospace; font-size: 1.15rem; color: #666; z-index: 100; letter-spacing: 0.02em; transition: color 0.15s; }
+.back-link:hover { color: #aaa; }
+header { padding: 60px 20px 32px; text-align: center; }
+header h1 { font-family: 'VT323', monospace; font-size: clamp(2rem, 6vw, 4rem); color: #999; letter-spacing: 0.12em; line-height: 1.1; margin-bottom: 12px; word-spacing: 0.1em; }
+header p { font-size: 0.88rem; color: #666; letter-spacing: 0.08em; }
+header p a { color: #888; transition: color 0.15s; }
+header p a:hover { color: #ccc; }
+.controls { background: #0a0a0a; border-bottom: 1px solid #1c1c1c; position: sticky; top: 0; z-index: 50; }
+.tabs { display: flex; overflow-x: auto; scrollbar-width: none; padding: 0 16px; max-width: 760px; margin: 0 auto; }
+.tabs::-webkit-scrollbar { display: none; }
+.tab { flex-shrink: 0; background: none; border: none; border-bottom: 2px solid transparent; padding: 14px 12px; font-size: 0.88rem; color: #777; cursor: pointer; font-family: system-ui, sans-serif; display: flex; align-items: center; gap: 5px; white-space: nowrap; transition: color 0.15s, border-color 0.15s; letter-spacing: 0.02em; }
+.tab.active { color: #ddd; border-bottom-color: #777; }
+.tab:hover { color: #bbb; }
+.badge { font-size: 0.74rem; color: #555; }
+.tab.active .badge { color: #999; }
+.filter-bar { display: flex; align-items: center; gap: 10px; padding: 10px 16px; border-top: 1px solid #161616; max-width: 760px; margin: 0 auto; font-size: 0.82rem; color: #666; flex-wrap: wrap; }
+.filter-bar > span { letter-spacing: 0.04em; }
+.filter-bar .sep { color: #2a2a2a; }
+.score-filter { display: flex; gap: 6px; flex-wrap: wrap; }
+.sf-btn { background: none; border: 1px solid #2a2a2a; border-radius: 3px; padding: 3px 11px; font-size: 0.8rem; color: #888; cursor: pointer; font-family: inherit; transition: color 0.15s, border-color 0.15s; letter-spacing: 0.04em; }
+.sf-btn.active, .sf-btn:hover { color: #ddd; border-color: #777; }
+.source-select { background: #0a0a0a; border: 1px solid #2a2a2a; border-radius: 3px; padding: 3px 9px; font-size: 0.8rem; color: #aaa; font-family: inherit; cursor: pointer; outline: none; }
+.source-select:hover { color: #ddd; border-color: #777; }
+.source-select option { background: #0a0a0a; color: #ccc; }
+.list { max-width: 760px; margin: 0 auto; padding: 8px 20px 80px; }
+.day { padding-top: 32px; }
+.day-head { font-size: 0.8rem; color: #555; letter-spacing: 0.12em; padding: 0 0 10px; border-bottom: 1px solid #1c1c1c; margin-bottom: 4px; text-transform: uppercase; }
+.day-head .count { color: #444; margin-left: 6px; }
+.entry { padding: 22px 0; border-bottom: 1px solid #161616; }
+.entry.hidden { display: none; }
+.entry-meta { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; font-size: 0.8rem; color: #666; margin-bottom: 8px; letter-spacing: 0.03em; }
+.entry-meta .sep { color: #2a2a2a; }
+.entry-score { color: #999; font-variant-numeric: tabular-nums; letter-spacing: 0.05em; font-weight: 500; }
+.entry-score.s-low { color: #666; }
+.entry-title { display: block; font-size: 1.1rem; color: #ccc; transition: color 0.15s; line-height: 1.5; margin-bottom: 10px; font-weight: 500; }
+.entry-title:hover { color: #fff; }
+.entry-summary { font-size: 0.95rem; color: #aaa; line-height: 1.75; margin-bottom: 10px; }
+.entry-bullets { list-style: none; padding: 0; margin: 8px 0 12px; }
+.entry-bullets li { font-size: 0.9rem; color: #888; line-height: 1.75; padding-left: 16px; position: relative; margin-bottom: 2px; }
+.entry-bullets li::before { content: '·'; position: absolute; left: 4px; color: #666; font-weight: bold; }
+.entry-chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+.entry-chip { font-size: 0.78rem; color: #777; border: 1px solid #2a2a2a; padding: 2px 9px; border-radius: 2px; letter-spacing: 0.03em; }
+.entry-chip.speaker { color: #aaa; border-color: #3a3a3a; }
+.empty-state { text-align: center; padding: 60px 20px; color: #555; font-size: 0.9rem; }
+@media (max-width: 480px) {
+  .list { padding: 8px 14px 60px; }
+  .entry-title { font-size: 1rem; }
+  .entry-summary { font-size: 0.92rem; }
+  .entry-bullets li { font-size: 0.88rem; }
+  .filter-bar { font-size: 0.74rem; gap: 8px; }
+}
+footer { text-align: center; padding: 30px 20px; color: #555; font-size: 0.78rem; letter-spacing: 0.06em; }
+footer a { color: #666; transition: color 0.15s; }
+footer a:hover { color: #999; }
+</style>
+</head>
+<body>
+<a class="back-link" href="https://www.tedzhong.com/">← tedzhong.com</a>
+<header>
+  <h1>2026-09-22</h1>
+  <p>6 条 · <a href="../index.html">← 返回最新</a> · <a href="./">归档</a></p>
+</header>
+<div class="controls">
+  <div class="tabs"><button class="tab active" data-cat="all">全部<span class="badge">6</span></button><button class="tab" data-cat="analyst">分析师<span class="badge">3</span></button><button class="tab" data-cat="business">商业<span class="badge">3</span></button></div>
+  <div class="filter-bar">
+    <span>评分</span>
+    <div class="score-filter">
+      <button class="sf-btn active" data-score="6">≥6</button>
+      <button class="sf-btn" data-score="7">≥7</button>
+      <button class="sf-btn" data-score="8">≥8</button>
+      <button class="sf-btn" data-score="9">≥9</button>
+    </div>
+    <span class="sep">·</span>
+    <span>来源</span>
+    <select class="source-select" id="f-source"><option value="*">全部</option><option value="Lenny&#x27;s Newsletter">Lenny&#x27;s Newsletter</option><option value="McKinsey Insights">McKinsey Insights</option><option value="Stratechery (free posts)">Stratechery (free posts)</option></select>
+  </div>
+</div>
+<div class="list">
+<section class="day"><div class="day-head">2026-09-22<span class="count">· 6 条</span></div>
+    <article class="entry" data-source="Lenny&#x27;s Newsletter" data-category="analyst" data-score="9">
+      <div class="entry-meta">
+        <span class="entry-score">9/10</span>
+        <span class="sep">·</span>
+        <span>Lenny&#x27;s Newsletter</span>
+        <span class="sep">·</span>
+        <span>分析师</span>
+        <span class="sep">·</span>
+        <span>2026-09-21</span>
+      </div>
+      <a class="entry-title" href="https://www.lennysnewsletter.com/p/how-warp-ships-2000-prs-a-month-with" target="_blank" rel="noopener">How Warp ships 2,000 PRs a month with AI factories | Zach Lloyd (CEO, Warp)</a>
+      <p class="entry-summary">Warp CEO Zach Lloyd详解AI软件工厂如何重塑工程组织工作流。核心创新是将Slack消息自动触发完整的代码提交流程（Linear→GitHub→QA），月均2000个PR合并。关键洞察：人工审查成为真正瓶颈而非编码；通过LLM-as-judge评分每次Agent运行、追踪成本-质量权衡、从失败案例自学习，实现工作流持续优化。CEO本人也用AI Agent处理非技术工作（如Figma、会议记录），体现Agent从开发者工具向全组织生产力工具的扩展。</p>
+      <ul class="entry-bullets"><li>软件工厂自动化端到端工作流：从Slack idea到merged PR，无需手工干预</li><li>人工代码审查成新瓶颈：自动化编码后，Review环节成为限制吞吐量的关键因素</li><li>Agent自我优化闭环：用LLM评分失败案例，自动调整模型、成本配置、任务流程</li><li>CEO用AI处理管理工作：Figma、会议记录、研究等非编码任务也用Agent化工具</li></ul>
+      <div class="entry-chips"><span class="entry-chip speaker">Zach Lloyd</span><span class="entry-chip">Agent落地</span><span class="entry-chip">工程效率</span><span class="entry-chip">工作流自动化</span><span class="entry-chip">组织工具链</span></div>
+    </article>
+    
+    <article class="entry" data-source="McKinsey Insights" data-category="business" data-score="9">
+      <div class="entry-meta">
+        <span class="entry-score">9/10</span>
+        <span class="sep">·</span>
+        <span>McKinsey Insights</span>
+        <span class="sep">·</span>
+        <span>商业</span>
+        <span class="sep">·</span>
+        <span>2026-09-21</span>
+      </div>
+      <a class="entry-title" href="https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/wired-the-ai-playbook-top-companies-use" target="_blank" rel="noopener">WIRED: The AI playbook top companies use</a>
+      <p class="entry-summary">麦肯锡资深顾问 Dan Swan 指出，企业要实现 AI 的全面价值，必须超越零散的试点项目，在技术、流程、人员和领导力四个维度进行根本性的业务重塑。这不仅是工具升级，而是系统的组织变革——涉及流程再造、人才能力重定义、决策权力分配调整和文化转变。仅有 AI 实验室和孤立项目远不足够，需要从上至下的整体规划和执行能力。</p>
+      <ul class="entry-bullets"><li>AI 价值释放需要跨越孤立试点，推进全面组织重塑而非单点优化</li><li>四大维度变革：技术基础设施、业务流程、人员能力与领导力导向的统一调整</li><li>企业文化与决策权力重新配置是落地 AI 战略的隐形杠杆，不可忽视</li></ul>
+      <div class="entry-chips"><span class="entry-chip speaker">Dan Swan（麦肯锡）</span><span class="entry-chip speaker">McKinsey</span><span class="entry-chip">组织重构</span><span class="entry-chip">变革管理</span><span class="entry-chip">AI 战略落地</span><span class="entry-chip">领导力转变</span></div>
+    </article>
+    
+    <article class="entry" data-source="McKinsey Insights" data-category="business" data-score="7">
+      <div class="entry-meta">
+        <span class="entry-score">7/10</span>
+        <span class="sep">·</span>
+        <span>McKinsey Insights</span>
+        <span class="sep">·</span>
+        <span>商业</span>
+        <span class="sep">·</span>
+        <span>2026-09-21</span>
+      </div>
+      <a class="entry-title" href="https://www.mckinsey.com/quarterly/the-five-fifty/five-fifty-the-economics-of-ai" target="_blank" rel="noopener">The economics of AI</a>
+      <p class="entry-summary">McKinsey 指出 AI 成本管理成为企业新挑战。随着 token 使用量增加和工作流复杂度提升，AI 经济性变得难以预测，企业领导者需要建立新的成本管理机制。这涉及对 AI 投资回报率的重新评估、预算分配策略调整，以及如何在降本增效承诺与实际支出之间找到平衡。成本可控性直接影响 AI 规模化落地的可行性。</p>
+      <ul class="entry-bullets"><li>AI 成本上升成为企业普遍挑战，token 消耗和工作流复杂化难以预测</li><li>企业需要建立新的 AI 经济管理框架，而非简单的传统成本控制方法</li><li>成本可控性将决定 AI 在组织中能否有效规模化应用和落地</li></ul>
+      <div class="entry-chips"><span class="entry-chip speaker">McKinsey</span><span class="entry-chip">成本管理</span><span class="entry-chip">AI 投资决策</span><span class="entry-chip">组织效率</span><span class="entry-chip">领导力</span></div>
+    </article>
+    
+    <article class="entry" data-source="McKinsey Insights" data-category="business" data-score="7">
+      <div class="entry-meta">
+        <span class="entry-score">7/10</span>
+        <span class="sep">·</span>
+        <span>McKinsey Insights</span>
+        <span class="sep">·</span>
+        <span>商业</span>
+        <span class="sep">·</span>
+        <span>2026-09-21</span>
+      </div>
+      <a class="entry-title" href="https://www.mckinsey.com/industries/life-sciences/our-insights/novartiss-christian-diehl-on-scaling-ai-beyond-the-demo" target="_blank" rel="noopener">Novartis’s Christian Diehl on scaling AI beyond the demo</a>
+      <p class="entry-summary">诺华制药首席数据和数字官 Christian Diehl 分享了该公司如何通过数据平台投资，将 AI 从概念验证阶段扩展到生产实践。重点涉及三个领域：AI 安全预测、生成化学和加速转化。文章体现了大型制药企业如何通过 AI 基础设施建设改变研发流程、加快从发现到临床应用的周期，反映了 AI 对产业工作流程和组织能力的实际影响。</p>
+      <ul class="entry-bullets"><li>数据平台投资是 AI 规模化的关键基础，不只是模型本身</li><li>AI 在安全预测、化学生成等具体研发环节实现落地应用</li><li>企业需要从演示项目向生产系统转变的组织和技术架构调整</li><li>AI 能显著压缩新药研发周期，改变传统研发节奏和人员配置</li></ul>
+      <div class="entry-chips"><span class="entry-chip speaker">Christian Diehl（诺华制药首席数据和数字官）</span><span class="entry-chip">AI 落地 / 研发流程 / 数据基础设施 / 生产力提升</span></div>
+    </article>
+    
+    <article class="entry" data-source="Stratechery (free posts)" data-category="analyst" data-score="7">
+      <div class="entry-meta">
+        <span class="entry-score">7/10</span>
+        <span class="sep">·</span>
+        <span>Stratechery (free posts)</span>
+        <span class="sep">·</span>
+        <span>分析师</span>
+        <span class="sep">·</span>
+        <span>2026-09-21</span>
+      </div>
+      <a class="entry-title" href="https://stratechery.com/2026/frontier-overhangs/" target="_blank" rel="noopener">Frontier Overhangs</a>
+      <p class="entry-summary">本文讨论 AI 安全哲学与商业利益的交集。作者认为「控制前沿」等安全论调实际上为大模型公司解决多个结构性问题：一是能力过剩（Capability Overhang），Agent 范式虽强大但需巨量计算，放缓创新可减轻基础设施压力；二是模型与应用层的集成分化，提速放缓可让领先者巩固集成优势，防止开源模型追赶。作者认为这些「过剩」是快速迭代的产物，减速看似安全实为保护商业地位。</p>
+      <ul class="entry-bullets"><li>Agent 能力过剩推高基础设施成本，&#x27;控制前沿&#x27;论调可为放缓创新提供正当性</li><li>模型与应用集成度决定利润流向，放缓给领先者时间巩固差异化优势</li><li>Anthropic 等公司的安全主张与商业利益高度重合，需警惕混淆目的</li><li>开源与小模型追赶速度快，放缓创新或是防止被颠覆的策略</li></ul>
+      <div class="entry-chips"><span class="entry-chip speaker">Dario Amodei（Anthropic CEO）</span><span class="entry-chip speaker">Ben Thompson（Stratechery 作者）</span><span class="entry-chip">竞争策略</span><span class="entry-chip">行业结构</span><span class="entry-chip">安全与商业利益</span><span class="entry-chip">Agent 与基础设施</span></div>
+    </article>
+    
+    <article class="entry" data-source="Lenny&#x27;s Newsletter" data-category="analyst" data-score="6">
+      <div class="entry-meta">
+        <span class="entry-score s-low">6/10</span>
+        <span class="sep">·</span>
+        <span>Lenny&#x27;s Newsletter</span>
+        <span class="sep">·</span>
+        <span>分析师</span>
+        <span class="sep">·</span>
+        <span>2026-09-21</span>
+      </div>
+      <a class="entry-title" href="https://www.lennysnewsletter.com/p/how-i-ai-metas-muse-review-how-warp" target="_blank" rel="noopener">🎙️ How I AI: Meta’s Muse review + How Warp ships 2,000 PRs a month with AI factories</a>
+      <p class="entry-summary">Meta推出消费级AI Agent「Muse」，在UX设计上展现了Meta在Facebook/Instagram积累的信任构建能力。核心亮点包括：细粒度权限请求机制（在需要时询问而非预先授权）、透明的活动日志供开发者审查、多轮目标追踪（而非单次任务完成）。评测显示Muse在日历管理、邮件处理、内容生成上表现突出，但浏览器购物能力仍是短板。启示是消费级Agent应优先关注信任与体验细节而非功能堆砌，权限管理、透明度、人性化交互是差异化要点。</p>
+      <ul class="entry-bullets"><li>消费级Agent设计关键：细粒度权限管理（按需询问）比无限授权更建立信任</li><li>透明的活动日志（工具调用、步骤记录）成为Agent可信度的关键差异化因素</li><li>多轮目标追踪产品模型不同于单次任务，需温暖持续的陪伴而非冷冰完成</li><li>Meta的社交产品UX底蕴在Muse中体现：零摩擦的onboarding与权限流程</li><li>浏览器自动化购物仍是全行业短板，跨平台Agent需突破此技术瓶颈</li></ul>
+      <div class="entry-chips"><span class="entry-chip speaker">Meta</span><span class="entry-chip">Agent落地</span><span class="entry-chip">消费级AI设计</span><span class="entry-chip">信任与权限管理</span><span class="entry-chip">用户体验</span></div>
+    </article>
+    </section>
+</div>
+<footer>
+  由 Claude Haiku 4.5 每日构建 · 2026-09-22 07:33 CST
+</footer>
+<script>
+function applyFilters() {
+  const activeTab = document.querySelector('.tab.active');
+  const cat = activeTab ? activeTab.dataset.cat : 'all';
+  const activeScore = document.querySelector('.sf-btn.active');
+  const minScore = activeScore ? parseInt(activeScore.dataset.score, 10) : 6;
+  const srcEl = document.getElementById('f-source');
+  const src = srcEl ? srcEl.value : '*';
+  document.querySelectorAll('.entry').forEach(e => {
+    const ec = e.dataset.category, es = e.dataset.source, esc = parseInt(e.dataset.score, 10);
+    const show = (cat === 'all' || ec === cat) && (src === '*' || es === src) && esc >= minScore;
+    e.classList.toggle('hidden', !show);
+  });
+  document.querySelectorAll('.day').forEach(d => {
+    const any = Array.from(d.querySelectorAll('.entry')).some(e => !e.classList.contains('hidden'));
+    d.style.display = any ? '' : 'none';
+  });
+}
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.tab').forEach(t => t.addEventListener('click', () => {
+    document.querySelectorAll('.tab').forEach(x => x.classList.remove('active'));
+    t.classList.add('active');
+    applyFilters();
+  }));
+  document.querySelectorAll('.sf-btn').forEach(b => b.addEventListener('click', () => {
+    document.querySelectorAll('.sf-btn').forEach(x => x.classList.remove('active'));
+    b.classList.add('active');
+    applyFilters();
+  }));
+  const srcEl = document.getElementById('f-source');
+  if (srcEl) srcEl.addEventListener('change', applyFilters);
+});
+</script>
+</body>
+</html>

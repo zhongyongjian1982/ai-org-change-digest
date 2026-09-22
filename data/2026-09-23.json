@@ -1,0 +1,57 @@
+[
+  {
+    "url": "https://www.lennysnewsletter.com/p/advanced-evals-how-to-find-and-fix",
+    "title": "Advanced evals: How to find (and fix) hidden AI failures in your product",
+    "source": "Lenny's Newsletter",
+    "category": "analyst",
+    "published": "2026-09-22",
+    "fetched_at": "2026-09-23T07:14:23+08:00",
+    "score": 7,
+    "summary_zh": "文章强调 AI 产品评估（evals）已成为 PM 和工程师的核心技能，但大多数团队跳过关键的「错误发现」阶段直接写指标，导致测量无关紧要的问题。作者通过 50+ AI 公司案例（Shopify、Cursor、Ramp 等）说明系统化 evals 能显著提升产品性能并降成本。强调 evals 是 AI 产品的竞争壁垒，能帮助团队在快速迭代中保持质量控制。",
+    "key_points": [
+      "Evals 已成为 AI PM/工程师的关键竞争力，是 AI 创业公司的核心护城河",
+      "大多数团队错误地跳过「错误发现」直接写指标，导致测量方向错误或粒度不当",
+      "系统化 evals 能带来实际业务价值：Shopify 效率提升 2.2 倍成本降 68%，Cursor 成本降 41%",
+      "Evals 使 AI 产品能快速迭代同时自动检测破坏性变更，形成持续改进优势"
+    ],
+    "tags": [
+      "AI 产品评估",
+      "质量保证",
+      "快速迭代",
+      "团队能力建设"
+    ],
+    "speakers": [
+      "Mike Krieger（Anthropic 前 CPO，现 Labs 负责人）",
+      "Garry Tan（Y Combinator CEO）",
+      "Hamel 和 Shreya（Evals 专家作者）"
+    ]
+  },
+  {
+    "url": "https://sloanreview.mit.edu/article/five-urgent-priorities-for-cmos-in-2027/",
+    "title": "Five Urgent Priorities for CMOs in 2027",
+    "source": "MIT Sloan Management Review",
+    "category": "business",
+    "published": "2026-09-22",
+    "fetched_at": "2026-09-23T07:13:51+08:00",
+    "score": 7,
+    "summary_zh": "MIT Sloan研究基于15位全球CMO访谈，指出营销职能正处于关键转折点。AI正在根本性重塑营销工作而非仅作效率工具；CMO需从营销专家转变为增长战略伙伴，参与产品决策上游；零点击平台和碎片化媒体生态改写了传统衡量指标；企业面临人才技能快速迭代的挑战。文章强调结构重组、人才策略和度量框架重建的紧迫性，呼吁CMO主动塑造未来而非被动适应。",
+    "key_points": [
+      "AI不仅提升效率，正在根本性改造营销职能本身和工作任务定义",
+      "CMO需从专业营销人转变为增长战略伙伴，参与产品决策提升企业影响力",
+      "零点击平台和算法分发破坏传统点击指标，需要重建营销衡量体系",
+      "员工技能快速过时，企业面临人才结构危机，需要新的招聘和培养模式",
+      "营销领导者需设计更有效的组织和工作方式，而非仅学习工具"
+    ],
+    "tags": [
+      "职能重构",
+      "人才策略",
+      "AI转型",
+      "领导力演变"
+    ],
+    "speakers": [
+      "Amy Martin Ziegenfuss",
+      "Julie Nestor",
+      "John Costello"
+    ]
+  }
+]

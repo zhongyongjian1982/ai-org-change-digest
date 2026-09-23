@@ -1,0 +1,126 @@
+[
+  {
+    "url": "https://sloanreview.mit.edu/article/why-design-thinking-needs-a-responsibility-reboot/",
+    "title": "Why Design Thinking Needs a Responsibility Reboot",
+    "source": "MIT Sloan Management Review",
+    "category": "business",
+    "published": "2026-09-23",
+    "fetched_at": "2026-09-24T07:06:06+08:00",
+    "score": 7,
+    "summary_zh": "MIT Sloan 研究指出，设计思维等以用户为中心的方法在创新实践中存在系统性伦理盲点。通过对27位科技、制药、咨询领域高管的采访，研究发现这些方法虽旨在满足用户需求，但往往忽视潜在伤害（如Meta案例中的成瘾设计、Juul电子烟针对青少年的营销）。文章强调组织需建立清晰的伦理框架，在追求用户参与度时平衡利益相关者的整体福祉，这关乎公司治理和责任文化重构。",
+    "key_points": [
+      "设计思维虽以用户为中心，但缺乏明确伦理框架，容易产生意想不到的伤害与社会成本",
+      "组织在追求用户参与度与产品吸引力时，系统性忽视了对弱势群体和长期危害的考虑",
+      "需重新设计企业治理机制与决策流程，将伦理评估嵌入产品创新全周期",
+      "仅聚焦用户反馈可能导致'用户盲目'，忽视更广泛的利益相关者与社会影响"
+    ],
+    "tags": [
+      "组织伦理与治理",
+      "创新方法论反思",
+      "产品责任与伤害预防",
+      "领导力与决策框架"
+    ],
+    "speakers": [
+      "MIT Sloan Management Review"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/industries/financial-services/our-insights/indias-new-insurance-track-the-marathon-becomes-an-ai-led-decathlon",
+    "title": "India’s new insurance track: The marathon becomes an AI-led decathlon",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-09-23",
+    "fetched_at": "2026-09-24T07:06:17+08:00",
+    "score": 7,
+    "summary_zh": "McKinsey 分析指出，随着印度经济增长，保险企业需通过生产力提升、运营模式现代化和 AI 技术规模化来捕获价值。文章将保险业从传统的「马拉松」转变为 AI 驱动的「十项全能」竞赛，强调 AI 不仅是技术升级，更是企业流程重塑和竞争力重构的关键驱动力，涉及组织能力、运营效率和商业模式的全面转变。",
+    "key_points": [
+      "AI 成为保险业从传统模式向现代运营转变的核心引擎，不仅提升生产力，更改造企业竞争格局",
+      "保险企业需跨越多个维度（运营、技术、人才）同步转变，从单一轨道升级为多维竞争能力",
+      "企业规模化部署 AI 是关键，从试点到全企业覆盖的转变决定长期竞争优势"
+    ],
+    "tags": [
+      "运营现代化",
+      "AI 规模化",
+      "生产力提升",
+      "行业转型"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/capabilities/operations/our-insights/rewiring-procurement-in-resources-making-judgment-an-enduring-asset",
+    "title": "Rewiring procurement in resources: Making judgment an enduring asset",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-09-23",
+    "fetched_at": "2026-09-24T07:06:24+08:00",
+    "score": 7,
+    "summary_zh": "麦肯锡指出，资源行业采购领导者可通过 AI 将采购职能的专业知识编码化，不仅能提升价值捕获，更重要的是将多年积累的判断力转化为可持续的竞争优势。这涉及知识资产化与人才杠杆化——让稀缺的采购专家经验通过 AI 系统得以复用和传承，改变传统采购组织对人员依赖的模式。",
+    "key_points": [
+      "AI 编码采购专业知识，将隐性判断转为显性资产，防止人才流失风险",
+      "提升采购职能的可扩展性与决策一致性，降低对资深专家的单点依赖",
+      "知识复合优势：AI+人类判断结合，比单纯自动化产生更大价值",
+      "适用于资源行业特定采购场景，专业性强，难被复制"
+    ],
+    "tags": [
+      "知识资产化",
+      "采购职能转型",
+      "组织杠杆化",
+      "人才策略"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/capabilities/operations/our-insights/maintenance-meets-ai-a-proven-approach-for-asset-heavy-industries",
+    "title": "Maintenance meets AI: A proven approach for asset-heavy industries",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-09-23",
+    "fetched_at": "2026-09-24T07:06:13+08:00",
+    "score": 6,
+    "summary_zh": "麦肯锡分析了AI如何重塑资产密集型产业的维护运营。通过将生成式AI和新技术融入日常维护流程，企业正将维护从成本中心转变为价值创造引擎。这涉及工作流程重新设计、技术人员角色升级，以及通过预测性维护减少停机时间。该转变要求组织在人员培训、流程标准化和AI工具集成方面做出系统投入，对资产密集型行业的运营效率和人力资源配置产生深层影响。",
+    "key_points": [
+      "维护从成本中心向价值驱动中心转变，需要组织运营模式重构",
+      "技术人员角色升级：从被动应急维修转向主动预测性维护决策支持",
+      "AI赋能流程优化对工作方式、技能需求、组织架构的系统性重塑",
+      "资产密集型产业需系统性投入员工培训和AI工具整合能力"
+    ],
+    "tags": [
+      "流程重构",
+      "人员能力升级",
+      "生产力提升",
+      "运营效率"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  },
+  {
+    "url": "https://openai.com/index/airbnb-gpt-6-astra",
+    "title": "Airbnb widens access to GPT-6 Astra and OpenAI frontier models",
+    "source": "OpenAI",
+    "category": "ai-lab",
+    "published": "2026-09-23",
+    "fetched_at": "2026-09-24T07:06:44+08:00",
+    "score": 6,
+    "summary_zh": "Airbnb 扩大了对 GPT-6 Astra 和 OpenAI 前沿模型的访问权限，帮助工程团队更快地解决 bug、设计系统和发布产品。这反映了大型科技公司正在将生成式 AI 深度集成到开发流程中，以提升工程效率和交付速度。虽然具体影响细节未详述，但表明 AI 正改变研发团队的工作方式和生产力指标。",
+    "key_points": [
+      "大型科技企业将前沿 AI 模型制度化集成到工程实践中",
+      "AI 被用于加速 debug、系统设计、产品发布等核心开发环节",
+      "扩大访问意味着从个别试点转向团队级、组织级应用"
+    ],
+    "tags": [
+      "生产力提升",
+      "工程效率",
+      "AI 工具链",
+      "开发者体验"
+    ],
+    "speakers": [
+      "Airbnb",
+      "OpenAI"
+    ]
+  }
+]

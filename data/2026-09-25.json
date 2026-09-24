@@ -1,0 +1,55 @@
+[
+  {
+    "url": "https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/democratized-superintelligence-is-coming-the-world-needs-to-get-ready",
+    "title": "Democratized superintelligence is coming: The world needs to get ready",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-09-24",
+    "fetched_at": "2026-09-25T07:23:58+08:00",
+    "score": 7,
+    "summary_zh": "OpenAI主席Bret Taylor认为，民主化的超级智能即将到来。虽然AI短期内存在可解决的网络安全风险，但其更大的潜力在于将世界顶级知识民主化供全民使用。这意味着组织需要重新思考知识获取、员工赋能和竞争优势的定义。文章暗示AI将打破知识垄断，要求企业重新审视人员配置、培训模式和决策权分配。",
+    "key_points": [
+      "民主化超级智能将改变知识获取模式，打破组织内的信息不对称",
+      "网络安全风险虽存在但可控，不应成为部署AI的根本障碍",
+      "企业需要重新定义竞争优势，从知识垄断转向AI协作能力",
+      "知识民主化要求组织重新思考招聘、培训和员工赋能策略"
+    ],
+    "tags": [
+      "知识民主化",
+      "人才赋能",
+      "组织适应",
+      "竞争力重构"
+    ],
+    "speakers": [
+      "Bret Taylor",
+      "OpenAI",
+      "McKinsey"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/the-new-growth-mandate-a-conversation-with-linkedin-cmo-jessica-jensen",
+    "title": "The new growth mandate: A conversation with LinkedIn CMO Jessica Jensen",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-09-24",
+    "fetched_at": "2026-09-25T07:24:02+08:00",
+    "score": 7,
+    "summary_zh": "LinkedIn首席营销官Jessica Jensen在Cannes Lions 2026与麦肯锡资深合伙人讨论如何将AI从实验阶段转化为增长催化剂。对话聚焦企业如何系统性地将AI能力整合到业务流程中，实现从小范围试点到规模化应用的转变。核心观点在于：AI不仅是技术工具，更需要组织层面的战略调整、人员赋能和流程重构，才能真正驱动商业增长。",
+    "key_points": [
+      "AI从实验到规模化需要组织战略层面的系统转变，而非仅技术升级",
+      "CMO视角强调营销/增长部门如何重新定义工作流程与人员能力",
+      "AI催化增长需要文化与流程配套，单纯技术投入不足",
+      "企业需要建立AI-ready的组织结构和决策机制"
+    ],
+    "tags": [
+      "组织转型",
+      "AI规模化应用",
+      "增长战略",
+      "领导力与文化变革"
+    ],
+    "speakers": [
+      "Jessica Jensen (LinkedIn CMO)",
+      "Dianne Esber (McKinsey Senior Partner)"
+    ]
+  }
+]

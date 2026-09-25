@@ -1,0 +1,29 @@
+[
+  {
+    "url": "https://stratechery.com/2026/begun-the-aggregator-wars-have/",
+    "title": "2026.39: Begun, the Aggregator Wars Have",
+    "source": "Stratechery (free posts)",
+    "category": "analyst",
+    "published": "2026-09-26",
+    "fetched_at": "2026-09-26T07:29:16+08:00",
+    "score": 7,
+    "summary_zh": "Stratechery 本周内容聚焦 AI Agent 对商业生态的冲击，特别是平台间的「聚合器之战」。Meta 的 Muse Agent 被 Amazon 封杀，反映出 AI 助手与电商平台的利益冲突——Muse 绕过广告、威胁 Amazon 商业模式，而 Amazon 的物理配送网络成为其 AI 时代的护城河。文章指出 Meta 需要与 Walmart 合作才能对抗 Amazon，同时讨论 Google 在此轮竞争中的缺席。另涉及 GM 被迫重新支持 CarPlay 的案例，展示消费者压力对企业战略的影响。",
+    "key_points": [
+      "AI Agent 正触发平台层级战争，Amazon 用物理世界优势阻挡 Meta，体现数据和配送网络的战略价值",
+      "Muse 绕过广告模式威胁 Amazon 营收，Amazon 可通过控制接入权构建 AI 时代护城河",
+      "Meta 需与零售商（Walmart）联盟对抗 Amazon，显示 AI 企业生态中联盟重组趋势",
+      "GM 放弃自主系统回归 CarPlay 证明用户体验优先级上升，企业战略需随市场反馈调整"
+    ],
+    "tags": [
+      "平台竞争",
+      "Agent 落地",
+      "生态联盟",
+      "商业模式冲突"
+    ],
+    "speakers": [
+      "Ben Thompson",
+      "Andrew Sharp",
+      "Jeremy Stern"
+    ]
+  }
+]

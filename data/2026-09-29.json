@@ -1,0 +1,26 @@
+[
+  {
+    "url": "https://www.mckinsey.com/industries/healthcare/our-insights/the-ai-powered-future-of-care",
+    "title": "The AI-powered future of care",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-09-28",
+    "fetched_at": "2026-09-29T08:30:19+08:00",
+    "score": 7,
+    "summary_zh": "麦肯锡研究表明，AI 在医疗领域不会替代临床医生，但能提升诊疗质量、扩大可及性，并重塑医疗劳动力结构、支付模式和患者量分布。当前 AI 已可承担美国门诊工作量的 16-22%。这反映了 AI 在特定行业如何改变岗位构成、薪酬体系和工作流程的现实。",
+    "key_points": [
+      "AI 承担医疗工作的 16-22%，关键是重塑而非替代临床角色",
+      "医疗行业面临劳动力结构调整、薪酬模式变革",
+      "AI 通过提升质量和可及性改变患者服务模式和容量配置"
+    ],
+    "tags": [
+      "劳动力重构",
+      "行业变革",
+      "人机协作",
+      "生产力提升"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  }
+]

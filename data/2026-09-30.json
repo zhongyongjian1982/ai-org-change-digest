@@ -1,0 +1,159 @@
+[
+  {
+    "url": "https://sloanreview.mit.edu/article/how-to-outcompete-your-clients-ai/",
+    "title": "How to Outcompete Your Client’s AI",
+    "source": "MIT Sloan Management Review",
+    "category": "business",
+    "published": "2026-09-29",
+    "fetched_at": "2026-09-30T04:44:45+08:00",
+    "score": 8,
+    "summary_zh": "生成式AI正在重塑企业的外包决策边界。当企业用AI能力替代外部顾问服务后，传统服务商面临存亡危机。文章指出：服务商不能再单靠专业知识竞争，必须转向规模化生产和单位经济学优势。成功者如WPP通过建立AI平台、融入几十年专有数据和知识框架，实现了从定制交付到服务产品化的转变。这要求服务商根本性地重新思考商业模式——不是守护专业性，而是通过自动化管道和跨客户成本摊销来实现更低价格。",
+    "key_points": [
+      "AI使企业能内化原由外包商提供的工作，威胁传统服务商的价值主张",
+      "单纯依赖专家技能已无法竞争，服务商必须转向规模化生产和单位经济学",
+      "成功路径：标准化工作流、专有数据训练模型、将知识打包成可复用系统",
+      "WPP等先行者通过AI平台整合decades数据和行为科学框架，构建难以复制的护城河"
+    ],
+    "tags": [
+      "外包模式重构",
+      "服务商转型",
+      "生产力与成本",
+      "商业模式创新"
+    ],
+    "speakers": [
+      "Alturas Capital Partners",
+      "WPP",
+      "Coca-Cola"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/mgi/our-research/workforce-in-motion-skills-and-pathways-to-future-jobs-in-the-united-states",
+    "title": "Workforce in motion: Skills and pathways to future jobs in the United States",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-09-29",
+    "fetched_at": "2026-09-30T04:44:49+08:00",
+    "score": 8,
+    "summary_zh": "麦肯锡研究指出，AI、自动化及结构性变化正加速美国劳动力重新配置。企业与政府需创建新的职业晋升路径、开发适应性技能培养体系，同时打破传统行业壁垒，帮助从衰退行业的从业者向成长行业流动。核心是通过系统性人才重塑而非单纯的岗位消亡应对AI冲击。",
+    "key_points": [
+      "AI与自动化推动劳动力跨行业、跨岗位的大规模转移",
+      "需要建立灵活的职业发展路径，打破传统行业与岗位的刚性壁垒",
+      "重点在于技能重训与适应性能力，而非被动应对失业",
+      "系统性变革需政府、企业、教育机构协同推进"
+    ],
+    "tags": [
+      "人才策略",
+      "劳动力重塑",
+      "技能升级",
+      "组织变革"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/how-leaders-are-turning-ai-into-growth",
+    "title": "How leaders are turning AI into growth",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-09-29",
+    "fetched_at": "2026-09-30T04:45:02+08:00",
+    "score": 8,
+    "summary_zh": "麦肯锡研究发现，近90%企业在AI投资，但仅6%看到实际业绩增长。关键差异在于领导力的执行方式。文章暗示大多数公司的AI投资停留在试点阶段，缺乏系统化的组织整合、流程重塑和人才配置调整。成功企业将AI嵌入战略决策、重新设计工作流程、建立跨职能协作机制，而非孤立的技术购买。这反映出AI价值实现不在技术本身，而在组织能力、领导决策和变革管理。",
+    "key_points": [
+      "90%投资vs6%成果差异，揭示AI实施从技术驱动向战略驱动的鸿沟",
+      "成功企业重组织架构、流程、人才配置，而非单纯购买AI工具",
+      "领导力决策方式（如何部署、谁负责、与业务的耦合度）直接影响AI ROI",
+      "AI增长需要系统性变革，包括决策权重塑、跨部门协同、员工再技能化"
+    ],
+    "tags": [
+      "组织变革",
+      "领导力决策",
+      "AI落地",
+      "生产力与增长"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/capabilities/people-and-organization/our-insights/ai-is-changing-how-we-work-is-your-organization-ready",
+    "title": "AI is changing how we work. Is your organization ready?",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-09-28",
+    "fetched_at": "2026-09-30T04:45:08+08:00",
+    "score": 8,
+    "summary_zh": "McKinsey 指出 AI 正在根本性地改变工作方式，企业领导者面临重新思考职位、团队构成和工作流程的紧迫任务。文章强调这不仅是技术升级，而是组织层面的深度变革——涉及人员角色重新定义、团队结构调整、工作方式创新。关键在于领导力是否能够主动适应这一变化，以及组织的准备程度如何应对由 AI 驱动的工作形态转变。",
+    "key_points": [
+      "AI 推动职位、团队、工作流程的根本性重构，非增量式改变",
+      "领导者需主动审视组织准备度，而非被动应对技术变化",
+      "涉及人员角色再定义与团队结构优化的核心议题"
+    ],
+    "tags": [
+      "组织重构",
+      "领导力变革",
+      "工作方式创新",
+      "人员管理"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  },
+  {
+    "url": "https://www.lennysnewsletter.com/p/all-of-the-lenny-and-friends-summit",
+    "title": "All of the Lenny & Friends Summit talks are now online!",
+    "source": "Lenny's Newsletter",
+    "category": "analyst",
+    "published": "2026-09-29",
+    "fetched_at": "2026-09-30T04:45:34+08:00",
+    "score": 7,
+    "summary_zh": "Lenny & Friends 峰会汇聚了来自 Stripe、Atlassian、Google、OpenAI、Anthropic 等公司的产品与 AI 领导者。核心讨论围绕 AI 对产品开发流程、PM 角色、团队结构的改造：软件工厂化加速了构建速度，但也强化了选择「正确问题」的重要性；传统路线图正在重新定义；PM 需要具备更广泛的能力；同时团队面临孤独感增加的挑战。整个行业仍在探索 AI 时代的最佳实践，强调「没有单一答案，取决于具体场景」。",
+    "key_points": [
+      "AI 加速产品构建，但选择构建什么、定义成功标准的能力变得更稀缺",
+      "PM 角色在扩展而非收敛，需要跨越产品、设计、工程能力边界",
+      "传统路线图、流程、组织模式面临重新设计，行业尚无共识最佳实践",
+      "Agent 时代工作变得孤独，团队更需要高质量的人际连接与协作空间",
+      "领导者共识：我们都在探索阶段，最佳实践尚未成文，需要集体发现"
+    ],
+    "tags": [
+      "PM 角色重塑",
+      "AI 工具链对工作方式的影响",
+      "组织流程重设",
+      "人才与文化"
+    ],
+    "speakers": [
+      "Katie Dill（Stripe 设计负责人）",
+      "Tamar Yehoshua（Atlassian CPO & AI Officer）",
+      "Geoff Charles（Ramp CPO）",
+      "Robby Stein（Google Search 产品副总裁）",
+      "Karri Saarinen（Linear CEO）",
+      "Ami Vora（Anthropic CPO）",
+      "Mike Krieger（Anthropic Labs 负责人）"
+    ]
+  },
+  {
+    "url": "https://stratechery.com/2026/one-more-note-on-agents-meta-connect-meta-enterprise-platform/",
+    "title": "One More Note on Agents, Meta Connect, Meta Enterprise Platform",
+    "source": "Stratechery (free posts)",
+    "category": "analyst",
+    "published": "2026-09-29",
+    "fetched_at": "2026-09-30T04:45:26+08:00",
+    "score": 7,
+    "summary_zh": "作者认为 Meta 应聚焦消费级 Agent 市场而非企业市场。Meta 在消费端有独特优势（用户基数、社交生态），但盲目进军企业 AI 市场会分散资源、稀释核心竞争力。文章隐含讨论了 AI Agent 商业化路径选择对企业战略方向的影响，以及不同赛道对组织能力要求的差异。涉及企业决策层的资源配置和市场战略问题。",
+    "key_points": [
+      "Meta 消费端 Agent 优势明显，企业市场进入可能战略失焦",
+      "AI Agent 商业化需要明确的市场定位和组织专注力",
+      "企业 AI 应用路径与消费应用差异大，需不同的产品和销售体系"
+    ],
+    "tags": [
+      "战略决策",
+      "Agent 落地",
+      "组织焦点",
+      "市场定位"
+    ],
+    "speakers": [
+      "Meta"
+    ]
+  }
+]

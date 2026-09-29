@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+<title>2026-09-30 — AI TRANSFORMATION</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #0a0a0a; color: #999; font-family: system-ui, -apple-system, sans-serif; line-height: 1.6; min-height: 100vh; }
+a { color: inherit; text-decoration: none; }
+a:hover { color: #ccc; }
+.back-link { position: fixed; top: 18px; left: 20px; font-family: 'VT323', monospace; font-size: 1.15rem; color: #666; z-index: 100; letter-spacing: 0.02em; transition: color 0.15s; }
+.back-link:hover { color: #aaa; }
+header { padding: 60px 20px 32px; text-align: center; }
+header h1 { font-family: 'VT323', monospace; font-size: clamp(2rem, 6vw, 4rem); color: #999; letter-spacing: 0.12em; line-height: 1.1; margin-bottom: 12px; word-spacing: 0.1em; }
+header p { font-size: 0.88rem; color: #666; letter-spacing: 0.08em; }
+header p a { color: #888; transition: color 0.15s; }
+header p a:hover { color: #ccc; }
+.controls { background: #0a0a0a; border-bottom: 1px solid #1c1c1c; position: sticky; top: 0; z-index: 50; }
+.tabs { display: flex; overflow-x: auto; scrollbar-width: none; padding: 0 16px; max-width: 760px; margin: 0 auto; }
+.tabs::-webkit-scrollbar { display: none; }
+.tab { flex-shrink: 0; background: none; border: none; border-bottom: 2px solid transparent; padding: 14px 12px; font-size: 0.88rem; color: #777; cursor: pointer; font-family: system-ui, sans-serif; display: flex; align-items: center; gap: 5px; white-space: nowrap; transition: color 0.15s, border-color 0.15s; letter-spacing: 0.02em; }
+.tab.active { color: #ddd; border-bottom-color: #777; }
+.tab:hover { color: #bbb; }
+.badge { font-size: 0.74rem; color: #555; }
+.tab.active .badge { color: #999; }
+.filter-bar { display: flex; align-items: center; gap: 10px; padding: 10px 16px; border-top: 1px solid #161616; max-width: 760px; margin: 0 auto; font-size: 0.82rem; color: #666; flex-wrap: wrap; }
+.filter-bar > span { letter-spacing: 0.04em; }
+.filter-bar .sep { color: #2a2a2a; }
+.score-filter { display: flex; gap: 6px; flex-wrap: wrap; }
+.sf-btn { background: none; border: 1px solid #2a2a2a; border-radius: 3px; padding: 3px 11px; font-size: 0.8rem; color: #888; cursor: pointer; font-family: inherit; transition: color 0.15s, border-color 0.15s; letter-spacing: 0.04em; }
+.sf-btn.active, .sf-btn:hover { color: #ddd; border-color: #777; }
+.source-select { background: #0a0a0a; border: 1px solid #2a2a2a; border-radius: 3px; padding: 3px 9px; font-size: 0.8rem; color: #aaa; font-family: inherit; cursor: pointer; outline: none; }
+.source-select:hover { color: #ddd; border-color: #777; }
+.source-select option { background: #0a0a0a; color: #ccc; }
+.list { max-width: 760px; margin: 0 auto; padding: 8px 20px 80px; }
+.day { padding-top: 32px; }
+.day-head { font-size: 0.8rem; color: #555; letter-spacing: 0.12em; padding: 0 0 10px; border-bottom: 1px solid #1c1c1c; margin-bottom: 4px; text-transform: uppercase; }
+.day-head .count { color: #444; margin-left: 6px; }
+.entry { padding: 22px 0; border-bottom: 1px solid #161616; }
+.entry.hidden { display: none; }
+.entry-meta { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; font-size: 0.8rem; color: #666; margin-bottom: 8px; letter-spacing: 0.03em; }
+.entry-meta .sep { color: #2a2a2a; }
+.entry-score { color: #999; font-variant-numeric: tabular-nums; letter-spacing: 0.05em; font-weight: 500; }
+.entry-score.s-low { color: #666; }
+.entry-title { display: block; font-size: 1.1rem; color: #ccc; transition: color 0.15s; line-height: 1.5; margin-bottom: 10px; font-weight: 500; }
+.entry-title:hover { color: #fff; }
+.entry-summary { font-size: 0.95rem; color: #aaa; line-height: 1.75; margin-bottom: 10px; }
+.entry-bullets { list-style: none; padding: 0; margin: 8px 0 12px; }
+.entry-bullets li { font-size: 0.9rem; color: #888; line-height: 1.75; padding-left: 16px; position: relative; margin-bottom: 2px; }
+.entry-bullets li::before { content: '·'; position: absolute; left: 4px; color: #666; font-weight: bold; }
+.entry-chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+.entry-chip { font-size: 0.78rem; color: #777; border: 1px solid #2a2a2a; padding: 2px 9px; border-radius: 2px; letter-spacing: 0.03em; }
+.entry-chip.speaker { color: #aaa; border-color: #3a3a3a; }
+.empty-state { text-align: center; padding: 60px 20px; color: #555; font-size: 0.9rem; }
+@media (max-width: 480px) {
+  .list { padding: 8px 14px 60px; }
+  .entry-title { font-size: 1rem; }
+  .entry-summary { font-size: 0.92rem; }
+  .entry-bullets li { font-size: 0.88rem; }
+  .filter-bar { font-size: 0.74rem; gap: 8px; }
+}
+footer { text-align: center; padding: 30px 20px; color: #555; font-size: 0.78rem; letter-spacing: 0.06em; }
+footer a { color: #666; transition: color 0.15s; }
+footer a:hover { color: #999; }
+</style>
+</head>
+<body>
+<a class="back-link" href="https://www.tedzhong.com/">← tedzhong.com</a>
+<header>
+  <h1>2026-09-30</h1>
+  <p>6 条 · <a href="../index.html">← 返回最新</a> · <a href="./">归档</a></p>
+</header>
+<div class="controls">
+  <div class="tabs"><button class="tab active" data-cat="all">全部<span class="badge">6</span></button><button class="tab" data-cat="analyst">分析师<span class="badge">2</span></button><button class="tab" data-cat="business">商业<span class="badge">4</span></button></div>
+  <div class="filter-bar">
+    <span>评分</span>
+    <div class="score-filter">
+      <button class="sf-btn active" data-score="6">≥6</button>
+      <button class="sf-btn" data-score="7">≥7</button>
+      <button class="sf-btn" data-score="8">≥8</button>
+      <button class="sf-btn" data-score="9">≥9</button>
+    </div>
+    <span class="sep">·</span>
+    <span>来源</span>
+    <select class="source-select" id="f-source"><option value="*">全部</option><option value="Lenny&#x27;s Newsletter">Lenny&#x27;s Newsletter</option><option value="MIT Sloan Management Review">MIT Sloan Management Review</option><option value="McKinsey Insights">McKinsey Insights</option><option value="Stratechery (free posts)">Stratechery (free posts)</option></select>
+  </div>
+</div>
+<div class="list">
+<section class="day"><div class="day-head">2026-09-30<span class="count">· 6 条</span></div>
+    <article class="entry" data-source="MIT Sloan Management Review" data-category="business" data-score="8">
+      <div class="entry-meta">
+        <span class="entry-score">8/10</span>
+        <span class="sep">·</span>
+        <span>MIT Sloan Management Review</span>
+        <span class="sep">·</span>
+        <span>商业</span>
+        <span class="sep">·</span>
+        <span>2026-09-29</span>
+      </div>
+      <a class="entry-title" href="https://sloanreview.mit.edu/article/how-to-outcompete-your-clients-ai/" target="_blank" rel="noopener">How to Outcompete Your Client’s AI</a>
+      <p class="entry-summary">生成式AI正在重塑企业的外包决策边界。当企业用AI能力替代外部顾问服务后，传统服务商面临存亡危机。文章指出：服务商不能再单靠专业知识竞争，必须转向规模化生产和单位经济学优势。成功者如WPP通过建立AI平台、融入几十年专有数据和知识框架，实现了从定制交付到服务产品化的转变。这要求服务商根本性地重新思考商业模式——不是守护专业性，而是通过自动化管道和跨客户成本摊销来实现更低价格。</p>
+      <ul class="entry-bullets"><li>AI使企业能内化原由外包商提供的工作，威胁传统服务商的价值主张</li><li>单纯依赖专家技能已无法竞争，服务商必须转向规模化生产和单位经济学</li><li>成功路径：标准化工作流、专有数据训练模型、将知识打包成可复用系统</li><li>WPP等先行者通过AI平台整合decades数据和行为科学框架，构建难以复制的护城河</li></ul>
+      <div class="entry-chips"><span class="entry-chip speaker">Alturas Capital Partners</span><span class="entry-chip speaker">WPP</span><span class="entry-chip speaker">Coca-Cola</span><span class="entry-chip">外包模式重构</span><span class="entry-chip">服务商转型</span><span class="entry-chip">生产力与成本</span><span class="entry-chip">商业模式创新</span></div>
+    </article>
+    
+    <article class="entry" data-source="McKinsey Insights" data-category="business" data-score="8">
+      <div class="entry-meta">
+        <span class="entry-score">8/10</span>
+        <span class="sep">·</span>
+        <span>McKinsey Insights</span>
+        <span class="sep">·</span>
+        <span>商业</span>
+        <span class="sep">·</span>
+        <span>2026-09-29</span>
+      </div>
+      <a class="entry-title" href="https://www.mckinsey.com/mgi/our-research/workforce-in-motion-skills-and-pathways-to-future-jobs-in-the-united-states" target="_blank" rel="noopener">Workforce in motion: Skills and pathways to future jobs in the United States</a>
+      <p class="entry-summary">麦肯锡研究指出，AI、自动化及结构性变化正加速美国劳动力重新配置。企业与政府需创建新的职业晋升路径、开发适应性技能培养体系，同时打破传统行业壁垒，帮助从衰退行业的从业者向成长行业流动。核心是通过系统性人才重塑而非单纯的岗位消亡应对AI冲击。</p>
+      <ul class="entry-bullets"><li>AI与自动化推动劳动力跨行业、跨岗位的大规模转移</li><li>需要建立灵活的职业发展路径，打破传统行业与岗位的刚性壁垒</li><li>重点在于技能重训与适应性能力，而非被动应对失业</li><li>系统性变革需政府、企业、教育机构协同推进</li></ul>
+      <div class="entry-chips"><span class="entry-chip speaker">McKinsey</span><span class="entry-chip">人才策略</span><span class="entry-chip">劳动力重塑</span><span class="entry-chip">技能升级</span><span class="entry-chip">组织变革</span></div>
+    </article>
+    
+    <article class="entry" data-source="McKinsey Insights" data-category="business" data-score="8">
+      <div class="entry-meta">
+        <span class="entry-score">8/10</span>
+        <span class="sep">·</span>
+        <span>McKinsey Insights</span>
+        <span class="sep">·</span>
+        <span>商业</span>
+        <span class="sep">·</span>
+        <span>2026-09-29</span>
+      </div>
+      <a class="entry-title" href="https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/how-leaders-are-turning-ai-into-growth" target="_blank" rel="noopener">How leaders are turning AI into growth</a>
+      <p class="entry-summary">麦肯锡研究发现，近90%企业在AI投资，但仅6%看到实际业绩增长。关键差异在于领导力的执行方式。文章暗示大多数公司的AI投资停留在试点阶段，缺乏系统化的组织整合、流程重塑和人才配置调整。成功企业将AI嵌入战略决策、重新设计工作流程、建立跨职能协作机制，而非孤立的技术购买。这反映出AI价值实现不在技术本身，而在组织能力、领导决策和变革管理。</p>
+      <ul class="entry-bullets"><li>90%投资vs6%成果差异，揭示AI实施从技术驱动向战略驱动的鸿沟</li><li>成功企业重组织架构、流程、人才配置，而非单纯购买AI工具</li><li>领导力决策方式（如何部署、谁负责、与业务的耦合度）直接影响AI ROI</li><li>AI增长需要系统性变革，包括决策权重塑、跨部门协同、员工再技能化</li></ul>
+      <div class="entry-chips"><span class="entry-chip speaker">McKinsey</span><span class="entry-chip">组织变革</span><span class="entry-chip">领导力决策</span><span class="entry-chip">AI落地</span><span class="entry-chip">生产力与增长</span></div>
+    </article>
+    
+    <article class="entry" data-source="McKinsey Insights" data-category="business" data-score="8">
+      <div class="entry-meta">
+        <span class="entry-score">8/10</span>
+        <span class="sep">·</span>
+        <span>McKinsey Insights</span>
+        <span class="sep">·</span>
+        <span>商业</span>
+        <span class="sep">·</span>
+        <span>2026-09-28</span>
+      </div>
+      <a class="entry-title" href="https://www.mckinsey.com/capabilities/people-and-organization/our-insights/ai-is-changing-how-we-work-is-your-organization-ready" target="_blank" rel="noopener">AI is changing how we work. Is your organization ready?</a>
+      <p class="entry-summary">McKinsey 指出 AI 正在根本性地改变工作方式，企业领导者面临重新思考职位、团队构成和工作流程的紧迫任务。文章强调这不仅是技术升级，而是组织层面的深度变革——涉及人员角色重新定义、团队结构调整、工作方式创新。关键在于领导力是否能够主动适应这一变化，以及组织的准备程度如何应对由 AI 驱动的工作形态转变。</p>
+      <ul class="entry-bullets"><li>AI 推动职位、团队、工作流程的根本性重构，非增量式改变</li><li>领导者需主动审视组织准备度，而非被动应对技术变化</li><li>涉及人员角色再定义与团队结构优化的核心议题</li></ul>
+      <div class="entry-chips"><span class="entry-chip speaker">McKinsey</span><span class="entry-chip">组织重构</span><span class="entry-chip">领导力变革</span><span class="entry-chip">工作方式创新</span><span class="entry-chip">人员管理</span></div>
+    </article>
+    
+    <article class="entry" data-source="Lenny&#x27;s Newsletter" data-category="analyst" data-score="7">
+      <div class="entry-meta">
+        <span class="entry-score">7/10</span>
+        <span class="sep">·</span>
+        <span>Lenny&#x27;s Newsletter</span>
+        <span class="sep">·</span>
+        <span>分析师</span>
+        <span class="sep">·</span>
+        <span>2026-09-29</span>
+      </div>
+      <a class="entry-title" href="https://www.lennysnewsletter.com/p/all-of-the-lenny-and-friends-summit" target="_blank" rel="noopener">All of the Lenny &amp; Friends Summit talks are now online!</a>
+      <p class="entry-summary">Lenny &amp; Friends 峰会汇聚了来自 Stripe、Atlassian、Google、OpenAI、Anthropic 等公司的产品与 AI 领导者。核心讨论围绕 AI 对产品开发流程、PM 角色、团队结构的改造：软件工厂化加速了构建速度，但也强化了选择「正确问题」的重要性；传统路线图正在重新定义；PM 需要具备更广泛的能力；同时团队面临孤独感增加的挑战。整个行业仍在探索 AI 时代的最佳实践，强调「没有单一答案，取决于具体场景」。</p>
+      <ul class="entry-bullets"><li>AI 加速产品构建，但选择构建什么、定义成功标准的能力变得更稀缺</li><li>PM 角色在扩展而非收敛，需要跨越产品、设计、工程能力边界</li><li>传统路线图、流程、组织模式面临重新设计，行业尚无共识最佳实践</li><li>Agent 时代工作变得孤独，团队更需要高质量的人际连接与协作空间</li><li>领导者共识：我们都在探索阶段，最佳实践尚未成文，需要集体发现</li></ul>
+      <div class="entry-chips"><span class="entry-chip speaker">Katie Dill（Stripe 设计负责人）</span><span class="entry-chip speaker">Tamar Yehoshua（Atlassian CPO &amp; AI Officer）</span><span class="entry-chip speaker">Geoff Charles（Ramp CPO）</span><span class="entry-chip speaker">Robby Stein（Google Search 产品副总裁）</span><span class="entry-chip speaker">Karri Saarinen（Linear CEO）</span><span class="entry-chip speaker">Ami Vora（Anthropic CPO）</span><span class="entry-chip speaker">Mike Krieger（Anthropic Labs 负责人）</span><span class="entry-chip">PM 角色重塑</span><span class="entry-chip">AI 工具链对工作方式的影响</span><span class="entry-chip">组织流程重设</span><span class="entry-chip">人才与文化</span></div>
+    </article>
+    
+    <article class="entry" data-source="Stratechery (free posts)" data-category="analyst" data-score="7">
+      <div class="entry-meta">
+        <span class="entry-score">7/10</span>
+        <span class="sep">·</span>
+        <span>Stratechery (free posts)</span>
+        <span class="sep">·</span>
+        <span>分析师</span>
+        <span class="sep">·</span>
+        <span>2026-09-29</span>
+      </div>
+      <a class="entry-title" href="https://stratechery.com/2026/one-more-note-on-agents-meta-connect-meta-enterprise-platform/" target="_blank" rel="noopener">One More Note on Agents, Meta Connect, Meta Enterprise Platform</a>
+      <p class="entry-summary">作者认为 Meta 应聚焦消费级 Agent 市场而非企业市场。Meta 在消费端有独特优势（用户基数、社交生态），但盲目进军企业 AI 市场会分散资源、稀释核心竞争力。文章隐含讨论了 AI Agent 商业化路径选择对企业战略方向的影响，以及不同赛道对组织能力要求的差异。涉及企业决策层的资源配置和市场战略问题。</p>
+      <ul class="entry-bullets"><li>Meta 消费端 Agent 优势明显，企业市场进入可能战略失焦</li><li>AI Agent 商业化需要明确的市场定位和组织专注力</li><li>企业 AI 应用路径与消费应用差异大，需不同的产品和销售体系</li></ul>
+      <div class="entry-chips"><span class="entry-chip speaker">Meta</span><span class="entry-chip">战略决策</span><span class="entry-chip">Agent 落地</span><span class="entry-chip">组织焦点</span><span class="entry-chip">市场定位</span></div>
+    </article>
+    </section>
+</div>
+<footer>
+  由 Claude Haiku 4.5 每日构建 · 2026-09-30 04:45 CST
+</footer>
+<script>
+function applyFilters() {
+  const activeTab = document.querySelector('.tab.active');
+  const cat = activeTab ? activeTab.dataset.cat : 'all';
+  const activeScore = document.querySelector('.sf-btn.active');
+  const minScore = activeScore ? parseInt(activeScore.dataset.score, 10) : 6;
+  const srcEl = document.getElementById('f-source');
+  const src = srcEl ? srcEl.value : '*';
+  document.querySelectorAll('.entry').forEach(e => {
+    const ec = e.dataset.category, es = e.dataset.source, esc = parseInt(e.dataset.score, 10);
+    const show = (cat === 'all' || ec === cat) && (src === '*' || es === src) && esc >= minScore;
+    e.classList.toggle('hidden', !show);
+  });
+  document.querySelectorAll('.day').forEach(d => {
+    const any = Array.from(d.querySelectorAll('.entry')).some(e => !e.classList.contains('hidden'));
+    d.style.display = any ? '' : 'none';
+  });
+}
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.tab').forEach(t => t.addEventListener('click', () => {
+    document.querySelectorAll('.tab').forEach(x => x.classList.remove('active'));
+    t.classList.add('active');
+    applyFilters();
+  }));
+  document.querySelectorAll('.sf-btn').forEach(b => b.addEventListener('click', () => {
+    document.querySelectorAll('.sf-btn').forEach(x => x.classList.remove('active'));
+    b.classList.add('active');
+    applyFilters();
+  }));
+  const srcEl = document.getElementById('f-source');
+  if (srcEl) srcEl.addEventListener('change', applyFilters);
+});
+</script>
+</body>
+</html>

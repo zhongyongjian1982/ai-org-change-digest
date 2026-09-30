@@ -1,0 +1,78 @@
+[
+  {
+    "url": "https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/the-ceos-singular-impact-on-the-success-or-failure-of-ai-in-organizations",
+    "title": "The CEO’s singular impact on the success—or failure—of AI in organizations",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-09-30",
+    "fetched_at": "2026-10-01T04:44:20+08:00",
+    "score": 9,
+    "summary_zh": "麦肯锡研究表明，CEO 在组织 AI 转型中的角色无法委托——需要亲自推动三方面：提升组织 AI 野心，重构运营架构，重塑企业文化。这意味着 AI 成功不仅是技术问题，更是领导力与组织变革问题。CEO 的战略眼光、组织重新设计能力和文化推动力直接决定 AI 投资的成败。",
+    "key_points": [
+      "CEO 必须亲自驱动三大转变：提升 AI 雄心、重新设计组织架构、变革公司文化",
+      "AI 成功的关键不在技术本身，而在 CEO 的战略领导力与组织管理",
+      "CEO 无法将 AI 转型责任委托给 CTO/CIO，需自上而下推动整体变革"
+    ],
+    "tags": [
+      "CEO领导力",
+      "组织重构",
+      "文化变革",
+      "AI战略"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/how-to-drive-transformations-with-rigor",
+    "title": "How to drive transformations with rigor",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-09-30",
+    "fetched_at": "2026-10-01T04:44:16+08:00",
+    "score": 7,
+    "summary_zh": "麦肯锡研究表明，以严谨方式执行变革的企业更可能达成组织转型目标。文章通过 Chris Hagedorn、Preeya Mody 和 Michel Morenville 的讨论，阐明了变革中「严谨」的含义，以及如何在从目标设定、动员到交付成果的全过程中植入严谨性。虽未明确提及 AI，但变革方法论直接适用于 AI 驱动的组织变革场景，对需要系统性推进 AI 转型的企业有指导价值。",
+    "key_points": [
+      "严谨执行变革显著提高组织转型目标达成率",
+      "变革全周期需嵌入严谨性：目标设定→动员→交付成果",
+      "麦肯锡实证研究基础，适用于 AI 等重大组织变革"
+    ],
+    "tags": [
+      "变革管理",
+      "组织转型",
+      "执行严谨性",
+      "AI 赋能转型"
+    ],
+    "speakers": [
+      "Chris Hagedorn",
+      "Preeya Mody",
+      "Michel Morenville",
+      "McKinsey"
+    ]
+  },
+  {
+    "url": "https://www.lennysnewsletter.com/p/openai-dev-day-2026-the-releases",
+    "title": "OpenAI Dev Day 2026: The releases that actually matter",
+    "source": "Lenny's Newsletter",
+    "category": "analyst",
+    "published": "2026-09-30",
+    "fetched_at": "2026-10-01T04:44:41+08:00",
+    "score": 6,
+    "summary_zh": "OpenAI DevDay 2026发布多项新功能，其中Spaces被视为人类与Agent协作的重要工具，Sites平台可帮助团队共享内部工具和权限控制，Dots、Decisions API、Astra超快模型等提升了交互效率。作者通过实际测试展示了这些工具在播客缩略图选择、协作画板、3D实时编辑等场景的应用潜力，但也指出体验仍需完善，成本考量重要（如$97的游戏成本）。重点关注Spaces对团队协作模式的改变潜能。",
+    "key_points": [
+      "Spaces被低估为人类与Agent协作的关键工具，改变团队工作方式的潜力大",
+      "Sites平台通过连接器和权限管理，使团队能安全共享内部工具和数据",
+      "GPT-6.1 Sol在速度和成本效率上的权衡，影响AI应用的经济可行性",
+      "Astra超快模型实现交互式AI应用，但实际成本和用户体验仍需优化"
+    ],
+    "tags": [
+      "Agent协作",
+      "团队工具平台",
+      "生产力工具",
+      "模型能力升级"
+    ],
+    "speakers": [
+      "Claire Vo"
+    ]
+  }
+]

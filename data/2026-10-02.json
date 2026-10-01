@@ -1,0 +1,56 @@
+[
+  {
+    "url": "https://www.oneusefulthing.org/p/the-dot-and-the-swarm",
+    "title": "The Dot and the Swarm",
+    "source": "One Useful Thing (Ethan Mollick)",
+    "category": "analyst",
+    "published": "2026-10-01",
+    "fetched_at": "2026-10-02T04:45:51+08:00",
+    "score": 8,
+    "summary_zh": "作者修正了对 AI Agent 协作的认识。之前预期 Agent 协作需要精心设计（如同建公司），但\"苦涩教训\"再次验证：复杂任务无需人工规则，更强的 AI 系统可自行学习。Muse、dots 等个人 Agent 已能独立规划、寻求信息、发现人类错误并主动解决问题，无需详细指令。这意味着 Agent 编排和组织工作本身也能被 AI 学习，对人-AI 协作和管理范式提出了根本性挑战。",
+    "key_points": [
+      "强大的 AI 系统自学信息寻求和规划能力，消减了复杂提示词模板与人工协调的必要性",
+      "个人 Agent 可主动发现人类错误（如邮件内容错误）并提出解决方案，改变被动工具属性",
+      "Agent 自组织和协作能力超预期，证明即使是管理任务也可被 AI 系统学习而非设计",
+      "Clawlike Agent 接入账户实时监控与主动沟通，引发企业客服系统被 AI 大规模谈判的新风险"
+    ],
+    "tags": [
+      "Agent 落地",
+      "人-AI 协作范式",
+      "组织管理重塑",
+      "自适应学习"
+    ],
+    "speakers": [
+      "Ethan Mollick (One Useful Thing 作者)",
+      "Claude (Anthropic)",
+      "OpenAI",
+      "Meta",
+      "Google Gemini"
+    ]
+  },
+  {
+    "url": "https://openai.com/index/the-eternal-complement",
+    "title": "The eternal complement",
+    "source": "OpenAI",
+    "category": "ai-lab",
+    "published": "2026-10-02",
+    "fetched_at": "2026-10-02T04:45:38+08:00",
+    "score": 7,
+    "summary_zh": "OpenAI 认为高级 AI 的最大价值在于支撑突破性创意背后的日常执行工作。文章指出，AI 不是替代人类思想家，而是作为「永恒的补充」，加速创新想法从概念到实现的过程。这意味着未来竞争力取决于谁能最有效地将 AI 用于执行层面——数据处理、迭代、测试、优化等重复性任务，从而释放人类团队专注于更高价值的战略思维。这对组织的工作流程分解、人员角色定义和创新周期有深层影响。",
+    "key_points": [
+      "AI 核心价值在执行层，而非替代顶层创意；与其说替代人，不如说补充人",
+      "执行速度和迭代能力将成为下一个经济周期的关键竞争优势",
+      "组织需重新设计工作流程，将 AI 嵌入日常执行，释放人力做高价值决策",
+      "突破想法+高效执行的组合模式，决定创新的落地速度和成功率"
+    ],
+    "tags": [
+      "人机协作",
+      "执行力",
+      "组织流程优化",
+      "创新加速"
+    ],
+    "speakers": [
+      "OpenAI"
+    ]
+  }
+]

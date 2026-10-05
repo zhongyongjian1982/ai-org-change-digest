@@ -1,0 +1,102 @@
+[
+  {
+    "url": "https://www.mckinsey.com/capabilities/people-and-organization/our-insights/ai-is-changing-work-now-it-has-to-change-the-organization",
+    "title": "AI is changing work. Now it has to change the organization",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-10-05",
+    "fetched_at": "2026-10-06T04:57:36+08:00",
+    "score": 9,
+    "summary_zh": "麦肯锡指出，AI 驱动的企业变革正进入新阶段。第一阶段是将 AI 工具赋能员工；更大的机会来自 Agent AI，但这要求领导者根本性地重新思考组织架构。文章强调仅靠工具赋能不足以释放 AI 潜力，企业需要调整结构、流程、决策权分配和人员配置，以适应 AI 驱动的工作方式，这涉及深层的组织重构而非简单的技术应用。",
+    "key_points": [
+      "AI 企业应用从「工具赋能」升级到「Agent 驱动」，需要组织形态根本变革",
+      "单纯给员工配备 AI 工具不足以释放潜力，必须调整组织结构与决策流程",
+      "领导者需重新定义岗位、权力分配、团队配置以匹配 AI 工作特征",
+      "Agent AI 时代组织需要面向新的工作方式和人机协作模式进行结构重塑"
+    ],
+    "tags": [
+      "组织重构",
+      "Agent 落地",
+      "领导力转变",
+      "工作方式改革"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  },
+  {
+    "url": "https://www.lennysnewsletter.com/p/openais-head-of-chatgpt-were-entering",
+    "title": "OpenAI’s Head of ChatGPT: We’re entering a new era of AI (again) | Tibo Sottiaux",
+    "source": "Lenny's Newsletter",
+    "category": "analyst",
+    "published": "2026-10-04",
+    "fetched_at": "2026-10-06T04:58:03+08:00",
+    "score": 8,
+    "summary_zh": "OpenAI ChatGPT负责人Tibo Sottiaux阐述AI进入新时代的核心观点：Agent将成为互联网主要交互方式，未来大多数在线行为将由AI agents执行。他讨论了Dots个人AI助手平台的意义，认为循环、图表和微调等当前Agent工作流方法是过渡阶段。文章涉及AI时代下工作技能变化趋势、Agent工作流的演进方向，以及OpenAI对安全性的态度，具有较强的组织与工作方式前瞻性。",
+    "key_points": [
+      "Agent将成为互联网主要交互工具，大多数在线行为由AI执行而非人类操作",
+      "Dots是OpenAI新推出的个人AI助手平台，代表AI助手与用户关系的新形态",
+      "循环、图表、微调等当前Agent工作流方法只是过渡方案，未来有更优化方向",
+      "AI时代催生新的工作技能需求升降，企业需重新思考人才策略与岗位设计"
+    ],
+    "tags": [
+      "Agent落地",
+      "工作方式重构",
+      "人才技能变化",
+      "AI助手平台"
+    ],
+    "speakers": [
+      "Tibo Sottiaux（OpenAI ChatGPT负责人）"
+    ]
+  },
+  {
+    "url": "https://sloanreview.mit.edu/article/rehearsal-intelligence-using-digital-twins-for-crisis-readiness/",
+    "title": "Rehearsal Intelligence: Using Digital Twins for Crisis Readiness",
+    "source": "MIT Sloan Management Review",
+    "category": "business",
+    "published": "2026-10-05",
+    "fetched_at": "2026-10-06T04:57:29+08:00",
+    "score": 7,
+    "summary_zh": "文章通过 CrowdStrike 和 Change Healthcare 两大危机案例（造成超 70 亿美元损失），指出企业普遍缺乏危机演练能力。虽然 70% 大型企业 C-suite 已在探索数字孪生技术用于优化运营，但极少用于危机场景模拟测试。作者通过从业者调查发现：68% 企业仅年度进行一次桌面演练，91% 未使用数字孪生进行危机预演。揭示这是战略缺口而非技术问题，组织需重新定位数字孪生用途以提升危机应对能力。",
+    "key_points": [
+      "数字孪生技术已被广泛探索，但被用于危机演练的企业极少，形成战略缺口",
+      "68% 企业危机演练频次低（仅年度一次），15% 从不测试，5% 持续模拟",
+      "调查对象中 91% 未使用数字孪生，说明该技术应用场景严重错位",
+      "CrowdStrike 和 Change Healthcare 事件成本超 70 亿美元，预演可避免"
+    ],
+    "tags": [
+      "危机管理",
+      "数字孪生",
+      "组织韧性",
+      "风险预演"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  },
+  {
+    "url": "https://stratechery.com/2026/apple-and-a-hackers-future/",
+    "title": "Apple and a Hacker’s Future",
+    "source": "Stratechery (free posts)",
+    "category": "analyst",
+    "published": "2026-10-05",
+    "fetched_at": "2026-10-06T04:57:49+08:00",
+    "score": 7,
+    "summary_zh": "Stratechery 创始人 Ben Thompson 分享了一次 Mac 被黑客入侵的经历。他运行的 AI Agent（Claude）检测到异常，主动诊断问题、建议修复方案，并协助清除恶意软件。这个案例说明，精心设计的 AI Agent 虽然访问权限受限，但可以成为主动的安全防护工具。Thompson 强调了 Agent 在企业/个人工作环境中的价值：不仅提高效率，还能在突发安全事件中发挥关键作用。文章触及 Agent 的安全设计、权限管理和可靠性等组织应用的核心考量。",
+    "key_points": [
+      "AI Agent 可主动检测、诊断安全威胁，并参与修复过程，超越被动工具的范畴",
+      "精心约束 Agent 的权限和功能反而增强了安全性和可控性",
+      "持续运行的 Agent 监控对组织/个人工作流保护具有关键价值",
+      "Agent 应具备权限隔离、诊断透明和应急决策的能力，才能赢得信任"
+    ],
+    "tags": [
+      "Agent 落地",
+      "安全与信任",
+      "权限治理",
+      "工作流自动化"
+    ],
+    "speakers": [
+      "Ben Thompson (Stratechery)"
+    ]
+  }
+]

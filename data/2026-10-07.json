@@ -1,0 +1,57 @@
+[
+  {
+    "url": "https://sloanreview.mit.edu/article/the-real-reasons-why-digital-projects-fail/",
+    "title": "The Real Reasons Why Digital Projects Fail",
+    "source": "MIT Sloan Management Review",
+    "category": "business",
+    "published": "2026-10-06",
+    "fetched_at": "2026-10-07T04:45:41+08:00",
+    "score": 7,
+    "summary_zh": "文章通过医疗行业实证研究揭示数字化项目失败的真实原因：组织常将失败归咎于采用率或变革管理，但根本在于混淆了「数据质量」与「系统设计」两个独立问题。研究表明，高质量数据增加「有益认知负荷」（深度思考），而好的系统设计减少「无益认知负荷」（设计缺陷导致的浪费）。两者影响路径完全不同，需要不同的诊断和投资策略。这对依赖数字系统的知识工作组织具有直接启示。",
+    "key_points": [
+      "数据质量与系统设计是两个独立问题，需要不同的诊断与投资方案，混淆导致恶性循环",
+      "高质量数据增加有益认知负荷，促进深度思考和决策质量；好设计减少无益认知负荷，消除结构性摩擦",
+      "组织对数字化失败的常见误诊（采用率、培训、变革管理）掩盖了真实原因，导致不断投资错误方向",
+      "研究基于564名医生的实证数据，结论适用于所有依赖数字系统的知识工作组织"
+    ],
+    "tags": [
+      "数字化转型",
+      "组织诊断",
+      "工作效率",
+      "系统设计"
+    ],
+    "speakers": [
+      "Kalle Lyytinen",
+      "David Aron",
+      "Michael R. Cauley",
+      "Case Western Reserve University",
+      "Vanderbilt University Medical Center"
+    ]
+  },
+  {
+    "url": "https://openai.com/index/advancing-computer-use-with-ironclad",
+    "title": "Advancing computer use with Ironclad",
+    "source": "OpenAI",
+    "category": "ai-lab",
+    "published": "2026-10-06",
+    "fetched_at": "2026-10-07T04:45:53+08:00",
+    "score": 6,
+    "summary_zh": "OpenAI 与合同管理公司 Ironclad 合作，在复杂合同工作流中训练和评估 AI Agent，展示生成式 AI 如何自动化专业工作场景。通过让 Agent 学习执行人类专业人员的计算机操作任务，该项目触及工作流程自动化、员工角色再定义等议题，但文章重点偏向技术实现而非组织影响层面的深度分析。",
+    "key_points": [
+      "AI Agent 通过学习计算机使用能力，可接管合同审核等复杂专业工作流",
+      "这类自动化可能改变法务、采购等部门的工作方式和人员需求",
+      "项目展示生成式 AI 从对话转向实际工作流程操作的进展",
+      "涉及 Agent 在真实商业场景中的训练与评估方法论"
+    ],
+    "tags": [
+      "Agent 应用",
+      "工作流自动化",
+      "专业人员替代",
+      "生产力工具"
+    ],
+    "speakers": [
+      "OpenAI",
+      "Ironclad"
+    ]
+  }
+]

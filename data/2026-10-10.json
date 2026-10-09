@@ -1,0 +1,77 @@
+[
+  {
+    "url": "https://www.mckinsey.com/industries/consumer-packaged-goods/our-insights/for-cpg-companies-agentic-ais-real-payoff-is-growth",
+    "title": "For CPG companies, agentic AI’s real payoff is growth",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-10-09",
+    "fetched_at": "2026-10-10T04:46:31+08:00",
+    "score": 8,
+    "summary_zh": "麦肯锡认为，随着消费品公司与零售商关系日趋复杂，Agent AI 可以帮助企业找回失去的销售机会。核心观点是 Agent AI 不仅是成本优化工具，更是增长驱动力。文章针对 CPG 行业领导者提出挑战：企业是否做好了组织、流程、数据准备来真正发挥 Agent AI 的潜力。这涉及从商业战略、运营模式到人员能力的系统性转变。",
+    "key_points": [
+      "Agent AI 对 CPG 行业的价值不在降本，而在于重新捕获因复杂零售关系而流失的增长机会",
+      "企业领导者需评估自身在数据、流程、组织层面的准备度，不只是技术选型",
+      "实现 Agent AI 价值需要销售、供应链、营销等跨职能的运营模式创新",
+      "这是战略层面的转型，而非孤立的技术部署"
+    ],
+    "tags": [
+      "Agent AI 落地",
+      "商业增长",
+      "组织准备度",
+      "流程重构"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/the-six-strategy-roles-a-ceo-must-not-delegate",
+    "title": "The six strategy roles a CEO must not delegate",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-10-09",
+    "fetched_at": "2026-10-10T04:46:26+08:00",
+    "score": 7,
+    "summary_zh": "McKinsey 研究表明，虽然战略制定是团队合作，但CEO 不能完全委托的六项核心职责直接决定战略价值创造。这涉及CEO 在组织中的决策权、信息流控制、人员任免等领导力要素。在 AI 赋能下，CEO 需重新界定哪些战略决策可以由 AI 辅助分析、哪些必须保留人工判断，这对组织权力结构、决策流程和领导力定义提出新挑战。",
+    "key_points": [
+      "CEO 需保留六项核心战略职责，不能完全外包给团队或工具",
+      "战略价值最终取决于 CEO 的亲身参与和决策权",
+      "AI 时代下，CEO 角色需重新定义——哪些决策可委托 AI，哪些需人工把控",
+      "组织权力结构和信息流向成为 AI 落地的管理要点"
+    ],
+    "tags": [
+      "CEO 职能定位",
+      "组织决策权",
+      "领导力",
+      "AI 辅助决策"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  },
+  {
+    "url": "https://openai.com/index/sophos",
+    "title": "Sophos cuts threat investigation time by 96% with OpenAI Daybreak",
+    "source": "OpenAI",
+    "category": "ai-lab",
+    "published": "2026-10-09",
+    "fetched_at": "2026-10-10T04:46:38+08:00",
+    "score": 6,
+    "summary_zh": "Sophos 利用 OpenAI Daybreak AI 模型将网络威胁调查时间缩短 96%，自动化处理 52% 的托管检测响应（MDR）案件，同时保留人工审核机制。这个案例展示了生成式 AI 在安全运营中心（SOC）的实际效能——通过自动化低价值的重复性分析工作，释放安全人员专注高价值决策，反映出 AI 对知识工作组织和人员配置的影响。",
+    "key_points": [
+      "威胁调查效率提升 96%，MDR 自动化比例达 52%，显著优化安全团队工作量配置",
+      "保留人工审核环节，体现「AI 增强而非替代」的人机协作模式",
+      "典型的知识密集型工作场景（安全分析）被 AI 重塑，释放专家投入战略决策"
+    ],
+    "tags": [
+      "生产力提升",
+      "人机协作",
+      "工作流自动化",
+      "人员赋能"
+    ],
+    "speakers": [
+      "Sophos",
+      "OpenAI"
+    ]
+  }
+]

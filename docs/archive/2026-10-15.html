@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+<title>2026-10-15 — AI TRANSFORMATION</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #0a0a0a; color: #999; font-family: system-ui, -apple-system, sans-serif; line-height: 1.6; min-height: 100vh; }
+a { color: inherit; text-decoration: none; }
+a:hover { color: #ccc; }
+.back-link { position: fixed; top: 18px; left: 20px; font-family: 'VT323', monospace; font-size: 1.15rem; color: #666; z-index: 100; letter-spacing: 0.02em; transition: color 0.15s; }
+.back-link:hover { color: #aaa; }
+header { padding: 60px 20px 32px; text-align: center; }
+header h1 { font-family: 'VT323', monospace; font-size: clamp(2rem, 6vw, 4rem); color: #999; letter-spacing: 0.12em; line-height: 1.1; margin-bottom: 12px; word-spacing: 0.1em; }
+header p { font-size: 0.88rem; color: #666; letter-spacing: 0.08em; }
+header p a { color: #888; transition: color 0.15s; }
+header p a:hover { color: #ccc; }
+.controls { background: #0a0a0a; border-bottom: 1px solid #1c1c1c; position: sticky; top: 0; z-index: 50; }
+.tabs { display: flex; overflow-x: auto; scrollbar-width: none; padding: 0 16px; max-width: 760px; margin: 0 auto; }
+.tabs::-webkit-scrollbar { display: none; }
+.tab { flex-shrink: 0; background: none; border: none; border-bottom: 2px solid transparent; padding: 14px 12px; font-size: 0.88rem; color: #777; cursor: pointer; font-family: system-ui, sans-serif; display: flex; align-items: center; gap: 5px; white-space: nowrap; transition: color 0.15s, border-color 0.15s; letter-spacing: 0.02em; }
+.tab.active { color: #ddd; border-bottom-color: #777; }
+.tab:hover { color: #bbb; }
+.badge { font-size: 0.74rem; color: #555; }
+.tab.active .badge { color: #999; }
+.filter-bar { display: flex; align-items: center; gap: 10px; padding: 10px 16px; border-top: 1px solid #161616; max-width: 760px; margin: 0 auto; font-size: 0.82rem; color: #666; flex-wrap: wrap; }
+.filter-bar > span { letter-spacing: 0.04em; }
+.filter-bar .sep { color: #2a2a2a; }
+.score-filter { display: flex; gap: 6px; flex-wrap: wrap; }
+.sf-btn { background: none; border: 1px solid #2a2a2a; border-radius: 3px; padding: 3px 11px; font-size: 0.8rem; color: #888; cursor: pointer; font-family: inherit; transition: color 0.15s, border-color 0.15s; letter-spacing: 0.04em; }
+.sf-btn.active, .sf-btn:hover { color: #ddd; border-color: #777; }
+.source-select { background: #0a0a0a; border: 1px solid #2a2a2a; border-radius: 3px; padding: 3px 9px; font-size: 0.8rem; color: #aaa; font-family: inherit; cursor: pointer; outline: none; }
+.source-select:hover { color: #ddd; border-color: #777; }
+.source-select option { background: #0a0a0a; color: #ccc; }
+.list { max-width: 760px; margin: 0 auto; padding: 8px 20px 80px; }
+.day { padding-top: 32px; }
+.day-head { font-size: 0.8rem; color: #555; letter-spacing: 0.12em; padding: 0 0 10px; border-bottom: 1px solid #1c1c1c; margin-bottom: 4px; text-transform: uppercase; }
+.day-head .count { color: #444; margin-left: 6px; }
+.entry { padding: 22px 0; border-bottom: 1px solid #161616; }
+.entry.hidden { display: none; }
+.entry-meta { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; font-size: 0.8rem; color: #666; margin-bottom: 8px; letter-spacing: 0.03em; }
+.entry-meta .sep { color: #2a2a2a; }
+.entry-score { color: #999; font-variant-numeric: tabular-nums; letter-spacing: 0.05em; font-weight: 500; }
+.entry-score.s-low { color: #666; }
+.entry-title { display: block; font-size: 1.1rem; color: #ccc; transition: color 0.15s; line-height: 1.5; margin-bottom: 10px; font-weight: 500; }
+.entry-title:hover { color: #fff; }
+.entry-summary { font-size: 0.95rem; color: #aaa; line-height: 1.75; margin-bottom: 10px; }
+.entry-bullets { list-style: none; padding: 0; margin: 8px 0 12px; }
+.entry-bullets li { font-size: 0.9rem; color: #888; line-height: 1.75; padding-left: 16px; position: relative; margin-bottom: 2px; }
+.entry-bullets li::before { content: '·'; position: absolute; left: 4px; color: #666; font-weight: bold; }
+.entry-chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+.entry-chip { font-size: 0.78rem; color: #777; border: 1px solid #2a2a2a; padding: 2px 9px; border-radius: 2px; letter-spacing: 0.03em; }
+.entry-chip.speaker { color: #aaa; border-color: #3a3a3a; }
+.empty-state { text-align: center; padding: 60px 20px; color: #555; font-size: 0.9rem; }
+@media (max-width: 480px) {
+  .list { padding: 8px 14px 60px; }
+  .entry-title { font-size: 1rem; }
+  .entry-summary { font-size: 0.92rem; }
+  .entry-bullets li { font-size: 0.88rem; }
+  .filter-bar { font-size: 0.74rem; gap: 8px; }
+}
+footer { text-align: center; padding: 30px 20px; color: #555; font-size: 0.78rem; letter-spacing: 0.06em; }
+footer a { color: #666; transition: color 0.15s; }
+footer a:hover { color: #999; }
+</style>
+</head>
+<body>
+<a class="back-link" href="https://www.tedzhong.com/">← tedzhong.com</a>
+<header>
+  <h1>2026-10-15</h1>
+  <p>6 条 · <a href="../index.html">← 返回最新</a> · <a href="./">归档</a></p>
+</header>
+<div class="controls">
+  <div class="tabs"><button class="tab active" data-cat="all">全部<span class="badge">6</span></button><button class="tab" data-cat="business">商业<span class="badge">6</span></button></div>
+  <div class="filter-bar">
+    <span>评分</span>
+    <div class="score-filter">
+      <button class="sf-btn active" data-score="6">≥6</button>
+      <button class="sf-btn" data-score="7">≥7</button>
+      <button class="sf-btn" data-score="8">≥8</button>
+      <button class="sf-btn" data-score="9">≥9</button>
+    </div>
+    <span class="sep">·</span>
+    <span>来源</span>
+    <select class="source-select" id="f-source"><option value="*">全部</option><option value="MIT Sloan Management Review">MIT Sloan Management Review</option><option value="McKinsey Insights">McKinsey Insights</option></select>
+  </div>
+</div>
+<div class="list">
+<section class="day"><div class="day-head">2026-10-15<span class="count">· 6 条</span></div>
+    <article class="entry" data-source="McKinsey Insights" data-category="business" data-score="8">
+      <div class="entry-meta">
+        <span class="entry-score">8/10</span>
+        <span class="sep">·</span>
+        <span>McKinsey Insights</span>
+        <span class="sep">·</span>
+        <span>商业</span>
+        <span class="sep">·</span>
+        <span>2026-10-14</span>
+      </div>
+      <a class="entry-title" href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-ai-value-curve-the-economics-of-applying-ai-to-existing-work" target="_blank" rel="noopener">The AI value curve: The economics of applying AI to existing work</a>
+      <p class="entry-summary">麦肯锡指出企业普遍陷入「衡量AI采纳率而非价值」的误区。该文提出「AI价值曲线」框架，帮助组织识别AI自动化潜力最具成本效益的部署位置。核心观点是转变评估维度——从采纳数量到实际经济价值，指导企业优化AI投资决策，避免盲目部署。这对CFO和运营负责人的资源配置决策具有直接指导意义。</p>
+      <ul class="entry-bullets"><li>企业普遍错误衡量AI采纳率而非真实商业价值，导致投资决策偏离</li><li>「AI价值曲线」框架帮助识别成本效益最优的自动化场景</li><li>从数量指标转向经济价值指标，重构AI ROI评估体系</li><li>指导企业精准部署AI，避免资源浪费</li></ul>
+      <div class="entry-chips"><span class="entry-chip speaker">McKinsey</span><span class="entry-chip">AI投资决策</span><span class="entry-chip">价值评估</span><span class="entry-chip">成本效益分析</span><span class="entry-chip">自动化部署</span></div>
+    </article>
+    
+    <article class="entry" data-source="McKinsey Insights" data-category="business" data-score="7">
+      <div class="entry-meta">
+        <span class="entry-score">7/10</span>
+        <span class="sep">·</span>
+        <span>McKinsey Insights</span>
+        <span class="sep">·</span>
+        <span>商业</span>
+        <span class="sep">·</span>
+        <span>2026-10-14</span>
+      </div>
+      <a class="entry-title" href="https://www.mckinsey.com/capabilities/operations/our-insights/voices-on-planning-the-ai-powered-future-of-supply-chain" target="_blank" rel="noopener">Voices on Planning: The AI-powered future of supply chain</a>
+      <p class="entry-summary">麦肯锡指出，供应链规划从传统 SaaS 向 AI 赋能决策转变，将推动企业从固定周期决策升级为实时决策模式。但这种转型不仅涉及技术替换，更需要重塑治理体系、培养专业人才团队，以及调整运营模式来适应实时决策的新节奏。这反映了 AI 对企业流程、组织能力和决策权力分布的深层改造。</p>
+      <ul class="entry-bullets"><li>供应链决策从固定周期转向实时化，AI 成为核心驱动力</li><li>成功实施需重塑治理框架与权力结构，改变决策链路</li><li>要求培养新型专业人才，具备 AI 理解与业务判断能力</li><li>运营模式调整是关键，需适配实时决策的节奏与复杂性</li></ul>
+      <div class="entry-chips"><span class="entry-chip speaker">McKinsey</span><span class="entry-chip">供应链转型</span><span class="entry-chip">实时决策</span><span class="entry-chip">治理结构</span><span class="entry-chip">人才能力</span></div>
+    </article>
+    
+    <article class="entry" data-source="McKinsey Insights" data-category="business" data-score="7">
+      <div class="entry-meta">
+        <span class="entry-score">7/10</span>
+        <span class="sep">·</span>
+        <span>McKinsey Insights</span>
+        <span class="sep">·</span>
+        <span>商业</span>
+        <span class="sep">·</span>
+        <span>2026-10-13</span>
+      </div>
+      <a class="entry-title" href="https://www.mckinsey.com/capabilities/operations/our-insights/why-the-future-of-capital-projects-belongs-to-digital-and-ai-enabled-teams" target="_blank" rel="noopener">Why the future of capital projects belongs to digital and AI-enabled teams</a>
+      <p class="entry-summary">麦肯锡分析数字化与AI如何重塑资本项目全生命周期——从选址、设计、采购到施工、管理。企业领导者正从试点阶段进阶到系统性地重组项目规划与交付流程。这体现了AI对项目型组织的运营方式、团队协作、决策流程的深层改造，涉及跨职能团队能力重定义与流程自动化。</p>
+      <ul class="entry-bullets"><li>AI重塑项目全周期：从选项、设计、采购到施工，每个环节都需数字化赋能</li><li>从试点到系统实施：企业不再停留在POC，而是全面改造项目交付体系</li><li>组织变革：项目团队能力结构、决策权限、协作模式需重新设计与对齐</li></ul>
+      <div class="entry-chips"><span class="entry-chip speaker">McKinsey</span><span class="entry-chip">流程重构</span><span class="entry-chip">人才能力升级</span><span class="entry-chip">AI应用落地</span><span class="entry-chip">项目管理创新</span></div>
+    </article>
+    
+    <article class="entry" data-source="MIT Sloan Management Review" data-category="business" data-score="6">
+      <div class="entry-meta">
+        <span class="entry-score s-low">6/10</span>
+        <span class="sep">·</span>
+        <span>MIT Sloan Management Review</span>
+        <span class="sep">·</span>
+        <span>商业</span>
+        <span class="sep">·</span>
+        <span>2026-10-14</span>
+      </div>
+      <a class="entry-title" href="https://sloanreview.mit.edu/article/why-every-high-performing-leader-needs-a-pacer/" target="_blank" rel="noopener">Why Every High-Performing Leader Needs a Pacer</a>
+      <p class="entry-summary">MIT Sloan 发表文章将体育界「配速员」（pacer）概念引入领导力管理。通过调查125名员工，发现93%的领导者存在节奏失配问题：75%运行过快（&quot;咖啡因松鼠&quot;），25%过慢（&quot;犹豫乌龟&quot;）。但仅40%的领导者有配速员辅助。配速员通过监督决策速度、减轻认知负荷、平衡团队能量消耗，帮助领导者在正确时刻做出正确决策。文章强调「运行节奏」与战略方向同等重要，是被低估的领导力维度。</p>
+      <ul class="entry-bullets"><li>75%领导者决策过快，25%过慢，六成缺乏节奏反馈机制</li><li>配速员职能：制约过度激进，加速保守决策，减轻领导者认知负荷</li><li>正确节奏与正确方向同样关键，但常被领导力评估忽视</li><li>企业需建立反馈机制，识别领导者节奏风险并配置相应支持</li></ul>
+      <div class="entry-chips"><span class="entry-chip">领导力节奏</span><span class="entry-chip">决策管理</span><span class="entry-chip">组织效能</span><span class="entry-chip">人才赋能</span></div>
+    </article>
+    
+    <article class="entry" data-source="MIT Sloan Management Review" data-category="business" data-score="6">
+      <div class="entry-meta">
+        <span class="entry-score s-low">6/10</span>
+        <span class="sep">·</span>
+        <span>MIT Sloan Management Review</span>
+        <span class="sep">·</span>
+        <span>商业</span>
+        <span class="sep">·</span>
+        <span>2026-10-13</span>
+      </div>
+      <a class="entry-title" href="https://sloanreview.mit.edu/article/the-new-rules-of-brand-visibility-in-ai-search/" target="_blank" rel="noopener">The New Rules of Brand Visibility in AI Search</a>
+      <p class="entry-summary">文章聚焦生成式AI搜索对品牌营销策略的冲击，引入「生成式引擎优化」（GEO）概念。通过投资平台Stakewise案例揭示核心问题：AI可能向潜在客户提供关于企业的错误信息，而企业往往无法看见这些对话。研究发现组织普遍存在AI可见性指标盲点、SEO工作流适应不足、对AI错误信息传播速度认知不足。GEO面临两大挑战：确保品牌在AI回答中出现、确保信息准确性，两者都失利会造成商业损失。</p>
+      <ul class="entry-bullets"><li>GEO（生成式引擎优化）成为新课题：企业需应对&quot;AI说了什么我们看不见&quot;的问题，而非仅关注搜索排名</li><li>真实案例：投资平台发现ChatGPT频繁提供错误产品信息（如基金数量、费用结构），直接影响购买决策</li><li>组织普遍缺乏AI可见性监测能力，SEO团队对新型发现渠道（LLM referral）适应不足</li><li>强SEO基础是GEO前提，但在比较/发现类查询中LLM可能综合多个信息源产生偏差</li><li>AI可快速放大和传播错误信息，组织应建立内容审核与源头修正机制</li></ul>
+      <div class="entry-chips"><span class="entry-chip speaker">MIT Sloan Management Review</span><span class="entry-chip speaker">Stakewise (投资平台)</span><span class="entry-chip">营销策略转型</span><span class="entry-chip">AI信息治理</span><span class="entry-chip">组织适应性</span><span class="entry-chip">客户认知管理</span></div>
+    </article>
+    
+    <article class="entry" data-source="McKinsey Insights" data-category="business" data-score="6">
+      <div class="entry-meta">
+        <span class="entry-score s-low">6/10</span>
+        <span class="sep">·</span>
+        <span>McKinsey Insights</span>
+        <span class="sep">·</span>
+        <span>商业</span>
+        <span class="sep">·</span>
+        <span>2026-10-14</span>
+      </div>
+      <a class="entry-title" href="https://www.mckinsey.com/capabilities/operations/our-insights/rewiring-capital-projects-to-boost-construction-productivity" target="_blank" rel="noopener">Rewiring capital projects to boost construction productivity</a>
+      <p class="entry-summary">麦肯锡资本卓越团队讨论 AI 和技术如何提升建筑生产力、应对劳动力短缺和加快复杂项目交付。文章聚焦于技术在项目管理、劳动力配置和流程优化中的作用，但摘要内容较为宏观，缺乏具体的组织结构改变、人员角色再定义或管理模式创新的深层阐述。适合了解建筑行业 AI 赋能的宏观趋势，但组织变革的具体观点有限。</p>
+      <ul class="entry-bullets"><li>AI 和数字化技术可以弥补建筑行业劳动力短缺，提升现场生产力</li><li>技术应用于项目交付和复杂流程管理，加速项目周期</li><li>资本项目管理需要技术驱动的流程重塑以提高效能</li><li>行业面临劳动力和效率双重挑战，技术是突破口</li></ul>
+      <div class="entry-chips"><span class="entry-chip speaker">McKinsey Capital Excellence team</span><span class="entry-chip">生产力提升</span><span class="entry-chip">劳动力优化</span><span class="entry-chip">项目管理数字化</span><span class="entry-chip">建筑行业转型</span></div>
+    </article>
+    </section>
+</div>
+<footer>
+  由 Claude Haiku 4.5 每日构建 · 2026-10-15 00:26 CST
+</footer>
+<script>
+function applyFilters() {
+  const activeTab = document.querySelector('.tab.active');
+  const cat = activeTab ? activeTab.dataset.cat : 'all';
+  const activeScore = document.querySelector('.sf-btn.active');
+  const minScore = activeScore ? parseInt(activeScore.dataset.score, 10) : 6;
+  const srcEl = document.getElementById('f-source');
+  const src = srcEl ? srcEl.value : '*';
+  document.querySelectorAll('.entry').forEach(e => {
+    const ec = e.dataset.category, es = e.dataset.source, esc = parseInt(e.dataset.score, 10);
+    const show = (cat === 'all' || ec === cat) && (src === '*' || es === src) && esc >= minScore;
+    e.classList.toggle('hidden', !show);
+  });
+  document.querySelectorAll('.day').forEach(d => {
+    const any = Array.from(d.querySelectorAll('.entry')).some(e => !e.classList.contains('hidden'));
+    d.style.display = any ? '' : 'none';
+  });
+}
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.tab').forEach(t => t.addEventListener('click', () => {
+    document.querySelectorAll('.tab').forEach(x => x.classList.remove('active'));
+    t.classList.add('active');
+    applyFilters();
+  }));
+  document.querySelectorAll('.sf-btn').forEach(b => b.addEventListener('click', () => {
+    document.querySelectorAll('.sf-btn').forEach(x => x.classList.remove('active'));
+    b.classList.add('active');
+    applyFilters();
+  }));
+  const srcEl = document.getElementById('f-source');
+  if (srcEl) srcEl.addEventListener('change', applyFilters);
+});
+</script>
+</body>
+</html>

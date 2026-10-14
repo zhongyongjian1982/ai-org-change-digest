@@ -6,6 +6,10 @@ on:
     # throttling (prior "0 1 * * *" was consistently delayed 3-4 hours).
     - cron: "37 20 * * *"
   workflow_dispatch: {}
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/daily.yml
 
 permissions:
   contents: write
@@ -17,6 +21,7 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v6
       - uses: actions/setup-python@v6
@@ -28,14 +33,34 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python scripts/build.py
+      - name: Commit updates
+        run: |
+          git config user.name "digest-bot"
+          git config user.email "digest-bot@users.noreply.github.com"
+          git add data docs
+          if git diff --cached --quiet; then
+            echo "No changes."
+          else
+            git commit -m "digest: $(date -u +%Y-%m-%d)"
+            git push
+          fi
       - name: Sync to Tencent COS
+        timeout-minutes: 11
         env:
           TENCENT_SECRET_ID: ${{ secrets.TENCENT_SECRET_ID }}
           TENCENT_SECRET_KEY: ${{ secrets.TENCENT_SECRET_KEY }}
         run: |
           pip install coscmd
           coscmd config -a "$TENCENT_SECRET_ID" -s "$TENCENT_SECRET_KEY" -b ted-pages-1409060250 -r ap-guangzhou
-          coscmd upload -r -f docs/ aitransformation/
+          for attempt in 1 2 3; do
+            if timeout --kill-after=10s 180s coscmd upload -r -f docs/ aitransformation/; then
+              exit 0
+            fi
+            echo "COS upload attempt ${attempt} failed; retrying in 15 seconds."
+            sleep 15
+          done
+          echo "COS upload failed after 3 bounded attempts. Generated content is saved in GitHub."
+          exit 1
       - name: Purge EdgeOne CDN cache
         env:
           TENCENT_SECRET_ID: ${{ secrets.TENCENT_SECRET_ID }}
@@ -50,14 +75,3 @@ jobs:
             --Type purge_prefix \
             --Method invalidate \
             --Targets '["https://www.tedzhong.com/aitransformation/"]'
-      - name: Commit updates
-        run: |
-          git config user.name "digest-bot"
-          git config user.email "digest-bot@users.noreply.github.com"
-          git add data docs
-          if git diff --cached --quiet; then
-            echo "No changes."
-          else
-            git commit -m "digest: $(date -u +%Y-%m-%d)"
-            git push
-          fi

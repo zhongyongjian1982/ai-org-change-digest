@@ -33,6 +33,14 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python scripts/build.py
+      - name: Back up generated digest
+        uses: actions/upload-artifact@v4
+        with:
+          name: generated-digest-${{ github.run_id }}
+          path: |
+            data/
+            docs/
+          retention-days: 7
       - name: Commit updates
         run: |
           git config user.name "digest-bot"
@@ -42,7 +50,15 @@ jobs:
             echo "No changes."
           else
             git commit -m "digest: $(date -u +%Y-%m-%d)"
-            git push
+            for attempt in 1 2 3; do
+              if git push origin HEAD:main; then
+                exit 0
+              fi
+              sleep 10
+              git fetch origin main
+              git rebase origin/main
+            done
+            exit 1
           fi
       - name: Sync to Tencent COS
         timeout-minutes: 11

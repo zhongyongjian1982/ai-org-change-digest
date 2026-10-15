@@ -1,0 +1,26 @@
+[
+  {
+    "url": "https://www.mckinsey.com/featured-insights/mckinsey-explainers/what-does-ai-really-cost",
+    "title": "What does AI really cost?",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-10-14",
+    "fetched_at": "2026-10-16T04:44:22+08:00",
+    "score": 7,
+    "summary_zh": "McKinsey分析了AI工具从试点到生产的成本倍增现象。文章指出，将AI从概念验证阶段扩展到实际业务应用，成本可能增长3-4倍，主要源于基础设施、数据治理、人员投入、集成与合规等隐性成本。这对企业的AI投资决策、ROI评估和资源配置策略具有重要启示，帮助领导者理解AI项目的真实成本结构，做出更明智的优先级决策。",
+    "key_points": [
+      "AI从试点到生产成本可能增加3-4倍，需警惕隐性成本陷阱",
+      "基础设施、数据管理、人才投入构成生产环境的主要成本驱动",
+      "企业需建立清晰的成本核算和ROI评估框架，避免盲目投资"
+    ],
+    "tags": [
+      "AI成本管理",
+      "投资决策",
+      "生产力",
+      "资源配置"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  }
+]

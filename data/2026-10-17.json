@@ -1,0 +1,54 @@
+[
+  {
+    "url": "https://www.mckinsey.com/mgi/media-center/mckinsey-research-shows-ai-creating-more-jobs-than-automation-displaces-but-11-million-american-workers-will-need-help-this-decade",
+    "title": "McKinsey research shows AI creating more jobs than automation displaces — but 11 million American workers will need help this decade",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-10-11",
+    "fetched_at": "2026-10-17T04:44:28+08:00",
+    "score": 8,
+    "summary_zh": "McKinsey研究显示AI创造的就业机会将超过自动化替代的职位，但未来十年美国需帮助1100万劳动力转型。文章强调核心挑战不在失业总数，而在于如何引导现有劳动力快速适配新增长岗位，涉及教育、再培训、人才重配等系统性人才战略问题。这对企业人才规划和政策制定具有重要指导意义。",
+    "key_points": [
+      "AI净创造就业，但区域和行业分布不均，需精准人才流动机制",
+      "1100万工人面临技能断层风险，需要系统化再培训和转岗支持",
+      "企业重点从'裁员预期'转向'人才适配与发展'的战略转变",
+      "人力资本投资和职业通道创新成为应对AI时代的关键竞争力"
+    ],
+    "tags": [
+      "人才战略",
+      "劳动力转型",
+      "生产力升级",
+      "组织适应"
+    ],
+    "speakers": [
+      "McKinsey",
+      "Eric Kutcher",
+      "Tanguy Catlin"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/featured-insights/mckinsey-explainers/what-is-a-forward-deployed-engineer",
+    "title": "What is a forward-deployed engineer?",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-10-16",
+    "fetched_at": "2026-10-17T04:44:23+08:00",
+    "score": 7,
+    "summary_zh": "麦肯锡探讨前置工程师（FDE）模式——企业派遣技术人员常驻客户端系统内部，帮助客户深度挖掘 AI 价值。这一做法反映了企业人才配置方式的变化：不再是远程支持，而是与客户紧密协作，加强了对 AI 项目成功率的掌控，同时对工程师的角色定义、团队协作文化提出新要求。",
+    "key_points": [
+      "FDE 模式将工程师嵌入客户组织，改变了传统外包/咨询人才配置逻辑",
+      "帮助企业加速 AI 落地效果，体现人才重配与组织边界模糊化趋势",
+      "对招聘、培训、激励机制的隐含需求：需要更强的业务理解与跨组织协作能力",
+      "反映后 AI 时代企业对深度整合与长期陪跑的人才战略转变"
+    ],
+    "tags": [
+      "人才配置",
+      "AI 落地",
+      "组织协作",
+      "工作方式演进"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  }
+]

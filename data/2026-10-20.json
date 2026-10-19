@@ -1,0 +1,53 @@
+[
+  {
+    "url": "https://sloanreview.mit.edu/article/why-data-modeling-is-not-enough/",
+    "title": "Why Data Modeling Is Not Enough",
+    "source": "MIT Sloan Management Review",
+    "category": "business",
+    "published": "2026-10-19",
+    "fetched_at": "2026-10-20T04:44:17+08:00",
+    "score": 7,
+    "summary_zh": "文章指出数据科学项目60-85%失败的根本原因：数据科学家专注预测准确性，而管理者需要可执行的决策。作者提出「决策科学」概念，强调应从「建模数据」转向「建模决策」。决策科学融合数据、逻辑、数学，直接对标业务目标（成本、市场份额、利润），需与数据科学互补。核心洞察：预测不等于决策，组织需同时具备两种能力才能将分析投资转化为实际ROI。",
+    "key_points": [
+      "数据科学与业务管理的语言鸿沟导致大多数项目失败，模型精准但无法指导行动",
+      "决策科学关键技能是'决策建模'，不同于数据科学的预测建模，强调问题框架与业务域知识",
+      "转向决策为中心的分析投资：从问\"数据显示什么\"到\"我们应该做什么\"的根本转变",
+      "组织需双轨制：数据科学提供预测输入，决策科学负责把预测转化为可执行决策"
+    ],
+    "tags": [
+      "组织能力建设",
+      "分析投资ROI",
+      "跨部门协作",
+      "决策框架"
+    ],
+    "speakers": [
+      "Bipin Chadha / CSAA Insurance Group"
+    ]
+  },
+  {
+    "url": "https://www.lennysnewsletter.com/p/how-i-ai-meta-muse-wonder-how-brooke",
+    "title": "🎙️ How I AI: Meta Muse Wonder + How Brooke Lacey is scaling video with AI",
+    "source": "Lenny's Newsletter",
+    "category": "analyst",
+    "published": "2026-10-19",
+    "fetched_at": "2026-10-20T04:44:42+08:00",
+    "score": 6,
+    "summary_zh": "Meta Muse Wonder 模型在 Agent 工作流中表现突出，特别是在客户支持、邮件处理、计算机操作等长流程任务上超越同价位竞品。其「主动聚焦」机制能在复杂任务上投入更多计算资源。但在前端设计和视觉完成度上存在明显短板。评测者认为该模型适合知识工作编排和个人 Agent 部署，但不宜用于设计工作。这反映出当前大模型在不同工作类型上的差异化能力——结构化推理强，视觉创意弱。",
+    "key_points": [
+      "Muse Wonder 在客服工单、收件箱分类、邮件撰写等 Agent 任务上排名第一，\"主动聚焦\"延长复杂任务耗时并显著提升输出质量",
+      "前端设计能力弱，易陷入通用 SaaS 模板，忽视品牌指南，视觉打磨和交互完成度不足",
+      "适合知识工作编排和个人 Agent 部署，但不应涉及设计决策；视频编辑能力有潜力但执行粗糙",
+      "模型速度因任务类型差异大，简单请求快速完成，复杂推理任务明显放慢，体现资源分配策略"
+    ],
+    "tags": [
+      "Agent 落地",
+      "模型评测",
+      "工作流优化",
+      "人机协作"
+    ],
+    "speakers": [
+      "Claire (ChatPRD 创始人/评测者)",
+      "Brooke Lacey (内容创作者/视频 AI 应用)"
+    ]
+  }
+]

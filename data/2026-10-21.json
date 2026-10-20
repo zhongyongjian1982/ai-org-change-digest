@@ -1,0 +1,27 @@
+[
+  {
+    "url": "https://www.oneusefulthing.org/p/30-months-on-the-exponential-in-charts",
+    "title": "30 Months on the Exponential (in Charts)",
+    "source": "One Useful Thing (Ethan Mollick)",
+    "category": "analyst",
+    "published": "2026-10-20",
+    "fetched_at": "2026-10-21T04:44:38+08:00",
+    "score": 8,
+    "summary_zh": "Ethan Mollick 通过30个月的数据回顾 AI 进展，揭示了从聊天机器人到 Agent 时代的工作方式转变。关键观察：（1）AI 能力指数增长——单个 prompt 可完成的工作从 4 分钟增至 17 小时，成本下降 7500 倍；（2）工作协作模式根本改变——从需要人类逐步指导转向自主 delegation，AI 作为 orchestrator 自动分配子任务；（3）180 个模型超越初代 GPT-4，19 个可在手机运行，开源模型普及；（4）人类角色需重新定义——即使 AI 能力强，小的能力缝隙仍需人类介入。这反映了组织中人机协作从工具辅助向真正自主代理的根本性转变。",
+    "key_points": [
+      "AI 能力从 4 分钟任务扩展至 17 小时，成本下降 7500 倍，但测量已达极限",
+      "Agent 架构改变人类工作方式：从逐步指导转向高层 delegation 和结果验证",
+      "180+ 模型超越 GPT-4，开源模型与端设备部署普及，降低组织 AI 采用门槛",
+      "AI 能力分布不均：写作仍弱，数学已超人，小缺口产生持续的人类价值需求"
+    ],
+    "tags": [
+      "Agent 演进",
+      "工作方式重构",
+      "人机协作",
+      "组织生产力"
+    ],
+    "speakers": [
+      "Ethan Mollick"
+    ]
+  }
+]

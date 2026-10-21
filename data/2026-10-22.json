@@ -1,0 +1,27 @@
+[
+  {
+    "url": "https://openai.com/index/att-legal",
+    "title": "How AT&T is rethinking in-house legal work with OpenAI",
+    "source": "OpenAI",
+    "category": "ai-lab",
+    "published": "2026-10-22",
+    "fetched_at": "2026-10-22T04:45:09+08:00",
+    "score": 7,
+    "summary_zh": "AT&T 与 OpenAI 合作，通过 AI 重新设计企业法律部门工作流。其 LegalEdge 团队利用生成式 AI 优化法律咨询摄入流程，降低初级律师的重复工作负担，让法律专业人士聚焦高价值判断。这个案例展现了 AI 如何改变大型企业内部部门的人力配置和知识工作方式，但具体影响细节未在摘要中充分呈现。",
+    "key_points": [
+      "AT&T 用 AI 简化法律咨询摄入，减少律师重复工作",
+      "LegalEdge 团队重新定义法律工作流，律师转向高价值判断",
+      "体现 AI 如何改变知识工作部门的人力结构和工作方式"
+    ],
+    "tags": [
+      "工作流优化",
+      "人才角色转变",
+      "知识工作变革",
+      "企业应用案例"
+    ],
+    "speakers": [
+      "AT&T",
+      "OpenAI"
+    ]
+  }
+]

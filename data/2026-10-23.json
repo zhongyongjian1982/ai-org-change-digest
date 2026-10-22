@@ -1,0 +1,53 @@
+[
+  {
+    "url": "https://www.mckinsey.com/industries/consumer-packaged-goods/our-insights/focus-scale-fund-the-ai-playbook-cpg-leaders-are-missing",
+    "title": "Focus, scale, fund: The AI playbook CPG leaders are missing",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-10-22",
+    "fetched_at": "2026-10-23T04:43:52+08:00",
+    "score": 7,
+    "summary_zh": "麦肯锡分析快消品（CPG）行业如何应对小品牌创新超越巨头、消费者购买模式改变的困境。文章提出 AI 可助力快消品企业实现聚焦、规模化和融资三大战略，帮助传统大企业在竞争中重获优势。强调规模不再是护城河，AI 技术重塑了行业竞争格局与增长路径，涉及组织战略调整和运营模式创新。",
+    "key_points": [
+      "小品牌创新力超越行业巨头，规模优势不再是竞争护城河，企业需重新评估战略",
+      "AI 支撑聚焦、规模化、融资三位一体的新增长模式，帮助快消品企业适应新环境",
+      "消费者购买模式变化驱动企业必须调整产品、营销、供应链组织形式",
+      "传统大型快消企业需要通过 AI 重塑组织能力以应对颠覆性竞争"
+    ],
+    "tags": [
+      "商业模式创新",
+      "组织战略调整",
+      "竞争力重塑",
+      "AI 赋能增长"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  },
+  {
+    "url": "https://openai.com/index/uber-chatgpt-work-rollout",
+    "title": "Uber brings ChatGPT Work to all employees with OpenAI",
+    "source": "OpenAI",
+    "category": "ai-lab",
+    "published": "2026-10-22",
+    "fetched_at": "2026-10-23T04:44:03+08:00",
+    "score": 7,
+    "summary_zh": "Uber 向 30,000+ 员工全面推广 ChatGPT Work，涵盖研究、数据分析、演示文稿制作和复杂工作流自动化。这是大规模企业级 AI 应用的典型案例，体现了生成式 AI 从高层专用工具向全员赋能转变的趋势。反映出知识工作岗位的生产力升级与工作方式重塑——员工能力边界扩展，管理层需重新考虑协作模式、质量把控与人员定位。",
+    "key_points": [
+      "大规模员工覆盖（30000+）意味着 AI 已从试点转向全组织生产力工具",
+      "覆盖研究、数据分析、创意输出等多类工作，改变知识工作的流程与标准",
+      "反映企业对 AI 集成采用的决心，可能引发招聘需求与岗位技能模型调整",
+      "涉及安全、隐私、质量保证的管理挑战与企业治理要求提升"
+    ],
+    "tags": [
+      "生产力赋能",
+      "全员 AI 应用",
+      "工作流重构",
+      "企业级落地"
+    ],
+    "speakers": [
+      "Uber",
+      "OpenAI"
+    ]
+  }
+]

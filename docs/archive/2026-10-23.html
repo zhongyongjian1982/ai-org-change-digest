@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+<title>2026-10-23 — AI TRANSFORMATION</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #0a0a0a; color: #999; font-family: system-ui, -apple-system, sans-serif; line-height: 1.6; min-height: 100vh; }
+a { color: inherit; text-decoration: none; }
+a:hover { color: #ccc; }
+.back-link { position: fixed; top: 18px; left: 20px; font-family: 'VT323', monospace; font-size: 1.15rem; color: #666; z-index: 100; letter-spacing: 0.02em; transition: color 0.15s; }
+.back-link:hover { color: #aaa; }
+header { padding: 60px 20px 32px; text-align: center; }
+header h1 { font-family: 'VT323', monospace; font-size: clamp(2rem, 6vw, 4rem); color: #999; letter-spacing: 0.12em; line-height: 1.1; margin-bottom: 12px; word-spacing: 0.1em; }
+header p { font-size: 0.88rem; color: #666; letter-spacing: 0.08em; }
+header p a { color: #888; transition: color 0.15s; }
+header p a:hover { color: #ccc; }
+.controls { background: #0a0a0a; border-bottom: 1px solid #1c1c1c; position: sticky; top: 0; z-index: 50; }
+.tabs { display: flex; overflow-x: auto; scrollbar-width: none; padding: 0 16px; max-width: 760px; margin: 0 auto; }
+.tabs::-webkit-scrollbar { display: none; }
+.tab { flex-shrink: 0; background: none; border: none; border-bottom: 2px solid transparent; padding: 14px 12px; font-size: 0.88rem; color: #777; cursor: pointer; font-family: system-ui, sans-serif; display: flex; align-items: center; gap: 5px; white-space: nowrap; transition: color 0.15s, border-color 0.15s; letter-spacing: 0.02em; }
+.tab.active { color: #ddd; border-bottom-color: #777; }
+.tab:hover { color: #bbb; }
+.badge { font-size: 0.74rem; color: #555; }
+.tab.active .badge { color: #999; }
+.filter-bar { display: flex; align-items: center; gap: 10px; padding: 10px 16px; border-top: 1px solid #161616; max-width: 760px; margin: 0 auto; font-size: 0.82rem; color: #666; flex-wrap: wrap; }
+.filter-bar > span { letter-spacing: 0.04em; }
+.filter-bar .sep { color: #2a2a2a; }
+.score-filter { display: flex; gap: 6px; flex-wrap: wrap; }
+.sf-btn { background: none; border: 1px solid #2a2a2a; border-radius: 3px; padding: 3px 11px; font-size: 0.8rem; color: #888; cursor: pointer; font-family: inherit; transition: color 0.15s, border-color 0.15s; letter-spacing: 0.04em; }
+.sf-btn.active, .sf-btn:hover { color: #ddd; border-color: #777; }
+.source-select { background: #0a0a0a; border: 1px solid #2a2a2a; border-radius: 3px; padding: 3px 9px; font-size: 0.8rem; color: #aaa; font-family: inherit; cursor: pointer; outline: none; }
+.source-select:hover { color: #ddd; border-color: #777; }
+.source-select option { background: #0a0a0a; color: #ccc; }
+.list { max-width: 760px; margin: 0 auto; padding: 8px 20px 80px; }
+.day { padding-top: 32px; }
+.day-head { font-size: 0.8rem; color: #555; letter-spacing: 0.12em; padding: 0 0 10px; border-bottom: 1px solid #1c1c1c; margin-bottom: 4px; text-transform: uppercase; }
+.day-head .count { color: #444; margin-left: 6px; }
+.entry { padding: 22px 0; border-bottom: 1px solid #161616; }
+.entry.hidden { display: none; }
+.entry-meta { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; font-size: 0.8rem; color: #666; margin-bottom: 8px; letter-spacing: 0.03em; }
+.entry-meta .sep { color: #2a2a2a; }
+.entry-score { color: #999; font-variant-numeric: tabular-nums; letter-spacing: 0.05em; font-weight: 500; }
+.entry-score.s-low { color: #666; }
+.entry-title { display: block; font-size: 1.1rem; color: #ccc; transition: color 0.15s; line-height: 1.5; margin-bottom: 10px; font-weight: 500; }
+.entry-title:hover { color: #fff; }
+.entry-summary { font-size: 0.95rem; color: #aaa; line-height: 1.75; margin-bottom: 10px; }
+.entry-bullets { list-style: none; padding: 0; margin: 8px 0 12px; }
+.entry-bullets li { font-size: 0.9rem; color: #888; line-height: 1.75; padding-left: 16px; position: relative; margin-bottom: 2px; }
+.entry-bullets li::before { content: '·'; position: absolute; left: 4px; color: #666; font-weight: bold; }
+.entry-chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+.entry-chip { font-size: 0.78rem; color: #777; border: 1px solid #2a2a2a; padding: 2px 9px; border-radius: 2px; letter-spacing: 0.03em; }
+.entry-chip.speaker { color: #aaa; border-color: #3a3a3a; }
+.empty-state { text-align: center; padding: 60px 20px; color: #555; font-size: 0.9rem; }
+@media (max-width: 480px) {
+  .list { padding: 8px 14px 60px; }
+  .entry-title { font-size: 1rem; }
+  .entry-summary { font-size: 0.92rem; }
+  .entry-bullets li { font-size: 0.88rem; }
+  .filter-bar { font-size: 0.74rem; gap: 8px; }
+}
+footer { text-align: center; padding: 30px 20px; color: #555; font-size: 0.78rem; letter-spacing: 0.06em; }
+footer a { color: #666; transition: color 0.15s; }
+footer a:hover { color: #999; }
+</style>
+</head>
+<body>
+<a class="back-link" href="https://www.tedzhong.com/">← tedzhong.com</a>
+<header>
+  <h1>2026-10-23</h1>
+  <p>2 条 · <a href="../index.html">← 返回最新</a> · <a href="./">归档</a></p>
+</header>
+<div class="controls">
+  <div class="tabs"><button class="tab active" data-cat="all">全部<span class="badge">2</span></button><button class="tab" data-cat="ai-lab">AI 实验室<span class="badge">1</span></button><button class="tab" data-cat="business">商业<span class="badge">1</span></button></div>
+  <div class="filter-bar">
+    <span>评分</span>
+    <div class="score-filter">
+      <button class="sf-btn active" data-score="6">≥6</button>
+      <button class="sf-btn" data-score="7">≥7</button>
+      <button class="sf-btn" data-score="8">≥8</button>
+      <button class="sf-btn" data-score="9">≥9</button>
+    </div>
+    <span class="sep">·</span>
+    <span>来源</span>
+    <select class="source-select" id="f-source"><option value="*">全部</option><option value="McKinsey Insights">McKinsey Insights</option><option value="OpenAI">OpenAI</option></select>
+  </div>
+</div>
+<div class="list">
+<section class="day"><div class="day-head">2026-10-23<span class="count">· 2 条</span></div>
+    <article class="entry" data-source="McKinsey Insights" data-category="business" data-score="7">
+      <div class="entry-meta">
+        <span class="entry-score">7/10</span>
+        <span class="sep">·</span>
+        <span>McKinsey Insights</span>
+        <span class="sep">·</span>
+        <span>商业</span>
+        <span class="sep">·</span>
+        <span>2026-10-22</span>
+      </div>
+      <a class="entry-title" href="https://www.mckinsey.com/industries/consumer-packaged-goods/our-insights/focus-scale-fund-the-ai-playbook-cpg-leaders-are-missing" target="_blank" rel="noopener">Focus, scale, fund: The AI playbook CPG leaders are missing</a>
+      <p class="entry-summary">麦肯锡分析快消品（CPG）行业如何应对小品牌创新超越巨头、消费者购买模式改变的困境。文章提出 AI 可助力快消品企业实现聚焦、规模化和融资三大战略，帮助传统大企业在竞争中重获优势。强调规模不再是护城河，AI 技术重塑了行业竞争格局与增长路径，涉及组织战略调整和运营模式创新。</p>
+      <ul class="entry-bullets"><li>小品牌创新力超越行业巨头，规模优势不再是竞争护城河，企业需重新评估战略</li><li>AI 支撑聚焦、规模化、融资三位一体的新增长模式，帮助快消品企业适应新环境</li><li>消费者购买模式变化驱动企业必须调整产品、营销、供应链组织形式</li><li>传统大型快消企业需要通过 AI 重塑组织能力以应对颠覆性竞争</li></ul>
+      <div class="entry-chips"><span class="entry-chip speaker">McKinsey</span><span class="entry-chip">商业模式创新</span><span class="entry-chip">组织战略调整</span><span class="entry-chip">竞争力重塑</span><span class="entry-chip">AI 赋能增长</span></div>
+    </article>
+    
+    <article class="entry" data-source="OpenAI" data-category="ai-lab" data-score="7">
+      <div class="entry-meta">
+        <span class="entry-score">7/10</span>
+        <span class="sep">·</span>
+        <span>OpenAI</span>
+        <span class="sep">·</span>
+        <span>AI 实验室</span>
+        <span class="sep">·</span>
+        <span>2026-10-22</span>
+      </div>
+      <a class="entry-title" href="https://openai.com/index/uber-chatgpt-work-rollout" target="_blank" rel="noopener">Uber brings ChatGPT Work to all employees with OpenAI</a>
+      <p class="entry-summary">Uber 向 30,000+ 员工全面推广 ChatGPT Work，涵盖研究、数据分析、演示文稿制作和复杂工作流自动化。这是大规模企业级 AI 应用的典型案例，体现了生成式 AI 从高层专用工具向全员赋能转变的趋势。反映出知识工作岗位的生产力升级与工作方式重塑——员工能力边界扩展，管理层需重新考虑协作模式、质量把控与人员定位。</p>
+      <ul class="entry-bullets"><li>大规模员工覆盖（30000+）意味着 AI 已从试点转向全组织生产力工具</li><li>覆盖研究、数据分析、创意输出等多类工作，改变知识工作的流程与标准</li><li>反映企业对 AI 集成采用的决心，可能引发招聘需求与岗位技能模型调整</li><li>涉及安全、隐私、质量保证的管理挑战与企业治理要求提升</li></ul>
+      <div class="entry-chips"><span class="entry-chip speaker">Uber</span><span class="entry-chip speaker">OpenAI</span><span class="entry-chip">生产力赋能</span><span class="entry-chip">全员 AI 应用</span><span class="entry-chip">工作流重构</span><span class="entry-chip">企业级落地</span></div>
+    </article>
+    </section>
+</div>
+<footer>
+  由 Claude Haiku 4.5 每日构建 · 2026-10-23 04:44 CST
+</footer>
+<script>
+function applyFilters() {
+  const activeTab = document.querySelector('.tab.active');
+  const cat = activeTab ? activeTab.dataset.cat : 'all';
+  const activeScore = document.querySelector('.sf-btn.active');
+  const minScore = activeScore ? parseInt(activeScore.dataset.score, 10) : 6;
+  const srcEl = document.getElementById('f-source');
+  const src = srcEl ? srcEl.value : '*';
+  document.querySelectorAll('.entry').forEach(e => {
+    const ec = e.dataset.category, es = e.dataset.source, esc = parseInt(e.dataset.score, 10);
+    const show = (cat === 'all' || ec === cat) && (src === '*' || es === src) && esc >= minScore;
+    e.classList.toggle('hidden', !show);
+  });
+  document.querySelectorAll('.day').forEach(d => {
+    const any = Array.from(d.querySelectorAll('.entry')).some(e => !e.classList.contains('hidden'));
+    d.style.display = any ? '' : 'none';
+  });
+}
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.tab').forEach(t => t.addEventListener('click', () => {
+    document.querySelectorAll('.tab').forEach(x => x.classList.remove('active'));
+    t.classList.add('active');
+    applyFilters();
+  }));
+  document.querySelectorAll('.sf-btn').forEach(b => b.addEventListener('click', () => {
+    document.querySelectorAll('.sf-btn').forEach(x => x.classList.remove('active'));
+    b.classList.add('active');
+    applyFilters();
+  }));
+  const srcEl = document.getElementById('f-source');
+  if (srcEl) srcEl.addEventListener('change', applyFilters);
+});
+</script>
+</body>
+</html>

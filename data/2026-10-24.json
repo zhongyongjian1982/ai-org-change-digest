@@ -1,0 +1,28 @@
+[
+  {
+    "url": "https://www.mckinsey.com/featured-insights/mckinsey-on-books/author-talks-ai-is-advancing-is-our-judgment-keeping-up",
+    "title": "Author Talks: AI is advancing. Is our judgment keeping up?",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-10-23",
+    "fetched_at": "2026-10-24T04:43:45+08:00",
+    "score": 7,
+    "summary_zh": "McKinsey 的采访聚焦于一个关键问题：如何在利用 AI 潜力的同时保留人类判断力。科技领导者 Tiffany Xingyu Wang 指出，问题不在于是否信任 AI，而在于何时信任、信任多少。这涉及组织如何重新定义决策框架、培养员工的 AI 配合能力，以及在自动化和人类监督间找到平衡。这是企业文化和管理模式的深层调整。",
+    "key_points": [
+      "核心挑战是建立分层信任机制，而非简单的 AI 信任与否",
+      "组织需要培训员工学会与 AI 协作，理解何时依赖自动化、何时保留人类判断",
+      "涉及决策权重配置、风险管理和责任界定的管理创新",
+      "人类判断力的价值在于 AI 时代重新定义，而非被替代或完全依赖"
+    ],
+    "tags": [
+      "人机协作",
+      "决策机制",
+      "组织治理",
+      "能力建设"
+    ],
+    "speakers": [
+      "Tiffany Xingyu Wang",
+      "McKinsey"
+    ]
+  }
+]

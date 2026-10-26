@@ -1,0 +1,153 @@
+[
+  {
+    "url": "https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/the-rise-of-the-agentic-coworker-a-banking-cios-guide-to-the-next-wave-of-ai",
+    "title": "The rise of the agentic coworker: A banking CIO’s guide to the next wave of AI",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-10-26",
+    "fetched_at": "2026-10-27T04:45:32+08:00",
+    "score": 8,
+    "summary_zh": "McKinsey分析AI Agent在银行业的规模化部署。文章指出Agent不仅能执行任务，还能跨工作流做决策和协作，这要求银行CIO重新设计治理框架、系统架构和问责机制。强调从试点到规模化部署需要组织层面的流程再造，而非仅是技术升级，直接涉及银行内部决策权、风险管理和员工角色重定义。",
+    "key_points": [
+      "Agent能跨工作流自主决策协作，打破传统流程边界",
+      "规模化部署需要重构治理体系、技术架构、问责链",
+      "金融机构需从CIO视角重新审视组织设计与风险控制",
+      "Agent部署带来人员角色和权力结构的根本性调整"
+    ],
+    "tags": [
+      "Agent落地",
+      "组织治理",
+      "流程重构",
+      "金融行业变革"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  },
+  {
+    "url": "https://www.lennysnewsletter.com/p/how-i-ai-claude-duet-honest-review",
+    "title": "🎙️ How I AI: Claude Duet honest review + Why Reddit built its own AI prototyping tool",
+    "source": "Lenny's Newsletter",
+    "category": "analyst",
+    "published": "2026-10-26",
+    "fetched_at": "2026-10-27T04:46:01+08:00",
+    "score": 7,
+    "summary_zh": "Reddit 工程师 Blair Metcalf 分享了内部 AI 原型工具 Reddit Proto 的设计理念与落地效果。该平台让设计师和产品经理无需接触代码即可生成生产级原型，已支撑 700+ 个原型、实现 UX 和产品团队 100% 采用。关键创新包括：真实数据替代模拟数据提升决策质量、AI 注解包含代码上下文减少歧义、自定义设计系统 MCP 让 AI 可靠执行、Figma-to-PRD 工作流简化工程交付。核心洞察是最优的 AI 工具应隐藏复杂性而非限制能力，最佳使用者往往是强产品意识而非高技术能力的人员。",
+    "key_points": [
+      "真实账户登录和数据让原型可信度高 10 倍，领导层能评估实际体验而非补脑",
+      "AI 注解与代码上下文绑定，Cursor 从「猜测」变成「精准执行」",
+      "设计系统 MCP 映射生产代码，AI 知道用哪个组件、如何样式化、放在哪",
+      "700+ 原型需要可搜索索引和标签体系，发现能力与创建能力同等重要",
+      "强产品直觉比工程背景更能用好 AI 工具，降低工程交付的不确定性"
+    ],
+    "tags": [
+      "组织工具创新",
+      "AI 工作流设计",
+      "设计工程协作",
+      "生产力提升"
+    ],
+    "speakers": [
+      "Blair Metcalf（Reddit 首席 UX 工程师）",
+      "Claire（Lenny's Newsletter 主持人）"
+    ]
+  },
+  {
+    "url": "https://www.lennysnewsletter.com/p/why-reddit-built-its-own-ai-prototyping",
+    "title": "Why Reddit built its own AI prototyping tool | Blair Metcalf",
+    "source": "Lenny's Newsletter",
+    "category": "analyst",
+    "published": "2026-10-26",
+    "fetched_at": "2026-10-27T04:46:06+08:00",
+    "score": 7,
+    "summary_zh": "Reddit 工程师 Blair Metcalf 分享了公司自研 AI 原型工具 Reddit Proto 的设计思路。该工具通过自定义 MCP（模型上下文协议）将设计系统映射到生产代码，在 UX 和产品团队中达到 100% 采用率，支撑 700+ 原型。核心创新包括：用真实数据而非 mock 数据提升原型保真度、通过「特性胶囊」优化工程交接、借助 Cursor 实现设计注释直接转换为代码编辑。这反映了 AI 工具如何改变产品开发流程、加速设计-工程协作，但缺乏对组织结构或人员角色变化的深层讨论。",
+    "key_points": [
+      "Reddit 自研原型工具集成 AI + 设计系统，设计师直接生成可交付代码原型，打破设计-工程壁垒",
+      "真实数据驱动原型验证，领导力审查基于真实场景而非 mock，提升评审质量和迭代速度",
+      "MCP 作为「翻译层」，将产品语言映射到代码，降低 AI 工具输出的可靠性风险",
+      "工程师和设计师成为「最佳原型开发者」，改变了原型角色定位，扩展了 AI 工具的使用者范围"
+    ],
+    "tags": [
+      "工具链优化",
+      "设计-工程协作",
+      "生产力提升",
+      "AI 在产品开发中的落地"
+    ],
+    "speakers": [
+      "Blair Metcalf（Reddit 首席 UX 工程师）",
+      "Claire Vo（主持人，ChatPRD 创始人）"
+    ]
+  },
+  {
+    "url": "https://sloanreview.mit.edu/article/is-hr-tech-undermining-your-strategy/",
+    "title": "Is HR Tech Undermining Your Strategy?",
+    "source": "MIT Sloan Management Review",
+    "category": "business",
+    "published": "2026-10-26",
+    "fetched_at": "2026-10-27T04:45:20+08:00",
+    "score": 7,
+    "summary_zh": "MIT Sloan 分析了 HR 科技对组织战略执行的负面影响。尽管 HR 平台承诺数据驱动决策和最佳实践标准化，但超过半数员工认为现有 HR 技术无效。问题根源在于：组织往往通过堆积点解决方案（80-数百个系统并存）而非战略性架构设计，导致数据孤岛、流程碎片化、资源浪费，最终偏离战略优先级。文章指出供应商优化通用性与可扩展性，而非适配特定组织战略，AI 虽降低定制成本但引入稳定性风险。",
+    "key_points": [
+      "HR 技术堆积（80-数百系统）破坏一致性，造成数据孤岛与流程碎片化，反而削弱战略执行",
+      "点解决方案各自独立有效，但缺乏企业级架构设计导致功能、财务与决策浪费",
+      "供应商平台优先通用性与可扩展性，与企业独特战略目标存在根本矛盾",
+      "AI 降低定制工具门槛，但本地开发的方案面临稳定性、安全性与集成风险"
+    ],
+    "tags": [
+      "HR 科技战略",
+      "组织系统设计",
+      "数据孤岛与决策碎片化",
+      "AI 定制工具风险"
+    ],
+    "speakers": []
+  },
+  {
+    "url": "https://www.mckinsey.com/capabilities/risk-and-resilience/our-insights/agentic-ai-in-financial-crime-prevention-lessons-from-winners",
+    "title": "Agentic AI in financial-crime prevention: Lessons from winners",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-10-26",
+    "fetched_at": "2026-10-27T04:45:28+08:00",
+    "score": 7,
+    "summary_zh": "麦肯锡分析agentic AI在金融反洗钱领域的落地进展。文章基于一年的实践验证，提出五个关键问题帮助金融机构规模化部署Agent。核心涉及：如何组织专业团队支撑AI系统、重新定义合规岗位职责与技能需求、改变工作流程与决策链路、培养员工适应人机协作新模式。反映出AI不仅是技术替代，更是对组织能力、人员配置、运营模式的系统性重构。",
+    "key_points": [
+      "Agent实战证实了预期效果，但规模化需要组织能力突破，不仅是技术部署",
+      "金融反洗钱岗位定义与技能模型必须重塑，员工需从执行者转向AI监督者",
+      "五大关键问题涉及团队组织、流程重设、人才培养等组织层面决策",
+      "成功的Agent落地需要改变工作决策链路与机制，而非仅优化单点效率"
+    ],
+    "tags": [
+      "组织重构",
+      "人才策略",
+      "Agent落地",
+      "流程重设"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/capabilities/risk-and-resilience/our-insights/agentic-ai-in-transaction-monitoring-how-banks-can-scale-ai-in-compliance",
+    "title": "Agentic AI in transaction monitoring: How banks can scale AI in compliance",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-10-26",
+    "fetched_at": "2026-10-27T04:45:36+08:00",
+    "score": 7,
+    "summary_zh": "麦肯锡分析了生成式AI Agent如何改变银行合规监测工作流。通过Agent自动化交易监测，银行可将传统成本中心转变为竞争优势驱动器。这涉及重新定义合规岗位职责、优化人员配置、加速决策流程。Agent接管重复性规则判断，释放人工分析师专注复杂案例和风险判断，实现人机协作模式下的生产力跃升与成本控制的双重目标。",
+    "key_points": [
+      "Agent自动化交易监测，将合规从成本中心转化为战略优势源",
+      "人员结构重塑：分析师转向高阶判断，Agent处理重复规则匹配",
+      "流程加速与准确率提升，降低漏报风险与运营成本",
+      "机构需重新定义角色、能力模型与绩效评估体系"
+    ],
+    "tags": [
+      "Agent落地",
+      "组织流程优化",
+      "人才重塑",
+      "生产力提升"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  }
+]

@@ -1,0 +1,81 @@
+[
+  {
+    "url": "https://stratechery.com/2026/an-interview-with-palantir-cto-shyam-sankar-about-the-ai-religious-war/",
+    "title": "An Interview with Palantir CTO Shyam Sankar About the AI Religious War",
+    "source": "Stratechery (free posts)",
+    "category": "analyst",
+    "published": "2026-10-29",
+    "fetched_at": "2026-10-30T04:40:07+08:00",
+    "score": 8,
+    "summary_zh": "Palantir CTO Shyam Sankar认为业界对AI扩散（diffusion）重视不足，企业应聚焦收入端而非成本端来成功采纳AI。他批评实验室拒绝采用系统工程方法处理AI安全问题。Sankar强调Palantir通过前置部署工程师模式帮助企业保留竞争优势而非趋向平庸，并指出技术界存在「宗教战争」般的AI意识形态分歧。他还涉及模型策略、Anthropic与政府冲突等议题，揭示AI采纳中的组织与战略层面深层问题。",
+    "key_points": [
+      "AI扩散不足是关键问题：企业需系统化推广而非仅聚焦模型本身",
+      "收入驱动优于成本驱动：专注收入的企业在AI采纳中更成功",
+      "系统工程缺失：AI安全研究拒绝采用工程学方法，导致实际落地困难",
+      "前置工程师模式：保留组织竞争优势的关键是保持差异化而非趋同",
+      "AI意识形态分歧深刻：技术界围绕AI发展存在根本性「宗教战争」"
+    ],
+    "tags": [
+      "AI采纳策略",
+      "组织转型",
+      "系统工程",
+      "AI安全与伦理",
+      "人才模式"
+    ],
+    "speakers": [
+      "Shyam Sankar",
+      "Alex Karp",
+      "Palantir",
+      "Anthropic"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/industries/financial-services/our-insights/the-algorithm-isnt-the-advantage-the-team-is",
+    "title": "The algorithm isn’t the advantage–the team is",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-10-29",
+    "fetched_at": "2026-10-30T04:39:44+08:00",
+    "score": 7,
+    "summary_zh": "FICO CEO Will Lansing认为，在AI时代，企业竞争优势的关键不在于算法本身，而在于拥有强大的所有权文化和优秀团队。他指出，随着AI模型和计算方法逐渐趋同，企业需要通过建立员工主人翁意识、培养数据团队的协作能力和决策权，来创造差异化优势。这意味着组织需要从技术至上转向人才与文化驱动的战略。",
+    "key_points": [
+      "算法不是竞争优势，团队文化和所有权意识才是核心差异化因素",
+      "AI时代技术趋同，企业需转向人才驱动战略",
+      "强所有权文化能激发团队主动性，提升数据分析质量和决策效率",
+      "组织应权力下沉，赋予数据团队更多自主决策权"
+    ],
+    "tags": [
+      "组织文化",
+      "人才策略",
+      "所有权文化",
+      "领导力重构"
+    ],
+    "speakers": [
+      "Will Lansing（FICO CEO）"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/capabilities/risk-and-resilience/our-insights/banking-on-ai-how-a-new-operating-model-can-transform-distressed-credit-management",
+    "title": "Banking on AI: How a new operating model can transform distressed credit management",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-10-29",
+    "fetched_at": "2026-10-30T04:39:48+08:00",
+    "score": 7,
+    "summary_zh": "麦肯锡指出银行虽在不良资产管理中大规模部署AI，但多数银行未相应调整运营模式。文章强调通过重构操作流程、整合AI能力与人员角色，可以提升客户体验、优化回收成本与财务表现。这是典型的AI驱动的组织运营变革案例——不仅是技术问题，更是流程、团队结构和决策权的重新设计。",
+    "key_points": [
+      "银行需要基于AI重新设计不良资产管理的端到端运营模式，而非仅技术升级",
+      "运营模式调整涉及人员角色重配、决策流程优化与AI与人工的协作方式",
+      "通过新运营模式可同时改善客户体验、降低回收成本、提升财务回报"
+    ],
+    "tags": [
+      "运营模式重构",
+      "人员角色变革",
+      "AI+人工协作",
+      "金融行业数字化"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  }
+]

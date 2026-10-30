@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+<title>2026-10-31 — AI TRANSFORMATION</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #0a0a0a; color: #999; font-family: system-ui, -apple-system, sans-serif; line-height: 1.6; min-height: 100vh; }
+a { color: inherit; text-decoration: none; }
+a:hover { color: #ccc; }
+.back-link { position: fixed; top: 18px; left: 20px; font-family: 'VT323', monospace; font-size: 1.15rem; color: #666; z-index: 100; letter-spacing: 0.02em; transition: color 0.15s; }
+.back-link:hover { color: #aaa; }
+header { padding: 60px 20px 32px; text-align: center; }
+header h1 { font-family: 'VT323', monospace; font-size: clamp(2rem, 6vw, 4rem); color: #999; letter-spacing: 0.12em; line-height: 1.1; margin-bottom: 12px; word-spacing: 0.1em; }
+header p { font-size: 0.88rem; color: #666; letter-spacing: 0.08em; }
+header p a { color: #888; transition: color 0.15s; }
+header p a:hover { color: #ccc; }
+.controls { background: #0a0a0a; border-bottom: 1px solid #1c1c1c; position: sticky; top: 0; z-index: 50; }
+.tabs { display: flex; overflow-x: auto; scrollbar-width: none; padding: 0 16px; max-width: 760px; margin: 0 auto; }
+.tabs::-webkit-scrollbar { display: none; }
+.tab { flex-shrink: 0; background: none; border: none; border-bottom: 2px solid transparent; padding: 14px 12px; font-size: 0.88rem; color: #777; cursor: pointer; font-family: system-ui, sans-serif; display: flex; align-items: center; gap: 5px; white-space: nowrap; transition: color 0.15s, border-color 0.15s; letter-spacing: 0.02em; }
+.tab.active { color: #ddd; border-bottom-color: #777; }
+.tab:hover { color: #bbb; }
+.badge { font-size: 0.74rem; color: #555; }
+.tab.active .badge { color: #999; }
+.filter-bar { display: flex; align-items: center; gap: 10px; padding: 10px 16px; border-top: 1px solid #161616; max-width: 760px; margin: 0 auto; font-size: 0.82rem; color: #666; flex-wrap: wrap; }
+.filter-bar > span { letter-spacing: 0.04em; }
+.filter-bar .sep { color: #2a2a2a; }
+.score-filter { display: flex; gap: 6px; flex-wrap: wrap; }
+.sf-btn { background: none; border: 1px solid #2a2a2a; border-radius: 3px; padding: 3px 11px; font-size: 0.8rem; color: #888; cursor: pointer; font-family: inherit; transition: color 0.15s, border-color 0.15s; letter-spacing: 0.04em; }
+.sf-btn.active, .sf-btn:hover { color: #ddd; border-color: #777; }
+.source-select { background: #0a0a0a; border: 1px solid #2a2a2a; border-radius: 3px; padding: 3px 9px; font-size: 0.8rem; color: #aaa; font-family: inherit; cursor: pointer; outline: none; }
+.source-select:hover { color: #ddd; border-color: #777; }
+.source-select option { background: #0a0a0a; color: #ccc; }
+.list { max-width: 760px; margin: 0 auto; padding: 8px 20px 80px; }
+.day { padding-top: 32px; }
+.day-head { font-size: 0.8rem; color: #555; letter-spacing: 0.12em; padding: 0 0 10px; border-bottom: 1px solid #1c1c1c; margin-bottom: 4px; text-transform: uppercase; }
+.day-head .count { color: #444; margin-left: 6px; }
+.entry { padding: 22px 0; border-bottom: 1px solid #161616; }
+.entry.hidden { display: none; }
+.entry-meta { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; font-size: 0.8rem; color: #666; margin-bottom: 8px; letter-spacing: 0.03em; }
+.entry-meta .sep { color: #2a2a2a; }
+.entry-score { color: #999; font-variant-numeric: tabular-nums; letter-spacing: 0.05em; font-weight: 500; }
+.entry-score.s-low { color: #666; }
+.entry-title { display: block; font-size: 1.1rem; color: #ccc; transition: color 0.15s; line-height: 1.5; margin-bottom: 10px; font-weight: 500; }
+.entry-title:hover { color: #fff; }
+.entry-summary { font-size: 0.95rem; color: #aaa; line-height: 1.75; margin-bottom: 10px; }
+.entry-bullets { list-style: none; padding: 0; margin: 8px 0 12px; }
+.entry-bullets li { font-size: 0.9rem; color: #888; line-height: 1.75; padding-left: 16px; position: relative; margin-bottom: 2px; }
+.entry-bullets li::before { content: '·'; position: absolute; left: 4px; color: #666; font-weight: bold; }
+.entry-chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+.entry-chip { font-size: 0.78rem; color: #777; border: 1px solid #2a2a2a; padding: 2px 9px; border-radius: 2px; letter-spacing: 0.03em; }
+.entry-chip.speaker { color: #aaa; border-color: #3a3a3a; }
+.empty-state { text-align: center; padding: 60px 20px; color: #555; font-size: 0.9rem; }
+@media (max-width: 480px) {
+  .list { padding: 8px 14px 60px; }
+  .entry-title { font-size: 1rem; }
+  .entry-summary { font-size: 0.92rem; }
+  .entry-bullets li { font-size: 0.88rem; }
+  .filter-bar { font-size: 0.74rem; gap: 8px; }
+}
+footer { text-align: center; padding: 30px 20px; color: #555; font-size: 0.78rem; letter-spacing: 0.06em; }
+footer a { color: #666; transition: color 0.15s; }
+footer a:hover { color: #999; }
+</style>
+</head>
+<body>
+<a class="back-link" href="https://www.tedzhong.com/">← tedzhong.com</a>
+<header>
+  <h1>2026-10-31</h1>
+  <p>5 条 · <a href="../index.html">← 返回最新</a> · <a href="./">归档</a></p>
+</header>
+<div class="controls">
+  <div class="tabs"><button class="tab active" data-cat="all">全部<span class="badge">5</span></button><button class="tab" data-cat="ai-lab">AI 实验室<span class="badge">1</span></button><button class="tab" data-cat="business">商业<span class="badge">4</span></button></div>
+  <div class="filter-bar">
+    <span>评分</span>
+    <div class="score-filter">
+      <button class="sf-btn active" data-score="6">≥6</button>
+      <button class="sf-btn" data-score="7">≥7</button>
+      <button class="sf-btn" data-score="8">≥8</button>
+      <button class="sf-btn" data-score="9">≥9</button>
+    </div>
+    <span class="sep">·</span>
+    <span>来源</span>
+    <select class="source-select" id="f-source"><option value="*">全部</option><option value="McKinsey Insights">McKinsey Insights</option><option value="OpenAI">OpenAI</option></select>
+  </div>
+</div>
+<div class="list">
+<section class="day"><div class="day-head">2026-10-31<span class="count">· 5 条</span></div>
+    <article class="entry" data-source="McKinsey Insights" data-category="business" data-score="8">
+      <div class="entry-meta">
+        <span class="entry-score">8/10</span>
+        <span class="sep">·</span>
+        <span>McKinsey Insights</span>
+        <span class="sep">·</span>
+        <span>商业</span>
+        <span class="sep">·</span>
+        <span>2026-10-30</span>
+      </div>
+      <a class="entry-title" href="https://www.mckinsey.com/industries/financial-services/our-insights/closing-bankings-ai-value-gap-a-ceo-guide" target="_blank" rel="noopener">Closing banking’s AI value gap: A CEO guide</a>
+      <p class="entry-summary">McKinsey 分析银行业 AI 投资与实际价值产出的脱节现象。指出仅有部分银行将 AI 投资转化为可持续竞争优势，大多数陷入「一次性项目」陷阱。CEO 需要建立系统化运营模式，将 AI 投资转化为「可复用 AI 资本」，通过组织能力积累、流程标准化、跨部门协同实现指数级收益。核心建议：从单点应用转向平台化思维，建立 AI 治理体系与人员赋能机制。</p>
+      <ul class="entry-bullets"><li>大多数银行 AI 投资未能转化为可持续价值，陷入低效率循环</li><li>需要构建可复用的 AI 运营模型，实现投资的跨部门、跨项目规模化</li><li>CEO 应聚焦组织能力与流程重构，而非单纯的技术部署</li><li>系统化治理与人员赋能是激活 AI 资本的关键杠杆</li></ul>
+      <div class="entry-chips"><span class="entry-chip speaker">McKinsey</span><span class="entry-chip">运营模式转型</span><span class="entry-chip">AI 投资回报</span><span class="entry-chip">组织能力建设</span><span class="entry-chip">金融行业数字化</span></div>
+    </article>
+    
+    <article class="entry" data-source="McKinsey Insights" data-category="business" data-score="8">
+      <div class="entry-meta">
+        <span class="entry-score">8/10</span>
+        <span class="sep">·</span>
+        <span>McKinsey Insights</span>
+        <span class="sep">·</span>
+        <span>商业</span>
+        <span class="sep">·</span>
+        <span>2026-10-30</span>
+      </div>
+      <a class="entry-title" href="https://www.mckinsey.com/industries/financial-services/our-insights/waniwanis-ceo-on-the-agentic-future-of-insurance-distribution" target="_blank" rel="noopener">Waniwani’s CEO on the agentic future of insurance distribution</a>
+      <p class="entry-summary">Waniwani CEO Robin Diligent探讨AI Agent对保险分销经济的颠覆性影响。Agent通过自动化客户咨询、比价、理赔等环节，可能重塑保险中介角色，降低分销成本，改变保险公司的渠道策略和人力配置。同时提及风险与implications——对传统代理人、客户信任、监管的潜在挑战。这涉及整个保险行业的组织结构与商业模式调整。</p>
+      <ul class="entry-bullets"><li>AI Agent将改变保险分销经济模式，重定义中介价值链与成本结构</li><li>自动化客户服务、比价、承保流程，可能取代部分传统代理人角色</li><li>保险公司需重新规划渠道策略、人员结构和核心竞争力定位</li><li>涉及客户信任、数据安全、监管合规等组织风险与挑战</li></ul>
+      <div class="entry-chips"><span class="entry-chip speaker">Robin Diligent (Waniwani CEO)</span><span class="entry-chip">保险行业变革</span><span class="entry-chip">Agent落地</span><span class="entry-chip">渠道重塑</span><span class="entry-chip">人力转型</span></div>
+    </article>
+    
+    <article class="entry" data-source="McKinsey Insights" data-category="business" data-score="7">
+      <div class="entry-meta">
+        <span class="entry-score">7/10</span>
+        <span class="sep">·</span>
+        <span>McKinsey Insights</span>
+        <span class="sep">·</span>
+        <span>商业</span>
+        <span class="sep">·</span>
+        <span>2026-10-30</span>
+      </div>
+      <a class="entry-title" href="https://www.mckinsey.com/industries/life-sciences/our-insights/overcoming-the-r-and-d-bottleneck-building-a-causal-decision-system" target="_blank" rel="noopener">Overcoming the R&amp;D bottleneck: Building a causal decision system</a>
+      <p class="entry-summary">麦肯锡指出，生物制药企业R&amp;D生产力停滞的根本原因在于决策分散。领先企业通过建立因果决策系统，将碎片化分析整合为连贯的决策链路，以此优化开发周期、降低成本并提升成功率。这反映出AI驱动的数据决策系统如何重塑科研组织的工作流程和决策权力结构，从基层数据分析到高管战略选择的全链路变革。</p>
+      <ul class="entry-bullets"><li>生物制药R&amp;D瓶颈来自决策碎片化，需用因果决策系统整合分析能力</li><li>AI赋能的连贯决策链路可同时优化速度、成本和成功率三维目标</li><li>领先企业正通过数据系统化重塑组织内的决策权力分配与流程</li></ul>
+      <div class="entry-chips"><span class="entry-chip speaker">McKinsey</span><span class="entry-chip">决策系统</span><span class="entry-chip">工作流优化</span><span class="entry-chip">生产力提升</span><span class="entry-chip">组织流程重构</span></div>
+    </article>
+    
+    <article class="entry" data-source="McKinsey Insights" data-category="business" data-score="7">
+      <div class="entry-meta">
+        <span class="entry-score">7/10</span>
+        <span class="sep">·</span>
+        <span>McKinsey Insights</span>
+        <span class="sep">·</span>
+        <span>商业</span>
+        <span class="sep">·</span>
+        <span>2026-10-30</span>
+      </div>
+      <a class="entry-title" href="https://www.mckinsey.com/industries/industrials/our-insights/wartsila-ceo-hakan-agnevall-focus-flexibility-and-the-next-wave-of-growth" target="_blank" rel="noopener">Wärtsilä CEO Håkan Agnevall: Focus, flexibility, and the next wave of growth</a>
+      <p class="entry-summary">瓦锡兰CEO Håkan Agnevall在麦肯锡洞察中阐述工业企业如何应对数据中心电力需求激增的挑战。他强调通过聚焦核心业务、灵活扩展和落地AI与持续改进来转化颠覆为增长机遇。这反映了传统工业如何重新组织能力和资源配置，以适应AI时代的新需求，涉及战略调整、运营优化和人员能力再定义。</p>
+      <ul class="entry-bullets"><li>工业企业需要重塑聚焦战略，应对数据中心等新兴需求的规模化挑战</li><li>AI和持续改进被视为核心运营杠杆，支撑增长转型</li><li>灵活性与敏捷的组织能力成为应对颠覆的关键竞争力</li></ul>
+      <div class="entry-chips"><span class="entry-chip speaker">Håkan Agnevall（瓦锡兰CEO）</span><span class="entry-chip speaker">McKinsey</span><span class="entry-chip">组织转型</span><span class="entry-chip">运营优化</span><span class="entry-chip">AI赋能</span><span class="entry-chip">工业数字化</span></div>
+    </article>
+    
+    <article class="entry" data-source="OpenAI" data-category="ai-lab" data-score="7">
+      <div class="entry-meta">
+        <span class="entry-score">7/10</span>
+        <span class="sep">·</span>
+        <span>OpenAI</span>
+        <span class="sep">·</span>
+        <span>AI 实验室</span>
+        <span class="sep">·</span>
+        <span>2026-10-29</span>
+      </div>
+      <a class="entry-title" href="https://openai.com/index/credit-saison" target="_blank" rel="noopener">Credit Saison achieves 954% ROI in a ChatGPT Enterprise pilot</a>
+      <p class="entry-summary">日本信用卡公司Credit Saison通过ChatGPT Enterprise试点获得954%的投资回报率。案例展示了如何通过领导层支持和员工参与，将试点成果转化为公司范围内的AI应用推广。虽然具体应用场景未详述，但高ROI数据反映AI工具在金融服务组织中的实际生产力提升潜力，以及自上而下推进数字化变革的有效路径。</p>
+      <ul class="entry-bullets"><li>954%的ROI说明生成式AI在企业实际应用中能产生显著商业价值</li><li>试点到全面推广需要领导层主动推进与员工积极参与相结合</li><li>金融服务业可通过企业级AI工具提升运营效率和客户服务能力</li></ul>
+      <div class="entry-chips"><span class="entry-chip speaker">Credit Saison</span><span class="entry-chip">生产力提升</span><span class="entry-chip">企业AI采纳</span><span class="entry-chip">领导力驱动</span><span class="entry-chip">试点转规模</span></div>
+    </article>
+    </section>
+</div>
+<footer>
+  由 Claude Haiku 4.5 每日构建 · 2026-10-31 04:40 CST
+</footer>
+<script>
+function applyFilters() {
+  const activeTab = document.querySelector('.tab.active');
+  const cat = activeTab ? activeTab.dataset.cat : 'all';
+  const activeScore = document.querySelector('.sf-btn.active');
+  const minScore = activeScore ? parseInt(activeScore.dataset.score, 10) : 6;
+  const srcEl = document.getElementById('f-source');
+  const src = srcEl ? srcEl.value : '*';
+  document.querySelectorAll('.entry').forEach(e => {
+    const ec = e.dataset.category, es = e.dataset.source, esc = parseInt(e.dataset.score, 10);
+    const show = (cat === 'all' || ec === cat) && (src === '*' || es === src) && esc >= minScore;
+    e.classList.toggle('hidden', !show);
+  });
+  document.querySelectorAll('.day').forEach(d => {
+    const any = Array.from(d.querySelectorAll('.entry')).some(e => !e.classList.contains('hidden'));
+    d.style.display = any ? '' : 'none';
+  });
+}
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.tab').forEach(t => t.addEventListener('click', () => {
+    document.querySelectorAll('.tab').forEach(x => x.classList.remove('active'));
+    t.classList.add('active');
+    applyFilters();
+  }));
+  document.querySelectorAll('.sf-btn').forEach(b => b.addEventListener('click', () => {
+    document.querySelectorAll('.sf-btn').forEach(x => x.classList.remove('active'));
+    b.classList.add('active');
+    applyFilters();
+  }));
+  const srcEl = document.getElementById('f-source');
+  if (srcEl) srcEl.addEventListener('change', applyFilters);
+});
+</script>
+</body>
+</html>

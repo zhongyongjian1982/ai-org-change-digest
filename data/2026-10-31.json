@@ -1,0 +1,125 @@
+[
+  {
+    "url": "https://www.mckinsey.com/industries/financial-services/our-insights/closing-bankings-ai-value-gap-a-ceo-guide",
+    "title": "Closing banking’s AI value gap: A CEO guide",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-10-30",
+    "fetched_at": "2026-10-31T04:39:45+08:00",
+    "score": 8,
+    "summary_zh": "McKinsey 分析银行业 AI 投资与实际价值产出的脱节现象。指出仅有部分银行将 AI 投资转化为可持续竞争优势，大多数陷入「一次性项目」陷阱。CEO 需要建立系统化运营模式，将 AI 投资转化为「可复用 AI 资本」，通过组织能力积累、流程标准化、跨部门协同实现指数级收益。核心建议：从单点应用转向平台化思维，建立 AI 治理体系与人员赋能机制。",
+    "key_points": [
+      "大多数银行 AI 投资未能转化为可持续价值，陷入低效率循环",
+      "需要构建可复用的 AI 运营模型，实现投资的跨部门、跨项目规模化",
+      "CEO 应聚焦组织能力与流程重构，而非单纯的技术部署",
+      "系统化治理与人员赋能是激活 AI 资本的关键杠杆"
+    ],
+    "tags": [
+      "运营模式转型",
+      "AI 投资回报",
+      "组织能力建设",
+      "金融行业数字化"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/industries/financial-services/our-insights/waniwanis-ceo-on-the-agentic-future-of-insurance-distribution",
+    "title": "Waniwani’s CEO on the agentic future of insurance distribution",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-10-30",
+    "fetched_at": "2026-10-31T04:39:56+08:00",
+    "score": 8,
+    "summary_zh": "Waniwani CEO Robin Diligent探讨AI Agent对保险分销经济的颠覆性影响。Agent通过自动化客户咨询、比价、理赔等环节，可能重塑保险中介角色，降低分销成本，改变保险公司的渠道策略和人力配置。同时提及风险与implications——对传统代理人、客户信任、监管的潜在挑战。这涉及整个保险行业的组织结构与商业模式调整。",
+    "key_points": [
+      "AI Agent将改变保险分销经济模式，重定义中介价值链与成本结构",
+      "自动化客户服务、比价、承保流程，可能取代部分传统代理人角色",
+      "保险公司需重新规划渠道策略、人员结构和核心竞争力定位",
+      "涉及客户信任、数据安全、监管合规等组织风险与挑战"
+    ],
+    "tags": [
+      "保险行业变革",
+      "Agent落地",
+      "渠道重塑",
+      "人力转型"
+    ],
+    "speakers": [
+      "Robin Diligent (Waniwani CEO)"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/industries/life-sciences/our-insights/overcoming-the-r-and-d-bottleneck-building-a-causal-decision-system",
+    "title": "Overcoming the R&D bottleneck: Building a causal decision system",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-10-30",
+    "fetched_at": "2026-10-31T04:39:52+08:00",
+    "score": 7,
+    "summary_zh": "麦肯锡指出，生物制药企业R&D生产力停滞的根本原因在于决策分散。领先企业通过建立因果决策系统，将碎片化分析整合为连贯的决策链路，以此优化开发周期、降低成本并提升成功率。这反映出AI驱动的数据决策系统如何重塑科研组织的工作流程和决策权力结构，从基层数据分析到高管战略选择的全链路变革。",
+    "key_points": [
+      "生物制药R&D瓶颈来自决策碎片化，需用因果决策系统整合分析能力",
+      "AI赋能的连贯决策链路可同时优化速度、成本和成功率三维目标",
+      "领先企业正通过数据系统化重塑组织内的决策权力分配与流程"
+    ],
+    "tags": [
+      "决策系统",
+      "工作流优化",
+      "生产力提升",
+      "组织流程重构"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/industries/industrials/our-insights/wartsila-ceo-hakan-agnevall-focus-flexibility-and-the-next-wave-of-growth",
+    "title": "Wärtsilä CEO Håkan Agnevall: Focus, flexibility, and the next wave of growth",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-10-30",
+    "fetched_at": "2026-10-31T04:40:00+08:00",
+    "score": 7,
+    "summary_zh": "瓦锡兰CEO Håkan Agnevall在麦肯锡洞察中阐述工业企业如何应对数据中心电力需求激增的挑战。他强调通过聚焦核心业务、灵活扩展和落地AI与持续改进来转化颠覆为增长机遇。这反映了传统工业如何重新组织能力和资源配置，以适应AI时代的新需求，涉及战略调整、运营优化和人员能力再定义。",
+    "key_points": [
+      "工业企业需要重塑聚焦战略，应对数据中心等新兴需求的规模化挑战",
+      "AI和持续改进被视为核心运营杠杆，支撑增长转型",
+      "灵活性与敏捷的组织能力成为应对颠覆的关键竞争力"
+    ],
+    "tags": [
+      "组织转型",
+      "运营优化",
+      "AI赋能",
+      "工业数字化"
+    ],
+    "speakers": [
+      "Håkan Agnevall（瓦锡兰CEO）",
+      "McKinsey"
+    ]
+  },
+  {
+    "url": "https://openai.com/index/credit-saison",
+    "title": "Credit Saison achieves 954% ROI in a ChatGPT Enterprise pilot",
+    "source": "OpenAI",
+    "category": "ai-lab",
+    "published": "2026-10-29",
+    "fetched_at": "2026-10-31T04:40:17+08:00",
+    "score": 7,
+    "summary_zh": "日本信用卡公司Credit Saison通过ChatGPT Enterprise试点获得954%的投资回报率。案例展示了如何通过领导层支持和员工参与，将试点成果转化为公司范围内的AI应用推广。虽然具体应用场景未详述，但高ROI数据反映AI工具在金融服务组织中的实际生产力提升潜力，以及自上而下推进数字化变革的有效路径。",
+    "key_points": [
+      "954%的ROI说明生成式AI在企业实际应用中能产生显著商业价值",
+      "试点到全面推广需要领导层主动推进与员工积极参与相结合",
+      "金融服务业可通过企业级AI工具提升运营效率和客户服务能力"
+    ],
+    "tags": [
+      "生产力提升",
+      "企业AI采纳",
+      "领导力驱动",
+      "试点转规模"
+    ],
+    "speakers": [
+      "Credit Saison"
+    ]
+  }
+]

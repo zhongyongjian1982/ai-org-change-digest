@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+<title>2026-11-03 — AI TRANSFORMATION</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #0a0a0a; color: #999; font-family: system-ui, -apple-system, sans-serif; line-height: 1.6; min-height: 100vh; }
+a { color: inherit; text-decoration: none; }
+a:hover { color: #ccc; }
+.back-link { position: fixed; top: 18px; left: 20px; font-family: 'VT323', monospace; font-size: 1.15rem; color: #666; z-index: 100; letter-spacing: 0.02em; transition: color 0.15s; }
+.back-link:hover { color: #aaa; }
+header { padding: 60px 20px 32px; text-align: center; }
+header h1 { font-family: 'VT323', monospace; font-size: clamp(2rem, 6vw, 4rem); color: #999; letter-spacing: 0.12em; line-height: 1.1; margin-bottom: 12px; word-spacing: 0.1em; }
+header p { font-size: 0.88rem; color: #666; letter-spacing: 0.08em; }
+header p a { color: #888; transition: color 0.15s; }
+header p a:hover { color: #ccc; }
+.controls { background: #0a0a0a; border-bottom: 1px solid #1c1c1c; position: sticky; top: 0; z-index: 50; }
+.tabs { display: flex; overflow-x: auto; scrollbar-width: none; padding: 0 16px; max-width: 760px; margin: 0 auto; }
+.tabs::-webkit-scrollbar { display: none; }
+.tab { flex-shrink: 0; background: none; border: none; border-bottom: 2px solid transparent; padding: 14px 12px; font-size: 0.88rem; color: #777; cursor: pointer; font-family: system-ui, sans-serif; display: flex; align-items: center; gap: 5px; white-space: nowrap; transition: color 0.15s, border-color 0.15s; letter-spacing: 0.02em; }
+.tab.active { color: #ddd; border-bottom-color: #777; }
+.tab:hover { color: #bbb; }
+.badge { font-size: 0.74rem; color: #555; }
+.tab.active .badge { color: #999; }
+.filter-bar { display: flex; align-items: center; gap: 10px; padding: 10px 16px; border-top: 1px solid #161616; max-width: 760px; margin: 0 auto; font-size: 0.82rem; color: #666; flex-wrap: wrap; }
+.filter-bar > span { letter-spacing: 0.04em; }
+.filter-bar .sep { color: #2a2a2a; }
+.score-filter { display: flex; gap: 6px; flex-wrap: wrap; }
+.sf-btn { background: none; border: 1px solid #2a2a2a; border-radius: 3px; padding: 3px 11px; font-size: 0.8rem; color: #888; cursor: pointer; font-family: inherit; transition: color 0.15s, border-color 0.15s; letter-spacing: 0.04em; }
+.sf-btn.active, .sf-btn:hover { color: #ddd; border-color: #777; }
+.source-select { background: #0a0a0a; border: 1px solid #2a2a2a; border-radius: 3px; padding: 3px 9px; font-size: 0.8rem; color: #aaa; font-family: inherit; cursor: pointer; outline: none; }
+.source-select:hover { color: #ddd; border-color: #777; }
+.source-select option { background: #0a0a0a; color: #ccc; }
+.list { max-width: 760px; margin: 0 auto; padding: 8px 20px 80px; }
+.day { padding-top: 32px; }
+.day-head { font-size: 0.8rem; color: #555; letter-spacing: 0.12em; padding: 0 0 10px; border-bottom: 1px solid #1c1c1c; margin-bottom: 4px; text-transform: uppercase; }
+.day-head .count { color: #444; margin-left: 6px; }
+.entry { padding: 22px 0; border-bottom: 1px solid #161616; }
+.entry.hidden { display: none; }
+.entry-meta { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; font-size: 0.8rem; color: #666; margin-bottom: 8px; letter-spacing: 0.03em; }
+.entry-meta .sep { color: #2a2a2a; }
+.entry-score { color: #999; font-variant-numeric: tabular-nums; letter-spacing: 0.05em; font-weight: 500; }
+.entry-score.s-low { color: #666; }
+.entry-title { display: block; font-size: 1.1rem; color: #ccc; transition: color 0.15s; line-height: 1.5; margin-bottom: 10px; font-weight: 500; }
+.entry-title:hover { color: #fff; }
+.entry-summary { font-size: 0.95rem; color: #aaa; line-height: 1.75; margin-bottom: 10px; }
+.entry-bullets { list-style: none; padding: 0; margin: 8px 0 12px; }
+.entry-bullets li { font-size: 0.9rem; color: #888; line-height: 1.75; padding-left: 16px; position: relative; margin-bottom: 2px; }
+.entry-bullets li::before { content: '·'; position: absolute; left: 4px; color: #666; font-weight: bold; }
+.entry-chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+.entry-chip { font-size: 0.78rem; color: #777; border: 1px solid #2a2a2a; padding: 2px 9px; border-radius: 2px; letter-spacing: 0.03em; }
+.entry-chip.speaker { color: #aaa; border-color: #3a3a3a; }
+.empty-state { text-align: center; padding: 60px 20px; color: #555; font-size: 0.9rem; }
+@media (max-width: 480px) {
+  .list { padding: 8px 14px 60px; }
+  .entry-title { font-size: 1rem; }
+  .entry-summary { font-size: 0.92rem; }
+  .entry-bullets li { font-size: 0.88rem; }
+  .filter-bar { font-size: 0.74rem; gap: 8px; }
+}
+footer { text-align: center; padding: 30px 20px; color: #555; font-size: 0.78rem; letter-spacing: 0.06em; }
+footer a { color: #666; transition: color 0.15s; }
+footer a:hover { color: #999; }
+</style>
+</head>
+<body>
+<a class="back-link" href="https://www.tedzhong.com/">← tedzhong.com</a>
+<header>
+  <h1>2026-11-03</h1>
+  <p>3 条 · <a href="../index.html">← 返回最新</a> · <a href="./">归档</a></p>
+</header>
+<div class="controls">
+  <div class="tabs"><button class="tab active" data-cat="all">全部<span class="badge">3</span></button><button class="tab" data-cat="analyst">分析师<span class="badge">1</span></button><button class="tab" data-cat="business">商业<span class="badge">2</span></button></div>
+  <div class="filter-bar">
+    <span>评分</span>
+    <div class="score-filter">
+      <button class="sf-btn active" data-score="6">≥6</button>
+      <button class="sf-btn" data-score="7">≥7</button>
+      <button class="sf-btn" data-score="8">≥8</button>
+      <button class="sf-btn" data-score="9">≥9</button>
+    </div>
+    <span class="sep">·</span>
+    <span>来源</span>
+    <select class="source-select" id="f-source"><option value="*">全部</option><option value="Lenny&#x27;s Newsletter">Lenny&#x27;s Newsletter</option><option value="MIT Sloan Management Review">MIT Sloan Management Review</option><option value="McKinsey Insights">McKinsey Insights</option></select>
+  </div>
+</div>
+<div class="list">
+<section class="day"><div class="day-head">2026-11-03<span class="count">· 3 条</span></div>
+    <article class="entry" data-source="MIT Sloan Management Review" data-category="business" data-score="8">
+      <div class="entry-meta">
+        <span class="entry-score">8/10</span>
+        <span class="sep">·</span>
+        <span>MIT Sloan Management Review</span>
+        <span class="sep">·</span>
+        <span>商业</span>
+        <span class="sep">·</span>
+        <span>2026-11-02</span>
+      </div>
+      <a class="entry-title" href="https://sloanreview.mit.edu/article/the-ai-governance-paradox/" target="_blank" rel="noopener">The AI Governance Paradox</a>
+      <p class="entry-summary">MIT Sloan研究揭示AI治理的深层悖论：组织为规避AI风险而实施的治理框架（如人工审核、决策链条）虽借鉴高可靠性组织原则，但其问责机制向员工传递的隐性信号反而削弱了威胁检测的行为基础。这些治理结构可能导致员工要么盲目遵从程序而放弃独立判断，要么为自我保护而冒险违规，最终危害组织对AI系统的真正理解与预警能力。</p>
+      <ul class="entry-bullets"><li>AI治理框架虽遵循HRO原则，但其问责机制的隐性信号可能削弱员工的独立判断和前线专业性</li><li>问责结构易诱发两极化行为：盲目程序合规或隐性规避，损害AI系统的有效监督</li><li>真正的可靠运营需要保护前线判断权，分散决策权，而非强化审批链条</li><li>AI风险治理需要在形式合规与实质监督之间寻找平衡，避免治理本身成为盲点</li></ul>
+      <div class="entry-chips"><span class="entry-chip speaker">MIT Sloan Management Review</span><span class="entry-chip">组织治理</span><span class="entry-chip">AI风险管理</span><span class="entry-chip">员工行为与激励</span><span class="entry-chip">人机协作</span></div>
+    </article>
+    
+    <article class="entry" data-source="McKinsey Insights" data-category="business" data-score="8">
+      <div class="entry-meta">
+        <span class="entry-score">8/10</span>
+        <span class="sep">·</span>
+        <span>McKinsey Insights</span>
+        <span class="sep">·</span>
+        <span>商业</span>
+        <span class="sep">·</span>
+        <span>2026-11-02</span>
+      </div>
+      <a class="entry-title" href="https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/turning-executive-judgment-into-organizational-intelligence-leveraging-ai-in-ceo-leadership" target="_blank" rel="noopener">Turning executive judgment into organizational intelligence: Leveraging AI in CEO leadership</a>
+      <p class="entry-summary">麦肯锡认为CEO和高管的判断力是组织最宝贵的知识资产。AI 首次能够将这些隐性智慧编码化，并向全组织传播。这意味着高管的决策框架、经验法则、直觉可被系统化、规模化地复用，打破知识壁垒，提升整体决策能力。这是对领导力角色、知识流动方式的根本性重构，从个人英雄主义向组织智能转变。</p>
+      <ul class="entry-bullets"><li>AI 将CEO隐性判断转化为显性知识，实现规模化复用和传播</li><li>打破高管知识垄断，提升全组织决策质量和一致性</li><li>重新定义领导力：从个人专家向组织智能架构师转变</li><li>知识编码化是组织竞争力转移的关键机制</li></ul>
+      <div class="entry-chips"><span class="entry-chip speaker">McKinsey</span><span class="entry-chip">领导力转型</span><span class="entry-chip">知识管理</span><span class="entry-chip">组织智能</span><span class="entry-chip">决策赋权</span></div>
+    </article>
+    
+    <article class="entry" data-source="Lenny&#x27;s Newsletter" data-category="analyst" data-score="7">
+      <div class="entry-meta">
+        <span class="entry-score">7/10</span>
+        <span class="sep">·</span>
+        <span>Lenny&#x27;s Newsletter</span>
+        <span class="sep">·</span>
+        <span>分析师</span>
+        <span class="sep">·</span>
+        <span>2026-11-02</span>
+      </div>
+      <a class="entry-title" href="https://www.lennysnewsletter.com/p/how-figmas-pms-actually-use-ai-every" target="_blank" rel="noopener">How Figma’s PMs actually use AI every day | Ezra Mechaber (PM, Figma)</a>
+      <p class="entry-summary">Figma 增长 PM Ezra Mechaber 分享了团队如何系统性地将 AI 融入日常工作。他将个人的 Claude 工作流演化为 PM OS——一个包含 31 项技能的共享代码库，现已成为 60-70 名 PM 的标准工具。核心创新包括：用 AI Agent 自动化 bug 测试、AutoXP 自动执行增长实验、AI 写作助手 Jev 实时协助。这反映了大模型如何改变 PM 的工作方式——从依赖人工判断向 AI 增强型决策转变，同时保持必要的人工检查点。</p>
+      <ul class="entry-bullets"><li>PM OS 将 31 项 AI 技能编码化、模块化，让 60-70 名 PM 能标准化使用 Claude 和其他工具</li><li>AutoXP 是自主增长 PM，自动运行 A/B 实验并保留人工审批，首次实验即获重大突破</li><li>Bug Bash Agent 和 Jev 写作助手展示 AI 可接管高频、重复的分析和文案工作，释放人的战略能力</li><li>从终端脚本到本地 Web 界面的演进，说明 AI 工作流需要易用性和团队协作支持才能规模化</li></ul>
+      <div class="entry-chips"><span class="entry-chip speaker">Ezra Mechaber</span><span class="entry-chip speaker">Claire Vo</span><span class="entry-chip">工作流自动化</span><span class="entry-chip">团队赋能</span><span class="entry-chip">PM 岗位变革</span><span class="entry-chip">生产力工具</span></div>
+    </article>
+    </section>
+</div>
+<footer>
+  由 Claude Haiku 4.5 每日构建 · 2026-11-03 04:40 CST
+</footer>
+<script>
+function applyFilters() {
+  const activeTab = document.querySelector('.tab.active');
+  const cat = activeTab ? activeTab.dataset.cat : 'all';
+  const activeScore = document.querySelector('.sf-btn.active');
+  const minScore = activeScore ? parseInt(activeScore.dataset.score, 10) : 6;
+  const srcEl = document.getElementById('f-source');
+  const src = srcEl ? srcEl.value : '*';
+  document.querySelectorAll('.entry').forEach(e => {
+    const ec = e.dataset.category, es = e.dataset.source, esc = parseInt(e.dataset.score, 10);
+    const show = (cat === 'all' || ec === cat) && (src === '*' || es === src) && esc >= minScore;
+    e.classList.toggle('hidden', !show);
+  });
+  document.querySelectorAll('.day').forEach(d => {
+    const any = Array.from(d.querySelectorAll('.entry')).some(e => !e.classList.contains('hidden'));
+    d.style.display = any ? '' : 'none';
+  });
+}
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.tab').forEach(t => t.addEventListener('click', () => {
+    document.querySelectorAll('.tab').forEach(x => x.classList.remove('active'));
+    t.classList.add('active');
+    applyFilters();
+  }));
+  document.querySelectorAll('.sf-btn').forEach(b => b.addEventListener('click', () => {
+    document.querySelectorAll('.sf-btn').forEach(x => x.classList.remove('active'));
+    b.classList.add('active');
+    applyFilters();
+  }));
+  const srcEl = document.getElementById('f-source');
+  if (srcEl) srcEl.addEventListener('change', applyFilters);
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+[
+  {
+    "url": "https://sloanreview.mit.edu/article/the-ai-governance-paradox/",
+    "title": "The AI Governance Paradox",
+    "source": "MIT Sloan Management Review",
+    "category": "business",
+    "published": "2026-11-02",
+    "fetched_at": "2026-11-03T04:39:55+08:00",
+    "score": 8,
+    "summary_zh": "MIT Sloan研究揭示AI治理的深层悖论：组织为规避AI风险而实施的治理框架（如人工审核、决策链条）虽借鉴高可靠性组织原则，但其问责机制向员工传递的隐性信号反而削弱了威胁检测的行为基础。这些治理结构可能导致员工要么盲目遵从程序而放弃独立判断，要么为自我保护而冒险违规，最终危害组织对AI系统的真正理解与预警能力。",
+    "key_points": [
+      "AI治理框架虽遵循HRO原则，但其问责机制的隐性信号可能削弱员工的独立判断和前线专业性",
+      "问责结构易诱发两极化行为：盲目程序合规或隐性规避，损害AI系统的有效监督",
+      "真正的可靠运营需要保护前线判断权，分散决策权，而非强化审批链条",
+      "AI风险治理需要在形式合规与实质监督之间寻找平衡，避免治理本身成为盲点"
+    ],
+    "tags": [
+      "组织治理",
+      "AI风险管理",
+      "员工行为与激励",
+      "人机协作"
+    ],
+    "speakers": [
+      "MIT Sloan Management Review"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/turning-executive-judgment-into-organizational-intelligence-leveraging-ai-in-ceo-leadership",
+    "title": "Turning executive judgment into organizational intelligence: Leveraging AI in CEO leadership",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-11-02",
+    "fetched_at": "2026-11-03T04:40:00+08:00",
+    "score": 8,
+    "summary_zh": "麦肯锡认为CEO和高管的判断力是组织最宝贵的知识资产。AI 首次能够将这些隐性智慧编码化，并向全组织传播。这意味着高管的决策框架、经验法则、直觉可被系统化、规模化地复用，打破知识壁垒，提升整体决策能力。这是对领导力角色、知识流动方式的根本性重构，从个人英雄主义向组织智能转变。",
+    "key_points": [
+      "AI 将CEO隐性判断转化为显性知识，实现规模化复用和传播",
+      "打破高管知识垄断，提升全组织决策质量和一致性",
+      "重新定义领导力：从个人专家向组织智能架构师转变",
+      "知识编码化是组织竞争力转移的关键机制"
+    ],
+    "tags": [
+      "领导力转型",
+      "知识管理",
+      "组织智能",
+      "决策赋权"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  },
+  {
+    "url": "https://www.lennysnewsletter.com/p/how-figmas-pms-actually-use-ai-every",
+    "title": "How Figma’s PMs actually use AI every day | Ezra Mechaber (PM, Figma)",
+    "source": "Lenny's Newsletter",
+    "category": "analyst",
+    "published": "2026-11-02",
+    "fetched_at": "2026-11-03T04:40:35+08:00",
+    "score": 7,
+    "summary_zh": "Figma 增长 PM Ezra Mechaber 分享了团队如何系统性地将 AI 融入日常工作。他将个人的 Claude 工作流演化为 PM OS——一个包含 31 项技能的共享代码库，现已成为 60-70 名 PM 的标准工具。核心创新包括：用 AI Agent 自动化 bug 测试、AutoXP 自动执行增长实验、AI 写作助手 Jev 实时协助。这反映了大模型如何改变 PM 的工作方式——从依赖人工判断向 AI 增强型决策转变，同时保持必要的人工检查点。",
+    "key_points": [
+      "PM OS 将 31 项 AI 技能编码化、模块化，让 60-70 名 PM 能标准化使用 Claude 和其他工具",
+      "AutoXP 是自主增长 PM，自动运行 A/B 实验并保留人工审批，首次实验即获重大突破",
+      "Bug Bash Agent 和 Jev 写作助手展示 AI 可接管高频、重复的分析和文案工作，释放人的战略能力",
+      "从终端脚本到本地 Web 界面的演进，说明 AI 工作流需要易用性和团队协作支持才能规模化"
+    ],
+    "tags": [
+      "工作流自动化",
+      "团队赋能",
+      "PM 岗位变革",
+      "生产力工具"
+    ],
+    "speakers": [
+      "Ezra Mechaber",
+      "Claire Vo"
+    ]
+  }
+]

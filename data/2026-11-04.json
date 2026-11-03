@@ -1,0 +1,27 @@
+[
+  {
+    "url": "https://openai.com/index/heimstaden",
+    "title": "Heimstaden is changing residential real estate management with AI",
+    "source": "OpenAI",
+    "category": "ai-lab",
+    "published": "2026-11-03",
+    "fetched_at": "2026-11-04T04:40:03+08:00",
+    "score": 6,
+    "summary_zh": "Heimstaden 是欧洲住宅房产管理公司，通过部署 OpenAI 的 ChatGPT Enterprise 和 Codex，优化物业管理流程、降低运营成本并赋能员工。案例展示了生成式 AI 在传统房产行业的实际应用——通过自动化文档处理、客户沟通和数据分析，释放员工生产力，使团队能专注于更高价值工作。这是组织流程数字化升级的典型落地场景。",
+    "key_points": [
+      "ChatGPT Enterprise 自动化客服、文档处理，降低重复性工作负担",
+      "Codex 加速开发效率，减少物业管理系统开发时间与成本",
+      "员工得以从繁琐任务解放，专注于客户关系和战略决策",
+      "欧洲房产管理行业首批规模化 AI 落地案例"
+    ],
+    "tags": [
+      "流程自动化",
+      "生产力提升",
+      "成本控制",
+      "员工赋能"
+    ],
+    "speakers": [
+      "Heimstaden"
+    ]
+  }
+]

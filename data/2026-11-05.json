@@ -1,0 +1,104 @@
+[
+  {
+    "url": "https://sloanreview.mit.edu/article/when-cultures-collide-in-crisis/",
+    "title": "When Cultures Collide in Crisis",
+    "source": "MIT Sloan Management Review",
+    "category": "business",
+    "published": "2026-11-04",
+    "fetched_at": "2026-11-05T04:39:46+08:00",
+    "score": 7,
+    "summary_zh": "文章通过Air Canada和Lac-Mégantic列车事故案例，阐述文化差异如何在危机中放大组织风险。CEO的危机回应不仅取决于信息内容，更取决于传达方式是否符合本地文化期待（同情、尊重、身份认同）。跨文化组织中，领导力有效性受隐性文化规范影响——不同社会对危机中的透明度、谦逊、果敢等的期待差异大。组织需要具备「文化敏捷性」应对跨边界危机，否则文化误读会迅速演变为信任危机。",
+    "key_points": [
+      "危机回应的文化翻译失败：同一策略在不同文化中效果截然不同，语言/仪式选择可直接影响领导公信力",
+      "隐性文化规范决定有效性：什么是同情、透明或决策果敢因文化而异，忽视会被视为傲慢或冷漠",
+      "文化敏捷性成为运营韧性的核心：供应链全球化、团队跨时区背景下，文化断层易演变为组织崩裂",
+      "领导者认知缺口：多数高管低估文化在危机中的角色——谁发声、谁主导、反应速度都受文化深度影响"
+    ],
+    "tags": [
+      "危机管理",
+      "跨文化领导力",
+      "组织韧性",
+      "文化敏捷性"
+    ],
+    "speakers": [
+      "Michael Rousseau (Air Canada CEO)",
+      "Edward Burkhardt (列车公司董事长)"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/capabilities/risk-and-resilience/our-insights/the-ai-enabled-risk-function-of-the-future",
+    "title": "The AI-enabled risk function of the future",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-11-04",
+    "fetched_at": "2026-11-05T04:39:50+08:00",
+    "score": 7,
+    "summary_zh": "麦肯锡分析AI如何重塑银行风险管理职能。文章强调仅有AI技术还不够，关键在于通过重新设计风险运营模型来规模化AI能力。这要求风险部门重新定义岗位职责、调整人员结构、建立跨职能协作，从而实现从传统合规检查向预测性、动态化风险治理的转变。涉及组织层面的流程再造与人才能力升级。",
+    "key_points": [
+      "AI不只是技术升级，需配套运营模型重设，涉及岗位和人员重组",
+      "风险函数需从被动检查转向主动预测，要求管理思维和工作流程创新",
+      "规模化AI需要打破部门壁垒，建立跨职能协作机制和新的决策框架"
+    ],
+    "tags": [
+      "组织重构",
+      "风险管理",
+      "运营模型",
+      "人才能力升级"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/rethinking-growth-with-ai-a-conversation-with-slack-cmo-ryan-gavin",
+    "title": "Rethinking growth with AI: A conversation with Slack CMO Ryan Gavin",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-11-04",
+    "fetched_at": "2026-11-05T04:39:55+08:00",
+    "score": 7,
+    "summary_zh": "Slack CMO Ryan Gavin 在 Cannes Lions 2026 与麦肯锡合伙人探讨 AI 如何将生产力提升转化为增长杠杆。文章聚焦 AI 工具如何改变工作方式，帮助企业重新思考增长路径。Slack 作为协作平台，其 CMO 立场代表企业对 AI 如何赋能团队效率、进而驱动商业增长的看法。虽然具体观点未完全呈现，但这类 C-level 对话通常涉及人员配置、工作流优化和组织敏捷性等深层议题。",
+    "key_points": [
+      "AI 生产力收益需转化为战略增长杠杆，而非仅限成本节省",
+      "协作工具如何赋能团队，改变工作流程和决策速度",
+      "AI 时代企业需重新审视增长模式与组织能力",
+      "Slack 等平台在 AI 驱动协作中的角色转变"
+    ],
+    "tags": [
+      "生产力提升",
+      "增长战略",
+      "工作方式变革",
+      "企业协作"
+    ],
+    "speakers": [
+      "Ryan Gavin (Slack CMO)",
+      "Jeff Jacobs (McKinsey Partner)"
+    ]
+  },
+  {
+    "url": "https://stratechery.com/2026/ai-on-the-ballot/",
+    "title": "AI on the Ballot",
+    "source": "Stratechery (free posts)",
+    "category": "analyst",
+    "published": "2026-11-04",
+    "fetched_at": "2026-11-05T04:40:13+08:00",
+    "score": 7,
+    "summary_zh": "本文讨论AI数据中心建设引发的政治反弹与社会影响。作者观察到，美国中期选举中数据中心成为关键议题，两党均反对对手支持数据中心。德州新任民主党州长承诺暂停数据中心建设，与共和党前州长立场一致。作者指出，与上一轮IT革命和全球化不同，AI数据中心建设需获当地许可，赋予社区否决权。这反映出公众对AI威胁就业的深层担忧，尽管其理解可能不够充分，但这种政治化阻力已成为AI基础设施部署的实质性障碍。",
+    "key_points": [
+      "AI数据中心已成美国政治热点，两党都反对对手立场，反映公众就业焦虑",
+      "与全球化不同，数据中心建设需地方许可，赋予社区实质性否决权",
+      "德州占美国计划数据中心容量25%，新州长承诺暂停建设，显示阻力广泛",
+      "公众对AI替代工作的担忧驱动政治反弹，尽管理解程度参差不齐"
+    ],
+    "tags": [
+      "组织变革",
+      "人才策略",
+      "政策风险",
+      "基础设施"
+    ],
+    "speakers": [
+      "Gina Hinojosa",
+      "Greg Abbott"
+    ]
+  }
+]

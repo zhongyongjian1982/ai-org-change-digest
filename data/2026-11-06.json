@@ -1,0 +1,52 @@
+[
+  {
+    "url": "https://stratechery.com/2026/an-interview-with-intuit-ceo-sasan-goodarzi-about-accounting-and-ai/",
+    "title": "An Interview With Intuit CEO Sasan Goodarzi About Accounting and AI",
+    "source": "Stratechery (free posts)",
+    "category": "analyst",
+    "published": "2026-11-05",
+    "fetched_at": "2026-11-06T04:40:07+08:00",
+    "score": 8,
+    "summary_zh": "Intuit CEO Sasan Goodarzi在Stratechery采访中阐述公司如何应对AI范式转变。核心策略是将会计师从合作伙伴转变为客户，通过AI重新定义专业人士的角色。Goodarzi强调作为通才的重要性，介绍Intuit如何通过44年的演进（从Quicken到QuickBooks、TurboTax）积累竞争优势，以及如何利用Credit Karma和Mailchimp等收购应对市场威胁。他认为AI不是颠覆而是扩大市场机会，需要改变商业模式以适应未来。",
+    "key_points": [
+      "AI将改变会计专业：从服务提供方转向平台用户，Intuit需重构价值链",
+      "44年历史积累+多次商业模式转变，为AI时代提供适应基础",
+      "通才领导力与多元背景：非硅谷传统路径（工程→硬件→软件）培养跨界视野",
+      "收购战略（Credit Karma、Mailchimp）应对颠覆威胁，扩展市场而非简单替代"
+    ],
+    "tags": [
+      "组织转型",
+      "专业服务变革",
+      "领导力与通才",
+      "商业模式创新"
+    ],
+    "speakers": [
+      "Sasan Goodarzi"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/reinventing-the-channel-how-can-your-partner-ecosystem-fuel-ai-growth",
+    "title": "Reinventing the channel: How can your partner ecosystem fuel AI growth?",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-11-05",
+    "fetched_at": "2026-11-06T04:39:43+08:00",
+    "score": 7,
+    "summary_zh": "麦肯锡分析AI如何驱动科技企业销售渠道创新。文章指出，AI不仅改变产品本身，更要求企业重新设计合作伙伴生态系统。通过与渠道合作伙伴的深度整合，企业可以加速AI采用、扩大市场覆盖，并创造新的商业模式。核心建议涉及五项战略举措，涉及渠道赋能、伙伴转型、利益分配等组织层面的重塑。这反映AI时代企业增长逻辑的根本变化。",
+    "key_points": [
+      "AI驱动科技企业必须重新设计销售渠道和合作伙伴生态",
+      "需要五项关键举措完成渠道转型，涉及能力赋能与激励机制重构",
+      "合作伙伴从代理商向AI解决方案共创者角色升级",
+      "渠道创新是AI商业化落地的关键组织杠杆"
+    ],
+    "tags": [
+      "渠道生态重构",
+      "合作伙伴赋能",
+      "商业模式创新",
+      "AI商业化"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  }
+]

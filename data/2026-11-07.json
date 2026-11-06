@@ -1,0 +1,26 @@
+[
+  {
+    "url": "https://www.mckinsey.com/industries/automotive-and-assembly/our-insights/how-ai-is-transforming-automotive-quality-operations",
+    "title": "How AI is transforming automotive quality operations",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-11-06",
+    "fetched_at": "2026-11-07T04:39:54+08:00",
+    "score": 6,
+    "summary_zh": "Upstream CEO阐述AI在汽车质量运营中的应用价值。通过AI技术进行早期缺陷检测、加速问题调查和精准对策，可显著降低保修和召回成本。虽涉及运营流程优化，但聚焦于特定行业场景，对组织结构、人员角色变革的影响阐述有限，属于功能性应用而非战略组织变革。",
+    "key_points": [
+      "AI用于早期缺陷识别，能在问题扩大前介入，降低保修和召回成本",
+      "加速问题调查流程，从发现到对策实施的周期明显压缩",
+      "聚焦汽车行业质量运营优化，但未涉及人员、组织结构调整等深层影响"
+    ],
+    "tags": [
+      "运营效率",
+      "质量管理",
+      "行业应用",
+      "成本优化"
+    ],
+    "speakers": [
+      "Yoav Levy (Upstream CEO)"
+    ]
+  }
+]

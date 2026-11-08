@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+<title>2026-11-08 — AI TRANSFORMATION</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #0a0a0a; color: #999; font-family: system-ui, -apple-system, sans-serif; line-height: 1.6; min-height: 100vh; }
+a { color: inherit; text-decoration: none; }
+a:hover { color: #ccc; }
+.back-link { position: fixed; top: 18px; left: 20px; font-family: 'VT323', monospace; font-size: 1.15rem; color: #666; z-index: 100; letter-spacing: 0.02em; transition: color 0.15s; }
+.back-link:hover { color: #aaa; }
+header { padding: 60px 20px 32px; text-align: center; }
+header h1 { font-family: 'VT323', monospace; font-size: clamp(2rem, 6vw, 4rem); color: #999; letter-spacing: 0.12em; line-height: 1.1; margin-bottom: 12px; word-spacing: 0.1em; }
+header p { font-size: 0.88rem; color: #666; letter-spacing: 0.08em; }
+header p a { color: #888; transition: color 0.15s; }
+header p a:hover { color: #ccc; }
+.controls { background: #0a0a0a; border-bottom: 1px solid #1c1c1c; position: sticky; top: 0; z-index: 50; }
+.tabs { display: flex; overflow-x: auto; scrollbar-width: none; padding: 0 16px; max-width: 760px; margin: 0 auto; }
+.tabs::-webkit-scrollbar { display: none; }
+.tab { flex-shrink: 0; background: none; border: none; border-bottom: 2px solid transparent; padding: 14px 12px; font-size: 0.88rem; color: #777; cursor: pointer; font-family: system-ui, sans-serif; display: flex; align-items: center; gap: 5px; white-space: nowrap; transition: color 0.15s, border-color 0.15s; letter-spacing: 0.02em; }
+.tab.active { color: #ddd; border-bottom-color: #777; }
+.tab:hover { color: #bbb; }
+.badge { font-size: 0.74rem; color: #555; }
+.tab.active .badge { color: #999; }
+.filter-bar { display: flex; align-items: center; gap: 10px; padding: 10px 16px; border-top: 1px solid #161616; max-width: 760px; margin: 0 auto; font-size: 0.82rem; color: #666; flex-wrap: wrap; }
+.filter-bar > span { letter-spacing: 0.04em; }
+.filter-bar .sep { color: #2a2a2a; }
+.score-filter { display: flex; gap: 6px; flex-wrap: wrap; }
+.sf-btn { background: none; border: 1px solid #2a2a2a; border-radius: 3px; padding: 3px 11px; font-size: 0.8rem; color: #888; cursor: pointer; font-family: inherit; transition: color 0.15s, border-color 0.15s; letter-spacing: 0.04em; }
+.sf-btn.active, .sf-btn:hover { color: #ddd; border-color: #777; }
+.source-select { background: #0a0a0a; border: 1px solid #2a2a2a; border-radius: 3px; padding: 3px 9px; font-size: 0.8rem; color: #aaa; font-family: inherit; cursor: pointer; outline: none; }
+.source-select:hover { color: #ddd; border-color: #777; }
+.source-select option { background: #0a0a0a; color: #ccc; }
+.list { max-width: 760px; margin: 0 auto; padding: 8px 20px 80px; }
+.day { padding-top: 32px; }
+.day-head { font-size: 0.8rem; color: #555; letter-spacing: 0.12em; padding: 0 0 10px; border-bottom: 1px solid #1c1c1c; margin-bottom: 4px; text-transform: uppercase; }
+.day-head .count { color: #444; margin-left: 6px; }
+.entry { padding: 22px 0; border-bottom: 1px solid #161616; }
+.entry.hidden { display: none; }
+.entry-meta { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; font-size: 0.8rem; color: #666; margin-bottom: 8px; letter-spacing: 0.03em; }
+.entry-meta .sep { color: #2a2a2a; }
+.entry-score { color: #999; font-variant-numeric: tabular-nums; letter-spacing: 0.05em; font-weight: 500; }
+.entry-score.s-low { color: #666; }
+.entry-title { display: block; font-size: 1.1rem; color: #ccc; transition: color 0.15s; line-height: 1.5; margin-bottom: 10px; font-weight: 500; }
+.entry-title:hover { color: #fff; }
+.entry-summary { font-size: 0.95rem; color: #aaa; line-height: 1.75; margin-bottom: 10px; }
+.entry-bullets { list-style: none; padding: 0; margin: 8px 0 12px; }
+.entry-bullets li { font-size: 0.9rem; color: #888; line-height: 1.75; padding-left: 16px; position: relative; margin-bottom: 2px; }
+.entry-bullets li::before { content: '·'; position: absolute; left: 4px; color: #666; font-weight: bold; }
+.entry-chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+.entry-chip { font-size: 0.78rem; color: #777; border: 1px solid #2a2a2a; padding: 2px 9px; border-radius: 2px; letter-spacing: 0.03em; }
+.entry-chip.speaker { color: #aaa; border-color: #3a3a3a; }
+.empty-state { text-align: center; padding: 60px 20px; color: #555; font-size: 0.9rem; }
+@media (max-width: 480px) {
+  .list { padding: 8px 14px 60px; }
+  .entry-title { font-size: 1rem; }
+  .entry-summary { font-size: 0.92rem; }
+  .entry-bullets li { font-size: 0.88rem; }
+  .filter-bar { font-size: 0.74rem; gap: 8px; }
+}
+footer { text-align: center; padding: 30px 20px; color: #555; font-size: 0.78rem; letter-spacing: 0.06em; }
+footer a { color: #666; transition: color 0.15s; }
+footer a:hover { color: #999; }
+</style>
+</head>
+<body>
+<a class="back-link" href="https://www.tedzhong.com/">← tedzhong.com</a>
+<header>
+  <h1>2026-11-08</h1>
+  <p>6 条 · <a href="../index.html">← 返回最新</a> · <a href="./">归档</a></p>
+</header>
+<div class="controls">
+  <div class="tabs"><button class="tab active" data-cat="all">全部<span class="badge">6</span></button><button class="tab" data-cat="ai-lab">AI 实验室<span class="badge">6</span></button></div>
+  <div class="filter-bar">
+    <span>评分</span>
+    <div class="score-filter">
+      <button class="sf-btn active" data-score="6">≥6</button>
+      <button class="sf-btn" data-score="7">≥7</button>
+      <button class="sf-btn" data-score="8">≥8</button>
+      <button class="sf-btn" data-score="9">≥9</button>
+    </div>
+    <span class="sep">·</span>
+    <span>来源</span>
+    <select class="source-select" id="f-source"><option value="*">全部</option><option value="Anthropic Engineering">Anthropic Engineering</option><option value="Google Developers Blog">Google Developers Blog</option></select>
+  </div>
+</div>
+<div class="list">
+<section class="day"><div class="day-head">2026-11-08<span class="count">· 6 条</span></div>
+    <article class="entry" data-source="Anthropic Engineering" data-category="ai-lab" data-score="8">
+      <div class="entry-meta">
+        <span class="entry-score">8/10</span>
+        <span class="sep">·</span>
+        <span>Anthropic Engineering</span>
+        <span class="sep">·</span>
+        <span>AI 实验室</span>
+        <span class="sep">·</span>
+        <span>2026-11-06</span>
+      </div>
+      <a class="entry-title" href="https://www.anthropic.com/research/components-of-agent-memory" target="_blank" rel="noopener">The components of agent memory</a>
+      <p class="entry-summary">Anthropic 工程团队阐述了 Agent 记忆架构设计原理。受脑科学启发，提出将 Agent 记忆分为工作记忆（日志/转录）和长期记忆（笔记/知识表示），通过「dreaming」（空闲时反思整理）实现离线计算时的记忆巩固。Claude 可在会话间记录关键事件、提取规则、形成可预测的记忆，支持持续学习与任务迁移。这一设计直接影响 Agent 的能力边界、学习效率与组织知识管理方式。</p>
+      <ul class="entry-bullets"><li>Agent 记忆采用双层结构：工作层（实时日志）+ 长期层（整理笔记），模仿人脑海马体-新皮层分工</li><li>&quot;Dreaming&quot;机制利用 Agent 空闲时段反思日志、修正错误、生成新表示，提升记忆巩固与跨会话知识迁移</li><li>Claude 通过标记显著事件、预测未来需求来动态构建记忆，支持 Continual Learning 任务中的持续优化</li><li>记忆不改变模型权重，而是上下文级别的知识保留，避免重复验证、加速后续决策</li></ul>
+      <div class="entry-chips"><span class="entry-chip speaker">Anthropic Engineering</span><span class="entry-chip speaker">Letta</span><span class="entry-chip speaker">UC Berkeley</span><span class="entry-chip">Agent 能力设计</span><span class="entry-chip">知识管理</span><span class="entry-chip">持续学习</span><span class="entry-chip">工作流优化</span></div>
+    </article>
+    
+    <article class="entry" data-source="Google Developers Blog" data-category="ai-lab" data-score="7">
+      <div class="entry-meta">
+        <span class="entry-score">7/10</span>
+        <span class="sep">·</span>
+        <span>Google Developers Blog</span>
+        <span class="sep">·</span>
+        <span>AI 实验室</span>
+        <span class="sep">·</span>
+        <span>2026-11-08</span>
+      </div>
+      <a class="entry-title" href="https://developers.googleblog.com/agent-distraction/" target="_blank" rel="noopener">Agent Distraction</a>
+      <p class="entry-summary">谷歌分析逾91万次coding agent会话发现，13%的agent会接触到内联TODO注释，其中6%会主动处理，83%完全未经开发者提示。这些&quot;分心&quot;导致每次会话增加70%步骤、77%token消耗和105%等待时间。问题分为已关闭工单追踪（41%）和未授权范围蔓延（57%）。更强大的模型表现出更高分心率，暴露出agent友好型代码库维护的关键需求。</p>
+      <ul class="entry-bullets"><li>13%的coding agent会被TODO注释诱导，造成显著性能开销（步骤+70%、token+77%、等待+105%）</li><li>83%的comment处理未经开发者主动要求，反映agent自主性与可控性的张力</li><li>高能力模型反而分心率更高，提示能力越强越需要明确约束和代码治理</li><li>需通过自动化清理和linter工具构建agent友好的代码库，防止范围蔓延</li></ul>
+      <div class="entry-chips"><span class="entry-chip speaker">Google</span><span class="entry-chip">Agent治理</span><span class="entry-chip">工程效率</span><span class="entry-chip">智能体约束</span><span class="entry-chip">代码质量</span></div>
+    </article>
+    
+    <article class="entry" data-source="Google Developers Blog" data-category="ai-lab" data-score="7">
+      <div class="entry-meta">
+        <span class="entry-score">7/10</span>
+        <span class="sep">·</span>
+        <span>Google Developers Blog</span>
+        <span class="sep">·</span>
+        <span>AI 实验室</span>
+        <span class="sep">·</span>
+        <span>2026-11-08</span>
+      </div>
+      <a class="entry-title" href="https://developers.googleblog.com/cost-per-task-using-cheap-classifiers-to-route-across-gemini-models-and-thinking-levels/" target="_blank" rel="noopener">Cost per task: Using cheap classifiers to route across Gemini models and thinking levels</a>
+      <p class="entry-summary">Google 分析自主编码 Agent 成本困境：虽然 token 价格下降，但 Agent 工程成本上升。建议通过廉价分类器动态路由不同 Gemini 模型和思考深度，按任务复杂度调整推理成本。这反映 AI Agent 落地的核心挑战——如何在保证性能和成本之间找到平衡，对企业构建自主系统的经济模型有直接指导价值。</p>
+      <ul class="entry-bullets"><li>token 价格下降但 Agent 工程总成本反升，需优化推理策略</li><li>通过轻量分类器预判任务难度，动态选择模型和思考深度</li><li>按任务复杂度差异化定价与资源分配，降低成本-性能权衡</li></ul>
+      <div class="entry-chips"><span class="entry-chip speaker">Google</span><span class="entry-chip">Agent 落地</span><span class="entry-chip">成本优化</span><span class="entry-chip">生产力</span><span class="entry-chip">系统架构</span></div>
+    </article>
+    
+    <article class="entry" data-source="Google Developers Blog" data-category="ai-lab" data-score="7">
+      <div class="entry-meta">
+        <span class="entry-score">7/10</span>
+        <span class="sep">·</span>
+        <span>Google Developers Blog</span>
+        <span class="sep">·</span>
+        <span>AI 实验室</span>
+        <span class="sep">·</span>
+        <span>2026-11-08</span>
+      </div>
+      <a class="entry-title" href="https://developers.googleblog.com/architecting-governed-self-evolving-ai-agents-on-gemini-agent-platform/" target="_blank" rel="noopener">Architecting Governed, Self-Evolving AI Agents on Google Cloud</a>
+      <p class="entry-summary">Google Cloud 通过 Project Chrysalis 展示企业级 AI Agent 落地架构。该项目整合 Gemini Enterprise Agent 平台、Agent Development Kit、BigQuery 等工具，构建具有自适应能力的智能 Agent，可在 1.8 秒内自动修复生产环境故障。核心创新在于分层安全防护（Model Armor、Cloud KMS、Binary Authorization、OPA），使 Agent 能在受治理约束下自主演进和决策。这对企业 IT 运维、生产环保、自动化决策的组织流程改造具有参考价值。</p>
+      <ul class="entry-bullets"><li>企业 Agent 四层安全架构：模型层、加密层、部署层、策略层全覆盖，降低自主 Agent 风险</li><li>生产故障自动修复时间从人工处理降至 1.8 秒，大幅提升 DevOps 效率和业务连续性</li><li>Agent 平台与 BigQuery 联动，支持数据驱动的自主决策和持续学习，重构 IT 运维团队角色</li><li>开放 ADK 工具链降低企业 Agent 开发门槛，加速工作流自动化在组织中的规模化应用</li></ul>
+      <div class="entry-chips"><span class="entry-chip speaker">Google Cloud</span><span class="entry-chip">Agent 落地</span><span class="entry-chip">组织流程自动化</span><span class="entry-chip">生产力提升</span><span class="entry-chip">企业治理与安全</span></div>
+    </article>
+    
+    <article class="entry" data-source="Google Developers Blog" data-category="ai-lab" data-score="7">
+      <div class="entry-meta">
+        <span class="entry-score">7/10</span>
+        <span class="sep">·</span>
+        <span>Google Developers Blog</span>
+        <span class="sep">·</span>
+        <span>AI 实验室</span>
+        <span class="sep">·</span>
+        <span>2026-11-08</span>
+      </div>
+      <a class="entry-title" href="https://developers.googleblog.com/powering-the-agent-development-lifecycle-with-any-framework-from-adk-to-langchain-and-beyond/" target="_blank" rel="noopener">Powering the Agent Development Lifecycle with any framework, from ADK to LangChain and beyond</a>
+      <p class="entry-summary">Google 发布 Agents CLI 扩展系统，支持开发者在 LangChain、LangGraph 等多个框架下统一开发、部署、评估 Agent，降低框架锁定风险。首次提供官方 LangChain 模板，简化 Agent 搭建流程；平台团队可自定义扩展强制执行安全策略（如 SBOM 扫描）。这解决了企业 AI Agent 落地中的关键障碍：框架选择自由度与管控的矛盾，使不同技术栈的组织能灵活采纳 Agent 工作流。</p>
+      <ul class="entry-bullets"><li>统一 Agent 开发生命周期，支持多框架无缝切换，降低技术迁移成本</li><li>官方 LangChain 模板加速原型开发，减少企业定制化工作量</li><li>平台团队可注入策略引擎（SBOM、安全扫描），强化治理与合规</li><li>架构设计体现对企业异构技术栈的务实支持</li></ul>
+      <div class="entry-chips"><span class="entry-chip speaker">Google Developers</span><span class="entry-chip">Agent 落地</span><span class="entry-chip">开发者工具链</span><span class="entry-chip">企业治理</span><span class="entry-chip">框架生态</span></div>
+    </article>
+    
+    <article class="entry" data-source="Google Developers Blog" data-category="ai-lab" data-score="7">
+      <div class="entry-meta">
+        <span class="entry-score">7/10</span>
+        <span class="sep">·</span>
+        <span>Google Developers Blog</span>
+        <span class="sep">·</span>
+        <span>AI 实验室</span>
+        <span class="sep">·</span>
+        <span>2026-11-08</span>
+      </div>
+      <a class="entry-title" href="https://developers.googleblog.com/evaluating-ai-agents-moving-past-the-vibe-check/" target="_blank" rel="noopener">Evaluating AI agents: moving past the vibe check</a>
+      <p class="entry-summary">Google 发布 AI Agent 评估框架指南，针对多轮对话 Agent 的持续评估流程。提出超越主观感受（vibe check）的工程化评估方法，结合 Gemini Enterprise Agent Platform 和 OpenInference 标准。这对企业部署 Agent 系统、确保任务完成质量、建立可信赖的自动化工作流具有实践意义，涉及评估指标、管道设计和参考架构。</p>
+      <ul class="entry-bullets"><li>从主观评价到系统化工程评估，建立 Agent 性能的量化指标体系</li><li>多轮对话场景下的连续评估管道，确保 Agent 在真实工作中的可靠性</li><li>Google 官方参考架构，降低企业落地 Agent 系统的技术门槛</li><li>与 OpenInference 标准兼容，便于不同工具链的互操作性</li></ul>
+      <div class="entry-chips"><span class="entry-chip speaker">Google</span><span class="entry-chip">Agent 评估</span><span class="entry-chip">质量保证</span><span class="entry-chip">生产部署</span><span class="entry-chip">工程化方法</span></div>
+    </article>
+    </section>
+</div>
+<footer>
+  由 Claude Haiku 4.5 每日构建 · 2026-11-08 20:02 CST
+</footer>
+<script>
+function applyFilters() {
+  const activeTab = document.querySelector('.tab.active');
+  const cat = activeTab ? activeTab.dataset.cat : 'all';
+  const activeScore = document.querySelector('.sf-btn.active');
+  const minScore = activeScore ? parseInt(activeScore.dataset.score, 10) : 6;
+  const srcEl = document.getElementById('f-source');
+  const src = srcEl ? srcEl.value : '*';
+  document.querySelectorAll('.entry').forEach(e => {
+    const ec = e.dataset.category, es = e.dataset.source, esc = parseInt(e.dataset.score, 10);
+    const show = (cat === 'all' || ec === cat) && (src === '*' || es === src) && esc >= minScore;
+    e.classList.toggle('hidden', !show);
+  });
+  document.querySelectorAll('.day').forEach(d => {
+    const any = Array.from(d.querySelectorAll('.entry')).some(e => !e.classList.contains('hidden'));
+    d.style.display = any ? '' : 'none';
+  });
+}
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.tab').forEach(t => t.addEventListener('click', () => {
+    document.querySelectorAll('.tab').forEach(x => x.classList.remove('active'));
+    t.classList.add('active');
+    applyFilters();
+  }));
+  document.querySelectorAll('.sf-btn').forEach(b => b.addEventListener('click', () => {
+    document.querySelectorAll('.sf-btn').forEach(x => x.classList.remove('active'));
+    b.classList.add('active');
+    applyFilters();
+  }));
+  const srcEl = document.getElementById('f-source');
+  if (srcEl) srcEl.addEventListener('change', applyFilters);
+});
+</script>
+</body>
+</html>

@@ -110,6 +110,10 @@ def fetch_source(feed_def: dict, seen: set[str], cutoff: datetime) -> list[dict]
         parsed = feedparser.parse(response.content)
         if not parsed.entries:
             raise ValueError("Source returned no feed entries")
+        if feed_def.get("section"):
+            return [entry for entry in parsed.entries
+                    if any(tag.get("term", "").casefold() == feed_def["section"].casefold()
+                           for tag in entry.get("tags", []))]
         return parsed.entries
 
     soup = BeautifulSoup(response.text, "html.parser")
@@ -216,6 +220,7 @@ def run_pipeline() -> list[Entry]:
 
     client = Anthropic()  # uses ANTHROPIC_API_KEY env var
     results: list[Entry] = []
+    deferred: set[str] = set()
 
     for feed_def in config["feeds"]:
         name = feed_def["name"]
@@ -230,7 +235,7 @@ def run_pipeline() -> list[Entry]:
         print(f"  {len(entries)} entries fetched")
         for entry in entries[:30]:
             link = entry.get("link", "").split("#")[0].split("?utm")[0]
-            if not link or link in seen:
+            if not link or link in seen or link in deferred:
                 continue
             pub = entry_published(entry)
             if pub and pub < cutoff:
@@ -241,6 +246,21 @@ def run_pipeline() -> list[Entry]:
             if not body:
                 body = entry.get("summary", "") or entry.get("description", "")
             text = strip_html(body)
+
+            # Focused essays often have only a one-line RSS teaser. Read the
+            # article where possible rather than scoring that teaser alone.
+            if feed_def.get("section"):
+                try:
+                    article = requests.get(link, timeout=25, headers={"User-Agent": "Mozilla/5.0"})
+                    article.raise_for_status()
+                    doc = BeautifulSoup(article.text, "html.parser")
+                    main = doc.find("article") or doc.find("main")
+                    if main and len(main.get_text()) > len(text):
+                        text = strip_html(str(main))
+                except requests.RequestException as exc:
+                    print(f"  ! essay body unavailable; retry next build: {exc}", file=sys.stderr)
+                    deferred.add(link)
+                    continue
 
             blob = f"{title} {text}"
             if not keyword_hit(blob, keywords):
@@ -652,4 +672,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

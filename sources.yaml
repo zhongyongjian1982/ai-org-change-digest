@@ -33,6 +33,13 @@ feeds:
     category: vc
 
   # AI labs
+  # Focused section of the official RSS; prioritize it before the general feed.
+  - name: OpenAI Intelligence Age
+    url: https://openai.com/news/rss.xml
+    section: Intelligence Age
+    homepage: https://openai.com/news/intelligence-age/
+    category: ai-lab
+
   - name: OpenAI
     url: https://openai.com/news/rss.xml
     category: ai-lab
@@ -118,4 +125,3 @@ keywords:
   - CEO
   - CPO
   - management
-

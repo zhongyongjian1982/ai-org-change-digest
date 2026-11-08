@@ -1,5 +1,31 @@
 [
   {
+    "url": "https://openai.com/zh-Hans-CN/index/the-future-of-the-firm/",
+    "title": "企业的未来（The future of the firm）",
+    "source": "OpenAI Intelligence Age",
+    "category": "ai-lab",
+    "published": "2026-10-28",
+    "fetched_at": "2026-11-08T21:42:30+08:00",
+    "score": 10,
+    "summary_zh": "两位作者提出 AI 融入企业的三种组织情景：为员工配置智能体团队、让 AI 与人类并肩承担职能，以及由 AI 在管理层与员工之间协调监督。他们认为，这些路径会改变决策权、人才培养和企业边界，但结果仍取决于需求、能力和治理安排。文章是作者个人的前瞻性讨论，不代表 OpenAI 立场。",
+    "key_points": [
+      "AI 可能成为下属、同事或管理协调层",
+      "员工职责扩大，入门岗位培养路径随之改变",
+      "AI 咨询与监督可能重分配组织决策权",
+      "属于前瞻情景讨论，并非已证实的预测"
+    ],
+    "tags": [
+      "组织重构",
+      "人机协作",
+      "决策权",
+      "人才培养"
+    ],
+    "speakers": [
+      "Hemanth Asirvatham",
+      "Elliott Mokski"
+    ]
+  },
+  {
     "url": "https://www.anthropic.com/research/components-of-agent-memory",
     "title": "The components of agent memory",
     "source": "Anthropic Engineering",

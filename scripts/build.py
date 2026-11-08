@@ -22,8 +22,10 @@ from datetime import datetime, timedelta, timezone
 from html import escape
 from pathlib import Path
 from typing import Any
+from urllib.parse import urljoin
 
 import feedparser
+import requests
 import yaml
 from anthropic import Anthropic
 from bs4 import BeautifulSoup
@@ -99,6 +101,52 @@ def keyword_hit(text: str, keywords: list[str]) -> bool:
     return any(kw.lower() in lowered for kw in keywords)
 
 
+def fetch_source(feed_def: dict, seen: set[str], cutoff: datetime) -> list[dict]:
+    """Read RSS, or Anthropic's official HTML pages (no official news RSS)."""
+    headers = {"User-Agent": "Mozilla/5.0 (compatible; tedzhong-digest/1.0)"}
+    response = requests.get(feed_def["url"], headers=headers, timeout=25)
+    response.raise_for_status()
+    if feed_def.get("format") != "anthropic-html":
+        parsed = feedparser.parse(response.content)
+        if not parsed.entries:
+            raise ValueError("Source returned no feed entries")
+        return parsed.entries
+
+    soup = BeautifulSoup(response.text, "html.parser")
+    links = []
+    for heading in soup.select("h2, h3"):
+        anchor = heading.find_parent("a", href=True) or heading.find("a", href=True)
+        if not anchor:
+            continue
+        link = urljoin(feed_def["url"], anchor["href"])
+        if link.startswith("https://www.anthropic.com/") and link not in links:
+            links.append(link)
+    if not links:
+        raise ValueError("Anthropic article headings not found; check listing markup")
+    entries = []
+    for link in links[:30]:
+        if link in seen:
+            continue
+        try:
+            article = requests.get(link, headers=headers, timeout=20)
+            article.raise_for_status()
+            doc = BeautifulSoup(article.text, "html.parser")
+            date = doc.find("meta", property="article:published_time")
+            if not date or not date.get("content"):
+                continue  # never invent a publication date for undated pages
+            published = datetime.fromisoformat(date["content"].replace("Z", "+00:00"))
+            if published < cutoff:
+                continue
+            title = doc.find("h1")
+            body = doc.find("article") or doc.find("main")
+            if title and body:
+                entries.append({"link": link, "title": title.get_text(" ", strip=True),
+                                "summary": str(body), "published_parsed": published.utctimetuple()})
+        except requests.RequestException as exc:
+            print(f"  ! article fetch failed: {link}: {exc}", file=sys.stderr)
+    return entries
+
+
 # ---------- Claude scoring ----------
 
 SYSTEM_PROMPT = """你是一位资深内容编辑，专门筛选「AI（尤其是生成式 AI / 大模型 / Agent）对组织、管理、工作方式的影响」相关的英文内容，并用中文为中国读者做摘要。
@@ -119,7 +167,8 @@ SYSTEM_PROMPT = """你是一位资深内容编辑，专门筛选「AI（尤其�
   "speakers": ["文中明确提到的有观点的人名或机构，如 Satya Nadella / Block / McKinsey；没有则为空数组"]
 }
 
-注意：如果文章与「AI 对组织/工作方式的影响」基本无关，给出较低 score（< 6），摘要仍按事实简短写。"""
+注意：如果文章与「AI 对组织/工作方式的影响」基本无关，给出较低 score（< 6），摘要仍按事实简短写。
+官方博客中的企业落地案例、协作实践、Agent 工作流和能力边界可按实际价值入选。社区帖子是用户贡献，不代表平台官方结论；摘要须明确区分个人经验与官方公告。单纯报错、账号/配额求助、营销推广和没有可复用经验的帖子给低于 6 分。"""
 
 
 def score_entry(client: Anthropic, title: str, source: str, content: str) -> dict[str, Any] | None:
@@ -174,15 +223,12 @@ def run_pipeline() -> list[Entry]:
         category = feed_def.get("category", "other")
         print(f"\n== {name} ==")
         try:
-            parsed = feedparser.parse(url)
+            entries = fetch_source(feed_def, seen, cutoff)
         except Exception as e:
             print(f"  ! fetch failed: {e}", file=sys.stderr)
             continue
-        if parsed.bozo and not parsed.entries:
-            print(f"  ! feed returned no entries (bozo={parsed.bozo_exception})")
-            continue
-
-        for entry in parsed.entries[:30]:
+        print(f"  {len(entries)} entries fetched")
+        for entry in entries[:30]:
             link = entry.get("link", "").split("#")[0].split("?utm")[0]
             if not link or link in seen:
                 continue
@@ -203,8 +249,10 @@ def run_pipeline() -> list[Entry]:
 
             print(f"  -> scoring: {title[:80]}")
             scored = score_entry(client, title, name, text)
-            seen.add(link)  # don't re-attempt even on low score
-            if not scored or scored["score"] < MIN_SCORE:
+            if not scored:
+                continue  # retry transient API/JSON failures on the next build
+            seen.add(link)
+            if scored["score"] < MIN_SCORE:
                 continue
 
             results.append(Entry(
@@ -353,6 +401,7 @@ document.addEventListener('DOMContentLoaded', () => {
 """
 
 CATEGORY_LABELS = {
+    "community": "开发者社区",
     "ai-lab": "AI 实验室",
     "analyst": "分析师",
     "business": "商业",
@@ -603,3 +652,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+

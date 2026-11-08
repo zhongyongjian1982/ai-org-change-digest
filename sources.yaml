@@ -38,8 +38,31 @@ feeds:
     category: ai-lab
 
   - name: Anthropic News
-    url: https://www.anthropic.com/news/rss.xml
+    url: https://www.anthropic.com/news
+    format: anthropic-html
     category: ai-lab
+
+  - name: Anthropic Engineering
+    url: https://www.anthropic.com/engineering
+    format: anthropic-html
+    category: ai-lab
+
+  - name: Google Gemini Blog
+    url: https://blog.google/products/gemini/rss/
+    category: ai-lab
+
+  - name: Google Developers Blog
+    url: https://developers.googleblog.com/feeds/posts/default?alt=rss
+    category: ai-lab
+
+  # Official hosted communities: posts are user contributions, not official claims.
+  - name: OpenAI Developer Community
+    url: https://community.openai.com/c/announcements/6.rss
+    category: community
+
+  - name: Google AI Developer Community
+    url: https://discuss.ai.google.dev/c/gemini-api/4.rss
+    category: community
 
   - name: Google DeepMind
     url: https://deepmind.google/blog/rss.xml
@@ -95,3 +118,4 @@ keywords:
   - CEO
   - CPO
   - management
+

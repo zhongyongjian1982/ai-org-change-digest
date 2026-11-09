@@ -1,0 +1,128 @@
+[
+  {
+    "url": "https://www.lennysnewsletter.com/p/how-i-ai-how-this-founder-built-a",
+    "title": "🎙️ How I AI: How this founder built a better Duolingo with Codex",
+    "source": "Lenny's Newsletter",
+    "category": "analyst",
+    "published": "2026-11-10",
+    "fetched_at": "2026-11-10T04:41:45+08:00",
+    "score": 8,
+    "summary_zh": "Hackmamba 创始人 William Imoh 分享用 AI Agent 管理 25 人公司的实践。他通过赋予 Agent 明确身份（Gandalf 首席参谋、Legolas 营销等）来提高委派效率，并给予广泛的工具访问权限（Google Workspace、Linear、Notion 等）以获取上下文。核心洞察：好的 Agent 管理依靠清晰的职责定义和适当的系统访问，而非冗长提示；产品管理思维（史诗故事、用户问题）直接提升 Agent 输出质量；当模型能力提升时，精心构建的技能库反而变得不必要。",
+    "key_points": [
+      "给 AI Agent 清晰身份和角色定义，比泛化指令更能提高执行效率和可理解性",
+      "通过连接核心业务系统（日历、CRM、财务、文档）让 Agent 获取必需上下文，避免提示词冗长",
+      "产品经理的结构化思维（需求、用户故事、目标）对高质量 Agent 提示词设计至关重要",
+      "随着基础模型升级，定制化技能库逐渐失效，但核心业务专长（增长战略、内容策略）仍需保留",
+      "Agent 失败时用清晰指令重启并加入审查机制，胜过一次性复杂提示"
+    ],
+    "tags": [
+      "Agent 落地",
+      "组织管理",
+      "人员编制优化",
+      "系统集成"
+    ],
+    "speakers": [
+      "William Imoh（Hackmamba 创始人）"
+    ]
+  },
+  {
+    "url": "https://www.lennysnewsletter.com/p/what-it-actually-takes-to-build-frontier",
+    "title": "Why PMs are suddenly valuable again | Tulsee Doshi (Head of Product, Gemini)",
+    "source": "Lenny's Newsletter",
+    "category": "analyst",
+    "published": "2026-11-08",
+    "fetched_at": "2026-11-10T04:41:56+08:00",
+    "score": 8,
+    "summary_zh": "Google Gemini产品负责人Tulsee Doshi阐述了AI时代PM角色的重新价值凸显。在前沿AI实验室中，PM不仅需懂工程，更要像调配魔药般精准平衡模型开发。他提出60-20-20框架（60%已验证方案、20%接近可行、20%探索未来），强调PM在多模态模型产品化、评估框架设计、跨职能协调中的核心作用。这反映了AI组织中PM从执行者向战略决策者的角色升级，需要更深层的技术理解和创意思维。",
+    "key_points": [
+      "前沿AI实验室PM角色升级：需兼具工程思维与创意平衡，而非传统产品管理",
+      "60-20-20框架：分配资源于即时可用、接近成熟、未来探索的工作，降低创新风险",
+      "PM价值再定义：从需求管理者转变为技术-产品战略决策者，需深度参与模型评估设计",
+      "多模态时代组织协作：PM需跨工程、设计、安全团队协调，推进模型全栈产品化"
+    ],
+    "tags": [
+      "人才策略",
+      "组织角色演变",
+      "AI时代管理",
+      "产品战略"
+    ],
+    "speakers": [
+      "Tulsee Doshi（Google Gemini产品负责人）"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/how-cfos-can-make-ai-pay-off",
+    "title": "How CFOs can make AI pay off",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-11-09",
+    "fetched_at": "2026-11-10T04:39:47+08:00",
+    "score": 8,
+    "summary_zh": "麦肯锡阐述CFO如何通过AI创造商业价值的关键路径。核心观点：价值创造需要设定可量化目标、重新设计财务流程，而非盲目采纳技术。强调AI在财务领域的落地不仅涉及工具选择，更要求组织流程重构、能力再定义和跨职能协作的转变。这为财务部门领导者提供了从组织层面实施AI变革的框架。",
+    "key_points": [
+      "设定可量化的AI价值目标，避免为技术而技术的陷阱",
+      "财务流程重新设计是释放AI价值的前提，而非事后优化",
+      "AI实施涉及人员能力升级和跨部门协作机制创新",
+      "CFO需转变为变革推动者，主导组织财务运营模式转型"
+    ],
+    "tags": [
+      "流程重构",
+      "财务AI落地",
+      "领导力转变",
+      "价值量化"
+    ],
+    "speakers": [
+      "麦肯锡（McKinsey）"
+    ]
+  },
+  {
+    "url": "https://www.oneusefulthing.org/p/fable-52-and-jagged-agi",
+    "title": "Fable 5.2 and Jagged AGI",
+    "source": "One Useful Thing (Ethan Mollick)",
+    "category": "analyst",
+    "published": "2026-11-10",
+    "fetched_at": "2026-11-10T04:41:33+08:00",
+    "score": 8,
+    "summary_zh": "Ethan Mollick 通过实际测试 Claude Fable 5.2，论证当前 AI 已接近「参差 AGI」（Jagged AGI）—— 在编码、视频创意、硬件黑客、业务策划等多个领域达到人类专家水平，但在某些任务中仍存在明显短板。这挑战了 AGI 定义，表明 AI 已从简单错误阶段演进到更微妙的能力边界问题。其启示在于：组织需要重新评估 AI 的真实能力与适用范围，而非盲目信任或完全否定。",
+    "key_points": [
+      "Fable 5.2 在创意、编码、跨域问题解决上达专家水平，但能力存在明显参差（Jagged）",
+      "AI 能独立完成复杂业务设计（如市场调研、定价策略），减少人类决策负担",
+      "「参差 AGI」要求组织精准识别 AI 长板与短板，避免全盘委托或否定",
+      "当前 AI 瓶颈已从基础错误转向复杂推理与上下文理解的边界问题"
+    ],
+    "tags": [
+      "AI 能力评估",
+      "组织应用场景",
+      "人机协作",
+      "决策支持"
+    ],
+    "speakers": [
+      "Ethan Mollick",
+      "Anthropic"
+    ]
+  },
+  {
+    "url": "https://openai.com/index/kuken",
+    "title": "Kuken Industries searches 70 years of drawings in minutes",
+    "source": "OpenAI",
+    "category": "ai-lab",
+    "published": "2026-11-09",
+    "fetched_at": "2026-11-10T04:39:56+08:00",
+    "score": 7,
+    "summary_zh": "Kuken Industries 利用 OpenAI API 构建智能搜索系统，能在 4.5 分钟内从 70 年积累的冷却塔设计图纸中找到所需文档，相比之前近 1 小时的手工搜索时间，效率提升约 12 倍。这个案例展现了 AI 如何通过自动化信息检索直接改进工程团队的工作流程和决策效率，减少重复性劳动，让专业人员将更多时间投入高价值任务。",
+    "key_points": [
+      "从 60 分钟降至 4.5 分钟，工程师搜索效率提升约 93%，直接影响维修周期和响应速度",
+      "AI 赋能知识管理系统，让历史数据资产从沉睡转为实时可用的生产资料",
+      "减少重复性文档查找劳动，释放工程团队专注于技术创新和复杂问题解决"
+    ],
+    "tags": [
+      "生产力",
+      "知识管理",
+      "工程效率",
+      "流程优化"
+    ],
+    "speakers": [
+      "Kuken Industries"
+    ]
+  }
+]

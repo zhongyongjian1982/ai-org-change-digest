@@ -1,0 +1,129 @@
+[
+  {
+    "url": "https://openai.com/index/gilbert-tobin-sam-nickless",
+    "title": "Gilbert + Tobin rethinks the business of law with AI",
+    "source": "OpenAI",
+    "category": "ai-lab",
+    "published": "2026-11-12",
+    "fetched_at": "2026-11-12T05:05:24+08:00",
+    "score": 7,
+    "summary_zh": "澳洲律师事务所 Gilbert + Tobin 的合伙人兼 CEO Sam Nickless 探讨了 AI 如何重塑法律服务业务模式。文章聚焦 AI 在法律工作流中的实际应用——如何改变律师团队的组织方式、工作分配、人员需求结构，以及对专业服务行业传统运营模式的冲击。涉及生成式 AI 对知识工作密集型行业的深层变革。",
+    "key_points": [
+      "AI 改变律师工作流，从初级文书工作到高阶分析的任务重新分配",
+      "法律服务模式从按小时计费向效率驱动的新商业模式转变",
+      "人才策略调整：减少低端文书岗，增加高端法律判断力与战略岗位需求",
+      "专业服务行业需重新设计内部协作与培养体系以适应 AI 赋能"
+    ],
+    "tags": [
+      "组织重构",
+      "人才策略",
+      "专业服务转型",
+      "生产力提升"
+    ],
+    "speakers": [
+      "Sam Nickless",
+      "Gilbert + Tobin"
+    ]
+  },
+  {
+    "url": "https://openai.com/index/jiostar-vijay-seshadri",
+    "title": "JioStar’s chief architect on AI discovery at 500M-user scale",
+    "source": "OpenAI",
+    "category": "ai-lab",
+    "published": "2026-11-11",
+    "fetched_at": "2026-11-12T05:05:31+08:00",
+    "score": 7,
+    "summary_zh": "JioStar 首席架构师 Vijay Seshadri 分享在 5 亿用户规模下的 AI 发现与部署经验。文章重点讨论评估框架（evals）、防护措施（guardrails）和 AI 生产环境落地的实践教训。这对大规模互联网平台如何集成生成式 AI、确保质量与安全、管理用户体验具有直接指导意义，涉及组织的技术决策、风险管理和工作流优化。",
+    "key_points": [
+      "5 亿用户规模下 AI 系统的评估与验证框架设计",
+      "生产环境中的防护措施（guardrails）的必要性与实现策略",
+      "AI 从实验到大规模部署的关键步骤与教训",
+      "平台级 AI 集成对用户体验和业务运营的影响"
+    ],
+    "tags": [
+      "AI 落地",
+      "生产环保",
+      "大规模系统",
+      "质量保证"
+    ],
+    "speakers": [
+      "Vijay Seshadri（JioStar 首席架构师）"
+    ]
+  },
+  {
+    "url": "https://openai.com/index/singapore-airlines-travel-work",
+    "title": "Singapore Airlines elevates travel & work with OpenAI technology",
+    "source": "OpenAI",
+    "category": "ai-lab",
+    "published": "2026-11-10",
+    "fetched_at": "2026-11-12T05:05:35+08:00",
+    "score": 7,
+    "summary_zh": "新加坡航空通过集成OpenAI模型和API，在客户支持、旅行发现和员工生产力三个维度实现业务升级。其旗舰产品Kris聊天机器人的客户满意度(CSAT)翻倍，表明AI驱动的自动化不仅优化了外部服务流程，也在内部协作效率上产生可量化影响。案例展示了生成式AI在传统服务型企业中的落地方式——从客户交互到员工赋能的完整闭环。",
+    "key_points": [
+      "Kris聊天机器人CSAT翻倍，验证AI客服在复杂旅行场景中的实际效能",
+      "覆盖客户支持、旅行发现、员工生产力三层业务流程改造",
+      "利用OpenAI API实现规模化部署，而非自建模型，降低技术成本"
+    ],
+    "tags": [
+      "客户体验优化",
+      "员工生产力",
+      "AI落地案例",
+      "服务业转型"
+    ],
+    "speakers": [
+      "Singapore Airlines",
+      "OpenAI"
+    ]
+  },
+  {
+    "url": "https://community.openai.com/t/introducing-businesses-in-chatgpt-in-beta/1414865",
+    "title": "Introducing Businesses in ChatGPT in beta",
+    "source": "OpenAI Developer Community",
+    "category": "community",
+    "published": "2026-11-11",
+    "fetched_at": "2026-11-12T05:06:14+08:00",
+    "score": 7,
+    "summary_zh": "OpenAI 推出「ChatGPT 中的商务」功能beta版，允许符合条件的电商和在线服务企业认领商务信息、发布 Business Agent，直接在ChatGPT 中与客户交互。企业可通过 Business Hub 管理商务详情、产品信息、获取客户提及量和互动洞察。此举强化了生成式AI在客户接待、商务转化中的角色，改变企业获取和服务客户的方式，但对内部组织结构、人员配置的影响相对间接。",
+    "key_points": [
+      "企业可直接在ChatGPT部署Business Agent，实现自动化客户问询和产品探索，改变传统客服模式",
+      "Business Hub提供商务信息管理、产品feed更新、客户互动洞察，数据不与用户对话混淆",
+      "面向美国电商和在线服务企业，扩展AI在客户接触点和转化环节的应用范围",
+      "标志AI Agent作为企业对外窗口的制度化——独立于ChatGPT主答案的商务对话流"
+    ],
+    "tags": [
+      "Agent落地",
+      "客户接待",
+      "商业转化",
+      "组织对外窗口"
+    ],
+    "speakers": [
+      "OpenAI"
+    ]
+  },
+  {
+    "url": "https://www.lennysnewsletter.com/p/claude-code-obsidian-my-familys-ai",
+    "title": "Claude Code + Obsidian: My family’s AI brain | Scott Farrar",
+    "source": "Lenny's Newsletter",
+    "category": "analyst",
+    "published": "2026-11-11",
+    "fetched_at": "2026-11-12T05:07:20+08:00",
+    "score": 6,
+    "summary_zh": "数学教育工作者 Scott Farrar 用 Claude Code + Obsidian 为家庭构建了一套 AI 知识库系统，取代传统聊天工具的遗忘问题。该系统集成家电、保修单、保险、待办事项等信息，支持家庭成员共享与查询。案例涵盖车险购买决策、任务优先级管理、墙面展示板等家庭场景。核心洞察：AI 从「漂流式对话」向「持久化协作」演进，以及在教育中保留学生主动思考能力的平衡问题。",
+    "key_points": [
+      "将 AI 从临时对话转变为持久知识库，解决信息散落与上下文丧失问题",
+      "家庭系统支持多人共享与实时更新，提升决策效率（如保险购买）",
+      "通过墙面展示板（DAKboard）可视化任务优先级和团队成就，改变家庭协作方式",
+      "教育场景：学生反向指导 AI 而非被动接收，保留学生的思考主动性与生成能力"
+    ],
+    "tags": [
+      "知识管理",
+      "协作工作流",
+      "家庭组织",
+      "教育与 AI 伦理"
+    ],
+    "speakers": [
+      "Scott Farrar",
+      "Claire Vo"
+    ]
+  }
+]

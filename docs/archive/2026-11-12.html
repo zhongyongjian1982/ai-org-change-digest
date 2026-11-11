@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+<title>2026-11-12 — AI TRANSFORMATION</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #0a0a0a; color: #999; font-family: system-ui, -apple-system, sans-serif; line-height: 1.6; min-height: 100vh; }
+a { color: inherit; text-decoration: none; }
+a:hover { color: #ccc; }
+.back-link { position: fixed; top: 18px; left: 20px; font-family: 'VT323', monospace; font-size: 1.15rem; color: #666; z-index: 100; letter-spacing: 0.02em; transition: color 0.15s; }
+.back-link:hover { color: #aaa; }
+header { padding: 60px 20px 32px; text-align: center; }
+header h1 { font-family: 'VT323', monospace; font-size: clamp(2rem, 6vw, 4rem); color: #999; letter-spacing: 0.12em; line-height: 1.1; margin-bottom: 12px; word-spacing: 0.1em; }
+header p { font-size: 0.88rem; color: #666; letter-spacing: 0.08em; }
+header p a { color: #888; transition: color 0.15s; }
+header p a:hover { color: #ccc; }
+.controls { background: #0a0a0a; border-bottom: 1px solid #1c1c1c; position: sticky; top: 0; z-index: 50; }
+.tabs { display: flex; overflow-x: auto; scrollbar-width: none; padding: 0 16px; max-width: 760px; margin: 0 auto; }
+.tabs::-webkit-scrollbar { display: none; }
+.tab { flex-shrink: 0; background: none; border: none; border-bottom: 2px solid transparent; padding: 14px 12px; font-size: 0.88rem; color: #777; cursor: pointer; font-family: system-ui, sans-serif; display: flex; align-items: center; gap: 5px; white-space: nowrap; transition: color 0.15s, border-color 0.15s; letter-spacing: 0.02em; }
+.tab.active { color: #ddd; border-bottom-color: #777; }
+.tab:hover { color: #bbb; }
+.badge { font-size: 0.74rem; color: #555; }
+.tab.active .badge { color: #999; }
+.filter-bar { display: flex; align-items: center; gap: 10px; padding: 10px 16px; border-top: 1px solid #161616; max-width: 760px; margin: 0 auto; font-size: 0.82rem; color: #666; flex-wrap: wrap; }
+.filter-bar > span { letter-spacing: 0.04em; }
+.filter-bar .sep { color: #2a2a2a; }
+.score-filter { display: flex; gap: 6px; flex-wrap: wrap; }
+.sf-btn { background: none; border: 1px solid #2a2a2a; border-radius: 3px; padding: 3px 11px; font-size: 0.8rem; color: #888; cursor: pointer; font-family: inherit; transition: color 0.15s, border-color 0.15s; letter-spacing: 0.04em; }
+.sf-btn.active, .sf-btn:hover { color: #ddd; border-color: #777; }
+.source-select { background: #0a0a0a; border: 1px solid #2a2a2a; border-radius: 3px; padding: 3px 9px; font-size: 0.8rem; color: #aaa; font-family: inherit; cursor: pointer; outline: none; }
+.source-select:hover { color: #ddd; border-color: #777; }
+.source-select option { background: #0a0a0a; color: #ccc; }
+.list { max-width: 760px; margin: 0 auto; padding: 8px 20px 80px; }
+.day { padding-top: 32px; }
+.day-head { font-size: 0.8rem; color: #555; letter-spacing: 0.12em; padding: 0 0 10px; border-bottom: 1px solid #1c1c1c; margin-bottom: 4px; text-transform: uppercase; }
+.day-head .count { color: #444; margin-left: 6px; }
+.entry { padding: 22px 0; border-bottom: 1px solid #161616; }
+.entry.hidden { display: none; }
+.entry-meta { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; font-size: 0.8rem; color: #666; margin-bottom: 8px; letter-spacing: 0.03em; }
+.entry-meta .sep { color: #2a2a2a; }
+.entry-score { color: #999; font-variant-numeric: tabular-nums; letter-spacing: 0.05em; font-weight: 500; }
+.entry-score.s-low { color: #666; }
+.entry-title { display: block; font-size: 1.1rem; color: #ccc; transition: color 0.15s; line-height: 1.5; margin-bottom: 10px; font-weight: 500; }
+.entry-title:hover { color: #fff; }
+.entry-summary { font-size: 0.95rem; color: #aaa; line-height: 1.75; margin-bottom: 10px; }
+.entry-bullets { list-style: none; padding: 0; margin: 8px 0 12px; }
+.entry-bullets li { font-size: 0.9rem; color: #888; line-height: 1.75; padding-left: 16px; position: relative; margin-bottom: 2px; }
+.entry-bullets li::before { content: '·'; position: absolute; left: 4px; color: #666; font-weight: bold; }
+.entry-chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+.entry-chip { font-size: 0.78rem; color: #777; border: 1px solid #2a2a2a; padding: 2px 9px; border-radius: 2px; letter-spacing: 0.03em; }
+.entry-chip.speaker { color: #aaa; border-color: #3a3a3a; }
+.empty-state { text-align: center; padding: 60px 20px; color: #555; font-size: 0.9rem; }
+@media (max-width: 480px) {
+  .list { padding: 8px 14px 60px; }
+  .entry-title { font-size: 1rem; }
+  .entry-summary { font-size: 0.92rem; }
+  .entry-bullets li { font-size: 0.88rem; }
+  .filter-bar { font-size: 0.74rem; gap: 8px; }
+}
+footer { text-align: center; padding: 30px 20px; color: #555; font-size: 0.78rem; letter-spacing: 0.06em; }
+footer a { color: #666; transition: color 0.15s; }
+footer a:hover { color: #999; }
+</style>
+</head>
+<body>
+<a class="back-link" href="https://www.tedzhong.com/">← tedzhong.com</a>
+<header>
+  <h1>2026-11-12</h1>
+  <p>5 条 · <a href="../index.html">← 返回最新</a> · <a href="./">归档</a></p>
+</header>
+<div class="controls">
+  <div class="tabs"><button class="tab active" data-cat="all">全部<span class="badge">5</span></button><button class="tab" data-cat="ai-lab">AI 实验室<span class="badge">3</span></button><button class="tab" data-cat="analyst">分析师<span class="badge">1</span></button><button class="tab" data-cat="community">开发者社区<span class="badge">1</span></button></div>
+  <div class="filter-bar">
+    <span>评分</span>
+    <div class="score-filter">
+      <button class="sf-btn active" data-score="6">≥6</button>
+      <button class="sf-btn" data-score="7">≥7</button>
+      <button class="sf-btn" data-score="8">≥8</button>
+      <button class="sf-btn" data-score="9">≥9</button>
+    </div>
+    <span class="sep">·</span>
+    <span>来源</span>
+    <select class="source-select" id="f-source"><option value="*">全部</option><option value="Lenny&#x27;s Newsletter">Lenny&#x27;s Newsletter</option><option value="OpenAI">OpenAI</option><option value="OpenAI Developer Community">OpenAI Developer Community</option></select>
+  </div>
+</div>
+<div class="list">
+<section class="day"><div class="day-head">2026-11-12<span class="count">· 5 条</span></div>
+    <article class="entry" data-source="OpenAI" data-category="ai-lab" data-score="7">
+      <div class="entry-meta">
+        <span class="entry-score">7/10</span>
+        <span class="sep">·</span>
+        <span>OpenAI</span>
+        <span class="sep">·</span>
+        <span>AI 实验室</span>
+        <span class="sep">·</span>
+        <span>2026-11-12</span>
+      </div>
+      <a class="entry-title" href="https://openai.com/index/gilbert-tobin-sam-nickless" target="_blank" rel="noopener">Gilbert + Tobin rethinks the business of law with AI</a>
+      <p class="entry-summary">澳洲律师事务所 Gilbert + Tobin 的合伙人兼 CEO Sam Nickless 探讨了 AI 如何重塑法律服务业务模式。文章聚焦 AI 在法律工作流中的实际应用——如何改变律师团队的组织方式、工作分配、人员需求结构，以及对专业服务行业传统运营模式的冲击。涉及生成式 AI 对知识工作密集型行业的深层变革。</p>
+      <ul class="entry-bullets"><li>AI 改变律师工作流，从初级文书工作到高阶分析的任务重新分配</li><li>法律服务模式从按小时计费向效率驱动的新商业模式转变</li><li>人才策略调整：减少低端文书岗，增加高端法律判断力与战略岗位需求</li><li>专业服务行业需重新设计内部协作与培养体系以适应 AI 赋能</li></ul>
+      <div class="entry-chips"><span class="entry-chip speaker">Sam Nickless</span><span class="entry-chip speaker">Gilbert + Tobin</span><span class="entry-chip">组织重构</span><span class="entry-chip">人才策略</span><span class="entry-chip">专业服务转型</span><span class="entry-chip">生产力提升</span></div>
+    </article>
+    
+    <article class="entry" data-source="OpenAI" data-category="ai-lab" data-score="7">
+      <div class="entry-meta">
+        <span class="entry-score">7/10</span>
+        <span class="sep">·</span>
+        <span>OpenAI</span>
+        <span class="sep">·</span>
+        <span>AI 实验室</span>
+        <span class="sep">·</span>
+        <span>2026-11-11</span>
+      </div>
+      <a class="entry-title" href="https://openai.com/index/jiostar-vijay-seshadri" target="_blank" rel="noopener">JioStar’s chief architect on AI discovery at 500M-user scale</a>
+      <p class="entry-summary">JioStar 首席架构师 Vijay Seshadri 分享在 5 亿用户规模下的 AI 发现与部署经验。文章重点讨论评估框架（evals）、防护措施（guardrails）和 AI 生产环境落地的实践教训。这对大规模互联网平台如何集成生成式 AI、确保质量与安全、管理用户体验具有直接指导意义，涉及组织的技术决策、风险管理和工作流优化。</p>
+      <ul class="entry-bullets"><li>5 亿用户规模下 AI 系统的评估与验证框架设计</li><li>生产环境中的防护措施（guardrails）的必要性与实现策略</li><li>AI 从实验到大规模部署的关键步骤与教训</li><li>平台级 AI 集成对用户体验和业务运营的影响</li></ul>
+      <div class="entry-chips"><span class="entry-chip speaker">Vijay Seshadri（JioStar 首席架构师）</span><span class="entry-chip">AI 落地</span><span class="entry-chip">生产环保</span><span class="entry-chip">大规模系统</span><span class="entry-chip">质量保证</span></div>
+    </article>
+    
+    <article class="entry" data-source="OpenAI" data-category="ai-lab" data-score="7">
+      <div class="entry-meta">
+        <span class="entry-score">7/10</span>
+        <span class="sep">·</span>
+        <span>OpenAI</span>
+        <span class="sep">·</span>
+        <span>AI 实验室</span>
+        <span class="sep">·</span>
+        <span>2026-11-10</span>
+      </div>
+      <a class="entry-title" href="https://openai.com/index/singapore-airlines-travel-work" target="_blank" rel="noopener">Singapore Airlines elevates travel &amp; work with OpenAI technology</a>
+      <p class="entry-summary">新加坡航空通过集成OpenAI模型和API，在客户支持、旅行发现和员工生产力三个维度实现业务升级。其旗舰产品Kris聊天机器人的客户满意度(CSAT)翻倍，表明AI驱动的自动化不仅优化了外部服务流程，也在内部协作效率上产生可量化影响。案例展示了生成式AI在传统服务型企业中的落地方式——从客户交互到员工赋能的完整闭环。</p>
+      <ul class="entry-bullets"><li>Kris聊天机器人CSAT翻倍，验证AI客服在复杂旅行场景中的实际效能</li><li>覆盖客户支持、旅行发现、员工生产力三层业务流程改造</li><li>利用OpenAI API实现规模化部署，而非自建模型，降低技术成本</li></ul>
+      <div class="entry-chips"><span class="entry-chip speaker">Singapore Airlines</span><span class="entry-chip speaker">OpenAI</span><span class="entry-chip">客户体验优化</span><span class="entry-chip">员工生产力</span><span class="entry-chip">AI落地案例</span><span class="entry-chip">服务业转型</span></div>
+    </article>
+    
+    <article class="entry" data-source="OpenAI Developer Community" data-category="community" data-score="7">
+      <div class="entry-meta">
+        <span class="entry-score">7/10</span>
+        <span class="sep">·</span>
+        <span>OpenAI Developer Community</span>
+        <span class="sep">·</span>
+        <span>开发者社区</span>
+        <span class="sep">·</span>
+        <span>2026-11-11</span>
+      </div>
+      <a class="entry-title" href="https://community.openai.com/t/introducing-businesses-in-chatgpt-in-beta/1414865" target="_blank" rel="noopener">Introducing Businesses in ChatGPT in beta</a>
+      <p class="entry-summary">OpenAI 推出「ChatGPT 中的商务」功能beta版，允许符合条件的电商和在线服务企业认领商务信息、发布 Business Agent，直接在ChatGPT 中与客户交互。企业可通过 Business Hub 管理商务详情、产品信息、获取客户提及量和互动洞察。此举强化了生成式AI在客户接待、商务转化中的角色，改变企业获取和服务客户的方式，但对内部组织结构、人员配置的影响相对间接。</p>
+      <ul class="entry-bullets"><li>企业可直接在ChatGPT部署Business Agent，实现自动化客户问询和产品探索，改变传统客服模式</li><li>Business Hub提供商务信息管理、产品feed更新、客户互动洞察，数据不与用户对话混淆</li><li>面向美国电商和在线服务企业，扩展AI在客户接触点和转化环节的应用范围</li><li>标志AI Agent作为企业对外窗口的制度化——独立于ChatGPT主答案的商务对话流</li></ul>
+      <div class="entry-chips"><span class="entry-chip speaker">OpenAI</span><span class="entry-chip">Agent落地</span><span class="entry-chip">客户接待</span><span class="entry-chip">商业转化</span><span class="entry-chip">组织对外窗口</span></div>
+    </article>
+    
+    <article class="entry" data-source="Lenny&#x27;s Newsletter" data-category="analyst" data-score="6">
+      <div class="entry-meta">
+        <span class="entry-score s-low">6/10</span>
+        <span class="sep">·</span>
+        <span>Lenny&#x27;s Newsletter</span>
+        <span class="sep">·</span>
+        <span>分析师</span>
+        <span class="sep">·</span>
+        <span>2026-11-11</span>
+      </div>
+      <a class="entry-title" href="https://www.lennysnewsletter.com/p/claude-code-obsidian-my-familys-ai" target="_blank" rel="noopener">Claude Code + Obsidian: My family’s AI brain | Scott Farrar</a>
+      <p class="entry-summary">数学教育工作者 Scott Farrar 用 Claude Code + Obsidian 为家庭构建了一套 AI 知识库系统，取代传统聊天工具的遗忘问题。该系统集成家电、保修单、保险、待办事项等信息，支持家庭成员共享与查询。案例涵盖车险购买决策、任务优先级管理、墙面展示板等家庭场景。核心洞察：AI 从「漂流式对话」向「持久化协作」演进，以及在教育中保留学生主动思考能力的平衡问题。</p>
+      <ul class="entry-bullets"><li>将 AI 从临时对话转变为持久知识库，解决信息散落与上下文丧失问题</li><li>家庭系统支持多人共享与实时更新，提升决策效率（如保险购买）</li><li>通过墙面展示板（DAKboard）可视化任务优先级和团队成就，改变家庭协作方式</li><li>教育场景：学生反向指导 AI 而非被动接收，保留学生的思考主动性与生成能力</li></ul>
+      <div class="entry-chips"><span class="entry-chip speaker">Scott Farrar</span><span class="entry-chip speaker">Claire Vo</span><span class="entry-chip">知识管理</span><span class="entry-chip">协作工作流</span><span class="entry-chip">家庭组织</span><span class="entry-chip">教育与 AI 伦理</span></div>
+    </article>
+    </section>
+</div>
+<footer>
+  由 Claude Haiku 4.5 每日构建 · 2026-11-12 05:07 CST
+</footer>
+<script>
+function applyFilters() {
+  const activeTab = document.querySelector('.tab.active');
+  const cat = activeTab ? activeTab.dataset.cat : 'all';
+  const activeScore = document.querySelector('.sf-btn.active');
+  const minScore = activeScore ? parseInt(activeScore.dataset.score, 10) : 6;
+  const srcEl = document.getElementById('f-source');
+  const src = srcEl ? srcEl.value : '*';
+  document.querySelectorAll('.entry').forEach(e => {
+    const ec = e.dataset.category, es = e.dataset.source, esc = parseInt(e.dataset.score, 10);
+    const show = (cat === 'all' || ec === cat) && (src === '*' || es === src) && esc >= minScore;
+    e.classList.toggle('hidden', !show);
+  });
+  document.querySelectorAll('.day').forEach(d => {
+    const any = Array.from(d.querySelectorAll('.entry')).some(e => !e.classList.contains('hidden'));
+    d.style.display = any ? '' : 'none';
+  });
+}
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.tab').forEach(t => t.addEventListener('click', () => {
+    document.querySelectorAll('.tab').forEach(x => x.classList.remove('active'));
+    t.classList.add('active');
+    applyFilters();
+  }));
+  document.querySelectorAll('.sf-btn').forEach(b => b.addEventListener('click', () => {
+    document.querySelectorAll('.sf-btn').forEach(x => x.classList.remove('active'));
+    b.classList.add('active');
+    applyFilters();
+  }));
+  const srcEl = document.getElementById('f-source');
+  if (srcEl) srcEl.addEventListener('change', applyFilters);
+});
+</script>
+</body>
+</html>

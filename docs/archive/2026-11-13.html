@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+<title>2026-11-13 — AI TRANSFORMATION</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #0a0a0a; color: #999; font-family: system-ui, -apple-system, sans-serif; line-height: 1.6; min-height: 100vh; }
+a { color: inherit; text-decoration: none; }
+a:hover { color: #ccc; }
+.back-link { position: fixed; top: 18px; left: 20px; font-family: 'VT323', monospace; font-size: 1.15rem; color: #666; z-index: 100; letter-spacing: 0.02em; transition: color 0.15s; }
+.back-link:hover { color: #aaa; }
+header { padding: 60px 20px 32px; text-align: center; }
+header h1 { font-family: 'VT323', monospace; font-size: clamp(2rem, 6vw, 4rem); color: #999; letter-spacing: 0.12em; line-height: 1.1; margin-bottom: 12px; word-spacing: 0.1em; }
+header p { font-size: 0.88rem; color: #666; letter-spacing: 0.08em; }
+header p a { color: #888; transition: color 0.15s; }
+header p a:hover { color: #ccc; }
+.controls { background: #0a0a0a; border-bottom: 1px solid #1c1c1c; position: sticky; top: 0; z-index: 50; }
+.tabs { display: flex; overflow-x: auto; scrollbar-width: none; padding: 0 16px; max-width: 760px; margin: 0 auto; }
+.tabs::-webkit-scrollbar { display: none; }
+.tab { flex-shrink: 0; background: none; border: none; border-bottom: 2px solid transparent; padding: 14px 12px; font-size: 0.88rem; color: #777; cursor: pointer; font-family: system-ui, sans-serif; display: flex; align-items: center; gap: 5px; white-space: nowrap; transition: color 0.15s, border-color 0.15s; letter-spacing: 0.02em; }
+.tab.active { color: #ddd; border-bottom-color: #777; }
+.tab:hover { color: #bbb; }
+.badge { font-size: 0.74rem; color: #555; }
+.tab.active .badge { color: #999; }
+.filter-bar { display: flex; align-items: center; gap: 10px; padding: 10px 16px; border-top: 1px solid #161616; max-width: 760px; margin: 0 auto; font-size: 0.82rem; color: #666; flex-wrap: wrap; }
+.filter-bar > span { letter-spacing: 0.04em; }
+.filter-bar .sep { color: #2a2a2a; }
+.score-filter { display: flex; gap: 6px; flex-wrap: wrap; }
+.sf-btn { background: none; border: 1px solid #2a2a2a; border-radius: 3px; padding: 3px 11px; font-size: 0.8rem; color: #888; cursor: pointer; font-family: inherit; transition: color 0.15s, border-color 0.15s; letter-spacing: 0.04em; }
+.sf-btn.active, .sf-btn:hover { color: #ddd; border-color: #777; }
+.source-select { background: #0a0a0a; border: 1px solid #2a2a2a; border-radius: 3px; padding: 3px 9px; font-size: 0.8rem; color: #aaa; font-family: inherit; cursor: pointer; outline: none; }
+.source-select:hover { color: #ddd; border-color: #777; }
+.source-select option { background: #0a0a0a; color: #ccc; }
+.list { max-width: 760px; margin: 0 auto; padding: 8px 20px 80px; }
+.day { padding-top: 32px; }
+.day-head { font-size: 0.8rem; color: #555; letter-spacing: 0.12em; padding: 0 0 10px; border-bottom: 1px solid #1c1c1c; margin-bottom: 4px; text-transform: uppercase; }
+.day-head .count { color: #444; margin-left: 6px; }
+.entry { padding: 22px 0; border-bottom: 1px solid #161616; }
+.entry.hidden { display: none; }
+.entry-meta { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; font-size: 0.8rem; color: #666; margin-bottom: 8px; letter-spacing: 0.03em; }
+.entry-meta .sep { color: #2a2a2a; }
+.entry-score { color: #999; font-variant-numeric: tabular-nums; letter-spacing: 0.05em; font-weight: 500; }
+.entry-score.s-low { color: #666; }
+.entry-title { display: block; font-size: 1.1rem; color: #ccc; transition: color 0.15s; line-height: 1.5; margin-bottom: 10px; font-weight: 500; }
+.entry-title:hover { color: #fff; }
+.entry-summary { font-size: 0.95rem; color: #aaa; line-height: 1.75; margin-bottom: 10px; }
+.entry-bullets { list-style: none; padding: 0; margin: 8px 0 12px; }
+.entry-bullets li { font-size: 0.9rem; color: #888; line-height: 1.75; padding-left: 16px; position: relative; margin-bottom: 2px; }
+.entry-bullets li::before { content: '·'; position: absolute; left: 4px; color: #666; font-weight: bold; }
+.entry-chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+.entry-chip { font-size: 0.78rem; color: #777; border: 1px solid #2a2a2a; padding: 2px 9px; border-radius: 2px; letter-spacing: 0.03em; }
+.entry-chip.speaker { color: #aaa; border-color: #3a3a3a; }
+.empty-state { text-align: center; padding: 60px 20px; color: #555; font-size: 0.9rem; }
+@media (max-width: 480px) {
+  .list { padding: 8px 14px 60px; }
+  .entry-title { font-size: 1rem; }
+  .entry-summary { font-size: 0.92rem; }
+  .entry-bullets li { font-size: 0.88rem; }
+  .filter-bar { font-size: 0.74rem; gap: 8px; }
+}
+footer { text-align: center; padding: 30px 20px; color: #555; font-size: 0.78rem; letter-spacing: 0.06em; }
+footer a { color: #666; transition: color 0.15s; }
+footer a:hover { color: #999; }
+</style>
+</head>
+<body>
+<a class="back-link" href="https://www.tedzhong.com/">← tedzhong.com</a>
+<header>
+  <h1>2026-11-13</h1>
+  <p>3 条 · <a href="../index.html">← 返回最新</a> · <a href="./">归档</a></p>
+</header>
+<div class="controls">
+  <div class="tabs"><button class="tab active" data-cat="all">全部<span class="badge">3</span></button><button class="tab" data-cat="ai-lab">AI 实验室<span class="badge">1</span></button><button class="tab" data-cat="analyst">分析师<span class="badge">1</span></button><button class="tab" data-cat="business">商业<span class="badge">1</span></button></div>
+  <div class="filter-bar">
+    <span>评分</span>
+    <div class="score-filter">
+      <button class="sf-btn active" data-score="6">≥6</button>
+      <button class="sf-btn" data-score="7">≥7</button>
+      <button class="sf-btn" data-score="8">≥8</button>
+      <button class="sf-btn" data-score="9">≥9</button>
+    </div>
+    <span class="sep">·</span>
+    <span>来源</span>
+    <select class="source-select" id="f-source"><option value="*">全部</option><option value="McKinsey Insights">McKinsey Insights</option><option value="OpenAI">OpenAI</option><option value="Stratechery (free posts)">Stratechery (free posts)</option></select>
+  </div>
+</div>
+<div class="list">
+<section class="day"><div class="day-head">2026-11-13<span class="count">· 3 条</span></div>
+    <article class="entry" data-source="McKinsey Insights" data-category="business" data-score="7">
+      <div class="entry-meta">
+        <span class="entry-score">7/10</span>
+        <span class="sep">·</span>
+        <span>McKinsey Insights</span>
+        <span class="sep">·</span>
+        <span>商业</span>
+        <span class="sep">·</span>
+        <span>2026-11-12</span>
+      </div>
+      <a class="entry-title" href="https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/proving-ais-business-value-views-from-paypal-ads-svp-and-gm-mark-grether" target="_blank" rel="noopener">Proving AI’s business value: Views from PayPal Ads SVP and GM Mark Grether</a>
+      <p class="entry-summary">PayPal Ads高管Mark Grether分享如何通过AI技术投资获得可衡量的商业价值。核心观点包括：利用支付交易数据的独特优势驱动精准营销，加强CMO与CFO的财务协同以证明AI ROI，以及重新设计客户旅程以适应AI能力。强调数据驱动决策和跨职能对齐在AI价值实现中的关键作用，具有实战参考意义。</p>
+      <ul class="entry-bullets"><li>利用支付交易数据优势构建AI驱动的精准营销能力，实现更高转化率</li><li>CMO-CFO财务对齐确保AI投资可视化ROI，解决高管层的价值证明难题</li><li>AI重塑客户旅程全环节，从认知到转化的每个触点都需重新优化</li><li>跨职能协作与数据治理是AI商业价值落地的前置条件</li></ul>
+      <div class="entry-chips"><span class="entry-chip speaker">Mark Grether (PayPal Ads SVP and GM)</span><span class="entry-chip speaker">McKinsey</span><span class="entry-chip">AI商业价值证明</span><span class="entry-chip">CMO-CFO对齐</span><span class="entry-chip">营销效率</span><span class="entry-chip">数据驱动决策</span></div>
+    </article>
+    
+    <article class="entry" data-source="OpenAI" data-category="ai-lab" data-score="7">
+      <div class="entry-meta">
+        <span class="entry-score">7/10</span>
+        <span class="sep">·</span>
+        <span>OpenAI</span>
+        <span class="sep">·</span>
+        <span>AI 实验室</span>
+        <span class="sep">·</span>
+        <span>2026-11-13</span>
+      </div>
+      <a class="entry-title" href="https://openai.com/index/amplitude" target="_blank" rel="noopener">How Amplitude ships product improvements in 1–2 days with OpenAI</a>
+      <p class="entry-summary">Amplitude 基于 OpenAI 模型构建的产品 Agent「Wave」展示了 AI 在加速开发流程中的实际效果。Wave 能自动识别产品改进需求、协助团队通过编码 Agent 快速交付变更，并自动度量影响。该案例反映了 Agent 如何重塑产品开发的工作方式——从需求识别到发布只需 1-2 天，意味着产品团队的决策周期、编码角色的价值定位、以及 QA/度量流程都在被重新定义。</p>
+      <ul class="entry-bullets"><li>AI Agent 承担产品决策辅助角色，自动识别优化方向，改变 PM/工程师的工作优先级设定方式</li><li>编码 Agent 加速交付，1-2 天内完成迭代，对工程效率和人员规模配置产生直接影响</li><li>内置度量能力，快速反馈产品变更效果，推动数据驱动决策常态化</li><li>产品开发流程从串行向并行转变，团队协作与权责边界需要重新定义</li></ul>
+      <div class="entry-chips"><span class="entry-chip speaker">Amplitude</span><span class="entry-chip speaker">OpenAI</span><span class="entry-chip">Agent 落地</span><span class="entry-chip">产品开发流程</span><span class="entry-chip">工程生产力</span><span class="entry-chip">决策自动化</span></div>
+    </article>
+    
+    <article class="entry" data-source="Stratechery (free posts)" data-category="analyst" data-score="7">
+      <div class="entry-meta">
+        <span class="entry-score">7/10</span>
+        <span class="sep">·</span>
+        <span>Stratechery (free posts)</span>
+        <span class="sep">·</span>
+        <span>分析师</span>
+        <span class="sep">·</span>
+        <span>2026-11-12</span>
+      </div>
+      <a class="entry-title" href="https://stratechery.com/2026/an-interview-with-roblox-ceo-david-baszucki-about-aggregating-play/" target="_blank" rel="noopener">An Interview With Roblox CEO David Baszucki About Aggregating Play</a>
+      <p class="entry-summary">Roblox CEO David Baszucki阐述了生成式AI如何重塑游戏创作民主化。他指出AI使「人人都能制作游戏」从愿景变为现实，推动Roblox从创意工具平台向内容聚合器转型。AI加速了产品思维变革，游戏制作门槛从专业3D编辑和脚本编程大幅降低。Baszucki强调这开启了「游戏制作与游戏消费规模相当」的新时代，同时探讨了推荐系统、跨平台部署（Universal Player）和广告变现等战略机遇。</p>
+      <ul class="entry-bullets"><li>AI降低游戏创作门槛，使非专业用户能通过自然语言创建游戏，改变人才供给结构</li><li>Roblox战略从「工具+社区」向「聚合器」转变，重点依赖内容发现与推荐算法</li><li>游戏制作规模有望与消费规模匹敌，创意生产能力成为平台核心竞争力</li><li>跨平台与开放生态策略（Roblox Everywhere）扩大开发者与用户触达范围</li></ul>
+      <div class="entry-chips"><span class="entry-chip speaker">David Baszucki</span><span class="entry-chip speaker">Ben Thompson</span><span class="entry-chip">人才民主化</span><span class="entry-chip">平台聚合策略</span><span class="entry-chip">生产力变革</span><span class="entry-chip">内容生态</span></div>
+    </article>
+    </section>
+</div>
+<footer>
+  由 Claude Haiku 4.5 每日构建 · 2026-11-13 04:42 CST
+</footer>
+<script>
+function applyFilters() {
+  const activeTab = document.querySelector('.tab.active');
+  const cat = activeTab ? activeTab.dataset.cat : 'all';
+  const activeScore = document.querySelector('.sf-btn.active');
+  const minScore = activeScore ? parseInt(activeScore.dataset.score, 10) : 6;
+  const srcEl = document.getElementById('f-source');
+  const src = srcEl ? srcEl.value : '*';
+  document.querySelectorAll('.entry').forEach(e => {
+    const ec = e.dataset.category, es = e.dataset.source, esc = parseInt(e.dataset.score, 10);
+    const show = (cat === 'all' || ec === cat) && (src === '*' || es === src) && esc >= minScore;
+    e.classList.toggle('hidden', !show);
+  });
+  document.querySelectorAll('.day').forEach(d => {
+    const any = Array.from(d.querySelectorAll('.entry')).some(e => !e.classList.contains('hidden'));
+    d.style.display = any ? '' : 'none';
+  });
+}
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.tab').forEach(t => t.addEventListener('click', () => {
+    document.querySelectorAll('.tab').forEach(x => x.classList.remove('active'));
+    t.classList.add('active');
+    applyFilters();
+  }));
+  document.querySelectorAll('.sf-btn').forEach(b => b.addEventListener('click', () => {
+    document.querySelectorAll('.sf-btn').forEach(x => x.classList.remove('active'));
+    b.classList.add('active');
+    applyFilters();
+  }));
+  const srcEl = document.getElementById('f-source');
+  if (srcEl) srcEl.addEventListener('change', applyFilters);
+});
+</script>
+</body>
+</html>

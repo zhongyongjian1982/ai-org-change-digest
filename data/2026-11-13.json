@@ -1,0 +1,80 @@
+[
+  {
+    "url": "https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/proving-ais-business-value-views-from-paypal-ads-svp-and-gm-mark-grether",
+    "title": "Proving AI’s business value: Views from PayPal Ads SVP and GM Mark Grether",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-11-12",
+    "fetched_at": "2026-11-13T04:40:06+08:00",
+    "score": 7,
+    "summary_zh": "PayPal Ads高管Mark Grether分享如何通过AI技术投资获得可衡量的商业价值。核心观点包括：利用支付交易数据的独特优势驱动精准营销，加强CMO与CFO的财务协同以证明AI ROI，以及重新设计客户旅程以适应AI能力。强调数据驱动决策和跨职能对齐在AI价值实现中的关键作用，具有实战参考意义。",
+    "key_points": [
+      "利用支付交易数据优势构建AI驱动的精准营销能力，实现更高转化率",
+      "CMO-CFO财务对齐确保AI投资可视化ROI，解决高管层的价值证明难题",
+      "AI重塑客户旅程全环节，从认知到转化的每个触点都需重新优化",
+      "跨职能协作与数据治理是AI商业价值落地的前置条件"
+    ],
+    "tags": [
+      "AI商业价值证明",
+      "CMO-CFO对齐",
+      "营销效率",
+      "数据驱动决策"
+    ],
+    "speakers": [
+      "Mark Grether (PayPal Ads SVP and GM)",
+      "McKinsey"
+    ]
+  },
+  {
+    "url": "https://openai.com/index/amplitude",
+    "title": "How Amplitude ships product improvements in 1–2 days with OpenAI",
+    "source": "OpenAI",
+    "category": "ai-lab",
+    "published": "2026-11-13",
+    "fetched_at": "2026-11-13T04:40:13+08:00",
+    "score": 7,
+    "summary_zh": "Amplitude 基于 OpenAI 模型构建的产品 Agent「Wave」展示了 AI 在加速开发流程中的实际效果。Wave 能自动识别产品改进需求、协助团队通过编码 Agent 快速交付变更，并自动度量影响。该案例反映了 Agent 如何重塑产品开发的工作方式——从需求识别到发布只需 1-2 天，意味着产品团队的决策周期、编码角色的价值定位、以及 QA/度量流程都在被重新定义。",
+    "key_points": [
+      "AI Agent 承担产品决策辅助角色，自动识别优化方向，改变 PM/工程师的工作优先级设定方式",
+      "编码 Agent 加速交付，1-2 天内完成迭代，对工程效率和人员规模配置产生直接影响",
+      "内置度量能力，快速反馈产品变更效果，推动数据驱动决策常态化",
+      "产品开发流程从串行向并行转变，团队协作与权责边界需要重新定义"
+    ],
+    "tags": [
+      "Agent 落地",
+      "产品开发流程",
+      "工程生产力",
+      "决策自动化"
+    ],
+    "speakers": [
+      "Amplitude",
+      "OpenAI"
+    ]
+  },
+  {
+    "url": "https://stratechery.com/2026/an-interview-with-roblox-ceo-david-baszucki-about-aggregating-play/",
+    "title": "An Interview With Roblox CEO David Baszucki About Aggregating Play",
+    "source": "Stratechery (free posts)",
+    "category": "analyst",
+    "published": "2026-11-12",
+    "fetched_at": "2026-11-13T04:42:03+08:00",
+    "score": 7,
+    "summary_zh": "Roblox CEO David Baszucki阐述了生成式AI如何重塑游戏创作民主化。他指出AI使「人人都能制作游戏」从愿景变为现实，推动Roblox从创意工具平台向内容聚合器转型。AI加速了产品思维变革，游戏制作门槛从专业3D编辑和脚本编程大幅降低。Baszucki强调这开启了「游戏制作与游戏消费规模相当」的新时代，同时探讨了推荐系统、跨平台部署（Universal Player）和广告变现等战略机遇。",
+    "key_points": [
+      "AI降低游戏创作门槛，使非专业用户能通过自然语言创建游戏，改变人才供给结构",
+      "Roblox战略从「工具+社区」向「聚合器」转变，重点依赖内容发现与推荐算法",
+      "游戏制作规模有望与消费规模匹敌，创意生产能力成为平台核心竞争力",
+      "跨平台与开放生态策略（Roblox Everywhere）扩大开发者与用户触达范围"
+    ],
+    "tags": [
+      "人才民主化",
+      "平台聚合策略",
+      "生产力变革",
+      "内容生态"
+    ],
+    "speakers": [
+      "David Baszucki",
+      "Ben Thompson"
+    ]
+  }
+]

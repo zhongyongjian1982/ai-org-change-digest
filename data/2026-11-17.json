@@ -1,0 +1,158 @@
+[
+  {
+    "url": "https://www.mckinsey.com/capabilities/operations/our-insights/ai-in-asia-reimagining-insurance-operations-through-agentic-ai",
+    "title": "AI in Asia: Reimagining insurance operations through agentic AI",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-11-16",
+    "fetched_at": "2026-11-17T04:39:55+08:00",
+    "score": 8,
+    "summary_zh": "麦肯锡指出，亚太保险企业可通过Agent AI重新设计业务流程以释放价值。文章强调保险公司需要围绕AI和智能体的能力重塑运营模式，从客户服务、理赔处理到风险管理等核心流程实现自动化和智能化升级。这涉及组织结构调整、流程重组和员工角色转变，代表了AI对传统行业的深刻影响。",
+    "key_points": [
+      "Agent AI使保险运营流程可以根本重设，不是简单优化现有流程",
+      "跨客服、理赔、风险管理等关键环节的自动化与智能化机遇",
+      "需要组织重新设想人与AI的协作方式和岗位职责界定",
+      "亚太地区保险业面临的竞争优势窗口期与数字化转型加速"
+    ],
+    "tags": [
+      "Agent运营落地",
+      "流程重组",
+      "保险行业",
+      "人机协作"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  },
+  {
+    "url": "https://developers.googleblog.com/agents-are-sessions-not-requests-size-gke-node-pools-for-ai-agent-sessions/",
+    "title": "Agents are sessions, not requests: size GKE node pools for AI agent sessions",
+    "source": "Google Developers Blog",
+    "category": "ai-lab",
+    "published": "2026-11-17",
+    "fetched_at": "2026-11-17T04:40:51+08:00",
+    "score": 7,
+    "summary_zh": "Google 分享 AI Agent 工作负载在 Kubernetes 上的资源优化实践。传统一个 Pod 对一个会话的模式导致资源浪费，因为 Agent 会话大部分时间处于空闲状态。通过 Agent Substrate 和 AX 等开源工具，可将空闲会话状态存入对象存储，释放计算资源，同时保留会话上下文，从而降低 GKE 节点成本至多 40%。这反映了 Agent 作为长连接工作负载对基础设施和成本模型的新要求。",
+    "key_points": [
+      "Agent 会话长时间空闲，传统按需分配 Pod 造成资源浪费与成本高企",
+      "通过会话状态持久化到对象存储，可释放计算资源同步降低成本 40%",
+      "需要重新思考 Kubernetes 资源池规划，适应 AI Agent 长连接特性",
+      "开源工具链（Agent Substrate、AX）提供可行的工程化解决方案"
+    ],
+    "tags": [
+      "Agent 基础设施",
+      "成本优化",
+      "工作负载特性",
+      "Kubernetes 架构"
+    ],
+    "speakers": [
+      "Google"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/navigating-the-ai-infrastructure-mismatch-equinix-ceo-adaire-fox-martin",
+    "title": "Navigating the AI infrastructure mismatch: Equinix CEO Adaire Fox-Martin",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-11-16",
+    "fetched_at": "2026-11-17T04:39:48+08:00",
+    "score": 7,
+    "summary_zh": "Equinix CEO Adaire Fox-Martin从基础设施角度剖析AI发展的三大约束：经济模式转变、能源短缺与连接瓶颈。讨论了数据中心运营如何适应AI算力需求爆发，涉及资本投资、电力规划、网络架构等对企业IT决策的深层影响。这直接关乎企业AI部署的成本与可行性，影响组织的技术采纳策略。",
+    "key_points": [
+      "AI基础设施经济模式转变，要求企业重新评估IT投资回报周期与成本结构",
+      "能源约束成为AI规模化部署的关键瓶颈，影响企业选址与基础设施布局决策",
+      "连接与网络性能差距扩大，制约企业跨地域AI系统协同能力",
+      "数据中心运营模式升级，对企业与供应商的合作关系与采购策略有长期影响"
+    ],
+    "tags": [
+      "AI基础设施",
+      "企业IT战略",
+      "成本模型",
+      "能源约束"
+    ],
+    "speakers": [
+      "Adaire Fox-Martin (Equinix CEO)"
+    ]
+  },
+  {
+    "url": "https://openai.com/index/advancing-computer-use-for-healthcare-teams",
+    "title": "Advancing computer-use agents for healthcare teams",
+    "source": "OpenAI",
+    "category": "ai-lab",
+    "published": "2026-11-16",
+    "fetched_at": "2026-11-17T04:40:21+08:00",
+    "score": 7,
+    "summary_zh": "OpenAI 展示 AI Agent 在医疗团队中的应用潜力，重点探讨计算机使用 Agent 如何帮助医疗专业人士处理行政任务、数据查询和工作流优化。文章强调 Agent 能减轻医生的非临床负担，提升团队协作效率。虽未涉及深层组织重构，但具体阐述了 Agent 对医疗工作方式的改变——从简化 EHR 系统交互到自动化重复性工作，反映了生成式 AI 对知识密集型行业的实际赋能。",
+    "key_points": [
+      "Agent 可自动处理医疗数据查询与行政任务，减轻临床医生非诊疗负担",
+      "计算机使用 Agent 通过模拟人类工作流程（如系统交互）提升医疗团队协作效率",
+      "实现 EHR、排班、患者沟通等关键业务流程的自动化与智能辅助",
+      "Agent 技术为医疗机构重新定义医生角色与人力资源配置提供新思路"
+    ],
+    "tags": [
+      "Agent 落地",
+      "工作流自动化",
+      "医疗团队协作",
+      "生产力提升"
+    ],
+    "speakers": [
+      "OpenAI"
+    ]
+  },
+  {
+    "url": "https://www.lennysnewsletter.com/p/how-i-fight-token-fraud-as-a-solo",
+    "title": "How I fight token fraud as a solo founder",
+    "source": "Lenny's Newsletter",
+    "category": "analyst",
+    "published": "2026-11-16",
+    "fetched_at": "2026-11-17T04:42:19+08:00",
+    "score": 6,
+    "summary_zh": "ChatPRD 创始人 Claire Vo 分享了 AI SaaS 企业面临的「代币欺诈」问题——过去一年损失数万美元，耗尽工程资源。她详细阐述了六种滥用模式（免费试用农业、转售促码、中继包装、自定义 MCP 计算农场等），以及采取的业务与技术防控措施（关闭免费试用、实时欺诈分类、Jev 自动监测）。核心洞察：\"如果你出售 AI，你出售的就是计算资源\"——这使得 AI SaaS 企业成为独特的攻击目标。内容兼具实战价值和组织运营启示。",
+    "key_points": [
+      "AI SaaS 因出售计算资源而面临代币欺诈风险，远超传统 SaaS",
+      "六种主要滥用模式：免费试用农业、转售促码、中继包装、MCP 农场、支持向量攻击、账户滥用",
+      "业务控制优于技术防御：关闭免费试用、严格身份验证、支付验证、地理限制等",
+      "技术防御：Jev 实时欺诈分类、Stripe Radar、Vercel 防火墙、自动监测 bot",
+      "警示：支持系统可成为攻击向量，需要在开放与安全之间平衡"
+    ],
+    "tags": [
+      "风险管理",
+      "AI SaaS 运营",
+      "反欺诈系统",
+      "成本控制"
+    ],
+    "speakers": [
+      "Claire Vo (ChatPRD 创始人)",
+      "Gareth Wham (Atlassian)",
+      "Simon Willison"
+    ]
+  },
+  {
+    "url": "https://www.lennysnewsletter.com/p/metas-muse-how-we-launched-the-most",
+    "title": "Meta’s Muse: How we launched the most successful consumer product this year | Mona Sarantakos",
+    "source": "Lenny's Newsletter",
+    "category": "analyst",
+    "published": "2026-11-15",
+    "fetched_at": "2026-11-17T04:42:24+08:00",
+    "score": 6,
+    "summary_zh": "Meta VP 分享旗舰 AI 产品 Muse 的开发历程。团队通过「Agent Swarms」大规模挖掘用户洞察，采用占位符头像演变为产品图标等创新方法。重点讨论激活 AI Agent 的两个核心杠杆，以及产品经理在 AI 时代需要具备的核心能力。虽涉及产品策略与团队协作，但缺乏深层组织结构、人才策略或工作方式转变的具体阐述，主要聚焦产品本身而非企业管理维度。",
+    "key_points": [
+      "Agent Swarms 用于规模化洞察收集，体现 AI 驱动的用户研究方式创新",
+      "七个月延期发布反映市场时机与产品完善的权衡决策",
+      "激活 AI Agent 的两个关键杠杆（具体细节需听完整对话）",
+      "PM 人才选拔标准迭代，适应 AI 时代产品管理新需求"
+    ],
+    "tags": [
+      "产品创新",
+      "Agent 应用",
+      "人才选拔",
+      "用户洞察"
+    ],
+    "speakers": [
+      "Mona Sarantakos（Meta Superintelligence Labs VP）",
+      "Mark Zuckerberg",
+      "Nat Friedman",
+      "Alex Wang"
+    ]
+  }
+]

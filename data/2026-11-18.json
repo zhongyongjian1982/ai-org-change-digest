@@ -1,0 +1,79 @@
+[
+  {
+    "url": "https://sloanreview.mit.edu/article/the-silent-eldercare-crisis-how-leaders-can-help/",
+    "title": "The Silent Eldercare Crisis: How Leaders Can Help",
+    "source": "MIT Sloan Management Review",
+    "category": "business",
+    "published": "2026-11-16",
+    "fetched_at": "2026-11-18T04:40:14+08:00",
+    "score": 7,
+    "summary_zh": "MIT Sloan 刊登的分析指出，美国已有3800万人从事无薪老年照护，其中62%同时在工作，占全职员工的16%。这一负担集中在45-64岁的高管和资深员工身上（患病率高3倍），但大多数组织对此视而不见。照护危机源于成本高涨（居家护理年费8万美元以上）和服务短缺，导致员工迟到、离职或提前退休。作者呼吁企业建立制度性识别和支持机制，而非让员工默默承受。",
+    "key_points": [
+      "高管层对员工照护负担的无知：62%照护者仍在工作，但企业缺乏感知和系统",
+      "人才流失风险：18%照护者转为兼职，9%离职，7%提前退休，尤其是资深员工",
+      "集中在中高层：45-64岁员工的照护率是20多岁员工的3倍以上",
+      "性别差异扩大：女性照护者增长，男性离职人数也达200万（2025年数据）",
+      "企业需主动干预：制度化识别、政策和心理支持，打破组织中的沉默文化"
+    ],
+    "tags": [
+      "人才战略",
+      "员工福祉",
+      "组织文化",
+      "人力资本流失"
+    ],
+    "speakers": [
+      "Andrew Baker（MIT Sloan 撰稿人/编辑）",
+      "Matthew Nestler（KPMG 经济学家）"
+    ]
+  },
+  {
+    "url": "https://openai.com/business/customer-stories/revolut",
+    "title": "How Revolut raises ambition without lowering the bar",
+    "source": "OpenAI",
+    "category": "ai-lab",
+    "published": "2026-11-16",
+    "fetched_at": "2026-11-18T04:40:38+08:00",
+    "score": 7,
+    "summary_zh": "Revolut 通过集成 OpenAI 模型和 Codex 实现开发效率大幅提升，编码时间减少 30-60%，同时在金融犯罪调查中实现规模化升级。案例展示 AI 如何在保证安全合规前提下，让团队在相同人力配置下完成更多创新工作，体现了生成式 AI 对研发生产力和组织工作流的直接影响。",
+    "key_points": [
+      "编码时间下降 30-60%，开发效率显著提升，团队产能释放用于创新",
+      "AI 赋能金融犯罪调查规模化，安全运营能力增强而非削弱",
+      "高度量化的商业价值案例，展示 Codex 在实际企业场景的落地效果"
+    ],
+    "tags": [
+      "生产力提升",
+      "开发效率",
+      "金融行业落地",
+      "人才策略"
+    ],
+    "speakers": [
+      "Revolut",
+      "OpenAI"
+    ]
+  },
+  {
+    "url": "https://openai.com/index/science-at-the-frontier",
+    "title": "Science at the Frontier: How scientists use ChatGPT",
+    "source": "OpenAI",
+    "category": "ai-lab",
+    "published": "2026-11-16",
+    "fetched_at": "2026-11-18T04:40:34+08:00",
+    "score": 6,
+    "summary_zh": "OpenAI 发布科研人员使用 ChatGPT 的调研报告，覆盖 1800+ 科学家。重点展示 ChatGPT 如何融入日常研究流程、提升生产效率，以及对科研发现的预期影响。虽然聚焦科研领域而非通用企业组织，但反映了知识工作者工作方式的转变——通过 AI 助手加速文献综述、实验设计、论文撰写等核心任务，代表了高知识密集型职能的人机协作新范式。",
+    "key_points": [
+      "1800+ 科学家日常工作流中集成 ChatGPT，涵盖研究全周期",
+      "量化显示生产效率提升的具体场景与时间节省数据",
+      "揭示知识工作者对 AI 辅助发现潜力的预期与信心",
+      "科研组织可参考的 AI 赋能工作流最佳实践案例"
+    ],
+    "tags": [
+      "生产力提升",
+      "知识工作转变",
+      "AI 工作流整合",
+      "人机协作"
+    ],
+    "speakers": [
+      "OpenAI"
+    ]
+  }
+]

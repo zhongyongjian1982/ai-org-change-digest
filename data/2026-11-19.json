@@ -1,0 +1,123 @@
+[
+  {
+    "url": "https://discuss.ai.google.dev/t/gemini-3-8-flash-4-000-step-test-compound-delete-requests-left-out-dependants-in-46-of-97-replies-0-of-472-on-plain-deletes/202025",
+    "title": "Gemini 3.8 Flash, 4,000-step test: compound delete requests left out dependants in 46 of 97 replies (0 of 472 on plain deletes)",
+    "source": "Google AI Developer Community",
+    "category": "community",
+    "published": "2026-11-18",
+    "fetched_at": "2026-11-19T04:41:27+08:00",
+    "score": 7,
+    "summary_zh": "开发者通过 4,000 步严格测试揭示 Gemini 3.8 Flash 在复合删除请求中的漏洞：删除服务且同时移除指定边时，模型遗漏了关联的依赖项（46/97 失败率），而单纯删除请求无此问题（0/472）。作者通过主机端验证和自动补全机制解决，确保状态一致性。这反映出 AI 模型在复杂业务逻辑理解和多步骤依赖处理上的局限，需要系统级容错设计。",
+    "key_points": [
+      "复合请求理解缺陷：模型将'删除X且移除Y'理解为仅执行这两项，遗漏其他关联依赖",
+      "失败率随依赖数增加而降低：1个依赖失败率72%，2个39%，3个34%，表现出明确的认知压力",
+      "思维令牌与错误正相关：复合请求平均使用1,825思维令牌（普通请求58-373），但仍未解决逻辑漏洞",
+      "主机端容错机制可完全消除问题：通过状态验证与自动补全，4,000步全部正确，成本增加5%内"
+    ],
+    "tags": [
+      "Agent 能力边界",
+      "系统可靠性",
+      "复杂任务理解",
+      "主机侧设计"
+    ],
+    "speakers": [
+      "Rajnish Choubey"
+    ]
+  },
+  {
+    "url": "https://discuss.ai.google.dev/t/gemini-3-8-flash-long-agent-loops-measured-cost-per-correct-step-and-why-first-token-time-still-rises-with-about-97-of-the-prompt-cached/201990",
+    "title": "Gemini 3.8 Flash long agent loops: measured cost per correct step, and why first-token time still rises with about 97% of the prompt cached",
+    "source": "Google AI Developer Community",
+    "category": "community",
+    "published": "2026-11-18",
+    "fetched_at": "2026-11-19T04:41:53+08:00",
+    "score": 7,
+    "summary_zh": "开发者通过 Gemini 3.8 Flash 对长链 Agent 循环的成本和延迟进行了系统测试。核心发现：采用主机端状态管理（而非对话历史）的方案，每步准确率达 98.85%，成本仅 $0.0012；而保留完整对话历史虽有 97% 缓存命中率，但首字令延迟仍随提示长度增长（从 1.86s 升至 5.57s）。这揭示了缓存机制与实时交互延迟之间的矛盾，对 Agent 工作流设计有重要参考价值。",
+    "key_points": [
+      "主机端状态管理相比对话历史保留，提示词减少 99%，成本从 $0.0052 降至 $0.0012/步",
+      "98.85% 步骤准确率，46 个失误均为同类错误（漏删服务边缘），可由规则修复",
+      "隐式缓存 97% 命中率下，首字令延迟仍从 1.86s 增至 5.57s，缓存无法完全消除延迟",
+      "4000 步长链测试，主机端状态管理始终保持一致，表明有状态 Agent 架构可靠性"
+    ],
+    "tags": [
+      "Agent 长链优化",
+      "成本效率",
+      "状态管理模式",
+      "生产部署"
+    ],
+    "speakers": []
+  },
+  {
+    "url": "https://www.mckinsey.com/capabilities/business-building/our-insights/infrastructure-entrepreneurs-how-hochtief-captures-growth-in-the-ai-age",
+    "title": "Infrastructure entrepreneurs: How HOCHTIEF captures growth with AI",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-11-18",
+    "fetched_at": "2026-11-19T04:39:53+08:00",
+    "score": 7,
+    "summary_zh": "百年工程企业 HOCHTIEF 如何通过 AI 实现增长突破？麦肯锡合伙人采访该公司 PPP 解决方案部门领导，深入探讨其创新策略。文章聚焦传统重型工程行业如何用 AI 驱动业务转型、优化项目交付和运营效率，涉及组织如何重新定位自身能力、调整流程以应对 AI 时代。虽然摘要信息有限，但源自顶级咨询机构对真实企业案例的深度对话，具有管理启示价值。",
+    "key_points": [
+      "百年传统工程企业探索 AI 创新，实现增长转型的具体路径与决策",
+      "企业需重塑流程与能力，以 AI 赋能项目交付与运营决策",
+      "领导层如何推动组织文化与人员转变以适应 AI 驱动的工作方式"
+    ],
+    "tags": [
+      "传统企业数字化转型",
+      "AI 赋能运营效率",
+      "组织创新",
+      "领导力"
+    ],
+    "speakers": [
+      "Jerome Königsfeld（麦肯锡合伙人）",
+      "HOCHTIEF PPP Solutions 领导层"
+    ]
+  },
+  {
+    "url": "https://openai.com/index/managing-frontier-ai-risk",
+    "title": "Managing frontier AI risk: From training to deployment",
+    "source": "OpenAI",
+    "category": "ai-lab",
+    "published": "2026-11-18",
+    "fetched_at": "2026-11-19T04:40:05+08:00",
+    "score": 7,
+    "summary_zh": "OpenAI 阐述了前沿 AI 模型从训练到部署的风险管理框架。核心措施包括：模型对齐（确保行为符合人类意图）、沙箱隔离（限制模型访问权限）、安全屏障阻止（防止误用）、持续监控（部署后追踪异常）。这些做法涉及技术团队与运营流程协调，直接影响 AI 在生产环境中的安全部署与组织的风险治理能力，对企业采纳生成式 AI 时的治理策略有参考价值。",
+    "key_points": [
+      "模型对齐与沙箱隔离是训练阶段的核心防控手段",
+      "部署前设置多层安全屏障，阻止已知的高风险应用场景",
+      "持续监控机制支撑部署后的异常检测与动态风险评估",
+      "风险管理贯穿全生命周期，需组织层面的流程协调"
+    ],
+    "tags": [
+      "AI 安全治理",
+      "模型部署",
+      "风险管理框架",
+      "组织运营"
+    ],
+    "speakers": [
+      "OpenAI"
+    ]
+  },
+  {
+    "url": "https://discuss.ai.google.dev/t/showcase-paper-radar-daily-arxiv-triage-on-decision-models-jev-claude-now-that-gemini-decision-1-joins-the-same-api-shape/202019",
+    "title": "Showcase: Paper Radar — daily arXiv triage on decision models (Jev + Claude), now that Gemini Decision 1 joins the same API shape",
+    "source": "Google AI Developer Community",
+    "category": "community",
+    "published": "2026-11-18",
+    "fetched_at": "2026-11-19T04:41:38+08:00",
+    "score": 6,
+    "summary_zh": "开发者分享了 Paper Radar 项目，一个用决策模型自动筛选 arXiv 论文的工具。对比了 Jev、Claude Haiku 和新发布的 Gemini Decision 1 在相同任务上的表现：准确度相近但速度和成本差异显著（Claude 慢 17 倍、成本高 4 倍）。展示了决策模型在科研信息筛选、系统评审等工作流中的实际应用潜力。虽是个人项目但提供了真实工作负载对比数据，对模型选型有参考价值。",
+    "key_points": [
+      "决策模型在论文筛选、医学证据综合等知识工作中可替代人工初审，准确率达 90-100%",
+      "模型性能存在明显分化：同一任务下准确度相近，但速度相差 17 倍、成本相差 4 倍",
+      "生产环保需关注模型校准稳定性和失败率，Claude 初期失败率 5% 经迭代降至 0.8%",
+      "决策模型 API 标准化成趋势，可插拔不同后端而无需改变业务逻辑"
+    ],
+    "tags": [
+      "工作流自动化",
+      "决策模型应用",
+      "生产力工具",
+      "模型对标"
+    ],
+    "speakers": []
+  }
+]

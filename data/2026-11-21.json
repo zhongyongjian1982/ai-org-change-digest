@@ -1,0 +1,75 @@
+[
+  {
+    "url": "https://discuss.ai.google.dev/t/feature-request-explicit-prefix-breakpoint-caching-server-side-deferred-tool-loading-for-multi-turn-agents-with-100-tools/203230",
+    "title": "Feature Request: Explicit prefix breakpoint caching + server-side deferred tool loading (for multi-turn agents with 100+ tools)",
+    "source": "Google AI Developer Community",
+    "category": "community",
+    "published": "2026-11-21",
+    "fetched_at": "2026-11-21T04:41:04+08:00",
+    "score": 7,
+    "summary_zh": "Google AI 社区用户分享其生产环保境中运行大规模多轮 Agent 的技术挑战。该团队管理 330+ 工具、日均 400+ 调用的员工助手，对比 Gemini 4 Hydrogen 与 Claude Sonnet 5.5 后发现，尽管 Gemini 基础价格更低，但因缺乏显式前缀缓存断点和服务端延迟工具加载，实际成本高 2.4 倍。详细指出了 API 缓存机制差距：Gemini 隐式缓存命中率仅 35-48% vs Anthropic 99%，动态添加工具会导致缓存失效。这反映了大型 Agent 生产部署的核心成本与架构差异。",
+    "key_points": [
+      "生产 Agent 管理 330+ 工具，Gemini 实际成本是 Claude 2.4 倍，主因缺乏精细缓存控制",
+      "Gemini 隐式缓存命中率 35-48% 远低于 Anthropic 99%；显式缓存冻结系统/工具负载不灵活",
+      "服务端延迟工具加载：Anthropic 支持按需加载稀用工具无额外往返，Gemini 动态工具添加破坏缓存",
+      "用户呼吁两项功能：内联短期缓存断点（5m/1h TTL）和无缓存失效的服务端工具搜索"
+    ],
+    "tags": [
+      "Agent 成本优化",
+      "API 缓存策略",
+      "大规模工具调用",
+      "多轮对话架构"
+    ],
+    "speakers": []
+  },
+  {
+    "url": "https://www.mckinsey.com/institute-for-economic-mobility/our-insights/advancing-us-economic-mobility-in-the-age-of-ai",
+    "title": "Advancing US economic mobility in the age of AI",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-11-20",
+    "fetched_at": "2026-11-21T04:39:53+08:00",
+    "score": 7,
+    "summary_zh": "麦肯锡分析AI对美国经济流动性的双重影响。AI既可能加剧贫富差距，也可能成为缩小差距的工具，关键取决于当下的领导决策。文章强调AI时代企业和政策制定者需要主动选择包容性发展路径——包括人才再培训、公平获取AI能力、以及设计不同收入群体都能受益的商业模式，否则AI带来的生产力收益可能集中在高技能劳动力和资本密集型企业，加剧结构性不平等。",
+    "key_points": [
+      "AI对经济分化有双向影响：加剧不平等或促进流动性，取决于组织和政策选择",
+      "需要系统性人才培训和能力再造，确保中低端劳动力能适应AI时代的工作转变",
+      "企业应设计包容性商业模式，让不同收入层级都能获得AI带来的生产力收益",
+      "领导者需要在AI收益分配中承担社会责任，而非让市场自发扩大鸿沟"
+    ],
+    "tags": [
+      "经济不平等",
+      "人才培训",
+      "组织决策",
+      "包容性增长"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  },
+  {
+    "url": "https://openai.com/index/the-silent-consensus",
+    "title": "The Silent Consensus",
+    "source": "OpenAI",
+    "category": "ai-lab",
+    "published": "2026-11-18",
+    "fetched_at": "2026-11-21T04:40:11+08:00",
+    "score": 7,
+    "summary_zh": "OpenAI 战略未来主管 Dean Ball 探讨更强大的 AI 如何重塑社会结构与制度。文章触及 AI 能力提升对权力分配、机构控制的潜在影响，以及人们如何确保对关键机构的掌控权。虽然未提供具体组织案例，但从战略高度分析了 AI 时代的制度设计与权力平衡问题，对理解 AI 如何影响组织治理有参考价值。",
+    "key_points": [
+      "更强大的 AI 将改变现有权力结构与机构决策方式",
+      "人们需要主动设计制度框架，确保对关键机构的控制权",
+      "AI 时代组织设计应避免权力集中与失控风险",
+      "制度创新与文化适应是 AI 时代的核心挑战"
+    ],
+    "tags": [
+      "制度设计",
+      "权力分配",
+      "AI 治理",
+      "组织控制"
+    ],
+    "speakers": [
+      "Dean Ball (OpenAI Head of Strategic Futures)"
+    ]
+  }
+]

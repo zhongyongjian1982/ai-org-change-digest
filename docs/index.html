@@ -75,7 +75,7 @@ footer a:hover { color: #999; }
   <p>24 entries · 过去 7 天 · <a href="archive/">归档</a></p>
 </header>
 <div class="controls">
-  <div class="tabs"><button class="tab active" data-cat="all">全部<span class="badge">24</span></button><button class="tab" data-cat="ai-lab">AI 实验室<span class="badge">10</span></button><button class="tab" data-cat="analyst">分析师<span class="badge">3</span></button><button class="tab" data-cat="business">商业<span class="badge">8</span></button><button class="tab" data-cat="community">开发者社区<span class="badge">3</span></button></div>
+  <div class="tabs"><button class="tab active" data-cat="all">全部<span class="badge">24</span></button><button class="tab" data-cat="ai-lab">AI 实验室<span class="badge">10</span></button><button class="tab" data-cat="analyst">分析师<span class="badge">2</span></button><button class="tab" data-cat="business">商业<span class="badge">8</span></button><button class="tab" data-cat="community">开发者社区<span class="badge">4</span></button></div>
   <div class="filter-bar">
     <span>评分</span>
     <div class="score-filter">
@@ -86,10 +86,59 @@ footer a:hover { color: #999; }
     </div>
     <span class="sep">·</span>
     <span>来源</span>
-    <select class="source-select" id="f-source"><option value="*">全部</option><option value="Google AI Developer Community">Google AI Developer Community</option><option value="Google Developers Blog">Google Developers Blog</option><option value="Lenny&#x27;s Newsletter">Lenny&#x27;s Newsletter</option><option value="MIT Sloan Management Review">MIT Sloan Management Review</option><option value="McKinsey Insights">McKinsey Insights</option><option value="OpenAI">OpenAI</option><option value="Stratechery (free posts)">Stratechery (free posts)</option></select>
+    <select class="source-select" id="f-source"><option value="*">全部</option><option value="Google AI Developer Community">Google AI Developer Community</option><option value="Google Developers Blog">Google Developers Blog</option><option value="Lenny&#x27;s Newsletter">Lenny&#x27;s Newsletter</option><option value="MIT Sloan Management Review">MIT Sloan Management Review</option><option value="McKinsey Insights">McKinsey Insights</option><option value="OpenAI">OpenAI</option></select>
   </div>
 </div>
 <div class="list">
+<section class="day"><div class="day-head">2026-11-21<span class="count">· 3 条</span></div>
+    <article class="entry" data-source="Google AI Developer Community" data-category="community" data-score="7">
+      <div class="entry-meta">
+        <span class="entry-score">7/10</span>
+        <span class="sep">·</span>
+        <span>Google AI Developer Community</span>
+        <span class="sep">·</span>
+        <span>开发者社区</span>
+        <span class="sep">·</span>
+        <span>2026-11-21</span>
+      </div>
+      <a class="entry-title" href="https://discuss.ai.google.dev/t/feature-request-explicit-prefix-breakpoint-caching-server-side-deferred-tool-loading-for-multi-turn-agents-with-100-tools/203230" target="_blank" rel="noopener">Feature Request: Explicit prefix breakpoint caching + server-side deferred tool loading (for multi-turn agents with 100+ tools)</a>
+      <p class="entry-summary">Google AI 社区用户分享其生产环保境中运行大规模多轮 Agent 的技术挑战。该团队管理 330+ 工具、日均 400+ 调用的员工助手，对比 Gemini 4 Hydrogen 与 Claude Sonnet 5.5 后发现，尽管 Gemini 基础价格更低，但因缺乏显式前缀缓存断点和服务端延迟工具加载，实际成本高 2.4 倍。详细指出了 API 缓存机制差距：Gemini 隐式缓存命中率仅 35-48% vs Anthropic 99%，动态添加工具会导致缓存失效。这反映了大型 Agent 生产部署的核心成本与架构差异。</p>
+      <ul class="entry-bullets"><li>生产 Agent 管理 330+ 工具，Gemini 实际成本是 Claude 2.4 倍，主因缺乏精细缓存控制</li><li>Gemini 隐式缓存命中率 35-48% 远低于 Anthropic 99%；显式缓存冻结系统/工具负载不灵活</li><li>服务端延迟工具加载：Anthropic 支持按需加载稀用工具无额外往返，Gemini 动态工具添加破坏缓存</li><li>用户呼吁两项功能：内联短期缓存断点（5m/1h TTL）和无缓存失效的服务端工具搜索</li></ul>
+      <div class="entry-chips"><span class="entry-chip">Agent 成本优化</span><span class="entry-chip">API 缓存策略</span><span class="entry-chip">大规模工具调用</span><span class="entry-chip">多轮对话架构</span></div>
+    </article>
+    
+    <article class="entry" data-source="McKinsey Insights" data-category="business" data-score="7">
+      <div class="entry-meta">
+        <span class="entry-score">7/10</span>
+        <span class="sep">·</span>
+        <span>McKinsey Insights</span>
+        <span class="sep">·</span>
+        <span>商业</span>
+        <span class="sep">·</span>
+        <span>2026-11-20</span>
+      </div>
+      <a class="entry-title" href="https://www.mckinsey.com/institute-for-economic-mobility/our-insights/advancing-us-economic-mobility-in-the-age-of-ai" target="_blank" rel="noopener">Advancing US economic mobility in the age of AI</a>
+      <p class="entry-summary">麦肯锡分析AI对美国经济流动性的双重影响。AI既可能加剧贫富差距，也可能成为缩小差距的工具，关键取决于当下的领导决策。文章强调AI时代企业和政策制定者需要主动选择包容性发展路径——包括人才再培训、公平获取AI能力、以及设计不同收入群体都能受益的商业模式，否则AI带来的生产力收益可能集中在高技能劳动力和资本密集型企业，加剧结构性不平等。</p>
+      <ul class="entry-bullets"><li>AI对经济分化有双向影响：加剧不平等或促进流动性，取决于组织和政策选择</li><li>需要系统性人才培训和能力再造，确保中低端劳动力能适应AI时代的工作转变</li><li>企业应设计包容性商业模式，让不同收入层级都能获得AI带来的生产力收益</li><li>领导者需要在AI收益分配中承担社会责任，而非让市场自发扩大鸿沟</li></ul>
+      <div class="entry-chips"><span class="entry-chip speaker">McKinsey</span><span class="entry-chip">经济不平等</span><span class="entry-chip">人才培训</span><span class="entry-chip">组织决策</span><span class="entry-chip">包容性增长</span></div>
+    </article>
+    
+    <article class="entry" data-source="OpenAI" data-category="ai-lab" data-score="7">
+      <div class="entry-meta">
+        <span class="entry-score">7/10</span>
+        <span class="sep">·</span>
+        <span>OpenAI</span>
+        <span class="sep">·</span>
+        <span>AI 实验室</span>
+        <span class="sep">·</span>
+        <span>2026-11-18</span>
+      </div>
+      <a class="entry-title" href="https://openai.com/index/the-silent-consensus" target="_blank" rel="noopener">The Silent Consensus</a>
+      <p class="entry-summary">OpenAI 战略未来主管 Dean Ball 探讨更强大的 AI 如何重塑社会结构与制度。文章触及 AI 能力提升对权力分配、机构控制的潜在影响，以及人们如何确保对关键机构的掌控权。虽然未提供具体组织案例，但从战略高度分析了 AI 时代的制度设计与权力平衡问题，对理解 AI 如何影响组织治理有参考价值。</p>
+      <ul class="entry-bullets"><li>更强大的 AI 将改变现有权力结构与机构决策方式</li><li>人们需要主动设计制度框架，确保对关键机构的控制权</li><li>AI 时代组织设计应避免权力集中与失控风险</li><li>制度创新与文化适应是 AI 时代的核心挑战</li></ul>
+      <div class="entry-chips"><span class="entry-chip speaker">Dean Ball (OpenAI Head of Strategic Futures)</span><span class="entry-chip">制度设计</span><span class="entry-chip">权力分配</span><span class="entry-chip">AI 治理</span><span class="entry-chip">组织控制</span></div>
+    </article>
+    </section>
 <section class="day"><div class="day-head">2026-11-20<span class="count">· 3 条</span></div>
     <article class="entry" data-source="McKinsey Insights" data-category="business" data-score="7">
       <div class="entry-meta">
@@ -432,58 +481,9 @@ footer a:hover { color: #999; }
       <div class="entry-chips"><span class="entry-chip speaker">OpenAI</span><span class="entry-chip">生产力提升</span><span class="entry-chip">AI 工具落地</span><span class="entry-chip">工程效率</span><span class="entry-chip">小团队扩展</span></div>
     </article>
     </section>
-<section class="day"><div class="day-head">2026-11-13<span class="count">· 3 条</span></div>
-    <article class="entry" data-source="McKinsey Insights" data-category="business" data-score="7">
-      <div class="entry-meta">
-        <span class="entry-score">7/10</span>
-        <span class="sep">·</span>
-        <span>McKinsey Insights</span>
-        <span class="sep">·</span>
-        <span>商业</span>
-        <span class="sep">·</span>
-        <span>2026-11-12</span>
-      </div>
-      <a class="entry-title" href="https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/proving-ais-business-value-views-from-paypal-ads-svp-and-gm-mark-grether" target="_blank" rel="noopener">Proving AI’s business value: Views from PayPal Ads SVP and GM Mark Grether</a>
-      <p class="entry-summary">PayPal Ads高管Mark Grether分享如何通过AI技术投资获得可衡量的商业价值。核心观点包括：利用支付交易数据的独特优势驱动精准营销，加强CMO与CFO的财务协同以证明AI ROI，以及重新设计客户旅程以适应AI能力。强调数据驱动决策和跨职能对齐在AI价值实现中的关键作用，具有实战参考意义。</p>
-      <ul class="entry-bullets"><li>利用支付交易数据优势构建AI驱动的精准营销能力，实现更高转化率</li><li>CMO-CFO财务对齐确保AI投资可视化ROI，解决高管层的价值证明难题</li><li>AI重塑客户旅程全环节，从认知到转化的每个触点都需重新优化</li><li>跨职能协作与数据治理是AI商业价值落地的前置条件</li></ul>
-      <div class="entry-chips"><span class="entry-chip speaker">Mark Grether (PayPal Ads SVP and GM)</span><span class="entry-chip speaker">McKinsey</span><span class="entry-chip">AI商业价值证明</span><span class="entry-chip">CMO-CFO对齐</span><span class="entry-chip">营销效率</span><span class="entry-chip">数据驱动决策</span></div>
-    </article>
-    
-    <article class="entry" data-source="OpenAI" data-category="ai-lab" data-score="7">
-      <div class="entry-meta">
-        <span class="entry-score">7/10</span>
-        <span class="sep">·</span>
-        <span>OpenAI</span>
-        <span class="sep">·</span>
-        <span>AI 实验室</span>
-        <span class="sep">·</span>
-        <span>2026-11-13</span>
-      </div>
-      <a class="entry-title" href="https://openai.com/index/amplitude" target="_blank" rel="noopener">How Amplitude ships product improvements in 1–2 days with OpenAI</a>
-      <p class="entry-summary">Amplitude 基于 OpenAI 模型构建的产品 Agent「Wave」展示了 AI 在加速开发流程中的实际效果。Wave 能自动识别产品改进需求、协助团队通过编码 Agent 快速交付变更，并自动度量影响。该案例反映了 Agent 如何重塑产品开发的工作方式——从需求识别到发布只需 1-2 天，意味着产品团队的决策周期、编码角色的价值定位、以及 QA/度量流程都在被重新定义。</p>
-      <ul class="entry-bullets"><li>AI Agent 承担产品决策辅助角色，自动识别优化方向，改变 PM/工程师的工作优先级设定方式</li><li>编码 Agent 加速交付，1-2 天内完成迭代，对工程效率和人员规模配置产生直接影响</li><li>内置度量能力，快速反馈产品变更效果，推动数据驱动决策常态化</li><li>产品开发流程从串行向并行转变，团队协作与权责边界需要重新定义</li></ul>
-      <div class="entry-chips"><span class="entry-chip speaker">Amplitude</span><span class="entry-chip speaker">OpenAI</span><span class="entry-chip">Agent 落地</span><span class="entry-chip">产品开发流程</span><span class="entry-chip">工程生产力</span><span class="entry-chip">决策自动化</span></div>
-    </article>
-    
-    <article class="entry" data-source="Stratechery (free posts)" data-category="analyst" data-score="7">
-      <div class="entry-meta">
-        <span class="entry-score">7/10</span>
-        <span class="sep">·</span>
-        <span>Stratechery (free posts)</span>
-        <span class="sep">·</span>
-        <span>分析师</span>
-        <span class="sep">·</span>
-        <span>2026-11-12</span>
-      </div>
-      <a class="entry-title" href="https://stratechery.com/2026/an-interview-with-roblox-ceo-david-baszucki-about-aggregating-play/" target="_blank" rel="noopener">An Interview With Roblox CEO David Baszucki About Aggregating Play</a>
-      <p class="entry-summary">Roblox CEO David Baszucki阐述了生成式AI如何重塑游戏创作民主化。他指出AI使「人人都能制作游戏」从愿景变为现实，推动Roblox从创意工具平台向内容聚合器转型。AI加速了产品思维变革，游戏制作门槛从专业3D编辑和脚本编程大幅降低。Baszucki强调这开启了「游戏制作与游戏消费规模相当」的新时代，同时探讨了推荐系统、跨平台部署（Universal Player）和广告变现等战略机遇。</p>
-      <ul class="entry-bullets"><li>AI降低游戏创作门槛，使非专业用户能通过自然语言创建游戏，改变人才供给结构</li><li>Roblox战略从「工具+社区」向「聚合器」转变，重点依赖内容发现与推荐算法</li><li>游戏制作规模有望与消费规模匹敌，创意生产能力成为平台核心竞争力</li><li>跨平台与开放生态策略（Roblox Everywhere）扩大开发者与用户触达范围</li></ul>
-      <div class="entry-chips"><span class="entry-chip speaker">David Baszucki</span><span class="entry-chip speaker">Ben Thompson</span><span class="entry-chip">人才民主化</span><span class="entry-chip">平台聚合策略</span><span class="entry-chip">生产力变革</span><span class="entry-chip">内容生态</span></div>
-    </article>
-    </section>
 </div>
 <footer>
-  由 Claude Haiku 4.5 每日构建 · 2026-11-20 04:42 CST
+  由 Claude Haiku 4.5 每日构建 · 2026-11-21 04:42 CST
 </footer>
 <script>
 function applyFilters() {

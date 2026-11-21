@@ -1,0 +1,27 @@
+[
+  {
+    "url": "https://developers.googleblog.com/check-what-your-ai-agents-do-before-they-do-it-with-semantic-governance-policies/",
+    "title": "Check what your AI agents do before they do it, with Semantic governance policies",
+    "source": "Google Developers Blog",
+    "category": "ai-lab",
+    "published": "2026-11-22",
+    "fetched_at": "2026-11-22T04:40:05+08:00",
+    "score": 7,
+    "summary_zh": "Google 推出语义治理策略（Semantic Governance Policies），允许开发者在 AI Agent 执行工具调用前进行实时评估。该机制通过 Agent Gateway 的策略引擎，对每个行动与用户意图和自然语言规则进行校验，防止未授权数据共享和提示注入攻击。开发者可用自然语言约束绑定 Agent，并通过 Cloud Logging 进行可审计的监控。这是 Agent 时代组织控制、风险治理和信任建设的关键基础设施。",
+    "key_points": [
+      "Agent 执行前的实时语义治理，降低组织 AI 应用的合规和安全风险",
+      "自然语言规则定义，让非技术管理者也能参与 Agent 权限管理",
+      "可审计的日志记录，支持企业内部 AI 操作的透明度和追溯性",
+      "防护提示注入和数据泄露，解决 Agent 大规模部署中的核心治理痛点"
+    ],
+    "tags": [
+      "Agent 治理",
+      "风险防控",
+      "企业合规",
+      "智能自动化"
+    ],
+    "speakers": [
+      "Google"
+    ]
+  }
+]

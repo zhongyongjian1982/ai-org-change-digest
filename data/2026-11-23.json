@@ -1,0 +1,26 @@
+[
+  {
+    "url": "https://discuss.ai.google.dev/t/the-economics-of-multi-model-orchestration-increasing-value-per-ai-workload/203767",
+    "title": "The Economics of Multi-Model Orchestration: Increasing Value per AI Workload",
+    "source": "Google AI Developer Community",
+    "category": "community",
+    "published": "2026-11-22",
+    "fetched_at": "2026-11-23T04:41:09+08:00",
+    "score": 7,
+    "summary_zh": "Google AI 社区成员探讨多模型编排的经济学价值。核心观点：通过结构化的人类主导协调，让多个 AI 模型相互补充（交叉推理、矛盾检测、迭代优化），可以在不增加基础设施投入的前提下，降低单位任务成本、提升成功率、扩大采用范围。重点转向「每次工作负载的价值」而非单纯降低 token 成本，为企业 AI 应用规模化提供经济可行性。作者提议用 Gemini API 进行可测量的试验验证。",
+    "key_points": [
+      "多模型编排通过交叉推理、矛盾检测、能力互补，提升输出质量和任务成功率",
+      "重点从降低单个任务成本转向优化整体工作负载的单位经济学",
+      "无需专属服务器/平台，利用现有 AI 能力实现，降低企业采用门槛",
+      "人类主导的协调层作为质量控制，平衡效率与可靠性",
+      "验证框架：测量任务成本、质量、延迟、基础设施利用率的改进"
+    ],
+    "tags": [
+      "多模型编排",
+      "工作负载经济学",
+      "生产力优化",
+      "企业 AI 应用"
+    ],
+    "speakers": []
+  }
+]

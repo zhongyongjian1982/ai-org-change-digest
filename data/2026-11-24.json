@@ -1,0 +1,230 @@
+[
+  {
+    "url": "https://www.lennysnewsletter.com/p/first-principles-what-it-takes-to",
+    "title": "First principles: What it takes to be a great product manager in the AI era | Sherif Mansour",
+    "source": "Lenny's Newsletter",
+    "category": "analyst",
+    "published": "2026-11-22",
+    "fetched_at": "2026-11-24T04:42:15+08:00",
+    "score": 8,
+    "summary_zh": "Atlassian 首席 AI 产品官 Sherif Mansour 阐述 AI 时代产品经理的核心职能变化。他强调 PM 的第一职责是建立\"共享大脑\"（团队认知对齐），并将 PM 分为艺术家、科学家、GM 三类。在 AI 浪潮下，Atlassian 反而加大招聘初级 PM，因为 AI 工具降低了执行门槛，更需要有原则性思维的年轻人才。文中重点讨论 PM 角色扩展、人才培养策略与管理方式的具体调整。",
+    "key_points": [
+      "PM 核心职能转向建立团队\"共享认知\"，而非仅做决策；AI 工具承担执行，PM 聚焦方向与对齐",
+      "AI 时代 PM 需求增长，但要求从执行力转向战略判断力与沟通协调能力",
+      "Atlassian 扩招初级 PM，利用 AI 助力快速成长，降低经验要求但提高思维门槛",
+      "PM 职业双轨发展模式：管理路线与专家路线，适应 AI 下组织结构变化",
+      "新 PM 管理者的常见误区与应对方法体现了组织在 AI 时代的人员管理演变"
+    ],
+    "tags": [
+      "人才策略",
+      "产品管理演变",
+      "组织重构",
+      "AI 工具赋能"
+    ],
+    "speakers": [
+      "Sherif Mansour"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/industries/industrials/our-insights/the-unit-of-activation-how-industrial-companies-can-make-ai-work",
+    "title": "The unit of activation: How industrial companies can make AI work",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-11-23",
+    "fetched_at": "2026-11-24T04:40:00+08:00",
+    "score": 8,
+    "summary_zh": "麦肯锡指出工业企业不能简单地将AI工具叠加到既有流程中，而需根本性地重新设计工作流。文章强调\"激活单位\"概念——通过识别并优化关键业务单元，使AI真正发挥价值。这要求企业从流程层面进行系统性变革，而非仅升级工具，涉及组织能力、人员技能重塑及运营模式创新。",
+    "key_points": [
+      "工业企业需重设工作流而非仅添加AI工具到旧流程中",
+      "\"激活单位\"框架帮助识别可转型的关键业务环节及优先级",
+      "AI价值释放需要从流程、人员、能力等多维度系统性变革",
+      "重设计比单纯工具集成更能解锁AI在工业场景的潜力"
+    ],
+    "tags": [
+      "流程重构",
+      "工业AI",
+      "组织变革",
+      "工作流设计"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/capabilities/quantumblack/our-insights/ai-economics-in-action-what-four-companies-have-done-and-learned",
+    "title": "AI economics in action: What four companies have done and learned",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-11-23",
+    "fetched_at": "2026-11-24T04:40:05+08:00",
+    "score": 8,
+    "summary_zh": "麦肯锡通过四家公司实战案例，揭示 AI 投资如何在成本控制与产出优化间找到平衡。这些企业通过精准的 AI 场景选择、流程重设和人员能力转变，不仅降低了运营成本，还提升了业务效能。核心启示是：AI 经济学不在于技术本身，而在于如何重构工作方式、重新定义岗位价值，以及建立从试点到规模化的系统方法论。",
+    "key_points": [
+      "AI 投资需从「技术成本」转向「业务ROI」，聚焦能直接降低成本或增加收入的场景",
+      "成功案例都涉及流程再造与人员重组，AI 替代低价值工作，释放人力聚焦战略任务",
+      "企业需建立 AI 治理与试点学习机制，从小范围复盘迭代到全面推广的可重复路径",
+      "人才策略调整是 AI 经济学实现的关键，需明确哪些角色转变、哪些需新招、哪些可优化"
+    ],
+    "tags": [
+      "AI 经济学",
+      "成本优化",
+      "流程重构",
+      "人员重组",
+      "规模化落地"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  },
+  {
+    "url": "https://developers.googleblog.com/did-the-user-ask-for-this-securing-ai-agents-against-intent-hijacking-with-semantic-governance-policies/",
+    "title": "Did the user ask for this? Securing AI agents against intent hijacking with Semantic governance policies",
+    "source": "Google Developers Blog",
+    "category": "ai-lab",
+    "published": "2026-11-24",
+    "fetched_at": "2026-11-24T04:40:41+08:00",
+    "score": 7,
+    "summary_zh": "Google 推出语义治理策略来保护 AI Agent 免受间接提示注入和意图劫持。该机制通过在执行前验证每个工具调用是否符合用户意图和自然语言约束，在 AgentDojo 基准测试中将攻击成功率从 48.7% 降至 0.9%，同时保持任务效用。这是 Agent 生产环境部署中的关键安全能力，降低了因恶意输入导致 Agent 偏离预期行为的风险，对依赖 Agent 的企业工作流的可靠性至关重要。",
+    "key_points": [
+      "语义治理策略通过意图验证机制，将 Agent 安全攻击成功率从 48.7% 降至 0.9%",
+      "在工具执行前验证是否符合用户真实意图，防止间接提示注入劫持",
+      "Agent Gateway 在 Gemini 平台提供预览功能，支持开发者快速集成"
+    ],
+    "tags": [
+      "Agent 安全治理",
+      "生产部署",
+      "意图控制",
+      "工作流可靠性"
+    ],
+    "speakers": [
+      "Google"
+    ]
+  },
+  {
+    "url": "https://www.lennysnewsletter.com/p/how-i-ai-openclaw-for-executives",
+    "title": "🎙️ How I AI: OpenClaw for executives: Automate every 1% annoyance",
+    "source": "Lenny's Newsletter",
+    "category": "analyst",
+    "published": "2026-11-24",
+    "fetched_at": "2026-11-24T04:42:03+08:00",
+    "score": 7,
+    "summary_zh": "Innovaccer CTO Ankit Maheshwari分享其通过OpenClaw搭建的个人AI Chief of Staff实践。系统自动化审批、订餐、员工沟通等日常1%的烦恼任务。核心洞察：专用Agent胜过通用Agent；从具体瓶颈而非宏大愿景切入；灵魂文件配置比工具集成更复杂；护栏需提前覆盖极端场景；模型费用（月均$500-600）可通过本地模型优化。展示了Agent在个人工作流中的落地逻辑与迭代方法论。",
+    "key_points": [
+      "从具体工作瓶颈切入（如4小时定时简历审批摘要），而非盲目构建大系统",
+      "专用Agent优于通用Agent：独立的语音通话、订餐Agent运作更稳定一致",
+      "灵魂文件定义Agent人设、权限、路由规则比集成工具耗时更多",
+      "模型成本可优化：本地模型处理摘要、邮件、编排，复杂任务保留高端模型",
+      "1%烦恼法则有效发现自动化机会；Agent可在纠正后自主学习（如订餐逻辑优化）"
+    ],
+    "tags": [
+      "Agent落地",
+      "工作流自动化",
+      "生产力提升",
+      "AI Chief of Staff"
+    ],
+    "speakers": [
+      "Ankit Maheshwari（Innovaccer CTO）"
+    ]
+  },
+  {
+    "url": "https://www.lennysnewsletter.com/p/openclaw-for-executives-automate",
+    "title": "OpenClaw for executives: Automate every 1% annoyance | Ankit Maheshwari (Innovaccer)",
+    "source": "Lenny's Newsletter",
+    "category": "analyst",
+    "published": "2026-11-23",
+    "fetched_at": "2026-11-24T04:42:08+08:00",
+    "score": 7,
+    "summary_zh": "Innovaccer CTO Ankit Maheshwari分享其OpenClaw Agent「Jarvis」的实践案例，从解决审批瓶颈出发，逐步扩展到午餐订购、Slack跟进、餐厅预订、智能家居控制等日常工作生活自动化。重点讨论了子Agent架构、灵魂文件（soul files）和安全护栏的设计，以及本地模型（GLM 5.3 Flash）能否替代高成本API调用。展现了高管如何通过Agent系统消除「1%的烦恼」，重新定义个人效率边界。",
+    "key_points": [
+      "从审批瓶颈出发，逐步自动化日常1%的烦恼任务，包括Slack跟进、餐厅预订、智能家居控制",
+      "子Agent架构（健康教练、邮件分类等）比单一全能Agent更稳定可控，避免人格混乱和幻觉",
+      "灵魂文件与护栏机制确保Agent可信性，支持语音通话、实时决策等复杂场景",
+      "本地模型（GLM 5.3 Flash）能否取代$500-600/月的API成本，成本与能力的权衡探讨"
+    ],
+    "tags": [
+      "Agent落地",
+      "个人效率",
+      "子Agent架构",
+      "成本优化"
+    ],
+    "speakers": [
+      "Ankit Maheshwari（Innovaccer CTO）"
+    ]
+  },
+  {
+    "url": "https://sloanreview.mit.edu/article/the-trouble-with-continuous-personal-growth/",
+    "title": "The Trouble With Continuous Personal Growth",
+    "source": "MIT Sloan Management Review",
+    "category": "business",
+    "published": "2026-11-23",
+    "fetched_at": "2026-11-24T04:39:56+08:00",
+    "score": 7,
+    "summary_zh": "MIT Sloan 研究学者Lynda Gratton 基于 550+ 被调查者数据，提出「工作生活如织物」的框架——8 条「线索」支撑职业和生活可持续性。其中 4 条涉及贡献（掌握、认知、协作、放大），4 条涉及续航（友谊、亲密、平静、冒险）。调查显示多数人在掌握专业知识、自我认知和 AI 工具应用方面表现强劲（77-91%），证明在混合办公、技术赋能下主动适应；但能力强不等于真正转化为实践，许多人面临「知行不一」的陷阱。文章指出持续个人成长的陷阱在于仅追求能力积累，忽视生活全维度平衡。",
+    "key_points": [
+      "AI 和混合办公加速职业假设颠覆，适应能力成为核心竞争力",
+      "77-91% 受访者在掌握、认知、AI 工具应用上自评强劲，主动适应变化",
+      "「能力强≠实践转化」，知识与行动脱钩是职场适应的隐患",
+      "平衡工作贡献线（掌握/认知/协作/放大）与生活续航线（友谊/亲密/平静/冒险）"
+    ],
+    "tags": [
+      "适应能力",
+      "职业发展",
+      "AI 赋能",
+      "工作生活平衡"
+    ],
+    "speakers": [
+      "Lynda Gratton（伦敦商学院教授）"
+    ]
+  },
+  {
+    "url": "https://www.mckinsey.com/capabilities/quantumblack/our-insights/rewiring-gcc-countries-for-ai-realizing-value-in-government",
+    "title": "Rewiring GCC countries for AI: Realizing value in government",
+    "source": "McKinsey Insights",
+    "category": "business",
+    "published": "2026-11-23",
+    "fetched_at": "2026-11-24T04:40:09+08:00",
+    "score": 7,
+    "summary_zh": "麦肯锡分析了海湾合作委员会（GCC）国家的 AI 现状。虽然 AI 采用率接近普遍，但价值创造滞后，特别是在公共部门。要将 AI 采用转化为实际影响，需要关注交付能力和主权问题。这涉及政府部门如何重构流程、管理数据主权，以及建立本地 AI 能力——对中东政府治理和公共服务变革有重要启示。",
+    "key_points": [
+      "GCC 国家 AI 采用率高，但价值兑现存在显著缺口，需要战略性调整",
+      "公共部门面临交付能力与数据主权的双重挑战，影响实际落地",
+      "需要建立本地 AI 治理框架和人才能力，避免过度依赖外部供应商"
+    ],
+    "tags": [
+      "政府 AI 转型",
+      "公共部门管理",
+      "数据主权",
+      "AI 价值化"
+    ],
+    "speakers": [
+      "McKinsey"
+    ]
+  },
+  {
+    "url": "https://openai.com/business/learn/connected-intelligence-for-in-house-legal",
+    "title": "Connected intelligence for in-house legal",
+    "source": "OpenAI",
+    "category": "ai-lab",
+    "published": "2026-11-23",
+    "fetched_at": "2026-11-24T04:40:19+08:00",
+    "score": 6,
+    "summary_zh": "OpenAI 展示 AI 如何赋能企业内部法务团队。通过连接业务语境、构建可复用工作流和优化外部律师协作，AI 帮助法务部门提升效率。案例涉及 LECG 和 Cooley 等机构，强调 AI 在法务流程自动化、知识管理中的实际应用价值，但缺乏深层组织结构或人员变革的讨论。",
+    "key_points": [
+      "AI 连接业务上下文，帮助法务团队快速理解决策背景，提升响应速度",
+      "可复用工作流降低重复性法务任务成本，释放律师进行更高价值工作的时间",
+      "优化与外部律师协作，提高沟通效率和内外部资源配置合理性"
+    ],
+    "tags": [
+      "法务数字化",
+      "工作流自动化",
+      "生产力提升",
+      "内外部协作"
+    ],
+    "speakers": [
+      "Stacey Wang (OpenAI)",
+      "Craig Bruney (OpenAI)",
+      "Mary O'Carroll (LECG)",
+      "Richard Segal (Cooley)"
+    ]
+  }
+]

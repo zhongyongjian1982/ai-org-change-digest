@@ -72,10 +72,10 @@ footer a:hover { color: #999; }
 <a class="back-link" href="https://www.tedzhong.com/">← tedzhong.com</a>
 <header>
   <h1>AI TRANSFORMATION</h1>
-  <p>27 entries · 过去 7 天 · <a href="archive/">归档</a></p>
+  <p>23 entries · 过去 7 天 · <a href="archive/">归档</a></p>
 </header>
 <div class="controls">
-  <div class="tabs"><button class="tab active" data-cat="all">全部<span class="badge">27</span></button><button class="tab" data-cat="ai-lab">AI 实验室<span class="badge">7</span></button><button class="tab" data-cat="analyst">分析师<span class="badge">4</span></button><button class="tab" data-cat="business">商业<span class="badge">11</span></button><button class="tab" data-cat="community">开发者社区<span class="badge">5</span></button></div>
+  <div class="tabs"><button class="tab active" data-cat="all">全部<span class="badge">23</span></button><button class="tab" data-cat="ai-lab">AI 实验室<span class="badge">6</span></button><button class="tab" data-cat="analyst">分析师<span class="badge">4</span></button><button class="tab" data-cat="business">商业<span class="badge">11</span></button><button class="tab" data-cat="community">开发者社区<span class="badge">2</span></button></div>
   <div class="filter-bar">
     <span>评分</span>
     <div class="score-filter">
@@ -90,6 +90,23 @@ footer a:hover { color: #999; }
   </div>
 </div>
 <div class="list">
+<section class="day"><div class="day-head">2026-11-26<span class="count">· 1 条</span></div>
+    <article class="entry" data-source="McKinsey Insights" data-category="business" data-score="8">
+      <div class="entry-meta">
+        <span class="entry-score">8/10</span>
+        <span class="sep">·</span>
+        <span>McKinsey Insights</span>
+        <span class="sep">·</span>
+        <span>商业</span>
+        <span class="sep">·</span>
+        <span>2026-11-24</span>
+      </div>
+      <a class="entry-title" href="https://www.mckinsey.com/capabilities/people-and-organization/our-insights/the-ai-readiness-gap" target="_blank" rel="noopener">The AI readiness gap</a>
+      <p class="entry-summary">麦肯锡研究发现员工对 AI 转型已做好准备，但领导力执行不足成为主要瓶颈。文章指出，尽管一线员工表现出积极的学习意愿和适应能力，但企业高管在战略规划、组织赋能、变革管理和资源配置上存在明显差距。这个「准备度鸿沟」直接影响 AI 投资的实际转化效率，要求领导者制定更清晰的 AI 应用路线图、加强跨职能协作，并建立配套的激励与评估机制。</p>
+      <ul class="entry-bullets"><li>员工 AI 适应度高，但高管战略执行不足导致落差</li><li>领导力缺失表现在规划、赋能、变革管理三个层面</li><li>AI 投资转化率低主要源于组织执行力而非人才意愿</li><li>企业需建立清晰 AI 路线图、跨职能协作与激励机制</li><li>解决准备度鸿沟是释放 AI 价值的关键</li></ul>
+      <div class="entry-chips"><span class="entry-chip speaker">McKinsey</span><span class="entry-chip">组织能力</span><span class="entry-chip">变革管理</span><span class="entry-chip">领导力</span><span class="entry-chip">AI 落地</span></div>
+    </article>
+    </section>
 <section class="day"><div class="day-head">2026-11-25<span class="count">· 5 条</span></div>
     <article class="entry" data-source="McKinsey Insights" data-category="business" data-score="8">
       <div class="entry-meta">
@@ -448,90 +465,9 @@ footer a:hover { color: #999; }
       <div class="entry-chips"><span class="entry-chip speaker">OpenAI</span><span class="entry-chip">Agent 能力评估</span><span class="entry-chip">研究生产力</span><span class="entry-chip">人机协作</span><span class="entry-chip">递归自改进</span></div>
     </article>
     </section>
-<section class="day"><div class="day-head">2026-11-19<span class="count">· 5 条</span></div>
-    <article class="entry" data-source="Google AI Developer Community" data-category="community" data-score="7">
-      <div class="entry-meta">
-        <span class="entry-score">7/10</span>
-        <span class="sep">·</span>
-        <span>Google AI Developer Community</span>
-        <span class="sep">·</span>
-        <span>开发者社区</span>
-        <span class="sep">·</span>
-        <span>2026-11-18</span>
-      </div>
-      <a class="entry-title" href="https://discuss.ai.google.dev/t/gemini-3-8-flash-4-000-step-test-compound-delete-requests-left-out-dependants-in-46-of-97-replies-0-of-472-on-plain-deletes/202025" target="_blank" rel="noopener">Gemini 3.8 Flash, 4,000-step test: compound delete requests left out dependants in 46 of 97 replies (0 of 472 on plain deletes)</a>
-      <p class="entry-summary">开发者通过 4,000 步严格测试揭示 Gemini 3.8 Flash 在复合删除请求中的漏洞：删除服务且同时移除指定边时，模型遗漏了关联的依赖项（46/97 失败率），而单纯删除请求无此问题（0/472）。作者通过主机端验证和自动补全机制解决，确保状态一致性。这反映出 AI 模型在复杂业务逻辑理解和多步骤依赖处理上的局限，需要系统级容错设计。</p>
-      <ul class="entry-bullets"><li>复合请求理解缺陷：模型将&#x27;删除X且移除Y&#x27;理解为仅执行这两项，遗漏其他关联依赖</li><li>失败率随依赖数增加而降低：1个依赖失败率72%，2个39%，3个34%，表现出明确的认知压力</li><li>思维令牌与错误正相关：复合请求平均使用1,825思维令牌（普通请求58-373），但仍未解决逻辑漏洞</li><li>主机端容错机制可完全消除问题：通过状态验证与自动补全，4,000步全部正确，成本增加5%内</li></ul>
-      <div class="entry-chips"><span class="entry-chip speaker">Rajnish Choubey</span><span class="entry-chip">Agent 能力边界</span><span class="entry-chip">系统可靠性</span><span class="entry-chip">复杂任务理解</span><span class="entry-chip">主机侧设计</span></div>
-    </article>
-    
-    <article class="entry" data-source="Google AI Developer Community" data-category="community" data-score="7">
-      <div class="entry-meta">
-        <span class="entry-score">7/10</span>
-        <span class="sep">·</span>
-        <span>Google AI Developer Community</span>
-        <span class="sep">·</span>
-        <span>开发者社区</span>
-        <span class="sep">·</span>
-        <span>2026-11-18</span>
-      </div>
-      <a class="entry-title" href="https://discuss.ai.google.dev/t/gemini-3-8-flash-long-agent-loops-measured-cost-per-correct-step-and-why-first-token-time-still-rises-with-about-97-of-the-prompt-cached/201990" target="_blank" rel="noopener">Gemini 3.8 Flash long agent loops: measured cost per correct step, and why first-token time still rises with about 97% of the prompt cached</a>
-      <p class="entry-summary">开发者通过 Gemini 3.8 Flash 对长链 Agent 循环的成本和延迟进行了系统测试。核心发现：采用主机端状态管理（而非对话历史）的方案，每步准确率达 98.85%，成本仅 $0.0012；而保留完整对话历史虽有 97% 缓存命中率，但首字令延迟仍随提示长度增长（从 1.86s 升至 5.57s）。这揭示了缓存机制与实时交互延迟之间的矛盾，对 Agent 工作流设计有重要参考价值。</p>
-      <ul class="entry-bullets"><li>主机端状态管理相比对话历史保留，提示词减少 99%，成本从 $0.0052 降至 $0.0012/步</li><li>98.85% 步骤准确率，46 个失误均为同类错误（漏删服务边缘），可由规则修复</li><li>隐式缓存 97% 命中率下，首字令延迟仍从 1.86s 增至 5.57s，缓存无法完全消除延迟</li><li>4000 步长链测试，主机端状态管理始终保持一致，表明有状态 Agent 架构可靠性</li></ul>
-      <div class="entry-chips"><span class="entry-chip">Agent 长链优化</span><span class="entry-chip">成本效率</span><span class="entry-chip">状态管理模式</span><span class="entry-chip">生产部署</span></div>
-    </article>
-    
-    <article class="entry" data-source="McKinsey Insights" data-category="business" data-score="7">
-      <div class="entry-meta">
-        <span class="entry-score">7/10</span>
-        <span class="sep">·</span>
-        <span>McKinsey Insights</span>
-        <span class="sep">·</span>
-        <span>商业</span>
-        <span class="sep">·</span>
-        <span>2026-11-18</span>
-      </div>
-      <a class="entry-title" href="https://www.mckinsey.com/capabilities/business-building/our-insights/infrastructure-entrepreneurs-how-hochtief-captures-growth-in-the-ai-age" target="_blank" rel="noopener">Infrastructure entrepreneurs: How HOCHTIEF captures growth with AI</a>
-      <p class="entry-summary">百年工程企业 HOCHTIEF 如何通过 AI 实现增长突破？麦肯锡合伙人采访该公司 PPP 解决方案部门领导，深入探讨其创新策略。文章聚焦传统重型工程行业如何用 AI 驱动业务转型、优化项目交付和运营效率，涉及组织如何重新定位自身能力、调整流程以应对 AI 时代。虽然摘要信息有限，但源自顶级咨询机构对真实企业案例的深度对话，具有管理启示价值。</p>
-      <ul class="entry-bullets"><li>百年传统工程企业探索 AI 创新，实现增长转型的具体路径与决策</li><li>企业需重塑流程与能力，以 AI 赋能项目交付与运营决策</li><li>领导层如何推动组织文化与人员转变以适应 AI 驱动的工作方式</li></ul>
-      <div class="entry-chips"><span class="entry-chip speaker">Jerome Königsfeld（麦肯锡合伙人）</span><span class="entry-chip speaker">HOCHTIEF PPP Solutions 领导层</span><span class="entry-chip">传统企业数字化转型</span><span class="entry-chip">AI 赋能运营效率</span><span class="entry-chip">组织创新</span><span class="entry-chip">领导力</span></div>
-    </article>
-    
-    <article class="entry" data-source="OpenAI" data-category="ai-lab" data-score="7">
-      <div class="entry-meta">
-        <span class="entry-score">7/10</span>
-        <span class="sep">·</span>
-        <span>OpenAI</span>
-        <span class="sep">·</span>
-        <span>AI 实验室</span>
-        <span class="sep">·</span>
-        <span>2026-11-18</span>
-      </div>
-      <a class="entry-title" href="https://openai.com/index/managing-frontier-ai-risk" target="_blank" rel="noopener">Managing frontier AI risk: From training to deployment</a>
-      <p class="entry-summary">OpenAI 阐述了前沿 AI 模型从训练到部署的风险管理框架。核心措施包括：模型对齐（确保行为符合人类意图）、沙箱隔离（限制模型访问权限）、安全屏障阻止（防止误用）、持续监控（部署后追踪异常）。这些做法涉及技术团队与运营流程协调，直接影响 AI 在生产环境中的安全部署与组织的风险治理能力，对企业采纳生成式 AI 时的治理策略有参考价值。</p>
-      <ul class="entry-bullets"><li>模型对齐与沙箱隔离是训练阶段的核心防控手段</li><li>部署前设置多层安全屏障，阻止已知的高风险应用场景</li><li>持续监控机制支撑部署后的异常检测与动态风险评估</li><li>风险管理贯穿全生命周期，需组织层面的流程协调</li></ul>
-      <div class="entry-chips"><span class="entry-chip speaker">OpenAI</span><span class="entry-chip">AI 安全治理</span><span class="entry-chip">模型部署</span><span class="entry-chip">风险管理框架</span><span class="entry-chip">组织运营</span></div>
-    </article>
-    
-    <article class="entry" data-source="Google AI Developer Community" data-category="community" data-score="6">
-      <div class="entry-meta">
-        <span class="entry-score s-low">6/10</span>
-        <span class="sep">·</span>
-        <span>Google AI Developer Community</span>
-        <span class="sep">·</span>
-        <span>开发者社区</span>
-        <span class="sep">·</span>
-        <span>2026-11-18</span>
-      </div>
-      <a class="entry-title" href="https://discuss.ai.google.dev/t/showcase-paper-radar-daily-arxiv-triage-on-decision-models-jev-claude-now-that-gemini-decision-1-joins-the-same-api-shape/202019" target="_blank" rel="noopener">Showcase: Paper Radar — daily arXiv triage on decision models (Jev + Claude), now that Gemini Decision 1 joins the same API shape</a>
-      <p class="entry-summary">开发者分享了 Paper Radar 项目，一个用决策模型自动筛选 arXiv 论文的工具。对比了 Jev、Claude Haiku 和新发布的 Gemini Decision 1 在相同任务上的表现：准确度相近但速度和成本差异显著（Claude 慢 17 倍、成本高 4 倍）。展示了决策模型在科研信息筛选、系统评审等工作流中的实际应用潜力。虽是个人项目但提供了真实工作负载对比数据，对模型选型有参考价值。</p>
-      <ul class="entry-bullets"><li>决策模型在论文筛选、医学证据综合等知识工作中可替代人工初审，准确率达 90-100%</li><li>模型性能存在明显分化：同一任务下准确度相近，但速度相差 17 倍、成本相差 4 倍</li><li>生产环保需关注模型校准稳定性和失败率，Claude 初期失败率 5% 经迭代降至 0.8%</li><li>决策模型 API 标准化成趋势，可插拔不同后端而无需改变业务逻辑</li></ul>
-      <div class="entry-chips"><span class="entry-chip">工作流自动化</span><span class="entry-chip">决策模型应用</span><span class="entry-chip">生产力工具</span><span class="entry-chip">模型对标</span></div>
-    </article>
-    </section>
 </div>
 <footer>
-  由 Claude Haiku 4.5 每日构建 · 2026-11-25 04:41 CST
+  由 Claude Haiku 4.5 每日构建 · 2026-11-26 04:41 CST
 </footer>
 <script>
 function applyFilters() {

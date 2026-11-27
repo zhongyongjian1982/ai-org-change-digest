@@ -72,10 +72,10 @@ footer a:hover { color: #999; }
 <a class="back-link" href="https://www.tedzhong.com/">← tedzhong.com</a>
 <header>
   <h1>AI TRANSFORMATION</h1>
-  <p>23 entries · 过去 7 天 · <a href="archive/">归档</a></p>
+  <p>21 entries · 过去 7 天 · <a href="archive/">归档</a></p>
 </header>
 <div class="controls">
-  <div class="tabs"><button class="tab active" data-cat="all">全部<span class="badge">23</span></button><button class="tab" data-cat="ai-lab">AI 实验室<span class="badge">6</span></button><button class="tab" data-cat="analyst">分析师<span class="badge">4</span></button><button class="tab" data-cat="business">商业<span class="badge">11</span></button><button class="tab" data-cat="community">开发者社区<span class="badge">2</span></button></div>
+  <div class="tabs"><button class="tab active" data-cat="all">全部<span class="badge">21</span></button><button class="tab" data-cat="ai-lab">AI 实验室<span class="badge">6</span></button><button class="tab" data-cat="analyst">分析师<span class="badge">4</span></button><button class="tab" data-cat="business">商业<span class="badge">9</span></button><button class="tab" data-cat="community">开发者社区<span class="badge">2</span></button></div>
   <div class="filter-bar">
     <span>评分</span>
     <div class="score-filter">
@@ -86,10 +86,27 @@ footer a:hover { color: #999; }
     </div>
     <span class="sep">·</span>
     <span>来源</span>
-    <select class="source-select" id="f-source"><option value="*">全部</option><option value="Google AI Developer Community">Google AI Developer Community</option><option value="Google Developers Blog">Google Developers Blog</option><option value="Lenny&#x27;s Newsletter">Lenny&#x27;s Newsletter</option><option value="MIT Sloan Management Review">MIT Sloan Management Review</option><option value="McKinsey Insights">McKinsey Insights</option><option value="OpenAI">OpenAI</option><option value="Stratechery (free posts)">Stratechery (free posts)</option></select>
+    <select class="source-select" id="f-source"><option value="*">全部</option><option value="Anthropic Engineering">Anthropic Engineering</option><option value="Google AI Developer Community">Google AI Developer Community</option><option value="Google Developers Blog">Google Developers Blog</option><option value="Lenny&#x27;s Newsletter">Lenny&#x27;s Newsletter</option><option value="MIT Sloan Management Review">MIT Sloan Management Review</option><option value="McKinsey Insights">McKinsey Insights</option><option value="OpenAI">OpenAI</option><option value="Stratechery (free posts)">Stratechery (free posts)</option></select>
   </div>
 </div>
 <div class="list">
+<section class="day"><div class="day-head">2026-11-28<span class="count">· 1 条</span></div>
+    <article class="entry" data-source="Anthropic Engineering" data-category="ai-lab" data-score="7">
+      <div class="entry-meta">
+        <span class="entry-score">7/10</span>
+        <span class="sep">·</span>
+        <span>Anthropic Engineering</span>
+        <span class="sep">·</span>
+        <span>AI 实验室</span>
+        <span class="sep">·</span>
+        <span>2026-11-25</span>
+      </div>
+      <a class="entry-title" href="https://www.anthropic.com/research/migrating-api-to-rust" target="_blank" rel="noopener">Migrating our Messages API to Rust</a>
+      <p class="entry-summary">Anthropic 工程团队分享了将 Messages API 从 Python 迁移至 Rust 的案例。核心挑战是如何在不中断生产服务的情况下验证新旧版本功能一致性。团队创新性地将生产 API 本身作为验证器，通过在实时流量上测试 Rust 版本、自动定位差异并派遣 Agent 修复，最终实现 CPU 使用率降低 70%、首token 延迟降低 20%，且全程未冻结功能开发。这反映了大模型时代基础设施优化与 Agent 自动化修复工作流的深度融合。</p>
+      <ul class="entry-bullets"><li>生产系统迁移的关键难点：Python API 持续演进导致验证目标移动、模型非确定性回复、无法访问用户请求数据</li><li>创新验证方案：将生产 API 变成验证器，对比新旧版本在实际流量上的差异，实现灰度验证</li><li>Agent 自动修复流程：自动派遣 Claude Agent 定位并修复 Rust 版本的不一致问题，提升迭代效率</li><li>性能收益显著：CPU 使用率降 70%，首 token 延迟降 20%，支撑 2 年间 1800 倍流量增长</li></ul>
+      <div class="entry-chips"><span class="entry-chip speaker">Anthropic Engineering</span><span class="entry-chip">基础设施优化</span><span class="entry-chip">Agent 工作流</span><span class="entry-chip">生产系统验证</span><span class="entry-chip">架构演进</span></div>
+    </article>
+    </section>
 <section class="day"><div class="day-head">2026-11-26<span class="count">· 1 条</span></div>
     <article class="entry" data-source="McKinsey Insights" data-category="business" data-score="8">
       <div class="entry-meta">
@@ -416,58 +433,9 @@ footer a:hover { color: #999; }
       <div class="entry-chips"><span class="entry-chip speaker">Dean Ball (OpenAI Head of Strategic Futures)</span><span class="entry-chip">制度设计</span><span class="entry-chip">权力分配</span><span class="entry-chip">AI 治理</span><span class="entry-chip">组织控制</span></div>
     </article>
     </section>
-<section class="day"><div class="day-head">2026-11-20<span class="count">· 3 条</span></div>
-    <article class="entry" data-source="McKinsey Insights" data-category="business" data-score="7">
-      <div class="entry-meta">
-        <span class="entry-score">7/10</span>
-        <span class="sep">·</span>
-        <span>McKinsey Insights</span>
-        <span class="sep">·</span>
-        <span>商业</span>
-        <span class="sep">·</span>
-        <span>2026-11-19</span>
-      </div>
-      <a class="entry-title" href="https://www.mckinsey.com/industries/life-sciences/our-insights/building-pharmas-laboratory-of-the-future" target="_blank" rel="noopener">Building pharma’s laboratory of the future</a>
-      <p class="entry-summary">制药企业通过集成AI与物理自动化技术改造研发实验室，突破研发生产力瓶颈。麦肯锡指出，领先的生物制药组织正在重塑实验室工作流程与决策模式：AI用于数据分析、假说生成、实验设计优化，自动化设备处理重复性操作，释放科研人员专注于创新工作。这涉及研发团队结构调整、技能需求变化（需更多数据科学家/AI专家）、实验流程标准化与决策权下移等组织变革。</p>
-      <ul class="entry-bullets"><li>AI+自动化组合重塑实验室运营，加速假说验证与实验迭代</li><li>研发人员角色转变：从执行者向策略者和监督者转变</li><li>需招聘或培养更多跨学科人才（生物学+AI+工程），改变组织构成</li><li>数据驱动决策文化建设，改变传统科研的直觉决策模式</li></ul>
-      <div class="entry-chips"><span class="entry-chip speaker">McKinsey</span><span class="entry-chip">研发管理</span><span class="entry-chip">人才重塑</span><span class="entry-chip">生产力优化</span><span class="entry-chip">技术赋能</span></div>
-    </article>
-    
-    <article class="entry" data-source="McKinsey Insights" data-category="business" data-score="7">
-      <div class="entry-meta">
-        <span class="entry-score">7/10</span>
-        <span class="sep">·</span>
-        <span>McKinsey Insights</span>
-        <span class="sep">·</span>
-        <span>商业</span>
-        <span class="sep">·</span>
-        <span>2026-11-19</span>
-      </div>
-      <a class="entry-title" href="https://www.mckinsey.com/industries/public-sector/our-insights/stefan-latuski-on-transforming-public-sector-services-at-scale" target="_blank" rel="noopener">Stefan Latuski on transforming public sector services at scale</a>
-      <p class="entry-summary">德国联邦就业署 CIO Stefan Latuski 分享了该机构如何通过简化和标准化流程、重新设计客户沟通方式，来大规模变革公共服务。重点不在技术替换，而在组织流程和服务模式的根本重塑。这反映了AI时代公共部门需要先优化运营逻辑，再借助技术提升效率的理念——对大型组织的流程梳理和变革具有借鉴意义。</p>
-      <ul class="entry-bullets"><li>流程简化与标准化优先于技术投入，是大规模公共服务变革的基础</li><li>重点改造客户沟通体验，需要跨部门协同和组织思维转变</li><li>CIO视角强调技术应服务于业务流程优化，而非单纯系统替换</li><li>适用于复杂层级、多部门的大型机构的数字化与运营转型</li></ul>
-      <div class="entry-chips"><span class="entry-chip speaker">Stefan Latuski</span><span class="entry-chip speaker">德国联邦就业署（Federal Employment Agency）</span><span class="entry-chip speaker">McKinsey</span><span class="entry-chip">流程优化</span><span class="entry-chip">组织变革</span><span class="entry-chip">公共部门转型</span><span class="entry-chip">CIO战略</span></div>
-    </article>
-    
-    <article class="entry" data-source="OpenAI" data-category="ai-lab" data-score="7">
-      <div class="entry-meta">
-        <span class="entry-score">7/10</span>
-        <span class="sep">·</span>
-        <span>OpenAI</span>
-        <span class="sep">·</span>
-        <span>AI 实验室</span>
-        <span class="sep">·</span>
-        <span>2026-11-18</span>
-      </div>
-      <a class="entry-title" href="https://openai.com/index/research-acceleration-jagged-frontier" target="_blank" rel="noopener">Research acceleration: The jagged frontier</a>
-      <p class="entry-summary">OpenAI 研究表明，编码 Agent 在加速 AI 研究中展现出不均匀的性能表现。这项研究重点关注 Agent 在处理不同研究任务时的能力边界与递归自我改进的可能性。虽然 Agent 在某些编程任务上表现出色，但在复杂推理和创新性研究问题上仍存在显著差距。这反映了当前 Agent 技术在辅助知识工作者、推动科研生产力时的真实瓶颈，对组织如何规划 AI 增强型研究团队有参考价值。</p>
-      <ul class="entry-bullets"><li>编码 Agent 加速研究但性能参差不齐，存在能力边界</li><li>recursive self-improvement 存在现实限制，不是自动升级路径</li><li>研究工作需人机协作，Agent 难以独立驱动复杂创新问题</li><li>对知识工作组织结构与人员配置有启示意义</li></ul>
-      <div class="entry-chips"><span class="entry-chip speaker">OpenAI</span><span class="entry-chip">Agent 能力评估</span><span class="entry-chip">研究生产力</span><span class="entry-chip">人机协作</span><span class="entry-chip">递归自改进</span></div>
-    </article>
-    </section>
 </div>
 <footer>
-  由 Claude Haiku 4.5 每日构建 · 2026-11-27 04:41 CST
+  由 Claude Haiku 4.5 每日构建 · 2026-11-28 04:41 CST
 </footer>
 <script>
 function applyFilters() {

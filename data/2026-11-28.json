@@ -1,0 +1,27 @@
+[
+  {
+    "url": "https://www.anthropic.com/research/migrating-api-to-rust",
+    "title": "Migrating our Messages API to Rust",
+    "source": "Anthropic Engineering",
+    "category": "ai-lab",
+    "published": "2026-11-25",
+    "fetched_at": "2026-11-28T04:40:02+08:00",
+    "score": 7,
+    "summary_zh": "Anthropic 工程团队分享了将 Messages API 从 Python 迁移至 Rust 的案例。核心挑战是如何在不中断生产服务的情况下验证新旧版本功能一致性。团队创新性地将生产 API 本身作为验证器，通过在实时流量上测试 Rust 版本、自动定位差异并派遣 Agent 修复，最终实现 CPU 使用率降低 70%、首token 延迟降低 20%，且全程未冻结功能开发。这反映了大模型时代基础设施优化与 Agent 自动化修复工作流的深度融合。",
+    "key_points": [
+      "生产系统迁移的关键难点：Python API 持续演进导致验证目标移动、模型非确定性回复、无法访问用户请求数据",
+      "创新验证方案：将生产 API 变成验证器，对比新旧版本在实际流量上的差异，实现灰度验证",
+      "Agent 自动修复流程：自动派遣 Claude Agent 定位并修复 Rust 版本的不一致问题，提升迭代效率",
+      "性能收益显著：CPU 使用率降 70%，首 token 延迟降 20%，支撑 2 年间 1800 倍流量增长"
+    ],
+    "tags": [
+      "基础设施优化",
+      "Agent 工作流",
+      "生产系统验证",
+      "架构演进"
+    ],
+    "speakers": [
+      "Anthropic Engineering"
+    ]
+  }
+]
